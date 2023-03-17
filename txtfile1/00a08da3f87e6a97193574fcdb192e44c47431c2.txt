@@ -1,0 +1,36 @@
+Introduction
+
+In recent years, the mathematical models that involving fractional order derivative have become dominant in many fields due to their remarkable importance as being more accurate than the classical order models [14, 24, 25] . In order to advancement of fractional calculus, many researchers have focused to investigate the solution s of nonlinear differential equations involves several fractional differential operators B M. Moumen Bekkouche moumen-med@univ-eloued.dz I. Mansouri mansouri-ikram@univ-eloued.dz A. A. Azeb Ahmed azizazeb@gmail.com like: Riemann-Lioville, Hilfer, and Caputo . . . ect (see [3, 26, 28] ). However, these operators have a power law kernel and have limitations in modeling physical problems. To overcome this difficulty in 2015, a new fractional derivation approach known as Caputo and Fabrizio (C-F) [8] was developed, characterized by without singular kernel, which gave it importance in modeling a certain class of real-world problem, which follow the exponential decay law.In recent times, several authors contributed to the development and simulation of C-FFDE, to know some applications presented for example, the fractional C-F derivative has been employed for the description of many complex biological systems, including the rabies model [4] , the Cancer treatment by radiotherapy model [9] , the mathematical model for the transmission of Covid-19 [6] , and as well as a new model of human liver [5] , as it has been used in many other fields, such as further extend the groundwater flow model [1] , . . . ect. To know more characteristics and application (see [2, 7, 11-13, 16, 31] ).In this paper, We study the existence and uniqueness of the solution of the fractional differential equation boundary value problem with the Caputo-Fabrizio, as follows:where 1 < ρ < 2 is a real number, q is the potential function, and f : [0, 1] → R is continuous. and D (ρ) is the new fractional derivative, and we introduce a new definition of its fractional integral with some properties, using this fractional integral upon problem (1) to obtain an equivalent linear Volterra-Fredholm integral equations of second kind. Finally, by the means of some theorems, the existence and uniqueness of solutions are obtained, and we introduce an algorithm for finding a numerical solution of this problem class.
+
+Preliminaries
+
+For the convenience of the reader, we present here the necessary definitions and lemmas from fractional calculus theory. These definitions can be found in the recent literature. where γ ∈ [0, 1] and a ∈ ]−∞, t), v ∈ H 1 (a, b), b > a, and M(γ ) is a normalization function such that M(0) = M(1) = 1.
+
+Definition 2
+
+Let n ≥ 1, and γ ∈ [0, 1] the fractional derivative D (γ +n) f of order (n + γ ) is defined byThe formula :, and it's as an inverse of the conformable fractional derivative of Caputo of order (n + γ ).
+
+Analytic study
+
+In the following, we suppose the function M(γ ) = 1.
+
+Lemma 2
+
+Given q ∈ C[0, 1], and 1 < ρ < 2, the solution ofProof We may apply Lemma 1 to Convert Eq. (4) to an equivalent integral equationHence, the unique solution of problem (4) isThe proof is complete.
+
+Existence and uniqueness of the solution
+
+The classical approach to proving the existence and uniqueness of the solution of (5) is the Picard method. This consists of the simple iteration for n = 1, 2,with v 0 (t) = g(t). For ease of manipulation, it is convenient to introducewith u 0 (t) = g(t). On subtracting from (6), the same equation with n replaced by n − 1, an we see thatAlso, from (7) v n (t) = n i=0 u i (t)The following theorem uses this iteration to prove the existence and uniqueness of the solution under quite restrictive conditions, namely that L(x, τ ), F(t, τ ) and g(t) are continuous. Proof Choose λ 1 , λ 2 and λ 3 such that
+
+Theorem 1 If g(t) is continuous in
+
+We first prove by induction thatIf we assume that (10) is true for n − 1, then from (8)Since (10) is obviously true for n = 0, it holds for all n. This bound makes it obvious that the sequence v n (t) in (9) converges, and we can writeWe now show that this v(t) satisfies Eq. (5). The series (11) is uniformly convergent since the terms u i (t) are dominated by λ 1 (λ 2 t) i /i! + λ 1 λ i 3 . Consequently, we can interchange the order of integration and summation in the following expression to obtainEach of the u i (t) is clearly continuous. Therefore v(t) is continuous, since it is the limit of a uniformly convergent sequence of continuous functions.To show that v(t) is the only continuous solution, suppose there exists another continuous solutionṽ(t) of (5) Then (12) since f (t) andf (t) are both continuous, there exists a constant C such thatSubstituting this into (12) |v(t) −ṽ(t)| ≤ C(λ 2 t + λ 3 ), 0 ≤ t ≤ 1 and repeating the step shows that |v(t) −ṽ(t)| ≤ C (λ 2 t) n n! + λ n 3 , 0 ≤ t ≤ 1, for any n.For a large enough n, the right-hand side is arbitrarily small, therefore, we must have are continuous, and |F(t, τ )| = |t(γ τ − 1)q(τ )| ≤ |q(τ )| < 1, ∀t, τ ∈ [0, 1], which means that integral Eq. (5) possesses a unique continuous solution for 0 ≤ t ≤ 1. Therefore, there is a unique continuous solution of the fractional boundary value problem (1) for 0 ≤ t ≤ 1.
+
+Numerical study
+
+In this section, we introduce an algorithm for finding a numerical solution of linear Volterra-Fredholm integral equations of the second kind, the methods based upon trapezoidal rule. For all N ∈ N, Here the interval [0, 1] in to N equal sub-intervals,The formula of the numerical integration is:we apply this formula in Eq. (5), and we obtain:Finally, we get a system of N − 1 equations, which is:
+
+Numerical result
+
+In this part, we give three numerical examples to illustrate the above methods to solve the Volterra-Fredholm linear integral equations of the second kind. The exact solution is known and used to show that the numerical solution obtained with our methods is correct. We used MATLAB to solve these examples.Example 1 Consider the following fractional boundary value problem:where ρ = 1.5, q(t) = 1 − t 4 20 , f (t) = t 4 (3e −t − t − 1), with the exact solution v(t) = e −t + t + 1 2 .Example 2 Consider the following fractional boundary value problem:Numerical solution of fractional boundary value problem… where ρ = 1.5, q(t) = 1 − t 10 10000, f (t) = te −t − t 10 10000− 1 e −t − 1 2with the exact solution v(t) = e −t + 1 2 .
+
