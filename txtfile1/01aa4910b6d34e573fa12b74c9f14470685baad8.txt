@@ -1,0 +1,32 @@
+
+
+Some hand sanitizers on the market are automatically pumped. However, because sanitizer containers and pump devices are designed to be compatible only between products produced by the same manufacturer, consumers must also repurchase the container for the liquid if they replace the hand sanitizer [6, 7] . It is not economical and it has a negative impact on the environment by increasing waste emissions. In addition, some users may think that it is a hassle to buy a hand sanitizer-containing device-compatible again, so they pour other hand sanitizers into previously used containers and reuse them. However, sanitizers that come directly into contact with the human body are classified as medicines or non-medical products, and they are safest to use in original containers [8] .In this paper, the design of an automatic hand sanitizer system compatible with various sanitizer containers is presented. The device was manufactured with polylactic acid (PLA) using a 3D printer.
+
+II. Methods
+
+The automatic hand sanitizer system design will be presented in two stages, the instrument structure and control parts. This work focused on using the elasticity of pumps and improving people's access to devices.
+
+Structure Design
+
+As seen in Figure 1 , the motor, control board, and sensor are located at the top of the automatic hand sanitizer device. The device operates by converting the rotary motion of the DC motor to linear motion through the crank and pressing the pump handle of the hand sanitizer container with the ham-mer.The motor mount minimizes shaking and vibration caused by operation of the motor, and the hammer guide allows the hammer to move vertically without distortion in the left and right directions.As seen in Figure 2 , the sliding cover adjusts the position of the hammer by sliding it to suit the size of the sanitizer container and securing it with a bolt. We set a base plate at the center position by adjusting the length of the bolt to fit the size of the sanitizer container and fix the sanitizer with Velcro tape.The overall size of the automatic hand sanitizer device is 140 mm × 130 mm × 330 mm, and it weighs less than 1.27 kg not including the liquid container. The case in this system was manufactured with PLA using a 3D printer for a lightweight and easy manufacturing process. The front view of the device is shown in Figure 3 .
+
+Controller Design
+
+As seen in Figures 4 and 5 , the Automatic hand sanitizer device consists of a power supply, sensor, board, motor controller, and motor. The power supply provides voltage and current for the operation of the motor and board, and its power source is a battery. Through a regulator, the board converts 9 V power from the power supply to 5 V and applies it to the sensor [9] . Infrared (IR) sensors beam infrared rays from the light-emitting unit, and it is reflected from the surface of the object and absorbed at a light-receiving unit. The motor controller consists of an H-Bridge motor driver L293D, which can control the motor according to the input 
+
+Automatic Hand Sanitizer System
+
+value of the sensor. The DC motor provides a major force to the device and is controlled by the motor driver. As shown in Figure 6A , the setMotor function is specified to control the L293D and the motor. The setMotor function targets the L293D, which sets the speed and direction of the DC motor. Figure 6B shows the running code for operating the device. When the IR sensor detects an object, the IR sensor's light turns on, and the DC motor does about one turn of motion considering the elasticity of the sanitizer container's pump and the motor's rated number of rotations of 185 rpm (revolutions per minute). The device can operate regardless of the direction of motor operation. With the motor's running power, the hammer moves vertically once and presses the pump handle of the disinfectant container. When the IR sensor no longer detects an object, the IR sensor light turns off and the DC motor ceases operation.
+
+III. Results
+
+We have designed an automatic hand sanitizer system that is compatible with various containers. When one moves one's hand close to the device sensor, the hand sanitizer container is pumped once. Figure 7A -C show actual images of the pro-posed device.
+
+IV. Conclusion
+
+Hand sanitizers usually operate by squirting sanitizer liquid when one presses a pump with one's hand. Some hand sanitizers on the market are automatically pumped. However, sanitizer containers and pump devices are designed to be compatible only between products produced by the same manufacturer.To address this problem, we have designed an automatic hand sanitizer system that is compatible with various containers. With the proposed device, it is possible to avoid many people coming into contact with the pump handle, thus preventing fomite viral transmission and making the use of hand sanitizer much more convenient. Moreover, the system squirts a certain amount of hand sanitizer at all times, making it easy to manage refills and replacement. Furthermore, it can operate compatibly with various designs of sanitizer containers, so consumers do not need repurchase a container for the liquid if they replace the hand sanitizer. Thus, it is economical and eco-friendly by decreasing waste emissions. The automatic hand sanitizer device proposed by this paper is ultimately expected to contribute to contactless hand disinfection in public places and virus infection prevention.
+
+Conflict of Interest
+
+Kwang Gi Kim is an editor of Healthcare Informatics Research; however, he did not involve in the peer reviewer selection, evaluation, and decision process of this article. Otherwise, no potential conflict of interest relevant to this article was reported. 
+

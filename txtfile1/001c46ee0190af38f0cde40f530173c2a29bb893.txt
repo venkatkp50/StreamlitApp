@@ -1,0 +1,68 @@
+66
+
+The worldwide SARS-CoV-2 pandemic gave rise to an urgent need for accurate diagnosis, 67 effective treatment, and vaccine. Rapid progress has been made in understanding the steps of virus-cell entry, understanding the nature of the virus and its viral spread both through humans 69 and animals. It is well established that ACE2 serves as the cell-surface receptor for both SARS-
+
+70
+
+CoV-1 and SARS-CoV-2, though other molecules no doubt play an important role in viral 71 infectivity [1] [2] [3] [4] [5] . Due to the zoonotic nature of SARS-CoV-2 infection, there have been numerous 72 studies attempting to understand how different vertebrate ACE2 orthologs can interact with the 73 S-protein of . This knowledge is necessary not only to understand the natural 74 history of the virus, but also to identify species which may be more susceptible to infection. Even 75 though ACE2 is a well conserved protein across the vertebrate clade, human polymorphisms 76 have been documented [10] , and ACE2 orthologs from different animals have unique amino acid 77 sequences, which potentially alter the ability of a particular S-protein to bind to specific cells [11, 78 12] . The difference in ACE2 orthologs is thought to be a potential mechanism by which certain 79 species appear to be protected from infection, or how other species can act as an intermediate 80 when SARS-like coronavirus's transition between host species [13, 14] .
+
+82
+
+Since the beginning of the current global pandemic there have been multiple studies attempting 83 to determine which ACE2 orthologs serve as receptors for S-protein. These studies include 1.) in 84 silico models that predict which orthologs would be likely to bind S-protein based upon amino acid 85 residues known to interact with S-protein [4, 9, 15-25] , 2.) in vitro cell-based studies where viral 86 infectivity of cells from different animals or cell-lines genetically modified to express different 87 ACE2 orthologs are examined for interactions with S-protein (or its RBD) or infection with the virus 88 or S-protein expressing pseudovirus [2, 6, 11, [26] [27] [28] [29] [30] , 3.) and biochemical studies measuring the 89 binding of S-protein with different ACE2 proteins [31, 32] . There are advantages and drawbacks 90 to each approach. In silico modeling enables rapid comparison of multiple orthologs, but is limited 91 to publicly available genetic data and predictions need to be validated experimentally.
+
+92
+
+Biochemically measuring SARS-CoV-2 S-protein and ACE2 association provides an accurate 93 measurement of the binding affinity between the two proteins, but requires the production and 94 purification of each ACE2 ortholog and the SARS-CoV-2 S-protein or RBD and does not 95 necessarily reflect association in the context of physiological virus-cell interactions. Cell infectivity 96 or binding of soluble SARS-CoV-2 S-protein can provide information about which ACE2 orthologs 97 can successfully interact with S-protein at the cell surface. However, it requires genetically 98 modifying cells by plasmid transfection or lentiviral transduction with each ACE2 ortholog and 99 controlling for the level of ACE2 at the cell surface is difficult.
+
+101
+
+In vitro infection studies with multiple different types of viruses have demonstrated that the level 102 of viral receptor protein expressed at the cell-surface is a critical factor for viral entry into cells.
+
+103
+
+For instance, Davis et al. reported 
+
+133
+
+We generated DNA plasmids encoding a bi-cistronic mRNA containing human ACE2 cDNA 134 followed by an internal ribosome entry site (IRES) and finally the mouse cell-surface protein Thy1.1 ( Figure 1A ). Because Thy1.1 and ACE2 are translated by the same mRNA, we used the 136 relative expression of Thy1.1 as detected by widely available monoclonal antibodies to infer ACE2 137 expression, thus avoiding uncertainties regarding the interaction of assorted orthologs of ACE2 138 with available antibodies able to detect native ACE2 on the cell surface.
+
+139
+
+Following this rationale, we transfected HRT-18G cells, a human rectal cancer line capable of Fluor-647 labeled RBD protein purchased from a commercial vendor and analyzed them by flow 148 cytometry ( Figure 1D ). In contrast to parent cells, the RBD interacted with the hACE2 in a 149 concentration dependent manner ( Figure 1E ). We also assessed the capability of hACE2 to allow 150 the viral infectivity compared to parent cells. Both HRT-18G and HRT-18G/hACE2 cells were 
+
+160
+
+In contrast to the parental HRT-18G cells, which showed no evidence of GFP expression, HRT-161 18G/hACE2 cells were readily infected with SARS-CoV-2 S-protein expressing pseudovirus 162 ( Figure 1G ).
+
+163
+
+Taken together these findings show that HRT-18G cells can be stably transfected and sorted 164 based upon Thy1.1 expression to generate a cell line expressing human ACE2 which can bind 165 SARS-CoV-2 RBD protein and support pseudoviral infection.
+
+Cell surface ACE2 levels govern RBD binding and viral infectivity
+
+We hypothesized that increased expression of Thy1.1 would correlate with increased ACE2 169 expression leading to increased RBD binding and viral infectivity. We tested this hypothesis in 
+
+196
+
+Together these data indicate that measuring Thy1.1 in our system is a good proxy for total ACE2 
+
+257
+
+Another advantage of our system is allowing researchers to infer cell-surface levels of ACE2 258 without the need for species-specific reagents. As shown in Figure 3 , a monoclonal antibody that 259 recognizes human ACE2 fails to stain cells expressing either feline or mouse ACE2, 260 demonstrating that commercially available reagents may not be useful for measuring the cell- 
+
+266
+
+The use of a reporter in a bi-cistronic vector that can easily be measured, and used for 267 fluorescence-based cell sorting, allows us to compare SARS-CoV-2 S-protein interactions and viral infectivity without the need to develop and characterize specific reagents for each ACE2 269 ortholog to be studied.
+
+271
+
+Stably transfected cells can also be cultured indefinitely, which negates the need to repeatedly 272 transfect cells for each new experiment. The necessity of these renewable cells is especially 273 important when considering newly emerging SARS-CoV-2 variants. Many of the variants of 274 concern have altered binding of the viral S-protein to ACE2, which is of great concern to public 275 health [44] [45] [46] [47] . It is still unknown if the newly emerged variants are more infectious to other 276 vertebrate animals, or if there is a shift of a species predicted susceptibility to a newly emerged 277 variant. With the presence of stably transfected cells expressing a defined amount of ACE2 that 278 simply need to be thawed from cryogenic storage, researcher will be able to rapidly determine if 279 particular variants are more or less infectious to particular animals.
+
+280
+
+It should be noted that measuring ACE2 interactions with SARS-CoV-2 may not be a perfect 281 method for predicting a species susceptibility to infection, progression to disease, and even viral 282 transmission. For instance, both in silico and in vitro studies have suggested that ferrets and mink 283 ACE2 interacts poorly with S-protein [6, 9, 48] , however these animals are readily infectible with 284 SARS-CoV-2, often dramatically so [49] [50] [51] [52] . As the field progresses, it will behoove us to think not 285 only of ACE2 but other physiological differences between species which may impact SARS-CoV- 
+
+384
+
+The flask was then subject to three rounds of freeze-thaw to lyse cells and the media centrifuged 
+

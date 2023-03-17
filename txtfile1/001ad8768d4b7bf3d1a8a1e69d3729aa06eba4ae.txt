@@ -1,0 +1,52 @@
+
+
+ATPase activity of SARS-CoV-2 NSP13, indicating its essential role in NSP13 activity.Moreover, NSP13 helicase activity was also disrupted when we inserted a flexible linker between the stalk and helicase domains. Further investigation showed that insertion of the flexible linker affected the RNA binding but not the ATPase activity of NSP13. Linker insertion between the stalk and helicase domains also reduced the protein stability of NSP13.Collectively, these findings indicate that the stalk domain provides a rigid connection between the ZBD and helicase domain, contributing to the RNA binding and enzyme activity of NSP13.
+
+Clone Construction
+
+The SARS-CoV-2 NSP13 gene fragment was constructed into pET15b vector between NdeI and XhoI. D374A/E375A mutation was generated with QuikChange® II Site-Directed Mutagenesis kit. 
+
+Unwinding assay
+
+The helicase activity of SARS-CoV-2 NSP13 was measured by FRET based unwinding assay. Wash the beads to remove unbound proteins, resuspend the beads with 30μl 2×SDS loading buffer and boil for 10min. The protein samples were analyzed by Western blot.
+
+Thermal Shift assay
+
+The thermal stability of SARS-CoV-2 NSP13 was assessed using fluorescence-based thermal shift assay. 0.4mg/ml proteins and SYPRO Orange fluorescent dye (Invitrogen) were incubated with or without 2mM ATP. Samples were subjected to an increase in temperature from 25°C to 90°C in 0.5°C increments per 20 seconds. Procedure was performed on a real time PCR machine. Fluorescence measurements were plotted and Tm values were calculated using GraphPad Prism.
+
+Statistical analysis
+
+The error bars in the figures represent the standard error of mean of three repeats or duplicates J o u r n a l P r e -p r o o f as indicated. The statistical significance of differences between groups was analyzed by t-test.*P < 0.05, **P < 0.01, ***P < 0.001.
+
+Results
+
+The enzymatic activity of SARS-CoV-2 NSP13.We expressed SARS-CoV-2 NSP13 with an N-terminal 6×His tag and C-terminal Myc tag in Escherichia coli and purified the proteins by Ni-NTA agarose beads and size-exclusion chromatography ( Fig. 1A and B). We first examined the ATPase activity of SARS-CoV-2 NSP13. NSP13 exhibited ATPase activity in the absence of nucleic acids (Fig. 1C ). When we mutated D374 and E375, which lie in the active pocket of the ATP binding site, to alanine (D374A/E375A) [23] , NSP13 ATPase activity was dramatically impaired ( Fig. 1C and D). We set up an in vitro dsRNA unwinding system based on FRET (fluorescence resonance energy transfer) [24] to evaluate the helicase activity of SARS-CoV-2 NSP13. A serial complementary ssRNA labeled with Cy3 or BHQ2 (Black Hole Quencher) was synthesized. When the complementary ssRNA was annealed to form an RNA duplex, Cy3 fluorescence was quenched by BHQ2 due to FRET. As the dsRNA is unwounded by the helicase, the quenching is alleviated (Fig. 1E) . The data showed that SARS-CoV-2 NSP13 unwound dsRNA only when ATP was present (Fig. 1F ). In addition, the D374A/E375A mutant showed little helicase activity, indicating that NSP13 helicase activity is dependent on ATP hydrolysis (Fig. 1G ). The dsRNA unwinding activity of NSP13 was dose-dependent; as the concentration of NSP13 added increased, the unwinding rate increased ( Fig. 1H and I). We also detected the processivity of NSP13 on dsRNA substrates with duplex regions of different lengths and found that unwinding of dsRNA decreased with increasing of duplex length, indicating that less unwinding events J o u r n a l P r e -p r o o f were complete for dsRNA substrates with longer duplex regions ( Fig. 1J and Supplementary   Table) .The stalk domain of NSP13 is essential for its helicase activity.As the role of the SARS-CoV-2 NSP13 stalk domain is not yet clear, we next explored whether the stalk domain is necessary for NSP13 activity. We constructed a NSP13 stalk deletion mutant (Δstalk) by replacing the stalk domain with a flexible linker (GGGS×4) ( Fig. 2A and B) . We examined ATPase activity and found that NSP13 ATPase activity was disrupted when the stalk domain was deleted ( Fig. 2C and D) . Accordingly, deletion of the stalk domain abolished NSP13 helicase activity ( Fig. 2E and F) . These data demonstrated that the stalk domain is essential for the ATPase activity and helicase activity of NSP13, and that it functions as more than a linker connecting the ZBD and helicase domain.
+
+The stalk domain mediated the rigid connection between the ZBD and helicase domain
+
+SF1 helicases, such as Upf1 and NSP10 of EAV (equine arteritis virus), and NSP13 of MERS and SARS-CoV, share similar structural topologies [25] . Upf1, a eukaryotic RNA helicase, is the classical SF1 helicase [26] . The Upf1 CH domain (Cys/His rich domain, the counterpart of the NSP13 ZBD domain) may connect with the helicase domain through a flexible loop (invisible in electron density maps) and stalk domain (Fig. 3A ) [27] . Compared to Upf1, the stalk domains of NSP13 of SARS-CoV-2 seem to provide relatively rigid connection between the ZBD and helicase domains (Fig. 3B) . The stalk domains of NSP13 of SARS-CoV-2, SARS-CoV and MERS-CoV are highly conserved in sequence and structure ( Fig. 3C and Fig. S1 ), and the stalk domain of NSP13 may affect its helicase activity through a tight interaction with the helicase domain.J o u r n a l P r e -p r o o f Next, we sought to investigate whether the tight connection mediated by the stalk domain is needed for NSP13 function. To increase the flexibility between the ZBD and stalk domains or between the stalk and helicase domains of NSP13, we inserted a short flexible linker (GGGS× 2) between the ZBD and stalk domains (Z-linker-SH mutant) or between stalk and helicase domains (ZS-linker-H mutant) (Fig. 3D and E) . We measured the ATP hydrolysis activity of these mutants. One mutant, ZS-linker-H, showed ATPase activity similar to that of WT NSP13.The other one, the Z-linker-SH mutant had slightly higher ATPase activity. These data indicated that increasing the flexibility between the ZBD and helicase domains by inserting a short flexible linker does not impair the ATPase activity of NSP13 ( Fig. 3F and G) . However, we found that the linker insertion at the two sites resulted in completely opposite effects on the dsRNA unwinding ability of NSP13. The unwinding activity of the Z-linker-SH mutant was not affected, whereas the ZS-linker-H mutant failed to unwind dsRNA ( Fig. 3H and I) . These findings implied that the rigid connection between the stalk and helicase domains is critical for the helicase activity without affecting the ATPase activity.
+
+Linker insertion between the stalk and helicase domains interfered with the RNA binding of NSP13.
+
+The structure of NSP13 indicates that the stalk domain is located close to the RNA binding pocket, and it is predicted that the stalk domain might directly contribute to the interaction between NSP13 and RNA, although a structure of NSP13 and RNA in complex is lacking (Fig.   S2 ) [15, 28] . We examined the interaction of ssRNA with NSP13 by RNA pull down and found that linker insertion between the ZBD and stalk domains (Z-linker-SH) did not affect the RNA binding of NSP13, consistent with the unaffected RNA unwinding activity we showed above.
+
+J o u r n a l P r e -p r o o f
+
+In contrast, linker insertion between the stalk and helicase domains (ZS-linker-H) partially interfered with the binding of RNA to NSP13, indicating that the tight connection between the stalk and helicase domains is important for the interaction between NSP13 and RNA ( Fig. 4A and B).
+
+Linker insertion between the stalk and helicase domains reduced the stability of NSP13
+
+Finally, we explored the stability of WT and mutated NSP13 by a fluorescence-based thermal shift assay. ATP stabilized NSP13 as the Tm (melting temperature) of NPS13 increased (1.91°C) when ATP was present (Fig. S3) . However, linker insertion between the stalk and helicase 
+
+Discussion
+
+SARS-CoV-2 NSP13 is an SF1 helicase [22] . Here we showed that SARS-CoV-2 NSP13 has ATPase activity in the absence of nucleic acids. It unwinds dsRNA in a manner dependent on ATP hydrolysis. The processivity of SARS-CoV-2 NSP13 in dsRNA unwinding seems better than that of the flavivirus NS3 helicase. It has been reported that the flavivirus NS3 helicase might dissociate every 18 bp in RNA unwinding, and it was not very efficient in duplex unwinding beyond 18bp in a bulk assay [29, 30] . However, SARS-CoV-2 NSP13 could unwind dsRNA substrates with 35 bp or longer duplex regions, similar processivity was observed with J o u r n a l P r e -p r o o f SARS-CoV NSP13 [21] . As coronavirus has longest RNA genome (~30 kb) among RNA viruses, coronavirus helicases may also have better processivity in viral dsRNA unwinding during replication.We as its ATPase activity remained intact, implying that a rigid connection between the stalk domain and helicase domain is essential. According to the structure of NSP13, the stalk domain is predicted to located near the RNA binding pocket and may directly interact with the 3'end of RNA [15, 28] . In addition, the stalk domain also affects NSP13 binding to RNA through its tight interaction with the Rec1A and Rec2A domains [15] . This was supported by the attenuated NSP13 plays an important role in viral replication. Cryo-EM has solved the structure of the SARS-CoV-2 RTC, which comprises two NSP13 helicase proteins and one RNA polymerase NSP12 protein as well as one NSP7 and two NSP8 proteins, in complex with RNA [32, 33] . In the complex structure, NSP13 did not directly interact with the RNA; therefore, no information about how RNA is unwound by the SARS-CoV-2 RTC could be obtained. Thus, although different models of dsRNA unwinding by NSP13 have been proposed based on the RTC structure [32, 33] , the detailed mechanism is still unclear. Further studies using an in vitro RNA unwinding assay with the RTC may provide more insights into SARS-CoV-2 replication.
+
+Declaration of interests
+
+The authors declare no competing interests. H&I. Linker insertion between stalk and helicase domains abolished dsRNA unwinding activity of NSP13.
+
+Figure Legends
+
+(H) The unwinding assay of WT NSP13 and linker insertion mutants. (I) Initial unwinding rate of WT NSP13and linker insertion mutants. The initial unwinding rate was calculated by kinetics in the first 5min. The significance was analyzed by t-test, ***p<0.001. 
+
