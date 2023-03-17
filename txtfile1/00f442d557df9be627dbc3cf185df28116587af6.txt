@@ -1,0 +1,52 @@
+74
+
+The 2019 coronavirus disease (COVID-19), declared a pandemic by the WHO on March 11 th , 2020 1 
+
+84
+
+In many countries, despite diagnostic efforts and initial control strategies, SARS-CoV-2 spread 85 went on undetected until a critical number of cases requiring hospitalization and intensive care was 86 reached, alerting the authorities in charge. As for May 4 th 2020, SARS-CoV-2 has infected more than 87 3,578,000 people and caused around 251,000 deaths worldwide 3 . In Mexico, the first case of SARS-CoV-88 2 was detected on February 27 th 2020, corresponding to a person who travelled back to Mexico from Italy, 89 and who was in direct contact with a confirmed SARS-CoV-2 case. Soon after, additional cases were 90 detected among travelers that returned from the USA and Europe, increasing every day. By May 4 th , there 91 were over 23,400 confirmed cases and 2,150 deaths within the country, indicating local transmission 6 .
+
+92
+
+Understanding the introduction, spread and establishment of SARS-CoV-2 within distinct human 93 populations is crucial to implement effective control strategies. In this work, we studied the early 94 introduction dynamics of the first SARS-CoV-2 cases in Mexico. For this, we used a whole genome 95 sequencing and phylogenomic approach. We obtained 17 full viral genome sequences, including the first 96 case detected and sampled within the country. Phylogenomic placement showed that these viruses 97 belong to the A2/G and B/S lineages, two of the three circulating viral lineages reported so far. Our 98 analysis also confirms that there have been multiple independent introduction events in Mexico from 99 travelers abroad. We also found evidence for early local transmission of strains having the mutation H49Y 100 in the Spike protein, that could be further used as a molecular marker to follow viral spread within the 101 country.
+
+104
+
+Ethical statement 105 All clinical samples were processed at the "Instituto de Diagnóstico y Referencia Epidemiológicos" 106 (InDRE), following official procedures 7 . All samples used for this work are considered part of the national 107 response to COVID-19, and the data collected is directly related to disease control. All samples were prepared for RNA extraction, as described 10, 11 . Briefly, centrifuged and filtered 122 supernatants were treated with Turbo DNase and RNAse. Nucleic acids were then extracted using the 123 PureLink™ Viral RNA/DNA Kit (ThermoFisher), following the manufacturer's instructions and using linear 124 acrylamide (Ambion) as RNA carrier. cDNA was synthesized using the SuperScript III Reverse
+
+125
+
+Transcriptase System (ThermoFisher) and primer A (5'-GTTTCCCAGTAGGTCTCN9-3'). The second The reads obtained were used as input to assemble viral genomes using the Wuhan-Hu-1 reference 144 genome sequence (MN908947). For this, the reads obtained for each sample were mapped against the 145 reference using Bowtie2 v2.3.4.3. Aligned reads were then used for de novo assembly using SPAdes v 17 .
+
+146
+
+Consensus genome sequences were generated using the majority threshold criterion. Only sequences 147 with a coverage above 80% and a mean depth of ≥8X were considered for the analyses (SI Table 1 Table 3 ). The 180 subsampled WG alignment was scanned for recombinant sequences using the GARD algorithm 27 in the 181 Datamonkey server 28,29 . A total of 201 sequences, including the Wuhan-Hu-1 reference genome, were 182 used to re-estimate subsampled trees, as described above.
+
+183
+
+Global phylogenetic analysis and shared nucleotide substitution patterns 23 were used to confirm 184 the position of the Mexican sequences based on the consensus clustering patterns observed within the 185 large-scale WG tree, the subsampled WG tree, and the individual large-scale ORF trees, using a 186 bootstrap value >50 for branch support, when possible (SI Table 2 ). In general, we observed consistency 187 within the global tree and our large-scale and subsampled trees, as depicted by a conserved general 188 structure at an internal branch level. Finally, analysis of the phylogenetic relationship between the 189 Mexican and other viral sequences to identify groups of introduction events (IE) and local transmissions 190 (LT) was done based on the following local definition, in which and IE or LT must include: i) one or more common ancestor 30 
+
+224
+
+Consensus clustering patterns observed within the large-scale and subsampled trees (SI Table   225 2), showed eight well-supported independent introduction events (IE1, IE3, IE5, IE7, IE9, IE10, IE12 and 226 IE13; Figure 2 ). For IE2, IE4, IE6 and IE8, we were unable to determine their origins and the immediate 227 phylogenetic relatedness of the Mexican sequences, due to low support values and inconsistent 228 clustering patterns across trees (SI Table 2 ). The current resolution of phylogenomic analyses is limited 229 by the low diversity of the SARS-CoV-2 virus. Thus, for the characterized Mexican viral strains, we could 230 only determine with confidence the geographical origins at a regional level, rather than at country-level 
+
+240
+
+On the other hand, sequences 8, 27, 30 and 31 grouped together, representing a local transmission 241 cluster (LT11) ( Figure 2 ). This observation is supported by phylogenetic consistency within our local trees 242 and the global tree 23 , and a high support value (bs: 100) observed for LT11 in all cases (S1 Table 2 Table 4 and 5). As expected, the majority of these variants 256 were not conserved through the genomes, and only 15 nucleotide changes and 6 amino acid changes 257 were shared by more than one sequence. These results exclude sequences 6, 13 and 16, which showed 258 a considerably lower coverage and depth when compared to the remaining 14 high-quality viral genomes 259 obtained. Thus, most of the variability observed could be explained by errors introduced during reverse 260 transcription, PCR amplification, sequencing or assembly (SI Table 1 
+
+282
+
+Jiangsu/JS02/2020 EPI ISL 411952). The estimated date of emergence for this cluster that eventually 283 died off (stopped circulating and had no more descendants) was of 01/12/2020 (CI:01/08/2020-284 01/16/2020). This mutation was detected again in the Mexican sequences in LT11 (Table 1, Figure 2 ).
+
+285
+
+Since then, the C21707T/H49Y mutation has also appeared independently in three strains from Australia 
+
+299
+
+The generated sequences SARS-CoV-2 from Mexico can be found in GISAID and in Nextstrain 24 . The 300 corresponding GISAID accession numbers are listed in Table 1 . April. The rise in cumulative cases is shown in red, whilst the daily incidence is shown with orange bars.Dates of collection for the samples used in this study are indicted with the black arrows. One arrow might indicate the collection of more than two samples (dates shown in Table 1 ). 
+
+Supplementary Table 2. Clustering patterns for the Mexican samples within the reduced and large-scale WG and individual ORF ML trees.
+
+Supplementary MN908947  T  A  C  C  C  A  C  T  G  A  A  C  C  G  C  T  T  A  C  T  T  G  C  C  C  A  G  A  C  C  C  A  C  A  G  C  C  C  G  T  A  C  C  A  C  C  A  C  T  G  A  A  T  G  C  C  T  G  G  T  G  C  C  G  C  G  G  G  A  G  T   Mexico/CDMX-INER  -.  T Orf8 (8901-9021)   224  889  892 1649 2193 2244  3071  3606  4619  5190  5207  5696  5732  5769  6068 6103 7058 7582  7623  7739  8208  8268 8571  8700  8771  8817  8885  8984  9224  9225  MN908947  T  L  P  A  S  I  F  L  P  E  N  S  P  Y  P  A  H  T  D  S  D  D  K  G  P  G  A  L  R  G  7_Mexico/CDMX-INER_04 . 
+

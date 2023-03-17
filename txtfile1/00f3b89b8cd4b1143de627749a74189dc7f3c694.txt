@@ -1,0 +1,32 @@
+
+
+Introduction events as described above (CNN-LSTM2). Figure 2 shows schematic representations for the model 161 architectures, both of which had three main sections. In section I, a series of 1D convolution layers was 162 used to extract temporal features from each channel separately. Every convolution layer was followed by 163 a batch normalization layer to centralize data distribution and a rectified linear unit (ReLU) to weight the 164 output of past layers. 27 Section II was a recurrent neural network (RNN), consisting of two LSTM layers 23 165 to process spatial features across all eight channels; each LSTM layer contained up to four units with 166 feedback connections. Section III was a fully connected layer and activation function, used to output a value 167 describing the model's confidence that a particular ECG belonged to each class. CNN-LSTM1 was a binary 168 model (i.e., predicted likelihood of survival vs. death), whereas CNN-LSTM2 was a multi-label model 169 (independent likelihoods for all four event types: arrhythmic, heart failure, thromboembolic, or none).
+
+170
+
+In addition to the primary analysis via 10-fold cross validation, a secondary analysis was 171 conducted to evaluate whether the timing of patient intake might affect the predictive power of our AI 172 models. In this case, we trained the models with only ECGs of patients who were admitted between
+
+CVDHJ-D-21-00058 • Revised Manuscript • Sridhar et al.
+
+AI-Based Prediction of Adverse COVID-19 Outcomes from Intake ECGs contained only ECGs of patients who were admitted on or after June 9, 2020. Lastly, to explore the 175 possibility that changing the cohort size might affect model accuracy, we re-ran the entire 10-fold 176 train/validate/test process for CNN-LSTM1 for subsets with 20%, 40%, 60%, or 80% of the population. 177 These were used to construct a learning curve (i.e., model accuracy vs. cohort size), as in prior work. 28
+
+178
+
+Training and testing of CNN-LSTM models was carried out using advanced computational, 179 storage, and networking infrastructure provided by the Hyak supercomputer system of University of 180 Washington. All jobs were run on one standard compute node (32 cores, Intel(R) Xeon(R) Gold 6130 181 CPU @ 2.10GHz, 128 GB RAM).
+
+183
+
+Model performance was evaluated by calculating area under the receiver operator characteristic 184 curves (AUROC), sensitivity and specificity values, as well as confusion matrices for hold-out testing sets 185 in a 10-fold cross validation scheme, as described above. Optimal probability thresholds were determined 186 based on the ROC curves of internal validation sets for each output class:where is a weighted distance from the origin of the coordinate system to a specific point in the ROC 188 curve of validation set, is false positive rate, and is true positive rate. This formulation intentionally 189 weighted sensitivity (i.e., 1 − ) over specificity (i.e., ), since the importance of minimizing false 190 negative rate ( ) was deemed a much higher priority than reducing . Each , pair maps to a for the remaining cases (Supplemental Table 1 prediction (multi-class using CNN-LSTM2 or binary using the conventional model) was more challenging. to achieve a 20% all range between ~75% and ~80%, with little difference between event types). The imperfect performance of our network demonstrates an important aspect of ML applications: 371 explainability. While many DNN architectures allow for identification of specific features predictive of 372 adverse outcomes, we were unable to do so because of the LSTM components included in our DNNs.
+
+373
+
+The CNN models in our study were trained to identify adverse outcomes regardless of the exact changes 374 occurring on the ECG. We believe it is entirely possible that the CNNs could be using any changes 375 encoded in that signal (e.g., heart rate, heart rate variability, QRS width, ST changes, or combinations of 376 these elements) to make predictions about outcomes. In the case of COVID-19, it is possible that the the key drivers of predictive capability, these analyses were deemed beyond the scope of this AI-focused 397 study. Nevertheless, the fact that the predictive accuracy of both conventional models outstripped that of 398 our AI-based methods suggests that future development of mixed-input CNN-LSTMs that analyze both 399 raw ECG and demographic/co-morbidity data might prove useful. prioritize high negative predictive value and our models did achieve that design goal. A deep learning 405 model based on both clinical and ECG data might be able to achieve better accuracy; however, building 406 such a network with heterogeneous inputs is complicated, and to the best of our knowledge, has not 407 been attempted in this field. Notably, while we note that the size of the cohort considered in this study is 408 small compared to many prior AI-based ECG studies, 39,40 our analysis (Supplemental Fig. 1 Flatten 304 -----
+
+Dense (Softmax)
+
+2 -----
+
+558
+
+Supplemental 
+
