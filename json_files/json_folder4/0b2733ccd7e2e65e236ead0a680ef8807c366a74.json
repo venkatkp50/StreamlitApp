@@ -1,0 +1,1439 @@
+{
+    "paper_id": "0b2733ccd7e2e65e236ead0a680ef8807c366a74",
+    "metadata": {
+        "title": "2021 Update on with lattice QCD inputs",
+        "authors": [
+            {
+                "first": "Jeehun",
+                "middle": [],
+                "last": "Kim",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yong-Chull",
+                "middle": [],
+                "last": "Jang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sunkyu",
+                "middle": [],
+                "last": "Lee",
+                "suffix": "",
+                "affiliation": {},
+                "email": "wlee@snu.ac.kr"
+            },
+            {
+                "first": "Weonjong",
+                "middle": [],
+                "last": "Lee",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jaehoon",
+                "middle": [],
+                "last": "Leem",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Chanju",
+                "middle": [],
+                "last": "Park",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sungwoo",
+                "middle": [],
+                "last": "Park",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Jefferson",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We present recent updates for determined directly from the standard model (SM) with lattice QCD inputs such as\u02c6, | |, | |, 0 , 2 , LD , , and . We find that the standard model with exclusive | | and other lattice QCD inputs describes only 66% of the experimental value of | | and does not explain its remaining 34%, which leads to a strong tension in | | at the 4.5 \u223c 3.7 level between the SM theory and experiment. We also find that this tension disappears when we use the inclusive value of | | obtained using the heavy quark expansion based on the QCD sum rule approach.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "This paper is an update of our previous papers [1] [2] [3] [4] [5] [6] . Here, we present recent progress in determination of | | with updated inputs from lattice QCD.",
+            "cite_spans": [
+                {
+                    "start": 47,
+                    "end": 50,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 51,
+                    "end": 54,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 55,
+                    "end": 58,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 59,
+                    "end": 62,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 63,
+                    "end": 66,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 67,
+                    "end": 70,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Here, we follow the color convention of our previous papers [1] [2] [3] [4] [5] [6] in Tables 1-7 . We use the red color for the new input data which is used to evaluate . We use the blue color for the new input data which is not used for some obvious reason. 0 The absorptive part of long distance effects on is parametrized into 0 .",
+            "cite_spans": [
+                {
+                    "start": 60,
+                    "end": 63,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 64,
+                    "end": 67,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 68,
+                    "end": 71,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 72,
+                    "end": 75,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 76,
+                    "end": 79,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 80,
+                    "end": 83,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 260,
+                    "end": 261,
+                    "text": "0",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 87,
+                    "end": 97,
+                    "text": "Tables 1-7",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "There are two independent methods to determine 0 in lattice QCD: the indirect and direct methods. The indirect method is to determine 0 using Eq. (1) with lattice QCD results for 2 combined with experimental results for / , , and . The direct method is to determine 0 directly using the lattice QCD results for Im 0 , combined with experimental results for Re 0 .",
+            "cite_spans": [
+                {
+                    "start": 360,
+                    "end": 361,
+                    "text": "0",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Input parameter"
+        },
+        {
+            "text": "In Table 1 (a), we summarize experimental results for Re 0 and Re 2 . In Table 1 (b), we summarize lattice results for Im 0 and Im 2 calculated by RBC-UKQCD. In Table 1 (c), we summarize results for 0 which is obtained using results in Table 1 (a) and (b).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 10,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 73,
+                    "end": 80,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 161,
+                    "end": 168,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 236,
+                    "end": 243,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Input parameter"
+        },
+        {
+            "text": "Here, we use results of the indirect method for 0 to evaluate , since its systematic and statistical errors are much smaller than those of the direct method.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Input parameter"
+        },
+        {
+            "text": "In Table 2 (a) and (b), we present recent updates for exclusive | | and inclusive | | respectively. In Table 2 (a), we summarize results for exclusive | | obtained by various groups: HFLAV, BELLE, BABAR, FNAL/MILC, LHCb, and FLAG. Results from LHCb comes from analysis on \u2192 * \u2113\u00afdecays which are not available in the -factories. Since the decays modes of have poor statistics, the final results have overall uncertainty much larger than those of by an order of magnitude. Hence, we drop out results of LHCb in this article without loss of fairness. The rest of results for exclusive | | have comparable size of errors and are consistent with one another within 1.0 statistical uncertainty. In addition, it is nice to observe all the results be consistent between the CLN and BGL analysis, after all the boisterous debates [2, 11] .",
+            "cite_spans": [
+                {
+                    "start": 821,
+                    "end": 824,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 825,
+                    "end": 828,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 10,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 103,
+                    "end": 110,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Input parameters: | |"
+        },
+        {
+            "text": "In Table 2 (b), we present recent results for inclusive | |. The HFLAV group has reported the same results for inclusive | | in 2021 as in 2017, while FLAG reported updated results.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 10,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Input parameters: | |"
+        },
+        {
+            "text": "In Table 3 (a), we present the Wolfenstein parameters on the market. As explained in Ref. [2, 6] , we use the results of angle-only-fit (AOF) in Table 3 (a) in order to avoid unwanted correlation between ( , | |), and (\u00af,\u00af). We determine from | | which is obtained from the \u21132 and \u21133 decays using lattice QCD inputs for form factors and decay constants. We determine the parameter from | |. ",
+            "cite_spans": [
+                {
+                    "start": 90,
+                    "end": 93,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 94,
+                    "end": 96,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 10,
+                    "text": "Table 3",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 145,
+                    "end": 152,
+                    "text": "Table 3",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Input parameters: Wolfenstein parameters"
+        },
+        {
+            "text": "In FLAG 2021 [17] , they report lattice QCD results for\u02c6with = 2, = 2 + 1, and = 2 + 1 + 1. Here, we use the results for\u02c6with = 2 + 1, which is obtained by taking an average over the four data points from BMW 11, Laiho 11, RBC-UKQCD 14, and SWME 15 in Table 4 (a).",
+            "cite_spans": [
+                {
+                    "start": 13,
+                    "end": 17,
+                    "text": "[17]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 252,
+                    "end": 259,
+                    "text": "Table 4",
+                    "ref_id": "TABREF6"
+                }
+            ],
+            "section": "Input parameters:\u02c6, LD , and others"
+        },
+        {
+            "text": "The dispersive long distance (LD) effect is defined as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Input parameters:\u02c6, LD , and others"
+        },
+        {
+            "text": "As explained in Refs. [2] , there are two independent methods to estimate LD : one is the BGI estimate [27] , and the other is the RBC-UKQCD estimate [28, 29] . The BGI method is to estimate the size of LD using chiral perturbation theory as follows,",
+            "cite_spans": [
+                {
+                    "start": 22,
+                    "end": 25,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 103,
+                    "end": 107,
+                    "text": "[27]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 150,
+                    "end": 154,
+                    "text": "[28,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 155,
+                    "end": 158,
+                    "text": "29]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Input parameters:\u02c6, LD , and others"
+        },
+        {
+            "text": "The RBC-UKQCD method is to estimate the size of LD as follows, Here, we use both methods to estimate the size of LD . In Table 3 (b), we present higher order QCD corrections: with , = , . A new approach using \u2212 unitarity instead of \u2212 unitarity appeared in Ref. [30] , which is supposed to have a better convergence with respect to the charm quark mass. But we have not incorporated this into our analysis yet, which we will do in near future.",
+            "cite_spans": [
+                {
+                    "start": 261,
+                    "end": 265,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 121,
+                    "end": 128,
+                    "text": "Table 3",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Input parameters:\u02c6, LD , and others"
+        },
+        {
+            "text": "In Table 4 (b), we present other input parameters needed to evaluate .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 10,
+                    "text": "Table 4",
+                    "ref_id": "TABREF6"
+                }
+            ],
+            "section": "Input parameters:\u02c6, LD , and others"
+        },
+        {
+            "text": "In Table 5 , we present the charm quark mass ( ) and top quark mass ( ). From FLAG 2021 [17] , we take the results for ( ) with = 2 + 1, since there is some inconsistency among In Table 6 Fig. (a) , we present the time evolution of top pole mass . Here we find that the average value drifts downward a little bit and the error shrinks fast as time goes on, since LHC has been accumulating high statistics on . The data for 2020 is dropped out intentionally to reflect on the absence of Lattice 2020 due to COVID-19, even though it is available. ",
+            "cite_spans": [
+                {
+                    "start": 88,
+                    "end": 92,
+                    "text": "[17]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 10,
+                    "text": "Table 5",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 180,
+                    "end": 187,
+                    "text": "Table 6",
+                    "ref_id": "TABREF8"
+                },
+                {
+                    "start": 188,
+                    "end": 196,
+                    "text": "Fig. (a)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Quark mass"
+        },
+        {
+            "text": "In Fig. 1 , we show results for | | evaluated directly from the standard model (SM) with lattice QCD inputs given in the previous sections. In Fig. 1 (a) , the blue curve represents the theoretical evaluation of | | obtained using the FLAG-2021 results for\u02c6, AOF for Wolfenstein parameters, the [FNAL/MILC 2021, BGL] results for exclusive | |, results for 0 with the indirect method, and the RBC-UKQCD estimate for LD . The red curve in Fig. 1 represents the experimental results for | |. In Fig. 1 (b) , the blue curve represents the same as in Fig. 1 (a) except for using the 1S scheme results for the inclusive | |. Our results for | | SM and \u0394 are summarized in Table 7 . Here, the superscript SM represents the theoretical expectation value of | | obtained directly from the SM. The superscript Exp represents the experimental value of | | = 2.228(11) \u00d7 10 \u22123 . Results in Table 7 (a) are obtained using the RBC-UKQCD estimate for LD , and those in Table 7 (b) are obtained using the BGI estimate for LD . In Table 7 (a), we find that the theoretical expectation values of | | SM with lattice QCD inputs (with exclusive | |) has 4.54 \u223c 3.68 tension with the experimental value of | | Exp , while there is no tension with inclusive | | (obtained using heavy quark expansion and QCD sum rules).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 9,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 143,
+                    "end": 153,
+                    "text": "Fig. 1 (a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 437,
+                    "end": 443,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 492,
+                    "end": 502,
+                    "text": "Fig. 1 (b)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 546,
+                    "end": 556,
+                    "text": "Fig. 1 (a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 666,
+                    "end": 673,
+                    "text": "Table 7",
+                    "ref_id": "TABREF10"
+                },
+                {
+                    "start": 878,
+                    "end": 885,
+                    "text": "Table 7",
+                    "ref_id": "TABREF10"
+                },
+                {
+                    "start": 954,
+                    "end": 961,
+                    "text": "Table 7",
+                    "ref_id": "TABREF10"
+                },
+                {
+                    "start": 1014,
+                    "end": 1021,
+                    "text": "Table 7",
+                    "ref_id": "TABREF10"
+                }
+            ],
+            "section": "Results for"
+        },
+        {
+            "text": "In Fig. 2 (a) , we show the time evolution of \u0394 starting from 2012 to 2022. In 2012, \u0394 was 2.5 , but now it is 4.5 with exclusive | | (FNAL/MILC 2021, BGL). In Fig. 2 (b) , we show the time evolution of the average \u0394 and the error \u0394 during the period of 2012-2022.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 13,
+                    "text": "Fig. 2 (a)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 160,
+                    "end": 170,
+                    "text": "Fig. 2 (b)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Results for"
+        },
+        {
+            "text": "At present, we find that the largest error (\u2248 45%) in | | SM comes from | |. Hence, it is essential to reduce the error in | | significantly. To achieve this goal, there is an on-going project to extract exclusive | | using the Oktay-Kronfeld (OK) action for the heavy quarks to calculate the form factors for\u00af\u2192 ( * ) \u2113\u00afdecays [32] [33] [34] [35] [36] [37] .",
+            "cite_spans": [
+                {
+                    "start": 327,
+                    "end": 331,
+                    "text": "[32]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 332,
+                    "end": 336,
+                    "text": "[33]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 337,
+                    "end": 341,
+                    "text": "[34]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 342,
+                    "end": 346,
+                    "text": "[35]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 347,
+                    "end": 351,
+                    "text": "[36]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 352,
+                    "end": 356,
+                    "text": "[37]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Results for"
+        },
+        {
+            "text": "A large portion of interesting results for | | SM and \u0394 could not be presented in Table 7 and in Fig. 2 due to lack of space: for example, results for | | SM obtained using exclusive | | (FLAG 2021), results for | | SM obtained using 0 determined by the direct method, and so on. We plan to report them collectively in Ref. [38] . ",
+            "cite_spans": [
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[38]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 82,
+                    "end": 89,
+                    "text": "Table 7",
+                    "ref_id": "TABREF10"
+                },
+                {
+                    "start": 97,
+                    "end": 103,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Results for"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "2019 update of with lattice QCD inputs",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-C",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leem",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PoS",
+            "volume": "2019",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Updated evaluation of in the standard model with lattice QCD inputs",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bailey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Phys. Rev. D98",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Standard Model evaluation of using lattice QCD inputs for\u02c6and",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bailey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-C",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Phys. Rev",
+            "volume": "92",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Update on with lattice QCD inputs",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bailey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PoS",
+            "volume": "2018",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Update on with lattice QCD inputs",
+            "authors": [
+                {
+                    "first": "Y.-C",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "EPJ Web Conf",
+            "volume": "175",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Determination of using lattice QCD inputs",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bailey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-C",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PoS",
+            "volume": "2015",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "\u2192 \u0394 = 3/2 decay amplitude in the continuum limit",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Blum",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Phys. Rev",
+            "volume": "91",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Standard Model Prediction for Direct CP Violation in \u2192 Decay",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Phys. Rev. Lett",
+            "volume": "115",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Direct CP violation and the \u0394 = 1/2 rule in \u2192 decay from the standard model",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Abbott",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Rev. D",
+            "volume": "102",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Semileptonic form factors for \u2192 * \u2113 at nonzero recoil from 2 + 1-flavor lattice QCD",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bazavov",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "21",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Averages of -hadron, -hadron, and -lepton properties as of summer 2016",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Amhis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Eur. Phys. J",
+            "volume": "77",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Averages of b-hadron, c-hadron, and -lepton properties as",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Amhis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Eur. Phys. J. C",
+            "volume": "81",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Measurement of the CKM matrix element | | from",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Waheed",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Extraction of form Factors from a Four-Dimensional Angular Analysis of \u2192 * \u2113 \u2212 \u2113",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Lees",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Phys. Rev. Lett",
+            "volume": "123",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Measurement of | | with 0 \u2192 ( * )\u2212 + decays",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Aa\u0133",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Rev. D",
+            "volume": "101",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "CP violation and the CKM matrix: Assessing the impact of the asymmetric factories",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Charles",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Eur.Phys.J",
+            "volume": "41",
+            "issn": "",
+            "pages": "1--131",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The Unitarity Triangle Fit in the Standard Model and Hadronic Parameters from Lattice QCD: A Reappraisal after the Measurements of Delta m(s) and BR(B -> tau nu(tau))",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bona",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "JHEP",
+            "volume": "",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Private communication with UTfit",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Martinelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "at Next-to-Next-to-Leading Order: The Charm-Top-Quark Contribution",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brod",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gorbahn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Phys.Rev",
+            "volume": "82",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Kaon BSM B-parameters using improved staggered fermions from = 2 + 1 unquenched QCD",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Phys. Rev",
+            "volume": "93",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Domain wall QCD with physical quark masses",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Blum",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Phys. Rev",
+            "volume": "93",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Pseudoscalar decay constants, light-quark masses, and from mixed-action lattice QCD",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Laiho",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Van De Water",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "PoS",
+            "volume": "2011",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Precision computation of the kaon bag parameter",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Durr",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Phys. Lett",
+            "volume": "705",
+            "issn": "",
+            "pages": "477--481",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "On beyond lowest order in the Operator Product Expansion",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Buras",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Guadagnoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Isidori",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Phys.Lett",
+            "volume": "688",
+            "issn": "",
+            "pages": "309--313",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Long distance contribution to the KL-KS mass difference",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Christ",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Phys.Rev",
+            "volume": "88",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Calculating the \u2212 mass difference and to sub-percent accuracy",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Christ",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "PoS",
+            "volume": "2013",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Standard-Model Prediction of with Manifest Quark-Mixing Unitarity",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brod",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gorbahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Stamou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Rev. Lett",
+            "volume": "125",
+            "issn": "17",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Review of Particle Physics",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tanabashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Phys. Rev. D98",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Leptonic decays of ( ) and ( ) using the OK action",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PoS",
+            "volume": "2019",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Semileptonic decays ( ) \u2192 ( * ) ( ) \u2113 form factors using the OK action",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jwa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PoS",
+            "volume": "2019",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Update on \u2192 * \u2113 form factor at zero-recoil using the Oktay-Kronfeld action",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bhattacharya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PoS",
+            "volume": "2018",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Calculation of\u00af\u2192 * \u2113\u00afform factor at zero recoil using the Oktay-Kronfeld action",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bailey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "EPJ Web Conf",
+            "volume": "175",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Improvement of heavy-heavy current for calculation of\u00af\u2192 ( * ) \u2113\u00afform factors using Oktay-Kronfeld heavy quarks",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bailey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-C",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "EPJ Web Conf",
+            "volume": "175",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Improvement of heavy-heavy and heavy-light currents with the Oktay-Kronfeld action",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bailey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-C",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leem",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "| | with (a) exclusive | | (left) and (b) inclusive | | (right) in units of 1.0 \u00d7 10 \u22123 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "RBC-UK \u03be0 FLAGBK updated Vcb UTfit\u03c1,\u03b7, \u03bb updated FK , m K 0 , mt updated Vcb mt, FK , mc (BGL) Vcb indirect \u03be0 mt, AOF \u03bb (a) Time evolution of \u0394 / Time evolution of the average and error of \u0394 Time history of (a) \u0394 / , and (b) \u0394 and \u0394 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Results for 0 obtained using the direct and indirect methods in lattice QCD.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Results for 0 . The p4t1 is an abbreviation forTable 1in page 4. The p31e90 is an abbreviation for Eq. (90) in page 31.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Results for (a) exclusive | | and (b) inclusive | |. The same notation as inTable 1is used.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "(a) Wolfenstein parameters and (b) QCD corrections: with , = , .",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Results for (a) charm quark mass and (b) top quark mass. the lattice results of various groups with = 2 + 1 + 1. For the top quark mass, we use the PDG 2021 results for the pole mass to obtain ( ).",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF10": {
+            "text": "| | in units of 1.0 \u00d7 10 \u22123 , and \u0394 = | | Exp \u2212 | | SM .",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Jon Bailey, Stephen Sharpe, and Rajan Gupta for helpful discussion. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

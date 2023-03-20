@@ -1,0 +1,2790 @@
+{
+    "paper_id": "0b8145f197d689b115d4c102b16788a7219854c0",
+    "metadata": {
+        "title": "Transcriptomic and Lipidomic Analysis of Lipids in Forsythia suspensa",
+        "authors": [
+            {
+                "first": "Bei",
+                "middle": [],
+                "last": "Wu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Second Hospital of Shanxi Medical University",
+                    "location": {
+                        "settlement": "Taiyuan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yinping",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Chinese Academy of Agricultural",
+                    "location": {
+                        "settlement": "Xingcheng",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "\u2020",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Wenjia",
+                "middle": [],
+                "last": "Zhao",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanxi Agricultural University",
+                    "location": {
+                        "settlement": "Taigu",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Zhiqiang",
+                "middle": [],
+                "last": "Meng",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Second Hospital of Shanxi Medical University",
+                    "location": {
+                        "settlement": "Taiyuan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Wen",
+                "middle": [],
+                "last": "Ji",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Second Hospital of Shanxi Medical University",
+                    "location": {
+                        "settlement": "Taiyuan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Chen",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanxi Eye Hospital",
+                    "location": {
+                        "settlement": "Taiyuan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "Forsythia suspensa (Thunb.) Vahl, a plant in the family Oleaceae, is widely planted in East Asia and is a traditional medicinal tree species. It is one of the 40 commonly used medicinal species in China (Sun et al., 2018) . Forsythiae Fructus (FF, called Lianqiao in Chinese) is the dried fruit of F. suspensa, and in traditional Chinese medicine it is thought to have \"heat clearing\" and \"detoxifying\" effects.",
+            "cite_spans": [
+                {
+                    "start": 203,
+                    "end": 221,
+                    "text": "(Sun et al., 2018)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Currently, FF is used as a medical treatment for pyrexia, inflammation, gonorrhea, carbuncles and erysipelas. Due to different harvest times and processing methods, FF can be divided into \"Qingqiao\" and \"Laoqiao\". Clinically, \"Qingqiao\" is used more frequently (Guo et al., 2007; Wu et al., 2019) . At present, 321 chemical components have been isolated from FF, including phenylethanoid glycosides, lignans, flavonoids, terpenes and volatile oils (Dong et al., 2017) . Modern Chinese Medicine studies have found that most of these substances have pharmacological activity (Wang et al., 2018) . Forsythiaside A is a phenylethanoid glycoside and it shows remarkable antiinflammation, antivirus, neuroprotection, antioxidant, hepatoprotection, and antibacterial activity . Forsythin, a lignan substance, mitigates apoptosis and oxidative stress (Du et al., 2020) , has anti-viral and anti-inflammatory activity (Ma et al., 2020) , and improves insulin resistance (Xu et al., 2019) . Rutin is a flavonoid compound with many pharmacological effects, including antioxidant, anti-inflammatory, anti-diabetic, neuroprotective (Chua, 2013) , vascular protection (Stanely and Priya, 2010) , and anti-cancer (Ben et al., 2016) . The volatile oil of FF is a primary activeone of the main pharmacological components and has the effects of antiviral, antibacterial, antioxidant (Jiao et al., 2012) , anti-inflammatory, anti-tumor, acaricidal (Lee and Lee, 2015) . The basis of the heat-clearing effect of FF in Chinese medicine prescriptions is the antiinflammatory and antioxidant properties. The detoxification effect is attributed to its antibacterial, antiviral and anticancer activities (Wang et al., 2018) . Based on this, FF is the main active ingredient in many widely used classic Chinese patent medicine prescriptions, such as Shuanghuanglian injections (Zhou et al., 2011) and Lianhua Qingwen granules (Hu et al., 2021) . Lianhua Qingwen is also recommended for the treatment of COVID 19 (Hu et al., 2021; Liu et al., 2021) . Because FF is widely used, it is necessary to conduct research on this product and its pharmacologically active substances.",
+            "cite_spans": [
+                {
+                    "start": 261,
+                    "end": 279,
+                    "text": "(Guo et al., 2007;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 280,
+                    "end": 296,
+                    "text": "Wu et al., 2019)",
+                    "ref_id": null
+                },
+                {
+                    "start": 448,
+                    "end": 467,
+                    "text": "(Dong et al., 2017)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 573,
+                    "end": 592,
+                    "text": "(Wang et al., 2018)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 843,
+                    "end": 860,
+                    "text": "(Du et al., 2020)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 909,
+                    "end": 926,
+                    "text": "(Ma et al., 2020)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 961,
+                    "end": 978,
+                    "text": "(Xu et al., 2019)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1119,
+                    "end": 1131,
+                    "text": "(Chua, 2013)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1154,
+                    "end": 1179,
+                    "text": "(Stanely and Priya, 2010)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1198,
+                    "end": 1216,
+                    "text": "(Ben et al., 2016)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1365,
+                    "end": 1384,
+                    "text": "(Jiao et al., 2012)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1429,
+                    "end": 1448,
+                    "text": "(Lee and Lee, 2015)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1679,
+                    "end": 1698,
+                    "text": "(Wang et al., 2018)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1851,
+                    "end": 1870,
+                    "text": "(Zhou et al., 2011)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1900,
+                    "end": 1917,
+                    "text": "(Hu et al., 2021)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1986,
+                    "end": 2003,
+                    "text": "(Hu et al., 2021;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 2004,
+                    "end": 2021,
+                    "text": "Liu et al., 2021)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "The pharmacologically active substances in FF are secondary metabolites. Plant growth, development and reproduction are achieved through material metabolism. Secondary metabolism produces compounds that are often involved in ecological interactions and include pigments, scents, and antibiotics. Secondary metabolites are used in medicine, food, dyes, and agriculture (Srivastava and Srivastava, 2007) . Plant-derived medicinal secondary metabolites are mainly obtained by direct extraction from plants. However, to produce such compounds on a large scale would require medicinal crops to be grown extensively and most are currently not well suited to production agriculture. Also, the content of medicinal secondary metabolites in plants is low and extraction and separation are difficult. New production methods are being adopted, including extraction from plant tissue cell culture and the use of microbial cell factories for production (Jiang et al., 2021) . The use of artificial microbial cell factories is considered feasible, and this approach has been used for the antimalarial drug artemisinin (Ro et al., 2006) , the analgesic drug morphine (Thodey et al., 2014) , the antitumor drug paclitaxel (Chen et al., 2019) , the cardiovascular disease drug tanshinone (Yadav et al., 2020) , and other aromatic secondary products. Efficient synthesis of metabolites is an important prerequisite for constructing a microbial cell factory for the secondary metabolites of FF and realizing efficient utilization of FF. The biosynthetic pathway analysis of secondary metabolites is an important prerequisite to improved production methods. Jiao et al. (2013) found that the oil yield of FF's seeds is about 30% and showed that FF seeds have great potential as a biodiesel raw material resource. FF's contain volatile oils, flavonols, anthocyanins, \u03b2-pinene and other compounds. The synthesis and metabolism of secondary metabolites are mostly related to lipids. Abscisic acid (ABA) is insoluble in water. As a plant hormone, it has physiological functions that include causing bud dormancy, leaf shedding, and inhibiting cell growth, and ABA can promote flavonoid metabolism. Lipid metabolism is a key process in energy homeostasis, carbon storage, membrane structure, cell signaling, transcription and translation regulation, and cell and protein interactions (Chapman and Feussner, 2016) . Therefore, lipids play an important role in plant growth, development, and reproduction (Chapman and Feussner, 2016) . Lipids are unique and functionally specific compared to other metabolites. Therefore, lipid composition and abundance can be used to monitor changes in plants over time and their response to specific stimuli. The lipid components of FF have not been fully studied. Because of the importance of these compounds, a comprehensive analysis and comparison of them in FF is needed. Clarifying the biosynthetic pathways and regulation methods of secondary metabolites in FF will be useful for stabilizing and improving this important product. The content of secondary metabolites, the improvement of the quality of medicinal materials, and the biological preparation technology of secondary metabolites are of great significance. Lipidomics deals with lipids and lipid interactions in biological systems. Lipidomic analysis methods include chromatography, nuclear magnetic resonance spectroscopy, and mass spectrometry-based analysis methods. Liquid chromatographymass spectrometry is currently the most widely used method for lipidomics research. Chromatography mass spectrometry uses the separation ability of chromatography and the high sensitivity of mass spectrometry to achieve in-depth analysis of lipids (Xu et al., 2020) . To identify and quantify all lipid components in FF and systematically analyze the lipid composition and expression changes in the growth process of FF, the present study applied high-resolution liquid phase tandem mass spectrometry technology for lipidomic analysis.",
+            "cite_spans": [
+                {
+                    "start": 368,
+                    "end": 401,
+                    "text": "(Srivastava and Srivastava, 2007)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 940,
+                    "end": 960,
+                    "text": "(Jiang et al., 2021)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1104,
+                    "end": 1121,
+                    "text": "(Ro et al., 2006)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1152,
+                    "end": 1173,
+                    "text": "(Thodey et al., 2014)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1206,
+                    "end": 1225,
+                    "text": "(Chen et al., 2019)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1271,
+                    "end": 1291,
+                    "text": "(Yadav et al., 2020)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1638,
+                    "end": 1656,
+                    "text": "Jiao et al. (2013)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 2359,
+                    "end": 2387,
+                    "text": "(Chapman and Feussner, 2016)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 2478,
+                    "end": 2506,
+                    "text": "(Chapman and Feussner, 2016)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 3714,
+                    "end": 3731,
+                    "text": "(Xu et al., 2020)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "The syntheses of secondary metabolites requires the participation of various metabolic pathways, and is regulated by gene expression. High-throughput transcriptome sequencing analysis can reflect the gene expression of cells, tissues, or organisms over time and can identify candidate genes related to the metabolism of active substances. This analysis method provides gene regulation clues for the biosynthetic analysis of FF secondary metabolites. This study makes use of transcriptomics and lipidomics methods to 1) determine the lipid composition of FF over time during normal growth, and 2) screen candidate genes related to the synthesis of lipid secondary metabolites. Results can provide a reference for increasing the content of secondary metabolites in FF, breeding high-quality FF varieties, and realizing large-scale production of secondary metabolites.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "FF was harvested in May and July 2021 in Taiyuan, Shanxi (112\u00b033\u2032E, 37\u00b054\u2032N, elevation 800 m, Figure 1 ). Normal plants were selected. Three to five fruits were taken from the same plant, frozen in liquid nitrogen for 120 min immediately after harvesting, and stored in an ultra-low temperature refrigerator at \u221280\u00b0C. The samples were similar in size and were identified by Jinping Luo, Chief Pharmacist of the Institute of Pharmaceutical Inspection Technology, Shanxi Provincial Inspection and Testing Center. The specimens were stored in the ultra-low temperature refrigerator at \u221280\u00b0C in the laboratory of the Department of Pharmacy, Second Hospital of Shanxi Medical University. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 94,
+                    "end": 102,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Plant Material and Treatments"
+        },
+        {
+            "text": "FF picked in May were designated as group A and those picked in July were designated as group B. Three samples of each group of the same size were selected. The sample is ground into powder with liquid nitrogen. A sample of 50 mg each were weighed, 200 \u03bcL of water was added, and the samples vortexed for 30 s. Steel beads were added, and the samples were ground at 1000 rpm for 12 min, then sonicated for 15 min in an ice water bath. Next, 480 \u03bcL of extraction solution (methyl tert-butyl ether: methanol 5:1) was added, the samples vortexed for 30 s, sonicated for 10min in an ice-water bath, and allowed to stand for 1 hour at minus 20\u00b0C. The samples then were centrifuged at 10,000 rpm for 15 min at 4\u00b0C. A supernatant alloquot of 380 \u03bcL was removed, dried under vacuum, and 200 \u03bcL of 1:1methylene chloride: methanol was added for re-solubilization, the solution vortexed for 30 s, and sonicated for 10 min in an icewater bath. The samples were centrifuged at 13,000 rpm for 15 min at 4\u00b0C. From each sample, 180 \u03bcL of supernatant wasremoved and mixed into a quality control sample by taking 10 \u03bcL of each sample.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sample Preparation and Extraction"
+        },
+        {
+            "text": "The sample extracts were analyzed using a UPLC Acquity I-Class PLUS column (Waters). The UPLC column analytical conditions were as follows. Waters Acquity UPLC CSH C18 (1.7 \u03bcm, 2.1 mm, 100 mm); injection volume 5 \u03bcL; temperature 55\u00b0C; flow rate 400 \u03bcL/min; mobile phase A 60% acetonitrile aqueous solution, 10 mM ammonium acetate, 0.1% formic acid; mobile phase B 90% isopropanol acetonitrile solution, 10 mM ammonium acetate, 0.1% formic acid, 10 mM ammonium acetate, 0.1% formic acid. Gradient elution parameters: 0.0-2.0 min, 60-57% A, 40-43% B; 2.1-12.0 min, 50-46% A, 50-54% B; 12.1-18.0 min, 30-1% A, 70-99% B; 18.1-20.0 min, 60% A, 40% B.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Chromatographic Conditions"
+        },
+        {
+            "text": "After UHPLC separation, mass spectrometry was performed with a UPLC Xevo G2-XS QT of (Waters) with electrospray ionization (ESI) positive and negative ion mode detection. ESI ion source parameters were as follows: capillary voltage 2000 V (positive ion mode) or \u22121500 V (negative ion mode); cone hole voltage: 30 V; ion source temperature: 120\u00b0C; dissolvent gas temperature 550\u00b0C; backblast gas flow rate: 50 L/h; dissolvent gas flow rate: 900 L/h. The MSe flow rate was controlled by MassLynx V4.2 (Waters). Primary and secondary mass spectrometry data acquisition was performed using MSe mode under MassLynx V4.2 (Waters) control. In each data acquisition cycle, dual-channel data acquisition was performed simultaneously for low and high collision energies. The low collision energywas 2 V, and the high collision energy range was 10-40 V. The scan frequency was 0.2 s for one mass spectrometry map.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mass Spectrometry Conditions"
+        },
+        {
+            "text": "Lipid molecules were identified by referring to the LIPID MAPS (http://www.lipidmaps.org/) and Lipid Bank (http://www. lipidbank.jp/) lipid databases, combined with data on retention times of chromatograms in positive and negative ion modes, primary mass spectra and secondary mass spectra. The statistical method of orthogonal partial least squaresdiscriminant analysis (OPLS-DA) was used to analyze nonorthogonal and orthogonal variables separately to obtain more reliable intergroup differences in lipids concerning the degree of correlation between experimental groups information. OPLS-DA model calculations were performed mainly using the R (3.3.2) package ropls. The prediction parameters of the evaluation model are R2X, R2Y, and Q2, where R2X and R2Y indicate the explanation rate of the built model for X and Y matrices, respectively, where the X matrix is the model input, i.e. the lipid quantification matrix, and the Y matrix is the model output, i.e., the sample grouping matrix, and Q2 indicates the prediction ability of the model, i.e., whether the built model can distinguish the correct sample grouping by metabolic expressions. The closer R2Y and Q2 are to 1, the more stable and reliable is the model for screening differential lipids. In general, a model with Q2 > 0.5 can be considered valid, and a model with Q2 > 0.9 is an excellent model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lipid Identification and Quantification"
+        },
+        {
+            "text": "The lipidomics data were analyzed for lipid fraction differences mainly by clustering heat map analysis and difference multiplier analysis. Differential lipids were screened by combining the difference multiples, p-value of a t-test, and VIP value of the OPLS-DA model. The screening criteria were Fold Change (FC) > 2, p-value < 0.05 and VIP >1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lipid Identification and Quantification"
+        },
+        {
+            "text": "Forsythiae Fructus were sampled for transcriptome sequencing experiments. Sequencing libraries were generated using NEBNext \u00ae Ultra \u2122 RNA Library Prep Kit for Illumina \u00ae (NEB, United States) following the manufacturer's recommendations and index codes were added to attribute sequences to each sample. The mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was done using divalent cations under elevated temperature in NEBNext First Strand Synthesis Reaction Buffer (5X). First strand cDNA was synthesized using random hexamerprimer and M-MuLV Reverse transcriptase. Second strand cDNA synthesis was subsequently performed using DNA polymerase I and rnase H. Fragments of cDNA 240bp in lengthpreferentially selected. The clustering of the index-coded samples was performed on a cBotCluster Generation System using the TruSeq PE Cluster Kit v3-cBot-HS (Illumia). The library preparations were sequenced on an Illumina Hiseq (6,000 platform and paired-end reads were generated. About 6 GB of raw data from each sample were sequenced. Clean data were obtained by removing reads containing the adapter, reads containing ploy-N, and low quality reads from raw data. Clean data analysis was performed using Trinity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "RNA Extraction, Sequencing, and de novo Assembly"
+        },
+        {
+            "text": "Gene function was annotated based on the following databases: NR (NCBI nonredundant protein sequences), Pfam (Protein family), KOG/COG (Clusters of Orthologous Groups of Proteins), eggNOG (evolutionary genealogy of genes: Non-supervised Orthologous Groups), Swiss-Prot (a manually annotated and reviewed protein sequence database), KEGG (Kyoto Encyclopedia of Genes and Genomes), and GO (Gene Ontology). Picard -tools v1. 41 and samtools v0. 1.18 were used to sort, remove duplicated reads and merge the bam alignment results of each sample. Gene expression levels were estimated by RSEM for each sample. Fragments per kilobase of transcript per million mapped reads (FPKM) were used to indicate the abundance of expression of the corresponding unigene.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Gene Annotation and Analysis of Differential Genes"
+        },
+        {
+            "text": "Differential expression analysis of two conditions/groups was performed using the DESeq R package (1.10.1). DESeq provides statistical routines for determining differential expression in digital gene expression data using a model based on the negative binomial distribution. The resulting p-values were adjusted using the Benjamini and Hochberg's approach for controlling the false discovery rate (FDR). The p-value was adjusted using the q-value, which was set as the threshold for significantly differential expression. The differentially expressed genes (FDR < 0.01, FC > 2) were analyzed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Gene Annotation and Analysis of Differential Genes"
+        },
+        {
+            "text": "GO enrichment analysis of the differentially expressed genes (DEGs) was implemented by the top GO R packages-based Kolmogorov-Smirnov test. We used KOBAS software to test the statistical enrichment of differentially expressed genes in KEGG pathways.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Gene Annotation and Analysis of Differential Genes"
+        },
+        {
+            "text": "The lipidome and transcriptome data of FF were fitted to analyze the regulation mechanism of lipid secondary metabolite synthesis, and candidate genes that affect the synthesis pathway were screened. According to reports, the pharmacologically active lipid secondary metabolites in FF are mainly flavonoids and terpenes. The presentstudy focuses on the analysis of these two types of compounds.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Gene Annotation and Analysis of Differential Genes"
+        },
+        {
+            "text": "Before the formal UHPLC-Q-Tof-MS experiment, the base peak chromatogram of the quality control sample was compared for spectral overlap. The peak response intensities and retention times of the samples overlapped, indicating the experimental instrument has excellent stability and reproducibility ( Figure 2) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 299,
+                    "end": 308,
+                    "text": "Figure 2)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Data Quality Evaluation"
+        },
+        {
+            "text": "Transcriptomics experiments were grouped in the same way as lipidomics experiments. The Spearman's rank correlation coefficient (r) was used as an index to assess the correlation between sample groups in the transcriptomics experiments. When r 2 is closer to 1, a strong correlation between the two samples is indicated. The intra-group sample correlation r 2 > 0.7 is shown in the attached Supplementary Figure S1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 405,
+                    "end": 414,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Data Quality Evaluation"
+        },
+        {
+            "text": "According to the LMSD (LIPID MAPS Structure database, http:// www.lipidmaps.org/data/structure) database classification, 8categories, 66 main classes, 257 lipid subclasses, and 5,802 lipid molecules were detected in FF ( Figure 3) . Glycerolipids (GL) were the most abundant, with 6 main classes and 640 lipids. GLaccounted for about 29.55 and 31.70% of the lipids in group A and B,respectively. Between the two sampling dates, the content of triacylglycerol increased significantly, and the ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 221,
+                    "end": 230,
+                    "text": "Figure 3)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Lipid Composition and Content"
+        },
+        {
+            "text": "The results of the orthogonal partial least-squares discriminant analysis (OPLS-DA) of differences grouping scores for each group are shown in Supplementary Figure S2 . Among the two groups (A and B) of samples harvested at different periods, significant differences were considered according to the difference multiplier FC > 2 or FC < 0.5, p-value < 0.05 in the t-test, and VIP >1 in the OPLS-DA model, which in turn screened for variation differential lipids. A total of 139 lipid molecules were significantly different, accounting for 2.40% of the total number of lipids of which 87 (1.50%) had upregulated expression levels ( Figure 4) . FF sampled in May and July had significant differences in the content of phospholipids, fatty acids, glycerolipids, sphingolipids, and sterol lipids. The contents of 38 types of FA were significantly changed, and 27 types (71.05%) were upregulated representing ten subgroups ( Figure 4D ). Wax monolipids, branched chain fatty acids, prostaglandins, fatty alcohols and hydroxy fatty acids all increased significantly, while rhamnolipids, lactones, and some prostaglandins decreased significantly. The contents of 29 type of GP increased representing seven subgroups, and 17 types (58.62%) were upregulated. The content of GP such as glycerophosphatidylcholine, glycerophosphoglycerol, and glycerophosphoethanolamine increased, while glycerophosphoglycerol and glycerophosphoinositol significantly decreased. The contents of 19 types SP Frontiers in Genetics | www.frontiersin.org",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 157,
+                    "end": 166,
+                    "text": "Figure S2",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 631,
+                    "end": 640,
+                    "text": "Figure 4)",
+                    "ref_id": null
+                },
+                {
+                    "start": 920,
+                    "end": 929,
+                    "text": "Figure 4D",
+                    "ref_id": null
+                }
+            ],
+            "section": "Differential Lipid Composition"
+        },
+        {
+            "text": "October 2021 | Volume 12 | Article 758326 5 significantly changed, and 11 types (57.89%) were upregulated representing four subgroups. Ceramide increased, and neutral glycosphingolipid substances both increased and decreased. The contents of 15 types of GL significantly changed, and 12 types (80.00%) were upregulated representing four subclasses. The diacylglycerols and triacylglycerols were the largest subgroups and their content increased from May to July. The monoalkylglycerol subgroup content decreased significantly. The contents of 15 types of ST were significantly changed, and six types (40.00%) representing four subgroups were upregulated. There are mainly sterols present. There were only two different glycolipid components, and the content of the two acyltlehaloses decreased significantly.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Differential Lipid Composition"
+        },
+        {
+            "text": "PR and PK are the pharmacologically active lipid components of FF. The contents of 12 types of PK were significantly changed, and seven types (58.33%) representing three subclasses were upregulated. Among the PK, chalcone and dihydroxychalcone increased significantly, and flavonoids and flavonols either increased or decreased. The content of nine type PR changed significantly, and they represented three subgroups. Isoprenoids accounted for the main components, mactraxanthin 3-(5Z, 8Z, 11Z, 14Z, 17Z-eicosapentaenoate) 3\u2032-palmitoleate (tetraterpene) and (-)-5-adianene (triterpene) increased, whereas curmadione, (+)-18-hydroxy-7,16sacculatadiene-11,12-dial, 17\u03b2,21\u03b2-epoxy-16\u03b1-ethoxyhopan-3\u03b2-ol, 3-O-acetyl-11-keto-\u03b2-boswellic acid and bisdehydro\u03b2-carotene/tetradehydro-\u03b2-carotene decreased.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Differential Lipid Composition"
+        },
+        {
+            "text": "RNA sequencing-based transcriptome profiling was performed for the FF samples. The minimum ratio of clean data to raw reads was 93.71%. A total of 92,294 single genes with an average length of 787.75 bp and an N50 value of 1,394 bp were botained, of which 20,317 were more than 1 kb in length.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "RNA Sequencing"
+        },
+        {
+            "text": "The functional annotation of Forsythia unigenes was done using eight databases, including COG, GO, KO, Pfam, Wiss-Prot, eggNOG, NR. The annotation results of 7, 202, 25, 296, 20, 193, 16, 213, 19, 865, 19, 944, 26, 079, 31 ,859 unigenes were obtained respectively, with a total of 32,459 items ( Figure 5) . Of the total unigenes identified, 3,810 of them had hits in all eight databases. FIGURE 4 | Analysis of differential lipid molecules in FF from May and July sampling dates. Characteristics of differential lipid molecules of FF in ESI-positive (A) and ESI-negative (B) ion modes. The dots represent lipid molecules, among which the blue (down regulated) and red dots (up regulated) that satisfied FC < 0.5, FC > 2, and p < 0.05 indicating significant differences between the two sample dates (C) Hierarchical and clustering analysis (D) Representation of significantly different lipid distributions at different stages. Each dot represents a lipid, and the larger the dot, the greater the difference in lipids across sampling dates. Log2FC is the logarithmic value of the lipid content of the two groups. Log2FC > 0 means that the lipid content increased from the May to July sample, and Log2FC < 0 means that the lipid content decreased in from the May to July sample.",
+            "cite_spans": [
+                {
+                    "start": 158,
+                    "end": 160,
+                    "text": "7,",
+                    "ref_id": null
+                },
+                {
+                    "start": 161,
+                    "end": 165,
+                    "text": "202,",
+                    "ref_id": null
+                },
+                {
+                    "start": 166,
+                    "end": 169,
+                    "text": "25,",
+                    "ref_id": null
+                },
+                {
+                    "start": 170,
+                    "end": 174,
+                    "text": "296,",
+                    "ref_id": null
+                },
+                {
+                    "start": 175,
+                    "end": 178,
+                    "text": "20,",
+                    "ref_id": null
+                },
+                {
+                    "start": 179,
+                    "end": 183,
+                    "text": "193,",
+                    "ref_id": null
+                },
+                {
+                    "start": 184,
+                    "end": 187,
+                    "text": "16,",
+                    "ref_id": null
+                },
+                {
+                    "start": 188,
+                    "end": 192,
+                    "text": "213,",
+                    "ref_id": null
+                },
+                {
+                    "start": 193,
+                    "end": 196,
+                    "text": "19,",
+                    "ref_id": null
+                },
+                {
+                    "start": 197,
+                    "end": 201,
+                    "text": "865,",
+                    "ref_id": null
+                },
+                {
+                    "start": 202,
+                    "end": 205,
+                    "text": "19,",
+                    "ref_id": null
+                },
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "944,",
+                    "ref_id": null
+                },
+                {
+                    "start": 211,
+                    "end": 214,
+                    "text": "26,",
+                    "ref_id": null
+                },
+                {
+                    "start": 215,
+                    "end": 219,
+                    "text": "079,",
+                    "ref_id": null
+                },
+                {
+                    "start": 220,
+                    "end": 222,
+                    "text": "31",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 296,
+                    "end": 305,
+                    "text": "Figure 5)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Functional Annotation and Classification"
+        },
+        {
+            "text": "Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Functional Annotation and Classification"
+        },
+        {
+            "text": "The sequences were assigned with GO terms based on annotation. Assignment of 25,296 unigenes fell into three GO categories, biological process, molecular function and cellular components. In the KEGG enrichment, 20,193 unigenes were assigned to 136 KEGG pathways. Plantpathogen interaction (ID: Ko04626), plant hormone signal transduction (ID: Ko04075) and carbon metabolism (ID: Ko01200) were the top 3 pathways with the most assigned unigenes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Functional Annotation and Classification"
+        },
+        {
+            "text": "The results of DEGs expression analysis based on mean FPKM showed that 1,533 DEGs were differentially expressed of which 45.27% were upregulated. The degree of difference in gene expression levels between the two groups of samples differed significantly ( Figure 6 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 256,
+                    "end": 264,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Clustering of Differentially Expressed Gene"
+        },
+        {
+            "text": "In the cluster of orthologous (COG) functions, there are 497 DEGs ( Figure 7A ). Among them, 72 DEGs were related to secondary metabolite biosynthesis, transportation, decomposition and metabolism. Compared with other functions, the number of differential genes in this group was the largest. The number of differential genes related to carbohydrate transport and metabolism was 67, and the number relating to lipid transport and metabolism was 64 ( Figure 7A) . Some genes may act in multiple functions. There are three DEGs (0.8%) each involved in four functions; 13 DEGs (2.6%) each involved in three functions; 71 DEGs (14.9%) each involved in two functions and for the remainder (81.7%) each gene had a single function. Among the unigene annotated by GO, 1,289 were significantly differentially expressed, accounting for 5.10%, and the detailed classification is presented in Figure 7B . DEGs were enriched in the biological process module in DNA replication initiation and fatty acid biosynthetic process. In the cellular component module, DEGs were enriched in nucleus, extracellular region, host cell nucleus, among others. In the molecular function module, DEGs were enriched in DNA binding, metal ion binding, heme binding, among others.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 68,
+                    "end": 77,
+                    "text": "Figure 7A",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 450,
+                    "end": 460,
+                    "text": "Figure 7A)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 881,
+                    "end": 890,
+                    "text": "Figure 7B",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Clustering of Differentially Expressed Gene"
+        },
+        {
+            "text": "After enriching the differentially expressed genes with the KEGG pathway, 551 differential genes were identified related to 119 pathways ( Figure 7C ). According to the ranking of the DEGs enrichment ratios, among the top 50 pathways 67.3% regulate material metabolism. The plant hormone signal transduction pathway enriched DEGs the most genes, 44 representing 8.0% of the total. The enrichment of DEGs in the phenylpropane biosynthesis pathway were second. The gene c74197. graph_c0 (0.2%) participates in the regulation of ten pathways simultaneously and the log2FC was 1.2, FIGURE 5 | Gene annotations in different databases. The X-axis is the database name. The Y-axis is the number of genes annotated. Unigenes length\u22651000 bp represented in green, unigenes of length 300 bp to 1000 bp represented in red, and unigenes of length \u2264300 bp in blue. indicating the gene was upregulated. These include carbon metabolism (Ko01200), citrate cycle (TCA cycle) (Ko00020), glycine, serine and threonine metabolism (Ko00260), glycolysis/gluconeogenesis (Ko00010), glyoxylate and dicarboxylate metabolism (Ko00630), lysine degradation (Ko00310), propanoate metabolism (Ko00640), pyruvate metabolism (Ko00620), tryptophan metabolism (Ko00380) and valine, leucine and isoleucine degradation (Ko00280). The gene c77282. graph_c0 (0.2%) is involved in the regulation of seven pathways simultaneously and the log2FC was 8.0, indicating the gene was upregulated. Both of these two DEGs are involved in the regulation of primary metabolism. Other upregulated genes participated in more than one pathway simultaneously, including seven DEGs (1.3%) with each participating in six pathways, 14 DEGs (2.5%) with each participating in 5 pathways; 3.6% of the total DEGs participating in four pathways, 9.1% of the DEGs participating in 3 pathways, 10.2% of the DEGs participating in 2 pathways, and the remainder (72.9%) participating in a single pathway.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 139,
+                    "end": 148,
+                    "text": "Figure 7C",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Clustering of Differentially Expressed Gene"
+        },
+        {
+            "text": "In the KO database annotation, there were 36 differential genes related to terpenoid metabolism ( Figures 8A, 9A) , including the terpenoid skeleton biosynthesis pathway (Ko00900), monoterpenes (Ko00902), sesquiterpenes and triterpenes (Ko00909), diterpenes (Ko00904), and other terpenes (Ko00130). There were five pathways in total. Isoprene is produced by the mevalonate (MVA) and methyl erythritol phosphate (MEP) pathways in the terpene backbone biosynthesis pathway (Ko00900), and 9 DEGs were involved in regulation of these. The MVA pathway starts from 2 acetyl CoA which is catalyzed by AACT and HMGS to obtain 3hydroxy-3-methylglutaryl CoA. This substance is catalyzed by 3hydroxy-3-methylglutaryl-CoA reductase (HMGR, EC: 1.1.1.34) to Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326 9 produce MVA, which undergoes phosphorylation and decarboxylation to produce Isopentenyl-PP (IPP). HMGR is upregulated during plant growth and promotes the formation of terpenoid skeletons through the MVA pathway. The MEP pathway, which starts with a condensation reaction between pyruvate and glyceraldehyde-3-phosphate followed by a condensation reaction catalyzed by 1-deosy-d-xylulose-5-phosphate synthase (EC:2.2.1.7), generates 1-deoxy-d-xylulose-5-phosphate, 2-C-methyl-d- Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326 10 (FPP) under the catalysis of EC: 2.5.1.10. FPP will form geranyl geranyl-PP (GGPP) under the catalysis of EC: 2.5.1.29 with another IPP. IPP, DMAPP, FPP, GPP, GGPP, and other substances are the starting materials to produce terpenoids with different structures and are the backbone of terpenoids. GPP is the precursor of monoterpenes and enters the monoterpenoid biosynthetic pathway (Ko00902). FPP is the precursor of sesquiterpenes and triterpenes and enters the sesquiterpene and triterpenoid biosynthesis pathway (Ko00909). GGPP is a diterpene. The precursors of tetraterpene and tetraterpene enter the diterpene biosynthesis pathway (Ko00904) and the carotenoid biosynthesis pathway (Ko00906), respectively. Gibberellins (GAs) are diterpenoids, and there are five genes involved in their synthesis in the Ko00904 pathway. GGPP is regulated by the gene ent-copayl diphosphate synthase (CPS, EC: 5.5.1.13) in the plastid to generate entcopalyl-PP, and its expression was downregulated and then regulated by the gene ent-kaurene synthase (KS, EC: 4.2.3.19) to generate ent-Kaur-16-ene. KS expression was upregulated. Ent-Kaur-16-ene undergoes a multi-step enzymatic reaction in the endoplasmic reticulum to generate GA12-aldehyde. GA12aldehyde is regulated by different genes to generate GAs. GA 12 produces GA 24 and GA 9 under the regulation of EC: 1.14.11.12, GA 9 produces GA 4 under the regulation of EC: 1.14.11.15, and GA 4 is regulated by the gene EC: 1.14.11.13 to synthesize GA 34 . Among the GAs on FF, the content of GA 36 was the highest, and it is metabolized by two pathways, GA 24 and GA 37 , and can generate GA 4 under the action of P450 enzymes. GA 8 and GA 8 -catabolite are metabolites of GA 1 , and EC: 1.14.11.13 are genes that regulate the metabolism of active GAs. In the Ko00906 pathway, GGPP generates carotene, lutein, and other tetraterpenoids through a series of complex regulatory reactions. Carotene and lutein can absorb light energy and participate in photosynthesis and abscisic acid is a signal of seed maturation and stress resistance. Hormones are synthesized via carotenoid metabolism. Differential genes EC:1.14.14.137, EC:1.13.11.51 and EC: 1.1.1.288 are involved in the regulation of abscisic acid metabolism (Figure 8) .",
+            "cite_spans": [
+                {
+                    "start": 2440,
+                    "end": 2444,
+                    "text": "(KS,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2445,
+                    "end": 2458,
+                    "text": "EC: 4.2.3.19)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 98,
+                    "end": 113,
+                    "text": "Figures 8A, 9A)",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 3653,
+                    "end": 3663,
+                    "text": "(Figure 8)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Prediction of Candidate Genes Involved in Material Metabolism"
+        },
+        {
+            "text": "Flavonoid synthesis of secondary metabolites ( Figure 8B ) begins with d-erythrose 4-phosphate (E4P) and phosphoenolpyruvate (PEP). E4P comes from the pentose phosphate pathway and PEP comes from the glycolysis pathway. The two undergo a four-step enzymatic reaction to generate shikimate acid (SA) which is catalyzed by shikimate kinase (AroK/AroL), 5-enolpyruvate shikimate-3phosphate synthase (AroA), and chorismate synthase (AroC) to generate chorismate (CHA). CHA is a branch point, l-phenylalanine (L-Phe), l-tyrosine (L-Tyr), l-tryptophan (l-tryptophan, L-Trp) of the aromatic amino acids participate in different branch pathways. PheA catalyzes the production of phenylpyruvate, which is catalyzed by amino acid transaminase to obtain L-Phe. TyrA catalyzes the conversion of pre-benzoic acid to 4-hydroxyphenylpyruvate, which is then catalyzed by transaminase to obtain L-Tyr. The synthesis pathway of tryptophan is more complicated, starting with chorismate, and generating L-Trp under the catalysis of TrpEG, TrpD, TrpF, TrpC, TrpA and TrpB. l-phenylalanine is produced by the action of phenylalanine lyase, hydroxylase, and CoA ligase to produce 4-coumayl-CoA, which is produced by chalcone synthase (CHI) and flavanone 3-hydroxylase (F3H) to form dihydroflavonoids. Dihydroflavonols are important precursors of other flavonoids. They are catalyzed by flavonol synthase (FLS), dihydroflavonol 4reductase (DFR), and anthocyanidin synthase (ANS). The flavonols, anthocyanins, and flavonoids are produced separately. These three substances undergo methylation, glycosylation and acylation modification to form flavonoids with Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326 diverse structures. Five DEGs annotated with the phenylalanine acid metabolism pathway (Ko00360) were all down-regulated ( Figure  9B ). Phenylalanine ammonia-lyase (PAL, EC: 4.3.1.24), functional aspartate aminotransferase and glutamate/aspartate-prephenate aminotransferase (PAT/AAT, EC: 2.6.1.1) and aromatic-l-aminoacid/L-tryptophan decarboxylase (EC: 4.1.1.28) inhibit the conversion and metabolism of phenylalanine, respectively, and inhibit its conversion to cinnamate, phenylpyruvate and phenethylamine. There are eight genes associated with enrichment in the tyrosine metabolism pathway (Ko00350). These genes ( ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 47,
+                    "end": 56,
+                    "text": "Figure 8B",
+                    "ref_id": null
+                },
+                {
+                    "start": 1843,
+                    "end": 1853,
+                    "text": "Figure  9B",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Prediction of Candidate Genes Involved in Material Metabolism"
+        },
+        {
+            "text": "In the present study, the lipid composition of FF was systematically determined using liquid-phase mass spectrometry. For the first time, it was determined that the FF contains 5,802 lipids and that the content of lipid components with pharmacological activity was relatively low. Comparing the lipid changes of FF during the two growth periods in May and July, the content of 139 lipid types changed significantly. Different lipid secondary metabolites are mainly concentrated in pregnenolones and polyvinyls, among which the content of chalcone, dihydrolone, flavanone, flavonol and mactraxanthin 3-(5Z,8Z,11Z,14Z, 17Z-eicosapentaenoate) 3\u2032-palmitoleate increased, while the content of afzelechin 7-O-\u03b2-dapiofuranoside, 4\u03b2-(2,4-dihydroxy-3-methoxyphenyl) fisetinidol, and others decreased. Transcriptome analysis of FF detected 92,294 unigenes and 1,533 DEGs. There were 551 DEGs in the KO annotation, which were enriched in 119 KEGG pathways. Plant signal transduction, interaction with pathogens, and phenylpropane biosynthesis pathways were the most enriched among the DEGs. Based on these results, the present study analyzed the lipid metabolism of FF to explore the regulatory mechanism of terpenoids and flavonoids during the growth process.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "FF contains monoterpenoids, sesquiterpenoids, diterpenoids, triterpenoids and tetraterpenoids. Dong et al. (2017) found that the average content of volatile oil in FF was as high as 3.27%, containing \u03b1-pinene, \u03b2-pinene, limonene, phellandrene, cymene, linalool and terpine-4-ol (Sun et al., 2018; Yang et al., 2014) . The results of the present study show that FF contains rosin alcohol, fumagillin, hydroxy camphor, and other substances, as well as plant hormones such as abscisic acid gibberellin. The terpenoid structural unit is transformed from the MVA and MEP pathways to generate IPP and its isomer DMAPP. The present study found that the synthesis of the terpenoid skeleton of FF is dominated by the MEP pathway and the pathway is regulated by genes EC: 2.2.1.7 and EC: 2.7.7.60. Plant hormones are closely related to the growth process of plants. ABA, also known as dormant or abscisin, causes dormancy of buds, shedding of leaves and inhibition of cell growth. Mass spectrometry detected no significant difference in the content of 7\u2032-hydroxyabscisic acid and (+)-8\u2032-hydroxyabscisic acid. Genes EC: 1.1.1.288, EC: 1.14.14.137 and EC: 1.13.11.51 jointly regulate the metabolism of abscisic acid, which may be related to the growth and development stage of FF when harvested. Abscisic acid is balanced under the dynamic regulation of the three genes state. ABA is synthesized by carotene, and the content of carotene decreases significantly, possibly due to the production of abscisic acid. Gibberellin is a diterpenoid compound with diverse structures, some of which are easily soluble in water and only a few substances have intrinsic activity controlling all aspects of plant growth and development (including seed germination, stem elongation, leaf expansion, flowering and seed development) (Hedden, 2020) . GA 1 , GA 3 , GA 4 and GA 7 have biological activity. The 6 GAs identified were non-biologically active substances. GA 36 had the most abundant content and is the precursor of active gibberellin GA 4 , which may be transformed into an active state under the control of GA 20 -oxidase (GA20ox, EC: 1.14.11.12) and GA 3 -oxidase (GA3ox, EC: 1.14.11.15). At the same time, GA 8 and its metabolites, which are the metabolites of GA 1 , may be metabolic genes in (EC: 1.14.11.13), the gene c83901. graph_c3 was upregulated to promote the catabolism of active GAs and c63052. graph_c0 was downregulated to inhibit the decomposition of active GAs. In short, gibberellin has a high content in July in Qingqiao, and its metabolism was active, which fits with it being an important substance for fruit development.",
+            "cite_spans": [
+                {
+                    "start": 95,
+                    "end": 113,
+                    "text": "Dong et al. (2017)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 278,
+                    "end": 296,
+                    "text": "(Sun et al., 2018;",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 297,
+                    "end": 315,
+                    "text": "Yang et al., 2014)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1804,
+                    "end": 1818,
+                    "text": "(Hedden, 2020)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Flavonoids play are important for attracting insect pollinators, resisting ultraviolet rays, and enhancing disease resistance (Onkokesung et al., 2014) in plants (Agati et al., 2012) . Flavonoids have various biological activities (Ullah et al., 2020) such as antibacterial, antiviral, antitumor, anti-inflammatory, and hypoglycemic activity (Cazarolli et al., 2006) . Studies (Hoshino et al., 1999) have reported that the antibacterial effects of certain flavonoid complexes are related to their oxidative division of DNA or damage to bacterial cell membranes. Wang et al. (2004) found that baicalin inhibited HIV-1 induced syncytium formation and HIV-1 p24 antigen and RT product produced antiviral effects. Pereira et al. (2007) found that naringin can significantly reduce the nitrite content and the amount of inflammatory cells in the macrophage inflammation model (Yang et al., 2015; Nishioka et al., 1998) . Flavonoids are based on the C6-C3-C6 structure, and include anthocyanins, flavonoids, flavonols and isoflavones. Pinocembrin, naringenin and eriodictyol are the precursors of other flavonoid derivatives. There are some key enzymes in the de novo synthesis of flavonoids. ACCase (acetyl CoA carboxylase) has a wide range of functions, which can guide the flow of carbon from photosynthesis Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326 to primary and secondary metabolites. Among these enzymes, MF (multifunctional) guides the biosynthesis of very long-chain fatty acids and flavonoids in the cytoplasm. PAL is the entrance enzyme of phenylpropanoid biosynthesis . Hu et al. (2011) used a competitive inhibitor 2-aminoindan-2-phosphonic acid (AIP) to specifically inhibit PAL activity in Cistanche suspension cells and found that the content of phenylethanol glycosides was significantly reduced. In the phenylpropane pathway, CHS is a key enzyme in the synthesis of flavonoids, leading the central pathway of phenylpropane metabolism to the branch of flavonoid synthesis. The results of the present study showed that when the expression of anthocyanidin synthase (ANS, EC: 1.14.20.4) was upregulated, afzelechin 7-O-\u03b2-d-apiofuranoside was significantly reduced. This result may be due to the conversion of afzelechin from leucopelargonidin, and ANS can promote the metabolism of leucopelargonidin into dihydrokaempferol and pelargondin, which indirectly leads to a decrease in the synthesis of afzelechin. Perhaps ANS is an inhibitory enzyme of afzelechin synthesis. In addition, the content of quercetin 7,3\u2032,4\u2032-trimethyl ether 3rhamnoside (quercetin 7,3\u2032,4\u2032-trimethyl ether 3-rhamnoside) increased significantly, and there were two influencing factors. On the one hand, the upregulation of ANS expression promotes the conversion of leucocyanidin to dihydroquercetin, which is the precursor of quercetin 7,3\u2032,4\u2032-trimethyl ether 3-rhamnoside. On the other hand, the downregulation of flavonol synthase (FLS, EC: 1.14.20.6) (Park et al., 2019) inhibits the oxidation reaction of dihydrokaempferol, dihydroquercetin and dihydromyricetin. FLS is the key enzyme for the conversion of dihydrokaempferol, dihydroquercetin, and dihydromyricetin to pelargonidin, quercetin, and myricetin. The significant reduction of myricetin 7-glucoside again confirms the effect of FLS. Park et al. isolated the OsFLS gene from rice and showed that the OsFLS gene has both flavonol synthase and flavanone 3-hydroxylase activity, which is consistent with the results of the present study. There are also pharmacologically active substances in FF, such as phenethanol glycosides and lignans, which originate from the shikimic acid pathway and are homologous to flavonoids (Sun et al., 2018) . The results showed that the phenylalanine, tryptophan, and tyrosine synthesis pathway (Ko00400), phenylalanine metabolism pathway (Ko00360), the tyrosine synthesis pathway (Ko00350) and the phenylpropane synthesis pathway (Ko00940), and the activity of anthocyanin synthesis pathway (Ko00942), both peaked and declined. The downregulation of these pathways is closely related to the synthesis of active secondary metabolites such as phenethyl alcohol glycosides, lignin, and flavonoids indicating that the accumulation of secondary metabolites reaches the peak during the maturation period of FF in July, when the crop is ready to harvest. The chemical composition and pharmacological effects of Laoqiao and Qingqiao harvested 1 month later differ greatly. Cui et al. (2010) found that the different maturity of FF determines the concentration of chemical substances. Jia et al. (2015) found that forsythin A, forsythin C, cornoside, rutin, forsythin and the gallic acid content is higher than Laoqiao. Bao et al. (2017) found that the anti-tumor activity of Laoqiao on B16-F10 mouse melanoma was significantly weaker than that of Qingqiao. Over time the content of secondary metabolites in FF will gradually decrease and the related pharmacological effects will gradually weaken. During harvesting and processing of FF, a special treatment called \"shaqing\" is required before Qingqiao is used as a medicine. Shaqing, via steaming, boiling and other processes can destroy the metabolic enzymes (Wu et al., 2019) in FF, so that the active substances are retained. Laoqiao is used as medicine only when dried, which is one of the reasons why Laoqiao and Qingqiao have different active ingredients and effects. The best period for harvesting medicinal plants should be the peak period of synthesis and accumulation of secondary metabolites. Traditional Chinese medicine classics and the Chinese Pharmacopoeia record July to August as the harvesting period of Qingqiao. The transcriptome results of FF in July showed that the DEGs of secondary metabolites biosynthesis, transportation, decomposition and metabolism are the most active at that time. This period is the peak of secondary metabolite accumulation, which proves that the harvesting of Qingqiao from July to August is rational for maximum medicinal benefit.",
+            "cite_spans": [
+                {
+                    "start": 126,
+                    "end": 151,
+                    "text": "(Onkokesung et al., 2014)",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 162,
+                    "end": 182,
+                    "text": "(Agati et al., 2012)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 231,
+                    "end": 251,
+                    "text": "(Ullah et al., 2020)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 342,
+                    "end": 366,
+                    "text": "(Cazarolli et al., 2006)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 377,
+                    "end": 399,
+                    "text": "(Hoshino et al., 1999)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 562,
+                    "end": 580,
+                    "text": "Wang et al. (2004)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 710,
+                    "end": 731,
+                    "text": "Pereira et al. (2007)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 871,
+                    "end": 890,
+                    "text": "(Yang et al., 2015;",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 891,
+                    "end": 913,
+                    "text": "Nishioka et al., 1998)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1620,
+                    "end": 1636,
+                    "text": "Hu et al. (2011)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 2979,
+                    "end": 2998,
+                    "text": "(Park et al., 2019)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 3705,
+                    "end": 3723,
+                    "text": "(Sun et al., 2018)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 4483,
+                    "end": 4500,
+                    "text": "Cui et al. (2010)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 4594,
+                    "end": 4611,
+                    "text": "Jia et al. (2015)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 4729,
+                    "end": 4746,
+                    "text": "Bao et al. (2017)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 5220,
+                    "end": 5237,
+                    "text": "(Wu et al., 2019)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In the present study, ultra-performance liquid chromatography-mass spectrometry technology was used to compare the lipid composition and content differences of FF at different growth stages. The correlation between lipid changes in secondary metabolites and differential gene expression was analyzed. Preliminary analysis revealed the biosynthetic mechanism of the main secondary metabolites of FF, indicating that the terpenoid abscisic acid may be in the dynamic regulation of genes EC: 1.1.1.288, EC: 1.14.14.137 and EC: 1.13.11.51. In the synthesis of gibberellin, GA20-oxidase (GA20ox, EC: 1.14.11.12) and GA3-oxidase (GA3ox, EC: 1.14.11.15) catalyze the production of active GAs, and EC: 1.14.11.13 is the metabolic enzyme of active GAs. The synthesis of flavonoids in FF, MF, PAL, CHS, ANS, FLS, and others are all key enzymes. These results provide references for the analysis, development and utilization of the medicinal components of F. suspense. In addition, the results of the present study showed that July was the peak period for the accumulation of secondary metabolites in Forsythia suspensa, which provids new scientific evidence for the basis of traditional FF harvesting and processing methods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "The datasets presented in this study can be found in online repositories. The names of the repository/repositories and accession number(s) can be found below: Mass spectrometry data has been uploaded to EBI Metabolights, accession number MTBLS3327. Sequencing data has been uploaded to NCBI SRA BioProject, accession number PRJNA756578.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY STATEMENT"
+        },
+        {
+            "text": "BW, YL and WZ designed the experiment. BW, CW, WJ and ZM performed the analysis and interpretation of the data. CW, WJ and ZM drafted the manuscript. BW, YL and WZ revised the Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Flavonoids as Antioxidants in Plants: Location and Functional Significance",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Agati",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Azzarello",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pollastri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tattini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Plant Sci",
+            "volume": "196",
+            "issn": "",
+            "pages": "67--76",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.plantsci.2012.07.014"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Differences in Chemical Component and Anticancer Activity of green and Ripe Forsythiae Fructus",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bao",
+                    "suffix": ""
+                },
+                {
+                    "first": "R.-B",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Am. J. Chin. Med",
+            "volume": "45",
+            "issn": "07",
+            "pages": "1513--1536",
+            "other_ids": {
+                "DOI": [
+                    "10.1142/S0192415X17500823"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Rutin Inhibits Proliferation, Attenuates Superoxide Production and Decreases Adhesion and Migration of Human Cancerous Cells",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ben Sghaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pagano",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mousslim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ammari",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kovacic",
+                    "suffix": ""
+                },
+                {
+                    "first": "Luis",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Biomed. Pharmacother",
+            "volume": "84",
+            "issn": "",
+            "pages": "1972--1978",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.biopha.2016.11.001"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Follow-up Studies on Glycosylated Flavonoids and Their Complexes with Vanadium: Their Anti-hyperglycemic Potential Role in Diabetes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cazarolli",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zanatta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Jorge",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Sousa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Horst",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Woehl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Chemico-Biological Interactions",
+            "volume": "163",
+            "issn": "3",
+            "pages": "177--191",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cbi.2006.07.010"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Plant Lipid Biology",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chapman",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Feussner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Biochim. Biophys. Acta (Bba) -Mol. Cel. Biol. Lipids",
+            "volume": "1861",
+            "issn": "9",
+            "pages": "1205--1206",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bbalip.2016.05.005"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Combinatorial Mutation on the \u03b2-glycosidase Specific to 7-\u03b2-Xylosyltaxanes and Increasing the Mutated Enzyme Production by Engineering the Recombinant Yeast",
+            "authors": [
+                {
+                    "first": "J.-J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-H",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T.-J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-C",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Acta Pharmaceutica Sinica B",
+            "volume": "9",
+            "issn": "3",
+            "pages": "626--638",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.apsb.2018.11.003"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "A Review on Plant-Based Rutin Extraction Methods and its Pharmacological activities Research Support",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chua",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Simultaneous Quantification of 14 Bioactive Constituents in Forsythia Suspensa by Liquid Chromatography-Electrospray Ionisation-Mass Spectrometry",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Sheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Phytochem. Anal",
+            "volume": "21",
+            "issn": "3",
+            "pages": "253--260",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pca.1194"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Forsythiae Fructus: A Review on its Phytochemistry, Quality Control",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Pharmacology and Pharmacokinetics. Molecules",
+            "volume": "22",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/molecules22091466"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Phillyrin Mitigates Apoptosis and Oxidative Stress in Hydrogen Peroxide-Treated RPE Cells through Activation of the Nrf2 Signaling Pathway",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "You",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sai",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Oxid. Med. Cel. Longev",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1--16",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2020/2684672"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "A Review of Pharmacological and Pharmacokinetic Properties of Forsythiaside A",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Pharmacol. Res",
+            "volume": "169",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.phrs.2021.105690"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Simultaneous Determination of 12 Major Constituents in Forsythia Suspensa by High Performance Liquid Chromatography-DAD Method",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A.-H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D.-A",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J. Pharm. Biomed. Anal",
+            "volume": "43",
+            "issn": "3",
+            "pages": "1000--1006",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jpba.2006.09.033"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "The Current Status of Research on Gibberellin Biosynthesis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Hedden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Plant Cel. Physiol",
+            "volume": "61",
+            "issn": "11",
+            "pages": "1832--1849",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/pcp/pcaa092"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Damage to the Cytoplasmic Membrane of Escherichia coli by Catechin-Copper (II) Complexes. Free Radic",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hoshino",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kimura",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yamaji",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ando",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Biol. Med",
+            "volume": "27",
+            "issn": "99",
+            "pages": "157--161",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0891-5849(99)00157-4"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Effects of 2-Aminoindan-2-Phosphonic Acid Treatment on the Accumulation of Salidroside and Four Phenylethanoid Glycosides in Suspension Cell Culture of Cistanche Deserticola",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hur",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Yi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Plant Cel. Rep",
+            "volume": "30",
+            "issn": "4",
+            "pages": "665--674",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00299-010-0997-3"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Efficacy and Safety of Lianhuaqingwen Capsules, a Repurposed Chinese Herb, in Patients with Coronavirus Disease 2019: A Multicenter, Prospective, Randomized Controlled Trial",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-J",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Phytomedicine",
+            "volume": "85",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.phymed.2020.153242"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Comparison of Fruits of Forsythia Suspensa at Two Different Maturation Stages by NMR-Based Metabolomics",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Molecules",
+            "volume": "20",
+            "issn": "6",
+            "pages": "10065--10081",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/molecules200610065"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Enzymeassisted Microwave Hydro-Distillation Essential Oil from Fructus Forsythia, Chemical Constituents, and its Antimicrobial and Antioxidant Activities",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-J",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-G",
+                    "middle": [],
+                    "last": "Zu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Food Chem",
+            "volume": "134",
+            "issn": "1",
+            "pages": "235--243",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.foodchem.2012.02.114"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Biodiesel from Forsythia Suspense",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q.-Y",
+                    "middle": [],
+                    "last": "Gai",
+                    "suffix": ""
+                },
+                {
+                    "first": "F.-Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-J",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Bioresour. Technol",
+            "volume": "143",
+            "issn": "",
+            "pages": "653--656",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.biortech.2013.06.018"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Acaricidal Abilities and Chemical Composition of Forsythia Suspense Fruit Oil against Storage and Pyroglyphid Mites",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Jabc",
+            "volume": "58",
+            "issn": "2",
+            "pages": "105--108",
+            "other_ids": {
+                "DOI": [
+                    "10.3839/jabc.2015.018"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Efficacy and Safety of Herbal Medicine (Lianhuaqingwen) for Treating COVID-19: A Systematic Review and Meta-Analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Integr. Med. Res",
+            "volume": "10",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.imr.2020.100644"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Phillyrin (KD-1) Exerts Anti-viral and Anti-inflammatory Activities against Novel Coronavirus (SARS-CoV-2) and Human Coronavirus 229E (HCoV-229E) by Suppressing the Nuclear Factor Kappa B (NF-\u039ab) Signaling Pathway",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal Article",
+            "volume": "78",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.phymed.2020.153296"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Baicalein, an \u03b1-Glucosidase Inhibitor from Scutellaria Baicalensis",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nishioka",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kawabata",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aoyama",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "J. Nat. Prod",
+            "volume": "61",
+            "issn": "11",
+            "pages": "1413--1415",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/np980163p"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Modulation of Flavonoid Metabolites in Arabidopsis thaliana through Overexpression of the MYB75 Transcription Factor: Role of Kaempferol-3,7-Dirhamnoside in Resistance to the Specialist Insect Herbivore Pieris Brassicae",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Onkokesung",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Reichelt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Van Doorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Schuurink",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J A"
+                    ],
+                    "last": "Van Loon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dicke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J. Exp. Bot",
+            "volume": "65",
+            "issn": "8",
+            "pages": "2203--2217",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/jxb/eru096"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Molecular and Functional Characterization of Oryza Sativa Flavonol Synthase (OsFLS), a Bifunctional Dioxygenase",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "D.-H",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "B.-R",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-Y",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-H",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Agric. Food Chem",
+            "volume": "67",
+            "issn": "26",
+            "pages": "7399--7409",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jafc.9b02142"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Synthesis and Characterization of a Metal Complex Containing Naringin and Cu, and its Antioxidant",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Pereira",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Andrades",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Paulino",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sawaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eberlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marcucci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Antimicrobial, Antiinflammatory and Tumor Cell Cytotoxicity. Molecules",
+            "volume": "12",
+            "issn": "7",
+            "pages": "1352--1366",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/12071352"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Production of the Antimalarial Drug Precursor Artemisinic Acid in Engineered Yeast",
+            "authors": [
+                {
+                    "first": "D.-K",
+                    "middle": [],
+                    "last": "Ro",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Paradise",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ouellet",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Fisher",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Newman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ndungu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Nature",
+            "volume": "440",
+            "issn": "7086",
+            "pages": "940--943",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nature04640"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Hairy Root Culture for Mass-Production of High-Value Secondary Metabolites",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Srivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Srivastava",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Crit. Rev. Biotechnol",
+            "volume": "27",
+            "issn": "1",
+            "pages": "29--43",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07388550601173918"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Preventive Effects of Rutin on Lysosomal Enzymes in Isoproterenol Induced Cardio Toxic Rats: Biochemical, Histological and In Vitro Evidences",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Stanely Mainzen Prince",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Priya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Eur. J. Pharmacol",
+            "volume": "649",
+            "issn": "1-3",
+            "pages": "229--235",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejphar.2010.08.054"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Comparative Transcriptome Analyses of Three Medicinal Forsythia Species and Prediction of Candidate Genes Involved in Secondary Metabolisms",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rai",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rai",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nakamura",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kawano",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yoshimatsu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Nat. Med",
+            "volume": "72",
+            "issn": "4",
+            "pages": "867--881",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11418-018-1218-6"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Metabolome and Transcriptome Profiling Reveals Quality Variation and Underlying Regulation of Three Ecotypes for Cistanche Deserticola",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-F",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Plant Mol. Biol",
+            "volume": "102",
+            "issn": "3",
+            "pages": "253--269",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11103-019-00944-5"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "A Microbial Biomanufacturing Platform for Natural and Semisynthetic Opioids",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Thodey",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Galanie",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Smolke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nat. Chem. Biol",
+            "volume": "10",
+            "issn": "10",
+            "pages": "837--844",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nchembio.1613"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Important Flavonoids and Their Role as a Therapeutic Agent",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ullah",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Munir",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Badshah",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ghani",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Poulson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Molecules",
+            "volume": "25",
+            "issn": "22",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/molecules25225243"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Zinc Coupling Potentiates Anti-HIV-1 Activity of Baicalin",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-T",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-P",
+                    "middle": [],
+                    "last": "Pu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-T",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Biochem. Biophysical Res. Commun",
+            "volume": "324",
+            "issn": "2",
+            "pages": "605--610",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bbrc.2004.09.093"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Phytochemistry, Pharmacology, Quality Control and Future Research of Forsythia Suspensa (Thunb.) Vahl: A Review",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Mei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Ethnopharmacology",
+            "volume": "210",
+            "issn": "",
+            "pages": "318--339",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jep.2017.08.040"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Recent Advances in Analytical Strategies for Mass Spectrometry-Based Lipidomics",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Analytica Chim. Acta",
+            "volume": "1137",
+            "issn": "",
+            "pages": "156--169",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.aca.2020.09.060"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The Mechanism of Phillyrin from the Leaves of Forsythia Suspensa for Improving Insulin Resistance",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "S A"
+                    ],
+                    "last": "Saadeldeen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Biomed. Res. Int",
+            "volume": "2019",
+            "issn": "",
+            "pages": "1--7",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2019/3176483"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Tanshinone IIA Pretreatment Promotes Cell Survival in Human Lung Epithelial Cells under Hypoxia via AP-1-Nrf2 Transcription Factor",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yadav",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Stress and Chaperones",
+            "volume": "25",
+            "issn": "3",
+            "pages": "427--440",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12192-020-01083-3"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Determination of \u03b1-glucosidase Inhibitors from ScutScutellaria Baicalensis Using Liquid Chromatography with Quadrupole Time of Flight Tandem Mass Spectrometry Coupled with Centrifugal ultrafiltrationResearch Support",
+            "authors": [
+                {
+                    "first": "J.-R",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-G",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-Y",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Nat. Med",
+            "volume": "13",
+            "issn": "3",
+            "pages": "30006--30012",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1875-5364(15)30006-6"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Dynamic Ultrasonic Nebulisation Extraction Coupled with Headspace Ionic Liquid-Based Single-Drop Microextraction for the Analysis of the Essential Oil in Forsythia Suspensa",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Teng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Phytochem. Anal",
+            "volume": "25",
+            "issn": "2",
+            "pages": "178--184",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pca.2490"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Intestinal Absorption of Forsythoside A in Different Compositions of Shuang-Huang-Lian",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-Q",
+                    "middle": [],
+                    "last": "Di",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-J",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Bi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Fitoterapia",
+            "volume": "82",
+            "issn": "3",
+            "pages": "375--382",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.fitote.2010.11.012"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Methanol: 67-56-1, LC-MS, Merck; Acetonitrile: 75-05-8, LC-MS, Merck; Ammonium acetate: 631-61-8; Formic acid: 64-18-6, LC-MS, TCI; Isopropanol: 67-63-0, LC-MS, Merck; Methyl tertbutyl ether, TCI LC-MS, TCI; Methyl tert-butyl ether (MTBE): 1634-04-4, LC-MS, Merck; Dichloromethane: 75-09-2, LC-MS, Merck.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "(A) Forsythia suspensa (Thunb.) Vahl; (B) Forsythia fruit growing on the tree (C) Forsythiae Fructus as a medicinal material. Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Chromatogram of the quality control sample in ESI-positive (A) and ESI-negative (B) ion modes.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "The content of various lipid components of FF differed with growth stage. The May sample is represented in blue and the July sample in red. For each sample date, (A) The composition of total lipids contained in FF, (B) Glycerolipids (GL), (C) Glyceropnospholipids (GP), (D) Sphingolipids (SP), (E) Sterol Lipids (SL), (F) Saccharopilipids (SL) and Prenol Lipids (PR), (G) Polyketides (PK), (H) Fatty Acyls (FA). Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326 6",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Volcano plot showing the characteristics of differentially expressed gene. The dots represent genes, among which the blue and red dots are genes that satisfied FC < 0.5, FC > 2 and p < 0.05 and thus differed in expression between the two samples.Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "(A) COG Function Classification of Consensus Sequence. a) RNA processing and modification; b) Chromatin structure and dynamics; c) Energy production and conversion; d) Cell cycle control, cell division, chromosome partitioning; e) Amino acid transport and metabolism; f) Nucleotide transport and metabolism; g) Carbohydrate transport and metabolism; h) Coenzyme transport and metabolism; i) Lipid transport and metabolism; j) Translation, ribosomal structure and biogenesis; k) Transcription; l) Replication, recombination and repair; m) Cell wall/membrane/envelope biogenesis; n) Cell motility; o) Posttranslational modification, protein turnover, chaperones p) Inorganic ion transport and metabolism; q) Secondary metabolite biosynthesis, transport and catabolism r) General function prediction only; s) Function unknown; t) Signal transduction mechanisms; u) Intracellular trafficking, secretion, and vesicular transport; v) Defense mechanisms; w) Extracellular structures; x) Mobilome: prophages, transposons; y) Nuclear structure; z) Cytoskeleton. Characterization of GO (B) and KEGG (C) enrichment result for transcriptome assemblies.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "phosphate in the presence of 2-c-methyl-d-erythritol 4-phospphate cytidylytransferase (EC:2.7.7.60) produces 4-(Cytidine 5\u2032-diphospho)-2-C-methyl-d-erythritol. Both genes were upregulated. Dime thylalllyl-PP (DMAPP) was generated after a four-step transformation. IPP and DMAPP are isomers, which are in equilibrium and are the source of isoprene units. DMAPP and IPP are catalyzed by EC:2.5.1.1 to generate geranyl-PP (GPP). GPP combines with an IPP to generate (E, E)-famesyl-PP The biosynthetic pathways and genes in the terpenoid (A) and flavonoid (B) secondary metabolite pathways. The numbers shown in the boxes are the genes/genomes that are enriched in the KEGG pathway that regulate response. The red box indicates that the gene is upregulated, the green box indicates that the gene is downregulated, and the blue box indicates that the genome has up-regulated genes and downregulated genes. The solid line represents a single-step synthesis reaction and the dashed line represents a multi-step synthesis reaction.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Transcript expression analyses and the biosynthetic pathways of terpenoid metabolites (A), active metabolites (B) and lipids (C).",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Frontiers in Genetics | www.frontiersin.org October 2021 | Volume 12 | Article 758326 content of dialkylglycerol and glycosyl dihexylglycerol decreased. Glycerophospholipids (GP) were the next most abundant, with 15 main classes and 931 lipid substances, with 29, 163, 738.21 \u03bcg/g and 31, 718, 781.85 \u03bcg/g in groups A and B, respectively, accounting for about 16.13 and 16.57% of the total lipids. Across sampling dates, the contents of glycerophosphocholine (PC), glycerophosphoethanolamine (PE), glycerophosphoserine (PS), glycerophosphoinositol (PI) and glycerophosphate (PA) all increased and the content of oxidized glycerophospholipids decreased significantly. Sphingolipids (SP) ranked third, with seven main classes and 726 lipid substances, and the contents of the A and B groups were 17, 631, 677.45 \u03bcg/g and 17, 180, 898. 39 \u03bcg/g, respectively, accounting for about 14.77 and 13.18%. Ceramide content increased significantly from group A to B, phospholipids and acid glycosphingolipids decreased slightly, and neutral glycosphingolipids and other sphingolipids increased slightly. Fatty acyles (FA) had 13 main classes and 1,695 lipid substances and the contents of the two groups were 12, 881, 185.91 \u03bcg/g and 13, 739, 216.99 \u03bcg/g, accounting for about 10.79 and 10.54% of total lipids. From group A to B, the content of fatty acids and their conjugates, fatty esters, oxygen-containing hydrocarbons, fatty acyl glycosides and other fatty acyl groups increased whereas the higher fatty acids (octadecane, eicosane, behenyl) and hydrocarbons decreased. There were five main classes of sterol lipids (ST) and 771 lipids with 9,870,796.40 \u03bcg/g and 11, 216, 784.53 \u03bcg/g, respectively, accounting for 8.27 and 8.61% of total lipids. There were 12 main classes of polyketides (PK) with 544 lipids, with 7,658,121.17 \u03bcg/g and 7,343,043. 54 \u03bcg/g, accounting for 6.42 and 5.63% of total lipids, respectively. In PK, the content of acetone in Annonaceae increased; the content of flavonoids and phenolic esters decreased. There were four main classes of prenol lipids zeatin, lutein, and other plant hormones, but their content did not differ between groups A and B. There were three main classes of glycolipids (SL) with 52 lipids, the contents of groups A and B were 505,912.76 \u03bcg/g and 442,897.79 \u03bcg/g accounting for 0.42 and 0.34% of total lipids, respectively. The total contents of various other types of lipids in the two groups of samples were less varied between groups A and B.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "manuscript. All authors contributed to the article and approved the submitted version.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "We gratefully acknowledge help from Professor Zhong Wang and Jinju Duan for improving and the English editor for editing our manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        },
+        {
+            "text": "The Conflict of Interest: The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SUPPLEMENTARY MATERIAL"
+        }
+    ]
+}

@@ -1,0 +1,2868 @@
+{
+    "paper_id": "0b1979f8c76bfb45f5636640a978fd3a2cf97f63",
+    "metadata": {
+        "title": "Credit financing and channel encroachment: analysis of distribution choice in a dual-channel supply chain",
+        "authors": [
+            {
+                "first": "Lang",
+                "middle": [],
+                "last": "Xu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanghai Maritime University",
+                    "location": {
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": "xulang@shmtu.edu.cn"
+            },
+            {
+                "first": "Yuqi",
+                "middle": [],
+                "last": "Luo",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanghai Maritime University",
+                    "location": {
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jia",
+                "middle": [],
+                "last": "Shi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanghai Maritime University",
+                    "location": {
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Lin",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "The Second Military Medical University",
+                    "location": {
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "L",
+                "middle": [],
+                "last": "Xu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanghai Maritime University",
+                    "location": {
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Supply chain finance plays a significant role in alleviating capital shortage, which optimizes supply chain performance. In this paper, we discuss the interaction of credit financing and channel encroachment in a dual-channel supply chain structure consisting of a supplier and a retailer. Under the Stackelberg structure, we observe the interaction between credit financing and channel encroachment is heavily dependent on the substitution degree, potential online market, and production cost. Intuitively, the supplier is more likely to choose trade credit financing, except in the case where both the potential online market, substitution degree, and production cost are small; under these conditions, bank credit financing may be an equilibrium strategy. As long as the production cost is below a certain threshold, the supplier will choose the trade credit financing strategy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Supply chain finance aims to optimize the capital flow across supply chain organizations through solutions implemented by financing institutions to align the flow of logistics. Thus, improving capital flow from the perspective of the supply chain system effectively promotes supply chain development. Reasonable use of supply chain finance can not only significantly alleviate the financial pressure faced by small-and medium-sized enterprises (Bernabucci 2008) , but also enhance trade relationships and strengthen competitive advantage (Seifert and Seifert 2011) . For example, to relieve the upstream financial pressure, Wal-Mart, the largest supermarket, facilitated their cooperators' access to bank loans as bank credit financing; furthermore, Wal-Mart also offered finance directly to upstream firms in the form of trade credit financing (e.g., paying an early discount scheme, sharing suppliers' inventory costs). After more than 20 years of rapid development, supply chain finance plays a significant role in alleviating capital shortages and optimizing capital flows (Ding and Wan 2020; Li et al. 2019) .",
+            "cite_spans": [
+                {
+                    "start": 444,
+                    "end": 461,
+                    "text": "(Bernabucci 2008)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 538,
+                    "end": 564,
+                    "text": "(Seifert and Seifert 2011)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1077,
+                    "end": 1096,
+                    "text": "(Ding and Wan 2020;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1097,
+                    "end": 1112,
+                    "text": "Li et al. 2019)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, because of the accelerated effect of the Internet on the global economy, the development of supply chain finance is facing an important challenge. In the e-commerce age, suppliers (e.g., Apple and Nike) can offer products via retailers or online platforms, which causes competition to arise between the upstream supplier and retail partners (Zhang et al. 2019a, b, c) . In addition to this, a noted phenomenon is that retailers can open their own direct-to-consumer online platforms to compete with the supplier's online sales if their advantage disappears because of the adverse impact of channel conflict. How the retailer encroaches on the direct channel and how supply chain management will be affected are significant questions. In addition, the supplier's wholesale price and direct price are influenced by the choice of credit financing, which further impacts whether the retailer encroaches on the online market and determines pricing decisions. Therefore, platform encroachment makes the original problem of financing choice more complex.",
+            "cite_spans": [
+                {
+                    "start": 350,
+                    "end": 376,
+                    "text": "(Zhang et al. 2019a, b, c)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The interaction between credit financing and channel encroachment is particularly significant in the freight forwarding market. Since the outbreak of COVID-19 in early 2020, the container liner market has undergone a sharp change from low to high . Especially during the fourth quarter of 2020, the market experienced tight space and a shortage of empty containers, which led to a dramatic increase in the prices of the container international shipping. Hence, the freight forwarding market is facing a series of problems for freighters, such as capital shortage caused by huge advance payments and lack of financing channels, restricting its development. Besides, freighters also face the dilemma of shipping companies seizing a large market share through channel encroachment, e.g., Maersk launched a new online booking platform (ship.maerskline.com) in 2017. Under these conditions, many small-and medium-sized enterprises have considered adopting the credit financing strategy. It is these findings that inspire us to study the interaction between channel encroachment and credit financing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "According to the above background, we analyze the role of credit financing in a dual-channel supply chain with retailer encroachment. More specifically, we explore the following questions: (1) Under a Stackelberg-Nash game, what is the optimal equilibrium strategy for a supplier with capital shortage-bank credit financing or trade credit financing; and what is the equilibrium strategy for the retailer-to encroach or not? (2) For the individual and overall supply chain, what is the interaction between credit financing and channel encroachment, and how to deal with the rival's behavior in a dual-channel supply chain? (3) Will the encroachment benefit both participants if the supplier chooses bank credit financing? When channel encroachment has an undesirable effect on the supplier, can trade credit financing effectively achieve goals? If so, under what conditions?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To answer these questions, we observe the following managerial insights: (1) for the supplier with capital shortage, the share of online market and production costs are important factors that influence financing strategy; (2) if the supplier chooses bank credit financing, the retailer adopts the encroachment strategy; otherwise, the retailer refuses to encroach with an increase in production cost when the supplier chooses trade credit financing. (3) trade credit financing makes the supplier own more favorable situation than bank credit financing when the production cost is high or the online market share is over a certain threshold.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We organize the remainder of this paper as follows. Section 2 reviews the literature on supply chain finance and channel competition to highlight the differences and contributions. Then, we describe the problem and consider the assumption in Sect. 3. We discuss the equilibrium strategy of credit financing and the corresponding subgame of channel encroachment in Sect. 4. Section 5 presents the conclusions and future research. Proofs are provided in the \"Appendix\".",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The topic of credit financing has received significant attention in operations management, marketing management, and service management, with the existing literature has focused on how increasing interest rates affect pricing decisions and downstream profits (Chao et al. 2008; Lai et al. 2009 ). Depending on which kind of credit financing is considered, two strategies are described. When financing is sourced from a bank, it is known as bank credit financing (BCF strategy) which mainly focuses on the perspective of coordination contracts (Ding and Wan 2020; Shi et al. 2020) , inventory decisions (Chakuu et al. 2020; Li et al. 2020a, b; He et al. 2020) , information sharing Sang 2021) , etc. For the BCF strategy, Zhou et al. (2020) explored the equilibrium of guarantor financing for retailers who can borrow bank credit in a four-stage supply chain structure. When the source of financing is the retailer, it is known as trade credit financing (TCF strategy) which mainly focuses on the perspective of product quality (Lee and Stowe 1993; Long et al. 1993) , inventory decisions (Gupta and Wang 2009; Haley and Higgins 1973; Luo and Shang 2019) , and moral hazard (Babich and Tang 2004; Kim and Shin 2012; Rui and Lai 2015) . For the TCF strategy, Wu et al. (2018) introduced two unbalanced retailers into trade credit financing to reveal the influence of initial capital and exogenous price on interest rates. On this basis, Deng et al. (2021) extended the existing research to investigate the influence of trade credit financing on vertical and horizontal competition with multiple downstream firms. However, the existing literature only examines the options in bank credit financing or trade credit financing. This encourages us to explore the equilibrium solution and corresponding conditions between the two financing strategies.",
+            "cite_spans": [
+                {
+                    "start": 259,
+                    "end": 277,
+                    "text": "(Chao et al. 2008;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 278,
+                    "end": 293,
+                    "text": "Lai et al. 2009",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 543,
+                    "end": 562,
+                    "text": "(Ding and Wan 2020;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 563,
+                    "end": 579,
+                    "text": "Shi et al. 2020)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 602,
+                    "end": 622,
+                    "text": "(Chakuu et al. 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 623,
+                    "end": 642,
+                    "text": "Li et al. 2020a, b;",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 643,
+                    "end": 658,
+                    "text": "He et al. 2020)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 681,
+                    "end": 691,
+                    "text": "Sang 2021)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 721,
+                    "end": 739,
+                    "text": "Zhou et al. (2020)",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 1027,
+                    "end": 1047,
+                    "text": "(Lee and Stowe 1993;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1048,
+                    "end": 1065,
+                    "text": "Long et al. 1993)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1088,
+                    "end": 1109,
+                    "text": "(Gupta and Wang 2009;",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1110,
+                    "end": 1133,
+                    "text": "Haley and Higgins 1973;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1134,
+                    "end": 1153,
+                    "text": "Luo and Shang 2019)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1173,
+                    "end": 1195,
+                    "text": "(Babich and Tang 2004;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1196,
+                    "end": 1214,
+                    "text": "Kim and Shin 2012;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1215,
+                    "end": 1232,
+                    "text": "Rui and Lai 2015)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 1257,
+                    "end": 1273,
+                    "text": "Wu et al. (2018)",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 1435,
+                    "end": 1453,
+                    "text": "Deng et al. (2021)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Literature review"
+        },
+        {
+            "text": "The second stream of related research compares bank credit financing and trade credit financing wherein they serve to improve upstream financial performance but differ in the operational methods. Along these lines, Kouvelis and Zhao (2012) constructed the early payment discount scheme to decide the wholesale price when paying early or the interest rates when delaying payment, and found that the downstream firms preferred trade financing to bank financing. On this basis, Deng et al. (2018) derived the equilibriums for different financing scenarios to indicate the influence of initial capital and production cost on interest rate and corresponding conditions. Additionally, Chod (2017) investigated the combination of bank financing and trade financing to find an optimal way to make the downstream firms lower the loan and inventory quantities. Furthermore, Yang and Birge (2018) captured the relationships between the operations decision, capital constraint, and financing scenario to analyze the influence of risk-sharing on supply chain performance. Meanwhile, Zhen et al. (2020) found the upstream equilibrium of financing strategy to explore how the creditors' interest rate influences operations management in a dualchannel structure. Furthermore, many scholars compared the performances of bank credit financing and trade credit financing from risk tolerance An et al. 2021) , integrating sourcing (Tang and Li 2020; Yoo et al. 2021) , game structure (Yan et al. 2020; Ding and Wan, 2020) , and integrating inventory (Fu et al. 2020; Li et al. 2021) . However, the upstream strategy affects the downstream equilibrium; no previous studies have examined the case of channel encroachment in credit financing. Therefore, our research examines the interactions between financing strategy and channel encroachment in the dual-channel supply chain to obtain managerial insights.",
+            "cite_spans": [
+                {
+                    "start": 215,
+                    "end": 239,
+                    "text": "Kouvelis and Zhao (2012)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 475,
+                    "end": 493,
+                    "text": "Deng et al. (2018)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 679,
+                    "end": 690,
+                    "text": "Chod (2017)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 864,
+                    "end": 885,
+                    "text": "Yang and Birge (2018)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 1070,
+                    "end": 1088,
+                    "text": "Zhen et al. (2020)",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 1372,
+                    "end": 1387,
+                    "text": "An et al. 2021)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1411,
+                    "end": 1429,
+                    "text": "(Tang and Li 2020;",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1430,
+                    "end": 1446,
+                    "text": "Yoo et al. 2021)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 1464,
+                    "end": 1481,
+                    "text": "(Yan et al. 2020;",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1482,
+                    "end": 1501,
+                    "text": "Ding and Wan, 2020)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1530,
+                    "end": 1546,
+                    "text": "(Fu et al. 2020;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1547,
+                    "end": 1562,
+                    "text": "Li et al. 2021)",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Literature review"
+        },
+        {
+            "text": "The third issue is the effect of channel encroachment on supply chain performance (e.g., as discussed in Frazier and Lassar 1996; Chiang et al. 2003; Liu and Zhang 2006; Zhang et al. 2019a, b, c; Sun et al. 2019) . Intuitively, the majority of scholars examine upstream encroachment which often hurts the downstream firms because the original market share is divided up. Liu et al. (2016) provided an opposite observation, that channel encroachment may be disadvantageous to the upstream firms if the downstream firms have strong fairness concerns. Yan et al. (2018) explored the influences of product durability on the strategies of channel encroachment under the oligopoly market structure, and found that both members benefited from channel encroachment if the product durability is at a threshold level. On this basis, Li et al. (2020a, b) illustrated the interactions between channel encroachment and retail inventory under the scenarios of centralization and decentralization. In addition, for multiple downstream firms, Guan et al. (2019) analyzed the relationship between channel encroachment and retail inventory to find that each member could obtain more profit for retail competition. Further, some studies also focus on the interaction between chain competition and upstream encroachment (Li et al. 2015) . However, unlike in this study, existing studies mainly investigate upstream encroachment, while ignoring the case where the retailer also encroaches on the online channel in a dual-channel supply chain structure.",
+            "cite_spans": [
+                {
+                    "start": 105,
+                    "end": 129,
+                    "text": "Frazier and Lassar 1996;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 130,
+                    "end": 149,
+                    "text": "Chiang et al. 2003;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 150,
+                    "end": 169,
+                    "text": "Liu and Zhang 2006;",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 170,
+                    "end": 195,
+                    "text": "Zhang et al. 2019a, b, c;",
+                    "ref_id": null
+                },
+                {
+                    "start": 196,
+                    "end": 212,
+                    "text": "Sun et al. 2019)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 371,
+                    "end": 388,
+                    "text": "Liu et al. (2016)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 549,
+                    "end": 566,
+                    "text": "Yan et al. (2018)",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 823,
+                    "end": 843,
+                    "text": "Li et al. (2020a, b)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1027,
+                    "end": 1045,
+                    "text": "Guan et al. (2019)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1300,
+                    "end": 1316,
+                    "text": "(Li et al. 2015)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Literature review"
+        },
+        {
+            "text": "To the best of our knowledge, Zhang et al. (2019a) is the only study discussing downstream encroachment. This research focuses on the influence of service investment and cost information on downstream encroachment to demonstrate the probability of prisoner's dilemma. In particular, our research differs from Zhang et al. (2019a) in two ways. On the one hand, the market structure is discrepant. Under this situation, we investigate downstream encroachment as an operational decision, especially the specific response of the encroachment strategy in the market demands. On the other hand, Zhang et al. (2019a) did not consider and analyze the interaction between two members, whereas we combine the strategic behaviors of credit financing and downstream encroachment.",
+            "cite_spans": [
+                {
+                    "start": 30,
+                    "end": 50,
+                    "text": "Zhang et al. (2019a)",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 309,
+                    "end": 329,
+                    "text": "Zhang et al. (2019a)",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 589,
+                    "end": 609,
+                    "text": "Zhang et al. (2019a)",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Literature review"
+        },
+        {
+            "text": "We include some classical research related to our study in Table 1 and highlight the contributions of managerial insights. From the analysis, the outcomes of financing credit and channel encroachment allow us to relate and contribute to the research on operational practices, which highlights that the strategic decision is significant enough to affect supply chain performance. Under this situation, we investigate a model in which a supplier with capital shortage offers products via both retailer and self-constructed platform, whereas the retailer considers whether to encroach or not. Utilizing the game-theoretic model, we explore the equilibrium conditions between two credit financing scenarios to indicate how the potential online market, production cost, and substitution degree affect the interaction between credit financing and channel encroachment.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 59,
+                    "end": 66,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Literature review"
+        },
+        {
+            "text": "In this paper, we discuss the interaction of credit financing and channel encroachment in a dual-channel supply chain structure consisting of a supplier and a retailer. Under this situation, the supplier can provide products to the retailer at an endogenous wholesale price w and production cost c, and the retailer, in turn, sells to the consumer at a retail price p. Beyond that, the supplier can sell through an online platform at the direct price d. This setting focuses on a point where both the supplier and retailer are potential sellers. To deal with the shared market, the retailer considers whether to encroach on the online market at a booking price b. Without loss of generality, we can normalize the potential demand to 1 (Nalca 2017; Niu et al. 2020) . Based on the assumption that the demand mainly depends on price, we construct the linear-price demand functions to analyze this problem (Deo and Corbett 2009; Shen et al. 2018; Zhen et al. 2020 ). Similar to Singh and Vives (1984) and Li et al. (2020a, b) , we assume the utilitybased function of representative consumers is U q s , q r , d r = s q s + q r + r d r \u2212 1 2 q 2 s \u2212 2 2 q 2 r \u2212 3 2 d 2 r \u2212 q s q r + q s d r + q r d r , and derive each channel's demand function. More specifically, we assume that the market share can be divided into an online part and offline part, where s + r = 1 . Further, for simplification, the total online demand is considered a. Without loss of generality, based on the first-order conditions for utility maximization, we consider the price-sensitive degree i = 1 because otherwise a i is replaced by",
+            "cite_spans": [
+                {
+                    "start": 735,
+                    "end": 747,
+                    "text": "(Nalca 2017;",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 748,
+                    "end": 764,
+                    "text": "Niu et al. 2020)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 903,
+                    "end": 925,
+                    "text": "(Deo and Corbett 2009;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 926,
+                    "end": 943,
+                    "text": "Shen et al. 2018;",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 944,
+                    "end": 960,
+                    "text": "Zhen et al. 2020",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 975,
+                    "end": 997,
+                    "text": "Singh and Vives (1984)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1002,
+                    "end": 1022,
+                    "text": "Li et al. (2020a, b)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem description and assumptions"
+        },
+        {
+            "text": "where v i is the channel demand and n is the channel quantity. On this basis, when the retailer encroaches, there exist three channels to offer products (McGuire and Staelin 1983; Granot and Sosic 2005) ; then, the online demand for the supplier ( D E s ) and retailer",
+            "cite_spans": [
+                {
+                    "start": 153,
+                    "end": 179,
+                    "text": "(McGuire and Staelin 1983;",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 180,
+                    "end": 202,
+                    "text": "Granot and Sosic 2005)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem description and assumptions"
+        },
+        {
+            "text": "where a indicates the potential market for the supplier without encroachment and is the substitution degree. According to the survey, the offline channel is still dominant in the consumer market; thus, we suppose 0 < a < a = 1 2 (Lei et al. 2014; Xu et al. 2021) . Because the price from the supplier (retailer) has a larger influence on demand than other channels, the substitution degree meets \u2208 (0, 1) , which is referred to as the dominant impact of own price on demand (Maglaras and Meissner 2006; Huang et al. 2018 ). However, when encroachment does not occur, we get",
+            "cite_spans": [
+                {
+                    "start": 229,
+                    "end": 246,
+                    "text": "(Lei et al. 2014;",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 247,
+                    "end": 262,
+                    "text": "Xu et al. 2021)",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 474,
+                    "end": 502,
+                    "text": "(Maglaras and Meissner 2006;",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 503,
+                    "end": 520,
+                    "text": "Huang et al. 2018",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem description and assumptions"
+        },
+        {
+            "text": "respectively. Meanwhile, to design two options of credit financing, we considered that the supplier's initial capital is K. Because we mainly focus on the interaction between credit financing and channel encroachment, the initial capital can be ignored as K = 0 (Tang et al. 2017; Li et al. 2018; Zhen et al. 2020) . For the BCF scenario, the bank is a creditor while the supplier borrows a loan from bank with the interest rate I BN or I BE . Further, the supplier announces the TCF scenario from the retailer with the interest rate I TN or I TE , where the retailer is not merely a reseller but also a creditor. First, the supplier seeks credit financing c D j s + D j r + Q j r ; then, the supplier must repay the loan c 1 + I k D j s + D j r + Q j r to the creditor at the end of the period, where k = BN, BE, TNorTE and j = NorE . We assume that in order to avoid bankruptcy, the production cost meets c \u2264 c . The list of all parameters involved in the text is shown in Table 2 .",
+            "cite_spans": [
+                {
+                    "start": 262,
+                    "end": 280,
+                    "text": "(Tang et al. 2017;",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 281,
+                    "end": 296,
+                    "text": "Li et al. 2018;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 297,
+                    "end": 314,
+                    "text": "Zhen et al. 2020)",
+                    "ref_id": "BIBREF60"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 975,
+                    "end": 982,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Problem description and assumptions"
+        },
+        {
+            "text": "To discuss the interactions between credit financing and channel encroachment, we divide the event into three subgames: a credit-financing game, an encroachment game, and a Stackelberg game. The supplier first considers the option of credit financing. Then, the retailer considers whether to encroach on the online market or not. Further, the creditor sets the interest rate. In the fourth stage, the supplier, as a leader in the Stackelberg game, decides the direct price and wholesale price. Finally, the retailer determines the retail price, and the booking price if she encroaches. In what follows, the backward induction can be employed to identify the equilibriums. We summary the sequence of events in Fig. 1 . In the rest of this work, we refer to the supplier as \"him\" and the retailer as \"her\" where each firm is risk-neutral and maximizes their individual profits.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 709,
+                    "end": 715,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Problem description and assumptions"
+        },
+        {
+            "text": "Based on the supplier's behavior, the two possible scenarios of BCF Strategy and TCF Strategy exist. Further, for the retailer, each subgame has two options, i.e., whether to encroach the online market or not. For the benchmark, we first analyze the equilibriums ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model analysis"
+        },
+        {
+            "text": "Observing the supplier's best response, the retailer announces the retail price where the profit function is NN r = (p \u2212 w)D N r . Therefore, we obtain pricing decisions as w NN ",
+            "cite_spans": [
+                {
+                    "start": 175,
+                    "end": 177,
+                    "text": "NN",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model analysis"
+        },
+        {
+            "text": "In contrast, if she encroaches, the profits for the supplier and retailer are",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model analysis"
+        },
+        {
+            "text": "When the supplier is well capitalized, upon comparing the non-encroachment and encroachment case, we find \u03c0 NE r > \u03c0 NN r . Therefore, we have the sub-equilibrium of the retailer's optimal strategy where channel encroachment is the only choice.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model analysis"
+        },
+        {
+            "text": "The following section explores two financing strategies where the supplier with capital shortage borrows credit from the bank or retailer. In each strategy, we separate the subgame into the two cases based on whether the retailer encroaches on the online market or not.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model analysis"
+        },
+        {
+            "text": "Under the BCF scenario, we investigate the subgame without channel encroachment. At the beginning, the bank first sets the interest rate I BN to maximize cI BN D N s + D N r . Then, the supplier determines the wholesale price and direct price to borrow a loan whereas the repayment is c 1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": "In addition, the retailer announces the retail price where the profit function is BN r = (p \u2212 w)D N r .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": "Proposition 1 Under the BCF scenario without the encroachment case, ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": ", and retailer's profit is BN",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": "As we derive in the proof of Proposition 1, the supplier's profit under the BCF scenario is below that if he is not capital constrained, which is mainly because the bank has incentive to increase the interest rate to the upper limit as long as the supplier does not borrow a loan in this game. In addition, the optimal decisions of direct price, retail price, and wholesale price increase with the bank's interest rate. Under the BCF strategy without channel encroachment, the interest rate and bank's profit are also positively associated with online market sharethe reason being that the increase of online market share promotes the demand via the online channel, resulting in increased total production cost and supplier's profit. However, the retailer's profit is negatively affected by the online market share. We further discuss the case of channel encroachment to obtain the perfect Nash equilibrium. Unlike the above-mentioned case, the profit of the supplier is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": "Thus, the bank first sets the interest rate to maximize cI BE ",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 61,
+                    "text": "BE",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": "Proposition 2 Under the BCF scenario with encroachment case,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "BCF scenario"
+        },
+        {
+            "text": "From Proposition 2, we find that the factors (e.g., online market share and substitution degree) have a significant impact on the bank's interest rate. Further, the bank also considers the production cost in deciding the interest rate, which is mainly because the benefit to the bank is from the loan borrowed to avoid the bankruptcy. From the above analysis, we observe that the interest rate plays an important role in the optimal pricing decisions. Specifically, the encroachment results in a low direct price and wholesale price, thus leading to a decrease in retail price and booking price (e.g., w BN > w BE , d BN > d BE , and p BN > p BE ). It should be noted that the increase in the interest rate may harm the consumer's interests; therefore, the total quantities from the dual channels decrease. Next, under the BCF scenario, we compare the equilibrium strategy under the non-encroachment case and encroachment case.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(i) the bank's interest rate is"
+        },
+        {
+            "text": "Based on Lemma 1, we have the sub-equilibrium of the retailer's optimal strategy where channel encroachment is the only choice under the BCF scenario. This is consistent with the choice of the retailer when the supplier is well capitalized. Intuitively, we observe that the retailer can more effectively create demand by channel encroachment in the online market, which significantly improves the benefit. Interestingly, the optimal decision of interest rate is a significant factor that affects the retailer's strategy, wherein we find that the bank's interest rate if encroachment occurs is obviously lower than that in the non-encroachment case (e.g., I BN > I BE ). When other conditions are unchanged, with the improvement of interest rate, the supplier correspondingly increases the direct price and wholesale price, which indirectly reduces the retailer's profit when she refuses to encroach. However, channel encroachment effectively prevents this situation; the reason is the retailer entering online market directly shocks the original share of supplier and forces to lower direct price and wholesale price. Hence, under the BCF scenario, channel encroachment is the unique strategy for retailer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 1 Under the BCF scenario, upon comparing the non-encroachment and encroachment case, we find that"
+        },
+        {
+            "text": "We next consider the TCF scenario where the supplier chooses TCF from the retailer with the interest rate. Additionally, the retailer has two options in regard to whether to encroach the online market. As mentioned in Sect. 4.1, we analyze each subgame by backward induction. For the non-encroachment case, the retailer first decides the interest rate. Then, the supplier determines the direct price d and the wholesale price w to borrow the loan I TN D N r + D N s ; thus, the revenue is dD N s + wD N r and the repayment is c 1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "TCF scenario"
+        },
+        {
+            "text": "Observing d and w , the retailer decides the retail price where the profit is TN",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "TCF scenario"
+        },
+        {
+            "text": "Proposition 3 Under the TCF scenario without encroachment case,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "TCF scenario"
+        },
+        {
+            "text": "Unlike the BCF scenario, the retailer is both a lender and a participant in the dual channel structure; thus, the interest rate is affected by both loan quantity and supplier's decision in the TCF scenario. From Proposition 3, we find that the interest rate is directly influenced by the substitution degree and potential online market. In contrast, the cost of TCF may be transferred from supplier to retailer by increasing the direct price and wholesale price, and then to the final consumers. Accordingly, we further discuss the case of channel encroachment to obtain the perfect Nash equilibrium. Hence, the supplier's loan from retailer is cI TE D E s + D E r + Q E r and the revenue dD E s + w D E r + Q E r , and we obtain the retailer's profit as TE",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I 2 TN and retailer's profit is"
+        },
+        {
+            "text": "Proposition 4 Under TCF scenario with encroachment case,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I 2 TN and retailer's profit is"
+        },
+        {
+            "text": "Similar to Proposition 3, the retailer comprehensively considers the potential online market, substitution degree, and production cost when she sets the interest rate. In addition, given that the retailer is both the lender and participant in this case, the loan quantities from the supplier also affect the retailer's decision in regard to the interest rate. Further, under the TCF scenario, for the two subgames, the interest rate is positively correlated with the potential online market and substitution degree, but negatively correlated with production cost. Meanwhile, we observe that the retailer's interest rate when she encroaches is obviously lower than that in the non-encroachment case (e.g., I TN > I TE ) which caters to the BCF scenario. From the above, channel encroachment clearly results in fierce competition; thus, results in decreasing in prices (e.g., b TN > b TE , d TN > d TE , p TN > p TE , and w TN > w TE ). Next, under the TCF scenario, we compare the equilibrium strategy under the non-encroachment case and the encroachment case.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I 2 TE and retailer's profit is"
+        },
+        {
+            "text": "(1) consider the substitution degree \u2208 [0, 0.319), (i) if the production cost c \u2208 [0, c 1 and potential online market a \u2208 [0 , a 1 or production cost c \u2208 c 1 , c and potential online market a \u2208 [0 , a , the equilibrium exists under encroachment;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "(ii) if the production cost c \u2208 [0, c 1 and potential online market a \u2208 a 1 , a , the equilibrium exists under non-encroachment;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "(2) consider the substitution degree \u2208 [0.319, 0.749), (i) if the potential online market a \u2208 [0 , a 1 , the equilibrium exists under encroachment; (ii) if the potential online market a \u2208 a 1 , a , the equilibrium exists under non-encroachment;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "(3) consider the substitution degree \u2208 [0.749, 0.781), (i) if the production cost c \u2208 [0,c 2 and potential online market a \u2208 [0 , a or production cost c \u2208 c 2 , c and potential online market a \u2208 a 1 , a , the equilibrium exists under non-encroachment;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "(ii) if the production cost c \u2208 c 2 , c and potential online market a \u2208 [0 , a 1 , the equilibrium exists under encroachment;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "(4) consider the substitution degree \u2208 [0.781, 1), the equilibrium exists under non-encroachment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "From Lemma 2, we obtain the sub-equilibrium of the retailer's optimal strategy. Unlike in the BCF scenario, channel encroachment is not the only choice for the retailer. On this basis, the production cost and potential online market are important factors that influence the retailer's decisions. In general, the higher the production cost, the greater the possibility of the retailer encroaching on the online market; this may be closely related to the disadvantages of high production cost. Further, if the potential online market is below a certain threshold, the Table 3 The interactions between credit financing and channel encroachment",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 566,
+                    "end": 573,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Lemma 2. Under the TCF scenario, upon comparing the non-encroachment and encroachment case, the following strategy is found to exist:"
+        },
+        {
+            "text": "Equilibrium strategy c a",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conditions"
+        },
+        {
+            "text": "retailer considers encroaching. In the previous discussion, the sub-equilibrium encroachment strategies under the BCF scenario and TCF scenario are characterized. Next, we discuss which form of credit financing is better for the supplier and derive the corresponding conditions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conditions"
+        },
+        {
+            "text": "Lemma 3 Comparing the BCF scenario and TCF scenario, we obtain the interactions between credit financing and channel encroachment, as shown in Table 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 143,
+                    "end": 150,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conditions"
+        },
+        {
+            "text": "Lemma 3 demonstrates the equilibrium strategy of credit financing, which is heavily dependent on the substitution degree, potential online market, and (a) (b) (c) (d) Fig. 2 The region of strategy equilibrium production cost. Figure 2 shows a visual representation of above analysis. Intuitively, the supplier is more likely to choose TCF; however, in the case where the potential online market, substitution degree, and production are simultaneously small, BCF-E may serve as an equilibrium strategy. The retailer is both the seller and creditor, which causes a disadvantage for the supplier; otherwise, compared with the BCF strategy, the retailer sets the pricing decision by considering the impact of individual behaviors on the upstream supply chain. Recall from Lemma 1 and Lemma 2 that we observe that the thresholds in Fig. 2 provide the equilibrium strategy of credit financing. We use colorless and colored areas to represent the BCF strategy and TCF strategy, respectively, in which the colored part is divided into the cases of encroachment and non-encroachment. As shown in Fig. 2 , as long as the production cost remains below a threshold, the supplier never chooses the BCF strategy. When the production cost increases to a threshold, the probability of the supplier choosing BCF may increase. In addition, the larger the substitution, the smaller the values of a 1 and a 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 167,
+                    "end": 173,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 226,
+                    "end": 234,
+                    "text": "Figure 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 827,
+                    "end": 833,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1087,
+                    "end": 1093,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conditions"
+        },
+        {
+            "text": "Although there is a large body of research on supply chain finance and channel encroachment, few studies have investigated the interplay between credit financing and channel encroachment. The retailer, as a participant in a traditional channel, may also lend to the supplier. Therefore, this study investigates the financing preferences of the supplier and analyzes how the dual roles of the retailer affect the choice of supplier.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "In this paper, we assume a Nash-Stackelberg game model between a capital-constrained supplier and a retailer to study the combination strategy of credit financing and channel encroachment. As the leader, the supplier has two options, namely BCF or TCF. Correspondingly, the retailer, as the follower, determines whether to encroach or not. Our analysis provides the following managerial insights. First, for suppliers with capital shortage, the interaction between credit financing and channel encroachment is heavily dependent on the substitution degree, potential online market, and production cost. When the cost is high or the online market share exceeds a threshold, the supplier prefers to choose TCF. Further, when BCF is considered, the retailer definitely encroaches; otherwise, whether to encroach or not mainly depends on the production cost. As the production cost increases, the retailer tends to only operate the existing channel. Finally, regardless of the form of credit financing that the supplier chooses, when the retailer encroaches, the interest rate decreases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "However, in practice, demand may be influenced by other factors that remain to be explored in future research. In addition, channel encroachment involves higher costs, which affect the corresponding decision-making. Further, the competition among supply chains, upstream or downstream, is also an interesting topic and worth studying.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Under the scenario without capital constraint for supplier, we have Under BCF scenario and retailer does not encroach the online market. In this case, the retailer's profit is as r = (p \u2212 w)D N r . In third stage, the retailer decides on her retail price. With 2 \u03c0 r \u2215 p BN 2 < 0 and \u03c0 r \u2215 p BN = 0 , we can derive expression of the optimal retail price in relation to the supplier's direct price and wholesale price is p BN = 1\u2212a+w+d 2 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 1"
+        },
+        {
+            "text": "In second stage, the supplier decides on his direct price and wholesale price. With 2 \u03c0 s \u2215 (d BN ) 2 < 0 and 2 \u03c0 s \u2215 (w BN ) 2 < 0 , \u03c0 s \u2215 d BN = 0 and \u03c0 s \u2215 w BN = 0 , we can derive expressions of the optimal direct price and wholesale price in relation to the creditor's interest rate are w BN .",
+            "cite_spans": [
+                {
+                    "start": 294,
+                    "end": 296,
+                    "text": "BN",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Proof of Proposition 1"
+        },
+        {
+            "text": "Under BCF scenario and retailer encroaches the online market. In this case, the retailer's profit is as r = (p \u2212 w)D E r + (b \u2212 w)Q E r . In third stage, the retailer decides on her retail price and booking price. With 2 \u03c0 r \u2215 p BE 2 < 0 , 2 \u03c0 r \u2215 b BE 2 < 0 and \u03c0 r \u2215 p BE = 0 , \u03c0 r \u2215 b BE = 0 , we can derive expression of the optimal retail price p BE = 4+a(\u22124+ )+2d +d 2 8\u22122 2 + w 2 and booking price b BE = 2a(\u22121+ )\u2212 (2+d(2+ )) 2(\u22124+ 2 ) + w 2 in relation to the supplier's direct price and wholesale price. In second stage, the supplier decides on his direct price and wholesale price. With 2 \u03c0 s \u2215 (d BE ) 2 < 0 and 2 \u03c0 s \u2215 (w BE ) 2 < 0 , \u03c0 s \u2215 d BE = 0 and \u03c0 s \u2215 w BE = 0 , we can derive expressions of the optimal direct price and wholesale price in relation to the creditor's interest rate are",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 2"
+        },
+        {
+            "text": "In first stage, the creditor sets interest rate. With 2 \u03c0 b \u2215 I BE 2 < 0 and \u03c0 b \u2215 I BE = 0 , we solve the optimal interest rate I BE = a(1\u2212 )+2 4c(1\u2212 )(4\u2212 ) \u2212 1 2 . Then taking I BE to w BE and d BE , we can get the optimal wholesale price w BE = 20\u22122 \u22123a(2\u22123 + 2 ) 8(\u22124+ )(\u22122+ + 2 ) + c 4 and direct price d BE = 4+18 \u22124 2 +3a(6\u22127 + 2 ) 8(\u22124+ )(\u22122+ + 2 ) + c 4 . Next, we take w BE and d BE to p BE , we can get the optimal retail price p BE = \u221284+90 \u221226 2 +2 3 +a(70\u2212117 +54 2 \u22127 3 ) 8(\u22124+ )(\u22121+ )(\u22124+ 2 ) + c 4(2\u2212 ) . Finally, we derive the participates' profits as BE b = c 2 (1\u2212 )(4\u2212 )",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 2"
+        },
+        {
+            "text": "and.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 2"
+        },
+        {
+            "text": "When c \u2208 [0, c ,a \u2208 [0, a , the retailer will encroach the online market.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Lemma 1"
+        },
+        {
+            "text": "BE r \u2212 BN r = 1 (\u22124 + ) 2 (3 + ) 2 (\u22124 + ) 2 \u2212c 2 (\u22124 + ) 2 (\u22121 + ) 2 (2 + ) 2 (3 + ) 2 +2c(\u22124 + )(\u22121 + )(2 + )(3 + ) \u22124 + 26a + 22 \u2212 32a \u2212 3 2 + 5a 2 \u2212 3 + a 3 \u22123656 + 10424a \u2212 7682a 2 + 1052 \u2212 3436a + 2619a 2 + 708 2 \u2212 2180a 2 +1696a 2 2 \u2212 184 3 + 580a 3 \u2212 441a 2 3 \u2212 29 4 + 114a 4 \u2212 105a 2 4 +10 5 \u2212 32a 5 + 26a 2 5 \u2212 6 + 2a 6 \u2212 a 2 6 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Lemma 1"
+        },
+        {
+            "text": ". We simplify its numerator to a quadratic function with c as its independent variable, then we write the numerator as f(c) . We can obtain that \u0394 < 0 and the quadratic coefficient \u2212(\u22124 + ) 2 (\u22121 + ) 2 (2 + ) 2 (3 + ) 2 < 0 . According to the discriminant of the root of quadratic equation with one variable and the opening direction of function, we can know that f (c) is always smaller than 0. But",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Lemma 1"
+        },
+        {
+            "text": "Under TCF scenario and retailer does not encroach the online market. In this case, the retailer's profit is as r = (p \u2212 w)D N r + cI TN D N s + D N r . In third stage, the retailer decides on her retail price. With 2 \u03c0 r \u2215 p TN 2 < 0 and \u03c0 r \u2215 p TN = 0 , we can derive expression of the optimal retail price in relation to the supplier's direct price and wholesale price and interest rate is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 3"
+        },
+        {
+            "text": "In second stage, the supplier decides on his direct price and wholesale price. With 2 \u03c0 s \u2215 (d TN ) 2 < 0 and 2 \u03c0 s \u2215 (w TN ) 2 < 0 , \u03c0 s \u2215 d TN = 0 and \u03c0 s \u2215 w TN = 0 , we can derive expressions of the optimal direct price and wholesale price in relation to the creditor's interest rate are w TN = 1+a(\u22121+ )",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 3"
+        },
+        {
+            "text": "In first stage, the retailer as a creditor sets interest rate. With 2 \u03c0 r \u2215 I TN 2 < 0 and \u03c0 r \u2215 I TN = 0 , we solve the optimal interest rate I TN = +a (1\u2212 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 3"
+        },
+        {
+            "text": "Under TCF scenario and retailer encroaches the online market. In this case, the retailer's profit is as r = (p \u2212 w)D E r + (b \u2212 w)Q E r + cI TE D E s + D E r + Q E r . In third stage, the retailer decides on her retail price and booking price. With 2 \u03c0 r \u2215 p TE 2 < 0 , 2 \u03c0 r \u2215 b TE 2 < 0 and \u03c0 r \u2215 p TE = 0 , \u03c0 r \u2215 b TE = 0 . We can derive expression of the optimal retail price p TE = 4(1+w)+a(\u22124+ )+2d +d 2 \u2212w 2 +2cI TE (\u22122+ + 2 ) 2(4\u2212 2 ) and booking price b TE = 4w\u22122a(\u22121+ )+2 +2d +d 2 \u2212w 2 +2cI TE (\u22122+ + 2 ) 2(4\u2212 2 ) in relation to the supplier's direct price, wholesale price and interest rate. In second stage, the supplier decides on his direct price and wholesale price. With 2 \u03c0 s \u2215 (d TE ) 2 < 0 and 2 \u03c0 s \u2215 (w TE ) 2 < 0 , \u03c0 s \u2215 d TE = 0 and \u03c0 s \u2215 w TE = 0 , we can derive expressions of the optimal direct price and wholesale price in relation to the creditor's interest rate are w TE = 4\u22122 \u2212a(2\u22123 + 2 ) 4(\u22122+ )(\u22122+ + 2 ) + cI TE (4\u22123 )",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 4"
+        },
+        {
+            "text": "2(2\u2212 ) + c 2 , d TE = a(\u22121+ )\u2212 2(\u22122+ + 2 ) + c(1+I TE ) 2 . In first stage, the retailer as a creditor sets interest rate. With 2 \u03c0 r \u2215 I TE 2 < 0 and \u03c0 r \u2215 I TE = 0 , we solve the optimal interest rate I TE = +a(1\u2212 ) 2c(1\u2212 )(2+ ) \u2212 1 2 . Then taking I TE to w TE and d TE , we can get the optimal wholesale price w TE = 4+2a(\u22121+ ) 2 +2(1+c) \u2212(3+c) 2 \u2212c 3 4(\u22122+ )(\u22122+ + 2 ) and direct price d TE = 3[a(\u22121+ )\u2212 ] 4(\u22122+ + 2 ) + c 4 . Next, we take w TE , d TE and I TE to p TE , we get the optimal retail price p TE = \u221210\u22129a(\u22121+ )+4 8(\u22122+ + 2 ) + c 4 . Finally, we derive the participates' profits as .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Proposition 4"
+        },
+        {
+            "text": "When TE r \u2212 TN r > 0 , the retailer will encroach the online market, otherwise, she doesn't encroach. TE r \u2212 TN r = 1 64[(2\u2212 )(1\u2212 )(1+ )(2+ )] {24 \u2212 72a \u2212 12 \u2212}4a \u2212 44 2 +128a 2 + 20 3 \u2212 44a 3 + 4 4 \u2212 8a 4 + 4c 2 (\u22121 + ) 2 4 + 4 + 2 + 2 3 + 4 + a 2 34 + 21 \u2212 86 2 + 27 3 + 4 4 + c \u22128a(\u22121 + ) 3 2 + 3 + 2 + 8(\u22121 + ) 2 2 + 3 + 2 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Lemma 2"
+        },
+        {
+            "text": "As evidenced by Lemma 1, the equilibrium strategy is as summarized in the text.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Lemma 2"
+        },
+        {
+            "text": "According to the retailer behavior equilibrium, we discuss how the supplier considers different credit financing strategies. Through the similar steps as before, we divide the range of , c and a into the following intervals 1. consider the substitution degree \u2208 [0, 0.319), (i) if the production cost c \u2208 [0 , c 3 and potential online market a \u2208 [0 , a or production cost c \u2208 c 3 , c 1 ) and potential online market a \u2208 a 1 , a or a \u2208 a 2 , a or c \u2208 c 1 , c) and a \u2208 a 2 , a , the supplier will choose trade credit financing strategy; (ii) if the production cost c \u2208 c 3 , c 1 and potential online market a \u2208 min a 1 , a 2 or c \u2208 c 1 , c) and a \u2208 min a, a 2 the supplier will choose bank credit financing strategy. 2. consider the substitution degree \u2208 [0.319, 0.505) , (i) if the production cost c \u2208 [0 , c 3 and potential online market a \u2208 [0 , a , the supplier will choose trade credit financing strategy; (ii) if c \u2208 c 3 , c) and potential online market a \u2208 min a 1 , a 2 , the supplier will choose bank credit financing strategy, otherwise, he will choose trade credit financing strategy. 3. consider the substitution degree \u2208 [0.505, 1) , if c \u2208 [0, c) and a \u2208 [0 , a , the supplier will choose trade credit financing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proof of Lemma 3"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Green credit financing versus trade credit financing in a supply chain with carbon emission limits",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "An",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Eur J Oper Res",
+            "volume": "292",
+            "issn": "",
+            "pages": "125--145",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Managing opportunistic supplier product adulteration: deferred payments, inspection, and combined mechanisms",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Babich",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Manuf Serv Oper Manag",
+            "volume": "14",
+            "issn": "",
+            "pages": "301--314",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Supply chain gains from integration",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bernabucci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Finan Execut",
+            "volume": "24",
+            "issn": "",
+            "pages": "46--48",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Towards a framework on the factors conditioning the role of logistics service providers in the provision of inventory financing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakuu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Masi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Godsell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Oper Prod Manage",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Dynamic inventory management with cash flow constrains",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Nav Res Logist",
+            "volume": "55",
+            "issn": "",
+            "pages": "758--768",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Direct marketing, indirect profits: a strategic analysis of dual-channel supply-chain design",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Chhajed",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hess",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Manage Sci",
+            "volume": "49",
+            "issn": "",
+            "pages": "1--20",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Inventory, risk shifting, and trade credit",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chod",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Manage Sci",
+            "volume": "63",
+            "issn": "",
+            "pages": "3187--3206",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Financing multiple heterogeneous suppliers in assembly systems: buyer finance vs. bank finance",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Manuf Serv Oper Manag",
+            "volume": "20",
+            "issn": "",
+            "pages": "53--69",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The supply chain effects of trade credit under uncertain demands",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Omega",
+            "volume": "98",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Cournot competition under yield uncertainty: the case of the U.S. influenza vaccine market",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Deo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Corbett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Manuf Serv Oper",
+            "volume": "11",
+            "issn": "",
+            "pages": "563--576",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Financing and coordinating the supply chain with a capital-constrained supplier under yield uncertainty",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Prod Econ",
+            "volume": "230",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Determinants of distribution intensity",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Frazier",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lassar",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J Mark",
+            "volume": "60",
+            "issn": "",
+            "pages": "39--51",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Dynamic inventory management with inventory-based financing",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Hsu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/poms.13323"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Formation of alliances in Internet-based supply exchanges",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Granot",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sosic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Manage Sci",
+            "volume": "51",
+            "issn": "",
+            "pages": "92--105",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Strategic inventory and supplier encroachment",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gurnani",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Geng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Manuf Serv Oper Manag",
+            "volume": "21",
+            "issn": "",
+            "pages": "536--555",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "A stochastic inventory model with trade credit",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Manuf Serv Oper Manag",
+            "volume": "11",
+            "issn": "",
+            "pages": "4--18",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Inventory policy and trade credit financing",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Haley",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Higgins",
+                    "suffix": ""
+                }
+            ],
+            "year": 1973,
+            "venue": "Manage Sci",
+            "volume": "20",
+            "issn": "",
+            "pages": "464--471",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Inventory and pricing decisions for a dual-channel supply chain with deteriorating products",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Oper Res Int J",
+            "volume": "20",
+            "issn": "",
+            "pages": "1461--1503",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Joint optimization of pricing and inventory control for dualchannel problem under stochastic demand",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Ann Oper Res",
+            "volume": "298",
+            "issn": "",
+            "pages": "307--337",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Sustaining production chains through financial linkages",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Am Econ Rev",
+            "volume": "102",
+            "issn": "",
+            "pages": "402--406",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Financing the newsvendor: supplier vs. bank, and the structure of optimal trade credit contracts",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kouvelis",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Oper Res",
+            "volume": "60",
+            "issn": "",
+            "pages": "566--580",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Sharing inventory risk supply chain: the implication of financial constraint",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Debo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sycara",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Omega",
+            "volume": "37",
+            "issn": "",
+            "pages": "811--825",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Product risk, asymmetric information, and trade credit",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Stowe",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "J Financ Quant Anal",
+            "volume": "28",
+            "issn": "",
+            "pages": "285--300",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Demand information sharing and channel choice in a dual-channel supply chain with multiple retailers",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Leong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Int J Prod Res",
+            "volume": "52",
+            "issn": "",
+            "pages": "6792--6818",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Supplier encroachment in competitive supply chains",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Int J Prod Econ",
+            "volume": "165",
+            "issn": "",
+            "pages": "120--131",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Selection of financing strategies with a risk-averse supplier in a capital-constrained supply chain",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "An",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Transp Res E Logist Transp Rev",
+            "volume": "118",
+            "issn": "",
+            "pages": "163--183",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Does change in the information environment affect financing choices?",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Manage Sci",
+            "volume": "65",
+            "issn": "",
+            "pages": "5676--5696",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Inventory financing a risk-averse newsvendor with strategic default",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Dash",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ind Manag Data Syst",
+            "volume": "120",
+            "issn": "",
+            "pages": "1003--1038",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Supplier encroachment strategy in the presence of retail strategic inventory: centralization or decentralization",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Omega",
+            "volume": "98",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Inducing downstream information sharing via manufacturer information acquisition and retailer subsidy",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sethi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Decision Sci",
+            "volume": "51",
+            "issn": "",
+            "pages": "691--719",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "EOQ-based pricing and customer credit decisions under general supplier payments",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Teng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Eur J Oper Res",
+            "volume": "289",
+            "issn": "",
+            "pages": "652--665",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Research note-The benefits of personalized pricing in a channel",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Manage Sci",
+            "volume": "25",
+            "issn": "",
+            "pages": "97--105",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Pricing strategies of a dual-channel supply chain with risk aversion",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Salifou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Transp Res E Logist Transp Rev",
+            "volume": "90",
+            "issn": "",
+            "pages": "108--120",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Trade credit, quality guarantees, and product marketability",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Malitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ravid",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "",
+            "volume": "22",
+            "issn": "",
+            "pages": "117--127",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Technical note-managing inventory for firms with trade credit and deficit penalty",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Oper Res",
+            "volume": "67",
+            "issn": "",
+            "pages": "468--478",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Dynamic pricing strategies for multiproduct revenue management problems",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Maglaras",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Meissner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Manuf Serv Oper Manag",
+            "volume": "8",
+            "issn": "",
+            "pages": "136--148",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "An industry equilibrium analysis of downstream vertical integration",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mcguire",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Staelin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Mark Sci",
+            "volume": "27",
+            "issn": "",
+            "pages": "115--130",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Price-matching guarantees in dual channels",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nalca",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Quant Mark Econ",
+            "volume": "15",
+            "issn": "",
+            "pages": "1--22",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Multinational firms' local sourcing strategies considering unreliable supply and environmental sustainability",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Niu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ji",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Resour Conserv Recycl",
+            "volume": "155",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Sourcing with deferred payment and inspection under supplier product adulteration risk",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Rui",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Prod Oper Manag",
+            "volume": "24",
+            "issn": "",
+            "pages": "934--946",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Application of genetic algorithm and BP neural network in supply chain finance under information sharing",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "J Comput Appl Math",
+            "volume": "384",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Channel selection and contracting in the presence of a retail platform",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Willems",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Prod Oper Manag",
+            "volume": "28",
+            "issn": "",
+            "pages": "1173--1185",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Coordinating the supply chain finance system with buyback contract: a capital-constrained newsvendor problem",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Comput Ind Eng",
+            "volume": "146",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Price and quantity competition in a differentiated duopoly",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Vives",
+                    "suffix": ""
+                }
+            ],
+            "year": 1984,
+            "venue": "Rand J Econ",
+            "volume": "15",
+            "issn": "",
+            "pages": "546--554",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Manufacturer encroachment with production cost reduction under asymmetric information",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Transp Res E Logist Transp Rev",
+            "volume": "128",
+            "issn": "",
+            "pages": "191--211",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Partial linked-to-order delayed payment and life time effects on decaying items ordering",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Taleizadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Pourmohammad-Zia",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Konstantaras",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Oper Res Int Journal",
+            "volume": "21",
+            "issn": "",
+            "pages": "2077--2099",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Optimizing the credit term decisions in a dual-channel supply chain",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Prod Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/00207543.2020.1762018"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Sourcing from suppliers with financial constraints and performance risk",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Manuf Serv Oper",
+            "volume": "20",
+            "issn": "",
+            "pages": "70--84",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Financing the newsvendor: raising the loan limit by insurance contract",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Oper Res Int J",
+            "volume": "21",
+            "issn": "",
+            "pages": "2907--2932",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "A trade credit model with asymmetric competing retailers",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Baron",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Prod Oper Manag",
+            "volume": "28",
+            "issn": "",
+            "pages": "206--231",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Platform encroachment with price collusion: introducing a self-constructing online platform into the sea-cargo market",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Comput Ind Eng",
+            "volume": "156",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Clicks versus bricks: the role of durability in marketing channel strategy of durable goods manufacturers",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Eur J Oper Res",
+            "volume": "265",
+            "issn": "",
+            "pages": "909--918",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Loss-averse retailers' financial offerings to capital-constrained suppliers: loan vs investment",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jin",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Prod Econ",
+            "volume": "227",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Trade credit, risk sharing, and inventory financing portfolios",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Birge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Manage Sci",
+            "volume": "64",
+            "issn": "",
+            "pages": "3667--3689",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Mean-variance analysis of wholesale price contracts with a capital-constrained retailer: trade credit financing vs bank credit financing",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Talluri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Eur J Oper Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Integrating sourcing and financing strategies in multi-tier supply chain management",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Int J Prod Econ",
+            "volume": "234",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Retail service investing: an anti-encroachment strategy in a retailer-led supply chain",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Omega",
+            "volume": "84",
+            "issn": "",
+            "pages": "212--231",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Manufacturer encroachment with quality decision under asymmetric demand information",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur J Oper Res",
+            "volume": "273",
+            "issn": "",
+            "pages": "217--236",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Optimal ordering policy for a retailer with consideration of customer credit under two-level trade credit financing",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Oper Res Int Journal",
+            "volume": "21",
+            "issn": "",
+            "pages": "2409--2432",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Manufacturer's financing strategy in a dual-channel supply chain: third-party platform, bank, and retailer credit financing",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Transp Res Part E",
+            "volume": "133",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Guarantor financing in a four-party supply chain game with leadership influence",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Cai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Prod Oper Manage Soc",
+            "volume": "29",
+            "issn": "",
+            "pages": "2035--2056",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Yan et al. (2020) \u221a -\u221a ---Zhen et al. (2020) \u221a \u221a \u221a -\u221a -Zhang et al. (b, c2019a)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "(i) the bank's interest rate isI BN = 1+ +a(1\u2212 ) 2c(1\u2212 )(3+ ) \u2212 1The sequence of events (ii) the wholesale price is w BN",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Comparisons of closely related literature",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Model notations Notation Explanation a Potential market for supplier without encroachment, while that of retailer is 1 \u2212 a , where a \u2208 [0, 0.5) Online demand for supplier, where j = N, E Online demand for retailer, where j = N, E Offline demand for retailer, where j = N, E Supplier's profit under different strategies, where k = NN, NE, BN, BE, TN, TE Retailer's profit under different strategies, where k = NN, NE, BN, BE, TN, TE Bank's profit under different strategies, where k = BN, BE",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "TN to w TN and d TN , we can get the optimal wholesale price TN , d TN and I TN to p TN , we can get the optimal retail price p TN = 3[1\u2212a(1\u2212 )] Finally, we derive the participates' profits as TN s = NN s \u2212",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}
