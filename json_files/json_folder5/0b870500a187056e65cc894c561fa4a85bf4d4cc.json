@@ -1,0 +1,1153 @@
+{
+    "paper_id": "0b870500a187056e65cc894c561fa4a85bf4d4cc",
+    "metadata": {
+        "title": "Short-term real-time prediction of total number of reported COVID-19 cases and deaths in South Africa: a data driven approach",
+        "authors": [
+            {
+                "first": "Tarylee",
+                "middle": [],
+                "last": "Reddy",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ziv",
+                "middle": [],
+                "last": "Shkedy",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u2020",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Charl",
+                "middle": [],
+                "last": "Janse Van Rensburg",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Henry",
+                "middle": [],
+                "last": "Mwambi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Pravesh",
+                "middle": [],
+                "last": "Debba",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Khangelani",
+                "middle": [],
+                "last": "Zuma",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Samuel",
+                "middle": [],
+                "last": "Manda",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: The rising burden of the ongoing COVID-19 epidemic in South Africa has motivated the application of modeling strategies to predict the COVID-19 cases and deaths. Reliable and accurate short and long-term forecasts of COVID-19 cases and deaths, both at the national and provincial level, are a key aspect of the strategy to handle the COVID-19 epidemic in the country. Methods: In this paper we apply the previously validated approach of phenomenological models, fitting several nonlinear growth curves (Richards, 3 and 4 parameter logistic, Weibull and Gompertz), to produce short term forecasts of COVID-19 cases and deaths at the national level as well as the provincial level. Using publicly available daily reported cumulative case and death data up until 22 June 2020, we report 5, 10, 15, 20, 25 and 30-day ahead forecasts of cumulative cases and deaths. All predictions are compared to the actual observed values in the forecasting period. Results: We observed that all models for cases provided accurate and similar short-term forecasts for a period of 5 days ahead at the national level, and that the three and four parameter logistic growth models provided more accurate forecasts than that obtained from the Richards model 10 days ahead. However, beyond 10 days all models underestimated the cumulative cases. Our forecasts across the models predict an additional 23,551-26,702 cases in 5 days and an additional 47,449-57,358 cases in 10 days. While the three parameter logistic growth model provided the most accurate forecasts of cumulative deaths within the 10 day period, the Gompertz model was able to better capture the changes in cumulative deaths beyond this period. Our forecasts across the models predict an additional 145-437 COVID-19 deaths in 5 days and an additional 243-947 deaths in 10 days. Conclusions: By comparing both the predictions of deaths and cases to the observed data in the forecasting period, we found that this modeling approach provides reliable and accurate forecasts for a maximum period of 10 days ahead.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Coronaviruses are a large family of viruses which may cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The ongoing outbreak of the novel coronavirus (SARS-CoV-2) was first detected on 31 December 2019 in Wuhan, China. In the past 6 months the virus has rapidly spread to all regions with a total of 9,347,168 confirmed cases and 478,888 deaths as of 22 June 2020 [1] .",
+            "cite_spans": [
+                {
+                    "start": 490,
+                    "end": 493,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "The first COVID-19 case was reported in South Africa on 5 March 2020. By 22 June, 2020, South Africa had the highest burden of COVID-19 cases in the African region with 101,590 reported cases and 1991 confirmed COVID-19 related deaths. The South African government declared a national state of disaster on 15 March 2020 and commenced a state of lockdown from 26 March 2020 in an effort to reduce COVID-19 transmission in the country [2] . During this period all international and inter-provincial borders were closed, as well as all schools and several economic sectors in the country. In addition to these changes, non-pharmaceutical interventions such as the mandatory use of fabric masks, contact tracing and community testing were implemented across the country. As of June 2020, the country adopted a COVID-19 risk-adjusted strategy with a phased reopening of selected economic sectors and schools. Due to the unprecedented nature of the situation, the uncertainties about the disease and the need to make informed policy decisions, modelling has taken centre stage in supporting key policy discussions surrounding COVID-19 in South Africa [3] . To date, the models that have been applied to the South African COVID-19 outbreak have focused on understanding the potential effects of interventions and policies based on SEIR-type models. These models are a common epidemiological modelling technique that divides a population into several compartments according to infection status (Susceptible, Exposed, Infectious, and Removed). Based on assumptions about the disease process, public health policies, demographic and mixing patterns among individuals in the population a set of differential equations governing how individuals in the population transition from one compartment to another, are defined and solved. Although these models are useful in understanding the effect of different factors on the transmission process and possible intervention strategies, they are sensitive to the assumptions made and require a deep understanding of the disease being modelled. The South African National COVID-19 Modeling Consortium [4] , for example, assumed the following in their SEIR model: 75% of infected individuals are asymptomatic, the time from onset to infectiousness is 4 days (2\u20220-9\u20220), a 5 day duration of infectiousness from onset of symptoms; a mean of 9 days (8\u20220-17\u20220) between the time from onset of symptoms to ICU admission. Based on these assumption and model structure, it was predicted (June 12, 2020) that the number of detected cases (assuming the current detection rate of June 12) was 185,000 (89,500 -358,000) and 278,000 (132,000 -535,000) for the 29th of June and the 6th of July 2020, respectively. The observed number of cases corresponding to these dates were 144,264 and 205, 721, respectively.",
+            "cite_spans": [
+                {
+                    "start": 433,
+                    "end": 436,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1145,
+                    "end": 1148,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 2130,
+                    "end": 2133,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "An alternative modelling approach, which is more robust and notably simpler (as it is not necessarily required to make assumptions about the transmission process) is that of phenomenological models. These non-linear epidemiological models have previously been applied to model other disease outbreaks such as Ebola [5] , Dengue [6] , Zika virus [7] and, more recently, the COVID-19 pandemic. Specifically, Roosa and colleagues fitted the generalized logistic model, Richards model and a sub-epidemic model to the cumulative COVID-19 cases in the Hubei province of China and the rest of China (excluding the Hubei province) and produced a short-term forecast of 5, 10 and 15 days ahead [8] . The authors expanded on this work using the same modelling approach for the provinces of Guandong and Zheijang [9] . In recent analysis a similar approach was taken to estimate the key epidemic parameters for all 11 provinces in China as well as 9 selected countries [10] . All the aforementioned papers have only focused on modelling cumulative COVID-19 cases. It can be argued, however, that both COVID-19 cases as well as COVID-19 deaths are of key importance in modelling the burden of COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 315,
+                    "end": 318,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 328,
+                    "end": 331,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 345,
+                    "end": 348,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 685,
+                    "end": 688,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 802,
+                    "end": 805,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 958,
+                    "end": 962,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "In using phenomenological models careful consideration needs to be given to the predictions emanating from all of the models fitted as such models could be used to support interventions on containing an epidemic. Generally authors select models on one of two key phenomenological modelling approaches: model selection and model averaging [7] . The former consists of selection of the model with the best goodness of fit to the data (and predicting the number of cases and epidemiological parameters of interest based on the selected model) and the latter uses information from a collection of models fitted to the data for prediction and estimation. The latter approach is a robust method to handle model uncertainty, particularly when there are several models which provide similar fits to the observed data. In the current paper and in the context of COVID-19 in Sub Saharan Africa we advocate the use of a sensitivity analysis approach for short (and long) term prediction of the number of cases.",
+            "cite_spans": [
+                {
+                    "start": 338,
+                    "end": 341,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "In this paper we present (1) South Africa's COVID trajectory to the first 100,000 (22 June 2020) cases and (2) fit a series of non-linear growth models, calibrated to COVID-19 cumulative number of reported case data from 5 March 2020 to 22 June 2020. The models are used to produce short term predictions of the number of reported cases expected for a period of 30 days ahead. These forecasts are generated at the national level as well as at the provincial level for the three highest burden provinces (Western Cape, Gauteng, and Eastern Cape). In view of the strong dependence of the number of detected COVID-19 cases and the number of tests performed, as well as the testing algorithm applied to the population, we also focus on the modelling of COVID-19 deaths, which may provide more reliable insight into the burden of the disease in South Africa. The short-term forecasts (for a period of 30 days ahead) of COVID-19 related deaths at a national level (and for selected provinces) are also studied.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Modelling the COVID-19 outbreak in South Africa implies modelling a dataset which is updated daily, which could affect the selection and the associated performance of the model on daily basis. Thus, while the selection of the best fitting model to the data could be critical, we illustrate the inherent analytical predictive problem of choosing a single model for predicting the future number of cases. Our point of view is that in a country such as South Africa (and other countries in Sub-Saharan Africa), where there is uncertainty related to the true number of cases, a sensitivity analysis based on multiple models is necessary for both short and longterm prediction of the number of cases and epidemiological parameters of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Routine confirmation of cases of COVID-19 is based on amplification and detection of unique SARS CoV-2 viral nucleic acid sequences by real-time reverse-transcription polymerase chain reaction (rRTPCR), with confirmation by nucleic acid sequencing when necessary [11] . A daily record of newly diagnosed COVID-19 cases and deaths were extracted for the period 5 March 2020 to 22 June 2020, at national and provincial level from a publicly available data repository [12, 13] . Data from the first 110 days of the outbreak (until June 22, 2020) were used to fit the models.",
+            "cite_spans": [
+                {
+                    "start": 263,
+                    "end": 267,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 465,
+                    "end": 469,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 470,
+                    "end": 473,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data"
+        },
+        {
+            "text": "For the analysis presented in this paper, we follow the modelling approach presented by Roosa et al. [8, 9] and Sebrango et al. [7] and fit a set of nonlinear growth models to the total number of reported cases and deaths. We let Y(t) denote the cumulative number of cases (or deaths) at time t and \u03bc(t) represent the expected number of reported cases at time t. For the purpose of this study, we considered five data driven non-linear growth models, namely; 3 parameter logistic; 4 parameter logistic; Gompertz and Weibull growth models, which are presented in Table 1 .",
+            "cite_spans": [
+                {
+                    "start": 101,
+                    "end": 104,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 105,
+                    "end": 107,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 128,
+                    "end": 131,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 562,
+                    "end": 569,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "The advantage of using the above models is that their mean structure \u03bc(t) can be parametrized in terms of the growth rate, the final size and the turning point of the outbreak.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "For all the models, the parameter \u03b1 denotes the final size of the epidemic (i.e., the total number of reported cases at the end of the epidemic), \u03b3 the per capita intrinsic growth rate of the infected population, k the exponent of the deviation from the standard logistic curve and \u03b7 the turning point (i.e. the time in which the daily number of cases reach its peak and the half time of the outbreak). Specifically Wu et al. [14] state that when an epidemic follows an exponential growth at an early stage the Richards model may be more suitable and that when the growth rate slows down (after the turning point) logistic models may provide a better fit to the data.",
+            "cite_spans": [
+                {
+                    "start": 426,
+                    "end": 430,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "In line with approach adopted by [8, 9] , the unknown model parameters were estimated using non-linear least squares estimation. This is achieved by searching for the set of parameters that minimizes the sum of squared differences between the observed data and the corresponding model solution. All analysis was performed using R and SAS. For outcomes with a clear biphasic trajectory, piecewise forms of the growth curves were fitted. The optimal change point was chosen by iteratively comparing fit criteria of models with different change points, with the model with the smallest Akaike information criteria [15] selected. In provincial models, the first time point (day 1) refers to the date at which the first case was diagnosed in the specific province. To assess the accuracy of the models in predicting cases and deaths, we present the actual observed values in the forecasting period for both cases and deaths.",
+            "cite_spans": [
+                {
+                    "start": 33,
+                    "end": 36,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 37,
+                    "end": 39,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 611,
+                    "end": 615,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "For the analysis presented in this paper, our main interest is to use the available data from t = 1 to t = T and to forecast the total number of cases for the period T + 30 days ahead. We term the period 1 to T the estimation Table 1 Model formulation for the nonlinear models fitted to the COVID-19 outbreak data. Note that Y(t) is the daily expected cumulative number of cases and Y(t) = \u03bc(t) + \u03b5(t)",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 226,
+                    "end": 233,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Prediction intervals"
+        },
+        {
+            "text": "Richards",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "period and the period from T + 1 to T + 30 the forecast (prediction period). To construct prediction intervals (within and outside the estimation period) we applied a parametric bootstrap [16] approach which was previously used to quantify parameter uncertainty and construct confidence intervals in mathematical modeling studies [17] . In this method, multiple observations are repeatedly sampled from the best-fit model in order to quantify parameter(s) and prediction uncertainty by assuming that the time series follows a Poisson distribution centered on the mean at the time points t i .",
+            "cite_spans": [
+                {
+                    "start": 188,
+                    "end": 192,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 330,
+                    "end": 334,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "The daily number of reported COVID-19 cases for the period 5 March 2020 to 22 June 2020 is presented in Fig. 1 . The growth of COVID-19 in South Africa appears to be rapid until 27 March 2020 where a total of 243 daily new cases were observed, followed by a decline in the rate of new cases. From the 28 March 2020 to 11 April 2020 the daily increase in cases was consistently below 100. From May 2020 onwards a consistent increase more than 1000 cases per day were observed with larger increments in June. The daily number of new reported COVID-19 cases and tests performed are presented in Fig. 2 . To date, a total of 1,353,176 tests have been conducted, corresponding to a testing rate of 22.816 per 1000 population. There was a significant correlation between the number of cases detected and the number of tests performed daily (Rho = 0.7759, p-value< 0.001).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 104,
+                    "end": 110,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 592,
+                    "end": 598,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The cumulative COVID-19 cases are depicted separately for each of South Africa's nine provinces in Fig. 3 , where a high degree of interprovincial heterogeneity is observed. As at 22 June 2020 the province with the highest number of cases is the Western Cape with 52554 cases, followed by Gauteng and Eastern Cape with 22341 and 16895 cases respectively.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 99,
+                    "end": 105,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The total deaths reported from the 27 March to 22 June 2020 is presented in Fig. 4 . In total 1991 COVID-19 related deaths were reported in this period with an overall case fatality rate of 1.96%. The first death was observed in the Western Cape (WC), followed by KwaZulu Natal (KZN), Free State (FS) and Gauteng Province (GP). Eastern Cape (EC) recorded their first death on the 16 April 2020. Initially WC contributed the most to the deaths as it was the epicentre. The other provinces curves' exhibit patterns that are indicative of irregular reporting, as increases occurred in steps.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 76,
+                    "end": 82,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "The models described in the previous section were all considered for modeling cumulative cases, with only models resulting in convergence further reported on in the tables. The Richards model, 3 and 4 parameter logistic models were fitted to the total number of reported COVID-19 cases at national level. The parameter estimates for the different models are presented in Supplementary Table 1 . As mentioned in the previous section, our main interest is to produce a short term forecast for the number of reported cases and deaths. As depicted from the short-term forecasts for the three models fitted to cases (see Fig. 5 , Table 2 ), all three models appear to fit the observed data (within the estimation period) well with the 3 parameter and 4 parameter logistic models providing very similar predictions over the 30-day ahead period. The Short-term forecasts of the total number of reported COVID-19 casesa province level analysis",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 385,
+                    "end": 392,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 616,
+                    "end": 622,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 625,
+                    "end": 632,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Short-term prediction of the total number of reported COVID-19 cases -a national level analysis"
+        },
+        {
+            "text": "As presented in Fig. 3 , the outbreak in different provinces does not follow the same pattern and at the time that this analysis was conducted (June 22, 2020) three provinces (Western Cape, Eastern Cape and Gauteng) were responsible for 90.3% of the total diagnosed cases in South Africa. In this section we present a similar modeling approach implemented to a province-specific COVID-19 cumulative case trajectory for the three highest burden provinces. Of the four models fitted to the Western Cape, namely the 3 and 4 parameters logistic, Weibull and Richards model, the model which provided the best fit to the data is the 3 parameter logistic regression model. Due to the significantly slower growth rate of the outbreaks in the Eastern Cape and Gauteng from March, 2020 until 22 June 2020, piecewise growth models were fitted to capture this change point. The model which provided the best fit to the Eastern Cape data is the 3-parameter logistic model with a change point in the growth rate at day 80 (8 June 2020). Similarly, a piecewise 3 parameter logistic model was fitted to the Gauteng data with a change point at day 87 day (1 June 2020). The 30-day forecast of COVID-19 cases, in 5-day intervals, is presented for each province in Table 3 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 16,
+                    "end": 22,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1246,
+                    "end": 1253,
+                    "text": "Table 3",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Short-term prediction of the total number of reported COVID-19 cases -a national level analysis"
+        },
+        {
+            "text": "As previously mentioned, the total number of cases is highly correlated to the total number of tests conducted and therefore can be a misleading indicator to the outbreak progression. For that reason, modelling the total number of COVID-19 related deaths is of interest. We considered all the models described in Table 1 in the modeling of COVID-19 deaths. However, only the 3PL, Richards model and Gompertz model resulted in convergence and are subsequently reported on. The parameter estimates and fit criteria for each of the models fitted are presented in Supplementary Table A2 . According to the AIC, within the estimation period, the Richards model provided the best fit to the cumulative COVID-19 deaths at the national level. As with the total number of cases, the Richards model seems to flatten out prematurely and therefore, although it fitted the data better according to the AIC, the 3PL forecasts are used in subsequent interpretation. The 30-day forecast of COVID-19 deaths, at 5-day intervals, is presented in Table 4 . The predicted number of deaths on the 26 June 2020 (5 day forecast) is 2336 (2219.4-2457.2), and the total deaths is expected to be 2700 (2534.7-2883.6) as at 1 July 2020. The 30-day forecast is subject to a higher degree of uncertainty with 3775 (3346.3-4435.1) deaths prediction. We notice that the 3PL model provides smaller predictions compared to the Gompertz model but higher predictions compared to the Richards models. Figure 6 shows the observed deaths and the predictions obtained from the fitted models, as well as the superimposed reported deaths for the period 23 June to 4 July 2020. It is clear from this graph that the model which most closely captures the trajectory of COVID-19 related deaths in SA, outside the estimation period, is the 3PL model. Due to the low COVID-19 death rate in South Africa, the distribution of the cumulative deaths at the provincial level posed a greater challenge in terms of modelling, and we were only able to fit models to the Western Cape COVID-19 deaths.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 313,
+                    "end": 320,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 560,
+                    "end": 582,
+                    "text": "Supplementary Table A2",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1027,
+                    "end": 1034,
+                    "text": "Table 4",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 1464,
+                    "end": 1472,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Short term forecasts of the number of COVID-19 related deaths"
+        },
+        {
+            "text": "The model predictions with observed deaths for Western Cape is presented in Fig. 7 . The 3PL model and the Richards model predictions are close and fit the observed data the best. Figure 7 indicates that the forecasts of the Gompertz model are closest to observed values beyond 22 June 2020. We can see that the trajectory of the Gompertz forecasts beyond the 30 day forecast window will overestimate the observed cases, assuming the actual deaths continue its observed path (Table 5) . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 76,
+                    "end": 82,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 180,
+                    "end": 188,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 475,
+                    "end": 484,
+                    "text": "(Table 5)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Short term forecasts of the number of COVID-19 related deaths"
+        },
+        {
+            "text": "In view of the existing healthcare challenges faced by South Africa, reliable and accurate short-term forecasts of COVID-19 cases and deaths are critical to ensure optimal resource allocation and should be a key aspect of the strategy to handle the COVID-19 epidemic in the country. This study modelled COVID-19 cases and deaths using publicly available data from 5 March 2020 to 22 June 2020. Five data-driven nonlinear growth models, namely the Richards; 3 parameter logistic; 4 parameter logistic; Gompertz and Weibull were considered. We observed that models for cases and deaths provide robust and accurate short-term forecasts for a period of 10 days ahead at the national level. However, given the rapidly changing growth rate as the country approaches the COVID-19 peak, as well as the changes to COVID-19 regulations and the reopening of the economy, it is crucial that these models are fitted daily as new data becomes available and that forecasts are updated and reported accordingly on a daily basis. In addition, we observed difficulty in fitting models at the provincial level, particularly for provinces which are relatively \"early\" in their COVID-19 outbreak. There were also convergence problems encountered when fitting the five models, resulting in us only reporting on the three specific models which converged to cumulative cases and deaths. It is important to note that all these models have limitations and may only be applicable in certain stages of the outbreak, or when enough data are available for stable estimation of parameters.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Moreover, based on the results presented in this paper we recommend not to base the forecasting on a single model or to apply a modeling averaging technique to the results obtained from the different models. Rather we propose to use different models as a tool to estimate a realistic uncertainty interval of the predictions. As we have observed, models that have the best goodness to fit within the estimation period can predict poorly beyond the estimation period (which is the primary interest during the outbreak). At each forecasting date, a different model provides an accurate forecast and prediction intervals. However, if we use the prediction intervals obtained from all models, we will cover the observed values at both dates. Once again, we re-emphasize that we do not recommend using our modeling approach beyond a forecasting for 10 days ahead.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Although the time for South Africa to reach 100,000 cumulative cases of COVID-19 was approximately 110 days since the first reported case, our forecasts reveal that the country should be prepared for an additional 47,449-57,358 cases within the next 10 days. This reinforces the need for the public to adhere to all the nonpharmaceutical interventions that have been emphasized, such as social distancing, washing of hands and the wearing of masks.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A strength of the analysis presented in this paper is that it was conducted using readily accessible, publicly available data which is updated in real time. In addition, the statistical methods applied are relatively simple, intuitive and are not dependent on any assumptions regarding COVID-19 transmission dynamics which may be unknown (or the current knowledge can be misleading). Other researchers who modelled the COVID-19 outbreak in South Africa using the SEIR approach [4] , predicted that the number of detected cases (assuming the detection rate of June 12) was 185,000 (89,500 -358, 000) and 278,000 (132,000 -535,000) for the 29th of June and the 6th of July 2020, respectively. The observed number of cases corresponding to these dates were 144, 264 and 205,721, respectively. These prediction intervals were substantially wider and further from the true observed values than those produced by our modelling approach. This advocates that a data driven approach, while unreliable beyond 10 days ahead, does provide more accurate forecasts in this period.",
+            "cite_spans": [
+                {
+                    "start": 477,
+                    "end": 480,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A limitation, however, is that we can only predict laboratory confirmed diagnosed COVID-19 cases and reported deaths attributed to COVID-19. Therefore, it is possible that the true burden of COVID-19 in the country, considering asymptomatic or pre-symptomatic undiagnosed cases may be much higher than that observed. In light of these limitations, the modeling of COVID-19 deaths is crucial to gain greater insight into the COVID-19 burden in South Africa. However, due to the low numbers of deaths up to 22 June, as well as the way in which the death data was reported as was seen in the step-wise patterns observed in some provinces, modelling deaths using phenomenological models requires caution. While these model-based predictions of COVID-19 deaths reveal that approximately 1500 new deaths can be expected by 22 July 2020, it is important to interpret these numbers cautiously in light of the evidence of a high number of excess deaths in the country [18] .",
+            "cite_spans": [
+                {
+                    "start": 959,
+                    "end": 963,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Based on the analysis presented in this paper, a web-based platform (https://www.samrc.ac.za/content/covid-19-forecasts) was developed in which the observed number of cases and deaths, as well as short-term forecasts are presented. In this way policy makers and the general public can consult the website and get a reliable understanding, supported by evidence observed in the data, about the COVID-19 outbreak in South Africa. A detailed description of platform will be given in a future publication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We have shown the usefulness of non-linear growth models to provide short term forecasts of COVID-19 cases and deaths in South Africa. We focused on the short-term prediction of cumulative COVID-19 cases and deaths, and while the estimates of the turning point of the outbreak and final size of the epidemic are presented in the appendix, these parameters are not interpreted in the results. The rationale behind this decision, which was exemplified even in the forecasting of cumulative cases and deaths beyond 14 days, is that the daily confirmed COVID-19 cases and deaths are rapidly changing, as are the reporting and testing guidelines in the country. An area of further work involves a comprehensive assessment of the models applied for long term prediction and internal validation of the model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This study found that the phenomenological modeling approach provides reliable and accurate forecasts of COVID-19 cases and deaths in South Africa for a maximum period of 10 days ahead. In view of the rapidly changing growth rate as the country approaches the COVID-19 peak, as well as the changes to COVID-19 regulations and the reopening of the economy, we recommend that these models are fitted daily to the latest COVID-19 cumulative cases and deaths data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Durban, South Africa. 4 Smart Places Cluster, Council for Scientific and Industrial Research, Pretoria, South Africa. 5 Human and Social Capabilities Research Division, Human Science Research Council, Pretoria, South Africa.",
+            "cite_spans": [
+                {
+                    "start": 22,
+                    "end": 23,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 118,
+                    "end": 119,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "World Health Organization. Coronavirus disease (COVID-19) Situation Report-154",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Disaster Management Act: Declaration of a National State of Disaster: COVID-19 (coronavirus) | South African Government",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Estimating cases for COVID-19 in South Africa on behalf of the south African COVID-19 Modelling consortium: updated 19",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Silal",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pulliam",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Meyer-Rath",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Nichols",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jamieson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kimmie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Estimating cases for COVID-19 in South Africa: Short term proections as at",
+            "authors": [],
+            "year": 2020,
+            "venue": "South African COVID-19 Modelling Consortium",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "A novel sub-epidemic modeling framework for short-term forecasting epidemic waves",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chowell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tariq",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hyman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Med",
+            "volume": "17",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Turning points, reproduction number, and impact of climatological events for multi-wave dengue outbreaks",
+            "authors": [
+                {
+                    "first": "Y-H",
+                    "middle": [],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cws",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Trop Med Int Heal",
+            "volume": "14",
+            "issn": "6",
+            "pages": "628--666",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Real-time parameter estimation of Zika outbreaks using model averaging",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Sebrango-Rodr\u00edguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mart\u00ednez-Bello",
+                    "middle": [],
+                    "last": "Da",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "S\u00e1nchez-Vald\u00e9s",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thilakarathne",
+                    "suffix": ""
+                },
+                {
+                    "first": "Del",
+                    "middle": [],
+                    "last": "Fava",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Van Der Stuyft",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Epidemiol Infect",
+            "volume": "145",
+            "issn": "11",
+            "pages": "2313--2336",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Real-time forecasts of the COVID-19 epidemic in China from",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Roosa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kirpich",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rothenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hyman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect Dis Model",
+            "volume": "5",
+            "issn": "",
+            "pages": "256--63",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Short-term Forecasts of the COVID-19 Epidemic in Guangdong and Zhejiang",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Roosa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kirpich",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rothenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hyman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Med",
+            "volume": "9",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Logistic growth modelling of COVID-19 proliferation in China and its international implications",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Infect Dis",
+            "volume": "96",
+            "issn": "",
+            "pages": "582--591",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Guidelines for case-finding, diagnosis, management and public health response in South Africa",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Use of available data to inform the COVID-19 outbreak in South Africa: a case study",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Marivate",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Combrink",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Data Sci J",
+            "volume": "19",
+            "issn": "1",
+            "pages": "1--7",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "2019-nCoV) Data Repository and Dashboard for South Africa",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Github -Dsfsi/Covid19za",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Coronavirus COVID-19",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Generalized logistic growth modeling of the COVID-19 outbreak in 29 provinces in China and in the rest of the world",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Darcet",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sornette",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "A new look at the statistical model identification",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Akaike",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "IEEE Trans Automat Contr",
+            "volume": "19",
+            "issn": "6",
+            "pages": "716--739",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "An introduction to the bootstrap",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Efron",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tibshirani",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Fitting dynamic models to epidemic outbreaks with quantified uncertainty: a primer for parameter uncertainty, identifiability, and forecasts",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chowell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Infect Dis Model",
+            "volume": "2",
+            "issn": "3",
+            "pages": "379--98",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Report on Weekly Deaths in South Africa | South African Medical Research Council",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The cumulative COVID-19 cases for the period 5 March 2020 to 22 June 2020",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "The relationship between daily COVID-19 tests and cases diagnosed for the period 5 March 2020 to 22 June 2020Fig. 3 The cumulative COVID-19 cases in each of the nine provinces in South Africa for the period 5 March 2020 to 22 June 2020 Reddy et al. BMC Medical Research Methodology (2021) 21:15prediction interval. This illustrates the need of a real time forecasting with daily calibration, particularly in the period approaching the peak where steep (and often random) increases are observed. SupplementaryFigure 1shows the predicted values and 95% CIs obtained from the three models for the 5 and 10 day time points. This figure illustrates that, while at each forecasting date a different model may provide an accurate forecast and prediction intervals which contain the true value, considering a joint prediction interval from all models contains the true value at all three dates. This interval is computed such that the overall lower bound is the minimum lower bound of the three model bootstrap prediction intervals. Similarly, the upper bound is defined as the maximum upper bound of the three model bootstrap prediction intervals.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "The cumulative COVID-19 deaths in each of the nine provinces in South Africa for the period 5 March 2020 to 22 June 2020",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Predicted cumulative COVID-19 cases from the 3 Parameter logistic, 4 parameters logistic and the Richards model and observed cases",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Predicted cumulative COVID-19 deaths in South Africa from the 3 Parameter logistic, Gompertz and Richards models",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Predicted cumulative COVID-19 deaths from the 3 Parameter logistic, Gompertz and the Richards model for Western Cape",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "days. However, it is observed that beyond this point, observed values lie slightly outside of the",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Short-term predictions of total number of reported cases at the national level under the 3 Parameter logistic, 4 parameter logistic and Richards model. Estimation period 05/03/2020-22/06/2020",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Short-term predictions of the total number of reported COVID-19 cases based on the 3PL model in Western Cape, Eastern Cape and Gauteng",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Short-term predictions of the total of COVID-19 related deaths at the national level obtained for the 3 Parameter logistic, Gompertz and Richards model",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "None. 6 Department of Statistics, University of Pretoria, Pretoria, South Africa.Received: 14 September 2020 Accepted: 17 November 2020",
+            "cite_spans": [
+                {
+                    "start": 6,
+                    "end": 7,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The online version contains supplementary material available at https://doi. org/10.1186/s12874-020-01165-x.Additional file 1. Authors' contributions TR and ZS conceived and designed the study. TR, CJVR and ZS performed the analysis and wrote the paper. TR, ZS. CJVR and SOM revised the various drafts to submission. HM, KZ and PD provided inputs to preliminary results which were presented at seminars. All authors approved the final submission of this manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "The dataset used and/or analyzed during the current study are available free to the public from the website https://github.com/dsfsi/covid19zaEthics approval and consent to participate Not applicable. Consent to participate does not apply to our study since it utilized publically available COVID-19 case and death data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "Not Applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The authors declare that they have no competing interests. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

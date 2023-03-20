@@ -1,0 +1,1213 @@
+{
+    "paper_id": "0b89665b72b0868e4e8d321f9c32bfbf1b60b59f",
+    "metadata": {
+        "title": "COVIDomaly: A Deep Convolutional Autoencoder Approach for Detecting Early Cases of COVID-19",
+        "authors": [
+            {
+                "first": "Faraz",
+                "middle": [],
+                "last": "Khoshbakhtian",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Health Network",
+                    "location": {}
+                },
+                "email": "faraz.khoshbakhtian@mail.utoronto.ca"
+            },
+            {
+                "first": "Ahmed",
+                "middle": [],
+                "last": "Bilal",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Health Network",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Ashraf",
+                "middle": [],
+                "last": "Ahmed",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Health Network",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Ashraf@umanitoba",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Health Network",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Ca",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Health Network",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Shehroz",
+                "middle": [
+                    "S"
+                ],
+                "last": "Khan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Health Network",
+                    "location": {}
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "As of September 2020, the COVID-19 pandemic continues to devastate the health and well-being of the global population. With more than 33 million confirmed cases and over a million deaths, global health organizations are still a long way from fully containing the pandemic. This pandemic has raised serious questions about the emergency preparedness of health agencies, not only in terms of treatment of an unseen disease, but also in identifying its early symptoms. In the particular case of COVID-19, several studies have indicated that chest radiography images of the infected patients show characteristic abnormalities. However, at the onset of a given pandemic, such as COVID-19, there may not be sufficient data for the affected cases to train models for their robust detection. Hence, supervised classification is ill-posed for this problem because the time spent in collecting large amounts of infected peoples' data could lead to the loss of human lives and delays in preventive interventions. Therefore, we formulate this problem within a one-class classification framework, in which the data for healthy patients is abundantly available, whereas no training data is present for the class of interest (COVID-19 in our case). To solve this problem, we present COVIDomaly, a convolutional autoencoder framework to detect unseen COVID-19 cases from the chest radiographs. We tested two settings on a publicly available dataset (COVIDx) by training the model on chest X-rays from (i) only healthy adults, and (ii) healthy and other non-COVID-19 pneumonia, and detected COVID-19 as an anomaly. After performing 3-fold cross validation, we obtain a pooled ROC-AUC of 0.7652 and 0.6902 in the two settings respectively. These results are very encouraging and pave the way towards research for ensuring emergency preparedness in future pandemics, especially the ones that could be detected from chest X-rays.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The earliest cases of COVID-19 were reported in the media at the end of 2019 (Taylor, 2020) . The virus continues to spread to this day, and has been classified as a global pandemic resulting in the death of over 1 million people and 33 million infected cases. As per the WHO's 6 Phase model of pandemics (Organization et al., 2009) , by the end of 2019, COVID-19 was apparently in early Phase 3, which is commonly referred to as the \"Pandemic alert period\" and defined as, an animal or human-animal influenza reassortant virus has caused sporadic cases or small clusters of disease in people, but has not resulted in human-to-human transmission sufficient to sustain community-level outbreaks. Early detection of pandemic cases at this phase is important so that sufficient preventative steps are taken and transitioning to subsequent phases of pandemics may be contained. However, the challenge is that sufficient infected cases may not be available at this phase to make an informed decision.",
+            "cite_spans": [
+                {
+                    "start": 77,
+                    "end": 91,
+                    "text": "(Taylor, 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 305,
+                    "end": 332,
+                    "text": "(Organization et al., 2009)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "COVID-19 is caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Currently, reverse transcriptionpolymerase chain reaction (RT-PCR) is the gold standard screening method for this viral infection . This test shows high specificity (Corman et al., 2020; Lan et al., 2020) , albeit with variability and inconsistency (West et al., 2020) , along with being expensive and very time-consuming.",
+            "cite_spans": [
+                {
+                    "start": 253,
+                    "end": 274,
+                    "text": "(Corman et al., 2020;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 275,
+                    "end": 292,
+                    "text": "Lan et al., 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 337,
+                    "end": 356,
+                    "text": "(West et al., 2020)",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Since early 2020, several studies have indicated promising results for screening COVID-19 patients by chest radiology imaging, including chest x-rays and CT scans (Huang et al., 2020; Luz et al., 2020; Oh et al., 2020; Wang and Wong, 2020; Tuluptceva et al., 2020; Fang et al., 2020; Gozes et al., 2020) . While CT scans offer superior quality and 3D details of imaging (Fang et al., 2020; Gozes et al., 2020) , they are costly, require sanitation of the scanner after each scan, and may not be readily available in the healthcare ecosystems of lowincome countries. On the other hand, Chest X-ray (CXR) is a promising imaging modality as it is easily available, and can be used for rapid triaging (Wang and Wong, 2020) . Despite the easy availability of an imaging modality, identifying early cases of COVID-19 remains a challenge.",
+            "cite_spans": [
+                {
+                    "start": 163,
+                    "end": 183,
+                    "text": "(Huang et al., 2020;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 184,
+                    "end": 201,
+                    "text": "Luz et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 202,
+                    "end": 218,
+                    "text": "Oh et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 219,
+                    "end": 239,
+                    "text": "Wang and Wong, 2020;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 240,
+                    "end": 264,
+                    "text": "Tuluptceva et al., 2020;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 265,
+                    "end": 283,
+                    "text": "Fang et al., 2020;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 284,
+                    "end": 303,
+                    "text": "Gozes et al., 2020)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 370,
+                    "end": 389,
+                    "text": "(Fang et al., 2020;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 390,
+                    "end": 409,
+                    "text": "Gozes et al., 2020)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 697,
+                    "end": 718,
+                    "text": "(Wang and Wong, 2020)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Most of the studies that use CT-scans and/or CXR assume a supervised classification setting to detect COVID-19 cases (Luz et al., 2020; Oh et al., 2020; Wang and Wong, 2020; . It is common knowledge in the machine learning field that large amounts of training data is required to build robust and generalizable supervised classifiers. The premise of these supervised classification studies is that sufficient cases of COVID-19 have already occurred. From a data-driven machine learning perspective, this translates to having access to more data for training better classifiers. However, it is non-compassionate and catastrophic to let millions of people get infected (and possibly die) in order to collect sufficient data to train classifiers. Furthermore, this approach does not help detect early cases of a pandemic, such as COVID-19, which is necessary to contain and prevent further loss of human life. We argue that supervised classification for detecting COVID-19 could be regarded as a good strategy only after, but not before the fact. Therefore, there is a need to postulate alternative problem formulations for detecting early cases of COVID-19 in order to prevent the spread of a virus from becoming a full scale pandemic.",
+            "cite_spans": [
+                {
+                    "start": 117,
+                    "end": 135,
+                    "text": "(Luz et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 136,
+                    "end": 152,
+                    "text": "Oh et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 153,
+                    "end": 173,
+                    "text": "Wang and Wong, 2020;",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "One-class Classification (OCC) (Khan and Madden, 2014) framework offers an alternative paradigm to learn classifiers from only normal/positive samples and identify the not-normal samples as anomaly. In OCC, the samples for normal class are readily available (e.g. healthy CXR) at no additional cost; however, the samples for not-normal class (COVID-19 cases) may be either unavailable, poorly sampled or too costly to collect (both in terms of dollars and human life). We formulate early detection of COVID-19 cases from CXR as a OCC problem, given the challenge in collecting infected samples data and the accompanying cost. To demonstrate the validity of our proposal, we present the COVIDomaly framework using a convolutional autoencoder (CAE) that is trained on CXR of healthy adults only, and tested on both healthy and COVID-19 CXR. Our motivation is to train a CAE that is able to detect COVID-19 cases, without ever being exposed to them during the training phase, by recognizing the COVID-19 cases as anomalous samples vis-\u00e0-vis the training data distribution. Since 'not-normal' samples are not needed in this formulation, labeling normal samples is not required and learning of the 'normal' concept can be achieved in an unsupervised manner. There exist very few papers that may have used similar setup with some CXR samples for training (refer to Section 2 for details); ours is the first proposal to detect COVID-19 cases in an entirely OCC manner with no access to these cases during the training phase. To validate the early detection of COVID-19, we experimented with the following two data-availability settings:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "(i) CXR from healthy people as the normal class.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "(ii) CXR from healthy and non-COVID-19 pneumonia as the normal class.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The normal class refers to the existing data that is already available at the onset of COVID-19 pandemic and can be used to train a one-class classifier, a CAE in this case. For the above two settings, the CAE is trained on the normal class and tested on normal and not-normal (i.e. COVID-19). Our results show encouraging performance and opens up a new direction of research for emergency preparedness for future waves of COVID-19 or other potential pandemics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Recent breakthroughs in deep learning have been successfully translated into the screening of COVID-19 cases through radiology imaging (Luz et al., 2020; Oh et al., 2020; Wang and Wong, 2020; Ucar and Korkmaz, 2020) . Most of these works have been conducted in a supervised classification setting. As discussed in the previous section, and due to the scope of this paper, we will only discuss those studies that use either OCC or anomaly detection setup for detecting COVID-19 using CXR. propose the confidenceaware anomaly detection (CAAD) model that works by a convolutional feature detector model feeding into an anomaly detection module and a confidence prediction module that work together to classify instances of healthy control, viral-pneumonia, and nonviral pneumonia. CAAD utilizes an anomaly detection module that enables it to potentially train in the absence of viral pneumonia CXR cases. However, CAAD relies on its confidence prediction module and needs positive viral-pneumonia CXR training examples to increase its AUC from 0.8361 to 0.8747 on a test set comprising of normal cases and viral-pneumonia cases. Tuluptceva et al. (2020) propose a deep autoencoder with progressively growing blocks with residual connections to detect abnormalities in CXR images. The model utilizes the anomaly detection framework where an autoencoder learns the characteristics of \"normal\" CXR and could potentially detect out-of-distribution anomalous CXR images. The model, however, uses both normal and abnormal cases during the training. The authors use the model for the more general task of detecting abnormalities in CXR images and metastases in the lymph node. The authors achieve an ROC-AUC of 0.90 for detection of normal cases from abnormal cases (metastases) (Wong et al., 2020) . presented COVID-19 detection from CXR images as a cost-sensitive learning problem to handle high misdiagnosis cost of COVID-19 cases because of their visual similarity to other pneumonia cases.",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 153,
+                    "text": "(Luz et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 154,
+                    "end": 170,
+                    "text": "Oh et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 171,
+                    "end": 191,
+                    "text": "Wang and Wong, 2020;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 192,
+                    "end": 215,
+                    "text": "Ucar and Korkmaz, 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1126,
+                    "end": 1150,
+                    "text": "Tuluptceva et al. (2020)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1769,
+                    "end": 1788,
+                    "text": "(Wong et al., 2020)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Related Work"
+        },
+        {
+            "text": "Then, they presented a conditional centerloss to consider class-conditional information while learning the center points per class to overcome the problem of feature similarities between COVID-19 and other pneumonia cases. The cost matrix was provided by clinical experts to reduce misdiagnosis rate. This approach still assumes sufficient data for COVID-19 cases, which may not be available during early stages of a pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Related Work"
+        },
+        {
+            "text": "It is clear from the literature review that there is a paucity of research using a pure OCC or anomaly detection approaches towards early detection of COVID-19 cases. Research on these techniques can significantly impact the emergency preparedness of public health agencies. Our main contribution is to formulate early detection of COVID-19 from CXR in an OCC setup (called as COVIDomaly) and test it on a large publicly available CXR dataset. The models are trained only on either healthy CXR, or healthy plus non-COVID-19 pneumonia CXR, which are abundantly and easily available at a given time and can be used to detect COVID-19 as an anomaly.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Related Work"
+        },
+        {
+            "text": "In the next section, we discuss our proposed model architecture, including data processing, followed by experiments and results. The paper concludes with a discussion and pointers to future research directions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Related Work"
+        },
+        {
+            "text": "The proposed COVIDomaly framework comprises of a convolutional autoencoder (CAE) for detecting COVID-19 as an anomaly from CXR images. We choose CAE architecture because fully connected autoencoders ignore the 2D image structure and learn global features, whereas, CAE preserves spatial locality, with shared weights among all locations in the input, which prevents the risk of overfitting and reduces the number of learned parameters (Masci et al., 2011) . A typical CAE comprises of an encoder-decoder pair.",
+            "cite_spans": [
+                {
+                    "start": 435,
+                    "end": 455,
+                    "text": "(Masci et al., 2011)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "COVIDomaly"
+        },
+        {
+            "text": "Each encoder layer consists of several convolutional layers, followed by pooling layers, and terminates with one or more fully connected layers. The decoder part mirrors the encoder architecture in reverse order with up-sampling and deconvolution layers. During training, the network learns to extract spatial features via the encoder stage, followed by the decoder that reconstructs the input image using the latent encoded representation. This goal is achieved by minimizing the Mean Squared Error (MSE) between the input image and the reconstructed image. During the training phase, the CAE gets to see only the normal cases, and consequently ends up learning to extract features that are good for reconstructing the normal cases. As such, the CAE is expected to produce a low reconstruction error for normal samples in the test set, while giving higher reconstruction error for the out-ofdistribution or anomalous samples. Therefore, the CAE's reconstruction error can be used as a score to detect anomalies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "COVIDomaly"
+        },
+        {
+            "text": "COVIDomaly contains a CAE that consists of an encoder-decoder pair. Firstly, the input CXR images are resized to 224 \u00d7 224 and the number of channels is reduced to 1. Therefore, the input to the encoder is a grayscale CXR image; after three (alternate) Convolutions, Maxpooling, Batch Normalization layers, followed by a fully connected layer, the encoder produces a latent representation of dimension 128 (see Table 1 ).The input to the decoder is this latent representation followed by one fully connected layer and three (alternate) Batch Normalization, Convolution Transpose and Upsampling layers to reconstruct an image with the same dimension as input CXR (see Table 2 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 411,
+                    "end": 418,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 667,
+                    "end": 674,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Architecture"
+        },
+        {
+            "text": "The encoder is composed of three convolution blocks (C1, C2, C3) and a fully connected block (FC1). Each of C1, C2, C3 consists of four layers: a batch normalization layer, a convolution layer, a leaky ReLU layer, and a Maxpool (size = 2 \u00d7 2) layer. The kernel size is 7 \u00d7 7, stride = 1, and padding = 2, for each convolution layer. C1, C2, and C3 produce outputs consisting of 8, 16, and 32 channels respectively. The fully connected block (FC1) consists of a flattened layer (output size: 25088 \u00d7 1), and two fully connected layers with leaky ReLU layers, to reduce the dimensiononality of the data to 128 (see Table 1 for more information). The decoder is composed of a fully connected block (FC2) and three deconvolution blocks (DC1, DC2, DC3). The fully connected block (FC2) consists of two fully connected layers where both use leaky ReLU activation and expand the dimensions of data from (128, ) to (25088, ), which is then reshaped as (28, 28, 32) and passed on to the three deconvolution blocks (DC1, DC2, and DC3). Each of these blocks consists of four layers: a batch normalization layer, a convolution transposed layer, a leaky ReLU layer, and an Upsampling layer (factor=2) . The kernel size is 7 \u00d7 7, stride = 1, padding = 2 for each convolution transposed layer. DC1, DC2, and DC3 produce outputs of 32, 16, and 8 channels respectively. (See Table 2 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 613,
+                    "end": 620,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1358,
+                    "end": 1365,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Architecture"
+        },
+        {
+            "text": "As mentioned in Section 1, the proposed COVIDomaly network is trained on two configurations of 'normal' cases: (i) CXR from healthy people only, and (ii) CXR from healthy and non-COVID pneumonia patients. Both healthy and/or non-COVID pneumonia cases are considered as \"normal\" classes because abundant data is readily available for them. These two cases also represent different levels of complexity in defining the normal class. For both the settings, 3-fold crossvalidation is performed; for each fold the network is trained for 750 epochs with a batchsize of 100. The loss function is the Mean Squared Error (MSE), and Adam optimizer is used for optimization with an initial learning rate of 10 \u22123 . We then progressively reduced the learning rate by by 3 \u00d7 10 \u22124 after every 250 epochs, eventually settling on 10 \u22124 after 750 epochs of training.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Architecture"
+        },
+        {
+            "text": "To test the COVIDomaly framework, we use the publicly available COVIDx dataset introduced by Wang and Wong (2020) . COVIDx is an ongoing project, i.e. the number of available examples may change through time. Currently, COVIDx is composed of 8851 CXR images of \"healthy\", 6052 CXR images of \"non-COVID pneumonia\", and 498 CXR images of \"COVID-19\" infected persons. ",
+            "cite_spans": [
+                {
+                    "start": 93,
+                    "end": 113,
+                    "text": "Wang and Wong (2020)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dataset"
+        },
+        {
+            "text": "In each fold of the 3-fold cross validation for setting (i), COVIDomaly was trained on 2/3 of the normal cases (approximately 5900 CXR images), and tested on the remaining 1/3 of the normal cases (approximately 2950 CXR images) and 1/3 COVID-19 cases (166 CXR images). Similarly, for each fold for setting (ii), COVIDomaly was trained on 2/3 of the normal plus non-COVID-19 pneumonia cases (approximately 9930 CXR images), and tested on the remaining 1/3 of the normal plus 1/3 of non-COVID-19 pneumonia cases (approximately 4960 CXR images) and 1/3 COVID-19 cases (166 CXR images). The process is repeated three times. The performance metric used to evaluate the models for both the settings is Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC) plot. We calculated AUC using two methods. Firstly, we calculated AUC for each fold and reported the mean (AU C \u00b5 ) and standard deviation (AU C \u03c3 ) across 3folds. Secondly, we calculated pooled AUC (AU C p ) across 3-folds by concatenating the reconstruction error after each fold and calculating the AUC after the completing the 3-fold cross validation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Evaluation"
+        },
+        {
+            "text": "For case (i), we obtained AU C \u00b5 = 0.7650 and AU C \u03c3 = 0.0237, and AU C p = 0.7652. For case (ii), we obtained AU C \u00b5 = 0.6903 and AU C \u03c3 = 0.0206, and AU C p = 0.6902. These results suggest that COVID-19 can be detected as an anomaly when the CAE autoencoder is trained only on healthy CXR images without seeing COVID-19 cases during training. However, when the normal class comprises of both healthy and non-COVID-19 pneumonia CXRs, the performance of COVIDomaly deteriorates. This could be due to the fact that COVID-19 pneumonia CXRs may have high resemblance with non-COVID-19 pneumonia CXRs in terms of radiographic appearances of multifocal ground glass opacities, linear opacities, and consolidation (Cleverley et al., 2020) . In the COVID-Net paper (Wang and Wong, 2020) , the authors reported high accuracy for classification between COVID-19 and other pneumonia CXRs in a supervised setting. There appear to be two potential problems with the claim. Firstly, it goes against the common clinical understanding that both COVID-19 and non-COVID-19 pneumonia can have similar features. Secondly, their test sample size is very small. Moreover, it is not clear as to how they chose that convenience sample, and why more rigorous evaluation techniques (e.g. cross validation) were not utilized in Wang and Wong (2020) .",
+            "cite_spans": [
+                {
+                    "start": 708,
+                    "end": 732,
+                    "text": "(Cleverley et al., 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 758,
+                    "end": 779,
+                    "text": "(Wang and Wong, 2020)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1302,
+                    "end": 1322,
+                    "text": "Wang and Wong (2020)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Evaluation"
+        },
+        {
+            "text": "To verify the similarity of COVID-19 and non-COVID-19 pneumonia cases, we trained COVIDomaly on only CXR of non-COVID-19 pneumonia and tested on CXR of non-COVID-19 pneumonia and COVID-19 in a 3fold cross-validation manner described above (we call it as setting (iii)). For setting (iii), we obtained AU C \u00b5 = 0.6781 and AU C \u03c3 = 0.0184, and AU C p = 0.6778, which is very similar in performance to setting (ii). This shows that COVIDomaly is still able to detect COVID-19 cases with fairly good confidence even with only seeing non-COVID-19 pneumonia CXR during training the model. To visually understand the input CXR and its reconstruction during testing phase for both the normal and COVID-19 cases for setting (i), we present examples corresponding to 5 lowest reconstruction errors for normal CXR images ( Figure 2 ) and COVID-19 example cases corresponding to top 5 reconstruction errors ( Figure 3 ). As can be seen in the case of normal CXRs in Figure 2 , the reconstructed images appear very similar to the input CXR, albeit a bit hazywhich is an after effect of using the MSE loss. However, as seen in Figure 3 , in the case of COVID-19, the reconstructed CXRs appear more distorted. This indicates that COVIDOmaly could not reconstruct these CXRs properly, and therefore they were detected as anomalies. Although there may be some cases of badly reconstructed normal images and COVID-19 CXR images with low reconstruction error, these two figures provide an insight into the reason for superior performance in setting (i). ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 812,
+                    "end": 820,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 897,
+                    "end": 905,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 954,
+                    "end": 962,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1113,
+                    "end": 1121,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Evaluation"
+        },
+        {
+            "text": "In this paper, we introduced COVIDomaly, a convolutional autoencoder based anomaly detection framework designed for the early detection of COVID-19 cases by only training it on the CXR images from healthy patients. Although COVID-19 has already turned into a pandemic, we argue that using COVIDomaly model, early cases in a future pandemic or newer waves of an existing pandemic could be detected with high confidence by only utilizing the abundantly available normal CXR images across various health organizations. From the deep learning perspective, this preliminary work would benefit from incorporating attention modules and integrated gradients to signify the regions of the image that have played a decisive role toward producing a particular decision Jetley et al. (2018) ; Woo et al. (2018) ; Sundararajan et al. (2017) . Another direction of research is exploring a combination of multiple loss functions, such as gradient loss and intensity loss that have shown good performance in other domains. This architecture may further benefit by making use of different image-to-image transformation networks such as the U-Net Long et al. (2015) . Moreover, currently we have presented separate results from individual anomaly detectors by considering various definitions of \"normal\" class (i.e. healthy alone, healthy plus non-COVID pneumonia, and non-COVID pneumonia alone); in the future we plan to develop fusion strategies to combine the outputs of individual anomaly detectors trained on CXRs from various non-COVID conditions for which data is available abundantly in pre-pandemic times. ",
+            "cite_spans": [
+                {
+                    "start": 758,
+                    "end": 778,
+                    "text": "Jetley et al. (2018)",
+                    "ref_id": null
+                },
+                {
+                    "start": 781,
+                    "end": 798,
+                    "text": "Woo et al. (2018)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 801,
+                    "end": 827,
+                    "text": "Sundararajan et al. (2017)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1141,
+                    "end": 1147,
+                    "text": "(2015)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions and Future Work"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The role of chest radiography in confirming covid-19 pneumonia",
+            "authors": [
+                {
+                    "first": "Joanne",
+                    "middle": [],
+                    "last": "Cleverley",
+                    "suffix": ""
+                },
+                {
+                    "first": "James",
+                    "middle": [],
+                    "last": "Piper",
+                    "suffix": ""
+                },
+                {
+                    "first": "Melvyn",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "BMJ",
+            "volume": "370",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m2426"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Detection of 2019 novel coronavirus (2019-ncov) by real-time rt-pcr",
+            "authors": [
+                {
+                    "first": "Olfert",
+                    "middle": [],
+                    "last": "Victor M Corman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marco",
+                    "middle": [],
+                    "last": "Landt",
+                    "suffix": ""
+                },
+                {
+                    "first": "Richard",
+                    "middle": [],
+                    "last": "Kaiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adam",
+                    "middle": [],
+                    "last": "Molenkamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Meijer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Daniel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tobias",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sebastian",
+                    "middle": [],
+                    "last": "Bleicker",
+                    "suffix": ""
+                },
+                {
+                    "first": "Julia",
+                    "middle": [],
+                    "last": "Br\u00fcnink",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marie",
+                    "middle": [
+                        "Luisa"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eurosurveillance",
+            "volume": "25",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Sensitivity of chest ct for covid-19: comparison to rt-pcr",
+            "authors": [
+                {
+                    "first": "Yicheng",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Huangqi",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jicheng",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Minjie",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lingjun",
+                    "middle": [],
+                    "last": "Ying",
+                    "suffix": ""
+                },
+                {
+                    "first": "Peipei",
+                    "middle": [],
+                    "last": "Pang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wenbin",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Radiology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Rapid ai development cycle for the coronavirus (covid-19) pandemic: Initial results for automated detection & patient monitoring using deep learning ct image analysis",
+            "authors": [
+                {
+                    "first": "Ophir",
+                    "middle": [],
+                    "last": "Gozes",
+                    "suffix": ""
+                },
+                {
+                    "first": "Maayan",
+                    "middle": [],
+                    "last": "Frid-Adar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hayit",
+                    "middle": [],
+                    "last": "Greenspan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Patrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "Huangqi",
+                    "middle": [],
+                    "last": "Browning",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wenbin",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adam",
+                    "middle": [],
+                    "last": "Ji",
+                    "suffix": ""
+                },
+                {
+                    "first": "Eliot",
+                    "middle": [],
+                    "last": "Bernheim",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Siegel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.05037"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in wuhan, china. The lancet",
+            "authors": [
+                {
+                    "first": "Chaolin",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yeming",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xingwang",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lili",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jianping",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yi",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Li",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Guohui",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jiuyang",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiaoying",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "One-class classification: taxonomy of study and review of techniques",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shehroz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Michael G",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Madden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "The Knowledge Engineering Review",
+            "volume": "29",
+            "issn": "3",
+            "pages": "345--374",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Axiomatic attribution for deep networks",
+            "authors": [
+                {
+                    "first": "Mukund",
+                    "middle": [],
+                    "last": "Sundararajan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ankur",
+                    "middle": [],
+                    "last": "Taly",
+                    "suffix": ""
+                },
+                {
+                    "first": "Qiqi",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proceedings of the 34th International Conference on Machine Learning",
+            "volume": "70",
+            "issn": "",
+            "pages": "3319--3328",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "A Timeline of the Coronavirus Pandemic",
+            "authors": [
+                {
+                    "first": "Taylor",
+                    "middle": [],
+                    "last": "Derrick Bryson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "29",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Anomaly detection with deep perceptual autoencoders",
+            "authors": [
+                {
+                    "first": "Nina",
+                    "middle": [],
+                    "last": "Tuluptceva",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bart",
+                    "middle": [],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "Irina",
+                    "middle": [],
+                    "last": "Fedulova",
+                    "suffix": ""
+                },
+                {
+                    "first": "Heinrich",
+                    "middle": [],
+                    "last": "Schulz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dmitry V",
+                    "middle": [],
+                    "last": "Dylov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2006.13265"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Deep bayes-squeezenet based diagnostic of the coronavirus disease 2019 (covid-19) from x-ray images. Medical Hypotheses",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Covidiagnosis-Net",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Covidnet: A tailored deep convolutional neural network design for detection of covid-19 cases from chest x-ray images",
+            "authors": [
+                {
+                    "first": "Linda",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexander",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.09871"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Detection of sars-cov-2 in different types of clinical specimens",
+            "authors": [
+                {
+                    "first": "Wenling",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yanli",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ruqin",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Roujian",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kai",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "Guizhen",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wenjie",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Jama",
+            "volume": "323",
+            "issn": "18",
+            "pages": "1843--1844",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Covid-19 testing: The threat of false-negative results",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Colin",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "West",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Victor",
+                    "suffix": ""
+                },
+                {
+                    "first": "Priya",
+                    "middle": [],
+                    "last": "Montori",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sampathkumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Mayo Clinic Proceedings",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Frequency and distribution of chest radiographic findings in covid-19 positive patients",
+            "authors": [],
+            "year": 2020,
+            "venue": "Radiology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Joon-Young Lee, and In So Kweon. Cbam: Convolutional block attention module",
+            "authors": [
+                {
+                    "first": "Sanghyun",
+                    "middle": [],
+                    "last": "Woo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jongchan",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proceedings of the European conference on computer vision (ECCV)",
+            "volume": "",
+            "issn": "",
+            "pages": "3--19",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Viral pneumonia screening on chest x-ray images using confidence-aware anomaly detection",
+            "authors": [
+                {
+                    "first": "Jianpeng",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yutong",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zhibin",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Guansong",
+                    "middle": [],
+                    "last": "Pang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Johan",
+                    "middle": [],
+                    "last": "Verjans",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wenxin",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zongji",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jian",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yi",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chunhua",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.12338"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "COVIDomaly Architecture: The Convolutional Autoencoder architecture of COVIDomaly consists of an encoder-decoder pair. The encoder is composed of three convolution blocks (C1, C2, C3, C4) a fully connected block (FC1). The decoder is Composed of a fully connected block (FC2) and three deconvolution blocks (DC1, DC2, DC3).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "The images on the left are from normal CXR and on the right are their reconstructions by the CAE. At testing time, good reconstructions of normal cases allow us to detect them as non-anomalous cases.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "The images on the left are from COVID-19 CXR and on the right are their reconstructions by the CAE. At testing time, the distortions and poor reconstructions enable our method to detect COVID-19 cases as anomalies.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "COVIDomaly's Encoder",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "COVIDomaly's Decoder",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "AUC of ROC from the three experiments",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Lan Lan, Dan Xu, Guangming Ye, Chen Xia, Shaokang Wang, Yirong Li, and Haibo Xu. Positive rt-pcr test results in patients recovered from covid-19. Jama, 323(15): 1502-1503, 2020. Tianyang Li, Zhongyi Han, Benzheng Wei, Yuanjie Zheng, Yanfei Hong, and Jinyu Cong. Robust screening of covid-19 from chest x-ray via discriminative cost-sensitive learning. arXiv preprint arXiv:2004.12592, 2020. Jonathan Long, Evan Shelhamer, and Trevor Darrell. Fully convolutional networks for semantic segmentation. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 3431-3440, 2015. Eduardo Jos\u00e9 da S Luz, Pedro Lopes Silva, Rodrigo Silva, Ludmila Silva, Gladston Moreira, and David Menotti. Towards an effective and efficient deep learning model for covid-19 patterns detection in x-ray images. CoRR, 2020. Jonathan Masci, Ueli Meier, Dan Cire\u015fan, and J\u00fcrgen Schmidhuber. Stacked convolutional auto-encoders for hierarchical feature extraction. In International conference on artificial neural networks, pages 52-59. Springer, 2011. Yujin Oh, Sangjoon Park, and Jong Chul Ye. Deep learning covid-19 features on cxr using limited training data sets. IEEE Transactions on Medical Imaging, 2020. World Health Organization et al. Pandemic influenza preparedness and response: a WHO guidance document. World Health Organization, 2009.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

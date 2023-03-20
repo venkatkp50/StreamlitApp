@@ -1,0 +1,2373 @@
+{
+    "paper_id": "0b372014ea9e7c143a1381a7554c6cec0b93ce7a",
+    "metadata": {
+        "title": "Usability-In-Place-Remote Usability Testing Methods for Homebound Older Adults: Rapid Literature Review",
+        "authors": [
+            {
+                "first": "Jordan",
+                "middle": [
+                    "R"
+                ],
+                "last": "Hill",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Purdue University",
+                    "location": {
+                        "settlement": "Indianapolis",
+                        "region": "IN",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Janetta",
+                "middle": [
+                    "C"
+                ],
+                "last": "Brown",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Regenstrief Institute",
+                    "location": {
+                        "settlement": "Indianapolis",
+                        "region": "IN",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": ";",
+                "middle": [],
+                "last": "Noll",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "L",
+                "middle": [],
+                "last": "Campbell",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Purdue University",
+                    "location": {
+                        "settlement": "Indianapolis",
+                        "region": "IN",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Richard",
+                "middle": [
+                    "J"
+                ],
+                "last": "Holden",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Regenstrief Institute",
+                    "location": {
+                        "settlement": "Indianapolis",
+                        "region": "IN",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Technology can benefit older adults in many ways, including by facilitating remote access to services, communication, and socialization for convenience or out of necessity when individuals are homebound. As people, especially older adults, self-quarantined and sheltered in place during the COVID-19 pandemic, the importance of usability-in-place became clear. To understand the remote use of technology in an ecologically valid manner, researchers and others must be able to test usability remotely.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Objective: Our objective was to review practical approaches for and findings about remote usability testing, particularly remote usability testing with older adults. Methods: We performed a rapid review of the literature and reported on available methods, their advantages and disadvantages, and practical recommendations. This review also reported recommendations for usability testing with older adults from the literature.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Results: Critically, we identified a gap in the literature-a lack of remote usability testing methods, tools, and strategies for older adults, despite this population's increased remote technology use and needs (eg, due to disability or technology experience). We summarized existing remote usability methods that were found in the literature as well as guidelines that are available for conducting in-person usability testing with older adults.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We call on the human factors research and practice community to address this gap to better support older adults and other homebound or mobility-restricted individuals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Technology can support access to services, communication, and socialization for older adults and others whose mobility is restricted due to health-related risks such as susceptibility to disease (eg, , disability, and a lack of resources (eg, transportation). However, the delivery, support, and evaluation of technologies that are used by homebound or mobility-restricted individuals require remote operations, including remote usability testing. Herein, we review the unique needs and technology opportunities of homebound older adults and the literature on remote usability testing methods. Based on our findings, we identified a gap in guidance for remote usability testing with older adults. Therefore, we call on relevant research and practice communities to address this gap.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Need for Remote Operations"
+        },
+        {
+            "text": "Over 2 million Americans are homebound due to an array of social, functional, and health-related causes, and this number is projected to grow as the size of the older population increases [1] . Situational factors such as inclement weather and, on a larger scale, pandemics or national disasters can also temporarily render individuals homebound. For example, in March 2020, the US Centers for Disease Control and Prevention [2] warned older adults to remain at home due to the disproportionate COVID-19-related health risks that they face. Prior to the pandemic, an estimated 1 in 4 older US adults were already socially isolated, and this rate has likely increased [3] .",
+            "cite_spans": [
+                {
+                    "start": 188,
+                    "end": 191,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 425,
+                    "end": 428,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 667,
+                    "end": 670,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Supporting Homebound Individuals With Technology"
+        },
+        {
+            "text": "People who shelter in place or stay home for other reasons may turn to technology to access remote services, including remote banking, grocery shopping, and medical care services. The prevalence of these physically distant interactions is reportedly on the rise [4] , especially for certain services. A prominent example is the increased frequency of patients' telemedicine visits with health care professionals-a form of telehealth that has been long available but whose usage has increased dramatically in the United States, as the COVID-19 pandemic resulted in changes to federal reimbursement policies in March 2020 [5] .",
+            "cite_spans": [
+                {
+                    "start": 262,
+                    "end": 265,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 620,
+                    "end": 623,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Supporting Homebound Individuals With Technology"
+        },
+        {
+            "text": "When technology users are homebound, researchers and care practitioners who intend to test a technology's usability in an ecologically valid manner must either travel to the user's home or conduct remote testing. Travel is not always an option. Safety, health, or personal reasons may prevent researchers from entering a home or community. Travel may be too costly or otherwise impractical, or participants may live in an area that is inaccessible to the project team. During the COVID-19 pandemic for example, academic and practice-based project teams have anecdotally reported barriers to in-person visits, including the need to distance themselves from infected and at-risk individuals, members of project teams working from home, and the need to reduce travel expenses due to economic pressures. Even if in-person visits are possible, remote testing can also be more convenient and cost-efficient for all parties involved.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Testing Technology With Homebound Technology Users"
+        },
+        {
+            "text": "We performed a rapid review of studies involving remote usability testing methods for all users and those specifically for older adults and summarized their findings. Rapid reviews are an accepted knowledge synthesis approach that has become popular for understanding the most salient points on emerging or timely topics [6] . Rapid reviews typically do not include an exhaustive set of studies, do not involve formal analyses of study quality, and report findings from prior studies via narrative synthesis [7] . The primary goal of this review was to identify methods for performing remote usability assessments with older adults (if any existed). Secondarily, we wished to summarize the literature on existing remote usability methodologies for any population and existing guidelines on performing in-person usability testing with older adults. Sources for the second goal were largely retrieved while searching for sources to support the primary goal and via a secondary search within Google Scholar.",
+            "cite_spans": [
+                {
+                    "start": 321,
+                    "end": 324,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 508,
+                    "end": 511,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "Our rapid review began with a keyword search on the Google Scholar and Science Direct scholarly databases. This was followed by a supplementary keyword search in top human factors journals and proceedings. Both searches are summarized in Table 1 . We began with Google Scholar to take advantage of its relevance-based sorting feature and broader inclusion of diverse disciplines, academic and practice-based publications, and grey literature [8] . However, we conducted further searches because of the known limitations of Google Scholar, such as its lack of transparency and lack of specialization [9] .",
+            "cite_spans": [
+                {
+                    "start": 442,
+                    "end": 445,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 599,
+                    "end": 602,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 238,
+                    "end": 245,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Methods"
+        },
+        {
+            "text": "In the interest of establishing a starting point for understanding remote usability testing with older adults, we had broad inclusion criteria and did not restrict studies based on their date of publication or an analysis of their quality or peer-review status. We also defined remote usability broadly as usability assessments of participants (users) who were in separate locations from the researchers or practitioners. Duplicate studies, as well as studies in which usability was assessed by an expert (eg, heuristic analysis on a website) on behalf of older adults instead of through direct participant feedback, were excluded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "Two authors (JRH and JCB) performed the search in Google Scholar while one author (JCB) performed the search in Science Direct and the human factors sources. Both authors took notes in a shared cloud-based document. We chose a stopping rule based on the assumption that a narrative synthesis of literature is a form of qualitative content analysis [10] . Therefore, we concluded our search when we reached theoretical saturation [11] -a qualitative analysis stopping rule that means that the search continues until results begin to repeat and negligible new categories of information are produced through additional searching.",
+            "cite_spans": [
+                {
+                    "start": 348,
+                    "end": 352,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 429,
+                    "end": 433,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "Of all of the sources found, 33 were screened in-depth (18 on remote usability methods and 15 on usability testing with older adults), and 21 were included in this review (16 on various remote usability methods and 5 on usability testing with older adults).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Summary of the Search Results"
+        },
+        {
+            "text": "Importantly, sources that provided guidance or information on remote usability testing with older adults (the primary goal of this review) were not found. Therefore, we organized the results according to our secondary goals-summarizing existing methods for remote usability testing and outlining existing guidelines for in-person usability testing with older adults. In this Results and Discussion section, we combined the results with our interpretations and discussion to adhere to conventions for narrative reviews. We also present our overall conclusions in the Conclusions section.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Summary of the Search Results"
+        },
+        {
+            "text": "Studies on remote usability testing date back to the 1990s [12, 13] . Since then, most traditional in-person usability evaluation methods have been attempted remotely. Remote moderated testing has been supported by advances in internet-based software, such as WebEx and NetMeeting, which permit simultaneous video and audio transmissions, screen sharing, and remote control [14, 15] . Studies have also used novel methods, such as using virtual reality to simulate laboratory usability testing environments [16] and remotely capturing eye-tracking data [17] . Technologies for unmoderated testing have also evolved, as described elsewhere [18] .",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 63,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 64,
+                    "end": 67,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 374,
+                    "end": 378,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 379,
+                    "end": 382,
+                    "text": "15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 507,
+                    "end": 511,
+                    "text": "[16]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 553,
+                    "end": 557,
+                    "text": "[17]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 639,
+                    "end": 643,
+                    "text": "[18]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Usability-In-Place: The State of the Practice of Remote Usability Testing"
+        },
+        {
+            "text": "Asynchronous methods have long been used to overcome the barriers of time and space. Such methods include conducting self-administered survey questionnaires, using user diaries and incident reports, and obtaining voluntary feedback [19] . Studies have also used activity logging to passively collect use data for analyzing usability [20] .",
+            "cite_spans": [
+                {
+                    "start": 232,
+                    "end": 236,
+                    "text": "[19]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 333,
+                    "end": 337,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Usability-In-Place: The State of the Practice of Remote Usability Testing"
+        },
+        {
+            "text": "The major remote usability testing methods are described in Table 2 along with key findings from the literature. An important replicated finding was that the results from remote and in-person usability testing were generally similar, although significant differences may have appeared under extenuating circumstances, such as poor product usability or the cognitive difficulty of the usability testing tasks [21] . Validity problems with the self-report approach [20] Users are interviewed over the phone about the usability of a design (qualitative and quantitative data are collected) after they have completed tasks.",
+            "cite_spans": [
+                {
+                    "start": 408,
+                    "end": 412,
+                    "text": "[21]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 463,
+                    "end": 467,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 60,
+                    "end": 67,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Usability-In-Place: The State of the Practice of Remote Usability Testing"
+        },
+        {
+            "text": "\u2022 Beneficial for those with disabilities \u2022 Quantitative data collected are comparable to in-person testing data \u2022 Qualitative data are less rich compared to in-person testing data \u2022",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "In-person testing is better for formative testing; remote testing is better for summative evaluation Users fill out a diary and take notes during a period of use or fill out an incident form when they identify a critical problem with an interface.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "User-reported critical incidents or diaries [12, 13, 19, 20] \u2022 Able to capture most high-and moderate-severity incidents a [12, 13] \u2022 Users report fewer low-severity incidents than experts [12, 13] \u2022 Validity problems with self-reports [20] \u2022 Issues may be underreported compared to those reported via traditional methods a [19] While completing timed tasks, users provide comments or feedback in a separate browser window. Once a task is complete, the user rates the difficulty of the completed task.",
+            "cite_spans": [
+                {
+                    "start": 44,
+                    "end": 48,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 49,
+                    "end": 52,
+                    "text": "13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 53,
+                    "end": 56,
+                    "text": "19,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 57,
+                    "end": 60,
+                    "text": "20]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 123,
+                    "end": 127,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 128,
+                    "end": 131,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 189,
+                    "end": 193,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 194,
+                    "end": 197,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 236,
+                    "end": 240,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[19]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "User-provided feedback [25] \u2022 The percentage of participants who completed remote testing tasks was the same as the percentage of participants who completed in-person testing tasks \u2022 No difference in the time taken to complete tasks \u2022 Able to capture rich qualitative information through typed comments \u2022 Less observation data captured compared to those captured during inperson testing \u2022 Captured fewer usability issues in some cases compared to those captured during in-person testing",
+            "cite_spans": [
+                {
+                    "start": 23,
+                    "end": 27,
+                    "text": "[25]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "The actions taken by the user (eg, clicks) are captured for future analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "Log analysis [20] \u2022 Less intrusive to user \u2022 Can collect data from many users \u2022 Unable to capture user intentions or additional context a Conflicting evidence has been found to support both the statement and its opposite in the literature.",
+            "cite_spans": [
+                {
+                    "start": 13,
+                    "end": 17,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "The following general benefits of remote usability testing methods were identified:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "\u2022 Does not require a facility, thereby reducing the time requirements of participants and evaluators and lowering costs [20] \u2022 Can recruit participants from a broader geographic vicinity, thereby allowing evaluators to collect results from a larger and more diverse group of people (including those living in other countries or rural areas or those who are otherwise isolated) [14, 23] \u2022 Allows participants to test technologies in a more realistic environment. For example, Petrie et al [24] had people with disabilities perform remote usability testing from the comfort of their own homes. The benefits thereof include the use of a home-based environment that is almost impossible to perfectly replicate in a lab.",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 124,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 377,
+                    "end": 381,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 382,
+                    "end": 385,
+                    "text": "23]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 488,
+                    "end": 492,
+                    "text": "[24]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "Several drawbacks were also described, as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "\u2022 General agreement that remotely collecting data results in a loss of some of the contextual information and nonverbal cues from participants that are collected during in-person evaluations [15, 20, 22, 24, 25] \u2022 Remote usability methods (especially asynchronous methods) appear to result in the identification of fewer usability problems, cause users to make more errors during testing, and are more time-consuming for users [14, 15] . However, test participants identified about as many usability issues as those identified by the evaluators, but the participants' categorization of the identified usability problems were deemed not useful. Contrarily, this was not found by Tullis et al [25] when they compared lab-based usability testing against remote usability testing.",
+            "cite_spans": [
+                {
+                    "start": 191,
+                    "end": 195,
+                    "text": "[15,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 196,
+                    "end": 199,
+                    "text": "20,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 200,
+                    "end": 203,
+                    "text": "22,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 204,
+                    "end": 207,
+                    "text": "24,",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 208,
+                    "end": 211,
+                    "text": "25]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 427,
+                    "end": 431,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 432,
+                    "end": 435,
+                    "text": "15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 691,
+                    "end": 695,
+                    "text": "[25]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "\u2022 Dray and Siegel [20] also listed validity problems with self-report methodologies, the inability of log files to distinguish the cause of navigation errors, and management challenges related to troubleshooting network issues and ensuring system compatibility as other drawbacks of remote usability testing.",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 22,
+                    "text": "[20]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Postuse interview [24]"
+        },
+        {
+            "text": "Many of the factors that may affect the validity, reliability, or efficiency of remote usability testing have not been scientifically studied [26] . These include factors such as the characteristics of users (eg, age and literacy), the effect of slow or unstable internet, the type of devices being used, and testing tactics (eg, verbal, printed, or on-screen instructions).",
+            "cite_spans": [
+                {
+                    "start": 142,
+                    "end": 146,
+                    "text": "[26]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "\u2022"
+        },
+        {
+            "text": "No matter the method, remote usability testing also involves challenges to implementing the methods in natural contexts, namely in home and community settings [27, 28] . These challenges include recruiting a representative sample, especially among populations that may be less comfortable with using certain technology, have lower literacy, or are mistrustful of research [26] . McLaughlin and colleagues [26] proposed strategies such as providing access to phone support prior to the start of any web-based testing.",
+            "cite_spans": [
+                {
+                    "start": 159,
+                    "end": 163,
+                    "text": "[27,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 164,
+                    "end": 167,
+                    "text": "28]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 372,
+                    "end": 376,
+                    "text": "[26]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 405,
+                    "end": 409,
+                    "text": "[26]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "\u2022"
+        },
+        {
+            "text": "Prior work on remote usability testing has been performed with convenience samples of college students [13, 14] or healthier and younger adults recruited from workplaces [22, 23, 25] . We found no published instance of fully remote usability testing with older adults. Diamantidis et al [29] conducted a test of a mobile health system with older individuals with chronic kidney disease. Participants received an in-person tutorial of the system; they used the system at home, received physical materials by mail, and completed a paper diary. Afterward, they returned to complete an in-person satisfaction survey. Petrie et al [24] reported 2 case studies of remote usability testing-one with blind younger adults (n=8) and another with a more heterogeneous group of individuals with disabilities (n=51). They demonstrated the feasibility of remote testing and showed comparable results between in-person and remote testing, although in-person participants in the second study reported more usability problems with the tested website.",
+            "cite_spans": [
+                {
+                    "start": 103,
+                    "end": 107,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 108,
+                    "end": 111,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 170,
+                    "end": 174,
+                    "text": "[22,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 175,
+                    "end": 178,
+                    "text": "23,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 179,
+                    "end": 182,
+                    "text": "25]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 287,
+                    "end": 291,
+                    "text": "[29]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 626,
+                    "end": 630,
+                    "text": "[24]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remote Usability Testing With Older Adults"
+        },
+        {
+            "text": "Others have described ways to improve in-person usability testing with older adults that may be transferable to remote methods. For example, touch screen devices and hardware that is selected for simplicity may produce better usability testing results with older adults [30] [31] [32] and can therefore reduce barriers to remote usability testing. Additionally, the use of large closed captions during a remote testing session has been recommended for older users with visual or hearing impairments. Holden [33] published a Simplified System Usability Scale that was modified for and tested with older adults and those with cognitive disabilities but did not demonstrate its use in remote testing.",
+            "cite_spans": [
+                {
+                    "start": 270,
+                    "end": 274,
+                    "text": "[30]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 275,
+                    "end": 279,
+                    "text": "[31]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 280,
+                    "end": 284,
+                    "text": "[32]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 507,
+                    "end": 511,
+                    "text": "[33]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Remote Usability Testing With Older Adults"
+        },
+        {
+            "text": "Older adults in remote usability tests may also benefit from non-age-specific strategies for optimizing remote usability testing [34] . These recommendations, which are summarized in Figure 1 , include mailing a written copy of instructions, conducting web-based training prior to testing sessions, and sending reminders. ",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 133,
+                    "text": "[34]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 183,
+                    "end": 191,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Remote Usability Testing With Older Adults"
+        },
+        {
+            "text": "Our rapid review and synthesis of the literature revealed that remote usability testing still appears to be an emerging field [26] whose great potential is accentuated during major events, such as the COVID-19 pandemic. The decision to pursue the further development of and research on remote usability testing is straightforward, given the apparent advantages, validity, and feasibility of remote usability testing and the need for the method.",
+            "cite_spans": [
+                {
+                    "start": 126,
+                    "end": 130,
+                    "text": "[26]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The method however must be adapted to and tested with older adults. The use of technology for remote services among older adults in the United States has been increasing [35, 36] , as has older adults' proficiency with internet-based technology [37] . A Pew Research Center national survey reported increases in internet use (from 12% to 67%) and the adoption of home broadband (from 0% to 51%) from 2000 to 2016, as well as increases in smartphone (from 11% to 42%) and tablet (from 1% to 32%) ownership from 2011 to 2016 [4] . However, the older adult population is diverse and has different needs compared to those of other groups when it comes to technology and the usability testing of technology. US adults aged 65 years are more likely than their younger counterparts to experience difficulties with physical or cognitive function, including reduced memory capacity, stiff joints or arthritis, and vision or hearing disability [38, 39] . These factors and the discomfort with or reduced motivation to use technology elevate the importance of usability testing [40] but ironically may increase the difficulty of conducting remote usability testing. Additional recommendations and best practices will thus be needed to ensure effective and efficient remote usability testing with older adults.",
+            "cite_spans": [
+                {
+                    "start": 170,
+                    "end": 174,
+                    "text": "[35,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 175,
+                    "end": 178,
+                    "text": "36]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 245,
+                    "end": 249,
+                    "text": "[37]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 523,
+                    "end": 526,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 934,
+                    "end": 938,
+                    "text": "[38,",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 939,
+                    "end": 942,
+                    "text": "39]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1067,
+                    "end": 1071,
+                    "text": "[40]",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "We call on human factors, human-computer interaction, and digital health communities to further develop, describe, and test remote usability testing approaches that will be suitable across diverse populations, including older adults, those with lower literacy or health literacy, and individuals with cognitive or physical disabilities. Progress toward this goal will not only better support homebound or mobility-restricted individuals but may also improve the efficiency, ecological validity, and effectiveness of usability testing in general.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Epidemiology of the homebound population in the United States",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ornstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Leff",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Covinsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ritchie",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Federman",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Roberts",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "JAMA Intern Med",
+            "volume": "175",
+            "issn": "7",
+            "pages": "1180--1186",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamainternmed.2015.1849"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "COVID-19 risks and vaccine information for older adults",
+            "authors": [],
+            "year": null,
+            "venue": "Centers for Disease Control and Prevention",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Social Distancing\" amid a crisis in social isolation and loneliness",
+            "authors": [
+                {
+                    "first": "Tkm",
+                    "middle": [],
+                    "last": "Cudjoe",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kotwal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Geriatr Soc",
+            "volume": "68",
+            "issn": "6",
+            "pages": "27--29",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jgs.16527"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Technology use among seniors. Pew Research Center",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Perrin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Telehealth transformation: COVID-19 and the rise of virtual care",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wosik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fudim",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cameron",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gellad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cho",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Phinney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Med Inform Assoc",
+            "volume": "27",
+            "issn": "6",
+            "pages": "957--962",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/jamia/ocaa067"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A scoping review of rapid review methods",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tricco",
+                    "suffix": ""
+                },
+                {
+                    "first": "Antony",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zarin",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Strifler",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ghassemi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ivory",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "BMC Med",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12916-015-0465-6"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "A typology of reviews: an analysis of 14 review types and associated methodologies",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Grant",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Booth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Health Info Libr J",
+            "volume": "26",
+            "issn": "2",
+            "pages": "91--108",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1471-1842.2009.00848.x"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "On using grey literature and Google Scholar in systematic literature reviews in software engineering",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yasin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fatima",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Afzal",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Azhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Torkar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "IEEE Access",
+            "volume": "8",
+            "issn": "",
+            "pages": "36226--36243",
+            "other_ids": {
+                "DOI": [
+                    "10.1109/access.2020.2971712"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Comparing test searches in PubMed and Google Scholar",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shultz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J Med Libr Assoc",
+            "volume": "95",
+            "issn": "4",
+            "pages": "442--445",
+            "other_ids": {
+                "DOI": [
+                    "10.3163/1536-5050.95.4.442"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Storylines of research in diffusion of innovation: a meta-narrative approach to systematic review",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Greenhalgh",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Robert",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Macfarlane",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bate",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Kyriakidou",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Peacock",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Soc Sci Med",
+            "volume": "61",
+            "issn": "2",
+            "pages": "417--430",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2004.12.001"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Strauss",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Corbin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Remote usability evaluation: Can users report their own critical incidents?",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Castillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hartson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hix",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "CHI98: ACM Conference on Human Factors and Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "253--254",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/286498.286736"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Remote evaluation for post-deployment usability improvement",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hartson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Castillo",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "22--29",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/948496.948499"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "What happened to remote usability testing? An empirical study of three methods",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Andreasen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schr\u00f8der",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stage",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Presented at: CHI '07: SIGCHI Conference on Human Factors in Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Here, there, anywhere: Remote usability testing that works",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Rozanski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Haake",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "SIGITE04: ACM Special Interest Group for Information Technology Education Conference",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Synchronous remote usability testing: a new approach facilitated by virtual worlds",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Madathil",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Greenstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "CHI '11: SIGCHI Conference on Human Factors in Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/1978942.1979267"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Remote usability testing using eyetracking",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chyna\u0142",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Szyma\u0144ski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "IFIP Conference on Human-Computer Interaction -INTERACT",
+            "volume": "",
+            "issn": "",
+            "pages": "356--361",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-3-642-23774-4_29"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Tools for unmoderated usability testing",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Whitenton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Let your users do the testing: a comparison of three remote asynchronous usability testing methods",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bruun",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gull",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hofmeister",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stage",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Apr Presented at: CHI '09: CHI Conference on Human Factors in Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "1619--1628",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/1518701.1518948"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Remote possibilities?: international usability testing at a distance",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dray",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Siegel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Interactions (NY)",
+            "volume": "11",
+            "issn": "2",
+            "pages": "10--17",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/971258.971264"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Extra-laboratorial usability tests: An empirical comparison of remote and classical field testing with lab testing",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sonderegger",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Heyden",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Biller",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Klotz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uebelbacher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Appl Ergon",
+            "volume": "74",
+            "issn": "",
+            "pages": "85--96",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.apergo.2018.08.011"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "A comparison of synchronous remote and local usability studies for an expert interface",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bernheim Brush",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ames",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Davis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "CHI04: CHI 2004 Conference on Human Factors in Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Remote usability testing. Interactions (NY)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hammontree",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Weiler",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nayak",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "",
+            "volume": "1",
+            "issn": "",
+            "pages": "21--25",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/182966.182969"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Remote usability evaluations with disabled people",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Petrie",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "King",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pavan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Presented at: CHI '06: SIGCHI Conference on Human Factors in Computing Systems",
+            "volume": "",
+            "issn": "",
+            "pages": "1133--1141",
+            "other_ids": {
+                "DOI": [
+                    "10.1145/1124772.1124942"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "An empirical comparison of lab and remote usability testing of Web sites",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tullis",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fleischman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mcnulty",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cianchette",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bergel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Usability Professionals' Association",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Evaluating medical devices remotely: Current methods and potential innovations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mclaughlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Delucia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Drews",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vaughn-Cooke",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Nesbitt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Hum Factors",
+            "volume": "62",
+            "issn": "7",
+            "pages": "1041--1060",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0018720820953644"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Data collection challenges in community settings: insights from two field studies of patients with chronic disease",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Holden",
+                    "suffix": ""
+                },
+                {
+                    "first": "Amm",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "Plt",
+                    "middle": [],
+                    "last": "Hoonakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hundt",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Carayon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Qual Life Res",
+            "volume": "24",
+            "issn": "5",
+            "pages": "1043--1055",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11136-014-0780-y"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Health care human factors/ergonomics fieldwork in home and community settings",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Valdez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Holden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Ergon Des",
+            "volume": "24",
+            "issn": "4",
+            "pages": "4--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1064804615622111"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Remote usability testing and satisfaction with a mobile health medication inquiry system in CKD",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Diamantidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ginsberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yoffe",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lucas",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Prakash",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Aggarwal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin J Am Soc Nephrol",
+            "volume": "10",
+            "issn": "8",
+            "pages": "1364--1370",
+            "other_ids": {
+                "DOI": [
+                    "10.2215/CJN.12591214"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Usability of touch-panel interfaces for older adults",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Murata",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Iwase",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Hum Factors",
+            "volume": "47",
+            "issn": "4",
+            "pages": "767--776",
+            "other_ids": {
+                "DOI": [
+                    "10.1518/001872005775570952"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Touchscreen mobile devices and older adults: a usability study",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Page",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Int J Hum Factors Ergon",
+            "volume": "3",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1504/IJHFE.2014.062550"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "How older adults meet complexity: Aging effects on the usability of different mobile phones",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ziefle",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Behav Inf Technol",
+            "volume": "24",
+            "issn": "5",
+            "pages": "375--389",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/0144929042000320009"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "A Simplified System Usability Scale (SUS) for Cognitively Impaired and Older Adults",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Holden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the International Symposium on Human Factors and Ergonomics in Health Care",
+            "volume": "",
+            "issn": "",
+            "pages": "180--182",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/2327857920091021"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Remote moderated usability tests: How to do them",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Moran",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Pernice",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Combatting social isolation and increasing social participation of older adults through the use of technology: A systematic review of existing evidence",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Baker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Warburton",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Waycott",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Batchelor",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hoang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Dow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Australas J Ageing",
+            "volume": "37",
+            "issn": "3",
+            "pages": "184--193",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/ajag.12572"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Investigating older adults' decisions to use mobile devices for learning, based on the unified theory of acceptance and use of technology",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Interactive Learning Environments",
+            "volume": "28",
+            "issn": "7",
+            "pages": "890--901",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/10494820.2018.1546748"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Recovering from the COVID-19 pandemic: A focus on older adults",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Morrow-Howell",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Galucia",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Swinford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Aging Soc Policy",
+            "volume": "32",
+            "issn": "4-5",
+            "pages": "526--535",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/08959420.2020.1759758"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Learning to use new technologies by older adults: Perceived difficulties, experimentation behaviour and usability",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Barnard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Bradley",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Hodgson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Lloyd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Comput Human Behav",
+            "volume": "29",
+            "issn": "4",
+            "pages": "1715--1724",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.chb.2013.02.006"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Aging barriers influencing mobile health usability for older adults: A literature based framework (MOLD-US)",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wildenbos",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Peute",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jaspers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Med Inform",
+            "volume": "114",
+            "issn": "",
+            "pages": "66--75",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijmedinf.2018.03.012"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Validating the usability of an Alzheimer's caregiver mobile app prototype",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Place-Remote Usability Testing Methods for Homebound Older Adults",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Holden",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Usability",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/26181"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work, first published in JMIR Formative Research, is properly cited. The complete bibliographic information",
+            "authors": [
+                {
+                    "first": "Janetta",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Noll",
+                    "suffix": ""
+                },
+                {
+                    "first": "Richard",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Holden",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JMIR Formative Research",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "| iss. 11 | e26181 | p",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "General guidelines for conducting moderated remote usability testing (adapted from the Nielsen Norman Group[34]).",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Keywords that were searched for the rapid review. International Journal of Human-Computer Studies elderly remote usability, senior remote usability, and older adult remote usability Gerontechnology usability older adults, elderly usability, senior usability, and remote usability Google Scholar (database)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Remote usability testing methods and key findings.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Dr Anne McLaughlin and the members of the Brain Safety Lab for their input. The authors of this paper were supported by grant R01 AG056926 from the National Institute on Aging of the National Institutes of Health. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. We thank the three anonymous reviewers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        },
+        {
+            "text": "JRH and RJH conceived this paper. All authors wrote and edited this paper and approved the final version.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Authors' Contributions"
+        },
+        {
+            "text": "None declared.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest"
+        }
+    ]
+}

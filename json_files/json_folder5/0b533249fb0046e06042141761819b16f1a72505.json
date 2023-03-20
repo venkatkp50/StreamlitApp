@@ -1,0 +1,914 @@
+{
+    "paper_id": "0b533249fb0046e06042141761819b16f1a72505",
+    "metadata": {
+        "title": "The use of telecommunication and virtualization among ongoing and discontinued COVID-19 clinical trials: A cross-sectional analysis",
+        "authors": [
+            {
+                "first": "Mary",
+                "middle": [
+                    "C"
+                ],
+                "last": "Greenough",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oklahoma",
+                    "location": {
+                        "settlement": "Tulsa",
+                        "region": "OK",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nicholas",
+                "middle": [
+                    "B"
+                ],
+                "last": "Sajjadi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Oklahoma State University Center for Health Sciences",
+                    "location": {
+                        "settlement": "Tulsa",
+                        "region": "OK",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Brayden",
+                "middle": [],
+                "last": "Rucker",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Oklahoma State University Center for Health Sciences",
+                    "location": {
+                        "settlement": "Tulsa",
+                        "region": "OK",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Matt",
+                "middle": [],
+                "last": "Vassar",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Oklahoma State University Center for Health Sciences",
+                    "location": {
+                        "settlement": "Tulsa",
+                        "region": "OK",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Micah",
+                "middle": [],
+                "last": "Hartwell",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Oklahoma State University Center for Health Sciences",
+                    "location": {
+                        "settlement": "Tulsa",
+                        "region": "OK",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Importance: The COVID-19 pandemic has impacted clinical research due to safety measures such as social distancing and lockdowns. However, developing treatments for COVID-19 relies on conducting clinical trials. Using telemedicine or virtual methods may support ongoing trials and limit the pandemic's impact on clinical research. Objective: To examine the use of virtual methods among ongoing and discontinued COVID-19 clinical trials. Design: In this cross-sectional analysis, we performed a systematic search of ClinicalTrials.gov for COVID-19 related trials registered since the pandemic began. In masked, duplicate fashion, authors extracted data from included studies, noting whether trialists reported using telecommunication, virtualization, or remote data collection to deliver interventions and monitor outcome measures. The authors also coded the use of virtual methods for recruitment, enrollment, or follow-up visits. Chi-square tests and Kruskal-Wallis tests were used to assess differences in the use of virtual methods between ongoing and discontinued studies and differences between intervention types. Results: Our search returned 2549 clinical trials, of which 2383 were included. Of included studies, 2109 (88.5%) were ongoing and 274 (11.5%) were discontinued. Overall, 519 (24.6%) ongoing COVID-19 trials reported using virtual methods for trial conduct and 43 (15.7%) discontinued trials reported using virtual methods. There was a statistically significant difference in the rate of reporting virtual methods between discontinued and ongoing trials (X 2 1 = 27.2, P < .001). Studies listed as Behavioral or Other were more likely to report using virtual methods for delivering interventions compared to other intervention types (X 2 1 = 751.88, P < .001). Conclusions and relevance: The COVID-19 pandemic has presented an unprecedented need for safe and efficient clinical trial conduct. Nearly a quarter of ongoing COVID-19 clinical trials in our sample reported using virtual methods for supporting trial progress. Ongoing trials were more likely to report virtual methods compared to discontinued trials. Developing strategies that allow for continuing trials during emergencies may limit trial disruption. Exploring and developing remote trial methods may continue to be valuable in light of emerging COVID-19 variants and may persist beyond the pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The COVID-19 pandemic has disrupted clinical trial (CT) conduct due to public safety measures such as lockdowns and mandatory closures [1] [2] [3] [4] . However, developing effective interventions for COVID-19 paradoxically depends on findings from CTs. Many trials have been suspended during the pandemic, often citing the pandemic as the primary reason for discontinuation. [5] McDermott and Newman suspect that ongoing trials, having not been suspended, are likely to face challenges with aspects of protocols requiring in-person contact in the absence of remote research methods. [5] Moreover, the United States Food and Drug Administration updated guidance on CT conduct during the pandemic focusing on ensuring participant safety and maintaining trial integrity, including using virtual visits, telecommunication, remote monitoring, and alternative methods of intervention delivery wherever possible. [6] Many trialists were able to quickly adapt trial protocols to include using telehealth and remote methods. For example, an Alzheimer's disease trial constructed networks to support remote monitoring for using tele-neuropsychiatric platforms during the pandemic. [7] In another case, a CT evaluating fluvoxamine and improved outcomes in COVID-19 patients was conducted using entirely remote methods. The study randomized participants via phone, delivered medical supplies for data collection by mail, and gathered data via manual input into electronic surveys by participants. [5] As the focus of clinical research has shifted toward COVID-19, and with new variants of concern arising, finding alternative ways to continue CTs remains an important objective, [8, 9] but the prevalence of using virtual methods among ongoing COVID-19 CTs remains unknown. Thus, the primary objective of this study was to assess the use of virtualization, telecommunication, and remote monitoring among ongoing and discontinued COVID-19 CTs.",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 138,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 139,
+                    "end": 142,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 143,
+                    "end": 146,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 147,
+                    "end": 150,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 376,
+                    "end": 379,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 584,
+                    "end": 587,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 907,
+                    "end": 910,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1172,
+                    "end": 1175,
+                    "text": "[7]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1486,
+                    "end": 1489,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1668,
+                    "end": 1671,
+                    "text": "[8,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1672,
+                    "end": 1674,
+                    "text": "9]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "On August 7, 2021, we used the link provided on the ClinicalTrials. gov homepage to access all registered COVID-19 related trials. We used the \"download\" function to extract all available variables for all registered ongoing trials (Active, not recruiting, Recruiting, or Enrolling by invitation) and discontinued trials (Suspended, Withdrawn, or Terminated) in a CSV file.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Systematic search"
+        },
+        {
+            "text": "To obtain our sample, authors MG, NS, and BR screened each trial for relevance to COVID-19 and excluded trials which were not explicitly studying COVID-19, its complications, or its sequelae. We included only interventional trials in any phase and from any location.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sampling procedure"
+        },
+        {
+            "text": "Authors MG, NS, and BR used a pilot-tested Google form to extract information from each trial's respective registry page by searching the NCT number on ClinicalTrials.gov. For this study, any mention of the following modalities was coded as being virtual or remote: mobile apps, YouTube videos, social media platforms such as Facebook, Twitter, or Instagram, SMS text messaging, email, Zoom or other video conferencing, telephone contact, postal services, online streaming services, online surveys, and any mention of telemonitoring. The authors extracted whether trials reported using telecommunication, virtualization, or remote data collection to deliver the primary intervention or monitor its outcomes. If trials did not report using virtual methods for those purposes but reported using them for recruitment, enrollment, or follow-up visits, these studies were coded as such. If trials did not report virtual measures, they were coded as such. Data extraction was performed in masked duplicate fashion with discrepancies resolved by group discussion after unmasking.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data extraction"
+        },
+        {
+            "text": "Chi-squared tests were used to examine associations between the intervention type (Table 1 ) and whether a trial reported using virtual methods. If multiple intervention types were reported, the first type listed was coded. Chi-square tests were used to estimate relationships between using virtual methods and trial status. Median and interquartile range was calculated for enrollment among trials 1) overall, 2) by trial status, 3) and whether the primary method for data collection was virtual. Kruskal-Wallis non-parametric tests were used to determine differences in enrollment among these categories. Statistical analyses were performed using Stata 16.1 (StataCorp, College Station, TX). The Oklahoma State University Center for Health Science Institutional Review Board determined that this project did not qualify as human subject research as defined in 45 CFR 46.102(d) and (f).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 82,
+                    "end": 90,
+                    "text": "(Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Data analysis"
+        },
+        {
+            "text": "ClinicalTrials.gov listed 2549 ongoing or discontinued COVID-19 CTs at the time of our extraction. Of these, 2383 were included for data extraction, of which 2109 (88.5%) were ongoing trials and 274 (11.5%) were discontinued trials. Composition of trials by intervention types is found in Table 1 . Overall, 344 (16.3%) ongoing COVID-19 trials reported using telecommunication, virtualization, or remote data collection for delivering the primary intervention or monitoring outcomes. An additional 175 ongoing studies (8.3%) reported using virtual methods for recruitment, enrollment, or follow-up visits. Together, 24.6% (519) of ongoing COVID-19 CTs in our sample reported using virtual methods. Among the 274 discontinued studies, 12 (4.4%) reported using virtual methods for the primary intervention, and an additional 31 (11.3%) trials reported using virtual methods for recruitment, enrollment, or follow up visits. Together, 43 (15.7%) discontinued studies reported virtual methods. There was a statistically significant difference in the rate of reporting virtual methods between discontinued and ongoing trials, with discontinued studies being less Table 1 Rates of discontinuation of trials during COVID-19 pandemic and intervention type. likely to report using virtual methods (X 2 1 = 27.2, P < .001' Table 2 ). There were no significant differences between discontinued and ongoing studies in reporting the use of virtual measures for recruitment, enrollment, and follow-up (X 2 1 = 0.92, P = .34). Studies listed as Behavioral or Other were more likely to report using virtual methods as a primary intervention compared to other intervention types (X 2 1 = 751.88, P < .001).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 289,
+                    "end": 296,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1158,
+                    "end": 1165,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1313,
+                    "end": 1320,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "We found that nearly a quarter of ongoing COVID-19 CTs registered on ClinicalTrials.gov at the time of our search reported using telecommunication, virtualization, or distancing for trial conduct. Mitigating the risk of infection via telecommunication or virtualization is key in protecting trial participant safety. [10] Additionally, telecommunication may increase efficiency within health care systems, allowing for smoother clinical trial conduct, [11] especially among trials without clinical sites. [12] Many clinical trial inefficiencies and design flaws were exposed by the urgent need for COVID-19 trials, and van Dorn asserts that virtual remedies will persist in trial conduct following the pandemic. [10] While many aspects of CTs are better suited for virtual adaptation, others are not easily transitioned and have inherent limitations. [13] For example, specimen collection and \"bench work\" are important aspects of clinical research that are less amenable to virtualization. [13] Our results possibly reflect these limitations --behavioral and 'other' interventions were significantly more likely than drug, procedural, and biological trials to report using virtualization. Many trials labeled as 'other' were entirely virtual and were likely labeled as such because ClinicalTrials.gov does not yet have 'telemedicine' as an intervention type. Interestingly, Cortez et al. found behavioral treatments to be more commonly delivered via virtual methods compared to other treatment types in office-based settings during the pandemic-a clinical equivalent of our findings. [14] Despite the limitations of virtualizing trials, the increased demand for virtualization may drive innovation and development of remote protocols and monitoring tools for use in clinical trials that will outlast the COVID-19 pandemic. [13] Even among inherently harder-to-virtualize interventions, such as surgery, the need for virtual adaptation secondary to the pandemic allowed for continual healthcare delivery, which will serve as a nidus for implementing virtual measures in the future. [15] We found that discontinued studies were less likely to report using virtual methods than ongoing studies, and while we cannot claim causality, we assert that virtualization may prevent premature trial disruption. It may also be that earlier studies were focused on interventions that are difficult to virtualize, such as drugs, and thus, discontinuation was difficult to avoid. While certain aspects of clinical trials are inherently more difficult to convert to remote methods, rapid innovation and adaptation of certain aspects of clinical trials during the COVID-19 pandemic may persist. For example, remote methods used during the pandemic may promote trial participation for individuals with comorbid medical conditions or travel restrictions that would otherwise be unable to participate [5] . Adapting trial methods to include the use of portable medical devices, mobile monitoring clinics, and video-administered testing may increase trial participation in the postpandemic era. While virtualization has been crucial in supporting trial progress during the COVID-19 pandemic, the safety and accuracy of remotely obtaining other data-usually collected in person-remains uncertain. [5] However, the importance of exploring and developing remote methods may continue to be valuable in light of continuously emerging COVID-19 variants.",
+            "cite_spans": [
+                {
+                    "start": 317,
+                    "end": 321,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 452,
+                    "end": 456,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 505,
+                    "end": 509,
+                    "text": "[12]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 712,
+                    "end": 716,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 851,
+                    "end": 855,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 991,
+                    "end": 995,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1585,
+                    "end": 1589,
+                    "text": "[14]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1824,
+                    "end": 1828,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 2082,
+                    "end": 2086,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 2881,
+                    "end": 2884,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 3275,
+                    "end": 3278,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The evolving verbiage used to describe virtual methods may mean that our results underestimate the prevalence of these platforms among COVID-19 trials. Further, we only extracted what was explicitly listed on ClinicalTrials.gov to assess for the use of virtual methods, and trialists may not have listed the use of virtual methods. Therefore, the actual prevalence of virtual methods may be underrepresented in our sample. Additionally, we searched for CTs within a limited time period, limiting generalizability. There are many reasons for discontinuing a trial including safety concerns, futility, drop outs or too frequent protocol violations, and failure to recruit. Only some of these reasons may be mitigated by remote methods, and the relationship between trial status and use of remote methods is purely correlational. Our study cannot establish any causal relationships, and our results should be interpreted accordingly. Lastly, while we reported the overall rate of using remote methods for secondary purposes such as recruitment and follow-up, we did not present an itemized list of the exact purposes used. Future studies are needed to determine the usage rates of individual purposes and to determine if the use of these methods in clinical trials differs before, during, and after the pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Limitations"
+        },
+        {
+            "text": "The COVID-19 pandemic has presented an unprecedented need for safe and efficient clinical trial conduct. [10] Ensuring safe continuation of COVID-19-related CTs remains important for establishing novel therapeutics and treatments amid an ongoing pandemic. Although our study demonstrates significant findings regarding virtualization among ongoing COVID-19 CTs compared to discontinued trials, the pandemic and subsequent public safety measures continue to be a major contributor to halted trials globally. [8] Therefore, we encourage the incorporation of virtual methods into clinical trial conduct during the current pandemic and beyond. Future works are needed to document the challenges of implementing virtual methods into clinical trials of various types, the strategies used to overcome said challenges, and the use of virtual methods in clinical trials persisting after the COVID-19 pandemic.",
+            "cite_spans": [
+                {
+                    "start": 105,
+                    "end": 109,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 507,
+                    "end": 510,
+                    "text": "[8]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Question: Are COVID-19 clinical trials using virtual methods to support trial progress amid lockdowns and distancing measures?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key points"
+        },
+        {
+            "text": "Findings: In this cross sectional-analysis of registered COVID-19 clinical trials, we found that 24.6% of ongoing trials reported using virtual methods compared to 15.7% of discontinued trials, a statistically significant difference.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key points"
+        },
+        {
+            "text": "Meaning: Many ongoing COVID-19 clinical trials are using virtual methods in keeping with recommendations set forth by the FDA and trial experts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key points"
+        },
+        {
+            "text": "The authors declare no conflicts of interest related to the current work. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of Competing Interest"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The impact of COVID-19 on clinical trials",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Asaad",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Habibullah",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Butler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ann. Surg",
+            "volume": "272",
+            "issn": "3",
+            "pages": "222--223",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/SLA.0000000000004113"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Impact of COVID-19 on clinical trials and clinical research: A systematic review",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sathian",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Asim",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Banerjee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nepal J. Epidemiol",
+            "volume": "10",
+            "issn": "3",
+            "pages": "878--887",
+            "other_ids": {
+                "DOI": [
+                    "10.3126/nje.v10i3.31622"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Clinical trial recovery from COVID-19 disruption",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Xue",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Smietana",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Poda",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Webster",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Rev. Drug Discov",
+            "volume": "19",
+            "issn": "10",
+            "pages": "662--663",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/d41573-020-00150-9"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "The impact of COVID-19 on dermatology clinical trials",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Desai",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Manjaly",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Manjaly",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mostaghimi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "J. Invest. Dermatol",
+            "volume": "141",
+            "issn": "3",
+            "pages": "676--678",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jid.2020.06.032"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Remote Research and Clinical Trial integrity during and after the coronavirus pandemic",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mcdermott",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Newman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1935,
+            "venue": "JAMA",
+            "volume": "325",
+            "issn": "19",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2021.4609"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Office of Clinical Policy and Programs, Office of Clinical Policy, Office of Good Clinical Practice. FDA Guidance on Conduct of Clinical Trials of Medical Products During the COVID-19 Public Health Emergency: Guidance for Industry, Investigators, and Institutional Review Boards",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Clinical trials and tribulations in the COVID-19 era",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Weinberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Patrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Schwab",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Am. J. Geriatr. Psychiatry",
+            "volume": "28",
+            "issn": "9",
+            "pages": "913--920",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jagp.2020.05.016"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Global telemedicine implementation and integration within health systems to fight the COVID-19 pandemic: a call to action",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ohannessian",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Duong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Odone",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JMIR Public Health Surveill",
+            "volume": "6",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/18810"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "COVID-19 and clinical trials: current challenges and future directions",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Garg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Klimek",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Sinha",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Rev. Recent Clin. Trials",
+            "volume": "16",
+            "issn": "3",
+            "pages": "258--261",
+            "other_ids": {
+                "DOI": [
+                    "10.2174/1574887116666210122160705"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "COVID-19 and readjusting clinical trials",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Van Dorn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "396",
+            "issn": "",
+            "pages": "31787--31793",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)31787-6"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Use of Telemedicine and Virtual Care for Remote Treatment in Response to COVID-19 Pandemic",
+            "authors": [
+                {
+                    "first": "Jnr",
+                    "middle": [],
+                    "last": "Bokolo Anthony",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Med. Syst",
+            "volume": "44",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10916-020-01596-5"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "clinical trials without clinical sites",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Cummings",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "JAMA Intern. Med",
+            "volume": "181",
+            "issn": "5",
+            "pages": "680--684",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamainternmed.2020.9223"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "COVID-19 and telehealth, education, and research adaptations",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Wijesooriya",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "L P"
+                    ],
+                    "last": "Brand",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Paediatr. Respir. Rev",
+            "volume": "35",
+            "issn": "",
+            "pages": "38--42",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.prrv.2020.06.009"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Changes in Short-term, long-term, and preventive care delivery in us office-based and telemedicine visits during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cortez",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Mansour",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Qato",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Stafford",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexander",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Caleb",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "JAMA Health Forum",
+            "volume": "2",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamahealthforum.2021.1529"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Telemedicine in surgery-beyond a pandemic adaptation",
+            "authors": [
+                {
+                    "first": "Hmk",
+                    "middle": [],
+                    "last": "Ghomrawi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Holl",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Abdullah",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "JAMA Surg",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamasurg.2021.2052"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "TABREF1": {
+            "text": "Association of trial status and intervention type with reporting use of virtual methods",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,1307 @@
+{
+    "paper_id": "0b095928f17ba662bd55e99c7381e59e9c24c769",
+    "metadata": {
+        "title": "",
+        "authors": []
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": " A  n  a  l  y  s  i  s  o  f  t  h  e  A  R  T  I  C  v  e  r  s  i  o  n  3  a  n  d  v  e  r  s  i  o  n  4  S  A  R  S  -C  o  V  -2  p  r  i  m  e  r  s  a  n  d  t  h  e  i  r  i  m  p  a  c  t  o  n  t  h  e   d  e  t  e  c  t  i  o  n  o  f  t  h  e  G  1  4  2  D  a  m  i  n  o  a  c  i  d  s  u  b  s  t  i  t  u  t  i  o  n  i  n  t  h  e  s  p  i  k  e  p  r  o  t  e  i D  e  p  a  r  t  m  e  n  t  o  f  C  o  m  p  u  t  e  r  S  c  i  e  n  c  e  ,  U  n  i  v  e  r  s  i  t  y  o  f  C  h  i  c  a  g  o  ,  C  h  i  c  a  g  o  ,  I  l  l  i  n  o  i  s  ,  6  0  6  3  7   R  u  n  n  i  n  g  h  e  a  d  :   A  R  T  I  C  V  3  V  e  r  s  u  s  V  4  P  r  i  m  e  r  s   *  C  o  n  t  r  i  b  u  t  e  d  e  q  u  a  l  l  y  t  o  t  h  i  s  w  o  r  k   #   A  d  d  r  e  s  s  c  o  r  r  e  s  p  o  n  d  e  n  c  e  t  o  J  a  m  e  s  J  .  D  a  v  i  s  ,  P  h  .  D  .  ,  D  i  v  i  s  i  o  n  o  f  D  a  t  a  S  c  i  e  n  c  e  a  n  d  L  e  a  r  n  i  n  g  ,   A  r  g  o  n  n  e  N  a  t  i  o  n  a  l  L  a  b  o  r  a  t  o  r  y  ,  9  7  0  0  S  .  C  a  s  s  A  v  e  .  ,  L  e  m  o  n  t  ,  I  l  l  i  n  o  i  s  ,  6  0  4  3  9  T  e  l  :  6  3  0  -2  5  2  -1  1 9 0 , E - m a i l : j j d a v i s @ a n l . g o v D i s c l o s u r e s : N o n e . A B S  T  R  A  C  T   T  h  e  A  R  T  I  C  N  e  t  w  o  r  k  p  r  o  v  i  d  e  s  a  c  o  m  m  o  n  r  e  s  o  u  r  c  e  o  f  P  C  R  p  r  i  m  e  r  s  e  q  u  e  n  c  e  s  a  n  d   r  e  c  o  m  m  e  n  d  a  t  i  o  n  s  f  o  r  a  m  p  l  i  f  y  i  n  g  S  A  R  S  -C  o  V  -2  g  e  n  o  m  e  s  .  T  h  e  i  n  i  t  i  a  l  t  i  l  i  n  g  s  t  r  a  t  e  g  y  w  a  s  d  e  v  e  l  o  p  e  d   w  i  t  h  t  h  e  r  e  f  e  r  e  n  c  e  g  e  n  o  m  e  W  u  h  a  n  -0  1  ,  a  n  d  s  u  b  s  e  q  u  e  n  t  i  t  e  r  a  t  i  o  n  s  h  a  v  e  a  d  d  r  e  s  s  e  d  a  r  e  a  s  o  f  l  o T  I  C  V  4  p  r  i  m  e  r  s  e  t  i  s  c  r  i  t  i  c  a  l  f  o  r  a  c  c  u  r  a  t  e  s  e  q  u  e  n  c  i  n  g  o  f  t  h  e  S  A  R  S  -C  o  V  -2  s  p  i  k  e  r  e  g  i  o  n  .  T  h  e  a  b  s  e  n  c  e  o  f  m  e  t  a  d  a  t  a  d  e  s  c  r  i  b  i  n  g  t  h  e  p  r  i  m  e  r  s  c  h  e  m  e  u  s  e  d  w  i  l  l  n  e  g  a  t  i  v  e  l  y i m p a c t t h e d o w n s t r e a m u s e o f p u b l i c l y a v a i l a b l e S A R S - C o v - 2 s e q u e n c i n g r e a d s a n d a s s e m b l e d g e n o m e s . O b s e r v a t i o n T h e A R T I C N e t w o r k i s a c o n s o r t i u m d e d i c a t e d t o p r o v i d i n g t o o l s t o s u p p o r t g l o b a l v i r a l e p i d e m i o l o g y e f f o r t s t h r o u g h l o w c o s t g e n o m i c s e q u e n c i n g ( h t t p s : / / a r t i c . n e t w o r k ) . E a r l y i n t h e S A R S - C o V - 2 p a n d e m i c , t h e c o n s o r t i u m d e v e l o p e d a s e t o f p r i m e r s ( A R T I C V 1 ) d e s i g n e d t o c o m p l e t e l y s e q u e n c e t h e S A R S - C o V - 2 g e n o m e w i t h o v e r l a p p i n g 4 0 0 - b p a m p l i c o n s . S h o r t c o m i n g s i d e n t i f i e d i n t h e V 1 p r o t o c o l , p r i m a r i l y d u e t o r e g i o n s o f a m p l i c o n d r o p o u t , l e d t o t w o m o r e i t e r a t i o n s o f p r i m e r d e s i g n , w h i c h r e s u l t e d i n A R T I C V 3 b e i n g u s e d b y m a n y l a b o r a t o r i e s i n 2 0 2 0 a n d i n t o 2 0 2 1 ( 1 ) . A s t h e C O V I D - 1 9 p a n d e m i c c o n t i n u e d , n e w v a r i a n t s e m e r g e d w i t h u n i q u e m u t a t i o n s a n d e n h a n c e d t r a n s m i s s i b i l i t y ( 2 - 4 ) . S o m e o f t h e s e m u t a t i o n s o c c u r r e d i n p r i m e r b i n d i n g s i t e s i n g e n e s t h a t e n c o d e k e y p r o t e i n s s u c h a s s p i k e p r o t e i n , r e s u l t i n g i n a m p l i c o n d r o p o u t a n d p o o r s e q u e n c e c o v e r a g e i n c r i t i c a l r e g i o n s . A R T I C V 4 w ad i n g G 1 4 2 D ( D e l t a ) i n t h e 2 _ R i g h t p r i m e r , t h e 2 4 1 / 2 4 3 d e l ( B e t a ) t h a t o c c u r s i n t h e 7 4 _ L e f t p r i m e r , a n d t h e K 4 1 7 N ( B e t a ) o r K 4 1 7 T ( G a m m a ) w h i c h o c c u r i n t h e 7 6 _ L e f t p r i m e r ( h t t p s : / / c o m m u n i t y . a r t i c . n e t w o r k / t / s a r s - c o v - 2 - v e r s i o n - 4 - s c h e m e - R  T  I  C  p  r  i  m  e  r  s  e  t  s  t  h  r  o  u  g  h  o  u  t  t  h  e  p  a  n  d  e  m  i  c  ,  w  e  e  l  e  c  t  e  d  t  o  v  a  l  i  d  a  t  e  t  h  e  A  R  T  I  C  V  4   p  r  i  m  e  r  s  e  t  p  r  i  o  r  t  o  a  d  o  p  t  i  n  g  t  h  e  n  e  w  p  r  o  t  o  c  o  l  .  W  e  c  h  o  s  e  a  r  a  n  d  o  m  s  e  t  o  f  6  6  3  S  A  R  S  -C  o  V  - B V - B R C ) ( h t t p s : / / w w w . b v - b r c . o r g ) , w h i c h f o l l o w s t h e O n e - C o d e x w o r k f l o w ( h t t p s : / / g i t h u b . c o m / o n e c o d e x / s a r s - c o v - 2 ) . T h e w o r k f l o w u s e s s e q t k v e r s i o n 1 . 3 - r 1 1 6 f o r q u a l i t y t r i m m i n g ( h t t p s : / / g i t h u b . c o m / l h 3 / s e q t k . g i t ) ; m i n i m T  I  C  V  4  (  h  t  t  p  s  :  /  /  c  o  m  m  u  n  i  t  y  .  a  r  t  i  c  .  n  e  t  w  o  r  k  /  t  /  s  a  r  s  -c  o  v  -2  -v  e  r  s  i  o  n  -4  -s  c  h  e  m  e  -r  e  l  e  a  s  e  /  3  1  2  )  ,  w  e   o  b  s  e  r  v  e  a  n  a  r  e  a  o  f  s  l  i  g  h  t  l  y  l  o  w  e  r  c  o  v  e  r  a  g  e  i  n  t  h  e  V  4  s  e  q  u  e  n  c  e  s  a  t  a  p  p  r  o  x  i  m  a  t  e  n  u  c  l  e  o  t  i T  h  e  s  e  d  a  t  a  b  a  s  e  s  h  a  v  e  b  e  e  n  i  n  d  i  s  p  e  n  s  a  b  l  e  f  o  r   e  p  i  d  e  m  i  o  l  o  g  i  c  a  l  a  n  a  l  y  s  e  s  ,  e  a  r  l  y  i  d  e  n  t  i  f  i  c  a  t  i  o  n  o  f  v  a  r  i  a  n  t  s  o  f  c  o  n  c  e  r  n  ,  a  n  d  d  o  w  n  s  t  r  e  a  m   t  r  a  n  s  l  a  t  i  o  n  a  l  r  e  s  e  a  r  c  h  a  c  t  i  v  i  t  i  e  s  s  u  c  h  a  s  v  a  c  c  i  n  e  f  o  r  m  u  l  a  t  i  o  n  .  F  r  o  m  J  u  n  e  2  0  2  1  t  h  r  o  u  g  h  A  u  g  u  s  t   2  0  2  1  ,  t  h  e  r  a  p  i  d  i  n  c  r  e  a  s  e  i  n  t  h  e  G  1  4  2  D  a  m  i  n  o  a  c  i  d  s  u  b  s  t  i  t  u  t  i  o  n  p  r  e  s  e  n  t  i  n  D  e  l  t  a  v  a  r  i  a  n  t  s  i  n  p  u  b  l  i  c   r  e  p  o  s  i  t  o  r  i  e  s  a  p  p  e  a  r  e  d  t  o  i  n  d  i  c  a  t  e  a  r  a  p  i  d  e  v  o  l  u  t  i  o  n  a  r  y  s  w  e  e  p  (   F  i  g C  o  V  -2  g  e  n  o  m  e  s  i  s  a  n  i  m  p  o  r  t  a  n  t  c  o  n  s  i  d  e  r  a  t  i  o  n  f  o  r  i  n  t  e  r  p  r  e  t  i  n  g  e  p  i  d  e  m  i  o  l  o  g  i  c  a  l  d  a  t  a  a  n  d   i  d  e  n  t  i  f  y  i  n  g  v  a  r  i  a  n  t  s  o  f  c  o  n  c  e  r D  i  s  t  r  i  b  u  t  i  o  n  o  f  P  a  n  g  o  l  i  n  l  i  n  e  a  g  e  s  i  n  t  h  e  s  e  t  o  f  6  6  3  s  a  m  p  l  e  s  t  h  a  t  w  e  r  e  s  e  q  u  e  n  c  e  d  u  s  i  n  g   e  i  t  h  e  r  t  h  e  A  R  T  I  C  v  e  r  s  i  o  n  3  o  r  v  e  r  s  i  o  n  4 a  n  d  b  l  u  e  c  i  r  c  l  e  s  a  r  e  l  e  f  t  p  r  i  m  e  r  s  .  (  D  )  T  h  e  f  r  a  c  t  i  o  n  o  f  B  .  1  .  6  1  7  .  2  s  e  q  u  e  n  c  e  s  i  n  G  I  S  A  I  D  w  i  t  h  (  b  l  u  e  )   a  n  d  w  i  t  h  o  u  t  (  o  r  a  n  g  e  )  G  1  4  2  D  t  h  r  o  u  g  h  A  u  g  u  s  t  3  1  ,  2  0  2  1  .  (  E  )  F  r  e  q  u  e  n  c  y  o  f  L  4  5  2  R  (  g  r  a  y  )  ,  D  9  5  0  N   (  b  l  u  e  )  ,  a  n  d  G  1  4  2  D  (  o  r  a  n  g  e  )  a  m  i  n  o  a  c  i  d  s  u  b  s  t  i  t  u  t  i  o  n  s  o  b  s  e  r  v  e  d  i  n  S  A  R  S  -C  o  V  -2  -p  o  s  i  t  i  v  e  s  a  m  p  l  e ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1,
+                    "end": 383,
+                    "text": "A  n  a  l  y  s  i  s  o  f  t  h  e  A  R  T  I  C  v  e  r  s  i  o  n  3  a  n  d  v  e  r  s  i  o  n  4  S  A  R  S  -C  o  V  -2  p  r  i  m  e  r  s  a  n  d  t  h  e  i  r  i  m  p  a  c  t  o  n  t  h  e   d  e  t  e  c  t  i  o  n  o  f  t  h  e  G  1  4  2  D  a  m  i  n  o  a  c  i  d  s  u  b  s  t  i  t  u  t  i  o  n  i  n  t  h  e  s  p  i  k  e  p  r  o  t  e  i",
+                    "ref_id": null
+                },
+                {
+                    "start": 384,
+                    "end": 1239,
+                    "text": "D  e  p  a  r  t  m  e  n  t  o  f  C  o  m  p  u  t  e  r  S  c  i  e  n  c  e  ,  U  n  i  v  e  r  s  i  t  y  o  f  C  h  i  c  a  g  o  ,  C  h  i  c  a  g  o  ,  I  l  l  i  n  o  i  s  ,  6  0  6  3  7   R  u  n  n  i  n  g  h  e  a  d  :   A  R  T  I  C  V  3  V  e  r  s  u  s  V  4  P  r  i  m  e  r  s   *  C  o  n  t  r  i  b  u  t  e  d  e  q  u  a  l  l  y  t  o  t  h  i  s  w  o  r  k   #   A  d  d  r  e  s  s  c  o  r  r  e  s  p  o  n  d  e  n  c  e  t  o  J  a  m  e  s  J  .  D  a  v  i  s  ,  P  h  .  D  .  ,  D  i  v  i  s  i  o  n  o  f  D  a  t  a  S  c  i  e  n  c  e  a  n  d  L  e  a  r  n  i  n  g  ,   A  r  g  o  n  n  e  N  a  t  i  o  n  a  l  L  a  b  o  r  a  t  o  r  y  ,  9  7  0  0  S  .  C  a  s  s  A  v  e  .  ,  L  e  m  o  n  t  ,  I  l  l  i  n  o  i  s  ,  6  0  4  3  9  T  e  l  :  6  3  0  -2  5  2  -1  1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1328,
+                    "end": 1998,
+                    "text": "S  T  R  A  C  T   T  h  e  A  R  T  I  C  N  e  t  w  o  r  k  p  r  o  v  i  d  e  s  a  c  o  m  m  o  n  r  e  s  o  u  r  c  e  o  f  P  C  R  p  r  i  m  e  r  s  e  q  u  e  n  c  e  s  a  n  d   r  e  c  o  m  m  e  n  d  a  t  i  o  n  s  f  o  r  a  m  p  l  i  f  y  i  n  g  S  A  R  S  -C  o  V  -2  g  e  n  o  m  e  s  .  T  h  e  i  n  i  t  i  a  l  t  i  l  i  n  g  s  t  r  a  t  e  g  y  w  a  s  d  e  v  e  l  o  p  e  d   w  i  t  h  t  h  e  r  e  f  e  r  e  n  c  e  g  e  n  o  m  e  W  u  h  a  n  -0  1  ,  a  n  d  s  u  b  s  e  q  u  e  n  t  i  t  e  r  a  t  i  o  n  s  h  a  v  e  a  d  d  r  e  s  s  e  d  a  r  e  a  s  o  f  l  o",
+                    "ref_id": null
+                },
+                {
+                    "start": 1999,
+                    "end": 2398,
+                    "text": "T  I  C  V  4  p  r  i  m  e  r  s  e  t  i  s  c  r  i  t  i  c  a  l  f  o  r  a  c  c  u  r  a  t  e  s  e  q  u  e  n  c  i  n  g  o  f  t  h  e  S  A  R  S  -C  o  V  -2  s  p  i  k  e  r  e  g  i  o  n  .  T  h  e  a  b  s  e  n  c  e  o  f  m  e  t  a  d  a  t  a  d  e  s  c  r  i  b  i  n  g  t  h  e  p  r  i  m  e  r  s  c  h  e  m  e  u  s  e  d  w  i  l  l  n  e  g  a  t  i  v  e  l  y",
+                    "ref_id": null
+                },
+                {
+                    "start": 4510,
+                    "end": 4912,
+                    "text": "R  T  I  C  p  r  i  m  e  r  s  e  t  s  t  h  r  o  u  g  h  o  u  t  t  h  e  p  a  n  d  e  m  i  c  ,  w  e  e  l  e  c  t  e  d  t  o  v  a  l  i  d  a  t  e  t  h  e  A  R  T  I  C  V  4   p  r  i  m  e  r  s  e  t  p  r  i  o  r  t  o  a  d  o  p  t  i  n  g  t  h  e  n  e  w  p  r  o  t  o  c  o  l  .  W  e  c  h  o  s  e  a  r  a  n  d  o  m  s  e  t  o  f  6  6  3  S  A  R  S  -C  o  V  -",
+                    "ref_id": null
+                },
+                {
+                    "start": 5309,
+                    "end": 5764,
+                    "text": "T  I  C  V  4  (  h  t  t  p  s  :  /  /  c  o  m  m  u  n  i  t  y  .  a  r  t  i  c  .  n  e  t  w  o  r  k  /  t  /  s  a  r  s  -c  o  v  -2  -v  e  r  s  i  o  n  -4  -s  c  h  e  m  e  -r  e  l  e  a  s  e  /  3  1  2  )  ,  w  e   o  b  s  e  r  v  e  a  n  a  r  e  a  o  f  s  l  i  g  h  t  l  y  l  o  w  e  r  c  o  v  e  r  a  g  e  i  n  t  h  e  V  4  s  e  q  u  e  n  c  e  s  a  t  a  p  p  r  o  x  i  m  a  t  e  n  u  c  l  e  o  t  i",
+                    "ref_id": null
+                },
+                {
+                    "start": 5765,
+                    "end": 6770,
+                    "text": "T  h  e  s  e  d  a  t  a  b  a  s  e  s  h  a  v  e  b  e  e  n  i  n  d  i  s  p  e  n  s  a  b  l  e  f  o  r   e  p  i  d  e  m  i  o  l  o  g  i  c  a  l  a  n  a  l  y  s  e  s  ,  e  a  r  l  y  i  d  e  n  t  i  f  i  c  a  t  i  o  n  o  f  v  a  r  i  a  n  t  s  o  f  c  o  n  c  e  r  n  ,  a  n  d  d  o  w  n  s  t  r  e  a  m   t  r  a  n  s  l  a  t  i  o  n  a  l  r  e  s  e  a  r  c  h  a  c  t  i  v  i  t  i  e  s  s  u  c  h  a  s  v  a  c  c  i  n  e  f  o  r  m  u  l  a  t  i  o  n  .  F  r  o  m  J  u  n  e  2  0  2  1  t  h  r  o  u  g  h  A  u  g  u  s  t   2  0  2  1  ,  t  h  e  r  a  p  i  d  i  n  c  r  e  a  s  e  i  n  t  h  e  G  1  4  2  D  a  m  i  n  o  a  c  i  d  s  u  b  s  t  i  t  u  t  i  o  n  p  r  e  s  e  n  t  i  n  D  e  l  t  a  v  a  r  i  a  n  t  s  i  n  p  u  b  l  i  c   r  e  p  o  s  i  t  o  r  i  e  s  a  p  p  e  a  r  e  d  t  o  i  n  d  i  c  a  t  e  a  r  a  p  i  d  e  v  o  l  u  t  i  o  n  a  r  y  s  w  e  e  p  (   F  i  g",
+                    "ref_id": null
+                },
+                {
+                    "start": 6771,
+                    "end": 7074,
+                    "text": "C  o  V  -2  g  e  n  o  m  e  s  i  s  a  n  i  m  p  o  r  t  a  n  t  c  o  n  s  i  d  e  r  a  t  i  o  n  f  o  r  i  n  t  e  r  p  r  e  t  i  n  g  e  p  i  d  e  m  i  o  l  o  g  i  c  a  l  d  a  t  a  a  n  d   i  d  e  n  t  i  f  y  i  n  g  v  a  r  i  a  n  t  s  o  f  c  o  n  c  e  r",
+                    "ref_id": null
+                },
+                {
+                    "start": 7075,
+                    "end": 7386,
+                    "text": "D  i  s  t  r  i  b  u  t  i  o  n  o  f  P  a  n  g  o  l  i  n  l  i  n  e  a  g  e  s  i  n  t  h  e  s  e  t  o  f  6  6  3  s  a  m  p  l  e  s  t  h  a  t  w  e  r  e  s  e  q  u  e  n  c  e  d  u  s  i  n  g   e  i  t  h  e  r  t  h  e  A  R  T  I  C  v  e  r  s  i  o  n  3  o  r  v  e  r  s  i  o  n  4",
+                    "ref_id": null
+                },
+                {
+                    "start": 7387,
+                    "end": 8089,
+                    "text": "a  n  d  b  l  u  e  c  i  r  c  l  e  s  a  r  e  l  e  f  t  p  r  i  m  e  r  s  .  (  D  )  T  h  e  f  r  a  c  t  i  o  n  o  f  B  .  1  .  6  1  7  .  2  s  e  q  u  e  n  c  e  s  i  n  G  I  S  A  I  D  w  i  t  h  (  b  l  u  e  )   a  n  d  w  i  t  h  o  u  t  (  o  r  a  n  g  e  )  G  1  4  2  D  t  h  r  o  u  g  h  A  u  g  u  s  t  3  1  ,  2  0  2  1  .  (  E  )  F  r  e  q  u  e  n  c  y  o  f  L  4  5  2  R  (  g  r  a  y  )  ,  D  9  5  0  N   (  b  l  u  e  )  ,  a  n  d  G  1  4  2  D  (  o  r  a  n  g  e  )  a  m  i  n  o  a  c  i  d  s  u  b  s  t  i  t  u  t  i  o  n  s  o  b  s  e  r  v  e  d  i  n  S  A  R  S  -C  o  V  -2  -p  o  s  i  t  i  v  e  s  a  m  p  l  e",
+                    "ref_id": null
+                }
+            ],
+            "section": ""
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Improvements to the ARTIC multiplex PCR method for SARS-CoV-2 genome sequencing using nanopore",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tyson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "James",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Stoddart",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sparks",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wickenhagen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lapointe",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kamelian",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Prystajecky",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Goodfellow",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Harrigan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Snutch",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Loman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Quick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.09.04.283077:2020.09.04.283077"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Estimated transmissibility and impact of SARS-CoV-2 lineage B. 1.1. 7 in England",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abbott",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Barnard",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Jarvis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kucharski",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Munday",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pearson",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tully",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Washburne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Science",
+            "volume": "372",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Citiid-Nihr BioResource Covid-19 Collaboration AM",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Petra",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Steven",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mahesh",
+                    "middle": [],
+                    "last": "Shanker",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Guido",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Swapnil",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Charlie",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Isabella",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Rawlings",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dami",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sujeet",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rajesh",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Robin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Meena",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shantanu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kalaiarasan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Radhakrishnan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Adam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Niluka",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jonathan",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Oscar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Partha",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Priti",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Daniela",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tom",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dr",
+                    "middle": [],
+                    "last": "Chand",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Neeraj",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Raju",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Meenakshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "The",
+                    "middle": [],
+                    "last": "Indian S-C-Gc ; O Hyeon",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wendy",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Samir",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Seth",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Leo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Partha",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Anurag",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ravindra",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.21203/rs.3.rs-637724/v1"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Delta variants of SARS-CoV-2 cause significantly increased vaccine breakthrough COVID-19 cases in",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Christensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Olsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Subedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Hodjat",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Walley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kinskey",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Saavedra",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pruitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Reppond",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Shyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cambric",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gadd",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Thakur",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Batajoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mangham",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pena",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Trinh",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yerramilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Olson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Snehal",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gollihar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Musser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2021.07.19.21260808:2021.07.19.21260808"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Sequence Analysis of 20,453 Severe Acute Respiratory Syndrome Coronavirus 2 Genomes from the Houston Metropolitan Area Identifies the Emergence and Widespread Distribution of Multiple Isolates of All Major Variants of Concern",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Olsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Christensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Subedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Olson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Saavedra",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yerramilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pruitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Reppond",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "The American Journal of Pathology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Trajectory of Growth of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Variants in",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Olsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Christensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Subedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Hodjat",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Olson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yerramilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Saavedra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "The American Journal of Pathology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Minimap2: pairwise alignment for nucleotide sequences",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "34",
+            "issn": "",
+            "pages": "3094--3100",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The sequence alignment/map format and SAMtools",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Handsaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wysoker",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Fennell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ruan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Homer",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Marth",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Abecasis",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Durbin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Bioinformatics",
+            "volume": "25",
+            "issn": "",
+            "pages": "2078--2079",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "An amplicon-based sequencing framework for accurately measuring intrahost virus diversity using PrimalSeq and iVar",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Grubaugh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gangavarapu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Quick",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Matteson",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Jesus",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Main",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Paul",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Brackney",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Grewal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Genome biology",
+            "volume": "20",
+            "issn": "",
+            "pages": "1--19",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A dynamic nomenclature proposal for SARS-CoV-2 lineages to assist genomic epidemiology",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rambaut",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Holmes",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00c1",
+                    "middle": [],
+                    "last": "O&apos;toole",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mccrone",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ruis",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Du Plessis",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Pybus",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature microbiology",
+            "volume": "5",
+            "issn": "",
+            "pages": "1403--1407",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "GISAID: Global initiative on sharing all influenza data-from vision to reality",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mccauley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Eurosurveillance",
+            "volume": "22",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The international nucleotide sequence database collaboration",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Arita",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Karsch-Mizrachi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cochrane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nucleic Acids Research",
+            "volume": "49",
+            "issn": "",
+            "pages": "121--124",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Tracking changes in SARS-CoV-2 spike: evidence that D614G increases infectivity of the COVID-19 virus",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Korber",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fischer",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gnanakaran",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yoon",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Theiler",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Abfalterer",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hengartner",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Giorgi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bhattacharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Foley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "182",
+            "issn": "",
+            "pages": "812--827",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF8": {
+            "text": "Akanksha Batajoo, Jessica Cambric, Ryan Gadd, Regan Mangham, Matthew Ojeda Saavedra, Sindy Pena, Layne Pruitt, Kristina Reppond, Madison N. Shyer, Rashi M. Thakur, Trina Trinh, and Prasanti Yerramilli for their tireless efforts throughout the pandemic in generating the sequencing data.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

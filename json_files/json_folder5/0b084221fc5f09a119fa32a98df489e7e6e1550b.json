@@ -1,0 +1,3464 @@
+{
+    "paper_id": "0b084221fc5f09a119fa32a98df489e7e6e1550b",
+    "metadata": {
+        "title": "Do Gradient Inversion Attacks Make Federated Learning Unsafe?",
+        "authors": [
+            {
+                "first": "Ali",
+                "middle": [],
+                "last": "Hatamizadeh",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hongxu",
+                "middle": [],
+                "last": "Yin",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Pavlo",
+                "middle": [],
+                "last": "Molchanov",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Andriy",
+                "middle": [],
+                "last": "Myronenko",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Wenqi",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Prerna",
+                "middle": [],
+                "last": "Dogra",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Andrew",
+                "middle": [],
+                "last": "Feng",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Mona",
+                "middle": [
+                    "G"
+                ],
+                "last": "Flores",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jan",
+                "middle": [],
+                "last": "Kautz",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Daguang",
+                "middle": [],
+                "last": "Xu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Holger",
+                "middle": [
+                    "R"
+                ],
+                "last": "Roth",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Federated learning (FL) allows the collaborative training of AI models without needing to share raw data. This capability makes it especially interesting for healthcare applications where patient and data privacy is of utmost concern. However, recent works on the inversion of deep neural networks from model gradients raised concerns about the security of FL in preventing the leakage of training data. In this work, we show that these attacks presented in the literature are impractical in real FL use-cases and provide a new baseline attack that works for more realistic scenarios where the clients' training involves updating the Batch Normalization (BN) statistics. Furthermore, we present new ways to measure and visualize potential data leakage in FL. Our work is a step towards establishing reproducible methods of measuring data leakage in FL and could help determine the optimal tradeoffs between privacy-preserving techniques, such as differential privacy, and model accuracy based on quantifiable metrics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "F EDERATED learning (FL) allows the collaborative training of Artificial Intelligence (AI) models without the need to share raw data [1] . Participating client sites only share model weights or their updates with a centralized server and therefore, the underlying data privacy is being preserved [2] . This makes FL especially attractive for healthcare applications where patient privacy is of utmost concern. Several real-world applications of FL in medical imaging have shown its potential to improve the model performance and generalizability of AI models by allowing them to learn from large and diverse patient populations, which could include variations in scanner equipment and acquisition protocols, often spanning different countries, continents, and patient populations [3] - [7] . FL has attracted a lot of attention from researchers [8] , who study how to deal effectively with heterogeneous (or non-i.i.d.) data [8] - [10] , address fairness and bias concerns [11] , improve the efficiency of client-server communication [12] , and more [9] .",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 136,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 296,
+                    "end": 299,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 780,
+                    "end": 783,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 786,
+                    "end": 789,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 845,
+                    "end": 848,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 925,
+                    "end": 928,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 931,
+                    "end": 935,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 973,
+                    "end": 977,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1034,
+                    "end": 1038,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1050,
+                    "end": 1053,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "But how true is the assumption that FL preserves privacy? Several efforts have demonstrated the possibility of recovering the underlying training data (e.g., high-resolution images and corresponding labels) by exploiting shared model gradients (i.e., the model updates sent to the server during FL) [13] - [15] . This attack scenario, known as the \"gradient inversion\" attack, could happen on both the server-and client-side during FL training. In typical FL scenarios for healthcare, the server-side gradient inversion attack assumes that all the clients trust each other [1] while the server is \"honest but curious\" [16] . This means the server follows the FL Submitted: February 15, 2022 All authors are with NVIDIA, Santa Clara, USA. Contact Holger Roth (e-mail: hroth@nvidia.com). procedure faithfully but might be compromised and attempts to reconstruct some raw data from the clients (see Fig. 1 ).",
+            "cite_spans": [
+                {
+                    "start": 299,
+                    "end": 303,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 306,
+                    "end": 310,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 573,
+                    "end": 576,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 618,
+                    "end": 622,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 673,
+                    "end": 690,
+                    "text": "February 15, 2022",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 896,
+                    "end": 902,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "In the \"cross-silo\" scenario of FL [8] , where an AI model is trained on a relatively small number of client sites with large amounts of data, one can assume that each client is running a relatively large number of training iterations on their local data before sending the model updates to the server. This is in contrast to the \"cross-device\" setting with many hundreds or thousands of clients, each with relatively small amounts of data, local compute resources, and unreliable network connections which might be dropping in and out at any time during training. In healthcare, there are different ways the data could be organized across institutes. In the so-called \"horizontal\" FL, each institute has data from different patients who share common attributes for a certain modeling task. On the other hand, \"vertical\" FL allows institutes which share a common set of patients but with different attributes to collaborate. For instance, bloodwork results and imaging data of the same patients could be possessed by two different participating institutes [17] but used to build a common AI model.",
+            "cite_spans": [
+                {
+                    "start": 35,
+                    "end": 38,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1056,
+                    "end": 1060,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "In this work, we consider the common horizontal FL setting in which the participating clients share model updates \u2206W , after training on their local data, to a central server that aggregates them, updates the global model, and sends back the updated global model to each client to continue the local training (see Fig. 1 ). This procedure is continued until the model converges. It is easy to see that this FL setting is equivalent to the well-known federated averaging (Fe-dAvg) algorithm [2] . Although the raw training data is never shared in FL, there is a concern that the shared model updates between the server and clients may still leak some training data [13] . While the server receives model updates from each client, a client computes model updates from the global models, consisting of updates from all clients, in different rounds of FL. We focus on the server-side gradient inversion attacks and investigate their applicability to FL in medical image classification scenarios. However, we note that the client-side gradient inversion could be treated in the same way but would involve the aggregation of more gradients from other clients.",
+            "cite_spans": [
+                {
+                    "start": 490,
+                    "end": 493,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 664,
+                    "end": 668,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 314,
+                    "end": 320,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "We investigate the risks of data leakage in gradient inversion attacks in practical FL scenarios using a real-world FL system to record the model updates. Unlike previous efforts in this area [13] , [15] which assume fixed Batch Normalization (BN) [18] statistics (i.e., evaluation mode), our work is the first to utilize model updates (i.e., gradients) that are generated by updating BN statistics during training, commonly known as \"training mode\" in frameworks like PyTorch or TensorFlow. Therefore, our work is directly applicable to real FL use-cases where BN is often used. Specifically, we propose a novel gradient inversion algorithm for estimating the running statistics of BN layers (i.e., running mean and variance) to Fig. 1 : The server-side gradient inversion attack scenario in FL. In a typical FL setup for healthcare applications, K participating sites (often hospitals or research institutions) keep their data locally while training a common global model. This model is distributed by a centralized federated server to initialize the current round t of local training at each site. After the local training is completed, all sites or a subset of the sites send model updates \u2206W with respect to the global model to the server, which aggregates them by performing a weighted average. The server then uses the aggregate to update the global model for the next round of FL (t+1). This iterative procedure continues until convergence of the models. Here, n k and n stand for the number of images at client k and the total number of images across clients, respectively. To study the gradient inversion attack, we assume an \"honest but curious\" [16] scenario where the server performs the FL computations faithfully but could be compromised by a potential malicious actor who could gain access to the training configurations and model updates from the participating sites and attempt an inversion attack (see Section II). match the gradient updates, and as a result, extract prior knowledge from intermediate feature distributions.",
+            "cite_spans": [
+                {
+                    "start": 192,
+                    "end": 196,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 199,
+                    "end": 203,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 248,
+                    "end": 252,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1657,
+                    "end": 1661,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 730,
+                    "end": 736,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "To further understand the risk of gradient inversion in FL, we propose several ways to measure and visualize the potential of data leakage. In addition, we introduce a comprehensive study of realistic FL scenarios consisting of clients training with different amounts of data, batch sizes, and different differential privacy settings and utilize them to evaluate our proposed gradient inversion attack. We use our findings to make recommendations for more secure and privacy-preserving FL settings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Our work is inspired by recent advances in gradient inversion of deep neural networks, which also raised concerns about privacy in FL [13] , and especially for healthcare applications [15] . One of the earliest works on this topic was Deep Gradient Leakage (DLG) [19] , which only relied on the information of shared gradients for their inversion attack. The main idea of their proposed algorithm is to match the gradients from synthesized and real data. However, this approach has several drawbacks which limit its use in practical FL scenarios. First, it only works for low-resolution images (32\u00d732 or 64\u00d764). Second, it needs a second order optimizer (e.g., L-BFGS) for the reconstruction algorithm. Such an optimizer is computationally expensive and cannot be easily applied to scenarios with high-resolution images or larger batch sizes. The work by Geiping et al. [13] attempts to address these issues and aligns itself with a more practical FL scenario by proposing a cosine similarity loss function to match the synthesized and ground truth gradients. This work uses first-order based optimizers such as Adam to make it more suitable for high resolution images and larger batch sizes. Geiping et al. [13] showed also that high-resolution images could be reconstructed from model updates sent in FL from small batch sizes, with access to the model gradients for one training iteration. Most recently, Yin et al. [14] further improved the image fidelity and visual realism of gradient inverted reconstructions by matching fixed running statistics of BN layers. To effectively localize objects in the training images, they use different optimization seeds to simultaneously reconstruct several images that can be registered to a consensus image from all recovered images. Kaissis et al. [15] applied the framework of Geiping et al. [13] to medical image classification scenarios and analyzed its applicability to reconstructing training images from FL clients. However, in their analysis, clients were trained only in the evaluation mode without updating the BN statistics, which is uncommon in modern deep learning [20] , [21] .",
+            "cite_spans": [
+                {
+                    "start": 134,
+                    "end": 138,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 184,
+                    "end": 188,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 263,
+                    "end": 267,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 870,
+                    "end": 874,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1208,
+                    "end": 1212,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1419,
+                    "end": 1423,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1792,
+                    "end": 1796,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1837,
+                    "end": 1841,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2121,
+                    "end": 2125,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 2128,
+                    "end": 2132,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Despite remarkable insights, one common assumption by prior work is the fixed BN statistics given the most common task of single-batch gradient inversion. However, in practical FL scenarios, such statistics vary inevitably when multiple batches are jointly used by a client within one training epoch for the weight update computation. As the gradient inversion problem is a second-order optimization by nature that relies on a static underlying forward pass, any shifts in BN statistics can result in accumulated errors across batches and baffle the efficacy of prior attacks, as we show later. By carefully tracing the momentum mechanism behind BN updates, this work demonstrates the first successful attempt of gradient inversion in a multi-batch scenario with updated BN statistics as in real-world FL applications. In addition, a comprehensive analysis is provided as guidance to enhance FL security against gradient inversion attacks. To the best of our knowledge, our work is the first to show how a gradient inversion attack might be successful when clients are sending model updates while updating their BN statistics, as commonly done in real-world FL scenarios.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Today's gradient inversion attacks follow a common principle. The main idea is to match the gradients between the trainable input data and real data. If the attack has access to the state of the global model W and a client's model update \u2206W , it can try to optimize the input image (usually randomly initialized or using a prior image) to produce a gradient that matches the observed model updates (see Figure 2 ). Overview of the attack model. A malicious actor (\"attacker\") recovers private training data via updates sent from a client by optimizing an input prior. The objective aims to simulate the training by matching the intercepted model updates and BN statistics from a client. Additional image prior losses are added to enhance the quality of the recovered images.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 403,
+                    "end": 411,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "A. Inversion Attacks"
+        },
+        {
+            "text": "Although previous efforts have shown the possibility of reconstructing training data by matching the gradients and optimizing the randomly initialized input images, these attacks have been conducted in contrived settings. Prior methods simplified the attack scenario by sending model updates with fixed BN statistics. However, in realistic FL scenarios, these statistics change during training with multiple batches in an epoch before sending the updates to the server. Since the gradient inversion is formulated as a second-order optimization task, accumulation of error due to discrepancies in the estimation of BN statistics leads to sub-optimal solutions. As a result, matching the gradients in practical use cases is extremely difficult, if not impossible, when taking these considerations into account, especially when the training takes more than one local iteration. In this work, we study a real-world attack scenario in which the intercepted model updates from the clients are sent while updating the BN statistics.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "In networks that leverage BN layers [18] in their architecture, during training, mini-batches of input data x are first normalized by the batch-wise mean \u00b5 and variance \u03c3 2 and transformed by an affinity mapping with trainable values \u03b2 and \u03b3 according to",
+            "cite_spans": [
+                {
+                    "start": 36,
+                    "end": 40,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "Running statistics of \u00b5 and \u03c3 are updated during training according to the momentum update rule [18] . These BN layers contain a strong prior in the forms of tracked running statistics of the training data and can be effectively leveraged in gradient-based attack scenarios. During evaluation (i.e., inference), the estimated running mean and variance are used in lieu of computing on-the-fly batch-wise statistics. However, previous efforts [13] , [15] , [19] have not taken into account the effect of running statistics in the BN layers and only utilized gradient updates that were sent by assuming fixed BN statistics. As a result, matching the gradient updates that are sent during the training phase is not possible since the running statistics from BN layers affect the gradient computation. In our attack scenario, we consider the server as \"honest but curious\" [16] . Hence all global models, configuration files, local model updates and training BN statistics that exist on the server or are exchanged between the server and client can be considered as compromised for a potential gradient inversion attack. Figure 2 illustrates an overview of our attack model. We formally define the attack scenario for one server-client configuration which can be extended to all participating clients in FL. Consider client k having local model F k with weights W k , the model updates \u2206W k are computed with respect to mini-batches from the local training images x k and their corresponding labels y k . In order to reconstruct the private data, we formulate an optimization scheme wherein trainable input imagesx k and the corresponding labels\u0177 k are employed to match the client's updates by minimizing",
+            "cite_spans": [
+                {
+                    "start": 96,
+                    "end": 100,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 442,
+                    "end": 446,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 449,
+                    "end": 453,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 456,
+                    "end": 460,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 869,
+                    "end": 873,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1117,
+                    "end": 1125,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "Here, L grad is the gradient matching loss between the intercepted gradients and gradients and computed usingx k and\u0177 k in each layer l as in",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "Where F k and G k denote the client and the attack network, respectively. We initialize the attack network G k , used for computing the matching gradient, by the global weights on the server and update it with the model weight differences \u2206W (l) k sent from client k. In addition, we update the intercepted BN updates from the client by computing the running statistics with batch-wise mean \u00b5 k and variance \u03c3 k and initialize the BN layers in the attack network with these updated statistics. For this purpose, we estimate the BN running statistics of each mini-batch b\u0233",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "Here,\u03bc and\u03c3 denote the running mean and variance, respectively, and \u03b7 BN is set to 0.1. These considerations ensure that the attack model exactly simulates the client training procedure by matching the BN statistics during training, hence making it applicable to practical FL scenarios. Note, that if the number of local iterations increases, the estimation of running statistics becomes less accurate and hence it becomes harder to properly match the gradients. This effect is illustrated in Fig. 4 and Fig. 5 where we show the effect of the number of training images, batch size, and local iterations on the gradient inversion attack. L BN is also employed to match the distributions of BN statistics obtained from the trainable inputx k and intercepted updates from the client k in each layer l and computed according to",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 493,
+                    "end": 499,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 504,
+                    "end": 510,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "We account for image prior losses by minimizing L prior , which includes total variation and l 2 norm losses [14] . In addition, we jointly optimize the corresponding labels from a client's data by using a trainable label\u0177 k and minimize a loss function such as cross-entropy that is used for supervising the classification networks. For initializing the trainable parameters, and without loss of generality, we initializex k from a domain-specific prior (e.g., chest X-ray images) for faster convergence and avoiding sub-optimal solutions. At the same time, the attacked labels\u0177 k are randomly initialized from a uniform distribution in the interval 0 to 1.",
+            "cite_spans": [
+                {
+                    "start": 109,
+                    "end": 113,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B. Practical Gradient Inversion Attack"
+        },
+        {
+            "text": "Most commonly, DP mechanisms add some form of calibrated noise to the data in order to obfuscate the contributions of individual data entries, i.e., patients in healthcare applications [22] . There are many variations of how one can add this noise, like the Gaussian mechanism or Laplacian mechanism [23] . Other, more sophisticated methods like the sparse vector technique (SVT) combine the addition of noise with value clipping and/or removal of parts of the data [24] . DP has been successfully integrated into the training of deep neural networks [25] - [27] and used for FL applications [15] , [28] - [31] . DP can make strong guarantees about the theoretical effectiveness of protecting against individual privacy loss but is difficult to tune to keep the model accuracy at an acceptable level [32] .",
+            "cite_spans": [
+                {
+                    "start": 185,
+                    "end": 189,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 300,
+                    "end": 304,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 466,
+                    "end": 470,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 551,
+                    "end": 555,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 558,
+                    "end": 562,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 592,
+                    "end": 596,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 599,
+                    "end": 603,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 606,
+                    "end": 610,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 800,
+                    "end": 804,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "C. Differential Privacy (DP)"
+        },
+        {
+            "text": "Our work intentionally utilizes a simple Gaussian mechanism to explore DP and to establish an upper bound for successful inversion attacks in the FL scenario. Our intention is to illustrate how simply adding Gaussian noise to the model updates can already reduce the success of the inversion attack but at the cost of decreasing model performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "C. Differential Privacy (DP)"
+        },
+        {
+            "text": "At each round of FL, we compute the qth percentile of the absolute model update values and multiply this value by \u03c3 0 , a tuneable hyperparameter that can be specified by the user and controls the overall amount of noise added to the model updates. The resulting \u03c3 is then used to sample from a Gaussian distribution N(0,\u03c3) with zero-mean. Therefore, the model updates become \u2206W = \u2206W +N (0,\u03c3), where \u03c3 = percentile(\u2206W,q)\u03c3 0 , before they are sent to the central server for aggregation. In our experiments, we use q =95, which was chosen to reduce the impact of outliers in the gradient computation, which in turn would cause too high an amount of noise and hinder the model convergence.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "C. Differential Privacy (DP)"
+        },
+        {
+            "text": "As this DP protocol is applied locally on each client before the updates are sent to the server, this approach is commonly referred to as local DP [23] . In scenarios where only the protection against model inversion after FL training is of concern (e.g., when employing cryptographic techniques such as homomorphic encryption [33] to make the FL aggregation step itself secure against inversion), \"global\" or \"central\" DP could be utilized to protect against model inversion after training is completed [34] .",
+            "cite_spans": [
+                {
+                    "start": 147,
+                    "end": 151,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 327,
+                    "end": 331,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 504,
+                    "end": 508,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "C. Differential Privacy (DP)"
+        },
+        {
+            "text": "Future work could explore more sophisticated DP or gradient perturbation methods [28] , [35] and how they impact the quality of inversion attacks and their impact on subsequent model inversion attacks.",
+            "cite_spans": [
+                {
+                    "start": 81,
+                    "end": 85,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 88,
+                    "end": 92,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "C. Differential Privacy (DP)"
+        },
+        {
+            "text": "In this work, we use image identifiability precision (IIP) [14] , which is designed for measuring the image-specific features between the reconstructed images and original training data. In its original formulation, the metric is computed for a fixed number of randomly selected images (e.g., 256) by employing the gradient-inversion attacks for each batch of data. The deep feature embeddings of reconstructions, as well as the entire pool of training images are computed using a pretrained network (e.g., ResNet-18 trained on ImageNet). Furthermore, with a clustering algorithm (e.g., K-Nearest Neighbors), the closest training image in the feature embedding space (as measured by cosine similarity) of each reconstructed image is selected and fetched back as an exact match if it matches the original image. The IIP score is then computed in as IIP= m N , where m is the number of unique exact matches according to the described procedure. Here, N denotes the size of the training pool (e.g., 256). In this work, we use a modified version of the IIP metric adjusted to the FL scenario in which the IIP score is computed for the entire training and validation images of all clients as opposed to the randomly selected samples. A reconstruction is counted as an exact match if the closest match originates from the attacked client. As a result, a diverse population of training images can be taken into consideration for IIP calculations to quantify data leakage.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 63,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "D. Image Identifiability Precision"
+        },
+        {
+            "text": "We simulate eight clients using different numbers of training images and local batch sizes in a cross-silo FL scenario with horizontal data partitioning for a chest X-ray image classification task. Each client trains an ImageNet-pretrained [36] ResNet-18 [20] for one epoch using a stochastic gradient descent (SGD) optimizer without momentum and a step-wise learning rate decay before sending model updates to the server. The dataset consists of publicly available chest X-ray images 1 from normal patients and patients who tested positive for COVID-19 [37] , [38] . Table I shows a summary of the local training batch size and number of training images that were used for each client. Each client has its own validation set of 200 cases that will be used to select the best global model based on the average validation accuracy. The selected global model is finally evaluated on the testing set. Except for client 9, each client training set contains the same number of normal and COVID-positive cases in order to simulate clients with balanced class distributions. Client 9 shares its only training image (a normal case) and its validation set with client 1. As a result, client 9 is at the highest risk of data leakage as it is sending model updates based on a single image and a batch size of one and will be referred to as the \"high-risk client\". We intentionally utilize relatively small batch sizes in order to study the effect of our new inversion attack on clients with varying amounts of training data (and therefore, local training iterations) 2 . Therefore, all clients investigated in this study could be considered of higher risk than in real-world FL scenarios where clients use larger amounts of training data and batch sizes (see also the discussion in Section IV). ",
+            "cite_spans": [
+                {
+                    "start": 240,
+                    "end": 244,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 255,
+                    "end": 259,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 554,
+                    "end": 558,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 561,
+                    "end": 565,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 568,
+                    "end": 575,
+                    "text": "Table I",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "A. FL Scenario"
+        },
+        {
+            "text": "We utilize an extended version of the GradInversion algorithm [14] to invert the training images of each client separately based on its model updates sent during FL. For details on the inversion attack, see Section II-B. Prior works [13] , [15] did not consider clients updating the statistics of BN layers which are commonly used in modern classification models with deep convolutional neural networks (CNNs) [18] , [20] , [21] . Therefore, the clients in these efforts only updated model weights while executing the training with fixed BN statistics. Here, we show that when the attacked clients update BN layers during training, an additional BN loss is essential for the attack to succeed. The running mean and variance of the BN layers need to be updated during the optimization of the inversion attack as these statistics inevitably change during training. Since a gradient inversion attack is a second-order optimization problem, the accumulated errors in estimating the BN statistics by assuming fixed values hinder successful reconstructions of training data (see Fig.  3b ). In addition, it is critical to initialize the network of inversion attack with the same global model weights that are used to initialize the client's network in a particular FL round to ensure the exact simulation of local training steps within the attack (see Fig. 3c ).",
+            "cite_spans": [
+                {
+                    "start": 62,
+                    "end": 66,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 233,
+                    "end": 237,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 240,
+                    "end": 244,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 410,
+                    "end": 414,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 417,
+                    "end": 421,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 424,
+                    "end": 428,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1073,
+                    "end": 1081,
+                    "text": "Fig.  3b",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1346,
+                    "end": 1353,
+                    "text": "Fig. 3c",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "B. Limitations of Previous Attack Scenarios"
+        },
+        {
+            "text": "Assuming the attacker has access to the full information needed for a successful data recovery as shown in Fig. 3d , we attempt to invert any model updates coming from any of the clients in different rounds of FL. Figure 4 illustrates the effect of the number of training images, batch size, and local iterations on the success of a gradient inversion attack in an earlier or later round of FL. A larger number of 2 All experiments are using Clara Train SDK 4.0 for local model training and evaluation. NVIDIA FLARE is used to record model updates in a simulated FL setting. The inversion software will be made available upon acceptance and is implemented in PyTorch. local training iterations in clients with larger training sets detrimentally impacts the quality of reconstructions due to accumulated errors in estimating the updated BN statistics. In addition, reconstructions from later rounds of FL (e.g., round 90 of 100) have improved image quality in terms of image fidelity and capturing the details of anatomical structures. This observation might be attributed to the global model having learned more effective feature representations during the later stages of the FL training and outliers or individual images in those training sets that cause higher losses in later stages of training and therefore contribute to more recognizable reconstructions.",
+            "cite_spans": [
+                {
+                    "start": 414,
+                    "end": 415,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 107,
+                    "end": 114,
+                    "text": "Fig. 3d",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 214,
+                    "end": 222,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "C. Measuring Data Leakage by Inverting Gradients"
+        },
+        {
+            "text": "The effect of training batch sizes and local number of iterations is further quantified in Fig. 5a and Fig. 5b , respectively. Here, we utilize the global model from round 90 for the attack and train on a client with increasing dataset sizes. In the first setting, we set the number of local iterations to one but keep increasing the batch sizes. In the second setting, we set the batch size to one but increase the local number of iterations. For each setting, we add new images to the client's training set while measuring the impact of batch size and local number of iterations by using the same original image for reference. As shown in Fig. 5 , increasing both the batch size and local number of iterations are detrimental to the inversion attack. In particular, increasing the local number of iterations negatively impacts the reconstructions as the estimation of BN statistics becomes less accurate when the client is iterating over different local training images (see Section II-B). To quantify the data leakage between the original image and the reconstructions, we use Structural SIMilarity index (SSIM), a pixel-wise metric for measuring image similarity in a more intuitive and interpretable manner compared to other commonly used metrics such as root-mean-squared error or peak signal-to-noise ratio [39] .",
+            "cite_spans": [
+                {
+                    "start": 1314,
+                    "end": 1318,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 91,
+                    "end": 110,
+                    "text": "Fig. 5a and Fig. 5b",
+                    "ref_id": null
+                },
+                {
+                    "start": 641,
+                    "end": 647,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "C. Measuring Data Leakage by Inverting Gradients"
+        },
+        {
+            "text": "A straightforward approach to avoid data recovery by a serverside gradient inversion attack is the addition of random noise to the model updates before they are sent to the server [28] . Here, we explore a simple DP protocol that adds calibrated Gaussian noise, with zero mean, based on the gradient magnitudes of the model updates (see Section II-C). We evaluate this technique on client 9, which is the high-risk client, using model updates that are sent at round 90. As shown in Fig. 5c , the image reconstruction quality, as measured by the SSIM between original and recovered images, expectedly degrades as more noise is added to model updates from the client. The SSIM value between the prior which is used to initialize the gradient inversion attack (see II-B) and the original image is 0.37 (see Fig. 6 ). This can be considered as a lower bound of this metric during the attack. In addition, as the noise level increases, reconstructions from model updates with added DP become closer to the prior image and less similar to the original training image. This indicates that a privacy setting (\u03c3) allowing only a reconstruction with a SSIM value equal to or less than that between the original image and the prior could be considered \"safe\". For instance, as shown in Fig. 6 , this behavior can be observed for the high-risk client 9 at FL round 90 and noise added with \u03c3 =10 \u22122 .",
+            "cite_spans": [
+                {
+                    "start": 180,
+                    "end": 184,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 482,
+                    "end": 489,
+                    "text": "Fig. 5c",
+                    "ref_id": null
+                },
+                {
+                    "start": 804,
+                    "end": 810,
+                    "text": "Fig. 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 1275,
+                    "end": 1281,
+                    "text": "Fig. 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "D. Mitigating Inversion Through Differential Privacy"
+        },
+        {
+            "text": "We further visualize the degree of data leakage across different clients in FL with respect to different levels of privacy preservation through added Gaussian noise. Comparing data leakage across clients with different images is not straightforward. This is due to the variation in the reference images used to compute the SSIM, which renders the absolute values of the similarity metrics between the reconstruction and the training images incomparable. Therefore, we utilize a relative percentage change with respect to a reference point to compute a more comparable quantitative metric across different clients. We define a new metric denoted as \"Relative Data Leakage Value\" (RDLV) to measure the relative percentage change of the similarity metric (SSIM) for reconstructions from different clients' model updates. Given a training image T i , the prior used in the gradient inversion attack P , and the corresponding reconstruction I i , RDLV is defined as: Fig. 7 illustrates the RDLV based on different differential privacy settings for each client. Each line shows the average central tendency and a 95% confidence interval (bands shown in the plot) estimated using bootstrapping (with 1000 trials) on reconstructions that achieve the highest SSIM with any of the original training images during different rounds of FL. As observed, only the high-risk client 9, which sends model updates from training one iteration on one image, leaks the training data up to a certain amount of noise which corresponds to a positive value of RDLV (up to around \u03c3 0 \u226525 for most FL rounds in this case). A positive percentage change indicates that the reconstructions are more similar to the original images than the prior used in the gradient inversion attack. In addition, clients with more than one training . SSIM can be used to measure both the similarity between an original image and reconstruction or the similarity between the prior image used in the attack and the original image. An SSIM value below the one compared with the prior could indicate that no useful information was leaked or is recoverable by the attack. Note: the patient's name and date of birth in the original image are randomly generated.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 962,
+                    "end": 968,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "E. Quantification of Data Leakage"
+        },
+        {
+            "text": "image do not leak data in this regime within the confidence interval as their reconstructions are less similar than the prior used in the attack. As expected, the global model accuracy drops as more noise is added to the model updates from clients during FL.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "E. Quantification of Data Leakage"
+        },
+        {
+            "text": "Alternative ways to measure the similarity between reconstructed images and training images are based on deep feature embeddings. We use an off-the-shelf ImageNet-pretrained ResNet-18 [20] to extract 512-dimensional feature embeddings from training and reconstructed images. In Fig. 8 , we visualize the deep feature embeddings of training images and reconstructions using t-SNE [40] . As shown, with higher values of Gaussian noise for privacy preservation, the clusters of original images and reconstructions further drift apart as the similarity between the original training images and any of the reconstructions decrease significantly.",
+            "cite_spans": [
+                {
+                    "start": 184,
+                    "end": 188,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 379,
+                    "end": 383,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 278,
+                    "end": 284,
+                    "text": "Fig. 8",
+                    "ref_id": null
+                }
+            ],
+            "section": "F. Deep Embedding-Based Visualizations"
+        },
+        {
+            "text": "We furthermore adjusted the Image Identifiability Precision (IIP) proposed in Yin et al. [14] to the FL scenario. Our specific approach is outlined in Section II-D. IIP measures the amount of identifiable information leaked in the gradient inversion attack by counting the closest exact matches between the reconstructions from the membership attack and the original training images for each client. As shown in Fig. 9 , the high-risk client 9 (updates sent based on 1 image and 1 iteration) attains the highest IIP score of 1.0 up to a Gaussian noise level \u03c3 0 value of \u223c20. This indicates that the attacker is able to determine the exact image that participated in FL training for that specific client. Furthermore, all other clients already achieve significantly lower values of the IIP score (e.g., <0.1) with much lower Gaussian noise levels \u03c3 0 . We also show the cosine similarity (dotted lines) between the reconstructions and original images identifying exact members of the training set at each client based on ImageNetpretrained ResNet-18 [20] feature embeddings. As expected, cosine similarity values also decrease with higher Gaussian noise levels. In this work, we have introduced a new way to measure the data leakage in horizontal FL for chest X-ray image classification and proposed several ways to quantify and visualize it. Overall, we conclude that FL security is multifaceted. Clients which send updates based on a small number of training images are at a higher risk of leaking data than the clients sending updates based on larger training sets as well as higher numbers of local training iterations. Furthermore, larger batch sizes make reconstruction via gradient inversion attacks more difficult, a finding that is in line with previous literature [13] - [15] . Table II summarizes our overall conclusions based on the findings shown in this study. While sending model updates using a single training image is at a high risk of data leakage, clients that utilize more realistic settings, such as larger number of training images and large number of local iterations as common in real-world FL scenarios, are not at a high risk of leaking identifiable information. Specifically, gradient inversion attacks for clients that iterate over several images before sending model updates are harder due to accumulated errors in the estimation of BN statistics. In this scenario, the attack is executed using only an approximation of the BN statistics (see Fig. 4, Fig. 5a , and Section II-B).",
+            "cite_spans": [
+                {
+                    "start": 89,
+                    "end": 93,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1050,
+                    "end": 1054,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1774,
+                    "end": 1778,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1781,
+                    "end": 1785,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 412,
+                    "end": 418,
+                    "text": "Fig. 9",
+                    "ref_id": null
+                },
+                {
+                    "start": 1788,
+                    "end": 1796,
+                    "text": "Table II",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 2473,
+                    "end": 2488,
+                    "text": "Fig. 4, Fig. 5a",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "G. Membership Inference Attack Data Leakage"
+        },
+        {
+            "text": "In addition, reconstructions from model updates that are intercepted in later stages of FL training exhibit higher image quality in terms of image fidelity and capturing the fine-grained details of anatomical structure. This improved image generation capability could be attributed to the improved feature learning capability of the global model in later rounds of training. However, these images still do not bear any identifiable similarities to the individual training images. As shown in Fig. 4 , the reconstructed images start to resemble real chest X-ray images, but none of them could be found in the original training set. As a result, such reconstructions do not constitute a significant security breach.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 492,
+                    "end": 498,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "Additionally, there are several potential mitigations against the server-side gradient inversion attacks that could be easily incorporated into modern FL systems: 1) If the attacker does not have access to the current state of the global model with respect to which the client's updates are computed, then the attack becomes unsuccessful (see Fig.  3c ). In our experience, removing access to the state of only the most important layers can render the attack ineffective. Specifically, this could be achieved efficiently by utilizing cryptographic techniques such as homomorphic encryption to allow secure aggregation of model updates [33] . Encryption would ensure that the server never holds the complete unencrypted model to avoid a potential gradient inversion attack while adding negligible computing requirements. 2) If the attacker does not have access to the model architecture, attempting to match the gradients will become very challenging. The clients could be sending only numerical arrays of model updates to be aggregated on the server without the server ever holding the information about the current model architecture or training procedure. While theoretically, the attacker could infer common architectures from the size of the parameter arrays, in practice, it would become extremely difficult, if not impossible, to deduce the exact architecture, especially for customized architectures often used in healthcare applications. 3) For models that are trained with BN, not sending the BN statistics to the server causes the gradient inversion attack to fail (see Fig. 3 . Techniques such as FedBN [41] , [42] could reduce the risk of server-side attacks by keeping personalized BN statistics specific to each client. One negative aspect of this approach is the lack of a common global model after FL training since only an ensemble of personalized client models would be available.",
+            "cite_spans": [
+                {
+                    "start": 635,
+                    "end": 639,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1614,
+                    "end": 1618,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1621,
+                    "end": 1625,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 343,
+                    "end": 351,
+                    "text": "Fig.  3c",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1580,
+                    "end": 1586,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "In addition, DP techniques typically reduce the risks of data leakage in many scenarios. In this work, we explored a simple variation of the Gaussian DP mechanism to add calibrated noise to the model updates before sending them to the server. Even this simple approach showed to be effective in reducing the risks of gradient inversion attacks. However, a noticeable degradation in model performance was observed with higher Gaussian noise levels. As DP has shown to be Fig. 8 : Visualizing data leakage. Two-dimensional t-SNE [40] embeddings of deep features extracted from original training images and reconstructions at different DP levels as indicated by \u03c3 0 . Fig. 9 : Image Identifiability Precision (IIP). IIP (solid lines) measures how many reconstructions could be used to identify the exact members of the training images that are used during FL for a specific client using different differential privacy settings (\u03c3 0 ). We also show the cosine similarity (dotted lines) of feature embeddings between the reconstructions and original images used to identify the exact members for all clients. Only the cosine similarity of matched exact members is shown (IIP > 0). Both IIP and cosine similarities reduce with higher Gaussian noise levels and are typically lower for clients with larger amounts of training images.",
+            "cite_spans": [
+                {
+                    "start": 527,
+                    "end": 531,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 470,
+                    "end": 476,
+                    "text": "Fig. 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 665,
+                    "end": 671,
+                    "text": "Fig. 9",
+                    "ref_id": null
+                }
+            ],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "an effective approach in reducing data leakage for gradient inversion attacks, future research efforts are needed to explore the optimal tradeoff between various DP mechanisms and model performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "Other techniques such as secure authentication, trusted execution environment, and secure communication using SSL encryption, and cryptographic methodologies such as homomorphic encryption [33] or secure multi-party computation [43] to completely encrypt the exchanged updates could be used to ensure a secure FL. As previously discussed, targeted encryption of the most vulnerable parts of the model might be enough to ensure the security of training while only introducing a minimal computational overhead.",
+            "cite_spans": [
+                {
+                    "start": 189,
+                    "end": 193,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 228,
+                    "end": 232,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "We also identified some limitations of our study. For instance, we only studied modern CNN architectures such as ResNet-18 that are commonly used in image classification tasks. We did not consider other network architectures such as those used for image segmentation or natural language processing in our analysis. Furthermore, we limited this study to clients using SGD as the training optimizer. More complicated optimization schemes such as FedOpt [44] might require further considerations. Moreover, using the previously discussed RDLV regime (positive percentage change, see Fig. 7 ), some reconstructed images did not fall within the 95% confidence interval, and as a result, could indicate \"data leakage\". However, qualitative comparisons did not reveal any data leakage or individually identifiable information in those reconstructions. Specifically, these reconstructions have a low IIP score and do not bear close similarities to the original training images. However, they have some qualities that cause a relatively high SSIM metric. With such cases, similarity metrics that are computed based on deep feature embeddings might provide more plausible values for comparison.",
+            "cite_spans": [
+                {
+                    "start": 451,
+                    "end": 455,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 580,
+                    "end": 586,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "Future work might identify the vulnerable populations such as outliers or individual images that might cause higher losses in later stages of FL training causing higher SSIM or IIP values. Furthermore, other applications such as 2D/3D segmentation and 3D classification along with novel model architectures should be investigated. Other attack scenarios like model inversion after FL training, as well as backdoor and membership attacks, should be further studied [45] .",
+            "cite_spans": [
+                {
+                    "start": 464,
+                    "end": 468,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "IV. DISCUSSION"
+        },
+        {
+            "text": "In conclusion, we presented a new way to measure and visualize data leakage in real-world FL scenarios. Without resorting to contrived settings for enabling the gradient inversion attack [13] , [15] , we studied a practical scenario in which model updates from clients were sent by accounting for updated BN statistics (i.e., training mode). We conclude that previous efforts likely exaggerated the risks of gradient inversion attacks in FL, and that our work builds a foundation towards a better understanding of the real risks of such attacks in real-world FL applications. In most cases, it becomes very difficult for an attacker to recover any training images, as common FL scenarios involve model updates from sufficiently large numbers of batch sizes, training images, and local iterations that detrimentally impact the success of current gradient inversion attacks. Furthermore, we listed several effective protection methods that could be easily incorporated into any FL system to render existing attacks futile. We believe that our work is a step towards establishing reproducible methods of measuring data leakage in FL and therefore builds a framework for finding an optimal tradeoff between privacy and accuracy based on quantifiable metrics.",
+            "cite_spans": [
+                {
+                    "start": 187,
+                    "end": 191,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 194,
+                    "end": 198,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "IV. DISCUSSION"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The future of digital health with federated learning",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rieke",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hancox",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Milletari",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Roth",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Albarqouni",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bakas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Galtier",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Landman",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Maier-Hein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "NPJ digital medicine",
+            "volume": "3",
+            "issn": "1",
+            "pages": "1--7",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Communication-efficient learning of deep networks from decentralized data",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Mcmahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ramage",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hampson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Arcas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Artificial intelligence and statistics",
+            "volume": "",
+            "issn": "",
+            "pages": "1273--1282",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Federated learning for breast density classification: A real-world implementation",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Roth",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Neumark",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ihsani",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Bizzo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Domain Adaptation and Representation Transfer, and Distributed and Collaborative Learning",
+            "volume": "",
+            "issn": "",
+            "pages": "181--191",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Federated learning in medicine: facilitating multi-institutional collaborations without sharing patient data",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sheller",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Edwards",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Reina",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kotrotsou",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Milchenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Marcus",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Colen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Scientific reports",
+            "volume": "10",
+            "issn": "1",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Federated gradient averaging for multi-site training with momentum-based optimizers",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Remedios",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Butman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Landman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Pham",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Domain Adaptation and Representation Transfer, and Distributed and Collaborative Learning",
+            "volume": "",
+            "issn": "",
+            "pages": "170--180",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Federated learning improves site performance in multicenter deep learning without data sharing",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Sarma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Harmon",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sanford",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Roth",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tetreault",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Flores",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Raman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kulkarni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Journal of the American Medical Informatics Association",
+            "volume": "28",
+            "issn": "6",
+            "pages": "1259--1264",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Federated learning for predicting clinical outcomes in patients with covid-19",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Dayan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Roth",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Harouni",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gentili",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Abidin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wood",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-S",
+                    "middle": [],
+                    "last": "Tsai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nature medicine",
+            "volume": "27",
+            "issn": "10",
+            "pages": "1735--1743",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Advances and open problems in federated learning",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kairouz",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mcmahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Avent",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bellet",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bennis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Bhagoji",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bonawitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Charles",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cormode",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Cummings",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1912.04977"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Federated optimization in heterogeneous networks",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Sahu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zaheer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sanjabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Talwalkar",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of Machine Learning and Systems",
+            "volume": "2",
+            "issn": "",
+            "pages": "429--450",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Scaffold: Stochastic controlled averaging for federated learning",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Karimireddy",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kale",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mohri",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Reddi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Stich",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Suresh",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "International Conference on Machine Learning. PMLR, 2020",
+            "volume": "",
+            "issn": "",
+            "pages": "5132--5143",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Towards fair federated learning",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining",
+            "volume": "",
+            "issn": "",
+            "pages": "4100--4101",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Fetchsgd: Communication-efficient federated learning with sketching",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rothchild",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Panda",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ullah",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ivkin",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Stoica",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Braverman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gonzalez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Arora",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "International Conference on Machine Learning. PMLR, 2020",
+            "volume": "",
+            "issn": "",
+            "pages": "8253--8265",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Inverting gradientshow easy is it to break privacy in federated learning?",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Geiping",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bauermeister",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Dr\u00f6ge",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Moeller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Advances in Neural Information Processing Systems",
+            "volume": "33",
+            "issn": "",
+            "pages": "16--937",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "See through gradients: Image batch recovery via gradinversion",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mallya",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vahdat",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Alvarez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kautz",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Molchanov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "16--337",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "End-to-end privacy preserving deep learning on multi-institutional medical imaging",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kaissis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ziller",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Passerat-Palmbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ryffel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Usynin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Trask",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Lima",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mancuso",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jungmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-M",
+                    "middle": [],
+                    "last": "Steinborn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nature Machine Intelligence",
+            "volume": "3",
+            "issn": "6",
+            "pages": "473--484",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Practical secure aggregation for privacypreserving machine learning",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bonawitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Ivanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kreuter",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Marcedone",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mcmahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ramage",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Segal",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Seth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security",
+            "volume": "",
+            "issn": "",
+            "pages": "1175--1191",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Federated machine learning: Concept and applications",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "ACM Transactions on Intelligent Systems and Technology (TIST)",
+            "volume": "10",
+            "issn": "2",
+            "pages": "1--19",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ioffe",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Szegedy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "International conference on machine learning",
+            "volume": "",
+            "issn": "",
+            "pages": "448--456",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Deep leakage from gradients",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Advances in Neural Information Processing Systems",
+            "volume": "32",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Deep residual learning for image recognition",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "770--778",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Densely connected convolutional networks",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Van Der Maaten",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Weinberger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "4700--4708",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Calibrating noise to sensitivity in private data analysis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dwork",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mcsherry",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nissim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Theory of cryptography conference",
+            "volume": "",
+            "issn": "",
+            "pages": "265--284",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Local differential privacy and its applications: A comprehensive survey",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lyu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K.-Y",
+                    "middle": [],
+                    "last": "Lam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2008.03686"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Understanding the sparse vector technique for differential privacy",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lyu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1603.01699"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Deep learning with differential privacy",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Abadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Goodfellow",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mcmahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Mironov",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Talwar",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of the 2016 ACM SIGSAC conference on computer and communications security",
+            "volume": "",
+            "issn": "",
+            "pages": "308--318",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "P3sgd: Patient privacy preserving sgd for regularizing deep cnns in pathological image classification",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zeng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "2099--2108",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Medical imaging deep learning with differential privacy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ziller",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Usynin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Braren",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Makowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rueckert",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kaissis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Scientific Reports",
+            "volume": "11",
+            "issn": "1",
+            "pages": "1--8",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Privacy-preserving federated brain tumour segmentation",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Milletar\u00ec",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rieke",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hancox",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Baust",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ourselin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cardoso",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "International workshop on machine learning in medical imaging",
+            "volume": "",
+            "issn": "",
+            "pages": "133--141",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Differentially private federated learning with laplacian smoothing",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Osher",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.00218"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Federated learning and differential privacy: Software tools analysis, the sherpa. ai fl framework and methodological guidelines for preserving data privacy",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rodr\u00edguez-Barroso",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Stipcich",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Jim\u00e9nez-L\u00f3pez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ruiz-Mill\u00e1n",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mart\u00ednez-C\u00e1mara",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gonz\u00e1lez-Seco",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Luz\u00f3n",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Veganzones",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Herrera",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Information Fusion",
+            "volume": "64",
+            "issn": "",
+            "pages": "270--292",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Federated learning and differential privacy for medical image analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Adnan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kalra",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cresswell",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tizhoosh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2022,
+            "venue": "Scientific Reports",
+            "volume": "12",
+            "issn": "1",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Differential privacy has disparate impact on model accuracy",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Bagdasaryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Poursaeed",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Shmatikov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Advances in Neural Information Processing Systems",
+            "volume": "32",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Batchcrypt: Efficient homomorphic encryption for {Cross-Silo} federated learning",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "2020 USENIX Annual Technical Conference (USENIX ATC 20",
+            "volume": "",
+            "issn": "",
+            "pages": "493--506",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Local and central differential privacy for robustness and privacy in federated learning",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Naseri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hayes",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Cristofaro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2009.03561"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Soteria: Provable defense against privacy leakage in federated learning from representation perspective",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "9311--9319",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Imagenet: A large-scale hierarchical image database",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Socher",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fei-Fei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "2009 IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "248--255",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Can ai help in screening viral and covid-19 pneumonia?",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chowdhury",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Rahman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Khandakar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mazhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kadir",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mahbub",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Iqbal",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Emadi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "IEEE Access",
+            "volume": "8",
+            "issn": "",
+            "pages": "132--665",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Exploring the effect of image enhancement techniques on covid-19 detection using chest x-ray images",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Rahman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Khandakar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qiblawey",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tahir",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kiranyaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B A"
+                    ],
+                    "last": "Kashem",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Maadeed",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zughaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Computers in biology and medicine",
+            "volume": "132",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Image quality assessment: from error visibility to structural similarity",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Bovik",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Sheikh",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Simoncelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "IEEE transactions on image processing",
+            "volume": "13",
+            "issn": "4",
+            "pages": "600--612",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Visualizing data using t-sne",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Van Der Maaten",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Hinton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Journal of machine learning research",
+            "volume": "9",
+            "issn": "11",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Fedbn: Federated learning on non-iid features via local batch normalization",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Dou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2102.07623"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Siloed federated learning for multi-centric histopathology datasets",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Andreux",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Terrail",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Beguier",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tramel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Domain Adaptation and Representation Transfer, and Distributed and Collaborative Learning",
+            "volume": "",
+            "issn": "",
+            "pages": "129--139",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Secure, privacy-preserving and federated machine learning in medical imaging",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kaissis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Makowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "R\u00fcckert",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Braren",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature Machine Intelligence",
+            "volume": "2",
+            "issn": "6",
+            "pages": "305--311",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Adaptive federated optimization",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Reddi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Charles",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zaheer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Garrett",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Rush",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kone\u010dn\u1ef3",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mcmahan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.00295"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Adversarial interference and its mitigations in privacy-preserving collaborative machine learning",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Usynin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ziller",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Makowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Braren",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rueckert",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Glocker",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kaissis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Passerat-Palmbach",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nature Machine Intelligence",
+            "volume": "3",
+            "issn": "9",
+            "pages": "749--758",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Fig. 2: Overview of the attack model. A malicious actor (\"attacker\") recovers private training data via updates sent from a client by optimizing an input prior. The objective aims to simulate the training by matching the intercepted model updates and BN statistics from a client. Additional image prior losses are added to enhance the quality of the recovered images.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Success factors of the inversion attack. Here, the \"high-risk\" client 9 sends updates based on one iteration and one image in round 10 of an FL experiment. The original training image is shown for comparison (a). The inversion technique by Geiping et al.[13] does not estimate updated BN statistics during training and therefore cannot handle clients with updated BN layers in their architectures (b). The attack also fails if not initialized with the current global model state/checkpoint (ckpt) (c). Both the current global checkpoint and proper accounting for updated BN statistics during training are necessary for the attack to succeed (d). The patient's name and date of birth in the original image are randomly generated to illustrate the difficulty of inverting detailed textual information by the gradient inversion attack.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Inversions from different FL rounds. Effect of the number of training images, batch size, and local iterations on the inversion attack early on in FL training (a) and late in training (b).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Quantifying data leakage. The impact of batch size (a) and local number of iterations (b) to the success of the inversion attack. 95% confidence interval bands are shown for each client. (c) The \"high-risk\" client 9 is shown with varying amounts of noise added to the model updates before they are sent to the server. The SSIM value of the reconstructed inversions are shown for reference. Structural similarity (SSIM)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Quantification of data leakage. \"Relative Data Leakage Value\" (RDLV) for each client compared to the prior used in the gradient inversion attacks for different DP settings (\u03c3 0 ). Higher \u03c3 0 values add more noise to obfuscate the model updates sent by the clients. The testing accuracy of the best global model is shown for comparison. 95% confidence interval bands are shown for each client.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Dataset used for simulating federated learning.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Security conclusions.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

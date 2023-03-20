@@ -1,0 +1,2491 @@
+{
+    "paper_id": "0b317159a4e31b68e1fcf0d0ba825c7049161713",
+    "metadata": {
+        "title": "Computational basis of SARS-CoV 2 main protease inhibition: an insight from molecular dynamics simulation based findings",
+        "authors": [
+            {
+                "first": "Pramod",
+                "middle": [],
+                "last": "Avti",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Postgraduate Institute of Medical Education and Research",
+                    "location": {
+                        "settlement": "Chandigarh",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Arushi",
+                "middle": [],
+                "last": "Chauhan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Postgraduate Institute of Medical Education and Research",
+                    "location": {
+                        "settlement": "Chandigarh",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nishant",
+                "middle": [],
+                "last": "Shekhar",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Manisha",
+                "middle": [],
+                "last": "Prajapat",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Phulen",
+                "middle": [],
+                "last": "Sarma",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hardeep",
+                "middle": [],
+                "last": "Kaur",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Anusuya",
+                "middle": [],
+                "last": "Bhattacharyya",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Subodh",
+                "middle": [],
+                "last": "Kumar",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ajay",
+                "middle": [],
+                "last": "Prakash",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Saurabh",
+                "middle": [],
+                "last": "Sharma",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Bikash",
+                "middle": [],
+                "last": "Medhi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The coronavirus disease 2019 pandemic is caused by newly discovered severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2). One of the striking targets amongst all the proteins in coronavirus is the main protease (M pro ), as it plays vital biological roles in replication and maturation of the virus, and hence the potential target. The aim of this study is to repurpose the Food and Drug Administration (FDA) approved molecules via computer-aided drug designing against M pro (PDB ID: 6Y2F) of SARS CoV-2 due to its high x-ray resolution of 1.95 \u00c5 as compared to other published M pro structures. High Through Virtual Screening (HTVS) of 2456 FDA approved drugs using structurebased docking were analyzed. Molecular Dynamics simulations were performed to check the overall structural stability (RMSD), Ca fluctuations (RMSF) and protein-ligand interactions. Further, trajectory analysis was performed to assess the binding quality by exploiting the protein-residue motion cross correlation (DCCM) and binding free energy (MM/GBSA). Tenofovir, an antiretroviral for HIV-proteases and Terlipressin, a vasoconstrictor show stable RMSD, RMSF, better MM/GBSA with good cross correlation as compared to the Apo and O6K. Moreover, the results show concurrence with Nelfinavir, Lopinavir and Ritonavir which have shown significant inhibition in in vitro studies. Therefore, we conclude that Tenofovir and Terlipresssin might also show protease inhibition but are still open to clinical validation in case of SARS-CoV 2 treatment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "ARTICLE HISTORY",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "An unusual strain of CoV, SARS-CoV-2, caused an atypical pneumonia outbreak in late December 2019 in Wuhan, China, and was termed Coronavirus disease 2019 . The World Health Organization has stated COVID-19 a pandemic, and urgent treatments are required as the world is stepping into a phase that is beyond containment. All the efforts are being made to curb the spread of the disease, but it is difficult to develop new medications for a rapidly mutating virus like SARS CoV 2. Drug repurposing is a new promising approach in which already approved and available drugs are being used to fight against rare diseases (Strittmatter, 2014) . The broad-spectrum antiviral drugs are ideally suited for such outbreaks; the main motive here is not to necessarily understand all mechanisms of action of a broad-spectrum antiviral drug but instead choosing a drug with minimum side effects. Earlier repurposing therapy was successful in diseases such as HIV/AIDS (Zidovudine), erectile dysfunction (Sildenafil), Parkinson's disease (Atomoxetine), Breast cancer (Raloxifene), Epilepsy (Topiramate). Advantages in using a previously available drug is that the chance of failure is reduced, the time and cost required to develop a new drug is also reduced (Xue et al., 2018) . Various computational and experiment-based studies are conducted on drug repurposing, for example, gene association, pathway mapping, molecular docking, clinical analysis, novel data sources, in vitro and in vivo screening, etc (Pushpakom et al., 2019) . According to a study Ombitasvir, a Hepatitis C polymerase inhibitor, was 'repurposed' to target and prevent beta-tubulin driven breast cancers (Karuppasamy et al., 2017) . Further, these days computer-aided studies are being conducted which are quite beneficial and reduce the manpower and related resources.",
+            "cite_spans": [
+                {
+                    "start": 616,
+                    "end": 636,
+                    "text": "(Strittmatter, 2014)",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1244,
+                    "end": 1262,
+                    "text": "(Xue et al., 2018)",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1493,
+                    "end": 1517,
+                    "text": "(Pushpakom et al., 2019)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1663,
+                    "end": 1689,
+                    "text": "(Karuppasamy et al., 2017)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In silico studies are useful in target identification and protein structure determination; with the help of computeraided drug designing, the structure of the target is identified . Recently, scientists have started exploiting computational resources to explore the mechanisms of action, or the efficacy of a drug towards a target. Experimental studies capture some properties, but in order to analyze the interactions between the inhibitor and protein, and to access the conformational changes at the molecular levels, computational simlations are encouraged (Boopathi et al., 2020) . Recently, the efficiency of an antiviral drug, Darunavir was analyzed against the binding site i.e. the major flap region of the protease (HIV-1). Thus, computer aided drug designing and analysis can provide an insight into various unknown mechanisms (Karuppasamy et al., 2017; Purohit & Sethumadhavan, 2009 ). Docking and molecular dynamic studies are proved to be excellent tools in designing new drugs . In the case of COVID-19, many studies have provided a blueprint about the structure of the virus. Coronaviruses (CoVs) are enveloped viruses containing positive-strand RNA and have spikes of glycoproteins that project from their viral envelopes and give them a corona or halo-like appearance. Strains of CoV were the cause of severe acute respiratory syndrome (SARS) epidemic in 2002 and the Middle East respiratory syndrome (MERS) epidemic in 2012. The viral genome is the largest known RNA genome, it ranges from 26 to 32 kb, and the viral particle has a diameter of 125 nm (Gonz alez-Andrade et al., 2016) . The CoV proteins help in replication, and some of them also contribute to the interactions between the host and the virus. This genome act as mRNA on infecting a cell and leads to synthesis of 2 long polypeptides that are responsible for further infection. It produces structural and non-structural proteins. Structural protein includes membrane protein (M), envelope protein (E), spike protein (S), nucleocaspid protein (N) and proteases. These proteins are present in viral membrane and comprise different functions, like the RNA genome assembly is carried by N protein and viral assembly by M and E protein. The NTD of the nucleocaspid protein aids in the formation of ribonucleoprotein complex that is necessary for viral replication. According to an in silico study, theophylline and pyrimidone derivatives can be considered as the probable inhibitors of RNA binding to the NTD of N protein . The trimeric glycoprotein S guides the entry of the virus into the host cells Zhavoronkov et al., 2020) . The CoVs share structural similarities, but they undergo genetic evolutions that provide new targets for antiviral vaccines and therapies. Various targets have been explored; many researchers are targeting these proteins which play a key role in viral replication because of their different mechanisms of action. Different studies are performed on the basis of structural aspects and variant functions and one of the potential and highly conserved targets is protease. Targeting protease can obstruct with its post-translational modifications and thus prevent the viral invasion into the human body. A characteristic CoV contains at least six open reading frames (ORFs) in its genome (Mousavizadeh & Ghasemi, 2020) which are responsible for encoding the non-structural proteins (NSPs). The two large non-structural viral polyproteins, PP1a and PP1ab are produced due to the translation of ORF1a and ORF1ab. The viral-encoded proteases are used for processing of NSPs to their functional forms. The two major proteases that have gained importance these days and that are potential targets for COVID-19 are the papain-like protease (PL pro ) and a 3-chymotrypsin-like protease (3CL pro ), which are also known as the main protease (M pro ) (B aez- Santos et al., 2015) . For the replication and transcription of virus M pro and PL pro play essential roles, cysteine and histidine are responsible for cleavage of the NSPs. The main protease 3CL pro that is detected in the COVID-19 resembles 96% to the SARS COV; it has two identical subunits that form a dyad, which together forms the active sites responsible for its cleaving property. M pro is a $ 306 aa long protein, and PL pro has a catalytic core domain of 316 amino acids responsible for cleavage of replicase substrates (Holmes, 2003) . M pro cleaves the polyprotein's C-terminal and slice at eleven sites, whereas PL pro works at the N-terminal, cleaving three specific sites in the polyprotein . As both 3CLpro and PLpro are cysteine proteases, covalent inhibitors with high potencies can be potentially developed for precise targeting . Similarly, sixteen NSPs are cleaved and processed that have an essential role in the formation of the replicase complex, which is further exploited by the virus for replication and transcription. PLpro can remove ubiquitin from the ubiquitinated proteinase from the interferons and interferon regulatory factor 3 (IRF3) of host cell, so that the interferons are not produced and thus the innate immune system is compromised. Deubiquitination can inactivate the pathway for nuclear factor j-light-chain enhancer of activated B cells (NFjB), this causes suppression of immune system of the host. Therefore, proteases can be a potential target to cure patients of COVID-19 and these are highly conserved sequences. Various studies are performed to identify therapeutics against SARS COV and MERS COV due to similarity in their structures. Proteases are targeted earlier in various viral diseases, for example in case of HIV and Hepatitis C, and with sudden outbreak of COVID-19 there is an urgent need for the treatment.",
+            "cite_spans": [
+                {
+                    "start": 560,
+                    "end": 583,
+                    "text": "(Boopathi et al., 2020)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 837,
+                    "end": 863,
+                    "text": "(Karuppasamy et al., 2017;",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 864,
+                    "end": 893,
+                    "text": "Purohit & Sethumadhavan, 2009",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1569,
+                    "end": 1601,
+                    "text": "(Gonz alez-Andrade et al., 2016)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2580,
+                    "end": 2605,
+                    "text": "Zhavoronkov et al., 2020)",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 3292,
+                    "end": 3322,
+                    "text": "(Mousavizadeh & Ghasemi, 2020)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 3854,
+                    "end": 3874,
+                    "text": "Santos et al., 2015)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 4384,
+                    "end": 4398,
+                    "text": "(Holmes, 2003)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The process of drug repurposing can be beneficial in this situation since development is a lengthy procedure, and it might take a long time to develop drugs that mainly target COVID-19. Therefore, previously available medicines, already approved by the FDA, are widely being tested for various targets in COVID-19. Medications that are recently considered for antiviral treatment include hydroxychloroquine (HCQ), Lopinavir, Ritonavir, Ledipasvir, Velpatasvir, and Nelfinavir. Although treatment with hydroxychloroquine has recorded a decline in the number of cases, the safety profile is also necessary, and therefore few studies have discussed this point. The benefit of the HCQ \u00fe Azithrol treatment is research in progress, as a lot of uncertainty prevails . Through in silico research (Liu & Wang, 2020) showed that the binding active site for Lopinavir/ Ritonavir is conserved between SARS-COV-M pro and 2019-n COV M pro. Lopinavir and Ritonavir are used to target protease in HIV, and they were successful in inhibiting the main protease; these drugs can form H-bonds with amino acid Thr24-Asn28, Asn119 and thus can interfere with the COVID-19 binding.",
+            "cite_spans": [
+                {
+                    "start": 414,
+                    "end": 476,
+                    "text": "Lopinavir, Ritonavir, Ledipasvir, Velpatasvir, and Nelfinavir.",
+                    "ref_id": null
+                },
+                {
+                    "start": 789,
+                    "end": 807,
+                    "text": "(Liu & Wang, 2020)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A 3-D model of 2019-n COV was presented by Chen et al. (2020) , which depicted the conserved cleavage sites of 3CL pro as in SARS-COV, and they also used Ledipasvir or Velpatasvir as a repurposing therapy. Further , using homology modeling and docking studies proposed that Nelfinavir might be a potential inhibitor against n2019-n COV M pro . Liponavir and Saquinavir have been proved to block CoV protease, although Lopinavir is a more potent inhibitor than Saquinavir. Most drugs involved in repurposing to target COVID-19 are known to target critical components in the viral lifecycle. For example, medications like Umifenovir and chloroquine hinder the entry of viral particles into the host cells. Lopinavir/Ritonavir, ASC09, or Darunavir block viral replication by inhibiting 3CL protease. Remdesivir, Favipiravir, Ribavirin is proved to inhibit viral RNA synthesis (Harrison, 2020) . The novelty of the study is in the approach applied for the high throughput virtual screening of potent ligands. The study focusses on the utilization of computational methods to screen potent lead within FDA approved molecules exhibiting efficient binding profile with SARS-CoV-2 M pro protein. This was assessed using the combinatorial scheme of analysis of binding free energy trend in MD simulations, protein-ligand binding profile and conformational dynamics-based approach of correlated protein-residues interaction. The MD simulation output of protein-ligand frames helped to understand the conformational alterations during the entire 100 ns simulation duration. The DCCM analysis was performed to understand the diverse correlated motion of the aminoacid residues in the Mpro protein. This study shows noticeable conformational shifts in Mpro which are induced by FDA candidate molecules in comparison with the unbound (apo) and co-crystallized ligand (O6K) binding dynamics. A brief illustration of the methodology is depicted in Figure 1 .",
+            "cite_spans": [
+                {
+                    "start": 43,
+                    "end": 61,
+                    "text": "Chen et al. (2020)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 873,
+                    "end": 889,
+                    "text": "(Harrison, 2020)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1932,
+                    "end": 1940,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "The in silico experiments and analysis were proceeded on Linux Ubuntu OS 18.04.02 LTS (Acer Predator Helios 300 laptop), the Maestro, Schr\u20ac odinger version 2019-3 was used. The GPU unit utilized for molecular modeling and dynamic simulations was Nvidia GeForce GTX 1660 Ti (6GB).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Computing system"
+        },
+        {
+            "text": "The X-RAY crystal structure of the target of our interest was obtained from RCSB PDB (PDB ID: 6Y2F) by Zhang et al. (2020) . The 3 D-structure obtained possessed a resolution of 1.95 \u00c5 and 306 amino acids. The validation of the structure was performed through SAVES v5.0 which predicts that according to the Ramachandran plot 88.8% (231a.a.) is the most favored region, 10% (26 a. a.) is the additional allowed region, 0.4% (1 a. a.) is the generously allowed region and 0.8% (2 a.a.) lie in the areas disallowed ( Figure S1 ). Therefore, the server's comprehensive report states that protease is a good structure for conducting further studies. For the protein preparation, Maestro version 10.2 was used, the OPLS3 force field was set to a minimum, and water molecules ! 5.0 A o were excluded from ruling out any disturbance in the binding areas.",
+            "cite_spans": [
+                {
+                    "start": 103,
+                    "end": 122,
+                    "text": "Zhang et al. (2020)",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 515,
+                    "end": 524,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Protein structure and docking enrichment"
+        },
+        {
+            "text": "A cross-docking analysis between the native and modeled structure prepared for docking and simulations provides an RMSD (Root Mean Square Deviation) difference of 0.113 \u00c5; the lower resolution makes it a compatible structure ( Figure  S2 ). Decoys and actives-based enrichment analysis for appropriate interaction cut-off were performed using provided decoy and active sets of HIV-1 protease (PDB: 1XL2) from DUDE decoys (Mysinger et al., 2012) . This HIV-1 protease decoy list was selected because of a similarity index of 19.23% in the protease of HIV and SARS-CoV 2, and this has been verified through Culstal omega (https://www.ebi.ac.uk/ Tools/msa/clustalo/) by allingning the sequences ( Figure S3 ). The decoy-actives screening was performed using the Glide XP algorithm outputs subjected to Molecular mechanics/ Generalized87 Born model and solvent accessibility (MM/ GBSA) calculations using prime for the selected protease protein model (PDB: 6Y2F). The ranked hits obtained from MM/ GBSA values were sorted from high stable to low stable compounds. Enrichment calculations were performed from the Maestro tool Enrichment calculator.",
+            "cite_spans": [
+                {
+                    "start": 421,
+                    "end": 444,
+                    "text": "(Mysinger et al., 2012)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 227,
+                    "end": 237,
+                    "text": "Figure  S2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 694,
+                    "end": 703,
+                    "text": "Figure S3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Protein structure and docking enrichment"
+        },
+        {
+            "text": "FDA-approved drug dataset was taken from the Drug bank database that is a freely accessible platform. A total of 2456 drugs were selected for virtual screening against protease available until 27-03-2020 (DrugBank, n.d.). Further, the ligand was modified by ligprep in which OPLS 2003 force field was adjusted to obtain a ligand with minimum energy to make the ligand suitable for docking. For the purpose of virtual screening, the glide docking module of Schrodinger was utilized to obtain accurate results. Docking was conducted in three different progressions; High-Throughput Virtual Screening (HTVS, Standard-Precision), Standard Precision (SP), and extra-precision (XP) using the glide program to screen selected 2456 drugs. The percentage of output for HTVS was set at 50%, for SP at 25%, and to improve the quality of selection, an enriched sampling mode and flexible docking were selected in XP with a percentage output of 25%. After docking, all the compounds were verified through MM/GBSA free energy score .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ligand preparation, primary screening and MM/ GBSA (binding free energy)"
+        },
+        {
+            "text": "For calculating the free energy between the target and the ligand prime, MM/GBSA was used. To organize the results output, docking score was considered, and for molecular docking binding, free energy between ligand and receptor was measured through MM/GBSA in VSGB solvation at the OPLS3 force field. Molecular docking was employed through Schrodinger docking suits (Schrodinger Maestro, New York, NY, USA) (Bowers et al., 2006 ).",
+            "cite_spans": [
+                {
+                    "start": 407,
+                    "end": 427,
+                    "text": "(Bowers et al., 2006",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Ligand preparation, primary screening and MM/ GBSA (binding free energy)"
+        },
+        {
+            "text": "MD simulation was performed by utilizing Desmond (D E Shaw Research (DESRES)), through this protein/ligand complexes were analyzed (Mysinger et al., 2012; Zhang et al., 2020) . The 3-site model TIP3P was used to achieve high computational efficiency considering the actual geometry of water molecules. A periodic cuboidal box of 10x10x20 0 A was filled with protein-drug/ligand complexes, counter ions like 29 Na \u00fe and 29 Clwere added to neutralize the system. The number of water molecules added to the simulation were 10,505 molecules. The simulation was planned for 100 ns with Isothermal-isobaric (NPT) ensemble class possessing Nose-Hoover thermostat 310 K and Martyna-Tobias kleinbarostat at 1.0132 Pa. Desmond was used for analyzing the trajectory data.",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 154,
+                    "text": "(Mysinger et al., 2012;",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 155,
+                    "end": 174,
+                    "text": "Zhang et al., 2020)",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Molecular dynamics simulation"
+        },
+        {
+            "text": "MM/GBSA was calculated using trajectory analysis. The experiment was set up at an interval of 1 ns for each protein-ligand complex using script thermal_mmgbsa.py available from schrodinger.com.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "MM/GBSA and DCCM"
+        },
+        {
+            "text": "Dynamic cross-correlation matrix (DCCM) depicts the magnitude of the correlation coefficient, which depends on the degree to which the fluctuations of the system are associated. The cross-corelation was computed through the MD trajectory of the protease and ligand complex. Major characteristics of DCCMs comprise strong relativity along the diagonal, spreading out from diagonal and off-diagonal cross- relationships.The correlated motions of residues were analyzed to define the quality of protein-ligand complexes. The residue cross covariance matrix was calculated for atomic fluctuations procured through MD trajectories. Bio3D package in R studio was used to obtain insights from the MD trajectories of protein-ligand complexes (Grant et al., 2006 ).",
+            "cite_spans": [
+                {
+                    "start": 734,
+                    "end": 753,
+                    "text": "(Grant et al., 2006",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "MM/GBSA and DCCM"
+        },
+        {
+            "text": "After analyzing the stereochemical quality of the protein structure through procheck, 6Y2F was selected and explored. The number of residues included in the structure was 303 a.a., with a resolution of 1.95 0 A. The structure of the protein comprises three domains one, two, and three. The active site is expected somewhere in between six-stranded b barrels in domain one and domain two; domain three is usually concerned with the dimerization of the complex via interacting with amino acid GLU290 and ARG4 of two protomers (Shi & Song, 2006) . A typical substrate sequence that is necessary to bind to the protein for M pro is Leu-Gln (Ser, Ala, Gly) (Ziebuhr et al., 2000) . The molecular dynamics simulation study of the available structure at RCSB bound with an inhibitor O6K (a-ketoamide) shows that the inhibitor binds to the protein through hydrogen bonding that depicts a major role in ligand binding, the interaction is also observed through water bridges, the inhibitor's carbonyl oxygen bonds through a hydrogen bond to the main chain amide of the amino acid Glu166. The amino acids involved in the interaction include GLU166 (highest), GLN189 (second highest), HIS41, HIS164, HIS163, SER144, PHE140, MET165, and CYS145 Figure 2 . The highest contact was with the residue number GLU166; the distance between the hydrogen atom and acceptor atom was 1.98, and an angle acquired was 168.61 degrees (Salentin et al., 2015) . In order to narrow the site of interaction, a receptor grid was generated with dimensions 10 \u00c2 10 x 10 0 A.",
+            "cite_spans": [
+                {
+                    "start": 524,
+                    "end": 542,
+                    "text": "(Shi & Song, 2006)",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 652,
+                    "end": 674,
+                    "text": "(Ziebuhr et al., 2000)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 1406,
+                    "end": 1429,
+                    "text": "(Salentin et al., 2015)",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1231,
+                    "end": 1239,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Protein binding sites"
+        },
+        {
+            "text": "Out of the total ligands (active (47) \u00fe decoy (200)) input of 247 molecules, the number of ranked actives was 30 in the top 100 molecules. The screened percent actives on the base of MM/ GBSA energy gave ROC of 0.60 and BEDROC (a \u00bc 160.9) \u00bc 0.514, with 2 ranked actives in top 10 entries, the 1 st ranked compound is active with MM/GBSA \u00c069.30 kcal/mol (top 1%) and the second active that is listed at 5 th position has \u00c060.845 kcal/mol (top 5%) MM/GBSA. So, in the upcoming sections, the hits will be classified based on their scores equal or above \u00c060.845 MM/GBSA score to reduce the percentage of false positives in our screening.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Enrichment analysis"
+        },
+        {
+            "text": "In order to discover the probable binders to the target, an FDA approved library of the drugs was selected for screening against SARS-COV-2 protease. The molecular docking based virtual screening of 2456 ligands depicted good docking energy and secure interactions with the residues. The binding free energy attained via molecular docking of the drug molecules was analyzed and compared to the MM/GBSA (-69.30 kcal/mol and \u00c060.845 kcal/mol) obtained through enrichment analysis crystallized inhibitors structures to protease molecule as actives. The details of the docking score and MM/GBSA DG bind score are compiled in Table 1 . The lower values of binding free energies scores depicted the stable conformation attained by these protein complexes. The stability of the docked complexes was examined through molecular dynamics simulations, which was executed to ascertain the equilibrium of the docked compounds. Further, eight compounds were filtered, which included Terlipressin, Nelfinavir, Teniposide, Tenofovir, Saquinavir, Sofosbuvir, Lopinavir, and Ritonavir. We conducted 100 nanoseconds molecular dynamic simulation (MDS) for each protein to understand the conformational changes that the protein undergoes after interacting with different ligands. The statistics obtained from the trajectory aided in investigating the Root Mean Square Deviation (RMSD) and Root Mean Square Fluctuations (RMSF). The structure of proteins, conformational versatility, and stability were analyzed by comparing the RMSD of each ligand-bound complex with the unbound form (Apo) and reported inhibitor (O6K)-protease complex. During the MDS, the Ca-RMSD for respective drug molecule-M pro complexes is aligned with the RMSD spectra of Apo form and O6K-bound form of the M pro Figure 3 . The average RMSD value for Apo form and O6K-bound M pro was observed to be 2.319 and 1.976 \u00c5, respectively. The Ca-RMSF fluctuations of binding site residues were analyzed to determine the outcome of the ligands on the protein's active site residues dynamics. The combined RMSF spectra for the simulated complexes can be seen in Figure 4 .",
+            "cite_spans": [
+                {
+                    "start": 969,
+                    "end": 1067,
+                    "text": "Terlipressin, Nelfinavir, Teniposide, Tenofovir, Saquinavir, Sofosbuvir, Lopinavir, and Ritonavir.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 621,
+                    "end": 628,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1765,
+                    "end": 1773,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 2105,
+                    "end": 2113,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Virtual screening and molecular dynamics"
+        },
+        {
+            "text": "To evaluate the energetics of binding of protease to the different ligands, the energy parameters were calculated using protein-ligand complexes from the MD simulation trajectory. The respective average energies of the docked complexes in the simulated system ranged from \u00c0107.6 to \u00c051 kcal/mol. The remaining compounds show stable and low binding free energy (DG bind ) as compared to the native inhibitor (O6K). Figure 5 represents an exact comparison between the original inhibitor and drugs, which provides us with a clear iteration about the distinction in protein-ligand complexes' energy states.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 414,
+                    "end": 422,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "MM/GBSA"
+        },
+        {
+            "text": "Dynamic cross-correlation matrix (DCCM) analysis represents a 2 D matrix representing correlation in the residue motions for MD simulations' timeline. The densely colored regions show a respective positive and negative correlation between the protein residues, whereas the uncolored regions depict no correlation in residue movement. The highly correlated matrix represents strong interaction of the drug molecule with the protease binding site, bringing coordinated motions in the overall protein structure. Figure 6 depicts that Lopinavir shows the best and high correlation among protease residues compared with O6K, the original inhibitor, Nelfinavir, Saquinavir, Terlipressin, and Tenofovir were seen showing enhanced correlations. Whereas, reduced correlations were noticed for protease residues in complex with Sofosbuvir and Ritonavir, which describes the protease molecule's reduced activity.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 509,
+                    "end": 517,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "DCCM"
+        },
+        {
+            "text": "The virtual screening in this study facilitated a brief understanding of the biochemically crucial residues defining the binding site of the main protease (M pro ) enzyme. This binding cavity's coordinates were obtained from the bound ligand (O6K) in the very crystal structure utilized for the present study, i.e. PDB ID: 6Y2F. The results were enriched with the enrichment analysis help using the reported actives binding the M pro binding cleft, out of which a standard value was set (-60.845 kcal/mol); this lower limit value aided in the selection of the top seven compounds with potent interaction scores. The compounds were also analyzed by comparing them to the Apo state of M pro and formerly bound inhibitor O6K. The substrates obtained belong to anti-cancerous and antiviral drug class, as summarized in Table 1 . The topmost seven hit compounds selected against M pro are as follows:",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 815,
+                    "end": 822,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Nelfinavir is an antiretroviral drug that is a potent protease inhibitor and is used in the treatment of HIV; Lopinavir belongs to the class of viral protease inhibitors and is usually incorporated as a combination therapy with Ritonavir, which is a peptidomimetic agent used in inhibition of HIV-1 and HIV-2 proteases. Tenofovir is also an antiviral drug used against HIV and chronic hepatitis B. Terlipressin is an antitumor and hypotensive drug used in the treatment of carcinoid tumors and lowering the blood pressure; Saquinavir is an , Ritonavir (-107.6 \u00b1 12.35), Tenofovir (-85.9 \u00b1 6.0), , , O6K (-50.9 \u00b1 9.82), Terlipressin (-94.8 \u00b1 8.8). antiretroviral drug, it usually works in combination therapy with Lopinavir/Ritonavir to enhance its effects and has a terminal half-life of 17 hrs, it displays a high binding affinity to M Pro (-9.0 kcal/mol) (Joshi et al., 2020) . Sofosbuvir is an antiviral drug used in treating Hepatitis C. The mentioned inhibitors and their interactions with the binding residues of M Pro are summarized in Table 2 .",
+            "cite_spans": [
+                {
+                    "start": 632,
+                    "end": 646,
+                    "text": "(-94.8 \u00b1 8.8).",
+                    "ref_id": null
+                },
+                {
+                    "start": 857,
+                    "end": 877,
+                    "text": "(Joshi et al., 2020)",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1043,
+                    "end": 1050,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "An in silico study noticed that Nelfinavir and Entecavir could aid in targeting SARS-CoV 2. The improved binding and better interaction with the help of an anchor site is described by Huynh et al. (2020) ; the amino acid residues contacting with Nelfinavir and Entecavir include THR26, GLY143, HIS41, GLN189, and GLU166 (Huynh et al., 2020) . Nelfinavir is one of the top drugs in this study, which also shows similar protein-ligand interactions (HIS41, GLU166). It possesses the most stable RMSD (2 \u00c5) and RMSF (0.851 \u00c5) even when compared to the O6K and Apo forms, the RMSF of O6K and Apo was 0.941 \u00c5 and 0.867 \u00c5, respectively. The MM/GBSA score of its MD trajectory is comparatively good \u00c095.76 kcal/mol compared to O6K \u00c050.9 kcal/mol. The DCCM analysis also shows an enhanced correlation in residue motions. Moreover, Nelfinavir is also reported recently in various in vitro studies as a probable treatment for SARS CoV 2. Yamamoto et al. (2020) suggest that the effective concentrations of Nelfinavir to inhibit SARS Cov 2 would be 1.13 lM and 1.76 lM, respectively, at 50 percent and 90 percent inhibition. Similarly, a systemic screening of HIV inhibitors concludes that MesilateViracept (Nelfinavir) strongly inhibits S-n-and S-o-mediated cell fusion with full inhibition at a concentration of 10 lM (Musarrat et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 184,
+                    "end": 203,
+                    "text": "Huynh et al. (2020)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 320,
+                    "end": 340,
+                    "text": "(Huynh et al., 2020)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 920,
+                    "end": 949,
+                    "text": "CoV 2. Yamamoto et al. (2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1308,
+                    "end": 1331,
+                    "text": "(Musarrat et al., 2020)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A recent study about the repurposing of the antiviral drugs targeting M pro reveals that their top three drugs include a combination therapy: Ritonavir-Lopinavir, Raltegravir, and Tipranavir, the residues found interacting with the protease were GLU166, HIS41, HIS164, GLN192, CYS142, ARG188. These repurposed drugs combination can be useful in targeting SARS-CoV 2 . Lopinavir is an antiretroviral protease inhibitor that is already used for treating HIV since the 2000s. Ritonavir, along with other drugs, is a highly active antiretroviral therapy prescribed for treating HIV; therefore, it is preferred in combination with other protease inhibitors. In our study, Lopinavir and Ritonavir are amongst the top compounds which show good binding with the protease. Ritonavir and Lopinavir show a stable, less fluctuating RMSD than the unbound and native inhibitor and depicts a stable Ca-RMSF. Ritonavir possesses the best MM/GBSA score \u00c0107.6 kcal/mol, and Lopinavir also has a high score of \u00c091.22 kcal/mol. Further, looking at the DCCM analysis results, we can predict that Lopinavir is highly correlated with protease residues whereas, Ritonavir shows reduced relation with the target.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Terlipressin is a vasoconstrictor which binds to vascular smooth muscle cell receptors V 1 (Saner et al., 2007) . It helps to alleviate systolic pulmonary artery pressure in patients of liver cirrhosis (Altintas et al., 2004) . It shows a stable RMSD that equilibrates after 63 ns and almost overlaps with Apo form. The average RMSF value of Terlipressin is 0.96 \u00c5, which is better than the Apo, O6K, and Lopinavir (1.12 \u00c5), a reported SARS CoV 2 inhibitor. The DCCM analysis of the Terlipressin-bound M pro residues reveals the strongest correlation among the residue motions, which attributes for the most robust interaction.",
+            "cite_spans": [
+                {
+                    "start": 91,
+                    "end": 111,
+                    "text": "(Saner et al., 2007)",
+                    "ref_id": null
+                },
+                {
+                    "start": 202,
+                    "end": 225,
+                    "text": "(Altintas et al., 2004)",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Tenofovir and Sofosbuvir, are described in a recent molecular docking study inhibiting the RNA dependant RNA polymerase (RdRp) of SARS CoV 2 (Elfiky, 2020). Tenofovir, an anti-retroviral drug, shows tight bonding with the M pro and exhibits steady RMSD at and beyond 75 ns around 1.9 \u00c5 (2.06 \u00c5 \u00b1 0.27). This lowering of protein RMSD is in synergy with the lowest observed deviation in the 100 ns MD trajectory's free energy change. This is attributed to its efficient occupancy of the binding site with the least conformational fluctuation. Tenofovir possesses relatively low RMSF of around 0.899 \u00c5, 0.956 \u00c5, and 0.875 \u00c5, respectively, with the residues in contact Figure 4 . This local RMSF contact profile extends to explain good correlation in residue motions and intense interaction; see DCCM of Tenofovir in Figure 6 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 665,
+                    "end": 673,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 813,
+                    "end": 821,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Saquinavir and Sofosbuvir show stable RMSD and Ca-RMSF values compared to the initially reported inhibitor (O6K) and the unbound form (Apo). Moreover, all these possess a better MM/GBSA score of the MD trajectories when compared to Apo and O6K. According to the DCCM results, the least correlated amongst them was Sofosbuvir, whereas Saquinavir was correlated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The above discussion is based on the approximations of MD analysis, and this predicts the possibility of the discussed drugs with the active site of SARS CoV-2 M pro (PDB ID: 6Y2F). However, the screened drugs should be tested, and their in vitro potential should be revealed for further validation of the results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Considering the spread of infectious respiratory viral disease and rapidly mutating nature of the virus, there is a need to develop medication that can stop the rapid viral spread during the pandemics. An in silico drug repurposing research is conducted here to detect a potential inhibitor to target the key protein protease of SARS-CoV 2. A group of compounds representing a higher binding affinity towards protease active site were selected after high throughput virtual screening the entire FDA approved drug library. The top compounds obtained in our study are already in in vitro studies, such as Ritonavir (involved in highly active antiretroviral therapy), Lopinavir (involved in combination therapy with Ritonavir), and Nelfinavir (involved in combination therapy with Ritonavir). Terlipressin shows the closest similarity to these drugs, identical to the outcome of their trajectories, and provides a better result according to the Apo form and O6K. Extensive analysis of Terlipressin reveals marginally superior ligand activity as deduced from DCCM and interaction profile compared to the unbound, O6K, and reported antivirals. Moreover, Tenofovir was likewise observed to be a potent ligand for the M pro inhibition site, given that it displays decent interaction and correlation among M pro residues upon contact. The results obtained in this study using computational tools efficiency can lead to drug discovery against new diseases and might constrain the viral protease. Bearing in mind the time required to advanced therapeutics during the pandemics, drug repurposing seems to be the most alluring and upfront method in targeting SARS CoV 2. Such in silico trails can be useful in designing and testing drugs against SARS CoV 2 and enhance the drug discovery pipeline, predicting the therapeutic failures and diminishing undesired side effects. Further, a compound library targeting protease protein can also be developed for rapid screening against other deadly viruses, in which proteases serve as a crucial protein for the viral transmission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion and future aspects"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "CYS145: (little hydrophobic but majorly Water bridges and H-bonding",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tenofovir",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Saquinavir HIS164, GLN189, GLU166 (Water bridges and H-bonding)",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "GLU166 (Water bridges and H-bonding)",
+            "authors": [
+                {
+                    "first": "Gln189",
+                    "middle": [],
+                    "last": "Sofosbuvir",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "GLN189 (little hydrophobic but majorly H-bonding and Water bridges ) 8. Ritonavir GLU166, GLY143 (H-bonding and Water bridges",
+            "authors": [
+                {
+                    "first": "Met49",
+                    "middle": [],
+                    "last": "Lopinavir",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "His41",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "His164",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Nishant Shekhar",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Manisha Prajapat",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Phulen Sarma",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Hardeep Kaur",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Saurabh Sharma",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Effects of Terlipressin on systolic pulmonary artery pressure of patients with liver cirrhosis: An echocardiographic assessment",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "References Altintas",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Akkus",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Helvaci",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Sezgin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Oguz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "World Journal of Gastroenterology",
+            "volume": "10",
+            "issn": "15",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3748/wjg.v10.i15.2278"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The SARS-coronavirus papain-like protease: Structure, function and inhibition by designed antiviral compounds",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Santos",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E S"
+                    ],
+                    "last": "John",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mesecar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Antiviral Research",
+            "volume": "115",
+            "issn": "",
+            "pages": "21--38",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.antiviral.2014.12.015"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Novel 2019 coronavirus structure, mechanism of action, antiviral drug promises and rule out against its treatment",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Boopathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Poma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kolandaivel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure & Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1758788"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Scalable algorithms for molecular dynamics simulations on commodity clusters",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bowers",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chow",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Dror",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Eastwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Gregersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Proceedings of the 2006 ACM/IEEE Conference on Supercomputing, SC'06",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "43--43",
+            "other_ids": {
+                "DOI": [
+                    "10.1109/SC.2006.54"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Prediction of the 2019-nCoV 3C-like protease (3CLpro) structure: Virtual screening reveals velpatasvir, ledipasvir, and other drug repurposing candidates",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-P",
+                    "middle": [],
+                    "last": "Yiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K.-Y",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.12688/f1000research.22457.2"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Ribavirin, Remdesivir, Sofosbuvir, Galidesivir, and Tenofovir against SARS-CoV-2 RNA dependent RNA polymerase (RdRp): A molecular docking study",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Drugbank",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Life Sciences",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Insights into molecular interactions between CaM and its inhibitors from molecular dynamics simulations and experimental data",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gonz Alez-Andrade",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rodr Iguez-Sotres",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Madariaga-Maz On",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rivera-Ch Avez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mata",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sosa-Peinado",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Del Pozo-Yauner",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Arias-Olgu In",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Journal of Biomolecular Structure & Dynamics",
+            "volume": "34",
+            "issn": "1",
+            "pages": "78--91",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2015.1022225"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Bio3d: An R package for the comparative analysis of protein structures",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Grant",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Rodrigues",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Elsawy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mccammon",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Caves",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Bioinformatics",
+            "volume": "22",
+            "issn": "21",
+            "pages": "2695--2696",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/bioinformatics/btl461"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Coronavirus puts drug repurposing on the fast track",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Harrison",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature Biotechnology",
+            "volume": "38",
+            "issn": "4",
+            "pages": "379--381",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/d41587-020-00003-1"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "SARS coronavirus: A new challenge for prevention and therapy",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Holmes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "The Journal of Clinical Investigation",
+            "volume": "111",
+            "issn": "11",
+            "pages": "1605--1609",
+            "other_ids": {
+                "DOI": [
+                    "10.1172/JCI18819"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "In silico exploration of molecular mechanism of clinically oriented drugs for possibly inhibiting SARS-CoV-2's main protease",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Huynh",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Luan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Physical Chemistry Letters",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jpclett.0c00994"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Rationale based selection and prioritization of antiviral drugs for COVID-19 management",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Joshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Giri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kulkarni",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Verma",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Chaudhary",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Deshmukh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ChemRxiv.Preprint",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.26434/chemrxiv.12429629.v1"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "An integrative drug repurposing pipeline: Switching viral drugs to breast cancer",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Karuppasamy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Verma",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sequeira",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Basavanna",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Veerappapillai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Journal of Cellular Biochemistry",
+            "volume": "118",
+            "issn": "6",
+            "pages": "1412--1422",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcb.25799"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "In silico prediction of potential inhibitors for the Main protease of SARS-CoV-2 using molecular docking and dynamics simulation based drug-repurposing",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Infection and Public Health",
+            "volume": "13",
+            "issn": "9",
+            "pages": "1210--1223",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jiph.2020.06.016"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Learning from the past: Possible urgent prevention and treatment options for severe acute respiratory infections caused by 2019-nCoV",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Morse",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lalonde",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chembiochem: A European Journal of Chemical Biology",
+            "volume": "21",
+            "issn": "5",
+            "pages": "730--738",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/cbic.202000047"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Potential inhibitors against 2019-nCoV coronavirus M protease from clinically approved medicines",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Genetics and Genomics",
+            "volume": "47",
+            "issn": "2",
+            "pages": "119--121",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jgg.2020.02.001"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Genotype and phenotype of COVID-19: Their roles in pathogenesis",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mousavizadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ghasemi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunology and Infection",
+            "volume": "54",
+            "issn": "2",
+            "pages": "159--163",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmii.2020.03.022"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "The anti-HIV Drug NelfinavirMesylate (Viracept) is a potent inhibitor of cell fusion caused by the SARS-CoV",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Musarrat",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Chouljenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dahal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Nabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chouljenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Jois",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Kousoulas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Spike (S) glycoprotein warranting further evaluation as an antiviral against COVID-19 infections",
+            "authors": [],
+            "year": null,
+            "venue": "Journal of Medical Virology",
+            "volume": "92",
+            "issn": "10",
+            "pages": "2087--2095",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25985"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Directory of useful decoys, enhanced (DUD-E): Better ligands and decoys for better benchmarking",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mysinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Carchia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Irwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Shoichet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of Medicinal Chemistry",
+            "volume": "55",
+            "issn": "14",
+            "pages": "6582--6594",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/jm300687e"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Drug targets for corona virus: A systematic review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Prajapat",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sarma",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Shekhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Avti",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sinha",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bhattacharyya",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bansal",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Medhi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Indian Journal of Pharmacology",
+            "volume": "52",
+            "issn": "1",
+            "pages": "56--65",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/ijp.IJP_115_20"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Update on the target structures of SARS-nCoV-2: A systematic review",
+            "authors": [],
+            "year": null,
+            "venue": "Indian Journal of Pharmacology",
+            "volume": "52",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/ijp.IJP_338_20"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Structural basis for the resilience of Darunavir (TMC114) resistance major flap mutations of HIV-1 protease",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Purohit",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sethumadhavan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Interdisciplinary Sciences, Computational Life Sciences",
+            "volume": "1",
+            "issn": "4",
+            "pages": "320--328",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12539-009-0043-8"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Drug repurposing: Progress, challenges and recommendations",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pushpakom",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Iorio",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Eyers",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Escott",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hopper",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wells",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Doig",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Guilliams",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Latimer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mcnamee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Norris",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sanseau",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Cavalla",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pirmohamed",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nature Reviews. Drug Discovery",
+            "volume": "18",
+            "issn": "1",
+            "pages": "41--58",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nrd.2018.168"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "PLIP: Fully automated protein-ligand interaction profiler",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Salentin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schreiber",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Haupt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Adasme",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schroeder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nucleic Acids Research",
+            "volume": "43",
+            "issn": "W1",
+            "pages": "443--447",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/nar/gkv315"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "clinical efficacy and safety of Terlipressin in esophagealvarices bleeding, septic shock and hepatorenal syndrome",
+            "authors": [],
+            "year": null,
+            "venue": "Expert Review of Gastroenterology & Hepatology",
+            "volume": "1",
+            "issn": "2",
+            "pages": "207--217",
+            "other_ids": {
+                "DOI": [
+                    "10.1586/17474124.1.2.207"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Virological and clinical cure in COVID-19 patients treated with hydroxychloroquine: A systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sarma",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mahendru",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Avti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bhattacharyya",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Prajapat",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Shekhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Dhibar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Prakash",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Medhi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Medical Virology",
+            "volume": "92",
+            "issn": "7",
+            "pages": "776--785",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25898"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Therapeutic options for the treatment of 2019-novel coronavirus: An evidence-based approach",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sarma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Prajapat",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Avti",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Medhi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Indian Journal of Pharmacology",
+            "volume": "52",
+            "issn": "1",
+            "pages": "1--5",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/ijp.IJP_119_20"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "In-silico homology assisted identification of inhibitor of RNA binding against 2019-nCoV N-protein (N terminal domain)",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sarma",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Shekhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Prajapat",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Avti",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure & Dynamics",
+            "volume": "39",
+            "issn": "8",
+            "pages": "2724--2732",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1753580"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "The catalysis of the SARS 3C-like protease is under extensive regulation by its extra domain",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "The FEBS Journal",
+            "volume": "273",
+            "issn": "5",
+            "pages": "1035--1045",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1742-4658.2006.05130.x"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Overcoming drug development bottlenecks with repurposing: Old drugs learn new tricks",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Strittmatter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nature Medicine",
+            "volume": "20",
+            "issn": "6",
+            "pages": "590--591",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nm.3595"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Exploring b-tubulin inhibitors from plant origin using computational approach",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Verma",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kannan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Shanthi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sethumadhavan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Karthick",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ramanathan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Phytochemical Analysis: PCA",
+            "volume": "28",
+            "issn": "3",
+            "pages": "230--241",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pca.2665"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Nelfinavir was predicted to be a potential inhibitor of 2019-nCov main protease by an integrative approach combining homology modelling, molecular docking and binding free energy calculation",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.01.27.921627"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Review of drug repositioning approaches and resources",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xue",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "International Journal of Biological Sciences",
+            "volume": "14",
+            "issn": "10",
+            "pages": "1232--1244",
+            "other_ids": {
+                "DOI": [
+                    "10.7150/ijbs.24612"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Nelfinavir inhibits replication of severe acute respiratory syndrome coronavirus 2 in vitro",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yamamoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matsuyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hoshino",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yamamoto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "https:/doi.org10.1101/2020.04.06.026476"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Crystal structure of SARS-CoV-2 main protease provides a basis for design of improved a-ketoamide inhibitors",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Curth",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Drosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sauerhering",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Becker",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Rox",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hilgenfeld",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "6489",
+            "pages": "409--412",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abb3405"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Potential non-covalent SARS-CoV-2 3C-like protease inhibitors designed using generative deep learning approaches and reviewed by human medicinal chemist in virtual reality",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zhavoronkov",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zagribelnyy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zhebrak",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Aladinskiy",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Terentiev",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Vanhaelen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ChemRxiv. Preprint",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.13140/RG.2.2.13846.98881"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Virus-encoded proteinases and proteolytic processing in the Nidovirales",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ziebuhr",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Snijder",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Gorbalenya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "The Journal of General Virology",
+            "volume": "81",
+            "issn": "",
+            "pages": "853--879",
+            "other_ids": {
+                "DOI": [
+                    "10.1099/0022-1317-81-4-853"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Schematic representation of the study design illustration.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "The Substrate Binding Cleft of Protease: The figure depicts the hydrophobic interactions and hydrogen bonding developed between the ligand and the protein's binding site.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Comparision-Ca RMSD -",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Side Chain RMSF -Apo (0.867 \u00c5 \u00b1 0.278), Lopinavir (1.12 \u00c5 \u00b1 0.51), Nelfinavir (0.851 \u00c5 \u00b1 0.40), O6K (0.914 \u00c5 \u00b1 0.49), Ritonavir (0.899 \u00c5 \u00b1 0.35), Sofosbuvir (1.119 \u00c5 \u00b1 0.744), Tenofovir (0.875 \u00c5 \u00b1 0.301), Saquinavir (0.956 \u00c5 \u00b1 0.41), Terlipressin (0.96 \u00c5 \u00b1 0.342).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "MM/GBSA",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "DCCM analysis -(a) Apo, (b) Lopinavir, (c) Nelfinavir, (d) O6K, (e) Ritonavir, (f) Saquinavir, (g) Sofosbuvir, (h) Tenofovir, (i)Terlipressin.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Docking score and MM/GBSA, DG bind (kcal/mol).",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We are obliged to Dr. Prajwal Nandekar, Mr. Vinod Devaraji, and Mr. Nripendra Bhatta of Schrodinger Corporation for their appreciated support, technical guidance, and logistic help.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgment"
+        },
+        {
+            "text": "The authors have no known opposing commercial concerns or private associations that might affect the work reported in this paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Disclosure statement"
+        }
+    ]
+}

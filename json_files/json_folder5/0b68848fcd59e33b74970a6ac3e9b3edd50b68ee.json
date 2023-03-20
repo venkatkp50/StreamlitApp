@@ -1,0 +1,2702 @@
+{
+    "paper_id": "0b68848fcd59e33b74970a6ac3e9b3edd50b68ee",
+    "metadata": {
+        "title": "",
+        "authors": []
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "Breast cancer is the second most diagnosed cancer worldwide and the most commonly diagnosed cancer in women [1, 2] . While early breast cancer has excellent prognosis, metastatic breast cancer remains incurable with current therapies [3] .",
+            "cite_spans": [
+                {
+                    "start": 108,
+                    "end": 111,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 112,
+                    "end": 114,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 234,
+                    "end": 237,
+                    "text": "[3]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Since their discovery, hormone receptor (HR) and human epidermal growth factor 2 (HER2) have been essential biomarkers that predict disease prognosis and guide treatment decisions [4, 5] . In the United States, HR-positive, HER2-negative breast cancer constitute more than 70% of cases [6] . Traditionally, endocrine therapy was the first-line treatment for metastatic HR-positive, HER2-negative breast cancers, but the development of resistance towards endocrine therapy would subsequently necessitate chemotherapy [7] . This has led research efforts towards alternative pharmacotherapy targeting cell cycle pathways.",
+            "cite_spans": [
+                {
+                    "start": 180,
+                    "end": 183,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 184,
+                    "end": 186,
+                    "text": "5]",
+                    "ref_id": null
+                },
+                {
+                    "start": 286,
+                    "end": 289,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 516,
+                    "end": 519,
+                    "text": "[7]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Palbociclib is a reversible inhibitor of cyclin-dependent kinases 4 and 6 (CDK4/6) that phosphorylates the retinoblastoma protein b (Rb) and results in cell cycle arrest [8, 9] . In the landmark PALOMA-2 study, the combination of palbociclib and letrozole in advanced breast cancer resulted in a median progression-free survival (PFS) of 24.8 months compared with 14.5 months in the placebo-letrozole group (hazard ratio (HR) 0.58, 95% confidence interval (CI) 0.46 to 0.72, p < 0.001) [10] . Similarly, the PALOMA-3 trial studied the combination of palbociclib and fulvestrant, resulting in a median PFS of 9.5 months compared with 4.6 months in the placebo-fulvestrant group (HR 0.46, 95% CI 0.36-0.59, p < 0.0001) [11] . Due to these substantial benefits, the National Comprehensive Cancer Network (NCCN) recommends CDK4/6 inhibitors as first-line therapy in HR-positive, HER2-negative metastatic breast cancer [12, 13] .",
+            "cite_spans": [
+                {
+                    "start": 170,
+                    "end": 173,
+                    "text": "[8,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 174,
+                    "end": 176,
+                    "text": "9]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 486,
+                    "end": 490,
+                    "text": "[10]",
+                    "ref_id": null
+                },
+                {
+                    "start": 717,
+                    "end": 721,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 914,
+                    "end": 918,
+                    "text": "[12,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 919,
+                    "end": 922,
+                    "text": "13]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Various side effects have been associated with CDK4/6 inhibitors, including hematological toxicities, gastrointestinal effects, and cutaneous adverse reactions [14, 15] . Neutropenia is the most common adverse effect of palbociclib and is managed through dose reductions, dose interruptions, or cycle delays [15] . Unlike systemic chemotherapy, neutropenia associated with palbociclib is rapidly reversible due to its cytostatic rather than cytotoxic effects on neutrophil precursors and rarely results in severe complications [16] . Palbociclib is conventionally dosed orally at 125 mg daily for 21 days, followed by a 7-day break for a total 28-day cycle. A complete blood count is recommended on days 1 and 15 for the first two cycles, and dose modifications are performed based on the manufacturer's monograph recommendations (Figure 1 ) [15] . In real-world settings, oncologists have deviated from conventional monograph dosing recommendations and varied their prescribing strategies in attempts to mitigate neutropenic effects, hoping to maintain palbociclib tolerability and extend overall treatment duration. Recent studies have reported real-world outcomes and described dosing modifications trends [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] . However, to the best of our knowledge, this is the first real-world study assessing the direct impact of palbociclib off-monograph dosing modifications on PFS. With the increased adoption of alternative dosing strategies in practice, the effect on PFS of patients is unknown.",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 164,
+                    "text": "[14,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 165,
+                    "end": 168,
+                    "text": "15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 308,
+                    "end": 312,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 527,
+                    "end": 531,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 842,
+                    "end": 846,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1209,
+                    "end": 1213,
+                    "text": "[17]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1214,
+                    "end": 1218,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1219,
+                    "end": 1223,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1224,
+                    "end": 1228,
+                    "text": "[20]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1229,
+                    "end": 1233,
+                    "text": "[21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1234,
+                    "end": 1238,
+                    "text": "[22]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1239,
+                    "end": 1243,
+                    "text": "[23]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1244,
+                    "end": 1248,
+                    "text": "[24]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1249,
+                    "end": 1253,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1254,
+                    "end": 1258,
+                    "text": "[26]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1259,
+                    "end": 1263,
+                    "text": "[27]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 830,
+                    "end": 839,
+                    "text": "(Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "The aim of our study was to identify unique alternative dosing strategies of palbociclib prescribed by oncologists in a real-world setting and assess their impact on PFS in patients with HR-positive, HER2-negative metastatic breast cancer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This was a retrospective, observational chart review of all patients at Trillium Health Partners (Credit Valley Hospital and Queensway Health Centre) treated with palbociclib in combination with letrozole or fulvestrant with a start date between June 2016 and December 2019 and followed until 30 April 2020. The Carlo Fidani Regional Cancer Centre located at the Credit Valley Hospital serves as a regional cancer centre, and the Queensway Health Centre is an academically affiliated health centre with a daytime ambulatory oncology clinic. Both sites are located within the Greater Toronto Area in Ontario, Canada.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Design, Location, and Ethics"
+        },
+        {
+            "text": "Although palbociclib was introduced in our clinics in 2015 following Health Canada approval, we chose to collect data from June 2016 onwards when alternative dosing strategies were emerging.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Design, Location, and Ethics"
+        },
+        {
+            "text": "This study was approved by the Research Ethics Board at Trillium Health Partners (ID #981) and operated in compliance with the Tri-Council Policy Statement, ICH GCP Guidelines, PHIPA, and Part C, Division 5 of the Health Canada Food and Drug Regulations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Design, Location, and Ethics"
+        },
+        {
+            "text": "All female patients equal to or greater than 18 years of age diagnosed with HR-positive, HER2-negative metastatic breast cancer who received their first dose of palbociclib in combination with letrozole or fulvestrant between June 2016 to December 2018 were eligible. Exclusion criteria included patients who received one cycle or less of palbociclib or received prior CDK inhibitors, everolimus, or PI3K/mTOR pathway inhibitors. Patients who had no measurable metastatic disease, received previous chemotherapy or systemic therapy in the metastatic setting, discontinued palbociclib due to another adverse effect other than neutropenia, or did not continue on the assigned hormonal therapy were excluded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Population"
+        },
+        {
+            "text": "Progression-free survival was defined as the time from palbociclib initiation until discontinuation of treatment due to documented progression of disease, death, or time to the next line of therapy due to disease progression as recorded in clinician notes, whichever occurred first. Progression status was determined through clinical assessment by the oncologist using the RECIST criteria [28, 29] . Neutropenia and thrombocytopenia were graded using the National Cancer Institute Common Terminology Criteria for Adverse Effects (CTCAE) [30] . Dosing strategies were categorized as either on-or off-monograph recommendations, with off-monograph dosing strategies reported descriptively [15] . Deviations from the monograph dosing recommendations are subsequently referred to as alternative dosing strategies.",
+            "cite_spans": [
+                {
+                    "start": 389,
+                    "end": 393,
+                    "text": "[28,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 394,
+                    "end": 397,
+                    "text": "29]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 537,
+                    "end": 541,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 686,
+                    "end": 690,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Definitions"
+        },
+        {
+            "text": "All data were collected from patient charts via Meditech and OPIS software. The collected data include the clinical site of treatment (Credit Valley Hospital or Queensway Health Centre), patient age, previous systemic and adjuvant treatments, prior endocrine therapy received, sites of metastatic disease, and Eastern Cooperative Oncology Group (ECOG) performance status at the time of palbociclib initiation. The information collected pertaining to palbociclib treatment includes date of treatment initiation, documented date of disease progression, death, or initiation of the next line of therapy due to progression, starting dose of palbociclib at treatment initiation, description of alternative dosing modifications where applicable, and total cycles of palbociclib received. The maximum grade of neutropenia was also recorded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Collection and Statistical Analysis"
+        },
+        {
+            "text": "Kaplan-Meier curves were generated using R Statistical Software (v4.0.2; R Core Team 2020, Vienna, Austria) for patients receiving palbociclib in combination with letrozole and fulvestrant [31] . The curves were additionally stratified by patients prescribed monograph dosing recommendations and alternative dosing strategies. The median time in months to PFS with 95% confidence intervals was also reported where sample size allowed.",
+            "cite_spans": [
+                {
+                    "start": 189,
+                    "end": 193,
+                    "text": "[31]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Collection and Statistical Analysis"
+        },
+        {
+            "text": "The number of patients remaining at risk of progression were reported at 6-month, 12-month, 15-month, and 18-month timepoints for patients receiving palbociclib in combination with letrozole and fulvestrant, and stratified according to the alternative dosing strategy prescribed. Differences between subgroups of dosing strategies were reported descriptively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Collection and Statistical Analysis"
+        },
+        {
+            "text": "Between June 2016 to December 2019, a total of 134 patients were identified using OPIS who initiated palbociclib in combination with letrozole or fulvestrant at Trillium Health Partners. After applying exclusion criteria (see Section 2.2), 74 patients were included who initiated palbociclib in combination with letrozole (n = 63) or fulvestrant (n = 11) ( Figure 2 ). Of these, 54 (73.0%) patients received care at the Credit Valley Hospital and the remaining 20 (27.0%) at Queensway Health Centre. The most frequent site of metastatic disease was bone (n = 63, 85.1%; P + L, n = 56, 88.9%; P + F, n = 7, 63.6%), with more than one-third of patients having bone-only disease (n = 27, 36.5%; P + L, n = 25, 39.7%; P + F, n = 2, 18.2%). Other common sites included the lung (n = 18, 24.3%; P + L, n = 14, 22.2%; P + F, n = 4, 36.4%), pleura (n = 13, 17.6%; P + L, n = 11, 17.4%; P + F, n =2, 18.2%), and liver (n = 14, 18.9%; P + L, n = 8, 12.7%; P + F, n = 6, 54.5%).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 357,
+                    "end": 365,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Patient Demographics"
+        },
+        {
+            "text": "While few letrozole patients received prior endocrine therapy, almost half of the fulvestrant patients received previous letrozole treatment (n = 5, 45.5%). Other previous adjuvant endocrine therapies received were tamoxifen (n = 32, 43.2%; P + L, n = 24, 38.1%; P + F, n = 8, 72.7%), anastrozole (n = 9, 12.2%; P + L, n = 7, 11.1%; P + F, n = 2, 18.2%), or exemestane (n = 5, 6.8%; P + L, n = 4, 6.3%; P + F, n = 1, 9.1%).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patient Demographics"
+        },
+        {
+            "text": "The mean cycles of palbociclib received were 17.9 (\u00b18.9); P + L, 18.3 cycles (\u00b18.7); and P + F, 15.4 cycles (\u00b19.9).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patient Demographics"
+        },
+        {
+            "text": "Overall, 33 patients received dosing modifications (44.6%). Of these patients, more received alternative dosing modifications as compared to the monograph dosing recommendations (n = 29, 39.2%; P + L, n = 28, 44.4%; P + F, n = 1, 9.1%).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patient Demographics"
+        },
+        {
+            "text": "Full patient demographics are available in Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 43,
+                    "end": 50,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Patient Demographics"
+        },
+        {
+            "text": "The median PFS for all patients on palbociclib with letrozole was 40.8 months (95% CI 25.6-not estimable) (Figure 3a ). Separate Kaplan-Meier curves are shown to differentiate PFS for letrozole patients who were prescribed palbociclib based on monograph dosing versus alternative dosing strategies (Figure 3b ). The median PFS for these patients receiving monograph dosing of palbociclib with letrozole was 25.6 months (95% CI 16.5-not estimable). Median PFS could not be estimated for patients prescribed palbociclib using alternative dosing strategies with letrozole due to the limited sample size. Similarly, the median PFS for all patients on palbociclib with fulvestrant was 16.97 months (95% CI 8.57-not estimable) (Figure 4a) , and PFS is shown both for patients who were prescribed palbociclib based on monograph dosing and alternative dosing strategies (Figure 4b ). The median PFS for patients receiving fulvestrant with palbociclib prescribed monograph dosing was 14.4 months (95% CI 7.27-not estimable). The median PFS could not be estimated for patients prescribed palbociclib using alternative dosing strategies with fulvestrant due to the limited sample size. During treatment, 66.7% (n = 42) of the patients receiving palbociclib and letrozole experienced grade 3 neutropenia, and 6.3% (n = 4) experienced grade 4 neutropenia (see Table 2 ). For patients receiving palbociclib and fulvestrant, 45.5% (n = 5) of the patients experienced grade 3 neutropenia and 9.1% (n = 1) experienced grade 4 neutropenia ( Table 2) . Table 2 . Highest grade of neutropenia experienced by patients receiving palbociclib in combination with letrozole or fulvestrant.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 106,
+                    "end": 116,
+                    "text": "(Figure 3a",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 298,
+                    "end": 308,
+                    "text": "(Figure 3b",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 721,
+                    "end": 732,
+                    "text": "(Figure 4a)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 862,
+                    "end": 872,
+                    "text": "(Figure 4b",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1347,
+                    "end": 1354,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1523,
+                    "end": 1531,
+                    "text": "Table 2)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1534,
+                    "end": 1541,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Overall Real-World Outcomes"
+        },
+        {
+            "text": "Grade 3 n (%)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Treatment Group"
+        },
+        {
+            "text": "Letrozole (n = 63) 42 (66.7%) 4 (6.3%) 46 (73%) Fulvestrant (n = 11) 5 (45.5%) 1 (9.1%) 6 (54.5%)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Grade 3 and 4 n (%)"
+        },
+        {
+            "text": "Overall, 28 of 63 patients (44.4%) in the letrozole group and 1 of 11 (9.1%) patients in the fulvestrant group received alternative dosing modifications outside of the monograph recommendations. We identified seven unique alternative dosing strategies prescribed by oncologists at Trillium Health Partners (Table 3) . Of these subgroups, the most frequent strategy was prescribing palbociclib for three weeks (21 days), followed by a two-week break as opposed to one week as per the monograph recommendations (n = 8; Table 3 ). This schedule was observed only in patients receiving palbociclib with letrozole. The second most common dosing strategy was a dose reduction of palbociclib, despite only experiencing one episode of grade 3 neutropenia, and this was observed in both letrozole (n = 6) and fulvestrant patients (n = 1) ( Table 3) . For the group of letrozole patients treated with palbociclib prescribed three weeks on, two weeks off (n = 8), the number of patients remaining at risk of progression at 6, 12, 15, and 18 months were 8, 7, 6, and 4, respectively. The number of patients at risk of progression for all other alternative dosing strategies are detailed in Table 3 . Many of these patients neither progressed nor were censored by the 18-month timepoint.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 306,
+                    "end": 315,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 517,
+                    "end": 524,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 831,
+                    "end": 839,
+                    "text": "Table 3)",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 1178,
+                    "end": 1185,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Alternative Dosing Strategies and Progression-Free Survival"
+        },
+        {
+            "text": "Of the eleven patients who received palbociclib in combination with fulvestrant, one patient received an alternative dosing strategy-a dose reduction of palbociclib despite only one episode of grade 3 neutropenia (Table 3 ). This patient continued to be observed even after 18 months of follow-up.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 213,
+                    "end": 221,
+                    "text": "(Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Alternative Dosing Strategies and Progression-Free Survival"
+        },
+        {
+            "text": "The findings of this study contribute to the growing literature of real-world evidence with palbociclib from a Canadian context [17, 18, 32] . To the best of our knowledge, this is one of the first studies of its kind designed to investigate the effect of alternative dosing strategies on progression-free survival.",
+            "cite_spans": [
+                {
+                    "start": 128,
+                    "end": 132,
+                    "text": "[17,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 133,
+                    "end": 136,
+                    "text": "18,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 137,
+                    "end": 140,
+                    "text": "32]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "Our clinic population was comparable to other real-world studies, namely, the IRIS study and its Canadian cohort [17, 21] , as well as the landmark PALOMA randomized trials [10, 11] . Our population was marginally younger (median 57.5 years, range 33-85) compared to the Canadian IRIS study (median 62 years, range 36-88) and the PALOMA trials (PALOMA-2 median 62 years, range 30-89 for the letrozole group and 61 years, range 28-88 for the placebo group; PALOMA-3 median 57 years, range 30-88 for the fulvestrant group and 56 years, range 29-80 for the placebo group). The majority of our patients were clinically stable with low symptom burden reflected by ECOG score of 0 to 1 and mainly bone metastatic disease, which is consistent with the IRIS and PALOMA trials.",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 117,
+                    "text": "[17,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 118,
+                    "end": 121,
+                    "text": "21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 173,
+                    "end": 177,
+                    "text": "[10,",
+                    "ref_id": null
+                },
+                {
+                    "start": 178,
+                    "end": 181,
+                    "text": "11]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "The mean treatment cycles of palbociclib received were 17.9 cycles for all patients, with a longer mean of 18.3 cycles for letrozole and 15.4 cycles for fulvestrant. Although cycle counts do not capture prolongation of therapy due to withholding doses and delayed resumption of therapy, each cycle coarsely reflects a standard 28-day treatment course with periodic variations. Therefore, our follow-up was comparable with other real-world literature [17] .",
+            "cite_spans": [
+                {
+                    "start": 450,
+                    "end": 454,
+                    "text": "[17]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "The median PFS observed in all our patients receiving palbociclib with letrozole (40.8 months, 95% CI 25.6-not estimable) is greater than real-world results such as the Canadian cohort from the IRIS study (20.2 months) and the PALOMA-2 trial (24.8 months, 95% CI 22.1-not estimable) [10, 17] . Notably, the median PFS for our patients receiving letrozole with palbociclib prescribed monograph dosing is more comparable at 25.6 months (95% CI 16.5-not estimable).",
+            "cite_spans": [
+                {
+                    "start": 283,
+                    "end": 287,
+                    "text": "[10,",
+                    "ref_id": null
+                },
+                {
+                    "start": 288,
+                    "end": 291,
+                    "text": "17]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "Similarly, the median PFS observed for all patients receiving palbociclib with fulvestrant was 16.97 months (95% CI 8.57-not estimable), which is greater than other real-world trials [19] and the PALOMA-3 trial (9.5 months, 95% CI 9.2-11.0) [11] . Again, the median PFS for our patients receiving fulvestrant with palbociclib prescribed monograph dosing is more comparable at 14.4 months (95% CI 7.27-not estimable).",
+            "cite_spans": [
+                {
+                    "start": 183,
+                    "end": 187,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "The differences in the observed median PFS for both our letrozole and fulvestrant patients compared to that in the existing literature is likely due to the short observational period and limited sample size. Additional studies within our clinic are required to confirm these findings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "Overall, our results with both letrozole and fulvestrant suggest a substantial benefit of palbociclib on PFS in women with HR-positive, HER2\u2212negative metastatic breast cancer in a Canadian context, as observed in the existing literature [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] .",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 241,
+                    "text": "[17]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 242,
+                    "end": 246,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 247,
+                    "end": 251,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 252,
+                    "end": 256,
+                    "text": "[20]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 262,
+                    "end": 266,
+                    "text": "[22]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 267,
+                    "end": 271,
+                    "text": "[23]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 272,
+                    "end": 276,
+                    "text": "[24]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 277,
+                    "end": 281,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 282,
+                    "end": 286,
+                    "text": "[26]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 287,
+                    "end": 291,
+                    "text": "[27]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study Results in the Context of Existing Literature"
+        },
+        {
+            "text": "A vast majority of patients (29 of the 33; 87.9%) who received dose modifications did so in a manner outside of monograph recommendations. Growing clinician familiarity with CDK4/6 inhibitors over time led to the emergence of alternative dosing strategies, resulting in the shorter observational time period for patients prescribed alternative dosing strategies compared to monograph dosing (Figures 3b and 4b) . The need for dose adjustments has also been commonly observed in other real-world literature and reflects the widespread approach of prescribers to circumvent palbociclib-associated neutropenia [17, [19] [20] [21] 23, 25] .",
+            "cite_spans": [
+                {
+                    "start": 607,
+                    "end": 611,
+                    "text": "[17,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 612,
+                    "end": 616,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 617,
+                    "end": 621,
+                    "text": "[20]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 622,
+                    "end": 626,
+                    "text": "[21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 627,
+                    "end": 630,
+                    "text": "23,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 631,
+                    "end": 634,
+                    "text": "25]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 391,
+                    "end": 410,
+                    "text": "(Figures 3b and 4b)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Implications of Alternative Dosing Strategies on Efficacy and Safety Outcomes"
+        },
+        {
+            "text": "For palbociclib and letrozole specifically, the PFS curves for monograph dosing and alternative dosing strategies appear to diverge early in treatment and remain distinct over time (Figure 3b ). This suggestive benefit in PFS may be the result of alternative dosing strategies mitigating neutropenic toxicities, increasing palbociclib tolerance, and prolonging treatment duration. These findings are exploratory yet novel, and further large-scale studies are warranted to confirm this result.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 181,
+                    "end": 191,
+                    "text": "(Figure 3b",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Implications of Alternative Dosing Strategies on Efficacy and Safety Outcomes"
+        },
+        {
+            "text": "Notably, this study identified seven replicable alternative dosing strategies prescribed by oncologists at Trillium Health Partners. The most common dosing strategy was to prescribe palbociclib with letrozole for three weeks on, two weeks off (n = 8) (Table 3) . Even after 18 months, half of these patients continued to be observed and remained progressionfree in our study. Moreover, a high number of patients continued to be observed by 18 months with all seven alternative dosing strategies.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 251,
+                    "end": 260,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Implications of Alternative Dosing Strategies on Efficacy and Safety Outcomes"
+        },
+        {
+            "text": "For our letrozole patients, more patients experienced grade 3 neutropenia and less grade 4 neutropenia when compared to the PALOMA-2 trial (Table 2 ) [10] . Grade 3 and 4 neutropenia rates for our fulvestrant patients were almost identical to those in PALOMA-3 [11] . Although this may reflect differences between a robust randomized trial and real-world practice, we believe the reduction in the severity of neutropenia may also be attributed to these alternative dosing strategies. For example, by extending the break duration of palbociclib to two weeks, neutrophil counts recover adequately and patients may resume treatment at the same dose level. Thus, this strategy exploits the cytostatic nature of neutropenia caused by CDK4/6 inhibition and is yet another advantage of the mechanisms targeting cell cycle arrest as opposed to traditional chemotherapy [16] .",
+            "cite_spans": [
+                {
+                    "start": 150,
+                    "end": 154,
+                    "text": "[10]",
+                    "ref_id": null
+                },
+                {
+                    "start": 261,
+                    "end": 265,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 861,
+                    "end": 865,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 139,
+                    "end": 147,
+                    "text": "(Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Implications of Alternative Dosing Strategies on Efficacy and Safety Outcomes"
+        },
+        {
+            "text": "We conclude that these alternative dosing strategies identified at our clinics appear to have promising PFS benefits while mitigating potential neutropenia related to palbociclib therapy, prolonging treatment tolerability and overall adherence. Anecdotally, we also observed other benefits such as patients achieving stable doses more quickly, requiring less frequent bloodwork and clinic visits, consequentially improving the cost effectiveness of care and patient satisfaction. Recognizing this is a retrospective study with a short observational period and limited sample size, future large-scale studies are strongly recommended to confirm statistical non-inferiority or superiority of these alternative dosing strategies as compared to standard monograph dosing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications of Alternative Dosing Strategies on Efficacy and Safety Outcomes"
+        },
+        {
+            "text": "We recognize the findings of our study are limited by the small sample size and short follow-up duration. Due to the severity of the COVID-19 pandemic with provincial restrictions implemented in April 2020, we selected an earlier cut-off date of 30 April 2020 to avoid the unknown impact of practice changes related to the pandemic. Such changes include increased remote clinic appointments and decreased frequency of bloodwork. We acknowledge that, in ideal circumstances, a follow-up duration at minimum would have been 24 months for all patients to match the average PFS of 24.8 months as seen in the PALOMA-2 landmark trial.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Limitations of the Study Design"
+        },
+        {
+            "text": "Secondly, our study descriptively compared results with no formal statistical analysis. Despite combining data across our institution, the recent introduction of palbociclib in Canada prevented the feasibility of recruiting a sufficient sample and statistical comparison at this time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Limitations of the Study Design"
+        },
+        {
+            "text": "Finally, the population we studied focused on clinically stable patients with mainly an ECOG score of 0 or 1 and bone-only metastatic disease and excluded patients who received prior chemotherapy. Caution should be taken when extrapolating these results to patients who do not fit these characteristics. Overall, we cannot rule out baseline characteristics such as ECOG performance status or sites of metastases as potential confounding factors due to the limited sample size.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Limitations of the Study Design"
+        },
+        {
+            "text": "At present, alternative prescribing schedules are being explored in phase 2 trials, specifically trialing palbociclib 100 mg in continuous daily dosing [33] and palbociclib given five days on, two days off every seven days [34] . As more efficacy and safety results become available, future research should be directed towards identifying which alternative dosing strategy is best suited for each patient population. Furthermore, additional studies may explore whether comparable PFS is achieved when prescribing alternative dosing strategies in men, or whether these findings may be extrapolated across other CDK 4/6 inhibitors as a class effect.",
+            "cite_spans": [
+                {
+                    "start": 152,
+                    "end": 156,
+                    "text": "[33]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 223,
+                    "end": 227,
+                    "text": "[34]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Ongoing Research Surrounding Alternative Prescribing Schedules"
+        },
+        {
+            "text": "The median progression-free survival for all patients receiving palbociclib and letrozole was 40.8 months (95% CI 25.6-not estimable) and 16.97 months (95% CI 8.57-not estimable) for palbociclib and fulvestrant. We identified seven unique alternative dosing strategies of palbociclib prescribed by oncologists at Trillium Health Partners. The Kaplan-Meier curves for PFS in patients receiving letrozole and palbociclib prescribed alternative dosing strategies appear to diverge from monograph dosing early in the treatment, while the frequency of grade 4 neutropenia was lower in the letrozole patients. Many patients prescribed alternative dosing strategies continued to be observed even by the 18-month timepoint. We conclude that alternative dosing strategies such as prescribing palbociclib for three weeks on, two weeks off may achieve comparable disease control while mitigating neutropenic toxicities, improving treatment tolerability and adherence. Given the small sample size in this study, our findings are exploratory and further large-scale studies are required to confirm these results for future clinical adoption. Informed Consent Statement: Patient consent was waived due to the observational, retrospective design of this study, which did not involve any active therapeutic, clinical, or diagnostic intervention that would have otherwise altered a participant's treatment course from standard of care.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The data presented in this study are available on request from the corresponding author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Availability Statement:"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Cancer Incidence and Mortality Worldwide: Sources, Methods and Major Patterns in GLOBOCAN 2012",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ferlay",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Soerjomataram",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Dikshit",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Eser",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mathers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rebelo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Parkin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Forman",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bray",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Int. J. Cancer",
+            "volume": "136",
+            "issn": "",
+            "pages": "359--386",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ijc.29210"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Global Cancer in Women: Burden and Trends",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Torre",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Islami",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Siegel",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ward",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jemal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Cancer Epidemiol. Biomark. Prev. Publ. Am. Assoc. Cancer Res. Cosponsored Am. Soc. Prev. Oncol",
+            "volume": "26",
+            "issn": "",
+            "pages": "444--457",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/1055-9965.EPI-16-0858"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Molecular Portraits of Human Breast Tumours",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Perou",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "S\u00f8rlie",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Eisen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van De Rijn",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jeffrey",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rees",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Pollack",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Ross",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Johnsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Akslen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Nature",
+            "volume": "406",
+            "issn": "",
+            "pages": "747--752",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/35021093"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Gene Expression Patterns of Breast Carcinomas Distinguish Tumor Subclasses with Clinical Implications",
+            "authors": [],
+            "year": 2001,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "98",
+            "issn": "",
+            "pages": "10869--10874",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.191367098"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "US Incidence of Breast Cancer Subtypes Defined by Joint Hormone Receptor and HER2 Status",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Howlader",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Altekruse",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Clarke",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A G"
+                    ],
+                    "last": "Ries",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cronin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "JNCI J. Natl. Cancer Inst",
+            "volume": "106",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/jnci/dju055"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Endocrine Therapy for Hormone Receptor-Positive Metastatic Breast Cancer",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rugo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rumble",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Macrae",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Barton",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Connolly",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Dickler",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fallowfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fowble",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Ingle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jahanzeb",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Clinical Oncology Guideline. J. Clin. Oncol. Off. J. Am. Soc. Clin. Oncol",
+            "volume": "34",
+            "issn": "",
+            "pages": "3069--3103",
+            "other_ids": {
+                "DOI": [
+                    "10.1200/JCO.2016.67.1487"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "CDK4/6 Inhibition in Early and Metastatic Breast Cancer: A Review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "De Groot",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kuijpers",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Kroep",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Cancer Treat. Rev",
+            "volume": "60",
+            "issn": "",
+            "pages": "130--138",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ctrv.2017.09.003"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Treating Cancer with Selective CDK4/6 Inhibitors",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "O&apos;leary",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Finn",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Turner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nat. Rev. Clin. Oncol",
+            "volume": "13",
+            "issn": "",
+            "pages": "417--430",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nrclinonc.2016.26"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Fulvestrant plus Palbociclib versus Fulvestrant plus Placebo for Treatment of Hormone-Receptor-Positive, HER2-Negative Metastatic Breast Cancer That Progressed on Previous Endocrine Therapy (PALOMA-3): Final Analysis of the Multicentre, Double-Blind, Phase 3 Randomised Controlled Trial",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cristofanilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Turner",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Bondarenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ro",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-A",
+                    "middle": [],
+                    "last": "Im",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Masuda",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Colleoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Demichele",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Loi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Verma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Lancet Oncol",
+            "volume": "17",
+            "issn": "",
+            "pages": "425--439",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1470-2045(15)00613-0"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "NCCN Guidelines Insights: Breast Cancer, Version 1",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gradishar",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Balassanian",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Blair",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Burstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cyr",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Elias",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Farrar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Forero",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Giordano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Natl. Compr. Cancer Netw",
+            "volume": "15",
+            "issn": "",
+            "pages": "433--451",
+            "other_ids": {
+                "DOI": [
+                    "10.6004/jnccn.2017.0044"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Emerging Skin Toxicities in Patients with Breast Cancer Treated with New Cyclin-Dependent Kinase 4/6 Inhibitors: A Systematic Review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Silvestri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cristaudo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Morrone",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Messina",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bennardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Nistic\u00f2",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mariano",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Cameli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Drug Saf",
+            "volume": "44",
+            "issn": "",
+            "pages": "725--732",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40264-021-01071-1"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Pfizer Canada ULC Ibrance Product Monograph",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Clinical Management of Potential Toxicities and Drug Interactions Related to Cyclin-Dependent Kinase 4/6 Inhibitors in Breast Cancer: Practical Considerations and Recommendations",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Spring",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Zangardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Moy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bardia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "22",
+            "issn": "",
+            "pages": "1039--1048",
+            "other_ids": {
+                "DOI": [
+                    "10.1634/theoncologist.2017-0142"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Real-World Palbociclib Use in HR+/HER2-Advanced Breast Cancer in Canada: The IRIS Study",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mycock",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Taylor-Stokes",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Milligan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mitra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Curr. Oncol. Tor. Ont",
+            "volume": "28",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/curroncol28010066"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "First-Line Treatment with a Cyclin-Dependent Kinase 4/6 Inhibitor Plus an Aromatase Inhibitor for Metastatic Breast Cancer in Alberta",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Amaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Batra",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lupichuk",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Curr. Oncol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/curroncol28030209"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Real-World Effectiveness of Palbociclib Versus Clinical Trial Results in Patients with Advanced/Metastatic Breast Cancer That Progressed on Previous Endocrine Therapy",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "B V"
+                    ],
+                    "last": "Bui",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Burgers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Agterof",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Van De Garde",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Breast Cancer Basic Clin. Res",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1178223418823238"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Progression-Free Survival for Real-World Use of Palbociclib in Hormone Receptor-Positive Metastatic Breast Cancer",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wilkie",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Schickli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Berger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lustberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Reinbolt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Noonan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ramaswamy",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sardesai",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Vandeusen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wesolowski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin. Breast Cancer",
+            "volume": "20",
+            "issn": "",
+            "pages": "33--40",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.clbc.2019.06.010"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Treatment Patterns and Clinical Outcomes among Patients Receiving Palbociclib in Combination with an Aromatase Inhibitor or Fulvestrant for HR+/HER2-Negative Advanced/Metastatic Breast Cancer in Real-World Settings in the US: Results from the IRIS Study",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Taylor-Stokes",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mitra",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Waller",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gibson",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Milligan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Iyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Breast Edinb. Scotl",
+            "volume": "43",
+            "issn": "",
+            "pages": "22--27",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.breast.2018.10.009"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Real-World Clinical Outcomes and Toxicity in Metastatic Breast Cancer Patients Treated with Palbociclib and Endocrine Therapy",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Varella",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Eziokwu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kruse",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C F"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Budd",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Abraham",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Montero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Breast Cancer Res. Treat",
+            "volume": "176",
+            "issn": "",
+            "pages": "429--434",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10549-019-05176-1"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Real-World Experience of Palbociclib-Induced Adverse Events and Compliance With Complete Blood Count Monitoring in Women With Hormone Receptor-Positive/HER2-Negative Metastatic Breast Cancer",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Watson",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Deac",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Aslam",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "O&apos;dwyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tierney",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sukor",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kennedy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin. Breast Cancer",
+            "volume": "19",
+            "issn": "",
+            "pages": "186--194",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.clbc.2018.09.002"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Real-World Clinical Data of Palbociclib in Asian Metastatic Breast Cancer Patients: Experiences from Eight Institutions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Won",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Woo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Cancer Res. Treat",
+            "volume": "53",
+            "issn": "",
+            "pages": "409--423",
+            "other_ids": {
+                "DOI": [
+                    "10.4143/crt.2020.451"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "CDK4/6 Inhibitors in HR+/HER2-Advanced/Metastatic Breast Cancer: A Systematic Literature Review of Real-World Evidence Studies",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Harbeck",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bartlett",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Spurden",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hooper",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rosta",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cameron",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mitra",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Future Oncol",
+            "volume": "17",
+            "issn": "",
+            "pages": "2107--2122",
+            "other_ids": {
+                "DOI": [
+                    "10.2217/fon-2020-1264"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Comparative Effectiveness of First-Line Palbociclib plus Letrozole versus Letrozole Alone for HR+/HER2-Metastatic Breast Cancer in US Real-World Clinical Practice",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Demichele",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cristofanilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Brufsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mardekian",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mcroy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Layman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Emir",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Torres",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rugo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Breast Cancer Res",
+            "volume": "2021",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13058-021-01409-8"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Effectiveness and Safety of Palbociclib plus Endocrine Therapy in Hormone Receptor-Positive, HER2-Negative Metastatic Breast Cancer: Real-World Results",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fern\u00e1ndez-Cuerva",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C D R"
+                    ],
+                    "last": "Valencia",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Bermejo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Can. J. Hosp. Pharm",
+            "volume": "2022",
+            "issn": "",
+            "pages": "26--33",
+            "other_ids": {
+                "DOI": [
+                    "10.4212/cjhp.v75i1.3252"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "New Response Evaluation Criteria in Solid Tumours: Revised RECIST Guideline (Version 1.1)",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Eisenhauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Therasse",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bogaerts",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Schwartz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sargent",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ford",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dancey",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Arbuck",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gwyther",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mooney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Eur. J. Cancer",
+            "volume": "45",
+            "issn": "",
+            "pages": "228--247",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejca.2008.10.026"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "RECIST 1.1-Update and Clarification: From the RECIST Committee",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Schwartz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liti\u00e8re",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Vries",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ford",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gwyther",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mandrekar",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shankar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bogaerts",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dancey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Eur. J. Cancer",
+            "volume": "62",
+            "issn": "",
+            "pages": "132--137",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejca.2016.03.081"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Common Terminology Criteria for Adverse Events (CTCAE)",
+            "authors": [],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The R Project for Statistical Computing",
+            "authors": [],
+            "year": 2022,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "POLARIS: A Prospective, Multicenter, Noninterventional Study Assessing Palbociclib in Hormone Receptor-Positive Advanced Breast Cancer",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Tripathy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Blum",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rocque",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bardia",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Karuturi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cappelleri",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Future Oncol",
+            "volume": "16",
+            "issn": "",
+            "pages": "2475--2485",
+            "other_ids": {
+                "DOI": [
+                    "10.2217/fon-2020-0573"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Abstract PD1-10: Randomized Phase II Study Comparing Two Different Schedules of Palbociclib plus Second Line Endocrine Therapy in Women with Estrogen Receptor Positive, HER2 Negative Advanced/Metastatic Breast Cancer: CCTG MA38 (NCT02630693)",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Parulekar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Joy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gelmon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mates",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Desbiens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Clemons",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lemieux",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bartlett",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Whelan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Cancer Res",
+            "volume": "79",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/1538-7445.SABCS18-PD1-10"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Abstract P1-19-13: A Phase II Trial Assessing the Safety of an Alternative Dosing Schedule of Palbociclib (Palbo) in Hormone Receptor Positive (HR+), HER2 Negative (HER2-) Metastatic Breast Cancer (MBC): Alt Dose Palbo",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Krishnamurthy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ademuyiwa",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Suresh",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rigden",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Reardon",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Weilbaecher",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Frith",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Roshal",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tandra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cancer Res",
+            "volume": "80",
+            "issn": "",
+            "pages": "1--19",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/1538-7445.SABCS19-P1-19-13"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Dosing modifications and management of hematologic toxicities, reprinted from the Ibrance (palbociclib) manufacturer product monograph[15].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Study flow diagram for identified and included patients. The mean age of all patients was 57.4 years (\u00b1standard deviation (SD) of 12.6); palbociclib and letrozole (P + L), 57.2 years (\u00b112.5); and palbociclib and fulvestrant (P + F), 59.1 years (\u00b114.0). Patients largely had an ECOG Performance Status of 0 (n = 19, 25.7%; P + L, n = 17, 27.0%; P + F, n = 2, 18.2%) or 1 (n = 49, 66.2%; P + L, n = 41, 65.1%; P + F, n = 8, 72.7%).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Progression-free survival for patients receiving palbociclib with letrozole: (a) The median PFS was 40.8 months (95% CI 25.6-not estimable) for all patients receiving palbociclib with letrozole. (b) The median PFS for patients receiving letrozole with palbociclib prescribed monograph dosing was 25.6 months (95% CI 16.5-not estimable). Median PFS could not be estimated for patients prescribed alternative dosing strategies due to the limited sample size. Note: '+' points along the curves represent censored observations.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Progression-free survival for patients receiving palbociclib with fulvestrant: (a) The median PFS was 16.97 months (95% CI 8.57-not estimable) for all patients receiving palbociclib with fulvestrant. (b) The median PFS for patients receiving fulvestrant with palbociclib prescribed monograph dosing was 14.4 months (95% CI 7.27-not estimable). Median PFS could not be estimated for patients prescribed alternative dosing strategies due to the limited sample size. Note: '+' points along the curves represent censored observations.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Contributions: Conceptualization and methodology, F.F., M.G. and J.K.; data curation F.F.; formal analysis F.F., M.G., J.K. and J.M.; writing-original draft preparation, F.F. and M.G.; writingreview and editing, F.F., M.G., J.K. and J.M.; supervision, M.G. and J.K.; project administration F.F. All authors have read and agreed to the published version of the manuscript. Funding: This research received no external funding. Institutional Review Board Statement: This study was conducted according to the guidelines of the Declaration of Helsinki, and approved by the Research Ethics Board of Trillium Health Partners (protocol ID#981 approved on 9 September 2020) in compliance with the Tri-Council Policy Statement, ICH GCP Guidelines, PHIPA< and Part C, Division 5 of the Health Canada Food and Drug Regulations.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Patient demographics and clinical characteristics.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Clinic patients remaining at risk of progression at 6, 12, 15, and 18 months receiving palbociclib in combination with letrozole or fulvestrant stratified by dosing strategy.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest:"
+        }
+    ]
+}

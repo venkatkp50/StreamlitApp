@@ -1,0 +1,3127 @@
+{
+    "paper_id": "0b0590621d1b2bdab6495bdffa3e053600fff0cc",
+    "metadata": {
+        "title": "Revealed by Inference From Repertoire Data 2",
+        "authors": [
+            {
+                "first": "Aviv",
+                "middle": [],
+                "last": "Omer",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Bar Ilan University",
+                    "location": {
+                        "postCode": "5290002",
+                        "settlement": "Ramat Gan",
+                        "country": "Israel"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ayelet",
+                "middle": [],
+                "last": "Peres",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Bar Ilan University",
+                    "location": {
+                        "postCode": "5290002",
+                        "settlement": "Ramat Gan",
+                        "country": "Israel"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Oscar",
+                "middle": [
+                    "L"
+                ],
+                "last": "Rodriguez",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Louisville",
+                    "location": {
+                        "settlement": "Louisville",
+                        "region": "KY",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Corey",
+                "middle": [
+                    "T"
+                ],
+                "last": "Watson",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Louisville",
+                    "location": {
+                        "settlement": "Louisville",
+                        "region": "KY",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "William",
+                "middle": [],
+                "last": "Lees",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Louisville",
+                    "location": {
+                        "settlement": "Louisville",
+                        "region": "KY",
+                        "country": "United States"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Pazit",
+                "middle": [],
+                "last": "Polak",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Bar Ilan University",
+                    "location": {
+                        "postCode": "5290002",
+                        "settlement": "Ramat Gan",
+                        "country": "Israel"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Andrew",
+                "middle": [
+                    "M"
+                ],
+                "last": "Collins",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of New South Wales",
+                    "location": {
+                        "postCode": "12",
+                        "settlement": "Sydney",
+                        "country": "Australia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Gur",
+                "middle": [],
+                "last": "Yaari",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Bar Ilan University",
+                    "location": {
+                        "postCode": "5290002",
+                        "settlement": "Ramat Gan",
+                        "country": "Israel"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ramat",
+                "middle": [],
+                "last": "Gan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Israel",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "1 Abstract 18 T and B cell repertoires constitute the foundation of adaptive immunity. Adaptive immune 19 receptor repertoire sequencing (AIRR-seq) is a common approach to study immune system 20 dynamics. Understanding the genetic factors influencing the composition and dynamics 21 of these repertoires is of major scientific and clinical importance. The chromosomal loci 22 2 Introduction 39 The immune system's success in fighting countless evolving pathogens depends on a dy-40 namic and diverse set of B and T cell receptors. Due to the longevity of immunological 41 memory, high throughput sequencing of adaptive immune receptor repertoires (AIRR-seq) 42 provides detailed insights into the past and present encounters of the human immune sys-43 tem [21]. It can teach us about fundamental immune processes and reveal dysregulation, 44 with broad implications for biomedicine. B and T cell receptors are assembled during differ-45 entiation of hematopoietic stem cells, by a complex process involving somatic recombination 46 of a large number of germline-encoded V, D, and J gene segments, along with junctional di-47 versity that is added at the boundaries where these segments are joined together [40]. This 48 V(D)J recombination process creates a diverse repertoire of receptors that together with the 49 innate immune system form the first line of defense against pathogens. 50 Genetic factors are expected to influence the structure and functionality of AIRRs [23, 51 52]. However, understanding these genetic effects is confounded by lack of knowledge 52 about the population genetics of the TCR and BCR encoding genomic loci, and the special 53 challenges involved in describing the germline gene set of any individual [9]. The lack of 54 knowledge about these loci is due to difficulties in reliably mapping repetitive elements and 55 undocumented structural variations with short read sequencing. Many TCR genes were 56 reported in the decade after their first discovery [25]. Complete sequences of the TCR 57 encoding loci were reported in 1985 [24, 70, 61], and this led to the development of the TCR 58 encoding genes nomenclature by the ImMunoGeneTics (IMGT) group [30]. Since then, very 59 few allelic variants have been entered into the IMGT reference directories of germline genes. 60 In fact no new allelic variants of the TCR variable region genes have been named this century 61 despite published studies suggesting that the IMGT TCR reference directory may be far from 62 complete [33, 35, 60]. 63",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Until recently, there has been a similar lack of attention paid to the documentation of 64 BCR encoding loci, because the direct genomic sequencing of these loci is also very chal-65 lenging [66, 16]. This changed, both with a method for targeted long-read direct sequenc-66 ing of the BCR heavy chain encoding locus [49], and with the realisation that BCR encod-67 ing undocumented germline alleles and genotypes can be reliably inferred from AIRR-seq 68 data [10, 19, 17, 47], as well as haplotypes [28, 45], and chromosomal deletions within the 69 BCR encoding loci [22]. Even though TCR V(D)J gene rearrangements are generated by 70 analogous mechanisms to BCR rearrangements, to date there is no published data about 71 TCR germline allele inference and structural variation in the TCR encoding loci. Recently, 72",
+            "cite_spans": [
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[10,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 501,
+                    "end": 505,
+                    "text": "[28,",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "there were attempts to extract BCR and TCR encoding allelic information from short read 73 whole genome sequencing data [72, 27, 33] , but these approaches were not validated with 74 targeted sequencing or AIRR-seq, and therefore are subject to criticism regarding the relia-75 bility of the inferences [65, 9]. Hence, to study genomic variations in TCR encoding loci and 76 their relations to the expressed repertoires, there is a need to adapt BCR inference tools to 77 TCR data. 78 In T cells, due to lack of somatic mutations, most studies sequence only a small fraction 79 of the variable region. AIRR-seq data can be generated by methods that differ in the length 80 of their coverage of V(D)J sequences. 5' RACE amplifies the whole V(D)J region from the 81 3' end of the J region to the 5' end of the mRNA molecule. BIOMED-2 primers [62] amplify 82 partial VDJ sequences from the J gene to the framework-2 (FR2) of the V gene, while the 83 Adaptive Biotechnologies [48] approach generates only 87 nucleotides from a fixed posi-84 tion within each TRBJ gene in FR4, and includes the complementary determining region 85 3 (CDR3) and a fraction of the TRBV gene from FR3. As there are TRBV alleles that are 86",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 132,
+                    "text": "33]",
+                    "ref_id": "BIBREF69"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "identical to other TRBV alleles for varying lengths from their 3' ends, it can be impossible to 87 2 unambiguously identify the gene and allele source of these partial V(D)J sequences. Thus, 88 the development of a TRBV genotype inference method requires the thorough documenta-89 tion of any gene pairs that can be impossible to distinguish for a given sequencing approach. 90 Here, we adapt a B cell inference pipeline to TRB AIRR-seq data (Fig. 1a) , to work 91 with these three types of sequencing approaches (Fig. 1b) , and infer undocumented alleles, 92 single and double chromosome deletions, genotypes, and haplotypes. The pipeline was 93 adapted to deal with the gene assignment ambiguity problem, which is especially important 94 in the analysis of data-sets of partial sequences (Fig. 1c-d) . This is an even greater problem 95 in data-sets of partial sequences (Fig. 1c-d) . We applied this pipeline to four of the largest 96 AIRR-seq data-sets currently available and revealed a rich picture of germline variability, and 97 a demonstration of how a single nucleotide polymorphism dramatically affects the composi-98 tion of the whole repertoire. These results may have important implications to TCR based 99 immunotherapy and disease diagnosis. 100 3 3 Results 101 102 To explore allelic variation in the TRBV locus, we inferred the sets of alleles carried for 103 each expressed TRBV gene in many individuals (personal genotypes). For this, we took a 104 multi step approach, in which we first assigned each sequence to the most likely allele(s) 105 using IgBLAST [69] with a reference panel of all the documented TRBV alleles as they 106 appear in IMGT [30]. Then, we used IgDiscover [10] to detect candidate sequences that 107 have not previously been documented in IMGT. Hereafter, we will refer to such sequences 108 as \"undocumented alleles\". Following this step, we re-ran IgBLAST [69] with an extended 109 reference germline sequence set that includes the candidates for undocumented alleles. 110 Finally, we inferred the personal genotype of each gene and individual using TIgGER [20]. To 111 ensure our confidence in the inference of undocumented alleles, we took steps that reduce 112 the influence of sequencing errors. First, we inspected the allele usage within the data-set 113 140",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 442,
+                    "end": 451,
+                    "text": "(Fig. 1a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 513,
+                    "end": 522,
+                    "text": "(Fig. 1b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 790,
+                    "end": 801,
+                    "text": "(Fig. 1c-d)",
+                    "ref_id": null
+                },
+                {
+                    "start": 873,
+                    "end": 884,
+                    "text": "(Fig. 1c-d)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Abstract"
+        },
+        {
+            "text": "Another genomic variation we explored in DS1 is in the 5' UTR. Consensuses of the 5' 141 UTR were constructed as previously described in Mikocziova et al. [38, 39]. We compared 142 the consensus sequences to the upstream regions, that include leader 1 (L-PART1), leader 143 2 (L-PART2), and the upstream leader 1 sequence (Supp . Table 1) , and found 31 undoc-144 umented upstream sequences. The L-PART1 and L-PART2 of 10 of these sequences are 145 absent from IMGT, and the L-PART1 of TRBV10-3*02 is also absent from IMGT (Supp. Ta-146 ble 2). Four out of the 11 L-PART1 absent sequences and six out of the 10 L-PART2 absent 147 sequences were also observed in long-read assemblies (Supp. Table 2 ). Two sequence 148 5 variations were observed in L-PART2, both were associated with TRBV13*01 and were also 149 observed in the long-read assemblies. In L-PART1, we found 15 sequence variations from 14 150 different alleles, 13 of them were also observed in the long-read assemblies. In addition, we 151 found four alternative splicing sequences from three different alleles. The first two are from 152 clusters of TRBV23-1, an ORF gene that lacks a functional splice donor site [36]. As a re-153 sult, the 5'UTR consensus sequence of TRBV23-1*01 contains an intron between L-PART1 154 and L-PART2. Both consensus sequences differ from the previously reported upstream se-155 quence by the number of copies of the TTTTG motif (Supp. Fig. 7) . The other two alternative 156 splicing variants were found upstream of the TRBV7-7 alleles. Here, both the documented 157 492 493 494 4.7 Gene usage comparison 495 The differences in gene usage between groups were analyzed using a two-tailed Mann-496",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 328,
+                    "end": 338,
+                    "text": ". Table 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 530,
+                    "end": 536,
+                    "text": "Ta-146",
+                    "ref_id": null
+                },
+                {
+                    "start": 690,
+                    "end": 697,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1432,
+                    "end": 1439,
+                    "text": "Fig. 7)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "encoding for the variable regions of T and B cell receptors (TCRs and BCRs, respectively) 23 are challenging to decipher due to repetitive elements and undocumented structural variants. 24 To confront this challenge, AIRR-seq-based methods have been developed recently for B 25 cells, enabling genotype and haplotype inference and discovery of undocumented alleles. 26 Applying these methods to AIRR-seq data reveals a plethora of undocumented genomic 27 variations. However, this approach relies on complete coverage of the receptors' variable 28 regions, and most T cell studies sequence only a small fraction of the variable region. Here, 29 we adapted BCR inference methods to full and partial TCR sequences, and identified 38 30 undocumented polymorphisms in TRBV, 15 of them were also observed in genomic data 31 assemblies. Further, we identified 31 undocumented 5' UTR sequences. A subset of these 32 inferences was also observed using independent genomic approaches. We found the two 33 documented TRBD2 alleles to be equally abundant in the population, and show that the 34 single nucleotide that differentiates them is strongly associated with dramatic changes in the 35 expressed repertoire. Our findings expand the knowledge of genomic variation in the TRB 36 (T Cell Receptor Beta) locus and provide a basis for annotation of TCR repertoires for future 37 basic and clinical studies. SNP within a stretch of four or more identical nucleotides were considered, as such a stretch 118 is more likely to arise from a sequencing read artefact. 119 We applied the above approach to four data-sets, spanning different sequencing proto-120 cols and scales (see methods). From DS1, which includes 28 individuals sequenced in full 121 length, we inferred 18 undocumented alleles (Fig. 2a) . Four of the 18 alleles were only seen 122 at very low levels -less than 20% of all identified alleles of those genes, and showed a 123 uni-modal distribution. This did not follow our expected usage distribution (these alleles are 124 marked red in Fig. 2a ). These candidate \"alleles\" therefore potentially result from sequenc- 125 ing errors. Two more undocumented alleles were considered erroneous due to adjacent 126 nucleotide stretches. After discarding these six allele candidates, we were left with 12 un-127 documented alleles. Nine of the alleles were observed in more than a single individual's 128 genotype, which increases our confidence in the inferences. 129 For further validation, we compared the undocumented alleles to three sources (Supp.",
+            "cite_spans": [
+                {
+                    "start": 90,
+                    "end": 92,
+                    "text": "23",
+                    "ref_id": null
+                },
+                {
+                    "start": 186,
+                    "end": 188,
+                    "text": "24",
+                    "ref_id": null
+                },
+                {
+                    "start": 366,
+                    "end": 368,
+                    "text": "26",
+                    "ref_id": null
+                },
+                {
+                    "start": 452,
+                    "end": 454,
+                    "text": "27",
+                    "ref_id": null
+                },
+                {
+                    "start": 545,
+                    "end": 547,
+                    "text": "28",
+                    "ref_id": null
+                },
+                {
+                    "start": 642,
+                    "end": 644,
+                    "text": "29",
+                    "ref_id": null
+                },
+                {
+                    "start": 731,
+                    "end": 733,
+                    "text": "30",
+                    "ref_id": null
+                },
+                {
+                    "start": 816,
+                    "end": 818,
+                    "text": "31",
+                    "ref_id": null
+                },
+                {
+                    "start": 1270,
+                    "end": 1272,
+                    "text": "36",
+                    "ref_id": null
+                },
+                {
+                    "start": 1367,
+                    "end": 1369,
+                    "text": "37",
+                    "ref_id": null
+                },
+                {
+                    "start": 1492,
+                    "end": 1495,
+                    "text": "118",
+                    "ref_id": null
+                },
+                {
+                    "start": 1553,
+                    "end": 1556,
+                    "text": "119",
+                    "ref_id": null
+                },
+                {
+                    "start": 1735,
+                    "end": 1738,
+                    "text": "121",
+                    "ref_id": null
+                },
+                {
+                    "start": 2025,
+                    "end": 2028,
+                    "text": "124",
+                    "ref_id": null
+                },
+                {
+                    "start": 2123,
+                    "end": 2126,
+                    "text": "125",
+                    "ref_id": null
+                },
+                {
+                    "start": 2464,
+                    "end": 2467,
+                    "text": "129",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1783,
+                    "end": 1792,
+                    "text": "(Fig. 2a)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 2043,
+                    "end": 2050,
+                    "text": "Fig. 2a",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "130 Table 5 ). The first, a shotgun sequencing analysis of 286 individuals from Luo et al. [33] , 131 where six out of the 12 undocumented alleles were observed. The second was a pmDb [27] 132 data-set, where we found four out of the 12 undocumented alleles. The third was long-read 133 assemblies of 35 diploid from Ebert et al. [13] which confirmed six out of the 12 undoc-134 umented alleles. All together, two of the 12 undocumented alleles were observed in all 135 sources. 136 In addition to the 18 undocumented alleles, five additional undocumented allelic variants 137 were identified in DS1 that matched known allele references in IMGT, except in their 3' end 138 that is missing in IMGT (Supp. [55]. The 3' ends of the L-PART1 references of the three sequences in IMGT seem to orig-162 inate from the intron, and the 5' splice site of the introns of those three alleles were likely 163 misidentified in IMGT (Supp. Fig. 8 ). We also found three variant consensus sequences 164 associated with TRBV6-2*01/TRBV6-3*01 (Supp. Fig. 7 ), all three were observed in the 165 long-read assemblies for the TRBV6-2*01 annotation. One of them, TRBV6-2*01/TRBV6-166 3*01 2 was also observed in the undocumented allele TRBV6-3*01 G47A. 167 Next, we analyzed DS2, which includes data from 25 individuals. Fifteen undocumented 168 alleles were inferred (Fig. 2a) . Nine of them were also observed in DS1. Five others 169 were present in the short-read whole genome databases, one in Luo et al. [33] and four 170 in pmDB [27] . Two out of those five undocumented alleles were observed in the long-read 171 assemblies of 35 diploid from Ebert et al. [13] . One out of those two undocumented alleles 172 was observed in all sources (Supp. The left panel shows undocumented alleles within the genotype. Each row represents an undocumented allele, each column represents an individual. The Y-axis annotations in red, green, and blue correspond to alleles not following the expected multi-modal distribution, alleles adjacent nucleotide stretches, or both, respectively. The tile colors correspond to an individual's genotype. The right panel shows the fraction of the undocumented allele assignments out of the gene assignments. The x-axis is the fraction and the Y-axis is the same as in (a). Colors correspond to an individual's genotype of the allele. The shapes correspond to the number of gene assignments: a circle indicates that the number of gene assignments is less than 10, a triangle indicates that the number of gene assignments is between 10 and 30, and a square indicates that the number of gene assignments is more than 30. (b) Documented alleles versus the observed documented alleles and the undocumented alleles for each TRBV gene and in each data-set, DS1 and DS2, DS3, and DS4, respectively. The x-axis corresponds to the TRBV genes and the y-axis to the number of alleles. The color corresponds to the allele groups, dark red is the documented alleles, light red is the observed documented alleles, and blue is the observed undocumented alleles. morphisms in four genes (Fig. 3a ). TRBV4-3 and TRBV3-2 are absent from the genotypes 197 of eight individuals, while TRBV11-1 is absent from two individuals, and TRBV30 from one 198 individual (Fig. 3b) . In DS2, a similar data-set to DS1 from the point of view of sequence 199 length of the coding region, double chromosome deletions of TRBV4-3 were identified in 200 eight individuals, TRBV3-2 in two individuals, and TRBV7-3 in one individual (Supp. Fig. 3 ). 201 Interestingly, the individual from DS1 with an inferred TRBV30 deletion (HC10) was shown to 202 be homozygous or hemizygous for the undocumented allele TRBV30*03 T285C. On the as- 203 sumption that this undocumented allele is found at relatively low frequency within the human 204 population, homozygosity is unlikely. However, it is possible that the undocumented allele 205 has escaped more widespread detection because of its low usage level. This low usage 206 is a consequence of TRBV30*03 T285C being a pseudogene, because its coding region 207 includes an in-frame stop codon. HC10 therefore has at least the functional equivalent of a 208 double chromosome deletion. 209 The gene TRBV4-3 and the pseudogene TRBV3-2 were always inferred as being deleted 210 together in DS1 individuals (Fig. 3b) age of TRBV6-2*01/TRBV6-3*01. In individuals who lack TRBV4-3 and TRBV3-2, usage of 217 TRBV6-2*01/TRBV6-3*01 is significantly lower than in the individuals who express TRBV4-3 218 and TRBV3-2 (Supp. Fig. 13 ). It is therefore likely that detection of TRBV6-2*01/TRBV6-219 3*01 in these individuals is entirely a consequence of sequences utilizing TRBV6-3*01. This 220 line of reasoning also allowed us to conclude that an undocumented polymorphism seen in 221 sample HC4 is most likely an allele of TRBV6-3 (TRBV6-3*01 G47A) rather than TRBV6-222 2. The genotypes of all individuals who carry the TRBV6-2*01/TRBV6-3*01 2 or TRBV6-223 3*01 G47A 5'UTR sequences, include TRBV7-2*02. Since the presence of TRBV7-2*02 224 hints at deletion of TRBV6-2, we conclude that the TRBV6-2*01/TRBV6-3*01 2 5'UTR se-225 quences is attributed to TRBV6-3*01. 226 In DS2 individuals, deletion of V4-3 was not always accompanied by evidence of deletion 227 of TRBV3-2. This is likely because DS2 was collected from different sources, and in some 228 data-sets non-productive sequences had been filtered out. Evidence of the presence or 229 absence of the TRBV3-2 pseudogene is therefore lacking. In other samples, analysis of 230 TRBV3-2 usage is compromised by its low usage (Fig. 3a) . TRBV10  TRBV11  TRBV12  TRBV3  TRBV4  TRBV5  TRBV6  TRBV7 a.",
+            "cite_spans": [
+                {
+                    "start": 91,
+                    "end": 95,
+                    "text": "[33]",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 98,
+                    "end": 101,
+                    "text": "131",
+                    "ref_id": null
+                },
+                {
+                    "start": 184,
+                    "end": 188,
+                    "text": "[27]",
+                    "ref_id": null
+                },
+                {
+                    "start": 283,
+                    "end": 286,
+                    "text": "133",
+                    "ref_id": null
+                },
+                {
+                    "start": 330,
+                    "end": 334,
+                    "text": "[13]",
+                    "ref_id": null
+                },
+                {
+                    "start": 479,
+                    "end": 482,
+                    "text": "136",
+                    "ref_id": null
+                },
+                {
+                    "start": 573,
+                    "end": 576,
+                    "text": "137",
+                    "ref_id": null
+                },
+                {
+                    "start": 1232,
+                    "end": 1235,
+                    "text": "167",
+                    "ref_id": null
+                },
+                {
+                    "start": 1411,
+                    "end": 1414,
+                    "text": "169",
+                    "ref_id": null
+                },
+                {
+                    "start": 1488,
+                    "end": 1492,
+                    "text": "[33]",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 1514,
+                    "end": 1518,
+                    "text": "[27]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1642,
+                    "end": 1646,
+                    "text": "[13]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1691,
+                    "end": 1694,
+                    "text": "172",
+                    "ref_id": null
+                },
+                {
+                    "start": 3520,
+                    "end": 3523,
+                    "text": "201",
+                    "ref_id": null
+                },
+                {
+                    "start": 3704,
+                    "end": 3707,
+                    "text": "203",
+                    "ref_id": null
+                },
+                {
+                    "start": 3896,
+                    "end": 3899,
+                    "text": "205",
+                    "ref_id": null
+                },
+                {
+                    "start": 4071,
+                    "end": 4074,
+                    "text": "207",
+                    "ref_id": null
+                },
+                {
+                    "start": 4199,
+                    "end": 4202,
+                    "text": "209",
+                    "ref_id": null
+                },
+                {
+                    "start": 5171,
+                    "end": 5174,
+                    "text": "226",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 4,
+                    "end": 11,
+                    "text": "Table 5",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 925,
+                    "end": 931,
+                    "text": "Fig. 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 1032,
+                    "end": 1038,
+                    "text": "Fig. 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 1347,
+                    "end": 1356,
+                    "text": "(Fig. 2a)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 3080,
+                    "end": 3088,
+                    "text": "(Fig. 3a",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 3250,
+                    "end": 3259,
+                    "text": "(Fig. 3b)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 3510,
+                    "end": 3516,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 4317,
+                    "end": 4326,
+                    "text": "(Fig. 3b)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 4527,
+                    "end": 4534,
+                    "text": "Fig. 13",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 5586,
+                    "end": 5595,
+                    "text": "(Fig. 3a)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 5598,
+                    "end": 5655,
+                    "text": "TRBV10  TRBV11  TRBV12  TRBV3  TRBV4  TRBV5  TRBV6  TRBV7",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "b.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "c.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "d.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "e.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "f. To explore J genotypes, we first checked for evidence of errors by exploring the fraction 283 of all TRBJ1-6 assignments that are assigned to TRBJ1-6*01. This is the most likely error in 284 TRBJ genotyping, as TRBJ1-6*01 is the only TRBJ gene with two known functional alleles. erozygous individuals (Fig. 4d) , indicating that the TRBJ1-6 alleles can be reliably inferred. 287 Of note, in heterozygous individuals TRBJ1-6*02 is considerably more frequently used 288 compared with TRBJ1-6*01 (Fig. 4d) . The average fraction of TRBJ1-6*01 out of all se-289 quences assigned to TRBJ1-6 in heterozygous individuals is \u223c 0.39, which is comparable 290 with the average fraction of TRBD2*01 out of all sequences assigned to TRBD2 in TRBD2 291 heterozygous individuals after correcting for mis-assignments (see above). The similarity 292 between the biased usage of TRBJ1-6 and TRBD2 alleles in heterozygous individuals led 293 us to test the genetic dependency between these loci. 294 The distance between TRBJ1-6 to TRBD2 is relatively short (\u223c6000bp), suggesting 295 these loci could indeed be in linkage disequilibrium (LD). To test this hypothesis, we reviewed 296 Whole Genome Sequencing (WGS) records from the 1000 Genomes Project to profile the 297 region's variants based on TRBD2 haplotype (Supp. Fig. 12) . We observed SNPs with 298 a high LD score between the genes. Further, the WGS haplotypes showed several other 299 SNPs with high LD score scattered in the TRBD-TRBC2 genomic region, which strengthens 300 the association between TRBD2 alleles and other markers in the locus. DS4 was unsuitable 301 to test this hypothesis because DS4 sequences do not include the SNP that differentiates 302 between TRBJ1-6*01 and TRBJ1-6*02. We therefore tested the LD hypothesis using DS3. 303 Only genotypes for which we were confident of the TRBD2 genotype were taken into ac-304 count. These genotypes are shown outside the gray areas of Fig. 4b . Supp. Fig. 9 shows 305 that all of the homozygous TRBD2*01 individuals are also homozygous for TRBJ1-6*02. 306 Also, 50 out of the 52 homozygous TRBJ1-6*01 individuals are homozygous for TRBD2*02. 307",
+            "cite_spans": [
+                {
+                    "start": 378,
+                    "end": 381,
+                    "text": "287",
+                    "ref_id": null
+                },
+                {
+                    "start": 648,
+                    "end": 651,
+                    "text": "290",
+                    "ref_id": null
+                },
+                {
+                    "start": 980,
+                    "end": 983,
+                    "text": "294",
+                    "ref_id": null
+                },
+                {
+                    "start": 1164,
+                    "end": 1167,
+                    "text": "296",
+                    "ref_id": null
+                },
+                {
+                    "start": 1426,
+                    "end": 1429,
+                    "text": "299",
+                    "ref_id": null
+                },
+                {
+                    "start": 1790,
+                    "end": 1793,
+                    "text": "303",
+                    "ref_id": null
+                },
+                {
+                    "start": 2058,
+                    "end": 2061,
+                    "text": "306",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 304,
+                    "end": 313,
+                    "text": "(Fig. 4d)",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 496,
+                    "end": 505,
+                    "text": "(Fig. 4d)",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1305,
+                    "end": 1313,
+                    "text": "Fig. 12)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1941,
+                    "end": 1948,
+                    "text": "Fig. 4b",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1957,
+                    "end": 1963,
+                    "text": "Fig. 9",
+                    "ref_id": null
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "Having confirmed that TRBJ1-6 and TRBD2 are in LD, we next investigated the influence 309 of TRBD2 genotypes on TRBJ/TRBV gene usage in the repertoires. Since such an investi-310 gation requires accurate TRBD2 genotype inference, accurate annotations of TRBJ genes, 311 and a large data-set, DS4 was used. 312 We found that homozygous TRBD2*02 individuals tend to use TRBD2 1.25 times more 313 than homozygous TRBD2*01 individuals (Fig. 5a, TRBJ2 genes normalized independently for each gene family (Fig. 5c) . Surprisingly, we 325 found that TRBJ usage within each family is also affected by the TRBD2 genotype. Since 326 TRBD2 can rearrange only with TRBJ2 genes, we stratified the above distributions into sub-327 sets that include only biologically possible rearrangements. In particular, Fig. 5d shows the 328 conditional probability P(TRBJ2-N|TRBD2) for all the TRBJ2 genes. The biased usage of 329 the TRBJ2 genes observed in Fig. 5c is still present, indicating that TRBD2 relative likelihood 330 to recombine with TRBJ2 genes is strongly affected by the TRBD2 genotype. We then ex-331 plored the TRBJ gene fraction of the sequences assigned to TRBD1 (P(TRBJ1/2-N|TRBD1), 332 Fig. 5e ), and observed that TRBD2 genotype is associated with the TRBD1 likelihoods to re-333 12 arrange with individual TRBJ genes. We further investigated the effect of TRBD2 genotype 334 on the likelihoods to rearrange with individual TRBJ2 genes only, and the effect was mostly 335 eliminated P(TRBJ2-N|TRBD1), Fig. 5f ). 336 The strong biases observed in Fig.5a -e can result from amino acid alterations in the se-337 quence, from non-coding regulatory variants, or from unknown structural variations in the 338 locus that are associated with the different alleles. To discriminate between these options, 339 we repeated the analysis for non-functional sequences that resulted from frame-shifts be-340 tween the TRBV and TRBJ genes. Such non-functional sequences are commonly used to 341 reflect the initial V(D)J usage prior to thymus selection [12, 68, 59]. In these non-functional 342 sequences the biases are pronounced in a similar fashion (Supp. Fig. 11 ). Thus, we con-343 clude that the differences between the TRBD and TRBJ rearrangements stratified by D2 344 genotype are most likely due to structural differences or non-coding regulatory variants be-345 tween the loci rather than due to negative selection. . Table 1 BIOMED-2). In 11 out of 12 individuals with a high genotype infer-362 ence likelihood, the pattern between homozygosity of TRBV7-2*bp02 (see section 4.3) and 363 a deletion inference of TRBV4-3 was apparent (Supp. Fig. 14 and 15 ). Another gene with 364 a link to TRBV7-2 is TRBV6-2/TRBV6-3. Its usage was also highly affected by the geno-365 type of TRBV7-2. The mean usage of TRBV6-2/TRBV6-3 in TRBV7-2*bp02 homozygous 366 individuals was less than half of the mean usage in TRBV7-2*bp01 homozygous individu-367 als. Since we cannot distinguish between TRBV6-2 and TRBV6-3, this observation supports 368 the hypothesis that both TRBV6-2 and TRBV4-3, are not present in haplotypes that carry 369 TRBV7-2*bp02. 370 In addition, the following association patterns between specific alleles and single chromo- TRBV24-1*02 was present on chromosome TRBJ1-6*02, TRBV20-1*02 was also observed. 377 Of note is a haplotype block between the genes TRBV6-4 to TRBV10-1, that was observed 378 in DS1:CI21 on the TRBJ1-6*01 chromosome and in DS2:donor4 on the TRBJ1-6*02 chro-379 mosome (Fig. 6) . q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q TRBJ gene q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q q fraction of TRBJ2 genes out of the sequences that were assigned to TRBD2 and were longer than 7nt. (e) The fraction of TRBJ2 genes out of the sequences that were assigned to TRBD1 and were longer than 7nt. TRBJ genes are shown along the X-axis in the order in which they appear in the genome. (f) The fraction of TRBJ genes out of the sequences that were assigned to TRBD1 and were longer than 7nt. TRBJ genes are shown along the X-axis in the order in which they appear in the genome. The box colors correspond to the TRBD2 genotype. Statistical significance was determined using a Mann-Whitney test and adjusted by Bonferroni correction ( n.s. -not significant, * -p < 0.05, ** -p < 0.01, and ***p < 0.001). TRBV4\u22123  TRBV7\u22122  TRBV6\u22124  TRBV7\u22123  TRBV9  TRBV10\u22121  TRBV11\u22121  TRBV10\u22122  TRBV11\u22122  TRBV6\u22125  TRBV7\u22124  TRBV5\u22124  TRBV6\u22126  TRBV5\u22125  TRBV7\u22126  TRBV5\u22126  TRBV6\u22128  TRBV7\u22127  TRBV6\u22129  TRBV7\u22128  TRBV5\u22128  TRBV7\u22129  TRBV13  TRBV10\u22123  TRBV11\u22123  TRBV12\u22123  TRBV12\u22124  TRBV12\u22125  TRBV14  TRBV15  TRBV16  TRBV18  TRBV19  TRBV20\u22121  TRBV24\u22121  TRBV25\u22121  TRBV27  TRBV28  TRBV29\u22121  TRBV30   TRBV2  TRBV3\u22121  TRBV4\u22121  TRBV5\u22121  TRBV6\u22121  TRBV4\u22122  TRBV6\u22122/TRBV6\u22123  TRBV4\u22123  TRBV7\u22122  TRBV6\u22124  TRBV7\u22123  TRBV9  TRBV10\u22121  TRBV11\u22121  TRBV10\u22122  TRBV11\u22122  TRBV6\u22125  TRBV7\u22124  TRBV5\u22124  TRBV6\u22126  TRBV5\u22125  TRBV7\u22126  TRBV5\u22126  TRBV6\u22128  TRBV7\u22127  TRBV6\u22129  TRBV7\u22128  TRBV5\u22128  TRBV7\u22129  TRBV13  TRBV10\u22123  TRBV11\u22123  TRBV12\u22123  TRBV12\u22124  TRBV12\u22125  TRBV14  TRBV15  TRBV16  TRBV18  TRBV19  TRBV20\u22121  TRBV24\u22121  TRBV25\u22121  TRBV27  TRBV28  TRBV29\u2212 the reliability of this inference, we used the same individuals who were heterozygous for 382 TRBJ1-6. 10 out the 11 individuals from DS1 were heterozygous for TRBD2 and were used 383 for the haplotype inference (Supp. Fig. 16) . Although the number of recombinations of 384 TRBD2 with the TRBV genes is much larger than TRBJ1-6 and could potentially supply a 385 better inference, comparison of the results from both anchor genes shows a different picture. 386 The haplotypes inferred with TRBD2 commonly show occurrences of more than one allele 387 per gene on a single chromosome. This is most likely due to ambiguous assignment of the 388 very short and similar TRBD2 alleles. Hence, although haplotype inference with TRBD2 is 389 feasible, it is likely to be less accurate. Table 9 . The data-sets are described in Table. 2. DS2 and DS4 were 399 downloaded after preprocessing, DS1 was preprocessed according to the preprocessing of 400 Eliyahu et al. [14] , and DS3 was preprocessed using pRESTO [63] according to the example 401 workflow \"Illumina MiSeq 2x250 BCR mRNA\" as follows, (i) paired-ends were assembled, 402 (ii) sequences with low quality (mean Phred quality scores lower than 20) were removed, (iii) 403 the 3' and 5' end primers were cut, (iv) duplicate sequences were removed and collapsed. 405 Sequences of two full-length TRBV genes, TRBV6-2*01 and TRBV6-3*01, are indistinguish-406 able (Fig. 1c) . We therefore refer to them here as TRBV6-2*01/TRBV6-3*01. TRBV se-407 quences amplified using the BIOMED-2 primers are partial, yet it is still possible to differen-408 tiate most of the genes. Only TRBV6-2 and TRBV6-3, as well as TRBV12-3 and TRBV12-4 409 could not be differentiated (Fig. 1c) . Those partial genes are referred to here as TRBV6- and TRBV6-5/TRBV6-6 were indistinguishable. (Fig. 1c) . Although there are few ambiguities in the identification of partial TRBV genes, the unam-424 biguous identification of partial allelic variants is more problematic. Many SNPs that distin-425 guish between alleles are located outside the regions that are generated using BIOMED-2 426 or Adaptive Biotechnologies primers. Thus, all alleles were collapsed into partial allelic vari-427 ation groups, the sequence of each partial allelic variation group was determined to be iden-428 tical to the longest allele sequence reference (out of the identical partial alleles' references). 429 The allele patterns were named here using the following structure: [gene name]*[protocol 430 primers][0-9][0-9]. The BIOMED-2 partial allelic variants were symbolized by bp, and the 431 Adaptive Biotechnologies partial allelic variants were symbolized by ap. For example, the 432 partial sequence of the allele TRBV5-6*01 was collapsed into the partial allelic variation 433 groups TRBV5-6*bp01 and TRBV5-6*ap01 (see Supplementary Table 8 with mismatches in the TRBD segment or with identifiable TRBD sequences shorter than 9 464 nucleotides were filtered out. 465 TIgGER's level of confidence was calculated using a Bayes factor (K) from the poste- 466 rior probability for each model. The larger the K, the greater the certainty in the genotype 467 inference. lk that is used throughout the manuscript indicates the log of K. \u03c3 1 ) and X 2 \u223c N 2 (\u00b5 2 , \u03c3 2 ), the equilibrium point x is determined as follows:",
+            "cite_spans": [
+                {
+                    "start": 266,
+                    "end": 269,
+                    "text": "311",
+                    "ref_id": null
+                },
+                {
+                    "start": 306,
+                    "end": 309,
+                    "text": "312",
+                    "ref_id": null
+                },
+                {
+                    "start": 528,
+                    "end": 531,
+                    "text": "325",
+                    "ref_id": null
+                },
+                {
+                    "start": 1001,
+                    "end": 1004,
+                    "text": "330",
+                    "ref_id": null
+                },
+                {
+                    "start": 1511,
+                    "end": 1514,
+                    "text": "336",
+                    "ref_id": null
+                },
+                {
+                    "start": 1795,
+                    "end": 1798,
+                    "text": "339",
+                    "ref_id": null
+                },
+                {
+                    "start": 3130,
+                    "end": 3133,
+                    "text": "370",
+                    "ref_id": null
+                },
+                {
+                    "start": 3307,
+                    "end": 3310,
+                    "text": "377",
+                    "ref_id": null
+                },
+                {
+                    "start": 6081,
+                    "end": 6084,
+                    "text": "386",
+                    "ref_id": null
+                },
+                {
+                    "start": 6561,
+                    "end": 6564,
+                    "text": "400",
+                    "ref_id": null
+                },
+                {
+                    "start": 6580,
+                    "end": 6584,
+                    "text": "[14]",
+                    "ref_id": null
+                },
+                {
+                    "start": 6744,
+                    "end": 6747,
+                    "text": "402",
+                    "ref_id": null
+                },
+                {
+                    "start": 6935,
+                    "end": 6938,
+                    "text": "405",
+                    "ref_id": null
+                },
+                {
+                    "start": 8029,
+                    "end": 8032,
+                    "text": "429",
+                    "ref_id": null
+                },
+                {
+                    "start": 8122,
+                    "end": 8125,
+                    "text": "430",
+                    "ref_id": null
+                },
+                {
+                    "start": 8594,
+                    "end": 8597,
+                    "text": "465",
+                    "ref_id": null
+                },
+                {
+                    "start": 8683,
+                    "end": 8686,
+                    "text": "466",
+                    "ref_id": null
+                },
+                {
+                    "start": 8780,
+                    "end": 8783,
+                    "text": "467",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 431,
+                    "end": 440,
+                    "text": "(Fig. 5a,",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 499,
+                    "end": 508,
+                    "text": "(Fig. 5c)",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 793,
+                    "end": 800,
+                    "text": "Fig. 5d",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 933,
+                    "end": 940,
+                    "text": "Fig. 5c",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 1184,
+                    "end": 1191,
+                    "text": "Fig. 5e",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 1500,
+                    "end": 1507,
+                    "text": "Fig. 5f",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 1545,
+                    "end": 1551,
+                    "text": "Fig.5a",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 2142,
+                    "end": 2149,
+                    "text": "Fig. 11",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 2409,
+                    "end": 2418,
+                    "text": ". Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 2633,
+                    "end": 2647,
+                    "text": "Fig. 14 and 15",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 3494,
+                    "end": 3502,
+                    "text": "(Fig. 6)",
+                    "ref_id": "FIGREF15"
+                },
+                {
+                    "start": 4839,
+                    "end": 5622,
+                    "text": "TRBV4\u22123  TRBV7\u22122  TRBV6\u22124  TRBV7\u22123  TRBV9  TRBV10\u22121  TRBV11\u22121  TRBV10\u22122  TRBV11\u22122  TRBV6\u22125  TRBV7\u22124  TRBV5\u22124  TRBV6\u22126  TRBV5\u22125  TRBV7\u22126  TRBV5\u22126  TRBV6\u22128  TRBV7\u22127  TRBV6\u22129  TRBV7\u22128  TRBV5\u22128  TRBV7\u22129  TRBV13  TRBV10\u22123  TRBV11\u22123  TRBV12\u22123  TRBV12\u22124  TRBV12\u22125  TRBV14  TRBV15  TRBV16  TRBV18  TRBV19  TRBV20\u22121  TRBV24\u22121  TRBV25\u22121  TRBV27  TRBV28  TRBV29\u22121  TRBV30   TRBV2  TRBV3\u22121  TRBV4\u22121  TRBV5\u22121  TRBV6\u22121  TRBV4\u22122  TRBV6\u22122/TRBV6\u22123  TRBV4\u22123  TRBV7\u22122  TRBV6\u22124  TRBV7\u22123  TRBV9  TRBV10\u22121  TRBV11\u22121  TRBV10\u22122  TRBV11\u22122  TRBV6\u22125  TRBV7\u22124  TRBV5\u22124  TRBV6\u22126  TRBV5\u22125  TRBV7\u22126  TRBV5\u22126  TRBV6\u22128  TRBV7\u22127  TRBV6\u22129  TRBV7\u22128  TRBV5\u22128  TRBV7\u22129  TRBV13  TRBV10\u22123  TRBV11\u22123  TRBV12\u22123  TRBV12\u22124  TRBV12\u22125  TRBV14  TRBV15  TRBV16  TRBV18  TRBV19  TRBV20\u22121  TRBV24\u22121  TRBV25\u22121  TRBV27  TRBV28  TRBV29\u2212",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 5842,
+                    "end": 5850,
+                    "text": "Fig. 16)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 6402,
+                    "end": 6409,
+                    "text": "Table 9",
+                    "ref_id": null
+                },
+                {
+                    "start": 6443,
+                    "end": 6449,
+                    "text": "Table.",
+                    "ref_id": null
+                },
+                {
+                    "start": 7034,
+                    "end": 7043,
+                    "text": "(Fig. 1c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 7331,
+                    "end": 7340,
+                    "text": "(Fig. 1c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 7438,
+                    "end": 7447,
+                    "text": "(Fig. 1c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 8450,
+                    "end": 8471,
+                    "text": "Supplementary Table 8",
+                    "ref_id": null
+                }
+            ],
+            "section": "308"
+        },
+        {
+            "text": "x\u03c3 1 + x\u03c3 2 = \u00b5 1 \u03c3 2 + \u00b5 2 \u03c3 1 491 x = \u00b5 1 \u03c3 2 + \u00b5 2 \u03c3 1 \u03c3 1 + \u03c3 2 4.9 Haplotype inference 508 RAbHIT was used as previously described [45] , with TRBD2 and TRBJ1-6 anchors to infer 509 TCR haplotypes. The epsilon error parameter was adjusted to deal with TRBD2 alignment 510 errors, and was estimated with reference to the frequency distribution of TRBD2*01 align-511 ments amongst all TRBD2-bearing sequences (see Fig. 4 genotypes and haplotypes would be obscured. This study shows, however, that the usage of 596 particular genes in the expressed repertoire appears to be very similar between individuals. 597 The 'shape' of the TCR repertoire may therefore be as predictable as has been found for 598 20 the BCR repertoire [23, 52], reflecting both the carriage of individual genes and the LD that 599 is found within the loci. Conspicuous LD identified in this study includes that of the TRBV4-600 3/TRBV3-2/TRBV6-2 deletion polymorphism and carriage of the TRBV7-2*02 allele, as well 601 as linkage between the TRBD2 and TRBJ1-6 loci. These different haplotypes, in turn, are 602 associated with significant differences in the usage of neighbouring genes. for specific allelic variants of these genes could not be explored. Interestingly, in the present 622 study a previously undocumented polymorphism of TRBV12-4 was identified. 623 The lack of disease associations with TCR genes is likely to be a reflection of our ig-624 norance of individual genetic variation within the TCR loci. SNP coverage of these regions 625 is even sparser than coverage of the BCR gene loci, and therefore real associations will 626 escape detection in genome-wide association studies. Only after thorough exploration of 627 the population genetics of the TCR genes, and of individual variation in the expressed TCR 628 repertoire, will it be possible to determine whether or not these genes have a role in disease 629 susceptibility. Genomic sequencing of TCR genes will contribute to this [32], but the present 630 study demonstrates that it will also be possible to do this efficiently through the analysis of ",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 95,
+                    "text": "508",
+                    "ref_id": null
+                },
+                {
+                    "start": 136,
+                    "end": 140,
+                    "text": "[45]",
+                    "ref_id": null
+                },
+                {
+                    "start": 610,
+                    "end": 613,
+                    "text": "597",
+                    "ref_id": null
+                },
+                {
+                    "start": 1338,
+                    "end": 1341,
+                    "text": "623",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 417,
+                    "end": 423,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Merging indistinguishable genes"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The hardy-weinberg principle",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Andrews",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Nature Education Knowledge",
+            "volume": "3",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Adaptive Biotechnologies. Adaptive biotechnologies datasets",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "2020--2032",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Deconstructing the peptide-mhc specificity of t cell recognition",
+            "authors": [
+                {
+                    "first": "Garcia",
+                    "middle": [],
+                    "last": "Pher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Cell",
+            "volume": "656",
+            "issn": "5",
+            "pages": "1073--1087",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Individual variation in the germline ig gene repertoire inferred from variable region gene 660 rearrangements",
+            "authors": [],
+            "year": 2010,
+            "venue": "The Journal of Immunology",
+            "volume": "184",
+            "issn": "12",
+            "pages": "6986--6992",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The impact of a large and frequent deletion in the human tcr\u03b2 locus on antiviral 664 immunity",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Burrows",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "The Journal of Immunology",
+            "volume": "188",
+            "issn": "6",
+            "pages": "2742--2748",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Determination of gene 666 organization in the human ighv region on single chromosomes",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "No Chimge",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pramanik",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ho",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Genes & Immunity",
+            "volume": "667",
+            "issn": "3",
+            "pages": "186--193",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Medical genetics: a markerfor stevens-669 johnsonsyndrome",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wh Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Nature",
+            "volume": "428",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Germline immunoglobulin genes: disease susceptibility genes hidden in plain sight? 672 Current Opinion in Systems Biology",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "N\u00e9stor V\u00e1zquez Bernat",
+            "authors": [
+                {
+                    "first": "Martin",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corcoran",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ganesh",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Phad",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Production of individualized v gene databases reveals high levels of im-676 munoglobulin genetic diversity",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hedestam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nature Communications",
+            "volume": "7",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "iReceptor: A 679 platform for querying and analyzing antibody/B-cell and T-cell receptor repertoire data 680 across federated repositories",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "M W"
+                    ],
+                    "last": "Breden",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Christley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Cowell",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Breden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Immunol Rev",
+            "volume": "284",
+            "issn": "1",
+            "pages": "24--41",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "A model of somatic hypermutation targeting in mice based on high-684 throughput ig sequencing data",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Kleinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "The Journal of Immunology",
+            "volume": "197",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Haplotype-resolved diverse human genomes and integrated analysis of structural 688 variation",
+            "authors": [],
+            "year": null,
+            "venue": "Science",
+            "volume": "372",
+            "issn": "6537",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Francois Vi-690 gneault, Chris Clouser, Ronen Hope, Assy Nimer, Marius Braun",
+            "authors": [
+                {
+                    "first": "Sivan",
+                    "middle": [],
+                    "last": "Eliyahu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Oz",
+                    "middle": [],
+                    "last": "Sharabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shiri",
+                    "middle": [],
+                    "last": "Elmedvi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Reut",
+                    "middle": [],
+                    "last": "Timor",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ateret",
+                    "middle": [],
+                    "last": "Davidovich",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Antibody repertoire analysis of hepatitis 692 c virus infections identifies immune signatures associated with spontaneous clearance",
+            "authors": [
+                {
+                    "first": "Pazit",
+                    "middle": [],
+                    "last": "Polak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gur",
+                    "middle": [],
+                    "last": "Yaari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Meital",
+                    "middle": [],
+                    "last": "Gal-Tanamy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Frontiers in Immunology",
+            "volume": "693",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Immunosequencing identifies signatures 697 of cytomegalovirus exposure history and hla-mediated effects on the t cell repertoire",
+            "authors": [
+                {
+                    "first": "Mark",
+                    "middle": [],
+                    "last": "Hansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Harlan",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rieder",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Robins",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Genotyping 700 and copy number analysis of immunoglobin heavy chain variable genes using long 701 reads",
+            "authors": [
+                {
+                    "first": "Michael",
+                    "middle": [],
+                    "last": "Ford",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ehsan",
+                    "middle": [],
+                    "last": "Haghshenas",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Corey",
+                    "suffix": ""
+                },
+                {
+                    "first": "S Cenk",
+                    "middle": [],
+                    "last": "Watson",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sahinalp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Iscience",
+            "volume": "23",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Identification of subject-specific immunoglobulin alleles from expressed repertoire se-705 quencing data",
+            "authors": [],
+            "year": 2019,
+            "venue": "Frontiers in immunology",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Identification of subject-specific immunoglobulin alleles from expressed repertoire se-709 quencing data",
+            "authors": [],
+            "year": 2019,
+            "venue": "Frontiers in Immunology",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Auto-711 mated analysis of high-throughput b-cell sequencing data reveals a high frequency of 712 novel immunoglobulin v gene segment alleles",
+            "authors": [
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Gadala-Maria",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gur",
+                    "middle": [],
+                    "last": "Yaari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mohamed",
+                    "middle": [],
+                    "last": "Uduman",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Steven H Kleinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proceedings of the National Academy 713 of Sciences",
+            "volume": "112",
+            "issn": "",
+            "pages": "862--870",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Auto-715 mated analysis of high-throughput b-cell sequencing data reveals a high frequency of 716 novel immunoglobulin v gene segment alleles",
+            "authors": [
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Gadala-Maria",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gur",
+                    "middle": [],
+                    "last": "Yaari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mohamed",
+                    "middle": [],
+                    "last": "Uduman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Steven",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kleinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proceedings of the National Academy",
+            "volume": "717",
+            "issn": "8",
+            "pages": "862--870",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The promise and challenge of high-throughput 720 sequencing of the antibody repertoire",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wardemann",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Stephen R Quake",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nature biotechnology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Mosaic deletion patterns of the human antibody heavy chain gene locus shown by 724 bayesian haplotyping",
+            "authors": [],
+            "year": 2019,
+            "venue": "Nature communications",
+            "volume": "10",
+            "issn": "1",
+            "pages": "1--14",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Naive antibody gene-segment frequencies are heritable and unaltered 728 24 by chronic lymphocyte ablation",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hauser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "729",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Unusual organization and diversity of t-cell re-732 ceptor a-chain genes",
+            "authors": [
+                {
+                    "first": "Haruo",
+                    "middle": [],
+                    "last": "Saito",
+                    "suffix": ""
+                },
+                {
+                    "first": "Susumu",
+                    "middle": [],
+                    "last": "Tonegawa",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "Nature",
+            "volume": "316",
+            "issn": "6031",
+            "pages": "828--832",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Sequence relationships between putative t-cell receptor polypeptides and immunoglob-735 ulins",
+            "authors": [],
+            "year": 1984,
+            "venue": "Nature",
+            "volume": "308",
+            "issn": "5955",
+            "pages": "153--158",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Identifying highly mutated 737 ighd genes in the junctions of rearranged human immunoglobulin heavy chain genes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Katherine",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bruno",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew M",
+                    "middle": [],
+                    "last": "Ga\u00ebta",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Collins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Journal of immunological methods",
+            "volume": "738",
+            "issn": "1-2",
+            "pages": "26--37",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Population matched (pm) germline 741 allelic variants of immunoglobulin (ig) loci: New pmig database to better understand ig 742 repertoire and selection processes in disease and vaccination. bioRxiv",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Reinders",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jacques",
+                    "middle": [
+                        "J M"
+                    ],
+                    "last": "Van Dongen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "The 745 inference of phased haplotypes for the immunoglobulin h chain v region gene loci by 746 analysis of vdj gene rearrangements",
+            "authors": [
+                {
+                    "first": "Andrew",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Boyd",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mark",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fire",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bruno",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tanaka",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ga\u00ebta",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Collins",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "The Journal of Immunology",
+            "volume": "188",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Fredrik Levander, and Mats Ohlin. Parallel antibody germline 749 gene and haplotype analyses support the validity of immunoglobulin germline gene 750 inference and discovery",
+            "authors": [
+                {
+                    "first": "Ufuk",
+                    "middle": [],
+                    "last": "Kirik",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lennart",
+                    "middle": [],
+                    "last": "Greiff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Molecular immunology",
+            "volume": "87",
+            "issn": "",
+            "pages": "12--22",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Imgt, the international immunogenetics database",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Chaume",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Nucleic Acids Research",
+            "volume": "754",
+            "issn": "1",
+            "pages": "209--212",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Single-cell landscape of bronchoalveolar immune cells in patients with covid-19",
+            "authors": [],
+            "year": 2020,
+            "venue": "Medicine",
+            "volume": "758",
+            "issn": "6",
+            "pages": "842--844",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Profiling germline adaptive immune receptor repertoire with gairr suite. bioRxiv",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Worldwide genetic variation of the 763 ighv and trbv immune receptor gene families in humans",
+            "authors": [
+                {
+                    "first": "Shishi",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jane",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Heng",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yun S",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Life Science Alliance",
+            "volume": "2",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "Subtle changes in tcr\u03b1 cdr1 profoundly increase the sensitivity of cd4 t cells",
+            "authors": [
+                {
+                    "first": "Allen",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "Sequence diversity, natural selec-770 tion and linkage disequilibrium in the human t cell receptor alpha/delta locus. Human 771 genetics",
+            "authors": [
+                {
+                    "first": "Qian",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Joshua",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Akey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Deborah",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Nickerson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "119",
+            "issn": "",
+            "pages": "255--266",
+            "other_ids": {}
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "Non-productive human tcr\u03b2 773 chain genes represent v-d-j diversity before selection upon function: insight into biased 774 usage of tcrbd and tcrbj genes and diversity of cdr3 region length",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Burkhard",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dirk",
+                    "middle": [],
+                    "last": "Manfras",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bernhard",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Terjung",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Boehm",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Human Immunology",
+            "volume": "775",
+            "issn": "11",
+            "pages": "1090--1100",
+            "other_ids": {}
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "The 777 mhc locus and genetic susceptibility to autoimmune and infectious diseases",
+            "authors": [
+                {
+                    "first": "Vasiliki",
+                    "middle": [],
+                    "last": "Matzaraki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Vinod",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cisca",
+                    "middle": [],
+                    "last": "Wijmenga",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexandra",
+                    "middle": [],
+                    "last": "Zhernakova",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Genome",
+            "volume": "778",
+            "issn": "1",
+            "pages": "1--21",
+            "other_ids": {}
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "Polymorphisms in human immunoglobulin heavy chain variable genes 781 and their upstream regions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ludvig",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sollid",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nucleic Acids Research",
+            "volume": "48",
+            "issn": "10",
+            "pages": "5499--5510",
+            "other_ids": {}
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "Alternative splice variants and germline polymorphisms in human immunoglob-784 ulin light chain genes. bioRxiv",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sollid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "Janeway's Immunobiology. Garland Science, 8 edition",
+            "authors": [
+                {
+                    "first": "Kenneth",
+                    "middle": [],
+                    "last": "Murphy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "Janeway's immunobiology. Garland science",
+            "authors": [
+                {
+                    "first": "Kenneth",
+                    "middle": [],
+                    "last": "Murphy",
+                    "suffix": ""
+                },
+                {
+                    "first": "Casey",
+                    "middle": [],
+                    "last": "Weaver",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "787",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF83": {
+            "ref_id": "b83",
+            "title": "Vdjbase: an 790 adaptive immune receptor genotype and haplotype database",
+            "authors": [
+                {
+                    "first": "Aviv",
+                    "middle": [],
+                    "last": "Omer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Or",
+                    "middle": [],
+                    "last": "Shemesh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ayelet",
+                    "middle": [],
+                    "last": "Peres",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pazit",
+                    "middle": [],
+                    "last": "Polak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adrian",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shepherd",
+                    "suffix": ""
+                },
+                {
+                    "first": "Corey",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Wat-789 Son",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Boyd",
+                    "suffix": ""
+                },
+                {
+                    "first": "William",
+                    "middle": [],
+                    "last": "Collins",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gur",
+                    "middle": [],
+                    "last": "Lees",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Yaari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nucleic acids research",
+            "volume": "791",
+            "issn": "D1",
+            "pages": "1051--1056",
+            "other_ids": {}
+        },
+        "BIBREF84": {
+            "ref_id": "b84",
+            "title": "Pharmacogenomic advances in the pre-793 diction and prevention of cutaneous idiosyncratic drug reactions",
+            "authors": [
+                {
+                    "first": "R-Y",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R-L",
+                    "middle": [],
+                    "last": "Dao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-I",
+                    "middle": [],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "W-H",
+                    "middle": [],
+                    "last": "Chung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Clinical Pharmacology",
+            "volume": "794",
+            "issn": "1",
+            "pages": "86--97",
+            "other_ids": {}
+        },
+        "BIBREF87": {
+            "ref_id": "b87",
+            "title": "Identification of drug-specific public tcr driving severe cutaneous adverse 798 reactions",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Phillips",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nature communications",
+            "volume": "10",
+            "issn": "1",
+            "pages": "1--13",
+            "other_ids": {}
+        },
+        "BIBREF88": {
+            "ref_id": "b88",
+            "title": "RAbHIT: R Antibody Haplotype 800 Inference Tool",
+            "authors": [
+                {
+                    "first": "Ayelet",
+                    "middle": [],
+                    "last": "Peres",
+                    "suffix": ""
+                },
+                {
+                    "first": "Moriah",
+                    "middle": [],
+                    "last": "Gidoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pazit",
+                    "middle": [],
+                    "last": "Polak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gur",
+                    "middle": [],
+                    "last": "Yaari",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Bioinformatics",
+            "volume": "06",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF89": {
+            "ref_id": "b89",
+            "title": "Consistency of vdj rearrangement and 802 substitution parameters enables accurate b cell receptor sequence annotation",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Duncan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Frederick A Matsen",
+                    "middle": [],
+                    "last": "Ralph",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "PLoS 803 computational biology",
+            "volume": "12",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF90": {
+            "ref_id": "b90",
+            "title": "Per-sample immunoglobulin germline 805 inference from b cell receptor deep sequencing data",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Duncan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Frederick A Matsen",
+                    "middle": [],
+                    "last": "Ralph",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "PLoS computational biology",
+            "volume": "806",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF93": {
+            "ref_id": "b93",
+            "title": "Comprehensive assessment of t-cell receptor beta-chain diversity in 810 alphabeta t cells",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Carlson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Blood",
+            "volume": "114",
+            "issn": "19",
+            "pages": "4099--4107",
+            "other_ids": {
+                "PMCID": [
+                    "PMC2774550"
+                ]
+            }
+        },
+        "BIBREF95": {
+            "ref_id": "b95",
+            "title": "A novel framework for characterizing genomic haplotype diversity in the human im-815 munoglobulin heavy chain locus",
+            "authors": [],
+            "year": 2020,
+            "venue": "Frontiers in Immunology",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF97": {
+            "ref_id": "b97",
+            "title": "Overview of methodologies for t-cell receptor reper-818 toire analysis",
+            "authors": [
+                {
+                    "first": "Andre",
+                    "middle": [],
+                    "last": "Tom H Karlsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Franke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "BMC biotechnology",
+            "volume": "17",
+            "issn": "1",
+            "pages": "1--16",
+            "other_ids": {}
+        },
+        "BIBREF98": {
+            "ref_id": "b98",
+            "title": "The complete 685-kilobase dna sequence 820 of the human\u03b2 t cell receptor locus",
+            "authors": [
+                {
+                    "first": "Lee",
+                    "middle": [],
+                    "last": "Rowen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ben",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Koop",
+                    "suffix": ""
+                },
+                {
+                    "first": "Leroy",
+                    "middle": [],
+                    "last": "Hood",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Science",
+            "volume": "272",
+            "issn": "5269",
+            "pages": "1755--1762",
+            "other_ids": {}
+        },
+        "BIBREF101": {
+            "ref_id": "b101",
+            "title": "Individual heritable differences result in unique cell lymphocyte 824 receptor repertoires of na\u00efve and antigen-experienced cells",
+            "authors": [
+                {
+                    "first": "Cornelia",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Dekker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nature communications",
+            "volume": "825",
+            "issn": "1",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF102": {
+            "ref_id": "b102",
+            "title": "Restric-827 tion fragment length polymorphisms and single germline coding region sequence in 828 vh182, a duplicated gene encoding autoantibody",
+            "authors": [
+                {
+                    "first": "Michel",
+                    "middle": [],
+                    "last": "Daniel B Rubinstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "Keith",
+                    "middle": [],
+                    "last": "Symann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Thierry",
+                    "middle": [],
+                    "last": "Stewart",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Guillaume",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Molecular immunology",
+            "volume": "30",
+            "issn": "4",
+            "pages": "403--829",
+            "other_ids": {}
+        },
+        "BIBREF103": {
+            "ref_id": "b103",
+            "title": "Ethnic differences in vh gene polymorphism",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Eh Sasso",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Buckner",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF112": {
+            "ref_id": "b112",
+            "title": "Evaluation of grch38 and de novo haploid genome assemblies 840 demonstrates the enduring quality of the reference assembly. bioRxiv",
+            "authors": [
+                {
+                    "first": "Deanna",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Church",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF114": {
+            "ref_id": "b114",
+            "title": "Physical map of the 3' region of the human immunoglobulin heavy chain locus: clus-843 tering of autoantibody-related variable segments in one haplotype",
+            "authors": [],
+            "year": 1991,
+            "venue": "The EMBO journal",
+            "volume": "844",
+            "issn": "12",
+            "pages": "3641--3645",
+            "other_ids": {}
+        },
+        "BIBREF116": {
+            "ref_id": "b116",
+            "title": "Polymorphism of the human im-847 munoglobulin variable region segment v1-4.1",
+            "authors": [
+                {
+                    "first": "H\u00e5kan",
+                    "middle": [],
+                    "last": "Str\u00f6m",
+                    "suffix": ""
+                },
+                {
+                    "first": "Inga",
+                    "middle": [],
+                    "last": "Melchers",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tasuku",
+                    "middle": [],
+                    "last": "Honjo",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Immunogenetics",
+            "volume": "38",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF118": {
+            "ref_id": "b118",
+            "title": "T cell receptor 850 next-generation sequencing reveals cancer-associated repertoire metrics and reconsti-851 tution after chemotherapy in patients with hematological and solid tumors. OncoIm-852 munology",
+            "authors": [
+                {
+                    "first": "Lorenzo",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Ben M\u00e4hrle",
+                    "suffix": ""
+                },
+                {
+                    "first": "Katrin",
+                    "middle": [],
+                    "last": "Fanchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mascha",
+                    "middle": [],
+                    "last": "Lamszus",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Binder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "PMID": [
+                    "31646093"
+                ]
+            }
+        },
+        "BIBREF119": {
+            "ref_id": "b119",
+            "title": "Learning the heteroge-854 neous hypermutation landscape of immunoglobulins from high-throughput repertoire 855 data",
+            "authors": [
+                {
+                    "first": "Natanael",
+                    "middle": [],
+                    "last": "Spisak",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Aleksandra",
+                    "suffix": ""
+                },
+                {
+                    "first": "Thierry",
+                    "middle": [],
+                    "last": "Walczak",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mora",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nucleic acids research",
+            "volume": "48",
+            "issn": "19",
+            "pages": "10702--10712",
+            "other_ids": {}
+        },
+        "BIBREF121": {
+            "ref_id": "b121",
+            "title": "Sequence variation and linkage disequilibrium in the human t-858 cell receptor \u03b2 (tcrb) locus",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Deborah",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Nickerson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "The American Journal of Human Genetics",
+            "volume": "69",
+            "issn": "2",
+            "pages": "381--395",
+            "other_ids": {}
+        },
+        "BIBREF123": {
+            "ref_id": "b123",
+            "title": "Organization and sequences of the diversity, joining, and constant region genes of the 862 human t-cell receptor beta chain",
+            "authors": [],
+            "year": 1985,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "863",
+            "issn": "",
+            "pages": "8624--8628",
+            "other_ids": {}
+        },
+        "BIBREF127": {
+            "ref_id": "b127",
+            "title": "Design and stan-868 dardization of pcr primers and protocols for detection of clonal immunoglobulin and t-cell 869 receptor gene recombinations in suspect lymphoproliferations: Report of the biomed-2 870 concerted action bmh4-ct98-3936",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Parreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Morgan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kneba",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Macintyre",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Leukemia",
+            "volume": "17",
+            "issn": "12",
+            "pages": "2257--2317",
+            "other_ids": {}
+        },
+        "BIBREF129": {
+            "ref_id": "b129",
+            "title": "presto: a 873 toolkit for processing high-throughput sequencing raw reads of lymphocyte receptor 874 repertoires",
+            "authors": [
+                {
+                    "first": "David",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "O&apos;connor",
+                    "suffix": ""
+                },
+                {
+                    "first": "Francois",
+                    "middle": [],
+                    "last": "Hafler",
+                    "suffix": ""
+                },
+                {
+                    "first": "Steven",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Vigneault",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Kleinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Bioinformatics",
+            "volume": "30",
+            "issn": "13",
+            "pages": "1930--1932",
+            "other_ids": {}
+        },
+        "BIBREF130": {
+            "ref_id": "b130",
+            "title": "Junctional biases in the naive TCR 877 repertoire control the CTL response to an immunodominant determinant of HSV-1. Im-878 munity",
+            "authors": [
+                {
+                    "first": "Michelle",
+                    "middle": [],
+                    "last": "Morgan E Wallace",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bryden",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Stephen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Richard",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cose",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Coles",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ton",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Schu-876 Macher",
+                    "suffix": ""
+                },
+                {
+                    "first": "Francis R",
+                    "middle": [],
+                    "last": "Brooks",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Carbone",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "",
+            "volume": "12",
+            "issn": "",
+            "pages": "547--556",
+            "other_ids": {}
+        },
+        "BIBREF133": {
+            "ref_id": "b133",
+            "title": "Comment on\" a database of human immune receptor 882 alleles recovered from population sequencing data",
+            "authors": [
+                {
+                    "first": "Collins",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christian",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Busse",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Journal of immunology",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF137": {
+            "ref_id": "b137",
+            "title": "Complete haplotype 887 sequence of the human immunoglobulin heavy-chain variable, diversity, and joining 888 genes and characterization of allelic and copy-number variation",
+            "authors": [
+                {
+                    "first": "Robert",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Richard K Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Evan",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Holt",
+                    "suffix": ""
+                },
+                {
+                    "first": "Felix",
+                    "middle": [],
+                    "last": "Eichler",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Breden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "The American Journal",
+            "volume": "889",
+            "issn": "4",
+            "pages": "530--546",
+            "other_ids": {}
+        },
+        "BIBREF140": {
+            "ref_id": "b140",
+            "title": "Immune 893 cell profiling of covid-19 patients in the recovery stageby single-cell sequencing",
+            "authors": [
+                {
+                    "first": "Depeng",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jiantao",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chuanle",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wei",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hongyang",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Discovery",
+            "volume": "894",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF143": {
+            "ref_id": "b143",
+            "title": "Models of somatic hypermutation targeting and substitution based on 898 synonymous mutations from high-throughput immunoglobulin sequencing data. Fron-899 tiers in Immunology",
+            "authors": [
+                {
+                    "first": "Steven",
+                    "middle": [],
+                    "last": "Kleinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF144": {
+            "ref_id": "b144",
+            "title": "Igblast: an immunoglobulin 901 variable domain sequence analysis tool",
+            "authors": [
+                {
+                    "first": "Jian",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ning",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Thomas",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Madden",
+                    "suffix": ""
+                },
+                {
+                    "first": "James",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ostell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nucleic Acids Research",
+            "volume": "41",
+            "issn": "W1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF146": {
+            "ref_id": "b146",
+            "title": "Organization and sequences of the variable, joining and 905 constant region genes of the human t-cell receptor \u03b1-chain",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Minden",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mak",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "Nature",
+            "volume": "316",
+            "issn": "6031",
+            "pages": "837--906",
+            "other_ids": {}
+        },
+        "BIBREF147": {
+            "ref_id": "b147",
+            "title": "Lymanalyzer: a tool for comprehen-908 sive analysis of next generation sequencing data of t cell receptors and immunoglobu-909 lins",
+            "authors": [
+                {
+                    "first": "Yaxuan",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rhodri",
+                    "middle": [],
+                    "last": "Ceredig",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cathal",
+                    "middle": [],
+                    "last": "Seoighe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nucleic acids research",
+            "volume": "44",
+            "issn": "4",
+            "pages": "31--31",
+            "other_ids": {}
+        },
+        "BIBREF148": {
+            "ref_id": "b148",
+            "title": "A database of human immune re-911 ceptor alleles recovered from population sequencing data",
+            "authors": [
+                {
+                    "first": "Yaxuan",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rhodri",
+                    "middle": [],
+                    "last": "Ceredig",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cathal",
+                    "middle": [],
+                    "last": "Seoighe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "The Journal of Immunology",
+            "volume": "912",
+            "issn": "5",
+            "pages": "2202--2210",
+            "other_ids": {}
+        },
+        "BIBREF149": {
+            "ref_id": "b149",
+            "title": "A genetically determined insertion/deletion 914 related polymorphism in human T cell receptor beta chain (TCRB) includes functional 915 variable gene segments",
+            "authors": [
+                {
+                    "first": "S E",
+                    "middle": [],
+                    "last": "T M Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M A",
+                    "middle": [],
+                    "last": "Whitaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Robinson",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Journal of Experimental Medicine",
+            "volume": "180",
+            "issn": "4",
+            "pages": "1405--1414",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "Overview of TRB genotyping and haplotyping workflow, TCR\u03b2 sequencing technologies, and number of documented alleles. (a) An illustration of the steps for TRB genotyping and haplotyping. (b) An illustration of the three TCR\u03b2 sequencing approaches investigated in this study. (c) Heatmaps of distances between amplified TRBV gene sequences. The three panels corresponds to the sequencing approaches shown above them. Colors correspond to the distances between the genes' as measured by the Hamming distance between the closest two alleles in the sequenced region. (d) Barplot of the unique sequence number per gene in the the studied sequencing approaches. 4 of each study population. We expect the population distribution of usage to be either bi or 114 tri-modal, as a result of usage in individuals who are either heterozygous or homozygous 115 for the allele, as well as individuals who do not carry the allele. Second, we inspected the 116 adjacent nucleotides to each single nucleotide polymorphism (SNP) position. No candidate 117",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Undocumented alleles. (a) Undocumented allele distribution in DS1 and DS2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "D and J genotyping and their association 232 There are only two TRBD genes, TRBD1 and TRBD2, and three reported TRBD sequences 233 (TRBD1, TRBD2*01 and TRBD2*02). Both genes are short and highly similar. TRBD1 234 is 12bp long, and TRBD2 is 16bp long. Each sequence includes a short central motif 235 flanked by G-rich ends. A single G/A SNP that is flanked by runs of Gs differentiates the two 236 TRBD2 alleles. During VDJ rearrangement, the ends of the TRBD segment are trimmed, 237 and P-nucleotides and N-nucleotides are added between the joining TRBV, TRBD and TRBJ 238 genes [41]. Studies of N-nucleotide addition in BCR V(D)J genes shows the process to be 239 biased towards addition of Gs, and addition of homopolymer tracts [26]. The unequivocal 240 identification of germline-encoded nucleotides within the TCR\u03b2 V(D)J junctions is therefore 241 problematic, and this is particularly true for the TRBD gene ends. To reduce errors, we 242 limited the TRBD gene genotype analyses to sequences with a minimum inferred length 243 of 9 bp. Some errors still remained, particularly as a result of TRBD2",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Gene usage and genotypes of the DS1 data-set. (a) TRBV gene usage. The X-axis shows the TRBV genes in the order in which they are found in the genome. The Y-axis shows the frequency of gene usage, colored by gene family. (b) TRBV genotypes. Each row shows an individual genotype, and columns correspond to the different genes in the order in which they are found in the genome. Colors correspond to alleles as indicated in the bottom of the figure. (c) TRBV allele frequency. The X-axis shows the TRBV genes in the order in which they are found in the genome, and the Y-axis shows the frequency of the alleles in the population, colored by allele. Panels (d-f) show analogous plots to (a-c) but for the TRBD and TRBJ genes. Colors in (d) correspond to the TRBD2 genotype of the individual.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "TRBD2 and TRBJ1-6 genotypes and gene usage frequencies. (a) The frequency of TRBD2*01 usage, as a fraction of total D2 usage in 28 individuals from the DS1 data-set. Homozygous and heterozygous genotypes can be inferred from the distribution. (b) The frequency of TRBD2*01 usage, as a fraction of total D2 usage in 313 individuals from the DS3 data-set. Solid vertical lines indicate boundaries between homozygous and heterozygous individuals, as calculated from analysis of DS4 data-set. The genotypes of individuals whose frequencies fall within the shaded regions cannot be inferred with confidence. (c) The frequency of TRBD2*01 usage, as a fraction of Total TRBD2 usage in 786 individuals from the DS4 data-set. Solid vertical lines indicate boundaries between homozygous and heterozygous individuals. (d) The frequency of TRBJ1-6*01 usage, as a fraction of Total TRBJ1-6 usage in 313 individuals from the DS3 data-set.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Haplotype inference reveals association patterns347    From the genotype analysis of DS1, we observed a potential pattern between homozy-348 gousity of TRBV7-2*02 and lack of usage of TRBV4-3 in four individuals. To inspect the 349 link between TRBV7-2*02 and the lack of usage of TRBV4-3, we turned to haplotype infer-350 ence. In an analogous way to the haplotyping methods for B cell receptor data[28, 45], a 351 heterozygous TRBD or TRBJ gene was needed as an anchor for TRBV haplotype inference.352    A suitable candidate is TRBJ1-6, for which 11 individuals from DS1(Fig 3e)and 8 individ-353 uals from DS2 (Supp.Fig. 3) are heterozygous. In 7 individuals who are heterozygous 354 for TRBV7-2, the chromosome that carried the allele 02 of this gene had a both support the association between TRBV7-2 genotype and the us-358 age of TRBV4-3. To strengthen this effect, we surveyed individual genotype and haplotype 359 inferences in DS3. DS3 is a much larger data-set, which covers one of the unique SNPs of 360 TRBV7-2*02, allowing the differentiation of TRBV7-2*02 from the rest of the known TRBV7",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "TRBD and TRBJ usage correspond to TRBD2 genotype. (a) TRBD and TRBJ gene usage in DS4 individuals with different TRBD2 genotypes. TRBJ genes are shown along the X-axis in the order in which they appear in the genome. (b) The TRBJ family usage in DS4 individuals with different TRBD2 genotypes. TRBJ families are shown along the X-axis in the order in which they appear in the genome. (c) TRBJ gene usage normalized to the TRBJ family usage, in DS4 individuals with different TRBD2 genotypes. TRBJ genes are shown along the X-axis in the order in which they appear in the genome. (d) The relative",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "TRBV haplotypes for 19 individuals from DS1 and DS2. The upper and lower panels show the TRBV haplotypes anchored with TRBJ1-6*01 and TRBJ1-6*02, respectively. Each row is an individual's haplotype, and each column is a V gene call. The colors corresponds to the V alleles and the tile annotations correspond to the undocumented allele variations.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": ". An additional data-set of TCRs amplified from single-cells was collected from 395 three different sources. Data came from 14 individuals from a COVID-19 study, and was 396 accessed via iReceptor plus[11, 67]. Additional data came from three individuals from a 397 second COVID-19 study[31]. Data from 8 individuals was provided by 10x Genomics as398    shown in Supp.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "short partial TRBV gene sequences, yet it is still possible to identify most",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "Biotechnologies supplies 87 nucleotides from a fixed position within each TRBJ 415 gene [48]. As a result, the given coverage of the TRBV segment is not constant, because 416 TRBJ genes and junction regions have different lengths. Therefore, the distribution of the 417 first position that the sequences covered of the TRBV reference was investigated. 96% of 418 the sequences cover the first position following the TRBV gene primers (Supp.Fig. 2). The 419 BIOMED-2 protocol did not include primers for TRBV12-2. Thus, we were unable to explore 420 the usage or genetic variation of this gene in DS3.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "they exactly matched the extracted gene sequence.474 4.6 Calculation of the equilibrium point between two normal distribu-475 tions 476 To refine TRBD genotypes, resolving errors resulting from misidentification of TRBD2 genes, 477 it was necessary to identify boundaries to separate individuals who are homozygous at the 478 TRBD2 locus from individuals who are heterozygous at the locus. Frequency distributions 479 of TRBD2*01 usage levels in different data-sets were analysed and the the nature of the 480 distributions within the tri-modal peaks were considered. Boundaries between the peaks 481 were defined as the equilibrium points between the peaks. The equilibrium point between 482 two normal distributions is the point between the two averages of the groups, at which the 483 probability of being in either one of the two groups is equal. For two distributions X 1 \u223c N 1 (\u00b5 1 , 484",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "571It should be emphasised that the deletions reported here reflect an absence of rear-572 rangements in the expressed TCR repertoire. It is possible that the deletions are 'functional'573 rather than structural, perhaps as a result of individual variations in recombination signal 574 sequences (RSS) or other regulatory elements. Certainly in a few individuals, a handful of 575 rearrangements of the genes in question were seen. For example, TRBV4-3 was usually 576 present in about 2% of all rearrangements, but in 8 individuals it was seen at unknown gene duplications were inferred in this study. This is in sharp 579 contrast to observations from studies of the heavy chain IGHV locus. Early RFLP-based 580 analyses pointed to duplications of sequences that came to be known as IGHV3-23 and 581 IGHV1-69 [57, 7, 53, 56, 54]. More recently, the duplication of these two genes and of three 582 other functional genes were confirmed, first by analysis of AIRR-Seq data [5] and then with 583 the publication of a second complete assembly of the IGHV locus in 2013 [66]. 584 It was not possible in this study to explore possible RSS variants, as RSS are lost from 585 the genome during VDJ recombination. On the other hand, 5' RACE data allows for the 586 exploration of variations in the 5' UTR, as has recently been reported from BCR repertoire 587 studies [38, 39]. 31 variants of the 5' UTR sequences of TRBV genes were identified in this 588 study -a similar level of variability to that seen in IGHV studies. The functional implications 589 of this kind of variation is yet to be determined. 590 The documentation of allelic variation and structural variation in the TCR gene loci will be 591 important there are clear consequences of such variation on the expressed TCR repertoire, 592 and if such variation can be shown to have consequences for the disease susceptibility of 593 different individuals. It might be assumed that thymic selection would so powerfully shape 594 individual TCR repertoires that any consequences upon the TCR repertoire of individual 595",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF21": {
+            "text": "Seq data. For this reason, the amplification of full-length TCR V(D)J sequences, or ge-632 nomic long read paired sequencing of the locus, must be strongly encouraged in AIRR-Seq 633 studies. The results presented in this paper expand our knowledge of genomic variations in 634 the TRB locus and lay the ground for more accurate basic and clinical future studies. 635 TCR repertoire generative models such as IGoR do not take germline variation explicitly 636 into account. As seen in Figure 4/5 this has a huge effect on the repertoire. in this study are listed in Supplementary Data. Repertoire analyses of the 639 four data-sets will be published in VDJbase [42] (https://www.vdjbase.org) at the time",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": ". We replaced these IMGT alleles with their longer",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "mented alleles had SNPs in positions within stretches of identical nucleotides. We therefore 179 discarded those 14 unreliable inferences. Two out of the remaining 13 undocumented alle-180 les were independently identified in multiple genotypes, giving us added confidence in these 181 inferences (Supp.Fig. 5). Two alleles were supported by the presence of alleles identified 182 also by Luo et al.[33]. Two alleles were supported also by pmDB[27]. A similar analysis",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "the TRBD locus. However, this is most unlikely according to the Hardy-Weinberg principle,246    which states that in equilibrium, in the absence of selection or other evolutionary pressures, 247 the maximum frequency of heterozygous individuals in a population having two allelic vari-248 ants of the gene is 0.5 [2]. To document TRBD2 misassignments, we examined the fraction 249 of TRBD2*01 assignments amongst all sequences unambiguously assigned to the TRBD2 250 gene. The observed frequencies defined three very distinct groups(Fig. 4a). In the first 251 group, TRBD2*01 assignments accounted for \u223c0.125 of the TRBD2 annotations, in the sec-, and in the third group \u223c0.95. We believe that individuals in the first group 253 are in fact homozygous for TRBD2*02, and all alignments to TRBD2*01 are in error. The 254 second group corresponds to individuals who are heterozygous for TRBD2, and the third 255 group is homozygous for TRBD2*01. The resulting frequency distribution of TRBD2 fits well was tri-modal and very similar to that in DS1(Fig. 4c). The homozygous TRBD2*01 group 262 is centered around a frequency of 0.96. The heterozygous group is centred around 0.45,263    and the homozygous TRBD2*02 group is centered around 0.12. The medians of the three 264 groups were close to their averages(Table.1), thus for the current purpose we could assume 265 that the three data-sets are normally distributed.Table 1: The distribution parameters of the TRBD2*01 fraction according to the TRBD2 genotype group in DS4.We determined that the borders between groups are at the points where the TRBD2*01 267 fraction has an equal probability to be in either one of the two adjacent groups. These 268 equilibrium points were calculated as described in the methods. This resulted in the following 269 borders: the homozygous TRBD2*02 group was composed of 192 samples with a fraction of",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "left panel). TRBD2 can undergo rear-",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF12": {
+            "text": "Data-sets analyzed in this study.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF14": {
+            "text": ") mentioned above. As \u223c12.5% of TRBD2*02 rearrangements mis-align to TRBD2*01, epsilon was set at 0.125 if this allele 513 dominated the TRBD2 alignments. Around 4% of the TRBD2*01 rearrangements mis-align514    to TRBD2*02, and epsilon was therefore set at 0.04 if TRBD2*01 dominated the alignments.Despite the intimate partnership of the Major Histocompatibility Complex (MHC) and TCRs 517 in the recognition of antigenic peptides, it is only the genes of the MHC that are widely recog-518 nised as disease susceptibility genes[37]. The germline genes that rearrange to produce TCRs are rarely accorded much importance. The multiple sets of TCR alpha, beta, gamma 520 and delta V, D and J genes each include many highly similar genes. This may have encour-521 aged the view that the astonishing processes of V(D)J recombination should generate much 522 the same kind of repertoire, no matter what germline genes are available to an individual. Germline TCR genes may also represent a blind-spot to the immunological community, because until recently they were so difficult to document in an individual, let alone in a 525 population. High throughput sequencing studies of the TCR repertoire now provide a new 526 avenue by which germline genes can be easily documented, for this study has shown that 527 tools and techniques that were developed for the analysis of individual BCR genotypes -the 528 sets of BCR encoding genes that are available for rearrangement [22, 19, 28, 46, 17, 29], 529 and individual haplotypes -the available chromosomal sets of IGHV genes [10, 45], can 530 easily be adapted for the analysis of TCR data-sets. Other tools such as LymAnalyzer have 531 been specifically developed for the analysis of TCR data [71]. Studies of BCR genotypes and haplotypes have led to the identification of dozens of new 533 allelic variants of heavy and light chain variable region genes. This approach has not pre-534 viously been extended to investigations of the TCR genes. The focus of most TCR gene 535 studies remains firmly fixed on the CDR3 regions of the genes [50]. Despite their interaction 536 with the MHC, and their documented influences on TCR/MHC/peptide interactions [34, 4], 537 the CDR1 and CDR2 gene sequences and their translated products are still generally ig-538 nored in TCR repertoire studies. Only the 3' ends of the TCR variable gene sequences 539 are included in the amplicons generated by commercial providers of TCR sequencing such 540 as BGI, iRepertoire and Adaptive Biotechnologies. Their sequencing setup allows the un-541 ambiguous identification of most variable region genes that may partially encode the CDR3 542sequences, but they are rarely able to identify TRBV genes at the allele level. In this study,543    we have explored how TCR VDJ sequences of different lengths, generated using differing544    technologies, can contribute to our knowledge of TRB genes and their allelic variants.Our analysis demonstrates that many undocumented V genes remain to be discovered,546    and that even short read sequences can be analysed for the detection of undocumented 547 polymorphisms. It is clear, however, that much additional information is to be gained by548    19 the study of full length VDJ genes. Analysis of genotypes and haplotypes from full-length 549 sequence data-sets of 53 individuals led to the identification of 18 TRBV alleles that are 550 not documented in the IMGT Reference Directory. In contrast, only 13 polymorphisms were 551 identified in truncated sequences generated from 313 individuals using BIOMED-2 primers,552    and just 16 new SNPs were seen in the 786 Adaptive Biotechnology data-sets. This latter 553 result reflects both the very short lengths of the Adaptive Biotechnology sequences, and the 554 general lack of variability in the 3' ends of the TRBV genes.It is interesting to contrast this level of gene discovery with genetic variation amongst the BCR-encoding genes: to date, 64 functional alleles are documented in IMGT for 48 TRBV 557 genes (avg. 1.33 alleles per gene). This compares to 286 functional alleles reported for the 558 55 IGHV genes (avg. 5.2 alleles per gene). This study adds a total of 38 alleles and SNPs 559 to the record of TRBV genes, and it seems likely that many undocumented TRBV alleles 560 remain to be discovered.It appears that there is less structural variation in the TRBV locus than is seen in the 562 IGHV locus. A well-documented 21Kb deletion polymorphism in the TRBV locus, involving TRBV30 -were seen at relatively low frequencies. No deletion polymorphisms involving the 566 TRBD or TRBJ loci were detected. In contrast, numerous relatively common indels are now 567 known in the IGH loci, including one involving 13 consecutive, functional IGHV genes, and 568 one involving 6 consecutive IGHD genes[28, 22]. The seven functional IGHV genes that 569 can be found between IGHV4-28 and IGHV4-34 are rarely all present, or all absent, with at 570 least six recognized indel patterns[22, 49].",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF15": {
+            "text": "The power of AIRR-Seq analysis is well demonstrated by the TRBD gene analysis in604    this study. Although most TCR AIRR-Seq studies have been CDR3-focused, the TRBD 605 genes that provide recurring central motifs to the CDR3 have usually been ignored. This 606 study demonstrates that meaningful analysis of TRBD genes is possible, and that even the607 slight sequence variations between the TRBD genes have consequences for the expressed 608 repertoire. Within large VDJ data-sets, TRBD genes can be identified with confidence, and 609 even the presence of different TRBD2 alleles in an individual's genotype can shape the 610 expressed repertoire in predictable ways. As our knowledge of these and other genes of the TCR loci grows, the way will be open to identify 'departures from the repertoire norm' that 612 may have biological and perhaps even clinical implications. To date, there have been very few associations of TCR genes with disease. One clear example is the genetic predisposition to carbamazepine-induced Stevens-Johnson syndrome 615 (SJS), a severe cutaneous hypersensitivity with high mortality [8]. SJS and other cutaneous 616 hypersensitivity reactions have been linked to HLA types, but these associations have all 617 had a low positive predictive value [43], leading others to explore a possible role for TCR 618 genes. It has now been shown that SJS is associated with the usage by cytotoxic T cells 619 of a public TCR clonotype encoded by the TRBV12-4 and TRBJ2-2 genes [44]. Full length 620 sequences were not reported in the study of Pan and colleagues [44], and so a possible role",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}
