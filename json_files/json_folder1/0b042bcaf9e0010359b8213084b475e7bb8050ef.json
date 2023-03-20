@@ -1,0 +1,3244 @@
+{
+    "paper_id": "0b042bcaf9e0010359b8213084b475e7bb8050ef",
+    "metadata": {
+        "title": "Corresponding author: Elisa Filevich, elisa",
+        "authors": [
+            {
+                "first": "Anthony",
+                "middle": [
+                    "B"
+                ],
+                "last": "Ciston",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Humboldt Universit\u00e4t zu Berlin",
+                    "location": {
+                        "addrLine": "Unter den Linden 6",
+                        "postCode": "10099",
+                        "settlement": "Berlin",
+                        "country": "7 Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Carina",
+                "middle": [],
+                "last": "Forster",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Humboldt Universit\u00e4t zu Berlin",
+                    "location": {
+                        "addrLine": "Unter den Linden 6",
+                        "postCode": "10099",
+                        "settlement": "Berlin",
+                        "country": "7 Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Timothy",
+                "middle": [
+                    "R"
+                ],
+                "last": "Brick",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Pennsylvania State University",
+                    "location": {
+                        "addrLine": "115 15 HHD Building, University Park, PA",
+                        "postCode": "16802",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Simone",
+                "middle": [],
+                "last": "K\u00fchn",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "University Clinic Hamburg-Eppendorf, Clinic and Polyclinic for Psychiatry and Psychotherapy",
+                    "institution": "",
+                    "location": {
+                        "addrLine": "21 Martinistra\u00dfe 52",
+                        "postCode": "20246",
+                        "settlement": "Hamburg",
+                        "country": "Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Julius",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Verrel",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Elisa",
+                "middle": [],
+                "last": "Filevich",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Humboldt Universit\u00e4t zu Berlin",
+                    "location": {
+                        "addrLine": "Unter den Linden 6",
+                        "postCode": "10099",
+                        "settlement": "Berlin",
+                        "country": "7 Germany"
+                    }
+                },
+                "email": "filevich@gmail.com"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "148 30 Introduction, Results and Discussion (excluding figure captions and tables): 5228 31 Methods: 3103 32 2 Abstract 33",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "As humans we communicate important information through fine nuances in our facial expressions, 34 but because conscious motor representations are noisy, we might not be able to report these fine 35 but meaningful movements. Here we measured how much explicit metacognitive information 36 young adults have about their own facial expressions. Participants imitated pictures of themselves 37 making facial expressions and triggered a camera to take a picture of them while doing so. They 38 then rated confidence (how well they thought they imitated each expression). We defined 39 metacognitive access to facial expressions as the relationship between objective performance 40 (how well the two pictures matched) and subjective confidence ratings. Metacognitive access to 41 facial expressions was very poor when we considered all face features indiscriminately. Instead, 42 machine learning analyses revealed that participants rated confidence based on idiosyncratic 43 subsets of features. We conclude that metacognitive access to own facial expressions is partial, 44 and surprisingly limited.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "3",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Introduction",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Precise motor planning and execution can occur without the brain having explicit, conscious 48 access to the exact position of our limbs, or the exact degree of contraction of our muscles 1-3 . For 49 instance, we can simultaneously walk, speak, and gesticulate successfully while concentrating on 50 an argument and not on the movements that enable it, and we are furthermore unable to 51 accurately report the state of each of our muscles. Although explicit access to proprioceptive 52 signals in highly routinary tasks like walking or talking may be unnecessary, it might be beneficial 53 in some other cases. For example, it has been suggested 4 that metacognitive reasoning plays a 54 central role in developing and improving motor expertise: if an experienced actor has a detailed 55 and sophisticated representation of an ideal facial expression to communicate emotion, they are 56 better able to detect and correct deviations from the ideal, leading in turn to more accurate and 57 consistent performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Proprioceptive information about our limbs and their movements is thought to originate primarily 59 from muscle spindles, together with skin receptors, Golgi tendon organs, and joint receptors 5-7 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Artificial vibration of the muscles can lead to activation of the muscle spindles, showing that their 61 activation is sufficient to alter the representation of the body and its position 8,9 . In addition, position 62 estimates have been found to be more precise following active vs. passive movements,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "suggesting that efferent motor commands may either affect or inform proprioceptive 64 representations 10-12 . Finally, proprioceptive information is combined with visual information, when 65 available, to form a multisensory and integrated representation 13-17 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Facial expressions present a particularly important yet poorly studied instance of motor control.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "On the one hand, we communicate a great deal of information with small, nuanced facial 68 movements (on the order of 10 mm or less 18,19 ). On the other hand, we hardly ever see ourselves 69 while making them. Perhaps with the exception of actors or public speakers who practice in front 70 of a mirror (or the increased number of video-conferences during the 2020 SARS-CoV-2 71 pandemic), we do not usually have online visual feedback about our facial muscles. If visual 72 feedback information is indeed critical to give rise to precise motor representations, facial 73 movements might be very poorly represented. Together, the combination of the high social 74 relevance of small movements in our facial muscles and the general lack of visual information 75 about them raise the interesting question: How much do we know about how we look when we 76 communicate with others? 77 4 Previous studies have focused on related questions. One line of research has quantified 78 metacognitive access to others' facial expressions 20-22 and operationalized metacognitive 79 performance as the precision of participants' representations of uncertainty. While our ability to 80 accurately represent both the facial expressions of others and our certainty about them is clearly 81 critical for social interactions, it is equally important to correctly represent and adequately control 82 one's own expressions 23 . In line with this notion, another line of research has aimed at measuring 83 how accurate the representation of one's own face is (under a neutral facial expression). One 84 study 24 found that participants showed a systematic bias to underestimate the length of their faces 85 and slightly overestimate their width, mimicking what has been described for whole bodies 25 and 86 hands 26 . More recently, large inter-individual differences have been described in how accurately 87 healthy young adults can represent their own faces 27 . These previous studies investigated relaxed 88 faces with neutral expressions and captured, in essence, individuals' ability to accurately describe 89 their face, or to discriminate it from the face of another. Importantly, static features of one's face 90 are irrelevant to social interactions, which instead are based on dynamic information. Here, we 91 focussed instead on metacognitive knowledge about how one's face varies when making different 92 expressions. In a pre-registered experiment, we asked participants to imitate expressions shown 93 in pictures of themselves and to rate how well they thought they had imitated the expression. We 94 then measured participants' metacognitive access to their own facial expressions as the 95 correspondence between subjective ratings and an objective measure of performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "First, participants completed a task to measure their metacognitive access to facial expressions 97 (Figure 1) , consisting of three parts. Briefly, in the first part of the task, participants took pictures 98 of themselves imitating different cue images done by actors 28 to generate 32 participant-specific 99 target images. In the second part, participants saw each of the target images on the screen and, 100 while still looking directly into the digital camera, imitated themselves (Figure 1.B) . In both the first 101 and second parts of the task, participants pressed a keyboard key to trigger the digital camera. In 102 the second part only, they additionally rated how confident they were in their own performance on 103 a continuous confidence scale ranging from \"Very unsure\" to \"Very sure\". Finally, in the third part 104 of the task, participants saw the target and response pictures side-by-side and rated them for 105 similarity on a continuous scale with the same labels as for the confidence rating. We quantified 106 the distance between each image pair based on landmarks placed automatically on the pictures. 107 5 108 Figure 1: Experimental Design. (A.) Procedure. Cue stimuli were pictures of facial expressions taken 109 from the MPI Small Facial Expression Database (Cunningham et al., 2005), but the images were replaced 110 here with illustrations, to comply with the journal's data privacy regulations. They were performed by actors 111 and represented non-stereotypical expressions (e.g., \"You lose the way in a foreign city\", see Methods for 112 further details). Participants used these images as cues to produce 32 participant-specific target images.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 100,
+                    "end": 110,
+                    "text": "(Figure 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 487,
+                    "end": 499,
+                    "text": "(Figure 1.B)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Abstract"
+        },
+        {
+            "text": "In part 2, each of the 32 target images (of the participants' faces displaying the expression generated in 114 part 1) was shown eight times (256 trials total). Participants reproduced their own expressions shown in the 115 target pictures, pressed a key while holding their expression, and subsequently rated confidence in their 116 own performance. The experiment was self-paced. Squares around the pictures indicate that they were 117 displayed to participants, whereas pictures without a square frame around them represent pictures collected 118 but not shown back to participants. (Expression drawing: Freepik.com) (B.) Predictions. The correlation 119 between the two variables indicates the precision of the metacognitive representation. Confidence ratings 120 were expected to be negatively correlated with the distance between two images if participants have 121 metacognitive access to the low-level aspects of their facial expressions (solid line). Confidence ratings 122 were not expected to vary with distance if participants had no metacognitive access to their own facial 123 expressions (dashed line.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "124 125 126 Results 127 Confirmatory Analyses 128",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The distance between any pair of images is an inverse measure of performance in the task, as 129 greater distance corresponds to a poorer match between target and response expressions. Thus, 130 we reasoned that participants with precise metacognitive access to their facial expressions would 131 have a sharp relationship between the distance between two images and the confidence ratings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "6"
+        },
+        {
+            "text": "The estimated regression coefficients from a multilevel model of these data should be negative ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "132"
+        },
+        {
+            "text": "Together, these results point to no evidence for a relationship between confidence and distance. 0.14, -0.09], BF10 = 8.01x10 8 , R 2 = 0.26). This shows that the distance we measured carried 171 information relevant for similarity ratings and thus the null effect above cannot be simply due to a 172 poor measure of distance. Additionally, because the same participants rated both confidence and 173 similarity, the differences between the two ratings cannot be attributed to trivial effects such as a 174 poor understanding of the confidence scale or task instructions, or simple lack of motivation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "149"
+        },
+        {
+            "text": "We emphasize that an advantage of similarity as compared to confidence ratings is almost trivial, 176 as participants could see the picture pairs side-by-side to rate similarity, but not confidence.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "8"
+        },
+        {
+            "text": "Hence, we simply take this result as a positive control to ensure that the landmark distances were 178 at all related to similarity, but make no formal comparisons between the two kinds of ratings. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "177"
+        },
+        {
+            "text": "Finally, following our pre-registered plan, we explored relationships between the participant-wise 193 random slopes with Mratio, a measure of visual metacognitive efficiency 30 in a visual task. We 194 found that visual Mratio was consistently above the chance level of 0 (M= 0.75, SD = 0.57, t(38) 195 = 8.15, p < 0.001, BF10 = 1.54x10 7 , estimated with a default Cauchy prior) but that it did not ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "192"
+        },
+        {
+            "text": "Using Pearson correlations, we also measured potential associations between the inter-individual ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "202"
+        },
+        {
+            "text": "Alexithymia score (TAS). We found no evidence for a correlation between metacognitive estimates and 215 these measures of insight.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "214"
+        },
+        {
+            "text": "Exploratory Analyses",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "217"
+        },
+        {
+            "text": "For completeness, we studied the relationship between similarity and confidence ratings. We built 219 a Bayesian linear regression model of participants' confidence ratings, this time including the 10 similarity ratings as a fixed effect and random intercepts for participant and facial expression. We 221 found a clear positive relationship between the two ratings (M = 0.10 \u00b1 0.01, CI = [0.09, 0.12], 222 BF10 = 6.36 x 10 31 , R 2 = 0.21, Figure 5 and Appendix 1- Figure 6 ). This suggests that participants' 223 confidence ratings were not random or noisy but rather that they simply did not reflect the low- Our results so far suggest that participants' confidence ratings did not reflect performance, 237 calculated as the Euclidean distance over all landmarks. In a final set of exploratory analyses, we 238 11 therefore aimed at identifying which pieces of information participants may have taken into 239 account when rating confidence.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 441,
+                    "end": 449,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 466,
+                    "end": 474,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF14"
+                }
+            ],
+            "section": "218"
+        },
+        {
+            "text": "The Euclidean distance between image pairs assigns equal weights to the distances of all facial 241 landmarks and is therefore a relatively naive measure of the difference between expressions, in 242 that it does not allow for potential differences between landmarks in their contribution to different 243 individuals' confidence. However, it is in principle possible that participants attended to different 244 parts of their faces to different degrees and, further, that this differential attention was not participant-wise models provided the maximum flexibility in feature weight assignment and was 254 therefore the harshest test to the conclusion that metacognitive access to facial expressions is 255 poor. We found that these models could in fact predict confidence ratings (median r = 0.26 \u00b1 256 0.15), suggesting that participants did indeed base their confidence ratings on (specific subsets 257 of) landmark distances. Further, because confidence is known to correlate negatively with 258 response times 32,33 , we also asked whether RTs could have served as a proxy for distance. We 259 found that the landmark distances could be used to build ML models that predicted confidence 260 ratings above and beyond RT information alone, confirming that participants did use some of the 261 landmark distance information to rate confidence (see Appendix 1- Figure 4 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1363,
+                    "end": 1371,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "240"
+        },
+        {
+            "text": "To better understand which information participants used to rate their own performance, we ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "262"
+        },
+        {
+            "text": "We asked how much we know about how our faces look when we make expressions. We 295 quantified young, healthy adults' metacognitive access to the low-level details of their own facial 296 expressions. We emphasized to participants that we were focused on the specific shape of the 297 face and activation of the muscles, not on the emotion that the expression conveyed. Surprisingly,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "294"
+        },
+        {
+            "text": "our results suggest that participants were only very poorly able to consistently base their 299 confidence ratings on the complete set of facial features. A priori, this can be interpreted in two 300 (non-exclusive) ways: Participants' confidence ratings may not have strongly relied on the 301 distance between a pair of images because they truly had little or no metacognitive access to their 302 own facial expressions. Alternatively, our measured distance based on the whole set of landmarks 303 may have been a very noisy or even invalid measure of performance. In turn, this alternative 304 explanation would mean that it would be invalid to quantify metacognitive access as we did. To 305 ensure that the second alternative could not fully explain our results, we quantified the relationship 306 between ratings of similarity (provided by the participants themselves while viewing image pairs 307 side-by-side) and distance (based on the whole set of landmarks, combined with equal weights).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "298"
+        },
+        {
+            "text": "Here, we did find a clear relationship between the two, suggesting that the distance between 309 image pairs does carry information that is -to some extent -relevant for similarity. This result 310 also shows that a poor relationship between confidence and distance cannot be attributed simply between similarity and distance suggests that we measured performance adequately.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "308"
+        },
+        {
+            "text": "Beyond the group-level effects, we found variation between individuals. We aimed at explaining ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "322"
+        },
+        {
+            "text": "Further, in another exploratory analysis, we considered that the summary distance measure could 328 not discriminate between landmarks that heavily informed participants' confidence ratings and 329 those that were ignored. In other words, confidence ratings may have depended on performance ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "327"
+        },
+        {
+            "text": "(idiosyncratically) to higher confidence ratings, these ratings were not indicative of performance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "345"
+        },
+        {
+            "text": "If it is indeed the case that young, healthy volunteers have only partial access to their own facial 347 expressions, the obvious question arises: How do we communicate effectively in society?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "346"
+        },
+        {
+            "text": "Drawing from previous literature, we assume that each facial expression carries both low-level 349 information (the specific degree of contraction of each muscle and consequent location of the 350 landmarks) and high-level information (the emotion conveyed) and that these two bits of 351 information are not necessarily correlated. We note that the effects we observed here are valid 352 for the low-level features which we asked participants to concentrate on, but they may not 353 extrapolate to the high-level features of facial expressions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "348"
+        },
+        {
+            "text": "In fact, we suggest a simple model ( Figure 7 ) consistent with our results where these two aspects 355 are dissociated. We obtained the distance using an algorithm that, we assume, has no access to 15 high-level information. Similarity ratings, on the other hand, were made by human observers (the 357 study participants) and therefore were based on both the low-level features (by design, in line with 358 our instructions) and high-level emotional information that is automatically processed 34 , as we 359 discussed above. On the basis of our results, we contend that confidence ratings may be based 360 chiefly on high-level information, as they can only poorly incorporate low-level information. Then, 361 the shared (high-level) information between similarity and confidence ratings explains why they 362 correlate and the dissociation between low-and high-level information, together with their unequal 363 contribution to different ratings, explains why confidence and distance are in turn dissociated. Confidence are depicted as squares). We also consider that the distance we measured is solely based on 369 low-level information that the algorithm has access to. Thus, this simple suggested model (where 370 confidence has accurate access to high-level but poor or partial access to low-level information, and where 371 similarity ratings by human judges are informed by both low-and high-level aspects of each image) is 372 sufficient to explain both, on the one hand, the relationships that we observed between distance and 373 similarity and between similarity and confidence, and on the other hand, the dissociations we found between 374 confidence and distance.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 37,
+                    "end": 45,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF18"
+                }
+            ],
+            "section": "354"
+        },
+        {
+            "text": "The distinction between metacognitive access to high-and low-level features of facial expressions ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "376"
+        },
+        {
+            "text": "(discriminating between the orientation of two faces) but not one that relied on high-level aspects",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "392"
+        },
+        {
+            "text": "(discriminating the expression they communicated). Together, these results support a distinction 394 between metacognitive access to high-and low-level features of seen faces (i.e., others' faces).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "393"
+        },
+        {
+            "text": "We extend these results and suggest that this distinction may also apply to the case of one's own 396 face, even when not seen.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "395"
+        },
+        {
+            "text": "Facial muscles appear to lack muscle spindles 35 the 'true' measure of performance. We argue that this assumption is valid for two main reasons.",
+            "cite_spans": [
+                {
+                    "start": 46,
+                    "end": 48,
+                    "text": "35",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "397"
+        },
+        {
+            "text": "First, we specifically instructed participants to focus on these low-level aspects. Second, we found ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "474"
+        },
+        {
+            "text": "It could be argued that the use of non-canonical expressions limits the ecological validity of our 501 paradigm. However, we note that in this study we were interested in studying a potential 502 disconnect between (zero-order) motor control and (second-order) metacognitive access to it.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "500"
+        },
+        {
+            "text": "Canonical expressions, where a highly trained and stereotypical set of movements correspond, 20 one-to-one, to a specific expression, confound motor control with emotional content and would 505 not have allowed us to make any inferences about which kind of information participants were 506 accessing to make their judgments. For instance, had we asked participants to make a 507 stereotypical \"happy\" expression and then rated confidence, we would not have been able to 508 determine whether their confidence judgments were well calibrated with the emotional state they 509 recreated, the highly-trained motor program, or the end state of the target expression. In short, ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "503"
+        },
+        {
+            "text": "but also suggest that we cannot access them, even when explicitly asked to do so under 517 experimental conditions. This is surprising, we argue, because it sets facial movements apart 518 from other body movements (namely those of arms and fingers), for which, as previous studies 519 have shown, we do have precise metacognitive access to lower-level motor information, even 520 when this information is decoupled from the motor goal. We speculate that this distinction might 521 be related to the lack of concurrent visual information during social interactions, but our 522 speculation will need to be examined in future studies. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "516"
+        },
+        {
+            "text": "The 32 pictures of participants generated in this way served as target images for the second part 583 of the paradigm. Here, participants saw the target images and tried to reproduce their own 584 expressions. Once again, we emphasized that the goal was to match the low-level physical 585 features of the face rather than the emotion conveyed. After each trial, participants used a mouse 586 to rate their confidence (on a visual analog scale) regarding how well they thought that they had the two images. We refer to this measure simply as the distance between two images. We then 678 log-transformed the obtained distances to ensure that the data were normally distributed before 679 fitting the Bayesian mixed models.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "582"
+        },
+        {
+            "text": "Bayesian mixed models",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "680"
+        },
+        {
+            "text": "In our central analysis we computed metacognitive access to facial expressions as the 682 relationship between confidence ratings and performance. We take the distance as an inverse 683 measure of performance: if a response image closely matches the target image, the distance 684 between them will be small. Furthermore, a strong negative relationship between confidence 685 27 ratings and distance will indicate that participants had metacognitive access to their own facial 686 expressions, as they (correctly) provided low ratings in trials where the two images differed the 687 most. Conversely, no relationship between confidence and distance would indicate that 688 participants had no metacognitive access to their own expressions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "681"
+        },
+        {
+            "text": "Because finding no relationships between variables was a plausible outcome from our analyses,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "689"
+        },
+        {
+            "text": "we used Bayesian statistics that, unlike frequentist statistics, provide evidence for the null 691 hypotheses. We analyzed the data using Bayesian mixed models created in Stan (http://mc- Table 1 ). We extracted the participant-wise random slopes using the mixedup package 701 (https://m-clark.github.io/mixedup/).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 188,
+                    "end": 195,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "690"
+        },
+        {
+            "text": "Because, to the best of our knowledge, there was no existing data to inform our priors, we followed 703 recommendations 68 to use heuristics to define prior distributions. We built the prior for the slope 704 between ratings and distance based on the ratio-of-scales heuristic: we found that the range of 705 (log-transformed) distances was approximately 3 a.u. (arbitrary units), whereas the range of 706 confidence ratings is 1 point (minimum: 0). Therefore we used a normal prior centered on 0 with 707 an SD = \u2153 (which corresponds to the ratio between confidence range and distance range) for the 708 slope parameter. To find a prior for the model intercept we followed the logic behind the room-to-709 move heuristic. Note that raw distances ranged between [131.36 -2493.78] a.u., hence the 710 expected rating at 0 distance (i.e., perfect performance) can be well approximated by the 711 expected rating at distance = 1, which corresponds to the intercept in a linear model with log-712 transformed distances. We reasoned that a participant with maximum metacognitive performance 713 would consistently rate their confidence as 1, when the distance between the two images was 0.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "702"
+        },
+        {
+            "text": "Because we realistically expect participants to have (at most) less than perfect metacognitive 715 access to their own expressions, we centered the prior at 0.8 with an SD = 0.5. Following a similar 716 logic, we set the prior slope between the two ratings to be centered at 0 with SD = 1, and an 28 intercept of 0 with an SD = \u00bd. For all models, we report the estimate, its associated error mean, 718 the 95% credibility interval (CI), and the BF10, estimated using the bayestestR package 69 , to 719 compare each model against its null counterpart, containing the same random effects structure 720 but not the fixed effect of interest. We also include the posterior draws for each participant in The (mean) similarity ratings are inversely related to the distance between two images meanSimilarity ~ logDistance + (1+ logDistance | participantID) + (1 | expressionID) We computed metacognitive access to faces using only linear regression and estimated the 729 correlation with visual Mratios, deviating from the pre-registered plan. We initially planned to also 730 calculate the area under a type-2 ROC curve (AUROC2) by arbitrarily assuming that first-order 29 performance on the Faces task was at 70% accuracy and by classifying trials with distances 732 above the corresponding threshold as \"incorrect\". This analysis had the advantage that it would 733 have allowed us to correlate metacognitive performance measured on the same scale for both 734 tasks (Faces and Visual), but we later reasoned that it would make the results less easily 735 interpretable while not adding explanatory power and therefore decided to omit it.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "714"
+        },
+        {
+            "text": "Machine learning models 737 Using Python v3, and scikit-learn, we created a separate model for each subject wherein, first, 738 each landmark distance was determined by (x,y) coordinate differences between the two images.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "736"
+        },
+        {
+            "text": "We further decomposed the differences into four zero-or positive features (one for each cardinal 740 direction). This allowed different directions of movement to be weighted differently by the model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "739"
+        },
+        {
+            "text": "We normalized each feature by dividing it by its median. Then, we applied dimensionality (2)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "741"
+        },
+        {
+            "text": "Where wf denotes the weights for each feature f, which is in turn the difference between response ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "754"
+        },
+        {
+            "text": "To evaluate whether the landmarks informed confidence ratings above and beyond RT, we report the methods and results as supporting information, that serve as a conceptual replication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "815"
+        },
+        {
+            "text": "The methods for the pilot experiment were largely similar to those of the main experiment. We 845 only describe here the differences between the two.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "844"
+        },
+        {
+            "text": "Participants 847",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "846"
+        },
+        {
+            "text": "Thirteen healthy participants took part in the experiment after giving informed consent (seven 848 female, mean \u00b1 SD: 24 \u00b1 3 years). One participant was excluded from the analysis because four ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "846"
+        },
+        {
+            "text": "After each trial, participants rated their confidence (on a scale from 1 to 6) regarding how well 867 they thought that they had imitated their own previous expression. To make the task intuitive, we 868 kept the mapping of the scale consistent with the German education system, where the best grade 869 is a 1.0. We then reversed the ratings for further analyses, so that a rating of 6 corresponds to 870 the highest confidence. In all cases, we recorded each picture taken, the response time (RT, 871 measured as the time between image onset and key press) and participants' confidence ratings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "866"
+        },
+        {
+            "text": "Participants saw each of their 30 target expressions repeated 8 times in random order, for a total 873 of 240 trials. We only revealed that they would have to reproduce their own expressions after the target images for each of the participants to 99 pairs of (x,y) coordinates. We then did the same",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "872"
+        },
+        {
+            "text": "Procrustes rigid-alignment as described in the main text, with 5 reference points instead of 3 (the 884 inner and outer corners of each eye and a point just below the nose). We did not use a mean 885 reference face, but instead minimized the distance of each response picture to its corresponding 886 target picture.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "38"
+        },
+        {
+            "text": "Similarity ratings by external judges",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "887"
+        },
+        {
+            "text": "Unlike what was the case in the main experiment, here four independent judges (student research 889 assistants) rated the image pairs for similarity on a scale from 1 to 6, exactly like the one the 890 participants had used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "888"
+        },
+        {
+            "text": "Data processing and analysis",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "891"
+        },
+        {
+            "text": "Here as well we followed recommendations 68 to use heuristics to define prior distributions. We 893 built the prior for the slope based on the ratio-of-scales heuristic: we found that the range of (log- ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "892"
+        },
+        {
+            "text": "To find a prior for the model intercept (the expected rating at 0 distance, i.e., perfect performance),",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "897"
+        },
+        {
+            "text": "we followed the logic behind the room-to-move heuristic. We reasoned that a participant with 899 maximum metacognitive performance would consistently rate their confidence as 6, when the 900 distance between the two images was 0. Because we realistically expect participants to have (at 901 most) less than perfect metacognitive access to their own expressions, we centered the prior at ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "898"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Does implicit motor learning lead to 1036 greater automatization of motor skills compared to explicit motor learning? A systematic 1037 review",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Pros\u00e9e",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Winters",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Van Der",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PLOS ONE",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Using a Delphi technique to seek consensus regarding definitions, 1039 descriptions and classification of terms related to implicit and explicit forms of motor 1040 learning",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kleynen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "PloS One",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Implicit and Explicit Processes in Motor Learning",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ivry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7551/mitpress/9780262018555.003.0003"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Metacognition and 1044 action: a new pathway to understanding social and cognitive aspects of expertise in sport",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Macintyre",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Igou",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Moran",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Matthews",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The Proprioceptive Senses: Their Roles in Signaling Body 1047",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Proske",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gandevia",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Body Position and Movement, and Muscle Force",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Shape",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Physiol. Rev",
+            "volume": "92",
+            "issn": "",
+            "pages": "1651--1697",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The integrative action of the nervous system",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Sherrington",
+                    "suffix": ""
+                }
+            ],
+            "year": 1906,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The contribution of muscle afferents to 1052 kinaesthesia shown by vibration induced illusions of movement and by the effects of 1053 paralysing joint afferents",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Goodwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Mccloskey",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Matthews",
+                    "suffix": ""
+                }
+            ],
+            "year": 1972,
+            "venue": "Brain J. Neurol",
+            "volume": "95",
+            "issn": "",
+            "pages": "705--748",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "SOME PROPRIOCEPTIVE INFLUENCES ON THE PERCEPTUAL 1055 REPRESENTATION OF BODY SHAPE AND ORIENTATION",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lackner",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "Brain",
+            "volume": "111",
+            "issn": "",
+            "pages": "281--297",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Shifts in kinesthesis through time and after active and passive 1057 movement",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Craske",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Crawshaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 1975,
+            "venue": "Percept. Mot. Skills",
+            "volume": "40",
+            "issn": "",
+            "pages": "755--761",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Where is your arm? Variations in proprioception across 1059 space and tasks",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Fuentes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bastian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Neurophysiol",
+            "volume": "103",
+            "issn": "",
+            "pages": "164--171",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Afferent input, efference copy, signal noise, 1061 and biases in perception of joint angle during active versus passive elbow movements",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Gritsenko",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Krouchev",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Kalaska",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Integration of Visual and Proprioceptive Limb Position 1064",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Limanowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Blankenburg",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Information in Human Posterior Parietal, Premotor, and Extrastriate Cortex",
+            "authors": [],
+            "year": 2016,
+            "venue": "J. Neurosci",
+            "volume": "36",
+            "issn": "",
+            "pages": "2582--2589",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The fast contribution of visual-1067 proprioceptive discrepancy to reach aftereffects and proprioceptive recalibration",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Ruttle",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hart",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y P"
+                    ],
+                    "last": "Henriques",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PLOS 1068 ONE",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Flexible strategies for sensory integration during motor planning",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sober",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Sabes",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "When Feeling Is More Important Than 1072 Seeing in Sensorimotor Adaptation",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Beers",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wolpert",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haggard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Curr. Biol",
+            "volume": "12",
+            "issn": "",
+            "pages": "834--837",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "How humans combine 1074 simultaneous proprioceptive and visual position information",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Beers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sittig",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Der Gon Denier",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Exp. Brain Res",
+            "volume": "111",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Three Dimensional Analysis of Facial 1077",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Clark Weeden",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-A",
+                    "middle": [],
+                    "last": "Trotman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Faraway",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Movement in Normal Adults: Influence of Sex and Facial Shape",
+            "authors": [],
+            "year": 2001,
+            "venue": "Angle Orthod",
+            "volume": "71",
+            "issn": "",
+            "pages": "132--140",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Quantification of the Three-Dimensional 1080",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Coulson",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Croxson",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Gilleard",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Displacement of Normal Facial Movement",
+            "authors": [],
+            "year": 2000,
+            "venue": "Ann. Otol. Rhinol. Laryngol",
+            "volume": "109",
+            "issn": "",
+            "pages": "478--483",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Confidence of emotion expression recognition recruits brain regions outside 1083 the face perception network",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "B\u00e8gue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Soc. Cogn. Affect. Neurosci",
+            "volume": "14",
+            "issn": "",
+            "pages": "81--95",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Metacognitive Accuracy Improves With the Perceptual 1085 Learning of a Low-but Not High-Level Face Property",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mundy",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Tsuchiya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front. Psychol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Perceptual 1087 metacognition of human faces is causally supported by function of the lateral prefrontal 1088 cortex",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lapate",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Samaha",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rokers",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Postle",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Davidson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Commun. Biol",
+            "volume": "3",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Supra-personal cognitive control and metacognition",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Shea",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Trends Cogn. Sci",
+            "volume": "18",
+            "issn": "",
+            "pages": "186--193",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Does My Face FIT?: A 1092",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Fuentes",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Runa",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Blanco",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Orvalho",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haggard",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Face Image Task Reveals Structure and Distortions of Facial Feature Representation",
+            "authors": [],
+            "year": 2013,
+            "venue": "PLoS 1093 ONE",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Body image distortions in healthy adults",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Fuentes",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Longo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haggard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Acta 1095 Psychol. (Amst.)",
+            "volume": "144",
+            "issn": "",
+            "pages": "344--351",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "An implicit body representation underlying human position 1097 sense",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Longo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haggard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "107",
+            "issn": "",
+            "pages": "11727--11732",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "The Self in the Mind's Eye: Reverse-1099 correlating one's self reveals how psychological beliefs and attitudes shape our body-image",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Maister",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "De Beukelaer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Longo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tsakiris",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Manipulating Video 1102 Sequences to Determine the Components of Conversational Facial Expressions",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Cunningham",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kleiner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wallraven",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "B\u00fclthoff",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The Theory of Probability",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jeffreys",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "A signal detection theoretic approach for estimating metacognitive 1106 sensitivity from confidence ratings",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Maniscalco",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Conscious. Cogn",
+            "volume": "21",
+            "issn": "",
+            "pages": "422--430",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Human metacognition across 1108 domains: insights from individual differences and neuroimaging",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rouault",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mcwilliams",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fleming",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Personal. Neurosci",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The Confidence Database",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rahnev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Hum. Behav",
+            "volume": "4",
+            "issn": "",
+            "pages": "317--325",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Effects of alternating set for speed or accuracy on response time, 1112 accuracy and confidence in a unidimensional discrimination task",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Vickers",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Packer",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "Acta Psychol. (Amst.)",
+            "volume": "50",
+            "issn": "",
+            "pages": "1113--179",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The emotional brain",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ledoux",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bemporad",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "J. Am. Acad. Psychoanal",
+            "volume": "25",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Enzyme-histochemical differences in 1117 fibre-type between the human major and minor zygomatic and the first dorsal interosseus 1118 muscles",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "St\u00e5l",
+                    "suffix": ""
+                },
+                {
+                    "first": "P.-O",
+                    "middle": [],
+                    "last": "Eriksson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eriksson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-E",
+                    "middle": [],
+                    "last": "Thornell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Arch. Oral Biol",
+            "volume": "32",
+            "issn": "",
+            "pages": "833--841",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Enzyme-histochemical and 1120 morphological characteristics of muscle fibre types in the human buccinator and orbicularis 1121 oris",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "St\u00e5l",
+                    "suffix": ""
+                },
+                {
+                    "first": "P.-O",
+                    "middle": [],
+                    "last": "Eriksson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eriksson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-E",
+                    "middle": [],
+                    "last": "Thornell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Arch. Oral Biol",
+            "volume": "35",
+            "issn": "",
+            "pages": "449--458",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Morphological study of two human facial muscles: 1123 orbicularis oculi and corrugator supercilii",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Goodmurphy",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ovalle",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Clin. Anat. N. Y. N",
+            "volume": "12",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Anatomy and Histology of 1125 the Mimic Muscles and the Supplying Facial Nerve",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Happak",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Burggasser",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gruber",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Freilinger",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "The Facial Nerve",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Searching for 1129 proprioceptors in human facial muscles",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cobo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Abbate",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "De Vicente",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cobo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Vega",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Neurosci. Lett",
+            "volume": "640",
+            "issn": "",
+            "pages": "1--5",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Evidence for metacognitive bias in perception of 1131 voluntary action",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Charles",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chardin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haggard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cognition",
+            "volume": "194",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Measuring Metacognition of Direct and Indirect Parameters of Voluntary 1133",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Arbuzova",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "How to measure metacognition",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fleming",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Front. Hum. Neurosci",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Performance monitoring for sensorimotor 1137 confidence: A visuomotor tracking study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Locke",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mamassian",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Landy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cognition",
+            "volume": "104396",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cognition.2020.104396"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Wise up: Clarifying the role of 1140 metacognition in the Dunning-Kruger effect",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mcintosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Fowler",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lyu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Della Sala",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Exp. Psychol. Gen",
+            "volume": "148",
+            "issn": "",
+            "pages": "1882--1897",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Metacognitive 1142 judgements of perceptual-motor steering performance",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mole",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jersakova",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kountouriotis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Moulin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wilkie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Q. J. Exp. Psychol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1747021817737496"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "What is the Human Sense of Agency, and is it 1145",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Chambon",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Filevich",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haggard",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "The Cognitive Neuroscience of Metacognition",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Metacognitive",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "I knew that! Confidence 1148 in outcome prediction and its impact on feedback processing and learning",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Froemer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Nassar",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Stuermer",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Sommer",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yeung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BioRxiv",
+            "volume": "442822",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Die Natur des Geistes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pauen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Agency and Self-Awareness: Issues in Philosophy and Psychology",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Marcel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Metacognition of agency",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Metcalfe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Greene",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J. Exp. Psychol. Gen",
+            "volume": "136",
+            "issn": "",
+            "pages": "184--199",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Limited conscious monitoring of motor performance in 1155 normal subjects",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Fourneret",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jeannerod",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Neuropsychologia",
+            "volume": "36",
+            "issn": "",
+            "pages": "1133--1140",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "An Implicit Plan Overrides an Explicit Strategy during 52",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mazzoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Krakauer",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Visuomotor Adaptation",
+            "authors": [],
+            "year": 2006,
+            "venue": "J. Neurosci",
+            "volume": "26",
+            "issn": "",
+            "pages": "3642--3645",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Thinking About Walking: Effects of Conscious Correction 1159",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Malone",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bastian",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Versus Distraction on Locomotor Adaptation",
+            "authors": [],
+            "year": 2010,
+            "venue": "J. Neurophysiol",
+            "volume": "103",
+            "issn": "",
+            "pages": "1954--1962",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "54. Pauen, M. The Functional Mapping Hypothesis. Topoi",
+            "authors": [],
+            "year": 2017,
+            "venue": "",
+            "volume": "36",
+            "issn": "",
+            "pages": "107--118",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Perceptual integration of kinematic 1162 components in the recognition of emotional facial expressions",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Chiovetto",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Curio",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Endres",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Giese",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Vis",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "Use and Usefulness of Dynamic Face Stimuli for Face 1164",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dobs",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "B\u00fclthoff",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schultz",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF73": {
+            "ref_id": "b73",
+            "title": "A Review of Dynamic Datasets for Facial 1167 Expression Research",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Krumhuber",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Skora",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "K\u00fcster",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fou",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Emot. Rev",
+            "volume": "10",
+            "issn": "",
+            "pages": "433--436",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1754073916670022.1168"
+                ]
+            }
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "What's new in Psychtoolbox-3",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kleiner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Perception",
+            "volume": "36",
+            "issn": "",
+            "pages": "1--1",
+            "other_ids": {}
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "The VideoToolbox software for visual psychophysics: transforming numbers into 1171 movies",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Pelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Spat. Vis",
+            "volume": "10",
+            "issn": "",
+            "pages": "437--442",
+            "other_ids": {}
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "Basic emotions",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ekman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Handb. Cogn. Emot",
+            "volume": "98",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF77": {
+            "ref_id": "b77",
+            "title": "The twenty-item Toronto Alexithymia scale-I",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bagby",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D A"
+                    ],
+                    "last": "Parker",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "Item selection and cross-validation of the factor structure",
+            "authors": [],
+            "year": 1994,
+            "venue": "J. Psychosom. Res",
+            "volume": "38",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF79": {
+            "ref_id": "b79",
+            "title": "Just Another Tool for Online Studies\" (JATOS): An Easy 1177 Solution for Setup and Management of Web Servers Supporting Online Studies",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lange",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "K\u00fchn",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Filevich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PLoS ONE",
+            "volume": "1178",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "BayesFactor: Computation of Bayes Factors for 1180 common designs",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Morey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Rouder",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Jamil",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Comput. Softw. Retrieved HttpsCRAN R",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "How far are we from solving the 2D & 3D Face Alignment 1183 problem? (and a dataset of 230,000 3D facial landmarks)",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bulat",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Tzimiropoulos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "IEEE Int. Conf. Comput",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF84": {
+            "ref_id": "b84",
+            "title": "Advanced Bayesian Multilevel Modeling with the R Package brms",
+            "authors": [
+                {
+                    "first": "P.-C",
+                    "middle": [],
+                    "last": "B\u00fcrkner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "R J",
+            "volume": "10",
+            "issn": "",
+            "pages": "395--411",
+            "other_ids": {}
+        },
+        "BIBREF85": {
+            "ref_id": "b85",
+            "title": "brms: An R Package for Bayesian Multilevel Models Using Stan",
+            "authors": [
+                {
+                    "first": "P.-C",
+                    "middle": [],
+                    "last": "B\u00fcrkner",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Stat",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF87": {
+            "ref_id": "b87",
+            "title": "How Do I Know What My Theory Predicts?",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Dienes",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Adv. Methods Pract. Psychol. Sci",
+            "volume": "2",
+            "issn": "",
+            "pages": "364--377",
+            "other_ids": {}
+        },
+        "BIBREF88": {
+            "ref_id": "b88",
+            "title": "Understand and Describe Bayesian Models and Posterior 1192 Distributions",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Makowski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF89": {
+            "ref_id": "b89",
+            "title": "The Bayesian New Statistics: Hypothesis testing, estimation",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kruschke",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Liddell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF91": {
+            "ref_id": "b91",
+            "title": "Statistical power analysis for the behavioral sciences",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF92": {
+            "ref_id": "b92",
+            "title": "R-squared for Bayesian Regression 1199",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gelman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Goodrich",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gabry",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vehtari",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF94": {
+            "ref_id": "b94",
+            "title": "Bayesian rank-based hypothesis 1201 testing for the rank sum test, the signed rank test, and Spearman's \u03c1",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Doorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Van",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ly",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marsman",
+                    "suffix": ""
+                },
+                {
+                    "first": "E.-J",
+                    "middle": [],
+                    "last": "Wagenmakers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Appl. Stat",
+            "volume": "47",
+            "issn": "",
+            "pages": "2984--3006",
+            "other_ids": {}
+        },
+        "BIBREF95": {
+            "ref_id": "b95",
+            "title": "JASP (Version 0.14)[Computer software",
+            "authors": [],
+            "year": null,
+            "venue": "JASP Team",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF96": {
+            "ref_id": "b96",
+            "title": "Statistical Software",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF97": {
+            "ref_id": "b97",
+            "title": "The Confidence Database",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rahnev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.31234/osf.io/h8tju"
+                ]
+            }
+        },
+        "BIBREF98": {
+            "ref_id": "b98",
+            "title": "Effects of alternating set for speed or accuracy on response time, 1208 accuracy and confidence in a unidimensional discrimination task",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Vickers",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Packer",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "Acta Psychol. (Amst.)",
+            "volume": "50",
+            "issn": "",
+            "pages": "1209--179",
+            "other_ids": {}
+        },
+        "BIBREF99": {
+            "ref_id": "b99",
+            "title": "Response-Related Signals Increase Confidence But Not Metacognitive Performance | 1211 eNeuro",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF100": {
+            "ref_id": "b100",
+            "title": "Software for 1213 facial expression analysis and stimulus synthesis",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Brick",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Braun",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Harrill",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF101": {
+            "ref_id": "b101",
+            "title": "The wisdom of crowds",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Surowiecki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF103": {
+            "ref_id": "b103",
+            "title": "Accuracy to Individual Differences in Brain Structure",
+            "authors": [],
+            "year": 2010,
+            "venue": "Science",
+            "volume": "329",
+            "issn": "",
+            "pages": "1541--1543",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "133and clearly different from 0. On the other hand, if a participant had no access to their own 134 performance, their judgments would bear no relationship to the distance between two images, 135 and the regression coefficients would be indistinguishable from 0 (Figure 1B, Predictions).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "To arbitrate between these two possibilities, we first quantified our participants' metacognitive 137 access to their own facial expressions using a Bayesian linear mixed-effects regression model of138 participants' confidence ratings. The model included the log-transformed distances as a fixed 139 effect (for all 68 landmarks combined), as well as random intercepts for participant and facial 140 expression. We found that participants' confidence ratings had a small negative relationship to 141 the distance measured (Figure 2.A, M = -0.03 \u00b1 0.01, CI = [-0.05, -0.01], R 2 = 0.21, see also 142 Appendix 1-Figure 1 for the participant-wise data). However, when compared to the null model 143 without the effect of distance, we found only anecdotal evidence 29 for the relationship between 144 the two (BF10= 2.20). Further, a robustness check revealed that, as expected given the proximity 145 of the posterior samples to the region of practical equivalence (ROPE, defined following the 146 default criterion of the region corresponding to a Cohen's d of 0.1, Figure 2.B), the choice of the 147 SD of the prior distribution had a strong effect on the BF10: Widening the prior distribution from 148 0.4 to 0.7 led to a BF10 = 1.02, and greater SDs also strongly reduced the value of the BF10.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "illustration purposes, we plot the participant-wise posterior draws, in relationship to the ROPE 151 (Figure 2.C).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Poor metacognitive access to facial expressions (A.) Group effects reflecting mean 155 metacognitive access, namely the relationship between confidence ratings and distance between two 156 images (inverse of performance). A small but consistently negative slope suggests that participants had 157 minimal metacognitive access to their own expressions. The solid line represents the mean of the posterior 158 draws, the shaded region represents the 95% credibility interval (B.) Posterior draws for the group-level 159 fixed effect of distance, shown in relation to the ROPE, marked with dashed lines. The black horizontal line 160 indicates the mean and 95% HDI. (C.) Posterior draws for each participant, shown in relationship to the 161 ROPE. Note that the y-axis is clipped to better display the distributions around the ROPE and therefore 162 excludes the long tails of some of the distributions. Participants are ordered following the mean slope 163 estimate and might not be aligned across figures.164 165Then, to quantify the relationship between distance and similarity, we built a regression model of 166 participants' similarity ratings including, as before, the log-transformed landmark distances as a 167 fixed effect (for all 68 landmarks combined), as well as random intercepts for participant and facial 168 expression. Here, similarity ratings did track the distance(Figure 3and Appendix 1-Figure 2). We 169 found a clear and, as expected, negative relationship between the two (M = -0.12 \u00b1 0.01, CI = [-",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "The distance between two images captures relevant information. (A.) Group effects 182 reflecting the information contained in the distance between two images, namely the relationship between 183 the similarity ratings provided by participants (when viewing each image pair side-by-side) and distance 184 between two images. The solid line represents the mean of the posterior draws, and the shaded region 185 represents the 95% credibility interval. (B.) Posterior draws for the group-level fixed effect of distance, 186 shown in relation to the ROPE, marked with dashed lines. The black horizontal line indicates the mean and 187 95% HDI. (C.) Posterior draws for each participant, shown in relation to the ROPE. Note that the y-axis is 188 clipped to better display the distributions around the ROPE and therefore excludes the long tails of some 189 of the distributions. Participants are ordered following the mean slope estimate and might not be aligned 190 across figures.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "with a default shifted beta prior distribution). While the two measures of metacognitive 198 access are not strictly comparable (the visual Mratio is controlled for first-order performance but 199 the individual effects of distance on confidence are not), this analysis shows that poor 200 metacognitive access to facial expressions cannot be attributed to generally poor domain-general 201 metacognitive insight 31 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "203 differences in metacognitive access to facial expressions and Alexithymia scores, as an indication 204 of each participant's ability to identify and describe their own feelings. We found no conclusive 205 evidence for or against any relationships between alexithymia score and the participant-wise 206 effect of distance on confidence (BF10 = 0.70, Figure 4.B) or on similarity ratings (Correlations between participant-wise estimates of metacognitive access to facial 210 expressions and other measures of insight. Each dot corresponds to one participant's performance 211 estimate, and the box-and density plots on the right represent the marginal distribution of the corresponding 212 variable on the y axis. A. Metacognitive efficiency (Mratio) in a visual task. Participants' metacognitive 213 efficiency was significantly better than chance performance (marked with the horizontal dashed line). B.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Similarity ratings vary with confidence ratings. (A.) Group effects showing the relationship 228 between the two ratings on image pairs provided by participants (similarity vs. confidence). The solid line 229 represents the mean of the posterior draws, and the shaded region represents the 95% credibility interval.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "B.) Posterior draws for the group-level fixed effect of confidence on similarity, shown in relation to the 231 ROPE, marked with dashed lines. The black horizontal line indicates the mean and 95% HDI. (C.) Posterior 232 draws for each participant, shown in relation to the ROPE. Participants are ordered following the mean 233 slope estimate and might not be aligned across figures.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "245 consistent across participants. For example, one participant may have focused almost exclusively 246 on how well their mouth matched the target image to rate their confidence, and another participant 247 may have focused exclusively on the eyes and ignored the mouth. While this was against the task 248 instructions, it remains a possibility that would undermine the strong claim that most participants 249 did not base their confidence ratings on the landmark distances. To obtain a more fine-grained 250 and flexible measure of performance we used a simple linear regression machine learning (ML) 251 model to predict each participant's confidence ratings using a principal component (PC) 252 decomposition of the distances between corresponding landmarks as features. Building",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "263 reconstructed the weights of each feature in landmark space (based on the model's weighting of 264 each principal component and each feature's loading on that component, see Methods). We first 265 plotted the resulting landmark weights on their corresponding mean locations to explore potential 266 patterns among participants based on the set of landmarks with the highest weights (both visually 267 and by considering the median weight over all landmarks); however, we could not identify any 268 landmarks or features that were consistently prioritized across participants (Figure 6). Individual",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "relationship between the new landmark distance (this time considering the 272 participant-specific weights) and confidence ratings using, as before, a linear mixed-effects 273 regression model. In line with the non-zero r values from the ML models, the reconstructed 274 distances did in fact show a significant relationship with confidence ratings (M = 0.04 \u00b1 0.004, CI 275 = [0.03, 0.04], BF10 = 1.34 x 10 7 , R 2 = 0.24). Note that the slope estimate is now positive, because 276 the feature weights must incorporate the negative relationship between landmarks and 277 confidence, in order to predict confidence ratings. Taken together, the results suggest that 278 participants were indeed able to base their confidence ratings on the distances between facial 279 landmarks, but only on a subset of them; and that each participant had access to, or focused on, Machine Learning analyses. Average feature weights for participant-wise models of 284 confidence ratings. Each dot represents the median feature weight for each landmark in models excluding 285 RTs. Green and red correspond to positive and negative weights, respectively. The size of the dot 286 corresponds to the relative magnitude of the landmark's approximated weight within the model, and their 287 positions correspond to a normalized face. Each landmark is split into the four cardinal directions, to yield 288 four independent features (see Methods for details). We found no consistent pattern over participants where",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "311 to poor use or understanding of the confidence scale. It is important to emphasize that we draw 312 no conclusions from the direct comparison of the strengths of the association between distance 313 and the two kinds of ratings (namely confidence and similarity), as it would not be a valid 314 comparison. Participants had no visual information about the expression they were making when 315 rating confidence, whereas they could do careful comparisons of image pairs using all available 316 visual information to rate similarity. Instead, we make separate inferences based solely on the 317 estimation of the effect size and reliability for each of the associations, and the comparison 318 between each full model including the effect of interest and its null counterpart. Simply put, the 319 analysis of the relationships between confidence and distance suggests that participants could 320 access their performance only poorly. On the other hand, the analysis of the relationships 321",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "323 this variation by exploring correlations between these individual estimates of the relationship 324 between distance and confidence and other measures of insight, namely visual metacognitive 14 efficiency and alexithymia score. No conclusive relationships emerged that could explain the 326 variations between individuals.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "330 defined by a subset of landmarks, which may not have been the same for all participants. To 331 examine this possibility, we built linear regression ML models on confidence ratings that included 332 the differences for each landmark as individual features (each of them separated into the four 333 cardinal directions). This analysis revealed that the models built for all participants could predict 334 confidence from the combined features (and could do so with better accuracy than the models 335 relying solely on reaction times, which we expected to be predictive of confidence based on 336 previous literature 32,33 ). This result suggests that participants' confidence ratings do indeed carry 337 information about the landmark distance between target and response expressions. But, unlike 338 what the linear regression analyses assumed, not all landmarks contribute equally. In fact, some 339 landmarks contributed in a way that was contrary to what was expected (i.e. larger distances were 340 associated with higher confidence). Further, the contributions from each landmark were not 341 consistent between participants. In sum, because some variability in facial expressions did not 342 appear to inform confidence ratings, we argue that these findings show that there is a disconnect 343 between participants' ability to control their faces (through their low level features) and their 344 assessment of performance. While some aspects of participants' facial expressions led",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "Suggested model for metacognitive access to facial expressions. We consider that each 366 facial expression carries both low-level and high-level information (here depicted as circles because they 367 are akin to latent variables in a structural equation model, whereas the measured variables of Distance and 368",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "377is compatible with previous literature. It has been shown that the brain regions involved in 378 assigning confidence to the accuracy of purely perceptual decisions (the thickness of a horizontal 379 bar presented above-fixation) were different from those assigning confidence to decisions about 16 emotional faces 20 . Two recent studies presented participants with two conditions with more 381 closely matched stimuli. In the first one, two groups of participants underwent one of two kinds of 382 perceptual learning 21 . One group trained to discriminate between two faces based either on their 383 identity (high-level features) and the other group trained to discriminate the contrast between two 384 faces (low-level features). The results showed that, while there was perceptual learning (first-385 order performance remained stable despite increased task difficulty) in both groups, 386 metacognitive accuracy improved for the low-, but not high-level features training group. The 387 authors argued for a dissociation between metacognitive access to these two levels and for a 388 dual-stage model of metacognition whereby perceptual learning reduces noise in the 389 representations for low-(but not high-) level facial features. A second study used a causal 390 intervention 22 to show that continuous theta-burst suppression to the lateral prefrontal cortex led 391 to a decrease in metacognitive performance in a task that relied on the low-level aspects of faces",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "contribute with an interesting case to the question of introspective privilege. A 444 classic view has argued that introspection has privileged first-person access to -and is thus the 445 ultimate authority on -mental and emotional states 48 . In the motor domain, this would mean that 446 the agents always have the most precise representation of their movement. This makes intuitive 447 sense, as a precise representation of an ongoing movement is presumably a prerequisite for fine 448 and efficient motor control and execution, as well as for the emergence of a sense of agency 49,50 .449 On the other hand, a reading of the empirical literature does not provide a clear answer, perhaps 450 due to the diversity of motor paradigms examined. Some studies have shown that precise access 451 to movements is not always available at an explicit representational level. Participants failed to 452 report large corrections to their ongoing movements 51 , and explicit instructions about how to solve 453 a visuomotor rotation task can in fact be detrimental for performance, because explicit control is 454 not a substitute for implicit corrections, which occur without participants' awareness 52 . Healthy 455 participants also appear to have poor access to their own eye movements and a poor (i.e., noisy) 456 representation of their own bodies that can be easily affected by visual cues 13,14 . On the other 457 hand, almost directly contradicting the results above, other studies have shown that metacognitive 458 representations of movements are as precise as those of exteroceptive signals 40 and that explicit 459 instructions can sometimes be indeed beneficial for performance by leading to quicker adaptation 460 times and shorter after-effects, as compared to no explicit instructions 53 . To understand these 461 discrepancies, it may be helpful to measure metacognitive access systematically across different 462 muscle effectors and motor and metacognitive tasks. By examining healthy participants' explicit 463 knowledge of their own facial expressions, then, we explored another -and in our view very 464 important -instance of motor control. We suggest that, perhaps just like eye movements, some 465 parts of motor control might be opaque to explicit introspective access. This contributes to the 466 body of literature questioning the privileges that introspective access has been argued to have as 467 a matter of principle and levels the balance of epistemic access towards the complementary 468 notion of extrospection 48,54 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF21": {
+            "text": "limitation in our analyses is related to one basic assumption of our approach. In 471 our exploratory analyses, we found a clear relationship between confidence and similarity ratings 472 at the single-participant level. We explicitly relied on the distance estimated by the algorithms as 19",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF22": {
+            "text": "475very similar results using two completely different algorithms to place facial landmarks (see SI), 476 suggesting that this measure of distance captures true differences in facial features and does not 477 depend heavily on the idiosyncrasies of the algorithm. However, it could be argued that similarity 478 ratings are in fact a better, truer measure of performance because they reflect how similarly two479 faces are perceived by a person (either a judge or the very same participant) in an ecologically 480 valid setting. Against this intuition, we argue that similarity ratings could have been subject to the 481 same biases and heuristics that confidence may have relied on. As a very simplistic example, a 482 given participant could have consistently rated positive expressions with higher confidence and 483 similarity than negative expressions, leading to a relationship between the two kinds of ratings 484 that needn't be explained by metacognitive access. We note, however, that this alternative 485 analysis of the data, based on different assumptions, would have led to the cardinally opposite 486 conclusion that participants do have precise metacognitive access to their own expressions.487 A second limitation has to do with the predictive power of our statistical models. Despite robust 488 effects in the Bayesian mixed models, a significant amount of variability is left unexplained (see 489 SI). Better measures of distance, more precise motion tracking technologies (like infrared 490 reflectors placed on the face), or different analysis methods may have reduced this unexplained 491 variance. Additionally, we note that our analyses are based on static images, namely the 492 endpoints of otherwise dynamic expressions. But, important information is conveyed in the 493 dynamic pattern of facial expressions 55-57 , and a future direction of this work might be to relate 494 confidence to dynamic aspects of facial expressions instead.495Finally, while the exploratory machine learning analyses allowed us to identify potential aspects 496 of the face that participants attended to while ignoring others, we might have failed to detect any 497 true effects where the relationship between confidence and distance differed between 498 expressions, or relationships that changed significantly over the course of the experimental 499 session.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF23": {
+            "text": "suggest that healthy young volunteers were only able to estimate their performance 514 in producing non-stereotypical facial expressions based on partial information. This indicates that 515 we not only do not have metacognitive access to the low-level details of our facial expressions,",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF24": {
+            "text": "pre-registered plan (https://osf.io/pnyw3), 40 healthy participants took part in the 527 study after giving informed consent (21 female, 19 male mean \u00b1 SD: 28.2 \u00b1 4.6 years). We based 528 the sample size on pilot data from 12 participants (see SI) and previous studies of motor 529 metacognition from our group. Exclusion criteria were a recent history of psychiatric disease or530 having a heavy beard, as we reasoned that it would occlude the view of part of the face and 531 placing of the landmarks. The local ethics committee approved all procedures (Nr. 2017-23-R), 532 which conformed to the Declaration of Helsinki. tilted 45\u00b0 from the vertical (Figure 8). Participants saw the image displayed on the 537 screen by the stimulus computer indirectly through its reflection on the half-silvered mirror. Behind 538 the mirror, a digital camera (Fire-i, UniBrain, Athens, Greece) connected to the computer took 539 pictures of the participants' facial expressions. This setup allowed participants to look at the 540 pictures displayed while simultaneously looking directly into the camera. As a result, we obtained 541 pictures of participants looking straight ahead and not downwards at the image, as would have 542 been the case if we had used e.g. a simple laptop computer with a digital camera just above the 543 screen.544 Participants sat at approximately 60 cm from the middle-point of the half mirror, which was in turn 545 45 cm away from the display screen. In order to reduce head movements, we held participants' 546 torsos loosely in place with an elastic band tied to the chair. Additionally, at the beginning of the 547 experiment, we showed participants the image collected by the camera in real time and asked 548 them not to make large head movements or rotations. While it would have been desirable to 549 further limit whole-head movements using, e.g., a chin rest, we opted against this as it would have 550 made expressions unnatural and, more importantly, because it would have provided a form of 551 sensory feedback, interfering with the experimental design. We ensured that participants' faces 552 were well-lit and took care that participants did not see any reflections of their own face on the Experimental Apparatus. Participants sat in front of a dark display box and saw the pictures 559projected from a computer screen reflected on a half-plated mirror (tilted 45\u00b0). Behind the mirror, positioned 560 directly in front of participants' gaze, a digital camera took pictures of the participants when they pressed 561 the corresponding key. This way, participants could look simultaneously directly at the to-be-tasks were written on MATLAB (R2016b, The Mathworks, Natick, MA), using 567Psychtoolbox-3 58-60 and ran on MacOS. All tasks were self-paced with no time deadlines. All 568 participants (except for one, due to technical problems) completed all tasks in the same order.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF25": {
+            "text": "expressions task consisted of three parts. In the first part (Figure 1.A), participants saw 571 32 different pictures of four different actors in pseudorandomized order (see the description of 572 Cue images, below) and imitated each expression as best they could. Participants pressed a key 573 (the space bar) once they considered that their expression was as close as possible to the actor's 574 expression. We asked participants to try to match the low-level physical features of the face -575 the curvature of the lips, the elevation of the eyebrows -rather than the emotion conveyed by 576 the expression. Upon pressing the spacebar, the digital camera behind the half-plated mirror took 577 a picture of the participant's facial expression, and a new trial started. On a separate test, we had 578 determined that there was a minimum delay of approximately 80 ms between the time of key 579 press and the time stamp of the image. Accordingly, we included in our instructions to participants 580 to hold the expression in place after they had pressed the key that would trigger the image 581 acquisition.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF26": {
+            "text": "587imitated their own previous expression. Participants saw each of their 32 target expressions 588 repeated 8 times in random order (256 trials in total). We only revealed that they would have to 589 reproduce their own expressions after the first part of the experiment was complete. Parts 1 and 590 2 of the experiment took on average approximately 50 minutes. Before starting part 1, participants 591 completed four practice trials where they simply imitated pictures of famous celebrities and took 592 pictures. They did not see the resulting pictures of themselves.24In the third part of the task, participants saw each of the 256 pairs of pictures (target and response) 594 and rated them for similarity on a scale exactly like the one they had used for confidence. This595 part of the experiment took on average 30 minutes. 596 Cue images 597 We used 32 different facial expressions as cue pictures (14 from two different male actors, 18 598 from three different female actors) which would be used to generate participant-specific target 599 expressions. To prevent participants from producing stereotypical target expressions, we sought 600 pictures representing expressions that could not be unambiguously categorized as one of the 601 basic emotions 61 . We selected pictures from the MPI Small Facial Expression Database 28 , which 602 includes video sequences of expressions based on a method acting protocol in which actors 603 produce non-standard expressions by imagining themselves in a situation described by a brief 604 scenario and reacting accordingly. Example descriptions of expressions include: \"Somebody 605 suggests to try something. You hesitate at first, then you agree\", or \"You have reached a goal and 606 you are happy to have accomplished it\". Additionally, we selected still images from the video 607sequence that did not correspond to the peak expression, but instead to an intermediate step. As 608 a result, the cue images could not easily be labeled as stereotypical expressions (e.g., \"happy\", 609 \"sad\") for which participants might have a predefined motor program but could instead be 610 assumed to be the result of an unusual and idiosyncratic combination of gestures. Note that, as 611 the samples inFigure 1.C show, these cue images were not unnatural grimaces and so the 612 paradigm remains ecologically valid. We reasoned that these non-canonical expressions would 613 maximize motor variability, ensuring that confidence ratings could be based only on a true 614 evaluation of trial-by-trial performance and not on a general knowledge of how reproducible a 615 given expression was.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF27": {
+            "text": "https://github.com/metacoglab/meta_dots). On each trial of this task, two circles enclosing sets 619 of dots appeared for 200 ms on either side of a central fixation cross (each circle with a radius of 620 5 degrees of visual angle, located along the middle of the screen, with an eccentricity from the 621 vertical midline of 5.5 degrees of visual angle). One of the two circles always contained 50 dots 622 while the other varied in dot number, and the position (left/right) of the circles was randomized on 623 each trial. In a 2-alternative forced-choice (2AFC) task, participants discriminated which of the 25 circles contained more dots by pressing the left or right arrow keys on the keyboard. The 625 difference in the number of dots was determined by a pair of interleaved 2-down-1-up adaptive 626 staircases aimed at fixing performance at around 71% accuracy. After each response, participants 627 reported their confidence in the accuracy of their own response using the same vertical visual 628 analog scale that they had used for the two previous tasks rating confidence and similarity for 629 facial expressions.630Before the main visual task, we ran 80 trials of a staircase procedure where participants did only 631 the discrimination task without rating confidence. Here we also included two interleaved 2-down-632 1-up staircases starting from a difference of 3 and 20 dots respectively. One participant 633 (unintentionally) received feedback about the accuracy of the discrimination task while rating 634 confidence, so we excluded their data from the analysis. The visual task took approximately 20 635 minutes. Over all participants, we also excluded 2% of the trials where the reaction times to either 636 the discrimination task or the confidence rating were faster than 300 ms or slower than 5 s. We637 estimated metacognitive efficiency as Mratio 30 after scaling and binning confidence into four 638 discrete confidence levels based on uniform intervals.639 Toronto Alexithymia Scale 640 At the end of the experiment we collected responses to a computerized version of the Toronto 641 Alexithymia Scale (TAS 62 ) running on a browser, and the data were stored locally 63 (jatos.org).642 Most participants completed a German version of the scale, except for seven non-German 643 speakers who completed an English version instead. The TAS-20 consists of 20 items that can 644 each be answered on a 5-point Likert scale. We considered three out of the four subscales 645 (Difficulty identifying feelings, Difficulty describing feelings, and Externally-oriented thinking, but 646 excluded the Daydreaming subscale). We calculated Bayes Factors (BF10) for correlations 647 between these covariates and individual slopes from the estimated models using the BayesFactor 648 package 64 in R (version 3.6.2).649 Data processing and analysis 650 Following the pre-registered plan, we excluded trials from the facial expressions task at the single 651 participant level if RTs (time between image onset and key press) were above the 95 percentile 652 for that participant. This cutoff was necessary because we noticed that participants sometimes 653 laughed at their own picture or got otherwise distracted. This resulted in seven trials excluded 26 from the entire dataset where the time to take a picture was below 300 ms, of the pictures taken, we obtained the x,y coordinates of landmarks distributed on the 657 face. In our pre-registered plan we stated that we would estimate the landmark positions using 658 two different toolboxes and choose the best one to estimate distance based on the quality of the 659 relationship to the similarity ratings. Instead, due to technical problems in running one of the 660 toolboxes we opted for the Face Alignment package 65 alone (https://github.com/1adrianb/face-661 alignment v.1.0.0), a fully automated deep-learning based face alignment network (FAN) that 662 places landmarks on the pictures. We used the face-alignment package together with scikit-image 663 and pytorch to extract the landmarks from the faces, running on Python v3 in a Jupyter notebook 664 v5. The face-alignment package automatically places 68 landmarks on the face and excludes the 665 forehead and hairline. 666 Using MATLAB (R2020a), we computed the distance (in coordinate space) between each pair of 667 target and response images. Using the x,y coordinates for all landmarks, we ran a Procrustes 668 rigid alignment of each face in a pair to a standardized set of coordinates. We used three minimally 669 variant reference points for this alignment: the outer corners of each eye and a point just below 670 the nose. The transformation allowed for translation, orthogonal rotation, and scaling. Thus, these 671 linear transformations minimized the variance in the distance data that could be accounted for by 672 head rotations and general enlargement or shrinkage due to change in the face position. It did 673 not account for other rotations (yaw and pitch), where the relative distance between some face 674 components can change without the facial expression being different. After rigid transformation, 675 we calculated the total distance for each pair of target and response images as the Euclidean 676 distance (the root of the sum of squares, see equation in Figure 1) over all 68 landmarks between 677",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF28": {
+            "text": "692stan.org/) through the brms package 66,67 . In all cases, we ran 4 chains with 15,000 iterations, 693 5,000 burn-in samples each, and no thinning. We checked for convergence by visually examining 694 the MCMC chains and ensured that the scale reduction factor (Rhat) of all models was equal or 695 close to 1. We considered that ratings might vary across participants both in their mean and in 696 their relationship to the landmark distance, and that different facial expressions might vary in their 697 associated difficulty to both reproduce (leading to greater variability in the landmark distance) and 698 to rate (leading to differences in the ratings). Thus, in all models and unless otherwise stated, we 699 included random slopes for both participants and facial expressions (see the explicit model syntax 700 in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF29": {
+            "text": "721 relation to the region of practical equivalence (ROPE). We set the ROPE to a default range from 722 -0.1 to 0.1 of a standardized parameter, which corresponds to a negligible effect size 70,71 . Finally, 723 we estimated R 2 values as implemented by the brms package 72 . 724 725",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF30": {
+            "text": "Figure 2 Appendix 1-Figure 5",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF31": {
+            "text": "Figure 3 Appendix 1-Figure 7",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF32": {
+            "text": "742 reduction using principal component analysis with a set number of principal components (66, or 743 approximately 90% of the variance from all subjects) in order to avoid multicollinearity among the 744 features. Finally, a least squares linear regression model was trained for each participant using 745 trial-wise leave-one-out cross-validation.746 The resulting ML model weights referred to features in principal component space. We translated 747 the model weights back into landmark space (i.e., x,y coordinates of the facial landmarks). To do 748 so, we approximated the weight of each feature using the expression in (, is the loading of feature on principal component , and is the ML model's 751 weighting of principal component .752To reconstruct the distances weighted by the results of each ML model, we used expression (",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF33": {
+            "text": "Linear regressions of confidence vs. similarity ratings (at the single-799 participant level, for Experiment 2). Note that all statistical inferences are made on the basis of 800 Bayesian linear regressions, and this plot is for illustrative purposes only. Learning -Effects of RT 805 Because confidence is known to correlate negatively with response times 75,76 (RT), we first 806 explored a potential relationship between the two and asked whether RTs could have served as 807 a proxy for performance. We ran a Bayesian linear regression model of participants' confidence 808 ratings including the RT as a fixed effect and random intercepts for participant and facial 809 expression, as well as a per-participant random slope for RT. We based the prior distribution for 810 this analysis on previous data from our group 3 , and set a wide prior for the intercept centered at 811 around confidence = 0.8 with SD = 0.5, and a prior for the slope centered on 0 with an SD = 0.20, 812 which roughly corresponds to the ratio-of-scales. We confirmed that there was a small but 813 consistent effect of RT on confidence (M = -0.01 \u00b1 0.00, CI = [-0.02, -0.00], BF10 = 5.66 x 10 39 , R 2 814 = 0.20).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF34": {
+            "text": "816 compared the resulting individual r values from the ML models (including both RTs and the x, y 817 positions of the landmarks) to those of a ML model including only RTs as their single feature 818 (Appendix 1-Figure 4). A non-parametric ANOVA computed with the ez package for R revealed 819 an interaction effect (p = 0.001) on the r values between the variable predicted (confidence or 820 similarity) and the features included in the model. Note that we do not interpret the main effect of 821",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF35": {
+            "text": "Figure 4: r values resulting from the linear regression models built using ML. A. 834 Distributions of individual r values (summarized with boxplots and violin plots) for models on confidence or 835 similarity ratings, using different sets of features. B. Bootstrapped predictions from a non-parametric 836 ANOVA for models of confidence and similarity built using RTs alone or also including landmark pre-registering and collecting the data reported in the main text, we collected a smaller 841 dataset as a pilot. Because there are some important differences in the experimental details, we 842",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF36": {
+            "text": "849 external judges agreed (see below) that there was no variability in their facial expressions.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF37": {
+            "text": "Participants had no recent history of psychiatric disease. The local ethics committee approved all 851 procedures, which conformed to the Declaration of Helsinki.37 Apparatus 853 Behind the mirror, a digital camera (Logitech HD C310) connected to the computer captured 854 images of the participants' facial expressions. The apparatus was similar to the one described in 855 the main text, with some minor differences. Unlike in the main experiment, where the screen 856 rested on top of the stimulus box and projected downwards, the screen lay on the table for the 857 pilot experiment and projected upwards. From the point of view of the participants, this did not 858 change the visual display.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF38": {
+            "text": "was programmed on GNU Octave and displayed stimuli using Psychtoolbox-3 58-60 , and 861 ran on a Linux Debian (Gnome 3.4.2) operating system. The task consisted of two parts (not 862 three). Participants saw 30 (not 32) different photos of four different actors and imitated each 863 expression as best they could. The images were presented in one of five possible pre-defined 864 random orders to each participant. As in the main experiment, participants first generated 30 865 participant-specific pictures that then served as target images for the second part of the paradigm.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF39": {
+            "text": "874 first part of the experiment was complete. On average, the experiment took approximately 50 875 minutes.876 Data Processing and Analysis 877 We first used the Face Modeling GUI 78 to manually position 99 landmarks on their corresponding 878 locations on a small subset of images (3-5) of each participant. The Face Modeling GUI then uses 879 the location of these landmarks to automatically find their optimal locations in the remaining 880 images. After the automatic fit, the landmarks in each of the images were corrected manually. In 881 this way, we reduced the dimensionality of each of the 240 response images along with the 30 882",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF40": {
+            "text": "894transformed) distances was approximately 4.93 a.u. (arbitrary units), whereas the maximum 895 possible range of ratings is 5 points (maximum: 6, minimum: 1). The ratio between the two is 896 approximately 1, so we used a normal prior centered on 0 with an SD = 1 for the slope parameter.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF41": {
+            "text": "were not on a visual analog scale but instead on a Likert scale, we first quantified 906 our participants' metacognitive access to their own facial expressions using an ordinal Bayesian 907 mixed-effects regression model of participants' confidence ratings. The model included the log-908 transformed landmark distances as a fixed effect (for all 99 landmarks combined) as well as 909 random intercepts for participant and facial expression (See Appendix 1-Table 1). The estimated 910 ordinal regression coefficient was indistinguishable from 0 (M = 0.04 \u00b1 0.07, CI = [-0.10, 0.16]) 911 and the evidence ratio favoured the (point) null hypothesis of no relationship between confidence 912 and distance (BF10 = 0.082). This is illustrated by the flat probability profiles for each rating shown913",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "-38 , which are the main sensors for skeletal muscle stretching 5-7 . Instead, other mechanoreceptors have been suggested to replace muscle 399 spindles in their transduction of electric signals elicited by facial muscles 39 . In contrast to what we 400 described for facial muscles, young, healthy participants have above-chance and precise 401 metacognitive access to movements that are controlled by skeletal muscles 40 . Moreover, unlike 402 the case of metacognition of facial expressions, measures of metacognitive performance in motor 403 control do partially correlate with those from a visual task 41 . Speculatively, at least two factors 404 may explain these discrepancies. First, different stretch receptors may lead to different kinds of 405 representations that may be differentially accessible to metacognitive monitoring. Second, visual 406 feedback during development and motor learning might play an important role. Extensive motor 407 learning and concomitant visual information for limbs that are in the field of view may shape and 408 lead to sharper conscious representations in a way that is not possible for facial expressions.Many of the recent studies measuring metacognitive performance have capitalized on a relatively 413 rigid operationalization of metacognition that quantifies metacognitive performance as the 414 relationship between subjective confidence ratings (the second-order task) and objective performance in a 2AFC (the first-order task), and especially in whether a participant is able to assign high confidence exclusively to correct trials 42 . Unlike most experiments on metacognition, where experimenters can very easily control the (often visual) stimuli that they present to 418 participants, the study of motor metacognition requires participants to make a movement in the 419 first place, thereby adding another task to the standard operationalization. Participants make a order) subjective confidence rating. Examples of a zero-order task include moving a finger at a 422 given pace 40 or throwing a ball to hit a target 41 . A different approach, which we took here, consists 423 in operationalizing the metacognitive judgment not as confidence in accuracy of a binary choice, but instead as a judgment of performance 43-45 . While both operationalizations may be valid, it is 425 important to note the differences between them to prevent assuming unwarranted relationships:The first approach, borrowed from paradigms developed for perceptual tasks, makes a very clear 427 distinction between three different tasks with, in principle, independent performance levels. In a ball-throwing task, a person could miss a target often (poor zero-order performance), be good at discriminating whether the movement they made would hit the target or not (high first-order performance), but assign high and low confidence equally often to correct and incorrect 431 discrimination trials (low second-order performance). This sharp distinction between three 432 cognitive levels is elegant and makes metacognitive motor tasks directly comparable to 433 perceptual ones. On the other hand, the comparison may not be as straightforward as it appears 434 to be 46 . It has been argued that this rigid operationalization ignores a distinctive feature of 435 (sensori)motor performance monitoring: In making a movement, we must monitor our 436 performance in relationship to the intended goal, which includes not only perceptual uncertainty 437 but also motor noise and skill 43,47 . Thus, the approach of asking participants to rate their own 438 performance allowed us to measure metacognitive access as the relationship between true 439 performance and the (arguably) ecologically relevant estimate of subjective performance.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Formulas for the Bayesian mixed models employed",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "be positive and each of them had an effective weight of 1, here we allowed the feature weights to be signed. For those cases where the term under the square root was negative, we calculated the root of the absolute value and then reversed the sign. Note that RSSQweighted is now better 761 interpreted as a measure of performance, and not distance: because the ML-derived weights already account for the negative relationship between distance and confidence, RSSQweighted is expected to show a positive relationship to confidence.We obtained adjusted R2 for each (participant-specific) model values and compared them using 765 a Bayesian Wilcoxon Signed-Rank test 73 as implemented in JASP 74 v0.14 with 10,000 MCMC We thank student assistants for help in data collection in Experiment 1, and Manuel Zellh\u00f6fer for help in programming the experimental paradigm. We thank Soledad Galli for assistance with theML models and Nathan Faivre for comments on an earlier version of this manuscript. ABC, CF and EF were supported by a Freigeist Fellowship to EF from the Volkswagen Foundation (grant 774 number 91620). This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) -337619223 / RTG2386 and the Max-Planck Society. The funders had no role in the conceptualization, design, data collection, analysis, decision to publish, or preparation of the manuscript.The authors declare no competing interests.Data and Code AvailabilityRaw data (excluding images from participants and any other personally identifiable information) https://gitlab.com/elisa.filevich/cistonetal_metacognitionoffacialexpressions.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "the number of features included, as these are known to inflate the r values. Instead, we focus on 822 the interaction effect. In particular, the interaction revealed higher r values for the models of similarity that included both landmarks and RT as compared to confidence (Wilcoxon signed rank test, p = 0.015), but lower r values for models including RTs only (Wilcoxon signed rank test, p = 825 0.068). This pattern of results is consistent with landmarks being predictive of confidence ratings, above and beyond RTs To understand the contribution of RTs relative to the other features, we obtained the rank of importance of RTs within the ML model. We found that RTs varied in importance with each participant, but ranged between the 5th and the 100th percentile (Mean = 36 71.15, Median = 93.41), suggesting that, for some participants, RTs were the most reliable piece of information for confidence ratings, even if the variance explained by them was very low.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "in Appendix 1- Figure 5 .A: while there were differences in the overall probability of each confidence 914 rating (e.g. a rating of 5 occurring more often than others), the probability of a participant providing 915 a given confidence rating was similar over all landmarks distances (see also Appendix 1- Figure   916 6 for the single-participant data). ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 15,
+                    "end": 23,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 305,
+                    "end": 317,
+                    "text": "Figure   916",
+                    "ref_id": null
+                }
+            ],
+            "section": "797"
+        },
+        {
+            "text": "The model included the same fixed and random effects factors as in the mixed ordinal model 943 above (namely, the log-transformed distance as a fixed effect, intercepts for participant and 944 expression as random effects, and a by-participant random slope for the fixed effect). However, 945 41 unlike in the mixed-effects regression model on participants' confidence ratings, we did find a 946 consistent negative relationship between the distance and the similarity ratings (M = -0.54 \u00b1 0.06, 947 CI = [-0.67, -0.42], BF10= 71551.85). That is, unlike the confidence ratings, the similarity ratings 948 did show a consistent and (as expected) negative relationship to the distance (Appendix 1- Figure   949 7.B and Appendix 1- Figure 8 ). This suggests that the distance did carry some information about 950 face similarity meaningful to human observers. For illustration purposes only, we repeated the 951 analysis between similarity ratings and distance but this time rounded the mean ratings and ran 952 an ordinal model (Appendix 1-Figure 7 .B). We do not make any statistical inferences from this 953 analysis but use it only to illustrate the differences between the probability profiles of the ratings 954 that vary with distance and those who do not (Appendix 1- Figure 5 .A).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 696,
+                    "end": 708,
+                    "text": "Figure   949",
+                    "ref_id": null
+                },
+                {
+                    "start": 729,
+                    "end": 737,
+                    "text": "Figure 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 1026,
+                    "end": 1046,
+                    "text": "(Appendix 1-Figure 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 1273,
+                    "end": 1281,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "942"
+        },
+        {
+            "text": "As in the main experiment, here we also found that distance was related to similarity ratings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "955"
+        },
+        {
+            "text": "Neither the procedure to estimate distance nor the similarity ratings were identical between the judge. In all cases, we found that the estimates were negative, and clearly different from 0 (all 992 mean slope estimates < -0.53, all BF10 > 554. See Appendix 1- Table 1 and Appendix 1- 1019 similarity ratings also showed the same clear relationship, Appendix 1- Table 1 ) proved to be 1020 sufficient to explain the apparent null relationship between confidence ratings and distance. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 261,
+                    "end": 268,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 362,
+                    "end": 369,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "956"
+        },
+        {
+            "text": "Perhaps, due to mere chance, participants with poor general metacognitive access to their own 1027 facial expressions were overrepresented in the relatively small sample of 12 participants. Hence,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "1026"
+        },
+        {
+            "text": "to exclude the possibility that our conclusions in this pilot experiment resulted from a small (and 1029 potentially biased) sample of 12 participants, we tested a larger sample. Third, we considered the 1030 possibility that the differences we observed in this pilot experiment between the relationships of 1031 distance and confidence and similarity ratings could be attributed to differences in metacognitive 1032 traits between groups of individuals. We therefore did not recruit external judges but asked the",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "1028"
+        }
+    ]
+}

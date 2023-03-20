@@ -1,0 +1,2710 @@
+{
+    "paper_id": "0b31d1f2e75e265263d54c4b70ba5c46575f18cd",
+    "metadata": {
+        "title": "Title: Urban Environments and COVID-19 in three Eastern States of the United States Author names and affiliations",
+        "authors": [
+            {
+                "first": "Whanhee",
+                "middle": [],
+                "last": "Lee",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Yale University",
+                    "location": {
+                        "settlement": "New Haven",
+                        "region": "CT",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Honghyok",
+                "middle": [],
+                "last": "Kim",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Yale University",
+                    "location": {
+                        "settlement": "New Haven",
+                        "region": "CT",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michelle",
+                "middle": [],
+                "last": "Choi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Seulkee",
+                "middle": [],
+                "last": "Heo",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Yale University",
+                    "location": {
+                        "settlement": "New Haven",
+                        "region": "CT",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Kelvin",
+                "middle": [
+                    "C"
+                ],
+                "last": "Fong",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Yale University",
+                    "location": {
+                        "settlement": "New Haven",
+                        "region": "CT",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jooyeon",
+                "middle": [],
+                "last": "Yang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Seoul National University",
+                    "location": {
+                        "settlement": "Seoul",
+                        "country": "Republic of Korea"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Chaerin",
+                "middle": [],
+                "last": "Park",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Seoul National University",
+                    "location": {
+                        "settlement": "Seoul",
+                        "country": "Republic of Korea"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ho",
+                "middle": [],
+                "last": "Kim",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Seoul National University",
+                    "location": {
+                        "settlement": "Seoul",
+                        "country": "Republic of Korea"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michelle",
+                "middle": [
+                    "L"
+                ],
+                "last": "Bell",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Yale University",
+                    "location": {
+                        "settlement": "New Haven",
+                        "region": "CT",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Hayon",
+                "middle": [
+                    "Michelle"
+                ],
+                "last": "Choi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Yale University",
+                    "location": {
+                        "settlement": "New Haven",
+                        "region": "CT",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The United States has the highest numbers of confirmed cases and deaths during the novel coronavirus disease 2019 pandemic. Previous studies reported that urban residents are more vulnerable to the spread and mortality of COVID-19 than rural residents.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "However, the pathways through which urban environments affect COVID-19 spread and mortality are unclear. We collected daily data on the number of confirmed cases and deaths of COVID-19 from Mar. 01 to Nov. 16, 2020 for all 91 counties in New York, New Jersey, and Connecticut in the United States. We calculated the COVID-19 incidence %, daily reproduction number, and mortality %, then estimated the associations with urban environment indicators using regression models. COVID-19 outcomes were generally highest in areas with high population density, and this pattern was evident in the early period of epidemic. Among the area-level demographic variables, the percentage of Black or Hispanic residents showed the strongest positive association with COVID-19 outcomes. Higher risk of COVID-19 outcomes was also associated with higher percentage of overcrowded households, uninsured people, and income inequality. The percent elderly, sex ratio (the ratio of males to females), and greenness were negatively associated with risk of COVID-19 outcomes. The results of this study could indicate where resources are most needed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "After a rapid increase in atypical pneumonia cases caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) was observed in Wuhan in Dec 2019 (Zhang et al., 2020a) , the novel coronavirus disease, better known as COVID-19, rapidly spread to over 200 countries (World Health Organization, 2020a) . As of Nov. 08, 2020, more than 50 million confirmed cases were reported worldwide and more than one million people have died due to COVID-19 (World Health Organization, 2020b) . In the United States (U.S.), more than 10 million individuals were diagnosed with COVID-19 with more than 230,000 related deaths, representing the largest number of confirmed and death cases in the world (World Health Organization, 2020b).",
+            "cite_spans": [
+                {
+                    "start": 156,
+                    "end": 177,
+                    "text": "(Zhang et al., 2020a)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 274,
+                    "end": 308,
+                    "text": "(World Health Organization, 2020a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 443,
+                    "end": 486,
+                    "text": "COVID-19 (World Health Organization, 2020b)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the U.S., New York State emerged as an epicenter in the early phase of the epidemic with over 10,000 daily new confirmed cases in early April (Goyal et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 145,
+                    "end": 165,
+                    "text": "(Goyal et al., 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Around the same time, New Jersey and Connecticut, neighboring states to New York, also experienced the severe COVID-19 epidemic, and in response governments of these three states announced -stay-at-home\u2016 (i.e. lockdown) orders in late March (Gostin and Wiley, 2020) . After the stay-at-home orders, spread of the virus in these states plateaued since around late April-May and then stabilized to Sep. 2020 .(The New York Times, 2020 However, along with the record-breaking wave of pandemic since Oct. 2020 across all the transmission and fatality of COVID-19, in all 91 counties in three Eastern U.S. states (New York, New Jersey, and Connecticut) . First, using a two-stage analytic approach, we examined the association between population density and the spread of COVID-19 and fatality % at the county level. Second, we aimed to discern the urban environment indicators that can explain the effects of regional disparities (covering overcrowding, income inequality, medical service, race, and greenness) on the spread and fatality of COVID-19. In addition, we explored whether the association between urban environments on COVID-19 changed over the stages of the epidemic (the first wave, stabilized period, and the second wave stages).",
+            "cite_spans": [
+                {
+                    "start": 241,
+                    "end": 265,
+                    "text": "(Gostin and Wiley, 2020)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 396,
+                    "end": 405,
+                    "text": "Sep. 2020",
+                    "ref_id": null
+                },
+                {
+                    "start": 406,
+                    "end": 432,
+                    "text": ".(The New York Times, 2020",
+                    "ref_id": null
+                },
+                {
+                    "start": 608,
+                    "end": 647,
+                    "text": "(New York, New Jersey, and Connecticut)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We collected daily counts of the cumulative confirmed COVID-19 cases and deaths in 91 counties in New York, New Jersey, and Connecticut from Mar. 01 to Nov. 16, 2020, from the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University. In addition, we collected data on county-specific 2019 1-year estimated population from the Annual Resident Population Estimates provided by the U.S. Census Bureau. and high-density areas (population density over 5,000 people per km 2 ).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "COVID-19 case and population data"
+        },
+        {
+            "text": "In order to examine the spatial difference in the transmission and fatality of COVID-19 by population density, we collected data on eight county-level indicators, which have a high correlation with population density (\u2265 0.3) or medical services known to be important for the COVID-19 spread and mortality. (King, 2020; Moghadas et al., 2020) These indicators could cover crowded living conditions, demographic characteristics, income inequality, insurance and hospitalization services, and vegetation level for each county.",
+            "cite_spans": [
+                {
+                    "start": 306,
+                    "end": 318,
+                    "text": "(King, 2020;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 319,
+                    "end": 341,
+                    "text": "Moghadas et al., 2020)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Urban environment indicators"
+        },
+        {
+            "text": "First, we collected the % of households that are overcrowded from the Comprehensive Housing Affordability survey data for 2012-2016. Overcrowding is defined as more than one person per room, and the average value during the collection period was used in the statistical analysis. We also obtained three demographic indicators: the % of the Black and Hispanic population, the % of the population that is elderly (people age 65 or more years), and sex ratio. These demographic indicators were the 5-year estimates provided from the 2014-2018 American Community Survey (ACS).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Urban environment indicators"
+        },
+        {
+            "text": "Second, we obtained an income inequality indicator, which is the ratio of household income at the 80 th percentile to income at the 20 th percentile (hereafter, P80/P20). The income inequality indicator was obtained from the American Community Survey for 2014-2018, and the average value during the period was used. Finally, we collected the country-level annual population-weighted vegetation index using the Enhanced Vegetation Index (EVI) for 2018-2019 from the Moderate Resolution Imaging Spectroradiometer (MODIS) product MOD13Q1 to quantify the level of vegetation in a country. (Fensholt, 2004; Heo and Bell, 2019) We calculated average EVI based on the monthly measurements (Jan. to Dec.). Data were at the county level. More detailed information on data collection of these urban environment indicators is described in the Supplementary Materials (1. Data collection details).",
+            "cite_spans": [
+                {
+                    "start": 585,
+                    "end": 601,
+                    "text": "(Fensholt, 2004;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 602,
+                    "end": 621,
+                    "text": "Heo and Bell, 2019)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Urban environment indicators"
+        },
+        {
+            "text": "First, we used the COVID-19 data collected from the whole study period (Mar. 01 to Nov. 16, 2020) . Also, in order to consider the changes in transmission pattern of COVID-19, we divided the study period into three sub-periods: Period 1 (the first wave; Mar. 01 to Apr. 30), Period 2 (stabilized period; May. 01 to Sep. 30), and Period 3 (the second wave; Oct. 01 to Nov. 16). To classify the periods, we referred to the time trend of daily transmission patterns.",
+            "cite_spans": [
+                {
+                    "start": 71,
+                    "end": 97,
+                    "text": "(Mar. 01 to Nov. 16, 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sub-period and Sub-area Classification"
+        },
+        {
+            "text": "First, the COVID-19 incidence declined across all of our study areas at the end of April, thus we set the period through Apr. 30 as the first wave period (Period 1). Then, we set the period between May 1 and Sep.30 as a stabilized period (Period 2), because the incidence remained low (approximately <10 cases per 100,000 people) until the end of September. Finally, since early October, the rapid increase in the incidence across all study areas was observed, therefore we defined this period as the second wave (Period 3).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sub-period and Sub-area Classification"
+        },
+        {
+            "text": "For some analysis, we divided the study area into four sub-areas: New York City, J o u r n a l P r e -p r o o f Journal Pre-proof New York state excluding New York City, New Jersey, and Connecticut.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sub-period and Sub-area Classification"
+        },
+        {
+            "text": "We calculated the total counts of confirmed cases (people who molecular diagnostic test positive for the coronavirus) and deaths (deceased patients with a positive diagnostic test) during the whole study period and for each sub-period. We computed the total counts of confirmed cases per 100,000 persons (i.e. incidence) and deaths per 100,000 persons.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cases and deaths of COVID-19"
+        },
+        {
+            "text": "We estimated the daily reproduction number (R t ; interpreted as the instantaneous reproduction number) following Cori et al (Cori et al., 2013) across the whole study period. Unlike the total counts of confirmed cases per people that indicate the magnitude of viral spread, the R t indicates the power of transmission (i.e. transmissibility) and can guide control plans and provide insight into the effectiveness of intervention policies (Cori et al., 2013; Thompson et al., 2019) . Based on previous studies, we calculated R t with the serial interval assumed to follow a gamma distribution with mean of 4.98 days and standard deviation of 3.22 days (Lee et al., 2020; Zhang et al., 2020a) with a 14-day time window (Cori et al., 2013) . All R t calculations were performed using the EpiEstim R software package.",
+            "cite_spans": [
+                {
+                    "start": 125,
+                    "end": 144,
+                    "text": "(Cori et al., 2013)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 439,
+                    "end": 458,
+                    "text": "(Cori et al., 2013;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 459,
+                    "end": 481,
+                    "text": "Thompson et al., 2019)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 652,
+                    "end": 670,
+                    "text": "(Lee et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 671,
+                    "end": 691,
+                    "text": "Zhang et al., 2020a)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 718,
+                    "end": 737,
+                    "text": "(Cori et al., 2013)",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Daily Reproduction Numbers"
+        },
+        {
+            "text": "First, the R t was calculated in the total study areas and for sub-areas (each area J o u r n a l P r e -p r o o f Journal Pre-proof divided by the level of population density and each state) during the whole study period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Daily Reproduction Numbers"
+        },
+        {
+            "text": "Second, we calculated county-specific R t . However, to mitigate estimation problems originated from the insufficient sample size, we applied two conditions when the countyspecific R t was computed. First, we excluded counties with an average of daily confirmed cases less than three. Thus, in the main analysis, a total of 60 counties were included to calculate the county-specific R t . Second, we performed the calculation from Mar. 07 or the first date when the cumulative daily number of confirmed cases in that county was 5 or more, whichever is earlier.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Daily Reproduction Numbers"
+        },
+        {
+            "text": "As representative indicators to show the difference in COVID-19 transmissibility across counties, we calculated the county-specific initial R t (which can be interpreted as the basic reproduction number) (Lee et al., 2020), as well as county-specific average R t across the whole study period and for each sub-period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Daily Reproduction Numbers"
+        },
+        {
+            "text": "In order to find the association between population density and the patterns of COVID-19 spread and mortality, possibly nonlinear, we applied regression models with a spline function; for all models, we included the log-transformed population density as the explanatory variable (due to the large skewedness in population density for the largest counties) and modeled basis for the density variable using a natural cubic spline with three equally-spaced internal knots. Thus, we derived the relationship as the change in COVID-19 spread or mortality outcomes according to population density, allowing this relationship to be nonlinear. The median value of log population density (6.35) was considered as a centering point.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Association with the Population Density"
+        },
+        {
+            "text": "First, we fitted a Poisson regression model with an overdispersion parameter using J o u r n a l P r e -p r o o f Journal Pre-proof the total confirmed cases as the outcome variable. The population size for each county was included as an offset, thus the association with population density could be interpreted as the relative change in the COVID-19 incidence proportion (%) associated with a one-unit increase in the population density, compared to the centering point.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Association with the Population Density"
+        },
+        {
+            "text": "Second, we performed a regression model with the county-specific R t indicators (the initial and average R t s) as the outcome. In this model, the association with population density could be interpreted as the change in R t indicator by a one-unit increase in the population density, compared to the centering point.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Association with the Population Density"
+        },
+        {
+            "text": "Finally, we also fitted the same modeling framework as the analysis for the total confirmed cases to estimate the association between the total death cases (mortality proportion, %) and population density. In addition, all analytic procedures were performed for the total study period and repeated for each sub-period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Association with the Population Density"
+        },
+        {
+            "text": "In order to explore whether spatial differences in the spread of COVID-19 related to the population density, we applied regression models with the urban environment indicators. For all models, a total of six urban environment indicators were included simultaneously as the explanatory variables of interest. Further, we standardized all indicators to a range of 0-1 by the Min-Max standardization method to avoid biased results due to a difference in scale, and the change in outcomes per interquartile increase in each explanatory variable was calculated to compare the magnitude of the associations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Association with the Urban Environments"
+        },
+        {
+            "text": "In addition, to consider the high correlation among these urban environment indicators, we applied ridge regression. All indicators were considered as linear explanatory J o u r n a l P r e -p r o o f variables simultaneously in the ridge regression. For analyses considering the incidence and mortality as the outcomes, we fitted a ridge regression model with Poisson distribution with the population size for each county as an offset. We also applied ridge regression model with the Normal distribution to assess the association between urban environments and R t indicators. The 95% confidence interval was estimated empirically through the bootstrap method. Finally, we considered county-specific latitude and longitude as covariates to explore the potential spatial autocorrelation. More analytic details on the ridge regression are reported in the Supplementary Materials (2. Ridge Regression).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Association with the Urban Environments"
+        },
+        {
+            "text": "Several sensitivity analyses were performed to examine whether our results are consistent to the modeling specifications (serial interval, time window, and exclusion criteria) that can affect the estimated R t and to alternate greenness index (summer season greenness index and the Normalized Difference Vegetation Index) across the entire study period. Details of the sensitivity analysis are included in the Supplementary Materials (4. Sensitivity analysis). Table 1 shows descriptive information on COVID-19 cases, deaths, population density, and urban environment indicators. Across the study period, averages of the total number of confirmed cases and deaths were highest in New York City and lowest in the New York State with New York City excluded. Correlations with population density were considerably high across all urban environment indicators (all absolute values of correlation > 0.5; Table S2 ), except for the medical service indicators (<0.25). Figure S1 shows correlations among the J o u r n a l P r e -p r o o f Journal Pre-proof indicators. Figure S2 shows the distribution of population density across the study area,",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 461,
+                    "end": 468,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 899,
+                    "end": 907,
+                    "text": "Table S2",
+                    "ref_id": null
+                },
+                {
+                    "start": 962,
+                    "end": 971,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1062,
+                    "end": 1071,
+                    "text": "Figure S2",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "Sensitivity analysis"
+        },
+        {
+            "text": "showing the highest density of counties in New York City and neighboring counties. Table S7 displays descriptive information of the 31 counties excluded in the R t analyses. City, New York state excluding New York City, New Jersey, and Connecticut). In Period 1, New York City showed the largest and fastest increase in the incidence, and the lowest and slowest increase was observed in Connecticut. Whereas, in Period 3, the reversed incidence pattern was observed; Connecticut showed the highest incidence and New York City showed the lowest incidence. Figure 2B shows the daily reproduction number (R t ) by study areas. The initial R t was highest in New York City (5.7) and lowest in Connecticut (3.3). After the beginning of the epidemic, Connecticut and New Jersey generally showed the highest R t . Figure 2C presents daily cases per 100,000 by sub-areas divided by high, mid, low population density areas. In Period 1, high density areas showed the highest incidence compared to mid and low density areas; however, in Period 3, mid density areas and low density areas showed higher incidence than high density area. Figure 2D presents R t by high, mid, low population density areas. Except for the early part of the pandemic, which showed the highest R t in high density areas, all areas showed similar R t during the study period. Figure 3A shows the spatial distribution of the number of COVID-19 cases per 100,000 persons during the total study period, and Figure 3B displays the relative increase in the incidence % associated with the population density. In the total period, the incidence % J o u r n a l P r e -p r o o f was prominently highest in the areas with high density, and a rapid increase in the incidence was observed in areas with a population density over 403.4 (log population density=6). In addition, the peak of incidence was observed in counties where the population density was near 9-10 persons per 1km 2 (Richmond County [Staten Island], and Bronx and Queens boroughs in New York City). Figure 3C -D presents the spatial distribution (3C) of the initial R t (i.e. R 0 ) and the association between the initial R t and population density (3D). There was a nearly linear relationship of the initial R t with the population density. transmission was more prominent in Period 1 ( Figure S3D and Figure S4D ). Whereas, during Period 2 ( Figure S3E and Figure S4E ) and Period 3 ( Figure S3F and Figure S4F ), the relationship with population density was different from that of Period 1, and incidence % and average R t was generally higher in mid or low-density areas, compared to high-density areas. Table 2 shows the associations between the COVID-19 incidence % and urban environment indicators. In the total period, the % of the population that was Black or Hispanic and the % of the population under age 65 without health insurance showed the highest positive association with COVID-19 incidence %. The percent of households that are overcrowded household was also positively associated with incidence %. While, % elderly and EVI were negatively associated with COVID-19 incidence %. Table 2 also displays the relationship of the initial R t with the urban environment indicators. The initial R t showed the largest positive association with percent of the population that is Black and Hispanic and P80/P20, and it also positively associated with the percentage of households that are overcrowded, the population under age 65 without health J o u r n a l P r e -p r o o f Journal Pre-proof insurance, and the number of hospital beds per 1,000 persons. Whereas, the initial R t showed the strongest negative association with sex ratio, and EVI and elderly % were also significantly associated with the initial R t . Table S3 shows the sub-period results corresponding to Table 2. In the early epidemic period (Period 1), the associations with the urban environment indicator were generally similar to the results of Table 2 . Whereas, in Periods 2 or 3, and the association pattern was changed and varied, and some urban environment indicators (e.g., % of households that are overcrowded and EVI) showed an opposite directionality (positive) compared to the results of Period 1 (negative). Table 3 shows the association between COVID-19 mortality risk and urban environments indicators during the total study period. The percent of the population that is Black or Hispanic showed the largest positive association with COVID-19 mortality risk. Also, higher values of households that are overcrowded and the % of the population under age 65 without health insurance were substantially associated with higher mortality risk. Higher values of EVI, sex ratio and the number of hospital beds per 1,000 people were associated with lower mortality risk. Table S4 and Figure S5 show the sub-period results corresponding to Table 3 and Figure 4 , respectively, and the results were generally consistent during Period 1-2 (results of Period 3 in Table 3 could not be calculated due to the lack of sample size).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 83,
+                    "end": 91,
+                    "text": "Table S7",
+                    "ref_id": null
+                },
+                {
+                    "start": 555,
+                    "end": 564,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 807,
+                    "end": 816,
+                    "text": "Figure 2C",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 1125,
+                    "end": 1134,
+                    "text": "Figure 2D",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 1341,
+                    "end": 1350,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 1469,
+                    "end": 1478,
+                    "text": "Figure 3B",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 2022,
+                    "end": 2031,
+                    "text": "Figure 3C",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 2311,
+                    "end": 2321,
+                    "text": "Figure S3D",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 2326,
+                    "end": 2336,
+                    "text": "Figure S4D",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 2367,
+                    "end": 2377,
+                    "text": "Figure S3E",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 2382,
+                    "end": 2392,
+                    "text": "Figure S4E",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 2410,
+                    "end": 2420,
+                    "text": "Figure S3F",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 2425,
+                    "end": 2435,
+                    "text": "Figure S4F",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 2631,
+                    "end": 2638,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 3119,
+                    "end": 3126,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 3750,
+                    "end": 3758,
+                    "text": "Table S3",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 3950,
+                    "end": 3957,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 4224,
+                    "end": 4231,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 4780,
+                    "end": 4788,
+                    "text": "Table S4",
+                    "ref_id": null
+                },
+                {
+                    "start": 4793,
+                    "end": 4802,
+                    "text": "Figure S5",
+                    "ref_id": null
+                },
+                {
+                    "start": 4848,
+                    "end": 4855,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 4860,
+                    "end": 4868,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 4969,
+                    "end": 4976,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Finally, based on the sensitivity analyses (Tables S5-8) , the main results of this study are generally robust for the modeling specifications, alternative green space indicators, and exclusion criteria.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 43,
+                    "end": 56,
+                    "text": "(Tables S5-8)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "This study investigated the role of urban environments on the spread and mortality pattern of COVID-19 in three Northeastern states of the U.S., which was the major epicenter of the early epidemic in the United State. We found the incidence % of COVID-19 in the total study period was generally higher in counties with high population density, and this pattern was most evident in the early phase of the pandemic for this region. The initial reproduction number (R 0 ) was also positively associated with population density at the county/borough level. Furthermore, the higher COVID-19 transmission was associated with higher % Black and Hispanic, % non-elderly without health insurance and overcrowding, and it was also associated with lower greenness, % elderly, and sex ratio indicating lower transmission with higher sex/ratio (men per 100 women). The mortality risk of COVID-19 was also generally higher in high density areas. In addition, urban environment indicators related to mortality risk were generally similar to the indicators associated with the COVID-19 transmission, and the number of hospital beds showed a negative association with the mortality risk.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Positive associations between urban density and the spread of COVID-19 have been reported in multiple studies (Co\u015fkun et al., 2020; Rashed et al., 2020; Rubin et al., 2020) , and our findings are generally consistent with the existing literature. Previous studies suggested that the underlying mechanism for the association with population density is related to increased transmission of saliva, droplet, and/or aerosol between individuals when people are in close physical proximity (Bahl et al., 2020; Rubin et al., 2020; Van Doremalen et al., 2020) . as well as other communicable diseases.",
+            "cite_spans": [
+                {
+                    "start": 110,
+                    "end": 131,
+                    "text": "(Co\u015fkun et al., 2020;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 132,
+                    "end": 152,
+                    "text": "Rashed et al., 2020;",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 153,
+                    "end": 172,
+                    "text": "Rubin et al., 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 484,
+                    "end": 503,
+                    "text": "(Bahl et al., 2020;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 504,
+                    "end": 523,
+                    "text": "Rubin et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 524,
+                    "end": 551,
+                    "text": "Van Doremalen et al., 2020)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In addition to overcrowding in households, community level sociodemographic factors such as racial composition were linked to COVID-19 outcomes, demonstrating the complex relationships between the urban environment and COVID-19 transmission and mortality. In our study area, % Black or Hispanic was associated with COVID-19 transmission and mortality; this result is consistent with other studies conducted in the U.S. (Moore et al., 2020; Stokes et al., 2020) . This could be relate to intersectionality of many factors such as patterns of access to health care and baseline health status (Krishnan et al., 2020; Pan et al., 2020) . Further, minorities are more likely to be employed in industries providing essential services such as healthcare, food service, retail, and public transportation (U.S. Bureau of Labor Statistics, 2018). Coupled with the shortage of personal protective equipment in the pandemic's early stages, underrepresented racial/ethnic populations likely had a higher chance of contracting COVID-19 due to increased contact with more people as a result of employment in essential services that did not allow telework or adequate sick leave (Centers for Disease Control and Prevention, 2020b).",
+            "cite_spans": [
+                {
+                    "start": 419,
+                    "end": 439,
+                    "text": "(Moore et al., 2020;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 440,
+                    "end": 460,
+                    "text": "Stokes et al., 2020)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 590,
+                    "end": 613,
+                    "text": "(Krishnan et al., 2020;",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 614,
+                    "end": 631,
+                    "text": "Pan et al., 2020)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our study also found that COVID-19 transmission was associated with inequities in medical insurance coverage. In the U.S., economic status and health insurance are very closely related; only about half of Americans receive health insurance through their employment, and the other half have limited access to affordable healthcare (Hamel L, 2019;  J o u r n a l P r e -p r o o f King, 2020) . Among those who do not have access to affordable healthcare, Blacks and Hispanics are overrepresented. Due to the costs and shortages of COVID-19 diagnostic tests, those of inadequate health care insurance were likely less able to be tested for COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 330,
+                    "end": 345,
+                    "text": "(Hamel L, 2019;",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 346,
+                    "end": 346,
+                    "text": "",
+                    "ref_id": null
+                },
+                {
+                    "start": 378,
+                    "end": 389,
+                    "text": "King, 2020)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our finding that county/borough % of population under 65 years without health insurance and COVID-19 incidence and mortality is consistent with the hypothesis that COVID-19 outcomes are more severe in areas where a higher proportion of uninsured persons.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The COVID-19 pandemic has affected human behaviors, including interactions with surrounding green space. In our study, we found that COVID incidence, transmission, and mortality was lower in areas of higher greenness, as indicated by higher EVI, a result consistent with a prior study (Klompmaker et al., 2020) . First of all, higher greater greenness is strongly associated with lower population density (Table S2) . Moreover, green spaces provide more opportunities for outdoor activities, which carry lower transmission risks compared to indoor activities with limited ventilation. Further, green spaces have other health consequences such as improved mental health, physical activity, and social cohesion.",
+            "cite_spans": [
+                {
+                    "start": 285,
+                    "end": 310,
+                    "text": "(Klompmaker et al., 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 405,
+                    "end": 415,
+                    "text": "(Table S2)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Counties/boroughs with higher greenness also have more open space, allowing aerosols to disperse (Allen and Marr, 2020; Co\u015fkun et al., 2020) , and there is increasing evidence that COVID-19 is transmitted through the air (Zhang et al., 2020b) . In addition, previous studies reported that availability of green space is generally higher in areas with higher socioeconomic level (Astell-Burt et al., 2014; Lakes et al., 2014; Wen et al., 2013) , thus our green space results could partly reflect the effect of the higher socioeconomic status on COVID-19 outcomes. However, the recent Google Community Mobility Reports showed increases in park visitations in New Jersey and Connecticut during the pandemic (Aktay et al., 2020) , and it can imply that green space may bring people into contact with others. We conjecture that this increase in park usage may be related to the non-negative association J o u r n a l P r e -p r o o f Journal Pre-proof between greenness and incidence % in Period 2-3, although it should be investigated further.",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 119,
+                    "text": "(Allen and Marr, 2020;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 120,
+                    "end": 140,
+                    "text": "Co\u015fkun et al., 2020)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 221,
+                    "end": 242,
+                    "text": "(Zhang et al., 2020b)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 378,
+                    "end": 404,
+                    "text": "(Astell-Burt et al., 2014;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 405,
+                    "end": 424,
+                    "text": "Lakes et al., 2014;",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 425,
+                    "end": 442,
+                    "text": "Wen et al., 2013)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 704,
+                    "end": 724,
+                    "text": "(Aktay et al., 2020)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our finding also showed that areas with lower % elderly were more vulnerable to COVID-19 spread. These findings were consistent with previous studies, and more active social activities and lower severity awareness of the pandemic compared to older people were suggested as an important factor (Boehmer et al., 2020; Lee et al., 2020; Zhang et al., 2020a) .",
+            "cite_spans": [
+                {
+                    "start": 293,
+                    "end": 315,
+                    "text": "(Boehmer et al., 2020;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 316,
+                    "end": 333,
+                    "text": "Lee et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 334,
+                    "end": 354,
+                    "text": "Zhang et al., 2020a)",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "On the other hand, our study showed that areas with higher male % showed lower COVID-19 transmission and mortality, however, these patterns differed from those of previous studies (Griffith et al., 2020) . Previous studies reported that males have less avoided large social gatherings, close physical contact with others, or alcohol consumption, compared to females (Griffith et al., 2020; Wenham et al., 2020) . We conjecture that relatively higher women economic activity in our study area ( (Institute for Women's Policy Research, 2018) might be related to our results; however we cannot fully explore these results with this data, and further research should investigate how sex/gender differences in COVID-19 outcomes vary regionally.",
+            "cite_spans": [
+                {
+                    "start": 180,
+                    "end": 203,
+                    "text": "(Griffith et al., 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 366,
+                    "end": 389,
+                    "text": "(Griffith et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 390,
+                    "end": 410,
+                    "text": "Wenham et al., 2020)",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Over the span of the 9-month study period, the association of the COVID-19 transmission with population density and urban environments changed over time. In the first epidemic wave (Period 1), more densely populated areas, especially New York City, had higher COVID-19 transmission. Whereas in the second wave (Period 3), this pattern was diluted, and the highest incidence was observed in Connecticut, which showed the lowest incidence % in Period 1. Moreover, the aforementioned associations with urban environment indicators were most evident in Period 1, however, these associations diminished in Period 3.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We postulate that this pattern may be related to behavior or lifestyle changes and public health interventions after the first epidemic. In particular, New York experienced the first epidemic with severe impacts and legislated to wear a face-covering in public space since Apr.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "17, and earlier work found that the policy did play a dominant role to flatten the transmission in New York City (Zhang et al., 2020b) . Therefore, we postulate that the role of urban environments on the spread of the virus is most significant in the early phase of the epidemic, and it can be diluted or changed over time; although more studies are needed.",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 134,
+                    "text": "(Zhang et al., 2020b)",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "We also found that urban environments affect the mortality % of COVID-19, as well as the transmission. Most of the factors that were associated with the increase in transmission of the virus also be associated with the increase in mortality % in the same direction and this pattern can be interpreted in two plausible ways. The first hypothesis is the inoculum effect.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "Previous studies reported that patients exposed to a higher viral load at the infection will have a more severe illness (Chu et al., 2004; Poulsen et al., 2002) , thus it is possible that people living at high risk of infection are more likely to be exposed to a higher viral load of the coronavirus. Another hypothesis is that factors generally related to better general health conditions (e.g., better income and medical services) could affect the lower mortality risk of COVID-19. Moreover, earlier studies found that the number of hospital beds per person had a negative association with mortality risk. Hospital beds are vital to the treatment of patients with severe illness (Lee et al., 2020; Moghadas et al., 2020) , and the higher number of hospital beds can indicate the higher capacity for treatment of severe patients, such as beds in the intensive care unit, negative pressure beds, and ventilators (Lee et al., 2020) . Our results show that the limited accessibility to hospital beds may be a significant factor that can increase the mortality % and suggest the importance of securing sufficient hospital beds in urban areas where a greater spread of viral infection is expected.",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 138,
+                    "text": "(Chu et al., 2004;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 139,
+                    "end": 160,
+                    "text": "Poulsen et al., 2002)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 681,
+                    "end": 699,
+                    "text": "(Lee et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 700,
+                    "end": 722,
+                    "text": "Moghadas et al., 2020)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 912,
+                    "end": 930,
+                    "text": "(Lee et al., 2020)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Journal Pre-proof"
+        },
+        {
+            "text": "There are several limitations to this study. First, because of data limitations, we could not examine the spread pattern of more specific sub-populations, such as race/ethnicity, age, and sex, which might be associated differently with urban environments. Therefore, our study results should be interpreted as results for the total population. Second, although we considered multiple indicators and additional confounders, we could not fully adjust for potential confounding variables. In particular, when assessing the association between viral transmission and urban environment indicators, we could not consider possible variables that reflect indoor activities (e.g., types of work, working hours indoors, indoor athletic or leisure activities), public transportation, and social contact (e.g., number of people and duration of social gatherings), which can affect the viral contagion. In addition, a recent study conducted in U.S. 25 urban counties reported that the decreased mobility has a significant, positive association with reduced confirmed case growth (Badr et al., 2020) . Therefore, the relationships between different types of urban population mobility and COVID-19 outcomes can be examined more carefully in future studies. Third, our study used ecological urban environment variables, thus the results of this study can only suggest ecological associations between urban environments and COVID-19 outcomes, but cannot be interpreted as the associations or causalities at the individual level. Fourth, due to the insufficient sample size, this study could not consider a total of 31 counties in the R t -urban environment association analyses. Thus, the results could be biased towards counties with a large number of confirmed cases. Finally, we could not consider the possibility of underreporting deaths related to COVID-19. In particular, the U.S. Centers for Disease Control and Prevention has reported that some deceased cases due to COVID-19 can be assigned to other death causes (not diagnosed or not mentioned on the death certificate) (Centers for Disease Control and Prevention, 2021), which implies that the data on COVID-19 deaths used in this study might J o u r n a l P r e -p r o o f be undercounted and our results related to mortality could be biased towards counties with fewer underreported deaths due to COVID-19. Further investigation examining the role of urban environments on COVID-19 or other infectious diseases should consider these limitations.",
+            "cite_spans": [
+                {
+                    "start": 1066,
+                    "end": 1085,
+                    "text": "(Badr et al., 2020)",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Despite these limitations, our study has several strengths. First, we examined the complex effects of urban environments on COVID-19 transmission and compared the magnitude of their effects at the county/borough level, using advanced statistical modeling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Second, using the relatively long time-series data (Mar. to mid-Nov. 2020), we investigated the spatiotemporal changes in the transmission and mortality patterns of COVID-19, as well as the corresponding changes in the associations with urban environment indicators. In particular, our findings indicate the importance of initial response strategies in high density areas. Third, we our analysis of the association between urban environments and mortality due to COVID-19 suggests that specific regional indicators may play an important role to reduce fatality of COVID-19. Our results provide scientific evidence for the prioritization of resource allocation and effective intervention policies considering the location-specific urban environments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "This study suggests that populations living in high density areas may be more vulnerable to COVID-19 spread as well as mortality. It addresses the comprehensive role of urban environment indicators, which can be related to mitigating the spread and mortality of the viral disease. We also found that the relationship between urbanicity and COVID-19 changed over time. Our findings have implications for public health and policies in urban areas on the ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Google COVID-19 community mobility reports: Anonymization process description (version 1.0)",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aktay",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bavadekar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cossoul",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Desfontaines",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fabrikant",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Recognizing and controlling airborne transmission of SARS-CoV-2 in indoor environments",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marr",
+                    "middle": [],
+                    "last": "Lcjia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "30",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Do low-income neighbourhoods have the least green space? A cross-sectional study of Australia's most populous cities",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Astell-Burt",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mavoa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Badland",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Giles-Corti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "BMC Public Health",
+            "volume": "14",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Association between mobility patterns and COVID-19 transmission in the USA: a mathematical modelling study",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Badr",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marshall",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Squire",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet Infectious Diseases",
+            "volume": "20",
+            "issn": "",
+            "pages": "1247--1254",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Airborne or droplet precautions for health workers treating COVID-19?",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Doolan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "De Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chughtai",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bourouiba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Macintyre",
+                    "middle": [],
+                    "last": "Crjtjoid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Changing age distribution of the COVID-19 pandemic-United States",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Boehmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Devies",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Caruso",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Van Santen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Black",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "69",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Initial viral load and the outcomes of SARS",
+            "authors": [
+                {
+                    "first": "C-M",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K-S",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "",
+            "volume": "171",
+            "issn": "",
+            "pages": "1349--1352",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "On the relationships between COVID-19 and extended urbanization",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Connolly",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "Keil",
+                    "middle": [],
+                    "last": "Rjdihg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "10",
+            "issn": "",
+            "pages": "213--216",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Personal protective equipment during the coronavirus disease (COVID) 2019 pandemic-a narrative review",
+            "authors": [
+                {
+                    "first": "Tja",
+                    "middle": [],
+                    "last": "Cook",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "A new framework and software to estimate time-varying reproduction numbers during epidemics",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cori",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ferguson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fraser",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cauchemez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "American journal of epidemiology",
+            "volume": "178",
+            "issn": "",
+            "pages": "1505--1512",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The spread of COVID-19 virus through population density and wind in Turkey cities",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Co\u015fkun",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Y\u0131ld\u0131r\u0131m",
+                    "suffix": ""
+                },
+                {
+                    "first": "G\u00fcnd\u00fcz",
+                    "middle": [],
+                    "last": "Sjsotte",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "751",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "An interactive web-based dashboard to track COVID-19 in real time",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gardner",
+                    "middle": [],
+                    "last": "Ljtlid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "20",
+            "issn": "",
+            "pages": "533--534",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Earth observation of vegetation status in the Sahelian and Sudanian West Africa: comparison of Terra MODIS and NOAA AVHRR satellite data",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fensholt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "International Journal of Remote Sensing",
+            "volume": "25",
+            "issn": "",
+            "pages": "1641--1659",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Governmental public health powers during the COVID-19 pandemic: stay-at-home orders, business closures, and travel restrictions",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Gostin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lfjj",
+                    "middle": [],
+                    "last": "Wiley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "323",
+            "issn": "",
+            "pages": "2137--2138",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Family Foundation/LA Times survey of adults with employer-sponsored health insurance",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hamel",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mc",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        ","
+                    ],
+                    "last": "Brodie",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Kaiser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The influence of green space on the short-term effects of particulate matter on hospitalization in the US for",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Heo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bell",
+                    "middle": [],
+                    "last": "Mljer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "",
+            "volume": "174",
+            "issn": "",
+            "pages": "61--68",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Institute for Women's Policy Research. The Economic Status of Women in the States. Status of Women in the States",
+            "authors": [],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Covid-19 and the need for health care reform",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "King",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England Journal of Medicine",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "County-level exposures to greenness and associations with COVID-19 incidence and mortality in the United States. medRxiv : the preprint server for health sciences",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Klompmaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hart",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Holland",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sabath",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Laden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Historical Insights on Coronavirus Disease 2019 (COVID-19), the 1918 Influenza Pandemic, and Racial Disparities: Illuminating a Path Forward",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Krishnan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ogunwole",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cooper",
+                    "middle": [],
+                    "last": "Lajaoim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Poverty and food insecurity could grow dramatically as COVID-19 spreads",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Laborde",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rjifpri",
+                    "middle": [],
+                    "last": "Vos",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Washington",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Development of an environmental justice index to determine socio-economic disparities of noise pollution and green space in residential areas in Berlin",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lakes",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Br\u00fcckner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kr\u00e4mer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Environmental Planning Management",
+            "volume": "57",
+            "issn": "",
+            "pages": "538--556",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Cities under siege: Urban planning and the threat of infectious disease",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Matthew",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mcdonald",
+                    "middle": [],
+                    "last": "Bjjotapa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "72",
+            "issn": "",
+            "pages": "109--117",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Projecting hospital utilization during the COVID-19 outbreaks in the United States",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Moghadas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shoukat",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Fitzpatrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Wells",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pandey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "117",
+            "issn": "",
+            "pages": "9122--9126",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Disparities in incidence of COVID-19 among underrepresented racial/ethnic groups in counties identified as hotspots during",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Ricaldi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rose",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fuld",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Parise",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "69",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "New York City Department of Health and Mental Hygiene",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "The impact of ethnicity on clinical outcomes in COVID-19: A systematic review",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sze",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Minhas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Bangash",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Pareek",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Divall",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "A household study of chickenpox in Guinea-Bissau: intensity of exposure is a determinant of severity",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Poulsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Qureshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Lisse",
+                    "suffix": ""
+                },
+                {
+                    "first": "P-E",
+                    "middle": [],
+                    "last": "Kofoed",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Vestergaard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "45",
+            "issn": "",
+            "pages": "237--242",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Influence of absolute humidity, temperature and population density on COVID-19 spread and decay number of SARS-CoV-2 in counties across the United States",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rashed",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kodera",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gomez-Tames",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hirata",
+                    "middle": [],
+                    "last": "Ajijoer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "3",
+            "issn": "",
+            "pages": "2016099--2016099",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The COVID-19 pandemic: Impacts on cities and major lessons for urban planning, design, and management",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sharifi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Khavarian-Garmsir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science of The Total Environment",
+            "volume": "749",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Coronavirus disease 2019 case surveillance-United States",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Stokes",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Zambrano",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Marder",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Raz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Seb",
+                    "middle": [],
+                    "last": "Felix",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "69",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Latest Map and Case Count",
+            "authors": [],
+            "year": 2020,
+            "venue": "The New York Times. Covid in the",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Improved inference of time-varying reproduction numbers during infectious disease outbreaks",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stockwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Van Gaalen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Polonsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kamvar",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Demarsh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Epidemics",
+            "volume": "29",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Understanding co-housing from a planning perspective: why and how?",
+            "authors": [
+                {
+                    "first": "Tummers",
+                    "middle": [],
+                    "last": "Ljur",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "64--78",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Labor force characteristics by race and ethnicity",
+            "authors": [],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Aerosol and surface stability of SARS-CoV-2 as compared with SARS-CoV-1",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Van Doremalen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bushmaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Morris",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Holbrook",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gamble",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Williamson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "382",
+            "issn": "",
+            "pages": "1564--1567",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Urbanization, urbanicity, and health",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Vlahov",
+                    "suffix": ""
+                },
+                {
+                    "first": "Galea",
+                    "middle": [],
+                    "last": "Sjjouh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "79",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "An unequal blow",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wade",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Spatial disparities in the distribution of parks and green spaces in the USA",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Harris",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Holt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Croft",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Annals of Behavioral Medicine",
+            "volume": "45",
+            "issn": "",
+            "pages": "18--27",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "COVID-19: the gendered impacts of the outbreak",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wenham",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rjtl",
+                    "middle": [],
+                    "last": "Morgan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "395",
+            "issn": "",
+            "pages": "846--848",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "World Health Organization",
+            "authors": [],
+            "year": null,
+            "venue": "Coronavirus disease 2019 (COVID-19) Situation Report -90",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "World Health Organization. WHO Corinavirus Disease (COVID-19) Dashboard",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Evolving epidemiology and transmission dynamics of coronavirus disease 2019 outside Hubei province, China: a descriptive and modelling study. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Identifying airborne transmission as the dominant route for the spread of COVID-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Molina",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "117",
+            "issn": "",
+            "pages": "14857--14863",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Note) P80/P20: the ratio of household income at the 80 th percentile to income at the 20 th percentile; EVI: population-weighed Enhanced Vegetation Index",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Whanhee Lee: Conceptualization, Methodology, Formal analysis, Data Curation, Writing-Original draft preparation",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Methodology, Data Curation, Writing -Review & Editing",
+            "authors": [
+                {
+                    "first": "Honghyok",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Methodology, Data Curation, Writing -Review & Editing",
+            "authors": [
+                {
+                    "first": "Michelle",
+                    "middle": [],
+                    "last": "Hayon",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Data Curation, Writing -Review & Editing",
+            "authors": [
+                {
+                    "first": "Seulkee",
+                    "middle": [],
+                    "last": "Heo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Writing -Review & Editing",
+            "authors": [
+                {
+                    "first": "Kelvin",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Fong",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Writing -Review & Editing",
+            "authors": [
+                {
+                    "first": "Chaerin",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Writing -Review & Editing",
+            "authors": [
+                {
+                    "first": "Ho",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Bell: Supervision, Funding acquisition",
+            "authors": [
+                {
+                    "first": "Michelle",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Third, we collected the % of the population under age 65 without health insurance from the 2017 Small Area Health Insurance Estimates (SAHIE) program. In addition, we obtained the number of hospital beds from the 2017 American Hospital Association (AHA)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "R t indicates the average number of new infections caused by a single infected individual at time t in the population susceptible to infection (i.e., not infected or immunized population).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "shows the time trend of daily new confirmed cases of COVID-19 during the whole study area with two rapidly increasing trends observed in Periods 1 and 3 (the first and second waves).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "2A displays daily new cases per 100,000 persons by study areas (New York",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "4 shows the sub-period-specific (first wave, stabilized period, second wave) results corresponding toFigure 3, and the spread pattern among sub-periods was heterogeneous. The positive association between population density and COVID-19",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "presents a geographical pattern of the number of deaths per 100,000 persons (4A) and its association with population density (4B). COVID-19 mortality risk was highest in counties/boroughs in New York City and positively associated with population density.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": ", our results found that overcrowded living conditions were associated with the higher COVID-19 transmission. Particularly, being in an indoor environment with overcrowded conditions can increase the likelihood of exposure to coughs, sneeze, and food have been suggested as dominant risk factors for the spread of coronavirus (Centers for Disease Control and Prevention, 2020a; Cook, 2020). Co-housing and apartments are common residential situations in urban areas (especially, metropolitan areas)(Tummers and practice, 2015), therefore improvement of overcrowded living conditions for urban residents within urban developments would reduce the high transmission of COVID-19",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "the 2018 national rank of women's labor force participation: 29 [New York], 19 [New Jersey], and 13 [Connecticut]) and the poverty of women in New York, which was substantially higher than in the other two states (the 2018 national rank of women's poverty rate: 42 [New York], 3 [New Jersey], and 2 [Connecticut])",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Legends",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Daily series of confirmed COVID-19 cases in three states (New York, NewJersey, and Connecticut) of the Unites States.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Epidemiological characteristics of COVID-19 in three states of the Unites States (NYC: New York City, NY: New York States, NJ: New Jersey, and CT: Connecticut). (A) Daily series of cases per 100,000 people by New York City and three states; (B) Time-varying reproduction number (R t ) of COVID-19 by New York City and three states; (C) Daily series of cases per 100,000 people by sub-areas divided by population density level; (D) Time-varying R t of COVID-19 by low, mid, high population density level.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Spatial pattern of the transmission of COVID-19 and the association between the transmission pattern and population density. (A) Geographical distribution of the total confirmed cases per 100,000 people; (B) Association between the total confirmed cases per 100,000 people and log-transformed population density (persons per km 2 ); (C) Geographical distribution of the initial reproduction number (i.e. R 0 ); (D) Association between the initial reproduction number and log-transformed population density (persons per km 2 ).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "Spatial pattern of the mortality due to COVID-19 and the association between the mortality pattern and population density. (A) Geographical distribution of the total death cases per 100,000 people; (B) Association between the total death cases per 100,000 people and log-transformed population density (persons per km 2 ).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "Figure 1",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Descriptive information on the total number of COVID-19 confirmed and death cases (from Mar. 01 to Nov. 16, 2020), population, population density, and urban environment indicators during the period 2014-2019. Values: Mean (Range).",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Associations between urban environment indicators and the mortality proportion of COVID-19.Note) eCI: empirical confidence interval; IQR: inter quartile range; P80/P20: the ratio of household income at the 80 th percentile to income at the 20 th percentile; EVI: populationweighed Enhanced Vegetation Index.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

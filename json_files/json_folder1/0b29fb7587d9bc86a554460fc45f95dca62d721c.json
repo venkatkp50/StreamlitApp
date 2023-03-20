@@ -1,0 +1,2678 @@
+{
+    "paper_id": "0b29fb7587d9bc86a554460fc45f95dca62d721c",
+    "metadata": {
+        "title": "expanded chinese hamster organ and cell line proteomics profiling reveals tissue-specific functionalities",
+        "authors": [
+            {
+                "first": "Kelley",
+                "middle": [],
+                "last": "Heffner",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "AstraZeneca",
+                    "institution": "Cell Culture and Fermentation Sciences",
+                    "location": {
+                        "settlement": "Gaithersburg",
+                        "region": "MD",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Deniz",
+                "middle": [
+                    "Baycin"
+                ],
+                "last": "Hizal",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Natalia",
+                "middle": [
+                    "I"
+                ],
+                "last": "Majewska",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "AstraZeneca",
+                    "institution": "Cell Culture and Fermentation Sciences",
+                    "location": {
+                        "settlement": "Gaithersburg",
+                        "region": "MD",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Swetha",
+                "middle": [],
+                "last": "Kumar",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Venkata",
+                "middle": [
+                    "Gayatri"
+                ],
+                "last": "Dhara",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jie",
+                "middle": [],
+                "last": "Zhu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "AstraZeneca",
+                    "institution": "Cell Culture and Fermentation Sciences",
+                    "location": {
+                        "settlement": "Gaithersburg",
+                        "region": "MD",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [],
+                "last": "Bowen",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Diane",
+                "middle": [],
+                "last": "Hatton",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "AstraZeneca",
+                    "institution": "Cell Culture and Fermentation Sciences",
+                    "location": {
+                        "settlement": "Gaithersburg",
+                        "region": "MD",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "George",
+                "middle": [],
+                "last": "Yerganian",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Cytogen Research and Development, Inc",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Athena",
+                "middle": [],
+                "last": "Yerganian",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Robert",
+                "middle": [],
+                "last": "O&apos;meally",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Cytogen Research and Development, Inc",
+                    "location": {
+                        "settlement": "Boston",
+                        "region": "MA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Robert",
+                "middle": [],
+                "last": "Cole",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Johns Hopkins School of Medicine",
+                    "location": {
+                        "settlement": "Baltimore",
+                        "region": "MD",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [],
+                "last": "Betenbaugh",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Quantitative proteomics data were obtained from two CHO cell lines (CHO-S and CHO DG44) and compared with seven Chinese hamster (Cricetulus griseus) tissues (brain, heart, kidney, liver, lung, ovary and spleen) by tandem mass tag (TMT) labeling followed by mass spectrometry, providing a comprehensive hamster tissue and cell line proteomics atlas. Of the 8470 unique proteins identified, high similarity was observed between CHO-S and CHO DG44 and included increases in proteins involved in DNA replication, cell cycle, RNA processing, and chromosome processing. Alternatively, gene ontology and pathway analysis in tissues indicated increased protein intensities related to important tissue functionalities. Proteins enriched in the brain included those involved in acidic amino acid metabolism, Golgi apparatus, and ion and phospholipid transport. The lung showed enrichment in proteins involved in BCAA catabolism, ROS metabolism, vesicle trafficking, and lipid synthesis while the ovary exhibited enrichments in extracellular matrix and adhesion proteins. The heart proteome included vasoconstriction, complement activation, and lipoprotein metabolism enrichments. These detailed comparisons of CHO cell lines and hamster tissues will enhance understanding of the relationship between proteins and tissue function and pinpoint potential pathways of biotechnological relevance for future cell engineering.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The history of CHO cell line establishment from Cricetulus griseus dates back to the 1950s when Theodore T. Puck and colleagues established the CHO-K1 cell line 1 . Today, CHO cell lines generated from the Chinese hamster dominate the biopharmaceutical industry and their products generate billions of dollars in revenue annually 2,3 . The success of CHO cell lines for recombinant protein production can be attributed to their high growth rate, ease of genetic modification, and ability to post-translationally modify proteins via glycosylation, including galactosylation and sialylation. The original CHO cell line was adapted and modified by various researchers to create cell lines, such as CHO-DXB11, CHO DG44, and CHO-S 4,5 . Thus, there may be genetic differences across CHO parental cell lines, as well as clonal-and process-dependent variations 2 . These clonal variabilities may potentially lead to differences across transcriptomes and proteomes. Since each and every CHO cell line exhibits significant genomic, transcriptomic, and proteomic signatures, a single CHO-ome is not necessarily directly applicable across different laboratories. In addition to cell line differences, variations in the bioprocess conditions, including media formulations and bioreactor operations, can alter the transcriptome and proteome.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Initial efforts to understand CHO include the sequencing of both the CHO and Cricetulus griseus genomes. The draft CHO-K1 genome was established in 2011 6 , and the Chinese hamster genome followed two years later 7 . In addition, the CHO-DXB11 genome was sequenced to understand the DHFR negative phenotype and open 1 www.nature.com/scientificreports/ cell line drift 8 . Other efforts have focused on creating bacterial artificial chromosome libraries for CHO-K1 and CHO-DG44 cell lines in order to visualize hamster chromosome re-arrangements 9 . The recent PICR Chinese hamster genome has utilized real time sequencing with Illumina-based assemblies to generate a more complete CHO genome 10 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Similar efforts have been used to understand mRNA and protein expression in CHO using transcriptomics and proteomics, respectively. Through advancements in sample preparation and mass spectrometry (MS) technology, it is possible to identify and quantify thousands of cellular proteins. Initial CHO proteomic analyses revealed enrichment in protein processing and apoptosis pathways at the proteomic level in the CHO-K1 cell line compared to the human, mouse, and CHO genome and transcriptome 11 . More recent studies in our lab and others have revealed extensive CHO proteomics databases as well as databases for the secretome and CHO cell lines in exponential and stationary phases 12,13 . In addition, different bioprocess conditions have been studied via transcriptomics and proteomics to yield insights into protein production, cell growth, cell death, favorable glycosylation, and optimized media formulations 14,15 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Proteomics has been used to study the proteome of specific organs in order to elucidate how protein expression changes across different tissues in the hamster, as previously studied for human 16 and mouse 17 . Hamsters represent another important small animal model in biomedicine for studying diseases and evaluating the effect of potential therapies in pharmaceutical sciences. Indeed, Chinese hamsters have been applied as a small animal model for diabetes, cancer, and the impact of radiation 18-21 . More recently, hamster species represent one of the prime small animal models for examining the impact of SARS-CoV-2 infections and potential therapies 22 . Understanding the proteomics profiles across different tissues will help biomedical scientists to understand how expressed proteins are responsible for tissue-specific functionalities. From a disease perspective, tissue proteomics can enable scientists to appreciate why different diseases and drugs affect various tissues differently. From a biotechnology perspective, specific functionalities present in different tissues can provide insights into ways to improve the capabilities of CHO cell line production hosts by adding capabilities present in certain tissues that may be distinct from current hosts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Therefore, in this study, we employed comparative proteomics using tandem mass tag labeling (TMT) in order to compare two representative CHO cell lines and seven different tissues from Chinese hamster. The CHO-S and CHO DG44 cell lines were used as model cell lines for comparison to hamster tissue expression patterns. Multiple organs (brain, heart, kidney, liver, lung, ovary and spleen) relevant to pharmaceutical sciences, disease, and biotechnology were used to generate tissue-specific proteomes, providing the most comprehensive and diverse tissue proteome available for hamsters to date. Tissue-tissue and tissue-cell line comparisons suggest functions and pathways with significant differential expression across different cell types, with cell lines tending to upregulate proteins associated with growth and gene expression, while tissue samples exhibit upregulation in tissuespecific functional pathways. Examining proteins in CHO cell lines and tissues will enhance our understanding of why tissue exhibit certain characteristics, how cell lines are adapted for cell culture and protein production, and highlight how CHO cells could potentially be modified to include useful tissue-specific functions in future cell engineering efforts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Tissue isolation. Tissues from various organs (brain, heart, kidney, liver, lung, ovary and spleen) were harvested from female Chinese hamsters (age 5-10 weeks) generously provided by the lab of Dr. ). Euthanization was performed by CO 2 and verified by abdominal puncture, in accordance with all guidelines and regulations of the Johns Hopkins University Animal Care and Use Committee (Approved Protocol HA14A84). Upon harvest, each organ was divided into small pieces, rapidly frozen on dry ice, and subsequently stored at \u2212 80 \u00b0C until further analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Cell culture. Two commercial suspension CHO cell lines, CHO-S and CHO DG44, were grown in batch culture and the samples were collected and stored. CHO-S cells were cultured in CD-CHO medium supplemented with 8 mM glutamine (ThermoFisher Scientific, Waltham, MA, USA), and CHO DG44 cells were cultured in DG44 medium supplemented with 2 mM glutamine (ThermoFisher Scientific, Waltham, MA, USA). Both cell lines were incubated at 37 \u00b0C with 8% CO 2 shaking at 120RPM; viable cell density and viability were determined by hemocytometer and trypan blue staining. For sample collection, approximately 3 \u00d7 10 6 cells were centrifuged, washed with PBS on ice, frozen rapidly on dry ice and stored at \u221280 \u00b0C until analysis. Based on the growth profiles for both cell lines (data not shown), samples collected on day 2 were identified as corresponding to midexponential phase and used for further analyses.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Proteomics sample preparation. Samples for proteomics were thawed on ice and lysed in a solution of 2% sodium dodecyl sulfate (SDS) in 500 \u00b5L of cell lysis buffer supplemented with 0.1 mM phenylmethylsulfonyl fluoride (PMSF) and 1 mM ethylenediaminetetraacetic acid (EDTA), pH 7-8. Lysates were sonicated x3 times for 60 s at 20% amplitude followed by a 90 s pause. Protein concentration was measured by a bicinchoninic acid (BCA) protein assay. One hundred micrograms of each sample were reduced in 10 mM tris(2-carboxyethyl) phosphine (TCEP), pH 7-8, at 60 \u00b0C for 1 h on a shaking platform. Iodoacetamide was added to alkylate the sample to a final concentration of approximately 17 mM and incubated for 30 min in the dark. Next, samples were passed through 10 kDa filters to reduce the SDS concentration as described in the filter-aided sample preparation (FASP) method 23 . During the FASP method, tetra-butyl ammonium bicarbonate (TEABC) was added after the urea washes to increase protein recoverability from the filters. The samples were finally digested using trypsin/LysC enzyme mix (Promega V507A) at an enzyme to substrate ratio of 1:10, overnight at 37 \u00b0C on a Scientific RepoRtS | (2020) 10:15841 | https://doi.org/10.1038/s41598-020-72959-8 www.nature.com/scientificreports/ shaking platform. After digestion, peptides were cleaned up by C18 cartridges and labeled with TMT reagents. All TMT labeled samples were combined and vacuum centrifuged to dryness removing the entire liquid.",
+            "cite_spans": [
+                {
+                    "start": 873,
+                    "end": 875,
+                    "text": "23",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Labeling. In order to compare protein expression, samples were labeled in duplicate (biological replicates)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "using two TMT-10plex labeling kits (ThermoFisher Scientific, Waltham, MA, USA). Triplicates were used for ovary tissue and CHO-S. Each of the 10 reagents has the same nominal mass and chemical structure, so that for each sample a unique reporter mass (126-131 Da) was used to relate protein expression levels. Specifically, we included technical and biological replicates of CHO-S (two samples in TMT 1 and one sample in TMT 2) to aid in comparisons between and within the TMT experiments. All other samples contained only biological replicates, which were randomly assigned to one of the TMT-10plex kits. The TMT labeling design is provided in Table 1 . Following protein digestion, TMT reagents were thawed, and acetonitrile was used to dissolve the reagents. One reagent tube was added to each sample and then incubated at room temperature for 1 h. Hydroxylamine was subsequently added to quench the reaction before the tubes were combined. All TMT labeled samples were combined and vacuum centrifuged to dryness, removing the entire liquid. Each TMT-10plex was subjected to analysis by two-dimensional liquid chromatography tandem MS (2D LC/MS/MS). Protein identifications were made using Proteome Discoverer software with a high confidence cutoff [< 1% false discovery rate (FDR)]. The protein intensities were evaluated by fold change, using the CHO-S cell line technical replicate in each TMT as the basis. Protein accession numbers were mapped to gene symbols using the biological database network (https ://biodb net-abcc.ncicr f.gov) for functional analysis by gene ontology (GO). For GO annotation, gene symbols were mapped to biological processes, using the GO-CHO platform (https ://ebdru p.biosu stain .dtu.dk/gocho ). All programming for the hypergeometric test were calculated in MATLAB version 2015vB (https ://www.mathw orks.com/produ cts/matla b) and RStudio (https ://www.rstud io.com). Enrichment and depletion p-values were calculated using the hygecdf and hygepdf functions in MATLAB. These values were ",
+            "cite_spans": [
+                {
+                    "start": 421,
+                    "end": 427,
+                    "text": "TMT 2)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 645,
+                    "end": 652,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "This study was undertaken to compare protein expression of various CHO cell lines and hamster tissues, resulting in the most comprehensive multi-tissue analysis of the Cricetulus griseus proteome (Fig. 1A) . This multi-tissue and multi-cell line analysis aims to improve our understanding of the Chinese hamster as the original tissue www.nature.com/scientificreports/ source for CHO cell lines. Additionally, since CHO is the dominant biopharmaceutical production host in biotechnology, this comparison elucidates similarities and differences across cells and tissues. An overview of the proteomics workflow is shown in Fig. 1B . Following MS identification, the protein accession numbers were determined using the annotated Chinese hamster genome 25 . Protein accession numbers were converted to gene symbols for functional analysis 26 . For missing gene symbols, the accession numbers were searched against mouse and human databases using the online database, bioDBnet 26 . In this study, gene ontology (GO) and ingenuity pathway analysis (IPA) were used for functional analyses of the differentially expressed proteins. GO analysis converts gene symbols to their molecular function, cellular component, and biological processes in order to evaluate the relationship between the molecular activities of gene products, location of activity, and pathways comprising the activity of multiple gene products, respectively 27 . In another functional analysis, each gene symbol was mapped to the relevant IPA pathways 28 , suggesting enriched and depleted pathways for comparisons between different tissues and cells. For both GO and IPA, the enrichment and depletion values were determined based on p-values that were calculated via the hypergeometric distribution, with p < 0.05 set for evaluating significance.",
+            "cite_spans": [
+                {
+                    "start": 749,
+                    "end": 751,
+                    "text": "25",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 835,
+                    "end": 837,
+                    "text": "26",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 972,
+                    "end": 974,
+                    "text": "26",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1420,
+                    "end": 1422,
+                    "text": "27",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1514,
+                    "end": 1516,
+                    "text": "28",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 196,
+                    "end": 205,
+                    "text": "(Fig. 1A)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 621,
+                    "end": 628,
+                    "text": "Fig. 1B",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Results and discussion"
+        },
+        {
+            "text": "Protein identification and total protein intensity differences. PCA comparison. For each sample, the number of unique proteins and peptides identified are listed in Table 2 along with the number of spectra obtained. The complete list of identified proteins and fold change ratios are listed in Supplementary Table 1 and are searchable online through the NIST database (https ://pepti de.nist.gov). Over 6000 proteins were identified in each sample with at least two unique peptides per protein; this corresponded to a total of 8470 unique proteins containing a false discovery rate (FDR) of 1% for protein identification when the TMT samples were combined and the duplicates were removed ( Table 2) . Between the two TMT experiments, there were 4430 common proteins identified in both sets ( Fig. 2A) . A total of 2244 proteins were unique to TMT1 and 1796 proteins were unique to TMT2 ( Fig. 2A) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 165,
+                    "end": 172,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 294,
+                    "end": 315,
+                    "text": "Supplementary Table 1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 690,
+                    "end": 698,
+                    "text": "Table 2)",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 792,
+                    "end": 800,
+                    "text": "Fig. 2A)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 888,
+                    "end": 896,
+                    "text": "Fig. 2A)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results and discussion"
+        },
+        {
+            "text": "Protein intensity fold change ratios were initially evaluated through principal component analysis (PCA) of proteins identified in all samples, as shown in Fig. 2B 29 . The PCA distribution represents differences in protein expression for those proteins identified in all samples and is influenced by proteins highly expressed in one tissue versus another. Not surprisingly, as shown by PCA, the cell samples clustered together and were distinct from all the tissues. For the tissue samples, the expression of proteins in spleen, liver, and heart clustered together. Similarly, protein expression in the lung and kidney clustered together. Interestingly, the first cluster (spleen, liver and heart) comprises tissues with dense connective tissue and capillary systems 30 . In contrast, the second cluster (lung and kidney) is specialized for transport, with tubular systems and thin insterstitium [30] [31] [32] [33] . Ovary and brain were clustered separately from the other organs.",
+            "cite_spans": [
+                {
+                    "start": 164,
+                    "end": 166,
+                    "text": "29",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 768,
+                    "end": 770,
+                    "text": "30",
+                    "ref_id": null
+                },
+                {
+                    "start": 897,
+                    "end": 901,
+                    "text": "[30]",
+                    "ref_id": null
+                },
+                {
+                    "start": 902,
+                    "end": 906,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 907,
+                    "end": 911,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 912,
+                    "end": 916,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 156,
+                    "end": 163,
+                    "text": "Fig. 2B",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results and discussion"
+        },
+        {
+            "text": "Next, the two replicates from the same tissue were plotted to examine their consistency. Fitting a curve to the scatter plot and calculating the R 2 value assessed the linearity of the two replicates. Shown in Fig. 2C -F are the plots for the tissue replicates with the highest R 2 value for each cluster, specifically lung (from the lung/kidney cluster) and heart (from the heart/kidney/spleen cluster), plus brain and ovary. For the following analyses, we studied these representatives from each of the clusters; additional data on all proteins is provided in Supplementary Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 210,
+                    "end": 217,
+                    "text": "Fig. 2C",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 576,
+                    "end": 583,
+                    "text": "Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Results and discussion"
+        },
+        {
+            "text": "To compare between cell lines and tissues, protein intensity was averaged between replicates and plotted in Fig. 3 . The data was log2 transformed in order to ensure a normal distribution for each sample. A student's t-test was performed to determine the likelihood of significant differences between samples from cells and tissues. A summary of the statistical analysis, performed using student's t-test as a means comparison, is shown in Table 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 108,
+                    "end": 114,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 440,
+                    "end": 447,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "When comparing the cell lines to each other, no significant differences were observed between the CHO-S and CHO DG44 cell lines (Table 2 and Fig. 3A ) at a p-value of 0.05. We identified 178 proteins with significantly higher expression in CHO-S relative to CHO-DG44 and 155 proteins with significantly higher expression in CHO DG44 relative to CHO-S, representing the lowest number of total outliers for any comparison. A comparison between cells and tissues is shown in Fig. 3B through I. For these comparisons, the total number of proteins with low and high expression (fold change < 0.5 or > 2.0, respectively) is approximately 50%. For the cell to tissue comparison, all tissues show a statistically significant difference as compared to either the CHO-S or CHO DG44 cell lines. The proteins expressed at significantly higher levels in cells over tissues include proteins related to DNA replication, transcription, translation, and controlling cell apoptosis as expected to maintain rapid cell growth in exponential culture. Among the most highly expressed proteins in CHO-S and CHO DG44 are DNA-directed RNA polymerase II, eukaryotic translation initiation factor, histone H3.1t, general transcription factor 3C, 60S ribosomal protein, and apoptosis inhibitor 5. www.nature.com/scientificreports/ In comparison to ovary tissue (Fig. 3E ,I respectively, p < 0.01), CHO-S and CHO DG44 cells exhibited differences in expression patterns. This is somewhat surprising considering that CHO cells were derived from a mixture of ovary and the surrounding connective tissue. In Fig. 3E ,I, the proteins colored blue and yellow represent those with higher expression in ovary or CHO cells, respectively. In addition to ovary, statistical differences in protein expression were observed for CHO-S and CHO DG44 cells and to lung tissue (Fig. 3D,H, p < 0.01) . Similar to the comparison against ovary, an increase in upregulated proteins with higher expression was observed in the lung tissue in comparison to the cell lines. This suggests that tissue-specific functions may contribute to differences in expression patterns with cells regardless of the type of tissue.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 128,
+                    "end": 136,
+                    "text": "(Table 2",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 141,
+                    "end": 148,
+                    "text": "Fig. 3A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 472,
+                    "end": 479,
+                    "text": "Fig. 3B",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1333,
+                    "end": 1341,
+                    "text": "(Fig. 3E",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1575,
+                    "end": 1582,
+                    "text": "Fig. 3E",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1830,
+                    "end": 1851,
+                    "text": "(Fig. 3D,H, p < 0.01)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "Next, both CHO cell lines show statistically significant differences in outliers as compared against heart tissue (Fig. 3C ,G, p < 0.01). Similar to the ovary and lung comparison, there are a greater number of proteins with higher expression in the heart tissue when compared to cell lines. Over 50% of the cells in the heart are cardiac fibroblasts, which contributes to the specificity of this organ 34 . In addition, the heart has endothelial, smooth muscle, and pacemaker cells. This high degree of specialization is likely influential for the differences in proteins between CHO and heart. Finally, both CHO-S and CHO DG44 also show a difference in expression www.nature.com/scientificreports/ when compared to the brain, which is also likely related to the high degree of specialization required for brain cells such as neurons and glia (Fig. 3B ,F, p < 0.01). Amongst the tissues, wide differential regulation, both upregulation and downregulation, can be observed when comparing tissues against each other (Fig. 3J-O) . There is a greater difference in terms of the total percentage of outliers in the brain versus heart comparison (~ 62% total outliers for brain and ~ 51% total outliers for heart). Interestingly, only brain and heart tissues were found to have a statistically significant difference between each other (Table 3 ). All other tissue to tissue comparisons were found to have insignificant differences in the percentage of outliers. One reason for the relatively high number of outliers in brain tissue may be attributed to the distinct separation in terms of embryonic development from the other organs. The brain originates from the ectoderm whereas the circulatory system (heart), epithelial layer of the lungs, and ovary develop from the Table 2 ) are provided in the appendix. We also examined some of the top upregulated proteins in each tissue. Hierarchical clustering of protein expression is depicted in the center plot of Fig. 4 in which the color pink represents highly expressed proteins Table 3 . Means comparison using Student's t-test for total percentage of outliers. *p-value < 0.05 indicates that the outlier comparison is statistically significant. Coloring is shown from low (green) to high (pink) abundance. Distinct clusters are shown for brain, lung, heart, and ovary tissues. From top to bottom: the protein functions exhibiting high expression for each tissue are shown relative to other tissues for ovary (A), brain (B), heart (C), and lung (D) plotted using Genesis software. www.nature.com/scientificreports/ for each specific tissue. For each sample, the top 200 upregulated proteins, corresponding to approximately 3% of the total proteins in a tissue, were identified in order to highlight tissue specificity (Supplementary Table 3 ). For example, disintegrin and metalloproteinase domain-containing proteins (ADAM7, 10, 15) were highly upregulated in hamster ovary (Supplementary Table 3 ). Indeed, ADAM 10 can control follicle formation by regulating the recruitment of ovarian follicle supporting cells 36 . Disintegrin would be useful for control of the extracellular matrix as agrees with results from the human ovary-specific proteome 37 . Similarly, highly upregulated brain proteins include amyloid beta A4 protein, neuron navigator 1 (NAV1), calcium and integrin binding protein, and serine/threonine protein kinase (Supplementary Table 3 ). NAV1 is specifically targeted to the nervous system 38 .",
+            "cite_spans": [
+                {
+                    "start": 402,
+                    "end": 404,
+                    "text": "34",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 3061,
+                    "end": 3063,
+                    "text": "36",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 3196,
+                    "end": 3198,
+                    "text": "37",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 3458,
+                    "end": 3460,
+                    "text": "38",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 114,
+                    "end": 122,
+                    "text": "(Fig. 3C",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 843,
+                    "end": 851,
+                    "text": "(Fig. 3B",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1014,
+                    "end": 1025,
+                    "text": "(Fig. 3J-O)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1330,
+                    "end": 1338,
+                    "text": "(Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1766,
+                    "end": 1773,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1956,
+                    "end": 1962,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 2024,
+                    "end": 2031,
+                    "text": "Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 2779,
+                    "end": 2786,
+                    "text": "Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 2921,
+                    "end": 2943,
+                    "text": "(Supplementary Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 3380,
+                    "end": 3402,
+                    "text": "(Supplementary Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "In contrast, the heart is a strong muscle that must contract continually and is predominantly composed of cardiomyocytes and fibroblasts. The human heart tissue proteome was found to have 201 upregulated proteins 37 , including retinol dehydrogenase (RDH1) which was also significantly upregulated in our hamster heart proteome (Supplementary Table 3 ). Previous studies have indicated that the knock-down of RDH1 led to abnormal neural crest cell migration and an abnormal heart loop in mutant embryos, signaling its importance in heart tissue 39 . We also observed high expression of proteins including pleckstrin homology domain-containing family F member 1-like, actin-related protein, glutathione S-transferase, protein O-glycosyltransferase, and Ras GTPase-activating protein (Supplementary Table 3) .",
+            "cite_spans": [
+                {
+                    "start": 545,
+                    "end": 547,
+                    "text": "39",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 343,
+                    "end": 350,
+                    "text": "Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 797,
+                    "end": 805,
+                    "text": "Table 3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "We also identified the top 200 upregulated proteins in hamster lung tissue (Supplementary Table 3 ). Examples include branched chain aminotransferase, glycine N-methyltransferase, integrin alpha-6, and vesicle-associated membrane protein, indicating the importance in the lung of key metabolic and membrane process. As a comparison, the human proteome identified 183 genes highly expressed in the lung including similar membrane and secretory proteins 37 . Indeed, the lung is particularly adept at expressing membrane and secreted proteins such as surfactants and solute carrier proteins 40 . Analysis of the most abundant proteins for each tissue or cell line can, at least in some cases, relate to key function and roles of specific tissues and provide targets of opportunity for genetic engineering of CHO cell lines.",
+            "cite_spans": [
+                {
+                    "start": 452,
+                    "end": 454,
+                    "text": "37",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 589,
+                    "end": 591,
+                    "text": "40",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 90,
+                    "end": 97,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "IPA pathway analyses. Next, the proteins were annotated with gene symbols in order to perform pathway analysis. Proteins with fold change values of less than 0.5 or greater than 2.0 were used for each comparison in order to determine downregulation and upregulation of pathways in the IPA software. As shown in Fig. 4 , protein intensity hierarchical clustering was used to identify proteins with significantly higher expression in a specific tissue.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 311,
+                    "end": 317,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "Protein functions identified in IPA that are enriched in the brain include G1/S phase arrest, metabolism of acidic amino acids, and organization of the Golgi apparatus, and transport of phospholipids (Fig. 4B) . The Golgi plays a central role in cholesterol and other lipid metabolism; almost 25% of the human body's unesterified cholesterol is present in the brain 41 . Additionally, glycosphingolipids are abundant in the nervous system, and are synthesized in the endoplasmic reticulum and completed in the Golgi apparatus 42 . Acidic amino acids, including glutamate and aspartate, serve important signaling functions in the brain, so an increase in their metabolic activity would be expected, especially since these metabolites are not readily obtained from the diet 43, 44 .",
+            "cite_spans": [
+                {
+                    "start": 366,
+                    "end": 368,
+                    "text": "41",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 526,
+                    "end": 528,
+                    "text": "42",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 772,
+                    "end": 775,
+                    "text": "43,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 776,
+                    "end": 778,
+                    "text": "44",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 209,
+                    "text": "(Fig. 4B)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "Pathways enriched in the lung include catabolism of branched chain amino acids (BCAAs), metabolism of reactive oxygen species (ROS), trafficking of vesicles, and synthesis of lipids (Fig. 4D) . The lung shows high secretory capacity and thus trafficking of the secretory products through vesicles is important 45 . Furthermore, the lung is the source of surfactants, composed of 90% lipids; thus, lipid synthesis will be an important component of its function 46, 47 . The lungs are also particularly sensitive to hypoxia occurring at high altitude. The lung responds to these hypoxic conditions through signaling, including the release of ROS species to trigger hypoxia-inducible factor (HIF) 48 . Thus, the capacity for ROS metabolism may be critical for lung function and adaptation to changes in oxygen levels in different environments.",
+            "cite_spans": [
+                {
+                    "start": 310,
+                    "end": 312,
+                    "text": "45",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 460,
+                    "end": 463,
+                    "text": "46,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 464,
+                    "end": 466,
+                    "text": "47",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 694,
+                    "end": 696,
+                    "text": "48",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 182,
+                    "end": 191,
+                    "text": "(Fig. 4D)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "Similarly, in the heart, enriched pathways include metabolism of alpha-amino acid, sorting of protein, and translation (Fig. 4C ). Amino acid metabolism was studied in rat heart with amino acid levels rising up to fivefold higher than plasma levels 49 , accompanied by increases in ribosome activity and translation 50 . Finally, protein functions enriched in the ovary include development of extracellular matrix, docking of vesicles, and exocytosis (Fig. 4A) . The matrix of ovary tissue is important for numerous physiological activities, including growth, migration, and differentiation, and the composition changes during ovulation 31 , critical to the fertility process 51 . Further, malfunctions of the matrix are observed during ovarian cancer 52 . High levels of extracellular matrix components in Chinese hamster ovaries are in agreement with our previous research examining the hamster ovary tissue proteome using label-free proteomics approaches 12 .",
+            "cite_spans": [
+                {
+                    "start": 249,
+                    "end": 251,
+                    "text": "49",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 316,
+                    "end": 318,
+                    "text": "50",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 676,
+                    "end": 678,
+                    "text": "51",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 752,
+                    "end": 754,
+                    "text": "52",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 119,
+                    "end": 127,
+                    "text": "(Fig. 4C",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 451,
+                    "end": 460,
+                    "text": "(Fig. 4A)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Protein intensity comparisons."
+        },
+        {
+            "text": "For GO functional analysis, gene symbols were annotated for biological processes in order to group proteins with similar biological relevance. The biological process GO category was analyzed to determine enrichment and depletion p-values for the cell-to-tissue and tissue-to-tissue comparisons. The appendix lists the top 10 most enriched biological processes for CHO-S (Supplementary Table 4 ) and CHO DG44 (Supplementary Table 5 ) comparisons with tissue. Enrichment is determined by hypergeometric distribution, with a p-value of < 0.05 used for significance.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 385,
+                    "end": 392,
+                    "text": "Table 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 423,
+                    "end": 430,
+                    "text": "Table 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "GO functional analysis."
+        },
+        {
+            "text": "Biological processes, representing a biological function involving the gene product, complements the pathway analysis in \"IPA pathway analyses\" shown above 27 . In both CHO-S and CHO DG44, the most common biological processes enriched involve DNA and mRNA processing, and metabolism. Some of the most common enriched processes in CHO-S include mRNA processing and splicing, DNA replication and repair, transcription, cell cycle, chromatin modification, and chromosome condensation.",
+            "cite_spans": [
+                {
+                    "start": 156,
+                    "end": 158,
+                    "text": "27",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "GO functional analysis."
+        },
+        {
+            "text": "In comparison, signaling, transport, and adhesion were significantly enriched across the different hamster tissues. Enriched brain biological processes relative to the CHO cell lines include ion transport, axon guidance, www.nature.com/scientificreports/ synaptic transmission, and metabolic process, among others 27 . Ion transport helps to maintain the stability of cerebral function due to the key roles that ions play in currents and synaptic transmission 53 . Abnormal distributions of ions in the brain can lead to defects in neuronal function including seizures and depression. Enriched biological processes in the heart compared to the CHO cell lines show functions related to circulation and heart function such as vasoconstriction, sodium-independent organic ion transport, complement activation, blood coagulation, and lipoprotein metabolism. For example, complement activation involves mannosebinding lectin and complement components, C3, C5, and CD59. The complement cascade can be activated during heart disease or failure, especially in cases of myocardial ischemia and reperfusion 54, 55 . Biological processes that are enriched in the lung as compared to the CHO cell lines include G-protein coupled receptor signaling pathway, innate immune response, vesicle-mediated and transmembrane transport, and signal transduction. Indeed, vesicle transport is an important component of secretory pathway machinery. Unraveling the complexities of lung secretions may yield new insights into ways by which secretion differs in tissues and cell lines. Signaling through G-protein coupled receptors and other pathways is an important proinflammatory response in lungs, which can undergo modifications leading to lung cancers 56, 57 . Not surprisingly, protection of the lungs using the host innate immune response is critical as this organ is exposed to a variety of pathogens including bacterial, fungal, and viral, during breathing 58, 59 .",
+            "cite_spans": [
+                {
+                    "start": 460,
+                    "end": 462,
+                    "text": "53",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1097,
+                    "end": 1100,
+                    "text": "54,",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1101,
+                    "end": 1103,
+                    "text": "55",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 1730,
+                    "end": 1733,
+                    "text": "56,",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 1734,
+                    "end": 1736,
+                    "text": "57",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 1939,
+                    "end": 1942,
+                    "text": "58,",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 1943,
+                    "end": 1945,
+                    "text": "59",
+                    "ref_id": "BIBREF59"
+                }
+            ],
+            "ref_spans": [],
+            "section": "GO functional analysis."
+        },
+        {
+            "text": "Finally, enriched biological processes in the ovary highlight differences between the cells and tissue around the region from which CHO cells were derived. Enriched ovarian biological processes include transmembrane transport, protein transport, vesicle-mediated transport, cell adhesion, and cell death. When vesicle production rate was quantified in the ovary, the turnover indicated high vesicle recycling across the endomembrane system 59 , which is consistent with these proteomic results. Cell adhesion is also important to ovary function and follicle maturation through interactions with the extracellular matrix and direct cell-cell contacts. Mutation of the ovarian surface is causative of approximately 90% of malignant ovarian tumors 60,61 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "GO functional analysis."
+        },
+        {
+            "text": "The results from the Chinese hamster proteome provide new insights into global protein expression across a wide variety of tissues and multiple cell lines. These differences highlight the role of tissues in executing key organ functions which require a specific metabolic processes, such as transport and communication, in comparison to CHO cells, which are focused on replication and gene expression, characteristics useful for rapid growth and the production of biologics. Because of their relevance to biomedicine and the biotechnology industry, we compared the tissue proteome to CHO cell lines and each other in order to identify functional differences in expression across tissues and cell lines. Specifically, we observed enrichment of many physiological pathways in tissues that were not enriched in cells, such as ion, protein, and vesicle transport, signal transduction, and cell adhesion. Often, these differences correlated with specific tissue functions while the activities in cell lines were often correlated with DNA replication, cell cycle, or RNA processing. Furthermore, some of the proteins with high expression in lung, ovary, or other tissues versus CHO, such as vesicle-mediated and protein transport, provide significant opportunities for CHO cell engineering going forward. In this way, the study expands on our CHO and Chinese hamster tissue knowledge base by virtue of establishing an atlas to differentiate proteins across cells and tissue for this critically important biotechnological and biomedical host species. Indeed, this comparison has enabled us to appreciate the changing proteomic landscape across cells and tissues and furthermore to recognize how the expressed proteins from different cell types can represent signatures for some of their key physiological or biotechnological functions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Concluding remarks"
+        },
+        {
+            "text": "The complete list of identified proteins and fold change ratios are listed in Supplementary Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 78,
+                    "end": 99,
+                    "text": "Supplementary Table 1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Data availability"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Life cycle analysis of mammalian cells: II. Cells from the Chinese hamster ovary grown in suspension culture",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Puck",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sanders",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Petersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1964,
+            "venue": "Biophys. J",
+            "volume": "4",
+            "issn": "",
+            "pages": "441--450",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "CHO quasispecies-Implications for manufacturing processes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wurm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/pr1030296"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Recombinant antibody production in CHO and NS0 cells: Differences and similarities",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Dhara",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Naik",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Majewska",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Betenbaugh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BioDrugs",
+            "volume": "32",
+            "issn": "",
+            "pages": "571--584",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40259-018-0319-9"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Isolation of Chinese hamster cell mutants deficient in dihydrofolate reductase activity",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Urlaub",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chasin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Proc. Natl. Acad. Sci. U.S.A",
+            "volume": "77",
+            "issn": "",
+            "pages": "4216--4220",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Deletion of the diploid dihydrofolate reductase locus from cultured mammalian cells",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Urlaub",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Carothers",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chasin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Cell",
+            "volume": "33",
+            "issn": "",
+            "pages": "405--412",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The genomic sequence of the Chinese hamster ovary (CHO)-K1 cell line",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Nat. Biotechnol",
+            "volume": "29",
+            "issn": "",
+            "pages": "735--741",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nbt.1932"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Genomic landscapes of Chinese hamster ovary cell lines as revealed by the Cricetulus griseus draft genome",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Lewis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Nat. Biotechnol",
+            "volume": "31",
+            "issn": "",
+            "pages": "759--765",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nbt.2624"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Sequencing the CHO DXB11 genome reveals regional variations in genomic stability and haploidy",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kaas",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kristensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Betenbaugh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Andersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "BMC Genom",
+            "volume": "16",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12864-015-1391-x"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Construction of BAC-based physical map and analysis of chromosome rearrangement in Chinese hamster ovary cell lines",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Biotechnol. Bioeng",
+            "volume": "109",
+            "issn": "",
+            "pages": "1357--1367",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/bit.24347"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A reference genome of the Chinese hamster based on a hybrid assembly strategy",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Rupp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Biotechnol. Bioeng",
+            "volume": "115",
+            "issn": "",
+            "pages": "2087--2100",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/bit.26722"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Proteomic analysis of Chinese hamster ovary cells",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Baycin-Hizal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J. Proteome Res",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/pr300476w"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Lessons from the Hamster: Cricetulus griseus tissue and CHO cell line proteome comparison",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Heffner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Proteome Res",
+            "volume": "16",
+            "issn": "",
+            "pages": "3672--3687",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jproteome.7b00382"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Elucidation of the CHO super-Ome (CHO-SO) by proteoinformatics",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Proteome Res",
+            "volume": "14",
+            "issn": "",
+            "pages": "4687--4703",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jproteome.5b00588"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Animal Cell Culture",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Heffner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kaas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Baycin-Hizal",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Betenbaugh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "591--614",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Integrated miRNA, mRNA and protein expression analysis reveals the role of post-transcriptional regulation in controlling CHO cell growth rate",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "BMC Genom",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2164-13-656"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "A deep proteome and transcriptome abundance atlas of 29 healthy human tissues",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Mol. Syst. Biol",
+            "volume": "15",
+            "issn": "",
+            "pages": "8503--8503",
+            "other_ids": {
+                "DOI": [
+                    "10.15252/msb.20188503"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Initial quantitative proteomic map of 28 mouse tissues using the SILAC mouse",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Geiger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Mol. Cell Proteom",
+            "volume": "12",
+            "issn": "",
+            "pages": "1709--1722",
+            "other_ids": {
+                "DOI": [
+                    "10.1074/mcp.M112.024919"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The Chinese hamster as a model for the study of diabetes mellitus",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gerritsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "Diabetes",
+            "volume": "31",
+            "issn": "",
+            "pages": "14--23",
+            "other_ids": {
+                "DOI": [
+                    "10.2337/diab.31.1.S14"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Insulin and glucagon response of the diabetic Chinese hamster in the Asahikawa colony",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Iwashima",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "Diabetes Res. Clin. Pract",
+            "volume": "1",
+            "issn": "85",
+            "pages": "80033--80037",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0168-8227(85)80033-4"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Effects of neonatal ovarian X-irradiation in the Chinese hamster. I. Correlation between the age of irradiation and the fertility span",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tateno",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mikamo",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "J. Radiat. Res",
+            "volume": "30",
+            "issn": "",
+            "pages": "185--190",
+            "other_ids": {
+                "DOI": [
+                    "10.1269/jrr.30.185"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Specific aneusomies in Chinese hamster cells at different stages of neoplastic transformation, initiated by nitrosomethylurea",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fabarius",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Willer",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yerganian",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hehlmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Duesberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "99",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.251670699"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Mice, hamsters, ferrets, monkeys. Which lab animals can help defeat the new coronavirus",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abc2335"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Universal sample preparation method for proteome analysis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Wisniewski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zougman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nagaraj",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Nat. Methods",
+            "volume": "6",
+            "issn": "",
+            "pages": "359--362",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nmeth.1322"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Genesis: Cluster analysis of microarray data",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sturn",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Quackenbush",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Trajanoski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Bioinformatics",
+            "volume": "18",
+            "issn": "",
+            "pages": "207--208",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "An evaluation of public genomic references for mapping RNA-Seq data from Chinese hamster ovary cells",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Le",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Goudar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Biotechnol. Bioeng",
+            "volume": "112",
+            "issn": "",
+            "pages": "2412--2416",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/bit.25649"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "The biological database network",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Mudunuri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Che",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Stephens",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Biodbnet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Bioinformatics",
+            "volume": "25",
+            "issn": "",
+            "pages": "555--556",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Gene ontology: Tool for the unification of biology",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ashburner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Nat. Genet",
+            "volume": "25",
+            "issn": "",
+            "pages": "25--29",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Causal analysis approaches in Ingenuity Pathway Analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kr\u00e4mer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Green",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pollard",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tugendreich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Bioinformatics",
+            "volume": "30",
+            "issn": "",
+            "pages": "523--530",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/bioinformatics/btt703"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Principal component analysis of proteomics (PCAP) as a tool to direct metabolic engineering",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Alonso-Gutierrez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Metab. Eng",
+            "volume": "28",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ymben.2014.11.011"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Extracellular matrix of the developing ovarian follicle",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rodgers",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Irving-Rodgers",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Reproduction",
+            "volume": "126",
+            "issn": "",
+            "pages": "415--424",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Decidual cells in the human ovary at term. I. Incidence, gross anatomy and ultrastructural features of merocrine secretion",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Herr",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Curet",
+                    "suffix": ""
+                }
+            ],
+            "year": 1978,
+            "venue": "Am. J. Anat",
+            "volume": "152",
+            "issn": "",
+            "pages": "7--27",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Extracellular matrix of ovarian tumors",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ricciardelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rodgers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Semin. Reprod. Med",
+            "volume": "24",
+            "issn": "",
+            "pages": "270--282",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Mending broken hearts: Cardiac development as a basis for adult heart regeneration and repair",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Xin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Olson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bassel-Duby",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Nat. Rev. Mol. Cell Biol",
+            "volume": "14",
+            "issn": "",
+            "pages": "529--541",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nrm3619"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Differentiation of human embryonic stem cells into embryoid bodies compromising the three embryonic germ layers",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Itskovitz-Eldor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Mol. Med",
+            "volume": "6",
+            "issn": "",
+            "pages": "88--95",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "ADAM10-Notch signaling governs the recruitment of ovarian pregranulosa cells and controls folliculogenesis in mice",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J. Cell Sci",
+            "volume": "129",
+            "issn": "",
+            "pages": "2202--2212",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Tissue-based map of the human proteome",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Uhl\u00e9n",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.1260419"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Mouse neuron navigator 1, a novel microtubule-associated protein involved in neuronal migration",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Martinez-Lopez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Mol. Cell. Neurosci",
+            "volume": "28",
+            "issn": "",
+            "pages": "599--612",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.mcn.2004.09.016"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Retinol dehydrogenase, RDH1l, is essential for the heart development and cardiac performance in zebrafish",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Fau",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Fau",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Chin. Med. J. (Engl.)",
+            "volume": "126",
+            "issn": "",
+            "pages": "722--728",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Site-specific differences in gene expression of secreted proteins in the mouse lung: Comparison of methods to show differences by location",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sutherland",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Combs",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Edwards",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Van Winkle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Histochem. Cytochem",
+            "volume": "58",
+            "issn": "",
+            "pages": "1107--1119",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Cholesterol metabolism in the brain",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Dietschy",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Turley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Curr. Opin. Lipidol",
+            "volume": "12",
+            "issn": "",
+            "pages": "105--112",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The role of glycosphingolipid metabolism in the developing brain",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Nakatani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yanagisawa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J. Lipid Res",
+            "volume": "50",
+            "issn": "",
+            "pages": "440--445",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Dietary amino acids and brain function",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Fernstrom",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "J. Am. Diet. Assoc",
+            "volume": "94",
+            "issn": "",
+            "pages": "71--77",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Amino acid precursors of monoamine neurotransmitters and some factors influencing their supply to the brain",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Daniel",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Moorhouse",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Pratt",
+                    "suffix": ""
+                }
+            ],
+            "year": 1976,
+            "venue": "Psychol. Med",
+            "volume": "6",
+            "issn": "",
+            "pages": "277--286",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Mass spectrometry-based secretome analysis of non-small cell lung cancer cell lines",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bosse",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proteomics",
+            "volume": "16",
+            "issn": "",
+            "pages": "2801--2814",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pmic.201600297"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Intermediary metabolism of the lung",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fisher",
+                    "suffix": ""
+                }
+            ],
+            "year": 1984,
+            "venue": "Environ. Health Perspect",
+            "volume": "55",
+            "issn": "",
+            "pages": "149--158",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "The role of lipids in pulmonary surfactant",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Veldhuizen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nag",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Orgeig",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Possmayer",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Biochim. Biophys. Acta BBA Mol. Basis Dis",
+            "volume": "1408",
+            "issn": "98",
+            "pages": "61--62",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0925-4439(98)00061-1"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Lung cell hypoxia: Role of mitochondrial reactive oxygen species signaling in triggering responses",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Schumacker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Proc. Am. Thorac. Soc",
+            "volume": "8",
+            "issn": "",
+            "pages": "477--484",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Regulation of protein synthesis in heart muscle. I. Effect of amino acid levels on protein synthesis",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Morgan",
+                    "suffix": ""
+                }
+            ],
+            "year": 1971,
+            "venue": "J. Biol. Chem",
+            "volume": "246",
+            "issn": "",
+            "pages": "2152--2162",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Characterization of the human heart mitochondrial proteome",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Nat. Biotechnol",
+            "volume": "21",
+            "issn": "",
+            "pages": "281--286",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nbt793"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "The roles of the ovarian extracellular matrix in fertility",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rodgers",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Irving-Rodgers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Soc. Reprod. Fertil. Suppl",
+            "volume": "67",
+            "issn": "",
+            "pages": "217--230",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Alterations of the extracellular matrix in ovarian cancer studied by Second Harmonic Generation imaging microscopy",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Nadiarnykh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lacomb",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Brewer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Campagnola",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "BMC Cancer",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2407-10-94"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Ion regulation in the brain: implications for pathophysiology",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Somjen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Neuroscientist",
+            "volume": "8",
+            "issn": "",
+            "pages": "254--267",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Complement activation in heart diseases. Role of oxidants",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chakraborti",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mandal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Das",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborti",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Cell Signal",
+            "volume": "12",
+            "issn": "",
+            "pages": "607--617",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Effects of complement activation in the isolated heart. Role of the terminal complement components",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Homeister",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Satoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lucchesi",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Circ. Res",
+            "volume": "71",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Common pathways for activation of proinflammatory gene expression by G protein-coupled receptors in primary lung epithelial and endothelial cells",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jing",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Schlueter",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Hoyle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Exp. Lung Res",
+            "volume": "35",
+            "issn": "",
+            "pages": "324--343",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Pathogenesis of lung cancer signalling pathways: Roadmap for therapies",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Brambilla",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gazdar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Eur. Respir. J",
+            "volume": "33",
+            "issn": "",
+            "pages": "1485--1497",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Innate immunity in the lungs",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Frevert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Proc. Am. Thorac. Soc",
+            "volume": "2",
+            "issn": "",
+            "pages": "403--411",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Estimation of Golgi membrane flow rates in ovary glands of aptenia cordifolia using cytochalasin B",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kristen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lockhausen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Eur. J. Cell Biol",
+            "volume": "29",
+            "issn": "",
+            "pages": "262--267",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Cell-cell adhesion in the normal ovary and ovarian tumors of epithelial origin; An exception to the rule",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sundfeldt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Mol. Cell Endocrinol",
+            "volume": "202",
+            "issn": "",
+            "pages": "89--96",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Cell biology of human ovarian surface epithelial cells and ovarian carcinogenesis",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Katabuchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Okamura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Med. Electron Miscrosc",
+            "volume": "36",
+            "issn": "",
+            "pages": "74--86",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Overview of experimental design and workflow. (A) Schematic of the proteome experiment comparing hamster tissues (brain, heart, lung, kidney, spleen, liver and ovary) and CHO cell lines (CHO-S and CHO DG44). (B) Each TMT 10-plex contained a mix of tissues and cell line samples. Sample preparation involved protein extraction from tissues and cells, followed by reduction, alkylation, FASP, and digestion. Peptides were labeled and combined into two TMT 10-plex experiments for fractionation and mass spectrometry identification. In the bioinformatics analysis pipeline, peptides were matched to proteins and gene symbols for functional analysis in order to understand cell and tissue metabolism. TMT tandem mass tag, FASP filter aided sample preparation, bRPLC basic reversed phase liquid chromatography.Scientific RepoRtS| (2020) 10:15841 | https://doi.org/10.1038/s41598-020-72959-8",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Protein intensity analysis. (A) Venn diagram of total proteins identified in each TMT proteomics experiment. (B) Principal component analysis of Chinese hamster ovary (CHO) cells and hamster tissues. Clustering of overall protein intensity fold changes was calculated using the first and third principal components to show variation. (C-F) Normalized protein intensity is plotted for replicates of each tissue corresponding to a different cluster obtained from the principal component analysis. (C) Heart, (D) brain, (E) lung, (F) ovary. TMT tandem mass tag. Scientific RepoRtS | (2020) 10:15841 | https://doi.org/10.1038/s41598-020-72959-8",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Overall distributions of protein intensity in hamster cells and tissues. Protein intensity was plotted as the average fold change ratio of biological replicates. Yellow represents proteins highly expressed for the sample on the y-axis, while blue represents those on the x-axis. . Additional plots for the remaining comparisons (Supplementary Fig. 1) and a summary of the additional means comparison (Supplementary",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Center: heat map of highly expressed proteins. The top 200 proteins are plotted for each sample.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Digested peptides were fractionated using an Agilent 1200 Capillary LC with a 254 nm fractions were collected over 105 min and concatenated into final 24 samples prior to second dimension LC and MS analysis. Tandem mass spectrometry analysis of the peptides was carried out on the LTQ-Orbitrap Velos (ThermoFischer Scientific, Waltham, MA, USA) MS interfaced to Eksigent (Eksigent, Dublin, CA, USA) nanoflow liquid chromatography system with an Agilent 1100 autosampler (Agilent, Santa Clara, CA, USA). Peptides were enriched on a 2 cm trap column (YMC Americas, Allentown, PA, USA), fractionated on Magic C18 AQ, 5 \u00b5m, 100 \u00c5, 75 \u00b5m \u00d7 15 cm column (Michrom Bioresources, Auburn, CA, USA) and electrosprayed through a 15 \u00b5m emitter (New Objective, Woburn, MA, USA).Bioinformatics. Peptide sequences were identified from isotopically resolved masses in MS and MS/MSspectra extracted with and without deconvolution using Thermo Scientific MS2 processor and Xtract software nodes. Data were searched against all entries in the Cricetulus griseus database (Proteome Discoverer v1.4) for CHO cell lines. Oxidation on methionine, deamidation NQ, and phosphoSTY were set as variable modifications, and carbamidomethyl on cysteine was set as fixed modifications in Mascot search node used in Proteome Discoverer (ThermoFischer Scientific, Waltham, MA, USA) workflow. Mass tolerances on precursor and fragment masses were 15 ppm and 0.03 Da, respectively.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "TMT experimental design.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "TMT experiment identification.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "and are searchable online through the NIST database (https ://pepti de.nist.gov).www.nature.com/scientificreports/",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors acknowledge the financial support of AstraZeneca for funding this project. In addition, this material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-1232825 and Grant No. DGE-1746891. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The authors declare no competing interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "competing interests"
+        },
+        {
+            "text": "Supplementary information is available for this paper at https ://doi.org/10.1038/s4159 8-020-72959 -8.Correspondence and requests for materials should be addressed to M.B.Reprints and permissions information is available at www.nature.com/reprints.Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Additional information"
+        },
+        {
+            "text": "License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creat iveco mmons .org/licen ses/by/4.0/.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International"
+        }
+    ]
+}

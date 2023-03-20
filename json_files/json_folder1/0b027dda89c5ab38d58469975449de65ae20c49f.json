@@ -1,0 +1,3007 @@
+{
+    "paper_id": "0b027dda89c5ab38d58469975449de65ae20c49f",
+    "metadata": {
+        "title": "Public Stigma of COVID-19 and Its Correlates in the General Population of China",
+        "authors": [
+            {
+                "first": "Tian-Ming",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Shanghai University",
+                    "location": {
+                        "postCode": "200444",
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Qi",
+                "middle": [],
+                "last": "Fang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Fudan University",
+                    "location": {
+                        "postCode": "200433",
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Hao",
+                "middle": [],
+                "last": "Yao",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Shanghai Key Laboratory of Psychotic Disorders",
+                    "institution": "Shanghai Mental Health Center",
+                    "location": {
+                        "postCode": "200030",
+                        "settlement": "Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": "haoyao@vip.163.comh.y."
+            },
+            {
+                "first": "Mao-Sheng",
+                "middle": [],
+                "last": "Ran",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Hong Kong",
+                    "location": {
+                        "settlement": "Hong Kong",
+                        "country": "China"
+                    }
+                },
+                "email": "msran@hku.hk*correspondence:fangqi_1990@163.comq.f."
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This study aimed to examine the profile of COVID-19-related public stigma and its correlates in the general population of China. A cross-sectional online survey was conducted in China from 7 May to 25 May in 2020. A total of 1212 participants from the general population completed the survey measuring their stigmatizing attitudes towards COVID-19, as well as knowledge and causal attributions of COVID-19. Univariate and multivariate analyses were performed to examine the correlates of COVID-19-related public stigma. A total of 31.8% of participants endorsed stigmatization towards people with COVID-19. Those who were of older age (t = \u22123.97, p < 0.001), married (F = 3.04, p < 0.05), had a lower level of education (F = 8.11, p < 0.001), and a serious psychological response (F = 3.76, p < 0.05) reported significantly higher scores of public stigma. Dangerousness (B = 0.047, p < 0.001), fear (B = 0.059, p < 0.001), anger (B = 0.038, p < 0.01), and responsibility (B = 0.041, p < 0.001) were positively associated with public stigma. This study shows that public stigma related to COVID-19 is prevalent in the general population of China. Actions against public stigma need to contain the spread of misinformation about COVID-19, alter inappropriate attributions, alleviate unfavorable reactions, and provide psychosocial support for the public. Author Contributions: Conceptualization, T.-M.Z. and H.Y.; Data curation, Q.F.; Formal analysis, T.-M.Z.; Funding acquisition, T.-M.Z.; Methodology, H.Y.; Project administration, Q.F.; Supervision, M.-S.R.; Writing-original draft, T.-M.Z. and H.Y.; Writing-review and editing, T.-M.Z., H.Y., Q.F., and M.-S.R. All authors have read and agreed to the published version of the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Since the beginning of 2020, the pandemic of coronavirus disease 2019 (COVID-19) has swept the globe, with more than 248 million cases diagnosed till now [1] . The pandemic of COVID-19 not only jeopardizes the physical health of those infected with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), but it also arouses a new wave of public stigmatization in the general population towards them [2] . In the context of health, public stigmatization is contextualized as a process of labeling, stereotyping, and discriminating against people with a certain disease [3] . It is also not uncommon that, as the outbreaks of newly emerging infectious diseases escalate, disease-related public stigmatization often follows inside and beyond the hot zones [4] . Recent examples of public stigmatization during infectious disease outbreaks include severe acute respiratory syndrome (SARS) [5] , H1N1 influenza [6] , Ebola [7] , and Zika [8] .",
+            "cite_spans": [
+                {
+                    "start": 154,
+                    "end": 157,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 406,
+                    "end": 409,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 575,
+                    "end": 578,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 760,
+                    "end": 763,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 892,
+                    "end": 895,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 913,
+                    "end": 916,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 925,
+                    "end": 928,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 940,
+                    "end": 943,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The ramifications of stigmatization towards COVID-19 patients might be manifold. First, it may hinder COVID-19 patients' help-seeking behaviors, leading to unnecessary delays in diagnosis and treatment and promoting continued infection transmission of COVID-19. Second, in addition to COVID-19 per se, COVID-19-related public stigmatization may increase COVID-19 patients' psychological burdens and therefore worsen their clinical outcomes. Third, even for those patients who survived, stigma may continue to be attached to them, resulting in social exclusion and ostracism and eventually compromising their physical, emotional, and mental health. Moreover, given sociodemographic differences (e.g., based on race/ethnicity, gender, and age) of COVID-19 incidence and mortality [9] [10] [11] [12] [13] [14] [15] [16] , public stigmatization towards COVID-19 patients can exacerbate the already pervasive \"us vs. them\" mentality in society, and undermine social cohesion and global solidarity which matters even more during the crisis of COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 778,
+                    "end": 781,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 782,
+                    "end": 786,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 787,
+                    "end": 791,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 792,
+                    "end": 796,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 797,
+                    "end": 801,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 802,
+                    "end": 806,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 807,
+                    "end": 811,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 812,
+                    "end": 816,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Given the severe epidemic situation of COVID-19 across the globe, public stigma of COVID-19 is more likely to be our threat than the disease itself [17] . Misconceptions and lack of knowledge about COVID-19, along with high fear levels of COVID-19, have been confirmed to be associated with more stigmatizing attitudes towards people associated with the context of COVID-19, such as healthcare providers and Asians in the United States [18] [19] [20] . A national online survey in Bangladesh reported that stigmatizing attitudes related to COVID-19 in the general population was significantly associated with marital status, educational level, living conditions, and perception of risk [21] . Research on public stigma posited that individuals' perceptions of stigmatized conditions were associated with their cognitive attributions and affective responses [22] . According to Weiner's attribution theory, if individuals are perceived to be capable of controlling the occurrence of their diseases and to be responsible for their own infections, they are more likely to be stigmatized [23] . In addition to causal attributions about controllability and responsibility, individuals' fearful and irritated responses are also linked with stigmatization [24] . Such correlations have been found in numerous studies about public stigmatization towards mental illness, HIV/AID, and disabilities [25] [26] [27] . Within the framework of attribution theory and prior empirical studies, we proposed that public stigma towards people with COVID-19 would be linked with different attributions and unfavorably emotional responses.",
+            "cite_spans": [
+                {
+                    "start": 148,
+                    "end": 152,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 436,
+                    "end": 440,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 441,
+                    "end": 445,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 446,
+                    "end": 450,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 686,
+                    "end": 690,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 857,
+                    "end": 861,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1084,
+                    "end": 1088,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1249,
+                    "end": 1253,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1388,
+                    "end": 1392,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1393,
+                    "end": 1397,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1398,
+                    "end": 1402,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Given that the dual pandemic of COVID-19 and COVID-19-related public stigma still escalates worldwide, it is of great importance to investigate and to address COVID-19related public stigma in the general population. Understanding its profile and correlates can help to develop targeted interventions to reduce it, as well as its individual-and societallevel ramifications. However, such studies are still scarce around the world. Therefore, the present study aimed to examine the profile of COVID-19-related public stigma and its correlates in the general population of China through the lens of attribution theory.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A large convenience sample was recruited from the general population in China from 7 May to 25 May in 2020 during the first wave of the COVID-19 pandemic in China. An online questionnaire was created using Qualtrics, a commonly used online survey tool, and distributed through social media applications widely used in China (e.g., Weibo, Douban, and WeChat). The informed consent form was presented on the first page of the online questionnaire. Before filling out the rest of the questionnaire, the informed consent was obtained by clicking the AGREE button on that page. Individuals who were aged 18 years or older and living in Mainland China were eligible to participate in this study. Those who were infected with COVID-19, did not complete the questionnaires, or whose IP addresses were not in Mainland China were excluded. The final sample of the present study consisted of 1212 participants, which met the WHO requirement about the sample size (N = 1000) of COVID-19-related online surveys [28] . Ethical approval was obtained from the Ethics Committee of Shanghai Mental Health Center, Shanghai Jiao Tong University (Reference Number:2020-33).",
+            "cite_spans": [
+                {
+                    "start": 998,
+                    "end": 1002,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Participants and Procedure"
+        },
+        {
+            "text": "Public Stigma of COVID-19 Scale: It was modified from an existing scale of stigma attached to mental illness [29] . The original scale includes two dimensions, with 12 items measuring public stigma of mental illness and 9 items measuring acceptance of mental illness. In the present study, we only extracted the dimension of public stigma and altered the related disease from mental illness to COVID-19. Given people with COVID-19 would be forcibly quarantined in China, we removed one item: \"People with COVID-19 should be quarantined\". Therefore, the final version of the Public Stigma of COVID-19 Scale consisted of 11 items, such as \"People with COVID-19 are revolting\". Items were rated on a 5-point Likert scale (1 = strongly disagree, 5 = strongly agree), with higher scores indicating more public stigma. The Public Stigma of COVID-19 Scale had sound internal consistency (Cronbach's alpha = 0.83).",
+            "cite_spans": [
+                {
+                    "start": 109,
+                    "end": 113,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measurements"
+        },
+        {
+            "text": "Knowledge about COVID-19: A 20-item questionnaire was developed to measure participants' familiarity with key facts about COVID-19. The items were extracted from the Diagnosis and Treatment Protocol for Novel Coronavirus Pneumonia (Trial Version 7) and the Prevention Protocol for Novel Coronavirus Pneumonia (Version 6) released by China's National Health Commission, such as \"The new coronavirus can continue to spread from person to person.\" Items were rated on a 5-point Likert scale (1 = strongly unfamiliar, 5 = strongly familiar), with higher scores indicating more familiarity with key facts about COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Measurements"
+        },
+        {
+            "text": "Attributions of COVID-19: We developed a 6-item questionnaire to measure participants' causal attributions of COVID-19, i.e., dangerousness, fear, anger, blame, controllability, and responsibility. The three items measuring dangerousness, fear, and anger were extracted from Corrigan and his colleagues' work on attributions of mental illness [30] . The other three items measuring blame, controllability, and responsibility were extracted from a study about public stigma of infectious diseases [26] . For instance, the item \"People infected with COVID-19 are dangerous\" was used to measure the attribution about dangerousness. Participants were asked to rate their agreement with each item on a 9-point Likert scale (1 = not at all, 9 = very much), with higher scores indicating more agreement.",
+            "cite_spans": [
+                {
+                    "start": 343,
+                    "end": 347,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 496,
+                    "end": 500,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measurements"
+        },
+        {
+            "text": "Sociodemographic characteristics and other general information: We used a selfadministered questionnaire to collect participants' sociodemographic characteristics and other general information, including gender, age (<=30 years, >30 years), marital status (single, married, others), and education level (\u2264high school, =college, \u2265graduate), employment status (employment, unemployment, retired, student), monthly income (RMB), whether to work on the health frontline during the outbreak of COVID-19 (yes or no), psychological response to the pandemic (mild, moderate, severe).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Measurements"
+        },
+        {
+            "text": "Stata/SE 16.0 was used for data analysis. Descriptive analysis was performed to summarize the sociodemographic characteristics by presenting percentages, means, and standard deviations. We used the independent-samples t-test and analysis of variance (ANOVA) to compare the scores of public stigma by categories of various sociodemographic characteristics. As for the Public Stigma of COVID-19 Scale, we calculated the means and standard deviations for each item. In addition, agreement or strong agreement with one certain item of the Public Stigma of COVID-19 Scale was considered as endorsement. In terms of total public stigma, respondents who reported average scores greater than 3 were treated as endorsing public stigma. We presented the prevalence of endorsement of each item and the total public stigma. A correlation matrix was used to examine the correlations between public stigma of COVID-19 and other continuous variables including knowledge about COVID-19, causal attributions (i.e., dangerousness, fear, blame, anger, controllability, and responsibility), and willingness for help-seeking. In addition, a stepwise linear regression with different blocks was applied to examine the correlates of public stigma. Variables significantly associated with public stigma in univariate analyses were entered into three models of multivariate linear regression. Model 1 included demographic factors, model 2 involved general information related to COVID-19, and model 3 was related to causal attributions of COVID-19. P-values of < 0.05 were deemed to be significant in this study. Table 1 displays the sociodemographic profile of 1212 participants, as well as the scores of public stigma by categories of various sociodemographic characteristics. The majority of the participants were female (73.27%) and were less than or equal to 30 years old (73.27%). Over half of the participants were single (65.10%) and had a college degree (68.65%). A small percentage of the participants (12.16%) worked on the health frontline of the COVID-19 pandemic. Most of the participants (64.36%) self-reported a severe psychological response to the pandemic. Participants' age group (t = \u22123.97, p < 0.001), marital status (F = 3.04, p < 0.05), level of education (F = 8.11, p < 0.001), and psychological response to the pandemic (F = 3.76, p < 0.05) were significantly associated with public stigma. Participants who were of younger age, single status, had higher levels of education and a mild psychological response reported lower scores of public stigma. There were no significant differences on scores of public stigma by participants' gender, employment status, monthly income, and health frontline status. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1588,
+                    "end": 1595,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "The means, standard deviations, and prevalence of endorsement of each item in the Public Stigma of COVID-19 Scale are shown in Table 2 . Three items were endorsed by more than 50% of the entire sample, that is 1) \"I will try my best to keep a distance from people with COVID-19\" (79.04%), 2) \"I am afraid of being alone with people with COVID-19\" (62.13%), and 3) \"I am worried that people with COVID-19 will cause harm to others\" (50.66%). Meanwhile, the mean scores of these three items ranked the highest among all items (1 = 4.10, 2 = 3.65, and 3 = 3.34, respectively). Overall, the mean total score of the Public Stigma of COVID-19 Scale was 2.68, with 31.80% participants endorsing COVID-19-related public stigma. Table 3 provides a correlation matrix of public stigma and other continuous variables. Knowledge about COVID-19 was negatively associated with public stigma (r = \u22120.057, p < 0.001), whereas causal attributions about dangerousness (r = 0.364, p < 0.001), fear (r = 0.403, p < 0.001), blame (r = 0.247, p = 0.001), anger (r = 0.252, p < 0.001), controllability (r = 0.195, p < 0.001), responsibility (r = 0.308, p < 0.001), and willingness of help-seeking (r = 0.063, p < 0.05) were positively associated with public stigma. Notes: * p < 0.05, ** p < 0.01, *** p < 0.001.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 127,
+                    "end": 134,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 720,
+                    "end": 727,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Endorsement of Public Stigma"
+        },
+        {
+            "text": "To identify the correlates of COVID-19-related public stigma, we performed a stepwise linear regression with three blocks, using the variables significantly associated with public stigma in univariate analyses. Demographic factors, general information related to COVID-19 (i.e., psychological reaction, knowledge, willingness for help-seeking), and causal attributions of COVID-19 (i.e., dangerousness, fear, blame, anger, controllability, and responsibility) were entered into the linear regression model sequentially (Table 4 ). In Model 1, the age group and education level were significantly associated with public stigma. Compared with participants of younger age and with higher levels of education, those of older age (B = 0.182, p < 0.01) and with lower levels of education (B = \u22120.202, p < 0.01) scored higher on public stigma. In Model 2, it was shown that compared with participants with a severe psychological response to the pandemic of COVID-19, those with a mild response reported a significant lower score of public stigma (B = \u22120.172, p < 0.01). In Model 3, the significant relationship between psychological response and public stigma disappeared after adding causal attributions of COVID-19. Model 3 showed that the more dangerous (B = 0.047, p < 0.001), fear (B = 0.059, p < 0.001), and angry (B = 0.038, p < 0.01) participants felt towards the people with COVID-19, the more public stigma they would endorse. Moreover, the more participants considered that people infected with COVID-19 was their own responsibility (B = 0.041, p < 0.001), the higher levels of public stigma they had. After entering all covariates, Model 3 was capable of explaining 25.4% of the variances in the public stigma towards people with COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 519,
+                    "end": 527,
+                    "text": "(Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Factors Associated with Public Stigma Using Multiphase Linear Regression"
+        },
+        {
+            "text": "The present study examined public stigma associated with COVID-19 and its correlates in the general Chinese population during the disease's epidemic. Our findings suggest that a high level of stigma towards people with COVID-19 was endorsed by the general population in China. In addition, an association between knowledge about COVID-19 and public stigma was found to be significant. Premised on an attribution model, the study findings contribute to understanding relationships between COVID-19 related public stigma and various attributors (dangerousness, fear, anger, and responsibility).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Previous studies suggested that the general population commonly endorsed avoidant attitudes toward people with infectious diseases similar to COVID-19, such as SARS, Ebola, during the disease outbreak [31, 32] . The current study also found that the proportion of participants holding such shunning notion was elevated. Nearly 80% of the participants preferred to keep social distancing with people infected with COVID-19, and more than half of the participants showed worries and fear when they came into contact with people with COVID-19. In term of affective aspects, however, only a few participants showed some tendency towards revolting or annoying attitudes. This finding might suggest that public perceptions of people with COVID-19 were contradictory. Given the infectiousness and mortality of COVID-19, it is not surprising that the general public approve of evading people suffering from COVID-19. Additionally, a strict quarantine policy in China during the pandemic might have increased the likelihood of people's stigmatizing attitudes. A previous study conducted in Wuhan showed that those who were more familiar with quarantined cases were more likely to perceive higher levels of stigma [33] .",
+            "cite_spans": [
+                {
+                    "start": 201,
+                    "end": 205,
+                    "text": "[31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 206,
+                    "end": 209,
+                    "text": "32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1204,
+                    "end": 1208,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The sociodemographic factors shown to be correlated with public stigma included age, marital status, education level, and psychological reaction. Similar to relevant studies on SARS [34, 35] , our study also found that younger participants were less likely to endorse stigmatizing attitudes. Given that those who were older were at greater risk when they had COVID-19 [36] , it might be reasonable for them to show greater tendency of negative prejudice to people with COVID-19. The current study showed that those who were married were more inclined to hold stigmatizing ideas, which is in line with previous related study pertaining to SARS [32] . In terms of education level, prior research showed inconsistent findings. One study found no significate correlation between education level and discrimination on SARS [35] . In this study, we found participants with a higher education level were more likely to exhibit prejudice towards people with COVID-19. In addition, those who had a severe psychological reaction to the pandemic reported higher public stigma. The COVID-19 pandemic might exert a threat to the mental status of the general public and cause psychological distress, such as anxiety and depression [37] [38] [39] [40] . Meanwhile, these adverse affective reactions might influence the public's attitudes towards people with COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 186,
+                    "text": "[34,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 187,
+                    "end": 190,
+                    "text": "35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 368,
+                    "end": 372,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 643,
+                    "end": 647,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 818,
+                    "end": 822,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1217,
+                    "end": 1221,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1222,
+                    "end": 1226,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1227,
+                    "end": 1231,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1232,
+                    "end": 1236,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The negative correlation between public stigma towards people with COVID-19 and knowledge, as shown in this study, has been repeatedly verified in other similar stigmatizing conditions, including infectious disease and mental disorders [41, 42] . The findings of this study suggested that misconceptions of COVID-19 were correlated with stigmatizing notions. Prior studies pertaining to stigmatization also indicate that knowledge is one of the essential factors reducing prejudice towards the stigmatized group [43, 44] . For the future, with the outbreak of newly emerging infectious disease, accurate information needs to be disseminated to reduce public misunderstanding, thereby reducing social stigma. Interestingly, after adjusting for other factors in the regression model of this study, however, the significant correlation between knowledge and public stigma disappeared. It might indicate that the role of knowledge on generating public attitudes was negligible given that COVID-19 was a novel infectious illness, and which has been confirmed in a previous study [26] . The extent to which knowledge diminishes stigmatizing ideas, thus, warrants further examination.",
+            "cite_spans": [
+                {
+                    "start": 236,
+                    "end": 240,
+                    "text": "[41,",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 241,
+                    "end": 244,
+                    "text": "42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 512,
+                    "end": 516,
+                    "text": "[43,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 517,
+                    "end": 520,
+                    "text": "44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1074,
+                    "end": 1078,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Plenty of prior studies, based on attribution theory, have indicated that controllability is significantly correlated with stigmatizing ideas [24, [45] [46] [47] . However, this correlation was not shown in this study. A possible explanation may be related to the feature of COVID-19. Although COVID-19 is a highly contagious disease, people can recover by medical treatment and the disease does not pose momentous outcomes to others as long as the infected individuals receive timely treatment. A previous study compared public stigma amongst three infectious illnesses and concluded that disease attribution and stigma were subordinated to characteristics of the disease itself. Specifically, compared with SARS, the general population believed infection of HIV/AIDS to be more controllable by the person, as a result, they held more stigmatization towards people with HIV/AIDS [26] . We found that the general population who attributed more personal responsibility to people having COVID-19 were inclined to endorse more stigma. In line with previous studies related to stigma, the current study also confirmed that public stigma were significantly connected to the general populations' effective response to the people infected with COVID-19 [18] . A prior study indicating that great danger appraisal predicted more stigmatizations could support the results of this study [48] . For instance, those who felt more dangerous and expressed more fear and anger were more likely to perceive stigmatizing ideas.",
+            "cite_spans": [
+                {
+                    "start": 142,
+                    "end": 146,
+                    "text": "[24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 147,
+                    "end": 151,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 152,
+                    "end": 156,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 157,
+                    "end": 161,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 880,
+                    "end": 884,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1246,
+                    "end": 1250,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1377,
+                    "end": 1381,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Several limitations in this study should be acknowledged. First, since the data was collected during the outbreak of COVID-19, we utilized an online survey method which is feasible and safe considering the transmission of coronavirus. As a result, those who had limited access to the internet, such as elderly people, were less likely to participate in our study. Another feature of the sample distribution in this study was that the majority of respondents were female (73.27%). This might be explained by gender difference [49] , as several previous studies collecting data during the COVID-19 outbreak by using an online survey also reported a similar gender discrepancy in the sample distribution [50, 51] . Given the time of assessment of this study, it may also have an effect. The high level of public stigma might relate to the uncertainty about the virus and the lack of scientific knowledge at the outbreak of COVID-19. However, this round of data might still be used as a baseline to provide a reference for a long-term follow up survey of the public stigma related COVID-19. In addition, a cross-sectional design cannot demonstrate the cause-and-effect relationships among knowledge, attribution factors, and public stigma. Thus, a longitudinal design should be considered in future studies to elucidate the effect of attribution on public stigma and to examine the attribution model in COVID-19. With respect to measurements, the scale measuring public stigma was modified from an instrument used in the issue attached to mental illness. Given the possible divergence of the stigma mechanism between mental illness and COVID-19, it might not capture the full profile of the COVID-19-related stigma. Even though the reliability of the instruments for public stigma in this study is acceptable, it would be better if we could use a more standardized measurement in a future study for comparison across various research studies. Finally, several other factors which are not contained in the present study might explain attitudes towards COVID-19 in the general population as well. For instance, the media reports of untrue information about disease transmission and coverage of infected people with the disease label might increase the likelihood of stigmatization ideas in the general population [52] .",
+            "cite_spans": [
+                {
+                    "start": 525,
+                    "end": 529,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 701,
+                    "end": 705,
+                    "text": "[50,",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 706,
+                    "end": 709,
+                    "text": "51]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 2307,
+                    "end": 2311,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Despite these aforementioned limitations, our findings support the need to design public stigma reduction programs attached to COVID-19 and to shed light on the significance of health policy responses at the outbreaks of newly emerging infectious diseases. The current study demonstrates the association between lack of knowledge and endorsement of stigmatizing notions among the general population, which implies the necessity of disseminating accurate information of COVID-19 to diminish misunderstanding. In addition, our study indicates stigma to be related to attributions of the disease. The policies targeted to reduce stigmatizing attitudes, therefore, should focus on guiding the public to have appropriate attributions of the COVID-19 infection. In the long run, anti-stigmatization should be a focus of public health policies to make the public hold a more accepting attitude towards infectious disease (e.g., COVID-19, etc.) and infected people.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our study identified the profile of public stigma during the outbreak of COVID-19 in China, which might warrant the necessity for researchers and policy makers to tailor and implement anti-stigma interventions to challenge bias and prejudice for people facing a sudden outbreak of infectious disease like COVID-19. Given the role of attributions influencing public attitudes towards people with COVID-19, it is not only essential to design health communication programs to contain the spread of misinformation about COVID-19, but also to develop strategies to alter inappropriate causal attributions of COVID-19 in the general population. On account of the significant relationships between emotional response (e.g., fear, anger) and public stigma, more attention should be placed on alleviating these unfavorable reactions and providing psychosocial support for individuals trapped in emotional distress due to the pandemic. Currently, the COVID-19 pandemic is still continuing around the world. Nevertheless, the social stigmatization might be even more prolonged and extend to recovered patients and healthcare professionals according to the preceding stigma studies related to SARS and Ebola [31, 34, 53] . Therefore, stigmatization towards COVID-19 should be understood and addressed in the context of combatting infectious diseases.",
+            "cite_spans": [
+                {
+                    "start": 1196,
+                    "end": 1200,
+                    "text": "[31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1201,
+                    "end": 1204,
+                    "text": "34,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1205,
+                    "end": 1208,
+                    "text": "53]",
+                    "ref_id": "BIBREF52"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Johns Hopkins University & Medicine. COVID-19 Map-Johns Hopkins Coronavirus Resource Center. 2021. Available online",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Stigma during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bagcchi",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Lancet Infect. Dis",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30498-9"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Stigma related to COVID-19 infection: Are the Health Care Workers stigmatizing their own colleagues?",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Grover",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sahoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mehra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian J. Psychiatry",
+            "volume": "53",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102381"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Addressing Disease-Related Stigma during Infectious Disease Outbreaks",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fischer",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mansergh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lynch",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Santibanez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "13",
+            "issn": "",
+            "pages": "989--994",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/dmp.2018.157"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Fear and Stigma: The Epidemic within the SARS Outbreak",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Person",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Holton",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Govert",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Garza",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gould",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hickson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mcdonald",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Meijer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Emerg. Infect. Dis",
+            "volume": "10",
+            "issn": "",
+            "pages": "358--363",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid1002.030750"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Influenza stigma during the 2009 H1N1 pandemic",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Earnshaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Quinn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J. Appl. Soc. Psychol",
+            "volume": "43",
+            "issn": "",
+            "pages": "109--114",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jasp.12049"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Addressing Ebola-related Stigma: Lessons Learned from HIV/AIDS. Glob. Health Action",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Davtyan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Folayan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3402/gha.v7.26058"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Fear and Stigma: Perceptions of Zika Virus among Pregnant Women in Spain",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Marb\u00e1n-Castro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vill\u00e9n-Gonzalvo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Enguita-Fern\u00e0ndez",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mar\u00edn-Cos",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Men\u00e9ndez",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Maixenchs",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bardaj\u00ed",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Uncertainties",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Environ. Res. Public Health",
+            "volume": "17",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijerph17186643"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Assessing differential impacts of COVID-19 on black communities",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Millett",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Benkeser",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Baral",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mercer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Beyrer",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Honermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Lankiewicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mena",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Crowley",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Ann. Epidemiol",
+            "volume": "2020",
+            "issn": "",
+            "pages": "37--44",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.annepidem.2020.05.003"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Hospitalization and Mortality among Black Patients and White Patients with COVID-19",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Price-Haywood",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Burton",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Fort",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Seoane",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "N. Engl. J. Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "2534--2543",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMsa2011686"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Gender Differences in Patients With COVID-19: Focus on Severity and Mortality. Front",
+            "authors": [
+                {
+                    "first": "J.-M",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-F",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D.-M",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-K",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fpubh.2020.00152"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Patient Characteristics and Outcomes of 11,721 Patients with Coronavirus Disease 2019 (COVID-19) Hospitalized across the United States",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fried",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crawford",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mospan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Watkins",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Munoz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Zink",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Elliott",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Burleson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Landis",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Reddy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin. Infect. Dis",
+            "volume": "72",
+            "issn": "",
+            "pages": "558--565",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa1268"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Presenting Characteristics, Comorbidities, and Outcomes among 5700 Patients Hospitalized with COVID-19 in the",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hirsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Narasimhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crawford",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mcginn",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Davidson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Barnaby",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Becker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Chelico",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "2052--2059",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.6775"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Characteristics of and Important Lessons from the Coronavirus Disease 2019 (COVID-19) Outbreak in China: Summary of a Report of 72314 Cases from the Chinese Center for Disease Control and Prevention",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mcgoogan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1239--1242",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.2648"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "An interactive web-based dashboard to track COVID-19 in real time",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect. Dis",
+            "volume": "20",
+            "issn": "",
+            "pages": "533--534",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20)30120-1"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Coronavirus Pandemic (COVID-19)-Statistics and Research-Our World in Data 2020",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roser",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ritchie",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ortiz-Ospina",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hasell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Social Stigma Associated with COVID-19. World Heal Organ 2020",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Stigmatisation associated with COVID-19 in the general Colombian population",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cassiani-Miranda",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Campo-Arias",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Tirado-Ot\u00e1lvaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Botero-Tob\u00f3n",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Upegui-Arango",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rodr\u00edguez-Verdugo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Botero-Tob\u00f3n",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Arismendy-L\u00f3pez",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Robles-Fonnegra",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ni\u00f1o",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Int. J. Soc",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0020764020972445"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Unexpected public health consequences of the COVID-19 pandemic: A national survey examining anti-Asian attitudes in the USA",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Dhanani",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Franz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Public Health",
+            "volume": "65",
+            "issn": "",
+            "pages": "747--754",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00038-020-01440-0"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "COVID-19-related stigmatization among a sample of Egyptian healthcare workers",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mostafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Sabry",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Mostafa",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "PLoS",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0244172"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "COVID-19 public stigma in the context of government-based structural stigma: A cross-sectional online survey of adults in Bangladesh",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Hossain",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Alam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sultan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Faysal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rima",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hossain",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mahmood",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kashfi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Al Mamun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Stigma Health",
+            "volume": "6",
+            "issn": "",
+            "pages": "123--133",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/sah0000305"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Mental health stigma as social attribution: Implications for research methods and attitude change",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Corrigan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Clin. Psychol. Sci. Pract",
+            "volume": "7",
+            "issn": "",
+            "pages": "48--67",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/clipsy.7.1.48"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "On sin versus sickness: A theory of perceived responsibility and social motivation",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Weiner",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Am. Psychol",
+            "volume": "48",
+            "issn": "",
+            "pages": "957--965",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0003-066X.48.9.957"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Stigmatizing attributions about mental illness",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Corrigan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "River",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lundin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Wasowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Campion",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mathisen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Goldstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bergman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gagnon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kubiak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "J. Community Psychol",
+            "volume": "28",
+            "issn": "",
+            "pages": "91--102",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/(SICI)1520-6629(200001)28:1<91::AID-JCOP9>3.0.CO;2-M"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "An Attribution Model of Public Discrimination Towards Persons with Mental Illness",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Corrigan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Markowitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Watson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rowan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kubiak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J. Health Soc. Behav",
+            "volume": "44",
+            "issn": "",
+            "pages": "162--179",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/1519806"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Comparative stigma of HIV/AIDS, SARS, and Tuberculosis in Hong Kong",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Mak",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Woo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Soc. Sci. Med",
+            "volume": "63",
+            "issn": "",
+            "pages": "1912--1922",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2006.04.016"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Drivers of workplace discrimination against people with disabilities: The utility of Attribution Theory",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mcmahon",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cheing",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rosenthal",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bezyak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "",
+            "volume": "25",
+            "issn": "",
+            "pages": "77--88",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Survey Tool and Guidance: Rapid, Simple, Flexible Behavioral Insights on COVID-19. 2020. Available online",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Beyond attributions: Understanding public stigma of mental illness with the common sense model",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "W S"
+                    ],
+                    "last": "Mak",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "S K"
+                    ],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C Y"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Am. J. Orthopsychiatry",
+            "volume": "84",
+            "issn": "",
+            "pages": "173--181",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/h0099373"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Brief battery for measurement of stigmatizing versus affirming attitudes about mental illness",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Corrigan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Powell",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Michaels",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Psychiatry Res",
+            "volume": "215",
+            "issn": "",
+            "pages": "466--470",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.psychres.2013.12.006"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Ebola-related stigma in Ghana: Individual and community level determinants",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Tenkorang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Soc. Sci. Med",
+            "volume": "182",
+            "issn": "",
+            "pages": "142--149",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2017.03.060"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Public attitudes toward SARS and their implications for societal preparedness for other emerging infections",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fung",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kwok",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Medicine",
+            "volume": "3",
+            "issn": "",
+            "pages": "57--63",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "COVID-19-related stigma profiles and risk factors among people who are at high risk of contagion",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Duan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Soc. Sci. Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2020.113425"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Surveillance of discriminatory attitudes toward people living with HIV/AIDS among the general public in Hong Kong from",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tsui",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Phil",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Disabil. Rehabil",
+            "volume": "25",
+            "issn": "",
+            "pages": "1354--1360",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/09638280310001616349"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Prevalence and factors associated with social avoidance of recovered SARS patients in the Hong Kong general population",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T F"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tsui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Health Educ. Res",
+            "volume": "21",
+            "issn": "",
+            "pages": "662--673",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/her/cyl064"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "WHO must prioritise the needs of older people in its response to the COVID-19 pandemic",
+            "authors": [],
+            "year": null,
+            "venue": "BMJ",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m1285"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Mental Health and the COVID-19 Pandemic",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Pfefferbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "North",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "383",
+            "issn": "",
+            "pages": "510--512",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMp2008017"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Impact of COVID-19 pandemic on mental health in the general population: A systematic review",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Lipsitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Nasri",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lui",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gill",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Phan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Chen-Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Iacobucci",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Majeed",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Affect. Disord",
+            "volume": "277",
+            "issn": "",
+            "pages": "55--64",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jad.2020.08.001"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Insomnia and psychological reactions during the COVID-19 outbreak in China",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sanford",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Vgontzas",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Clin. Sleep Med",
+            "volume": "16",
+            "issn": "",
+            "pages": "1417--1418",
+            "other_ids": {
+                "DOI": [
+                    "10.5664/jcsm.8524"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "COVID-19 and mental health: A review of the existing literature",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Rajkumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Asian J. Psychiatry",
+            "volume": "52",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ajp.2020.102066"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Factors Associated with HIV Related Stigma among College Students in the Midwest",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kingori",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Nkansah",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Haile",
+                    "suffix": ""
+                },
+                {
+                    "first": "K.-A",
+                    "middle": [],
+                    "last": "Darlington",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Basta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "4",
+            "issn": "",
+            "pages": "347--363",
+            "other_ids": {
+                "DOI": [
+                    "10.3934/publichealth.2017.4.347"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Knowledge, contact and stigma of mental illness: Comparing three stakeholder groups in Hong Kong",
+            "authors": [
+                {
+                    "first": "M.-S",
+                    "middle": [],
+                    "last": "Ran",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-M",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Yau",
+                    "suffix": ""
+                },
+                {
+                    "first": "T.-M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "Y L"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Thornicroft",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": ".-W",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Int. J. Soc. Psychiatry",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0020764021997479"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Meta-analysis and systematic review of studies on the effectiveness of HIV stigma reduction programs",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Mak",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mo",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Soc. Sci. Med",
+            "volume": "188",
+            "issn": "",
+            "pages": "30--40",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2017.06.045"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "A psychoeducational mental health promotion intervention in comprehensive school: Recognising problems and reducing stigma",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Onnela",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hurtig",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ebeling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Health Educ. J",
+            "volume": "80",
+            "issn": "",
+            "pages": "554--566",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0017896921994134"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Are mental illnesses stigmatized for the same reasons? Identifying the stigma-related beliefs underlying common mental illnesses",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Krendl",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Freeman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Ment. Health",
+            "volume": "28",
+            "issn": "",
+            "pages": "267--275",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/09638237.2017.1385734"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "An attributional analysis of reactions to stigmas",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Weiner",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Perry",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Magnusson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "J. Pers. Soc. Psychol",
+            "volume": "55",
+            "issn": "",
+            "pages": "738--748",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0022-3514.55.5.738"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Socioeconomic status and mental illness stigma: The impact of mental illness controllability attributions and personal responsibility judgments",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Foster",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "O&apos;mealey",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Ment. Health",
+            "volume": "2021",
+            "issn": "",
+            "pages": "1--8",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/09638237.2021.1875416"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Understanding the Effects of Stigma Messages: Danger Appraisal and Message Judgments",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Fink",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Health Commun",
+            "volume": "34",
+            "issn": "",
+            "pages": "424--436",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/10410236.2017.1405487"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Does gender influence online survey participation? A record-linkage analysis of university faculty online survey response behavior",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "",
+            "volume": "501717",
+            "issn": "",
+            "pages": "1--21",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Knowledge, attitudes, and practices towards COVID-19 among Chinese residents during the rapid rise period of the COVID-19 outbreak: A quick online cross-sectional survey",
+            "authors": [
+                {
+                    "first": "B.-L",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-M",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q.-Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-G",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Int. J. Biol. Sci",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1745--1752",
+            "other_ids": {
+                "DOI": [
+                    "10.7150/ijbs.45221"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "The impacts of COVID-19 outbreak on mental health in general population in different areas in China",
+            "authors": [
+                {
+                    "first": "M.-S",
+                    "middle": [],
+                    "last": "Ran",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-X",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T.-M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K W"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-P",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "B.-Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G.-P",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D.-S",
+                    "middle": [],
+                    "last": "Pu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Psychol. Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/S0033291720004717"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Infectious diseases and social stigma",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gonzalez-Medina",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Vu Le",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Med. Health Sci. J",
+            "volume": "7",
+            "issn": "",
+            "pages": "2--14",
+            "other_ids": {
+                "DOI": [
+                    "10.15208/mhsj.2011.127"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Ebola and healthcare worker stigma",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wester",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Giesecke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Scand. J. Public Health",
+            "volume": "47",
+            "issn": "",
+            "pages": "99--104",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1403494817753450"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Sociodemographic characteristics and their differences in public stigma score.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Mean scores and percentages of endorsement of public stigma of COVID-19. When encountering someone who has traveled to an epidemic area, it is best to avoid him/her.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Correlations between public stigma of COVID-19 and other continuous variables.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Linear regression models of public stigma of COVID-19.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,3708 @@
+{
+    "paper_id": "0b21b23dc8edd399d798019de6499bc88e84b2ed",
+    "metadata": {
+        "title": "Effectiveness of an interactive web-based health program for adults: a study protocol for three concurrent controlled-randomized trials (EVA-TK-Coach)",
+        "authors": [
+            {
+                "first": "Iris",
+                "middle": [],
+                "last": "Tinsel",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Gloria",
+                "middle": [],
+                "last": "Metzner",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Christian",
+                "middle": [],
+                "last": "Schlett",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Matthias",
+                "middle": [],
+                "last": "Sehlbrede",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Martina",
+                "middle": [],
+                "last": "Bischoff",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Robin",
+                "middle": [],
+                "last": "Anger",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Judith",
+                "middle": [],
+                "last": "Brame",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Daniel",
+                "middle": [],
+                "last": "K\u00f6nig",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ramona",
+                "middle": [],
+                "last": "Wurst",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Reinhard",
+                "middle": [],
+                "last": "Fuchs",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Peter",
+                "middle": [],
+                "last": "Lindinger",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Rainer",
+                "middle": [],
+                "last": "Bredenkamp",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Erik",
+                "middle": [],
+                "last": "Farin-Glattacker",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: A healthy lifestyle can help prevent diseases that impair quality of life and lead to premature death. The Techniker health insurance fund offers a comprehensive online health program to support users in achieving their health goals of Increasing Fitness, Losing and Maintaining Weight, or Smoking Cessation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Methods: The aim of this study is to test the long-term effectiveness of the web-based TK-HealthCoach with regard to the primary outcomes of increased physical activity, sustainable weight reduction, and smoking abstinence. We are conducting three interconnected, randomized controlled trials (RCT), one for each health goal, within which participants are allocated to an intervention group (interactive online health program) or a control group (noninteractive online health program). The effects of the intervention groups compared to the control groups will be analyzed by multi-level models for change. Participants' data are captured via online questionnaires before the program starts (baseline t0), again when it ends (t1), and later at two follow-up surveys (t2 and t3); the latter 12 months after t1. We are documenting socio-demographic, health-related, and psychological variables as well as usage behavior data of the programs. According to our sample size calculation, we have to enroll 1114 participants in each Losing and Maintaining Weight and Increasing Fitness RCT and 339 participants in the Smoking Cessation RCT. Additionally, 15-20 participants in the interactive smoking-cessation program will be invited to qualitative telephone interviews with the aim to obtain detailed information concerning utilization, compliance, and satisfaction. The online RCTs' inclusion criteria are: adults of each gender regardless of whether they are insured with Techniker health insurance fund. Persons with impairments or pre-existing conditions require a medical assessment as to whether the program is suitable for them. Specific exclusion criteria apply to each program/RCT.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Discussion: We assume that study participants will improve their health behavior by using the offered online health programs and that each health goal's intervention group will reveal advantages regarding the outcome variables compared to the control groups. Study enrollment started on January 1, 2020. Background Consumer habits and working conditions strongly influence each member of society's lifestyle. Smoking, low physical activity and obesity lead to increased individual health risks, e.g., for cardiovascular diseases, cancer, diabetes mellitus, musculoskeletal diseases, etc., putting a very high financial burden on the healthcare system. Recommendations have been made globally and programs developed to support a healthy lifestyle [1] [2] [3] . The earlier a healthy lifestyle is implemented, the less likely one is to suffer from the consequences of tobacco consumption, low physical activity, or obesity. However, lifestyle changes are particularly hard to realize when disease-related burdens are not yet apparent. Moreover, people free of cardiovascular diseases but carrying risks like smoking, hypertension, diabetes mellitus, and obesity who initially took statins or antihypertensive drugs decreased physical activity and increased weight, as Korhonen et al. found in their cohort study with > 41,000 participants [4] .",
+            "cite_spans": [
+                {
+                    "start": 746,
+                    "end": 749,
+                    "text": "[1]",
+                    "ref_id": null
+                },
+                {
+                    "start": 750,
+                    "end": 753,
+                    "text": "[2]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 754,
+                    "end": 757,
+                    "text": "[3]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1337,
+                    "end": 1340,
+                    "text": "[4]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Digital programs promoting primary prevention can play an important role for working-age adults. There are already many commercial and non-commercial online programs to support preventive health behavior, although the variety on offer is immense, as is their quality [5] . Some online programs were tested in randomizedcontrolled trials, but as their content, duration, and possibilities of interactivity differed, the effectiveness varied widely. However, results show that the more individualized and interactive online interventions are aligned, the stronger are their effects [6] [7] [8] [9] [10] [11] [12] [13] . Nevertheless, we must keep in mind that strong interactivity and close ties to a web-based program may also make participants feel overly obliged, which may cause users to quit the program prematurely. Particular motivational and volitional factors for changing health behavior are therefore very important [14, 15] . The content of an E-Coach, its individual usability and degree of interaction, and its technical functionality and design are playing an important role to encourage user's program adherence and thus a successful change in behavior [14] .",
+            "cite_spans": [
+                {
+                    "start": 267,
+                    "end": 270,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 580,
+                    "end": 583,
+                    "text": "[6]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 584,
+                    "end": 587,
+                    "text": "[7]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 588,
+                    "end": 591,
+                    "text": "[8]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 592,
+                    "end": 595,
+                    "text": "[9]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 596,
+                    "end": 600,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 601,
+                    "end": 605,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 606,
+                    "end": 610,
+                    "text": "[12]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 611,
+                    "end": 615,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 925,
+                    "end": 929,
+                    "text": "[14,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 930,
+                    "end": 933,
+                    "text": "15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1167,
+                    "end": 1171,
+                    "text": "[14]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Digital health services are often highly commercialized, and there is a myriad of health programs of very different quality offered by commercial and noncommercial institutions and health insurers. It is difficult for users to assess the effectiveness and security of the programs. Ineffective health programs are not only unnecessarily costly-they may also cause harm or demotivate participants sustainably.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "It is therefore necessary to ensure that such digital applications make their benefits and effectiveness transparent to potential users [16] [17] [18] . Furthermore, scientific and comparable quality criteria should be developed to support both customers and health care providers choose or offer effective digital health programs.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 140,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 141,
+                    "end": 145,
+                    "text": "[17]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 146,
+                    "end": 150,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "To improve disease prevention, the German Techniker (TK) health insurance fund developed, with support from experts in medicine, sports science, psychology, and motivational psychology, a comprehensive online health coach to encourage users to achieve individual health goals. Three of these health goals-Increasing Fitness, Losing and Maintaining Weight and Smoking Cessation-will be independently examined by the Section of Health Care Research and Rehabilitation Research (SEVERA) and Medical Center Freiburg and the Department of Sport and Sport Science (IfSS)-both located in the University of Freiburg.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "SEVERA is mainly responsible for coordinating the overall study and its summative evaluation, which is being carried out via three online randomized controlled trials (RCTs) (one for each health goal). It is also responsible for the formative evaluation of the intervention and control group programs with the Smoking Cessation health goal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The IfSS is responsible for two substudies conducting sports and nutritional medical examinations of participants living in the postal code area 79 (South Baden). The protocol of these substudies will be published separately. The IfSS will also evaluate the usage behavior data from the Increasing Fitness and Losing and Maintaining Weight programs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Study aim, design, and setting",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "The aim of this study is to test the long-term effectiveness of the TK-HealthCoach with regard to these primary outcomes: increased physical activity, weight loss, and smoking abstinence. An online randomized controlled trial (RCT) of parallel design is being conducted as part of the summative evaluation for each of the three health goals Increasing Fitness, Losing and Maintaining Weight, and Smoking Cessation. The aim is to examine if participants of interactive online programs achieve higher effects on study outcomes than participants of non-interactive programs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "Adults across Germany intending to lose weight, increase their fitness or quit smoking are invited to participate in one of the online studies. We are planning to recruit a total of approximately N = 2567 participants in the three online RCTs. In addition to these online RCTs, the Department for Sport and Sport Science (IfSS), University of Freiburg is conducting two medical substudies on the health goals Increasing Fitness and Losing and Maintaining Weight. The aim of these two substudies is to determine long-term physiological effectiveness as a result of behavioral changes. Since the precondition for participating in either substudy is to fill out the online questionnaires, the total number of participants to be recruited has to increase by n = 336 to n = 2903 (sample size calculation see Table 5 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 803,
+                    "end": 810,
+                    "text": "Table 5",
+                    "ref_id": "TABREF8"
+                }
+            ],
+            "section": "Methods/design"
+        },
+        {
+            "text": "Formative evaluations will be conducted in addition to the TK-HealthCoach's summative evaluation. These include (a) detailed quantitative analyses of usage behavior data and (b) qualitative interviews with persons participating in the intervention group of the online RCT Smoking Cessation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "Study period of each RCT includes the program runtime of the health goals (Smoking Cessation: six weeks; Increasing Fitness and Losing and Maintaining Weight: 12 weeks) as well as another twelve-month follow-up after the program's completion.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "Participant data is being captured via online questionnaires at these time points:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "-Baseline t0: after registration and before the program starts -Follow-up t1: after completing the program",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "Smoking Cessation: after 6 weeks Increasing Fitness and Losing and Maintaining Weight: after 12 weeks -Follow-up t2:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "Smoking Cessation: 4 months after completing the program Increasing Fitness and Losing and Maintaining Weight: 6 months after completing the program -Follow-up t3: 12 months after completing the program in all three RCTs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "The data on program usage will be recorded during the entire study period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "In the RCT Smoking Cessation qualitative telephone interviews will be carried out once the t1 questionnaires have been completed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods/design"
+        },
+        {
+            "text": "The following questions and hypotheses are being investigated in this study 1. What effects do the online programs within the three health goals Losing and Maintaining Weight, Increasing Fitness, and Smoking Cessation have on the primary and secondary outcomes variables reported by participants? We assume that we will observe statistically significant improvements with small to medium effect sizes for each program. 2. Will the intervention groups (interactive health programs) in each RCT reveal stronger effects on primary and secondary outcomes in comparison to the control groups (non-interactive health programs)? We will test the hypothesis that the intervention groups' changes in the primary and secondary outcomes are more positive than the control groups'. Our focus is on long-term effects so we will analyze the change between baseline (t0) and 1 year after the intervention finishes (t3), while short-term effects are part of the secondary analyses. We expect small to medium effect sizes from the comparison between these two groups. 3. Does the intensity of use of health programs have an impact on their effects? The hypothesis we test is that study participants who use their health program more frequently and intensively achieve better outcomes than study participants who use the program less often or less intensively. 4. How satisfied with the programs offered are the study participants in the intervention-and control groups? This question will be examined exploratively in secondary analyses.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Research questions and hypothesis"
+        },
+        {
+            "text": "The process of the three online-RCTs, each with parallel groups and equal distribution, is presented in the flowchart (Fig. 1) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 118,
+                    "end": 126,
+                    "text": "(Fig. 1)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Study population and recruitment procedure"
+        },
+        {
+            "text": "Healthy persons (male/female/diverse), aged 18 years and older, regardless of whether they are insured with TK health insurance fund, are eligible to participate. Interested persons with impairments or pre-existing conditions require a medical assessment as to whether the program is suitable for them. Participation is only permitted on the condition that interested persons provide truthful information with regard to their health status. Each person can only choose one health goal and therefore participate in only one RCT.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria"
+        },
+        {
+            "text": "Only people who smoke at baseline (t0) can take part in the \"Smoking Cessation\" online RCT. Table 4 for sample size details. N = absolute number; t = measurement time point ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 92,
+                    "end": 99,
+                    "text": "Table 4",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Specific inclusion criteria for the \"Smoking Cessation\" RCT"
+        },
+        {
+            "text": "Only participants in the \"Smoking Cessation\" online RCT's intervention group and those who have completed the t1 online questionnaire can register for these interviews.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Specific inclusion criteria for semi-standardized telephone interviews"
+        },
+        {
+            "text": "People will be excluded from participating in the program or study if",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Exclusion criteria"
+        },
+        {
+            "text": "Their health impairments which, according to a medical assessment, partially or completely rule out participation in the chosen online health program, They are already participating in another study aiming to change behavior towards the health goal in question. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Exclusion criteria"
+        },
+        {
+            "text": "Persons with waist circumference > 200 cm or BMI > 40 kg/m 2 must obtain a medical assessment that allows participation in the health program.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Pregnancy, Currently underweight"
+        },
+        {
+            "text": "Interested persons are asked to calculate their BMI (link offered).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Pregnancy, Currently underweight"
+        },
+        {
+            "text": "Interested persons cannot participate if they have already quit smoking, even if it is only for a few days.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Specific exclusion criteria for the Smoking Cessation RCT"
+        },
+        {
+            "text": "Any restrictions making a telephone survey impossible, such as severe communication difficulties.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Specific exclusion criteria for the telephone interview"
+        },
+        {
+            "text": "From January 1 to 17 of June 2020, a total of N = 2903 study participants have to be recruited in all RCTs, including the local medical substudies. The number of participants who have to be enrolled in the online studies is N = 2567.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recruitment procedure"
+        },
+        {
+            "text": "Recruitment activities and information are being disseminated via online and print media. These include various information provided via channels of the TK health insurance (websites, newsletters, blogs etc.), advertisements on Google, and different health media. Advertisements in the local press and radio, the intranet of the University of Freiburg and its Medical Center, and a local display of flyers serve to recruit specifically for the regional medical substudies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recruitment procedure"
+        },
+        {
+            "text": "People intending to change their health behavior find brief information about the study and its objectives on the project's homepage. As specific inclusion and exclusion criteria apply to each of the three programs or RCTs respectively, detailed study information is provided on each program entry.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recruitment procedure"
+        },
+        {
+            "text": "If interested persons give their informed consent to participate in the program and study, and after completing their registration, they will as participants receive the first health goal-specific questionnaire by e-mail (baseline t0).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recruitment procedure"
+        },
+        {
+            "text": "Participants in the Increasing Fitness or Losing and Maintaining Weight RCTs living in the postal code area 79 are offered the possibility to enroll in the medical substudies after filling out the t0 questionnaire. These substudies entail sports and nutritional medical examinations (details will be published in the study protocol of the medical substudies).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recruitment procedure"
+        },
+        {
+            "text": "After completing the baseline questionnaire, the online RCT participants are given access to their selected online health program. While accessing the program, the participants in each online RCT are allocated at random to the interactive online health program (intervention group) or the non-interactive online health program (control group). Randomizations take place separately for each RCT Increasing Fitness, Losing and Maintaining Weight, and Smoking Cessation via permuting block randomization with variable block sizes of 4, 6, and 8. The participants are assigned to the intervention or control group automatically according to randomization lists. These randomization lists for each RCT were created by SEVERA, applying the software RITA, version 1.50 [19] , and transmitted on May 28, 2019, to the IT Company (Vilua Healthcare GmbH), responsible for operating the online program and online survey. The randomization lists cannot be influenced by participants, the IT Company, or the health program's provider.",
+            "cite_spans": [
+                {
+                    "start": 762,
+                    "end": 766,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Randomization"
+        },
+        {
+            "text": "We chose permuting block randomization to ensure equal distribution in the intervention and control groups in case of deviations between the numbers of targeted and indeed enrolled participants.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Randomization"
+        },
+        {
+            "text": "Blinding of the study participants is not possible due to their informed consent to participate in one of two different health-program forms (interactive vs. noninteractive). By participating actively in the interventions, they will be immediately aware of the group to which they have been allocated. Blinded data analysis cannot be ensured either, since the data collected may indicate the study-arm affiliation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Randomization"
+        },
+        {
+            "text": "All study participants are given access to a health goalspecific, web-based online program with the difference being that the intervention group is offered a comprehensive, interactive program and the control group a less extensive, non-interactive program.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interventions"
+        },
+        {
+            "text": "All participants have access to a personal profile page where they find their personal registration data, study information, and declaration of consent as well as the possibility to unsubscribe from the study and/or program.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interventions"
+        },
+        {
+            "text": "Participants in the intervention groups are given access to the technically guided, interactive programs Fitness-Coaching, WeightLossCoaching, o r SmokingCessationCoaching.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "The recommended duration of participation in Fitness-Coaching and WeightLossCoaching is 12 weeks, that in SmokingCessationCoaching 6 weeks.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "The overall aim of each coaching module is to guide users step by step to their health goal and prepare them to continue after the coaching. For this, the users are asked to compile their activities and will then receive a tailored plan and technically guided psychological input to achieve sustainable, positive health effects. Each coaching module contains specific tools to help avoid relapsing. In addition, participants are advised by experts from the IT Company on request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "Individual action planning: A common feature of the three coaching modules is their multimodality, interactivity and individual applicability. Each program starts with an anamnesis specific to the chosen health goal. Based on those results, participants plan individual activities with adaptable intensity. All selectable activities are accompanied by video-, audio-or reading instructions. Since many activities benefit different health goals, the participants can choose their individual activities across all three coaching modules-with the exception that the SmokingCessationCoaching activities cannot be selected by participants in FitnessCoaching or WeightLossCoaching.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "To enhance health-related knowledge, users are given access to a comprehensive, evidence-based knowledge area divided into different articles. The program prefilters relevant content for the user. Nevertheless, each user in the intervention group can access all information, regardless of their coaching module.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "Weekly planned activities, specific articles, and advice as well as test-tools and daily motivation tips are displayed on an individual dashboard personalized to accommodate each user's current progress.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "Logging results, feedback, and motivation: All activities carried out, data from activity trackers, self-tests, nutrition and smoking protocols, as well as read articles, etc., can be logged on by participants. Pop-up toasts or notifications depending on the progress of the participants give feedback on attained goals, motivate user to continue, or suggest specific barrier management. The latter is implemented in the FitnessCoaching and the",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention groups"
+        },
+        {
+            "text": "A personal profile page contains an overview of each participant's progress in weight loss and physical activity or days not smoking. It also contains the study information and informed consent form as well as buttons to withdraw participation in the study or program. At the end of each coaching module (after 6 or 12 weeks, respectively), a review page containing an overview of each participant's goals and attainments is displayed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SmokingCessationCoaching."
+        },
+        {
+            "text": "The WeightLossCoaching focuses on a sustainable change in diet and the principle of balanced nutrition. The aim is that participants reduce their weight by a maximum of 5 kg within a 12-week period. Its main tool, based on the concept of energy density [20] , is a comprehensive protocol of nutrition and physical activity by which an individual's optimal energy requirements are calculated. An extensive cookbook with recipes is available. The FitnessCoaching main elements are training plans for strength, endurance, and mobility characterized by progressive training loads through various sports activities such as pilates, back training, yoga, circuit training, Nordic walking, jogging, and cycling. Additional physical activities can be added. The SmokingCessationCoaching applies the coldturkey strategy and has a modular structure. Users can get themselves ready for the smoking-cessation date during a preparation phase lasting a maximum 14 days, followed by a 4-week weaning phase. The SmokingCessationCoaching includes meditation and mindfulness modules. Additionally, participants are invited to take part in an individual telephone counseling entailing up to four consultations. The counselors are especially trained to carry out this intervention (for details see supplement 1) (Table 1) .",
+            "cite_spans": [
+                {
+                    "start": 253,
+                    "end": 257,
+                    "text": "[20]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1291,
+                    "end": 1300,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Specificities of the coaching modules"
+        },
+        {
+            "text": "The control group participants are given access to a non-interactive online health program according to their selected health goal. They receive evidence-based information with advice to attain their goals. This information is divided into different lessons on a website especially designed for each health goal. Study participants are unable to link training plans, protocols or data from activity trackers to the program. A personal profile page contains study information, the informed consent form, and buttons to withdraw participation in the study or program.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Control groups"
+        },
+        {
+            "text": "After the trial-dependent program ends, all participants, regardless of their study arm, will be given access to the trial-independent interactive TK-HealthCoach. This will be possible for all persons regardless of their membership in the TK health insurance fund. While the development of each trial-dependent coaching module (used by study participants) was concluded at the beginning of the study, the trial-independent TK-HealthCoach has been expanded to incorporate new coaching modules, i.e., AntistressCoaching.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Control groups"
+        },
+        {
+            "text": "Due to summative and formative evaluations, different types of data will be collected in this study. Self-reported outcomes will be surveyed via online questionnaires at all measurement time points (t0, t1, t2, t3). Users withdrawing their participation in the study or the health program prematurely, will receive a short logoff questionnaire upon deregistration to assess reasons for study termination. Usage behavior data will be stored from all participants who log onto their health program, from their first to their last login. Qualitative data will be collected during telephone interviews with participants in the intervention group in the Smoking Cessation RCT.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data collection"
+        },
+        {
+            "text": "Sports and nutritional medical data will be collected by the IfSS as part of the two substudies. Physiological outcomes will be evaluated in each via four medical examinations (t0, t1, t2, t3). Completing the online questionnaire is a precondition for participating in one of the medical substudies. Detailed information on this data collection will be published in a separate study protocol.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data collection"
+        },
+        {
+            "text": "Online questionnaires: baseline (t0) and catamnesis (t1-t3)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Quantitative data"
+        },
+        {
+            "text": "Online questionnaires specifically designed for each health goal are applied in all RCTs to survey sociodemographic, health-related, and psychological variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Quantitative data"
+        },
+        {
+            "text": "The variables and constructs of the online questionnaire surveys of all RCTs at the four measurement time points are shown in Tables 2, 3, and 4. We used validated instruments whenever possible. The wording in some instruments has been modified and other questions newly developed by the research team. A new questionnaire to investigate eating behavior [21] has been developed as part of the medical preliminary study (details see separate study protocol of the medical substudies [22] .",
+            "cite_spans": [
+                {
+                    "start": 354,
+                    "end": 358,
+                    "text": "[21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 482,
+                    "end": 486,
+                    "text": "[22]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Quantitative data"
+        },
+        {
+            "text": "Before the online implementation, we pretested the questionnaires for understandability and usability by applying a \"think-aloud method\" with 11 participants (see supplement 2). Additionally, four of our research team members tested the questionnaires in advance through an expert review. During the process of online implementation and technical realization, two members of the research team monitored the rigorous implementation and web-based display of the questionnaires.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Quantitative data"
+        },
+        {
+            "text": "Usage behavior data will be collected from all participants engaged in the web-based health programs (intervention-and control groups) from their first to their last login. These data are partially collected at the participant level (frequencies and duration of program logins, logged activities [only intervention group]), and partially aggregated (page views).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Usage behavior data"
+        },
+        {
+            "text": "Participants in the SmokingCessationCoaching (only participants in the intervention group of the corresponding RCT) will be invited to participate in a telephone interview after completing the t1-questionnaire. The duration of each interview will be 30-45 min. Program compliance, usage intensity, motivation, and user satisfaction as well as smoking history and sociodemographic data will be surveyed by SEVERA-team researchers posing the following key questions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Qualitative data"
+        },
+        {
+            "text": "The pretested interview guideline includes the following key questions: Experience with online health programs Self-developed/means and percentages W, F, S 1 x Current use of (other) online health programs",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Qualitative data"
+        },
+        {
+            "text": "Further internet use in general and regarding health subjects",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Qualitative data"
+        },
+        {
+            "text": "Previous attempt at behavior change \"Berlin Risk Appraisal and Health Motivation Study\" (BRAHMS [50] ); adapted to specific health goal/means W, F, S 2 4",
+            "cite_spans": [
+                {
+                    "start": 96,
+                    "end": 100,
+                    "text": "[50]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Qualitative data"
+        },
+        {
+            "text": "x Actual health behavior ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Qualitative data"
+        },
+        {
+            "text": "All quantitative research data are recorded and stored with individual pseudonyms by Vilua Healthcare GmbH (https://vilua.com/services/). Vilua has years of experience managing large datasets related to health programs and research projects and applies high quality standards in terms of data protection and data management.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data management"
+        },
+        {
+            "text": "Since the study started, Vilua sends at regular 2-day intervals datasets to SEVERA which include the number This instrument (SEV) was developed in the preliminary study [22] Tinsel et al. Trials The TK health insurance fund will have no access to this study's raw data, but is only informed about the progress. There exist no competing interests.",
+            "cite_spans": [
+                {
+                    "start": 169,
+                    "end": 173,
+                    "text": "[22]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data management"
+        },
+        {
+            "text": "In addition, SEVERA regularly prepares monitoring reports and communicates them to all the collaboration partners. The reports support the decision-making process, shared by the entire project team, to strengthen recruitment efforts and, finally, to complete the recruitment. After plausibility checks conducted by the scientific staff members of SEVERA, data analyses will be performed by SEVERA and IfSS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data management"
+        },
+        {
+            "text": "The telephone interviews will be stored digitally as audio files and analyzed by scientific staff of SEVERA. Due to data protection requirements, parts of the interviews including personal information on the participants will be deleted by research assistants. A separate ID will be used to pseudonymize the interviews. The transcriptions of the audio recordings will be conducted by an external office. The data will be transferred via the secured connection to the file server provided by this office. To carry out the qualitative data analysis (QDA), the software MAXQDA (Version2020) will be used. The TK health insurance fund will have no access to this study's raw data but is only informed about the recruitment progress.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data management"
+        },
+        {
+            "text": "Our four major research questions for this project are illustrated above.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "We will use a linear mixed model (LMM) for the primary outcomes weight loss (kilogram) and fitness (BSA-Score), and for the outcome smoking cessation, we use a generalized linear model (GLMM) because of the dichotomous outcome variable (Smoking yes/no). The cluster variable is the person-id (level 2-group variable) with the time point nested within it (level 1 measurement), that permits us to model individual and group level changes [23] [24] [25] . For each primary outcome, we apply the following basic model with cross-level interaction and random slopes:",
+            "cite_spans": [
+                {
+                    "start": 437,
+                    "end": 441,
+                    "text": "[23]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 442,
+                    "end": 446,
+                    "text": "[24]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 447,
+                    "end": 451,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "Level 1: Outcome = \u03b2 0j + \u03b2 1j * time + \u03b2 nj * X nj + r ij Level 2: \u03b2 0j = \u03b3 00 + \u03b3 01 * group + \u03b3 0n * Z 0n + u oj \u03b2 1 j \u00bc \u03b3 10 \u00fe \u03b3 11 \u00c3group \u00fe u 1 j \"Group\" will be a dichotomous variable, which contrasts the intervention group vs. the control group. 'Time' consists of four time points coded with 0 to 3.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "Possible covariates (see Table 4 ) will enter the model at level 1 (X) when they are measured at more than one time point or at level 2 (Z) when they are only measured at baseline. The covariates differ in type and number between the three coaches. The components X and Z are therefore only placeholders. The covariates considered may represent real-life conditions of participants existing independently of the program; they can be beneficial or detrimental to participants' goal attainment or outcomes. The social environment in particular may be conducive or an obstacle [26] [27] [28] [29] [30] . The importance of social and emotional support from people, who are close, is also pointed out by the NICE guideline Behaviour Change: individual approaches [31] . Tiredness and a decrease in drive and activity are indications of mood disorders. Self-efficacy, motivation and intention to change, as well as functional or physical limitations are predictors for behavioral change and associated with mental health, health status, and comorbidities [32] [33] [34] [35] [36] [37] [38] [39] [40] . Furthermore, it is likely that additional addictive behaviors and low degree of mental health will make smoking cessation more difficult [33, 41, 42] . Since past behavior predicts future behavior, as confirmed in a meta-analysis [43] , preconditions such as mental health, health status comorbidity, additional addictive behavior, but also social support, assessed at baseline, are considered as programindependent covariates of primary outcomes. We use these covariates, along with sex, age, and primary outcome at baseline to adjust the statistical models in the analyses. In these models, coefficient \u03b3 10 refers to the change over time of the intervention groups (hypothesis 1), while coefficient \u03b3 11 refers to the difference in change between intervention and control group (hypothesis 2).",
+            "cite_spans": [
+                {
+                    "start": 574,
+                    "end": 578,
+                    "text": "[26]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 579,
+                    "end": 583,
+                    "text": "[27]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 584,
+                    "end": 588,
+                    "text": "[28]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 589,
+                    "end": 593,
+                    "text": "[29]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 594,
+                    "end": 598,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 758,
+                    "end": 762,
+                    "text": "[31]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1049,
+                    "end": 1053,
+                    "text": "[32]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1054,
+                    "end": 1058,
+                    "text": "[33]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1059,
+                    "end": 1063,
+                    "text": "[34]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1064,
+                    "end": 1068,
+                    "text": "[35]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1069,
+                    "end": 1073,
+                    "text": "[36]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1074,
+                    "end": 1078,
+                    "text": "[37]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1079,
+                    "end": 1083,
+                    "text": "[38]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 1084,
+                    "end": 1088,
+                    "text": "[39]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1089,
+                    "end": 1093,
+                    "text": "[40]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1233,
+                    "end": 1237,
+                    "text": "[33,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1238,
+                    "end": 1241,
+                    "text": "41,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1242,
+                    "end": 1245,
+                    "text": "42]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1326,
+                    "end": 1330,
+                    "text": "[43]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 25,
+                    "end": 32,
+                    "text": "Table 4",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "For the analyses of secondary outcomes, measuring mean changes over time (see Table 3 ), we use linear mixed models analogous to the primary outcomes in weight loss and fitness. Differences between intervention and control groups in for example \"Health related goal intention\" or \"Perceived goal attainment\" will be analyzed using t tests.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 78,
+                    "end": 85,
+                    "text": "Table 3",
+                    "ref_id": "TABREF6"
+                }
+            ],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "To test the dose-effect association (hypothesis 3), the outlined model will be adapted-here, we only use the intervention group, so the group variable will be dropped. Instead of the group variable, a variable that code the use (e.g., number of logins) of the coach will enter the model at level 2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "All metric covariates at level 1 will be group meancentered, while metric covariates at level 2 will be grand mean-centered. Categorical variables enter as dummycoded (0/1) variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "Post-hoc analyses with correction for multiple testing will be conducted to identify changes between specific time points to analyze short-term effects, e.g., between t0 and t1. As effect size, with their 95% confidence intervals, we will calculate Cohen's d bases on the t values from the pairwise comparisons from the LMM respective odds ratio for the GLMM.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "In the case of the SmokingCessationCoaching, we will drop the baseline (T0) from the model, because every case concerns smoking. It is, therefore, not possible to calculate the odds ratio for the change between baseline and post-intervention. Instead, we will use the difference in smoking cessation at post intervention between both groups as the effect size.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "Furthermore, we will apply structural equation modeling to test various models for assessing potential mediators of the intervention effect on outcomes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "The analyses are carried out according to the intentionto-treat principle (ITT). In ITT, all randomized participants will be considered in the main analyses. In per-protocol analyses (PP), only those participants will be included who have been randomized, have participated at all time points, and filled out corresponding primary outcomes. The randomization condition for study participants was that they accessed the program at least once.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study outcomes and data analyses Summative evaluation"
+        },
+        {
+            "text": "We will compare the results from intention-to-treat (ITT) analyses with per-protocol analyses (PP) and drop-out analyses. We test if participants, who have continuously taken part in the online survey, achieve better outcomes. Due to different procedures to impute missing values (see below), we will use linear mixed models, (a) with imputed covariates on ITT and PP analyses and (b) without covariates in ITT and PP analyses to compare the raw change in outcomes over time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity analysis and missing values"
+        },
+        {
+            "text": "In addition, we will consider data on program use, (a) between intervention-and control-groups and (b) within intervention groups, between participants who use the program only once and those who use it multiple times.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity analysis and missing values"
+        },
+        {
+            "text": "In the missing value analysis, we analyze the patterns of missing values as well as frequency for cases and variables. The missing values will be imputed using multiple imputation (MI) technique, if the assumption of missing at random (MAR) or missing complete at random (MCAR) holds.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity analysis and missing values"
+        },
+        {
+            "text": "The imputation approach differs between ITT and PP because in PP, we only include participants without missing values on outcome criteria in the analysis. Therefore, only missing values on predictor variables will be imputed, but not for the outcome variables, while in the ITT analysis, predictor variables as outcome variables will be imputed too.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sensitivity analysis and missing values"
+        },
+        {
+            "text": "Our fourth and final investigative aim is to characterize the intervention-and control-group participants' ways of use and satisfaction with their corresponding online program as further secondary outcomes. To that end, the first step will be to conduct a descriptive analysis; in step 2, we will test via regression models our hypotheses regarding predictors of satisfaction.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formative evaluation"
+        },
+        {
+            "text": "The telephone interviews with users of the Smoking-CessationCoach (intervention group of the corresponding RCT) will be analyzed taking a qualitative content analysis approach. The transcripts of the interviews will be coded and analyzed according to a deductive and inductive approach. We will form main-and subcategories out of the identified themes. Deductive main categories will correspond to the main topics of the interview guideline. Inductive categories will result from additional content mentioned by the participants in the interviews. Subcategories will form subordinate topics or different ratings of a main category. According to the categorization system, transcripts will be coded, ordered, summarized and systematically interpreted [44] . For illustration purposes, the presentation of the results will include individual quotes of the participants.",
+            "cite_spans": [
+                {
+                    "start": 750,
+                    "end": 754,
+                    "text": "[44]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Formative evaluation"
+        },
+        {
+            "text": "We calculated the sample size for each randomized controlled trial (RCT) separately (see Table 5 ) by considering the effect sizes of the primary outcomes in comparable trials [8] [9] [10] [11] , the \u03b1-error (0.05), and the power we were striving for (1 \u2212 \u03b2 = 0.80). Our power analyses were done using GPOWER software. While we assumed a general online-RCT dropout rate of 50% [45, 46] , we estimate a dropout rate of about 15% in the medical substudies in light of experiences with similar studies involving personal medical examinations. We have accounted for an additional 10% buffer for the online RCTs.",
+            "cite_spans": [
+                {
+                    "start": 176,
+                    "end": 179,
+                    "text": "[8]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 180,
+                    "end": 183,
+                    "text": "[9]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 184,
+                    "end": 188,
+                    "text": "[10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 189,
+                    "end": 193,
+                    "text": "[11]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 377,
+                    "end": 381,
+                    "text": "[45,",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 382,
+                    "end": 385,
+                    "text": "46]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 89,
+                    "end": 96,
+                    "text": "Table 5",
+                    "ref_id": "TABREF8"
+                }
+            ],
+            "section": "Sample size calculation Randomized controlled trials"
+        },
+        {
+            "text": "We plan to conduct 15 to 20 interviews with participants in the RCT Smoking Cessation intervention group. This calculation is based in particular on previous experience and is expected to lead to saturation of information. We further assume that this number of users will agree to participate in a telephone interview (approx. 20% of the users in the RCT Smoking Cessation intervention group). If further information is required after 15 interviews, up to 5 more interviews will be conducted.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interviews"
+        },
+        {
+            "text": "After the trial-dependent program ends, all participants, irrespective of their study arm, will be given access to the trial-independent, interactive TK-HealthCoach. This is possible for all study participants regardless of membership in the TK health insurance fund. While the development of the trial-dependent programs (those used for study participants) was stopped at the beginning of the study, the trial-independent TK-HealthCoach is being expanded with new Coaching modules such as AntistressCoaching.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Incentives"
+        },
+        {
+            "text": "Participants who filled out all four questionnaires will receive a shopping voucher worth \u20ac 25. For returning the t1 and t2 questionnaires participants will receive discount coupons for the purchase of activity trackers. Interview partners will receive in addition a shopping voucher worth \u20ac 30. All vouchers will be sent by e-mail.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Incentives"
+        },
+        {
+            "text": "Main objective of this study is to analyze the effectiveness of the LosingWeightCoach, FitnessCoach, and Smo-kingCessationCoach health programs by comparing their respective intervention and control groups. We assume that study participants can improve their health behavior by engaging in the offered health programs and that each health program's intervention group will reveal a benefit in attaining primary and secondary outcomes in comparison to control groups.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The results of our formative evaluation including the responses in the logoff questionnaires, drop-out analysis, broad usage behavior data, and qualitative interviews will enrich our interpretation of the summative results and enable detailed insight into the satisfaction and usability of the programs. Finally, this study will be essential to developing quality criteria for web-based health programs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Protocol version number 3; date of approval: 2019 July 25 (amendment: 2019 October 28).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Trial status"
+        },
+        {
+            "text": "Study enrollment began on January 1, 2020. After the first 6 weeks, we noticed that the Losing and Maintaining Weight health goal was chosen much more often than the Increasing Fitness health goal. As we had expected, recruitment for the Smoking Cessation health goal was continuous and good. We therefore tried to draw more attention to the Increasing Fitness health goal by adjusting keywords and budget of the online ads.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Trial status"
+        },
+        {
+            "text": "In line with our study's risk management, we consider that, as studies involving digital interventions and digital surveys are notorious for encouraging a rather low level of personal commitment, the risk of program drop-outs or study discontinuations is higher than in trials involving personal, face-to-face contacts [45, 46] . In addition, common technical problems on the part of the provider or user can increase dropout rates. For these reasons, individuals interested in the study and its participants are able to contact the participating institutions by phone and/or e-mail to obtain personal advice. Nevertheless, the dropout rate could exceed the estimated 50% rate associated with all online RCTs. Dropouts could occur if participants are dissatisfied with the programs or in case of unpredictable events such as the rapid spread of the coronavirus in Germany since March 2020 and potential problems associated with general high attention, the health of participants, technical problems due to the congestion in the internet, etc. Therefore, we are monitoring the response rates at t1 and, if necessary, will raise the number of participants to be recruited. We closed recruitment on 05 October 2020. As we aimed to assess the groups undergoing additional medical exams separately from those only completing the online questionnaire, the former group's sample size is not included in this calculation 2 As the questionnaire study's outcomes are secondary for this group, our required sample size refers to the medical exam's outcome 3 As physical activity is a key secondary outcome for the Lose Weight group, we have considered both primary and secondary outcomes (physical activity) in determining the required sample size First and foremost, we thank in advance all those who will participate in this study. Thanks go to Hanna Kampling for supporting us at the beginning of this huge project. The article processing charge was funded by the Baden-Wuerttemberg Ministry of Science, Research and Art and University of Freiburg in the funding program Open Access Publishing. We would like to express special thanks to Irina Kopman from Vilua Healthcare GmbH for her excellent cooperation and detailed explanation of all technical details. We thank the staff of Vilua Healthcare GmbH for their implementation of the questionnaires content in an online format, sending out the questionnaires, data storage, and data management tasks of the Company and for being a reliable contact for users with questions about technology and program content. Many thanks also to Dr. Nicole Knaack, Dr. Kerstin Hofreuter-G\u00e4tgens, and Dagmar K\u00f6ppel from the Techniker health insurance fund for their consistently solution-oriented communication in all questions relating to conduct the study. Special thanks to Layla Nieden from the Institute of Medical Biometry and Statistics for translating those questionnaires and items for which English sources are not available. Finally, we thank the professional translator Carole C\u00fcrten for the English proofreading of this manuscript, as well as Rebekka Allen, scientific assistant at SEVERA, for English proofreading of the revised manuscript.",
+            "cite_spans": [
+                {
+                    "start": 319,
+                    "end": 323,
+                    "text": "[45,",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 324,
+                    "end": 327,
+                    "text": "46]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Trial status"
+        },
+        {
+            "text": "Authors' contributions IT 1 is the first author of this study protocol. She coordinates all tasks involving planning, implementation, data management, and evaluation of the overall study. She is mainly responsible for the formative evaluation of usage behavior data from the SmokingCessationCoaching. She is the contact person for questions regarding the online study.EF 1 participated in developing the study design, in project coordination and project management, and worked on statistical analyses.GM 1 is mainly responsible for the development and implementation of the questionnaires for the online studies, monitoring the technical implementation of questionnaires and corresponding with the IT Company, supporting tasks concerning data management.CS 1 supported the development and implementation of the questionnaires for the online study and data management (especially the data protection concept and data monitoring issues). He translated the German consent form for study participants into English. MS 1 : As part of the study protocol revision, MS specified the data analysis plan together with EF and IT. MS implemented the data monitoring process. MB 1 was involved in developing the data protection concept and is mainly responsible for the qualitative interview study of the The sponsor of the study, the Techniker health insurance fund, did not exert influence on study design, data collection or management, the data analysis or interpretation, and on writing or scientific publication of any results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Trial status"
+        },
+        {
+            "text": "The Techniker sponsors recruiting measures as announcements of the study on their websites (www.tk.de) and uses media such as the \"TK newsletter\" and Twitter. In addition, the Techniker finances digital and printed advertisements for the recruitment of study participants and incentives for participants who fill out the online questionnaires or take part in qualitative telephone interviews. The Techniker does not receive any case-based or personal data on the participants but is given insight into aggregated data (e.g., number of recruited participants) and results. The results can be used by the sponsor for their own publications in social media, websites, presentations, press releases, etc. The article processing charge was funded by the Baden-Wuerttemberg Ministry of Science, Research and Art and University of Freiburg in the funding program Open Access Publishing. Open Access funding enabled and organized by Projekt DEAL.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Trial status"
+        },
+        {
+            "text": "The datasets generated and analyzed during the current study will neither be shared with scientists outside this cooperation project nor with other third parties. The reason for this decision is that it cannot currently be guaranteed that anonymized data will not be de-anonymized in the future because of various data available on the internet. Therefore, the collected data will remain under control of the cooperation partners in this project. Data will be anonymized three years after completion of the study and the research data will be deleted after 10 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "Informed consent and data protection According to the ethics guidelines and European General Data Protection Regulation, participants have to give informed consent to participate in the study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        },
+        {
+            "text": "Informed consent: Before registering in the online study and health program, all interested persons must actively confirm (by ticking a checkbox) that they meet the conditions for participation in the program, have read the study information, and agree to the conditions. Finally, they must actively agree to participate in the study. Participants can download and/or print out the study information and declaration of consent immediately and/or later. Persons who unsubscribe from the health program or the study will receive an e-mail with a link to download the study information and declaration of consent. Data protection for the study participants is guaranteed in accordance with the European General Data Protection Regulation (GDPR). Staff members involved in the project are committed to such data protection through their institutions. A data protection concept was drawn up for this project which was approved by the data protection officer of the Medical Center -University of Freiburg. This data protection concept includes a Joint Controller Agreement (JCA) that has been accepted by the data protection officers of all project partners involved and signed at the highest management level in those institutions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        },
+        {
+            "text": "All personal data on the participants in the online RCTs will be stored and recorded separately from pseudonymized research data by the Vilua healthcare GmbH. Vilua will share only pseudonymized or aggregated research data to the SEVERA and the IfSS. One exception concerns contact details on participants in the RCT Smoking Cessation who registered for a telephone interview, which will be executed by SEVERA. This will affect approximately 15-20 people in the intervention group. A further access to contact details of a limited number of participants is necessary as part of the medical substudies, since the examinations are organized and carried out by the IfSS (details will be published elsewhere). All participants can withdraw from their study participation or from the online health program at any time without any disadvantages. Their personal data will be deleted immediately. The research data collected up to that point will remain anonymous. No further data will be recorded. Persons can withdraw from the study participation but still continue to engage in their specific health program. In this case, research data is no longer collected and recorded research data will be anonymized.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        },
+        {
+            "text": "All surveyed data will be anonymized 3 years after study completion and completely deleted teen years after the publication of the study results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        },
+        {
+            "text": "Participation in the online studies and the online health programs are not expected to cause harms or risks-especially considering the inclusion and exclusion criteria with which the users have to agree. If participants have any questions or feel uncomfortable, they can always contact the program's customer service or the study contact persons. All inquiries and possible health problems will be logged. In case of health problems, the principal medical doctor of the study (Prof. Dr. med. D. K\u00f6nig) will be informed. The procedure for dealing with very unlikely but possible risks during the medical examinations in the two substudies has been approved by the Ethics Committee Freiburg and will be published elsewhere.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Harms and risk"
+        },
+        {
+            "text": "The main results of studies concerning the effectiveness of health programs are to be published in scientific journals. These publications will be prepared under the leadership of SEVERA, which, as the main institution responsible for evaluation, will also be responsible for data analysis. The other scientific project participants will be involved in these publications. All scientific project participants aim to publish further publications on questions of interest, for which appropriate authorships will be determined according to the usual rules. Recruiting of participants started 1 January 2020. If, contrary to expectations, changes to the protocol were required, the following process would be initiated: amendment of the study protocol and submission to the Ethics Committee for approval, participants to be informed via the program website and by Vilua via email. To inform researchers, we would amend entries in the German Clinical Trials Register (DRKS). Finally, we would ask the editors of \"BMC trials\" to publicize a correction, linked to the original study protocol.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Publication rules"
+        },
+        {
+            "text": "Not applicable",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The Techniker health insurance fund contracted SEVERA to plan and coordinate this overall study and to carry out the online RCTs, as well as to conduct the formative evaluation of the SmokingCessationCoaching via qualitative interviews and analyses of the usage behavior data. On the basis of the declaration of independent scientific study implementation and publication by the Techniker, IT, GM, CS, MS, MB, RA, and EF declare that they have no conflicts of interest. JB, DK, RW, and RF (IfSS) declare that (a) the formative and summative evaluation of the TK-HealthCoach (the Increasing Fitness and Losing and Maintaining Weight health goals) is supported by the TK, that (b) contentrelated advice on the further development of the Increasing Fitness and Losing and Maintaining Weight health goals is supported by the TK, and that (c) the publication of the evaluation results will be supported by the TK by their covering the publication fees of the respective journals. For the aforementioned topics (a) and (b), travel expenses are included. There are no other conflicts of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        },
+        {
+            "text": "Author details 1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "baseline) and follow ups 1, 2, and 3; TK: Techniker health insurance fund",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Oxygen saturation; vs: Versus; W: Losing and Maintaining Weight; WHO-ASSIST: Alcohol, Smoking and Substance Involvement Screening Test References 1. World Health Organization (WHO)",
+            "authors": [],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Diet, nutrition and the prevention of chronic diseases: Report of a Joint WHO/FAO Expert Consultation. Geneva: World Health Organization",
+            "authors": [],
+            "year": 2003,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Global recommendations on physical activity for health. Geneva: World Health Organization",
+            "authors": [],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Lifestyle changes in relation to initiation of antihypertensive and lipidlowering medication: a cohort study",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Korhonen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pentti",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hartikainen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ilom\u00e4ki",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Setoguchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Liew",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Heart Assoc",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/JAHA.119.014168"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Gesundheits-und Versorgungs-Apps. Freiburg: Studienzentrum Freiburg, Universit\u00e4tsklinikum Freiburg",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lucht",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bredenkamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Boeker",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kramer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Remote and web 2.0 interventions for promoting physical activity",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Foster",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Richards",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Thorogood",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hillsdon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/14651858.CD010395.pub2"
+                ],
+                "PMID": [
+                    "24085594"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A systematic review of eHealth behavioral interventions targeting smoking, nutrition, alcohol, physical activity and/or obesity for young adults",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Oosterveen",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Tzelepis",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ashton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hutchesson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Prev Med",
+            "volume": "99",
+            "issn": "",
+            "pages": "197--206",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ypmed.2017.01.009"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Systematic review and meta-analysis of internet-delivered interventions providing personalized feedback for weight loss in overweight and obese adults",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sherrington",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Newham",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Adamson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mccoll",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Araujo-Soares",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Obes Rev",
+            "volume": "17",
+            "issn": "6",
+            "pages": "541--51",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/obr.12396"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Meta-analysis of internet-delivered interventions to increase physical activity levels",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Spence",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Vandelanotte",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Caperchione",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mummery",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Int J Behav Nutr Phys Act",
+            "volume": "9",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1479-5868-9-52"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Computerized self-monitoring and technology-assisted feedback for weight loss with and without an enhanced behavioral component",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Chambliss",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huber",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Finley",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Mcdoniel",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kitzman-Ulrich",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wilkinson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Patient Educ Couns",
+            "volume": "85",
+            "issn": "3",
+            "pages": "375--82",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.pec.2010.12.024"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Mobile phone-based interventions for smoking cessation",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Whittaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Mcrobbie",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bullen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rodgers",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "4",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/14651858.CD006611.pub4"
+                ],
+                "PMID": [
+                    "27060875"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Face-to-face versus remote and web 2.0 interventions for promoting physical activity",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Richards",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Thorogood",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hillsdon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Foster",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Cochrane Database Syst Rev",
+            "volume": "",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/14651858.CD010393.pub2"
+                ],
+                "PMID": [
+                    "24085593"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Physical activity and weight maintenance: the utility of wearable devices and mobile health technology in research and clinical settings",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Riffenburg",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Spartano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Curr Opin Endocrinol Diabetes Obes",
+            "volume": "25",
+            "issn": "5",
+            "pages": "310--314",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/MED.0000000000000433"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Which combinations of techniques and modes of delivery in internet-based interventions effectively change health behavior? A Meta",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Van Genugten",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dusseldorp",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Webb",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Empelen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Analysis J Med Internet Res",
+            "volume": "18",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/jmir.4218"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Using the internet to promote health behavior change: a systematic review and meta-analysis of the impact of theoretical basis, use of behavior change techniques, and mode of delivery on efficacy",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Webb",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Joseph",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yardley",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Michie",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Med Internet Res",
+            "volume": "12",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/jmir.1376"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Does mobile health matter?",
+            "authors": [],
+            "year": 2017,
+            "venue": "The Lancet",
+            "volume": "390",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(17)32899-4"
+                ],
+                "PMID": [
+                    "29165258"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Why reviewing apps is not enough: transparency for trust (T4T) principles of responsible health app marketplaces",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wykes",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schueller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Med Internet Res",
+            "volume": "21",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/12390"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Why does the NHS struggle to adopt eHealth innovations? A review of macro, meso and micro factors",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Asthana",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sheaff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Health Serv Res",
+            "volume": "19",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12913-019-4790-x"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Randomization In Treatment Arms (RITA): Ein Randomisierungs-Programm f\u00fcr klinische Studien",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Pahlke",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "K\u00f6nig",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zielger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Inform Biom Epidemiol Med Bio",
+            "volume": "35",
+            "issn": "1",
+            "pages": "1--22",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Successful weight loss and maintenance in everyday clinical practice with an individually tailored change of eating habits on the basis of food energy density",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Schusdziarra",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hausmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wiedemann",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hess",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Barth",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wagenpfeil",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Eur J Nutr",
+            "volume": "50",
+            "issn": "5",
+            "pages": "351--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00394-010-0143-6"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A questionnaire to assess eating behavior: structure and validity and responsiveness of a new German eating behavior scale (SEV)",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wurst",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brame",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ramsenthaler",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "K\u00f6nig",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fuchs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Health effects of a 12-week web-based lifestyle intervention program in healthy adults -Formative Evaluation of the TK-HealthCoach (FitnessCoaching/WeightLossCoaching)",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brame",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "K\u00f6nig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "German Clinical Trials Register (DRKS). Available from",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Applied longitudinal data analysis. Modeling change and event occurrence",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Singer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Willett",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Advances in analysis of longitudinal data",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Gibbons",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hedeker",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dutoit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Annu Rev Clin Psychol",
+            "volume": "6",
+            "issn": "1",
+            "pages": "79--107",
+            "other_ids": {
+                "DOI": [
+                    "10.1146/annurev.clinpsy.032408.153550"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Analyzing longitudinal data with multilevel models: an example with individuals living with lower extremity intra-articular fractures",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kwok",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Underhill",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Berry",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Elliott",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Rehabil Psychol",
+            "volume": "53",
+            "issn": "3",
+            "pages": "370--86",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/a0012765"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Measuring social processes regarding eating, physical activity, and weight in higher-weight people: the weight-related interactions Scale (WRIS)",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rieger",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Monaghan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Zwickert",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Murray",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40519-021-01208-2"
+                ],
+                "PMID": [
+                    "34041685"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "The role of social support in weight loss maintenance: results from the MedWeight study",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Karfopoulou",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Costas",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Avgeraki",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kosmidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yannakoulia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Behav Med",
+            "volume": "39",
+            "issn": "3",
+            "pages": "511--519",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10865-016-9717-y"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Social relationships and health",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Am Psychol",
+            "volume": "59",
+            "issn": "8",
+            "pages": "676--84",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0003-066X.59.8.676"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Further psychometric analysis of the 20-item Partner Interaction Questionnaire in an adult sample of smokers",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Osman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Amodei",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lamb",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Psychol Addict Behav",
+            "volume": "33",
+            "issn": "6",
+            "pages": "567--73",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/adb0000477"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Social support for healthy behaviors: scale psychometrics and prediction of weight loss among women in a behavioral program",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kiernan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Schoffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "King",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Obesity",
+            "volume": "20",
+            "issn": "4",
+            "pages": "756--64",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/oby.2011.293"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Behaviour change: individual approaches. Public health guideline PH49",
+            "authors": [],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Development and psychometric testing of a rehabilitation specific comorbidity score",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Glattacker",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Meixner",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Farin",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "J\u00e4ckel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Physikalische Medizin, Rehabilitationsmedizin, Kurortmedizin",
+            "volume": "17",
+            "issn": "5",
+            "pages": "260--70",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-2007-970405"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Factors associated with the efficacy of smoking cessation treatments and predictors of smoking abstinence in EAGLES",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "West",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Evins",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Benowitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Russ",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mcrae",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lawrence",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Addiction",
+            "volume": "113",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/add.14208"
+                ],
+                "PMID": [
+                    "29508470"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Associations between depression and health behaviour change: findings from 8 cycles of the Canadian Community Health Survey",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Clayborne",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Colman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Can J Psychiatr",
+            "volume": "64",
+            "issn": "1",
+            "pages": "30--38",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0706743718772523"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Screening for depression in adults and older adults in primary care: an updated systematic review",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "O&apos;connor",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Whitlock",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gaynes",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Beilet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Evidence Syntheses",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Physical activity and depression symptom profiles in young men and women with major depression",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mckercher",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Patton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Venn",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Dwyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sanderson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Psychosom Med",
+            "volume": "75",
+            "issn": "4",
+            "pages": "366--74",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Correlates of physical activity: why are some people physically active and others not?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bauman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Reis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Sallis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wells",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Loos",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Lancet",
+            "volume": "380",
+            "issn": "9838",
+            "pages": "60735--60736",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(12)60735-1"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Changes in selfregulatory cognitions as predictors of changes in smoking and nutrition behaviour",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Scholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Nagy",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "G\u00f6hner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Luszczynska",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kliegel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Psychol Health",
+            "volume": "24",
+            "issn": "5",
+            "pages": "545--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/08870440801902519"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Modeling multiple health behaviors and general health",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Ufholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Harlow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Prev Med",
+            "volume": "105",
+            "issn": "",
+            "pages": "127--161",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ypmed.2017.08.003"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "A systematic review of tailored eHealth interventions for weight loss",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dockray",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Linehan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Digital Health",
+            "volume": "5",
+            "issn": "",
+            "pages": "1--23",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Smoking cessation outcomes and predictors among individuals with co-occurring substance use and/or psychiatric disorders",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Okoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Khara",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Dual Diagn",
+            "volume": "10",
+            "issn": "1",
+            "pages": "9--18",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/15504263.2013.866860"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Smoking relapse risk is increased among individuals in recovery",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Quisenberry",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pittman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Goodwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Bickel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "&apos;urso",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sheffer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Drug Alcohol Depend",
+            "volume": "202",
+            "issn": "",
+            "pages": "93--103",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.drugalcdep.2019.07.001"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "A meta-analysis of the health action process approach",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schwarzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hagger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Health Psychol",
+            "volume": "38",
+            "issn": "7",
+            "pages": "623--660",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/hea0000728"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Online prevention aimed at lifestyle behaviors: a systematic review of reviews",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Kohl",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Crutzen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "De Vries",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Med Internet Res",
+            "volume": "15",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/jmir.2665"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Persuasive system design does matter: a systematic review of adherence to web-based interventions",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kelders",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Kok",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Ossebaard",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Van Gemert-Pijnen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Med Internet Res",
+            "volume": "14",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2196/jmir.2104"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Mindestindikatorensatz zur Erfassung des Migrationsstatus",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Schenk",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bau",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Borde",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Butler",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lampert",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Neuhauser",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Razum",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Weilandt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Bundesgesundheitsbl",
+            "volume": "49",
+            "issn": "",
+            "pages": "853--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00103-006-0018-4"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Indikatoren des Reha-Status -IRES (Version 3.1.). Bad S\u00e4ckingen: Hochrhein-Institut f\u00fcr Rehabilitationsforschung",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gerdes",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "B\u00fchrlen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "J\u00e4ckel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "FIMA -Questionnaire for Health-Related Resource Use in an Elderly Population: Development and Pilot Study",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Seidl",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bowles",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-O",
+                    "middle": [],
+                    "last": "Bock",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Brettschneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Greiner",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "K\u00f6nig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Gesundheitswesen",
+            "volume": "77",
+            "issn": "1",
+            "pages": "46--52",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0034-1372618"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Dokumentation der Me\u00dfinstrumente des Forschungsprojekts \"Berlin Risk Appraisal and Health Motivation Study",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Renner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schwarzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Risiko Und Gesundheitsverhalten",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Prediction of goal directed behavior: attitudes, intentions, and perceived behavioral control",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Ajzen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Madden",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "J Exp Soc Psychol",
+            "volume": "22",
+            "issn": "5",
+            "pages": "90045--90049",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/0022-1031(86)90045-4"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "The two sides of goal intentions: Intention self-concordance and intention strength as predictors of physical activity",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fuchs",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Seelig",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "G\u00f6hner",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schlatterer",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ntoumanis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Psychol Health",
+            "volume": "32",
+            "issn": "1",
+            "pages": "110--136",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/08870446.2016.1247840"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Measuring sport-and movement-related self concordance",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Seelig",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fuchs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Z Sportpsychol",
+            "volume": "13",
+            "issn": "4",
+            "pages": "612--5010",
+            "other_ids": {
+                "DOI": [
+                    "10.1026/1612-5010.13.4.121"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Testing phase-specific self-efficacy beliefs in the context of dietary behaviour change",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ochsner",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Scholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hornung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Appl Psychol Health Well Being",
+            "volume": "5",
+            "issn": "1",
+            "pages": "99--117",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1758-0854.2012.01079.x"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Scales for the measurement of selfefficacy and decisional balance in the process of behavioral change in smokers",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "J\u00e4kle",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Keller",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Baum",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Basler",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Diagnostica",
+            "volume": "45",
+            "issn": "3",
+            "pages": "138--184",
+            "other_ids": {
+                "DOI": [
+                    "10.1026/0012-1924.45.3.138"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Barrieren und Barrierenmanagement im Prozess der Sportteilnahme [Barriers and barrier management in physical exercise: Introduction of two new assessment instruments",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kr\u00e4mer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fuchs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Zeitschrift f\u00fcr Gesundheitspsychologie",
+            "volume": "18",
+            "issn": "4",
+            "pages": "170--82",
+            "other_ids": {
+                "DOI": [
+                    "10.1026/0943-8149/a000026"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Action plans and coping plans for physical exercise: a longitudinal intervention study in cardiac rehabilitation",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Sniehotta",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Scholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schwarzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Br J Health Psychol",
+            "volume": "11",
+            "issn": "",
+            "pages": "23--37",
+            "other_ids": {
+                "DOI": [
+                    "10.1348/135910705X43804"
+                ]
+            }
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Affect, risk perception, and the use of cigarettes and e-cigarettes: a population study of U.S. adults",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Popova",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Owusu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Weaver",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kemp",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mertz",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Pechacek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BMC Public Health",
+            "volume": "18",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12889-018-5306-z"
+                ]
+            }
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Measuring nicotine dependence: a review of the Fagerstrom Tolerance Questionnaire",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Fagerstrom",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "J Behav Med",
+            "volume": "12",
+            "issn": "2",
+            "pages": "159--82",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/BF00846549"
+                ]
+            }
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "SF-36. Fragebogen zum Gesundheitszustand",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Morfeld",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kirchberger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bullinger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Detecting and monitoring depression with a two-item questionnaire (PHQ-2)",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "L\u00f6we",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kroenke",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gr\u00e4fe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Psychosom Res",
+            "volume": "58",
+            "issn": "2",
+            "pages": "163--71",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jpsychores.2004.09.006"
+                ],
+                "PMID": [
+                    "15820844"
+                ]
+            }
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Skala zur sozialen Unterst\u00fctzung zum Sporttreiben (SozUSpo)",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fuchs",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wurst",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Neue Wege in der verhaltenstherapeutischen Behandlung des Rauchens. Teil 2: Pr\u00e4diktoren der Ver\u00e4nderungen",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zimmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lindinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Mitschele",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Verhaltenstherapie",
+            "volume": "3",
+            "issn": "4",
+            "pages": "312--318",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000258795"
+                ]
+            }
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Trial registration: German Clinical Trials Register, Universal Trial Number (UTN): U1111-1245-0273. Registered on 11 December 2019 Keywords: Primary prevention, Health behavior, Healthy lifestyle, Smoking cessation, Physical fitness, Weight loss, Randomized controlled trial, Internet based intervention, Web-based health program, Behavior change",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Flowchart of three RCTs to evaluate the TK-HealthCoach. See",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "goals: W=\"Losing and Maintaining Weight\"; F=\"Increasing Fitness\", S=\" Smoking Cessation\" Measurement time point: t0 = baseline, t1 = first follow-up; t2 = second follow-up; t3 = third follow-up; IRES = indicators of rehabilitation status Primary outcome of the related health goals; highlighted in bold Secondary outcomes of the related health goals *",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "baseline-questionnaires in each health goal, randomized users of the programs, as the well as the number of questionnaires of all the following assessment time points distributed, received, and blocked due to exceeding the response time (eight weeks maximum). Due to this monitoring process, the research teams and Vilua are reviewing whether online recruitment and e-mailing of the questionnaires are technically successful. Users are able to contact Vilua the SEVERA and/or IfSS to address technical problems. Possible irregularities are immediately clarified between Vilua and scientific staff members of SEVERA and existing problems (e.g., failures in the storage of usage behavior data, feedback from users about technical errors, etc.) are logged by Vilua, SEVERA, and the IfSS.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Data from the questionnaires are assessed approximately every 14 to 30 days for control purposes. Usage behavior data from the program are transferred at larger intervals. The data transfers are carried out by Vilua via a secure cloud of the Medical Center -University of Freiburg. The data are conducted via comma-separated values (csv) format and merged into the statistic program Statistical Package for the Social Sciences (SPSS) data files (IBM SPSS; Version 26), R (Version 4.0.3), and IDE R Studio (Version 1.2.5033).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "goals: W=\"Losing and Maintaining Weight\"; F=\"Increasing Fitness\", S = \"Smoking Cessation\" Measurement time point: t0 = baseline, t1 = first follow-up; t2 = second follow-up; t3 = third follow-up *These questions are queried only once. If t1-or t2-questionnaire are not filled out by users, these questions are displayed again in the following measurement time point **Users withdrawing participation in the study or their health program prematurely receive a logoff questionnaire upon deregistration with up to 5 items concerning the reasons for quitting the program and/or study. Additionally, it contains the same questions regarding their usage and evaluation of the program like participants in the t1 online questionnaires. The programming of the questionnaires and databases ensures that participants can only fill in these questions once",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Abbreviations BMI: Body mass index; BRAHMS: Berlin Risk Appraisal and Health Motivation Study; BSA: Physical Activity and Sport Activity Questionnaire; CG: Control group; csv: Comma-separated values; file format; DFG: German Research Foundation; DRKS: German Clinical Trial Register; \u20ac: Euro; F: Increasing Fitness; SEV: German Eating Behavior Scale; FIMA: Questionnaire for Health-Related Resource Use in an Elderly Population; FTND: Fagerstrom Tolerance Questionnaire; GDPR: European General Data Protection Regulation; GPOWER: Software used to carry out the sample size calculation; ID: Identification number; IfSS: Department of Sport and Sport Science; IG: Intervention group; IRES: Indicators of Rehab Status Questionnaire; JCA: Joint Controller Agreement; KoMo: Comorbidity Score; M: Mean; Max: Maximum; MAXQDA: Software used to carry out the qualitative data analysis; Min: Minimum; N/n: Absolute number; PHQ-2: Patient Health Questionnaire; PIQ-20: Partner Interaction Questionnaire; QDA: Qualitative data analysis; RCT: Randomized controlled trial; RITA: Randomization In Treatment Arms; randomization program for clinical trials used to carry out the randomization lists; S: Smoking cessation; SD: Standard deviation; SEVERA: Section of Health Care Research and Rehabilitation Research; SF-12: Short Form 12; SPSS: Statistical Package for the Social Sciences, software used to carry out statistical analyses; t0, t1, t2, t3: Measurement time point 0",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF2": {
+            "text": "Number of specific components of each coaching moduleThe participants can choose their individual activities across all three coaching modules-with the exception that the SmokingCessationCoaching activities cannot be selected by participants in FitnessCoaching or WeightLossCoaching",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "What experiences did you have with the smoking cessation program? 2. How did you feel in the smoking cessation preparation phase? 3. How was your first day not smoking? 4. From your point of view, how was the program's usability? 5. Did you take advantage of the personal telephone counseling offered in the SmokingCessationCoaching? If so, can you tell me about your experiences? If not, why did you not engage with the telephone counseling? 6. What motivated you to begin this non-smoking program (also in comparison to other programs)? 7. How satisfied were you with this non-smoking program and why? 8. Would you recommend this smoking cessation program to others? If so, why would you recommend it, and if not, why would you not recommend it to others? 9. Sociodemographic data: age, gender, native language, graduation, professional qualification,",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Variables of three health goal-specific questionnaires: sociodemographic and baseline variables",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Variables of three health goal-specific questionnaires: primary outcomes and secondary outcomes",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Variables of three health-specific questionnaires: confounder, use, evaluation, and cancelation of the programs",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "Sample size calculations for the three RCTs including medical substudies IG = intervention group (specific online coach for the health goal chosen), CG = control group (specific health information for the health goal chosen)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF9": {
+            "text": "SmokingCessationCoaching. RA 1 is on the team for the qualitative interview study of the SmokingCessationCoaching. As such, he is involved in developing of the interview guidelines, the evaluation strategy, and the implementation and analyses of the interviews. He checked the translations of the German questionnaires and questionnaire items. JB 2 participated in developing the study design and takes on all tasks associated with planning, implementing, and evaluating the formative and summative medical substudies (Increasing Fitness, Losing and Maintaining Weight). She is responsible for the data management of both substudies in the IfSS. DK 2 participated in developing the study design and is responsible for the formative and summative medical substudies (Increasing Fitness, Losing and Maintaining Weight). DK is the principal medical doctor of the study. RW 2 is responsible for the formative evaluation of usage -behavior data of the FitnessCoaching module and was involved in testing the technical implementation of questionnaires by conducting pretests. She participated in developing the study design. RF 2 participated in developing the study design and was involved in the selection and adaption of the psychological assessment instruments. PL 3 supported develop the study design, focusing especially on the smoking cessation RCT. RB 4 supported develop the study design. IT, EF GM, CS, MB, JB, DK, RW, and RF conceived the overall study and its implementation. They were supported by RB and PL. All authors were involved in drafting the manuscript and revised it critically. All authors read and approved the final manuscript.1 Section of Health Care Research and Rehabilitation Research (SEVERA), Medical Center -University of Freiburg, Faculty of Medicine, University of Freiburg, Freiburg, Germany 2 Department of Sport and Sport Science, University of Freiburg, Freiburg, Germany Scientific Working Group in Smoking Cessation (WAT), T\u00fcbingen, Germany Clinical Trials Unit UMG, University Medical Center G\u00f6ttingen, Georg-August-University, G\u00f6ttingen, Germany. //www.tk.de Role of study sponsor:",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF10": {
+            "text": "years. PL declares that he receives a fee from the TK for technical support for the consultant interface and for evaluating the SmokingCessationCoaching; this includes travel expenses. PL has no connections to the tobacco, e-cigarette, or pharmaceutical industry. There are no other conflicts of interest. RB declares that he receives a fee from TK for cooperating on health issues in the TK's department of Health Care Management. In this context, RB's travel expenses are reimbursed. There are no other conflicts of interest.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF11": {
+            "text": "Ethics approval and consent to participate This study received a favorable opinion from the ethics commission of Albert-Ludwigs University, Medical Center, Freiburg (vote no. 237/19) on 25 July 2019. Based on results of a feasibility study (ethics approval No 40918, study registration in the German Clinical Trial Register DRKS-ID: DRKS00016512), an amendment with minor modification to the study protocol was rational and positively judged by the ethics commission of Albert-Ludwigs University, Medical Center, Freiburg on 22 October 2019. Trial registration: This study is registered in the German Clinical Trials Register https://www.drks.de/drks_web/ with the registry ID DRKS00020249 at 11 December 2019. The universal Trial Number (UTN) is: U1111-1245-0273; International Clinical Trials Registry Platform http://apps.who.int/trialsearch/Trial2. aspx?TrialID=DRKS00020249",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The online version contains supplementary material available at https://doi. org/10.1186/s13063-021-05470-8. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        }
+    ]
+}

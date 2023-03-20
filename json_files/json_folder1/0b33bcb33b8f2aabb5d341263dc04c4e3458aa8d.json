@@ -1,0 +1,2304 @@
+{
+    "paper_id": "0b33bcb33b8f2aabb5d341263dc04c4e3458aa8d",
+    "metadata": {
+        "title": "Rapid SARS-CoV-2 testing in primary material based on a novel multiplex RT-LAMP assay",
+        "authors": [
+            {
+                "first": "Bernhard",
+                "middle": [],
+                "last": "Schermerid",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": "*bernhard.schermer@uk-koeln.de"
+            },
+            {
+                "first": "Francesca",
+                "middle": [],
+                "last": "Fabretti",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Maximilian",
+                "middle": [],
+                "last": "Damagnezid",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Veronica",
+                "middle": [
+                    "Di"
+                ],
+                "last": "Cristanziano",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Eva",
+                "middle": [],
+                "last": "Heger",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sita",
+                "middle": [],
+                "last": "Arjuneid",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Nathan",
+                "middle": [
+                    "A"
+                ],
+                "last": "Tanner",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "New England Biolabs",
+                    "location": {
+                        "settlement": "Ipswich",
+                        "region": "MA",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Imhof",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Manuel",
+                "middle": [],
+                "last": "Koch",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Benzing",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Roman-Ulrich",
+                "middle": [],
+                "last": "M\u00fc",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University Hospital Cologne",
+                    "location": {
+                        "settlement": "Cologne, Germany"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Rapid and extensive testing of large parts of the population and specific subgroups is crucial for proper management of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infections and decision-making in times of a pandemic outbreak. However, point-of-care (POC) testing in places such as emergency units, outpatient clinics, airport security points or the entrance of any public building is a major challenge. The need for thermal cycling and nucleic acid isolation hampers the use of standard PCR-based methods for this purpose.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "To avoid these obstacles, we tested PCR-independent methods for the detection of SARS-CoV-2 RNA from primary material (nasopharyngeal swabs) including reverse transcription loop-mediated isothermal amplification (RT-LAMP) and specific high-sensitivity enzymatic reporter unlocking (SHERLOCK).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "a1111111111 a1111111111 a1111111111 a1111111111 a1111111111",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The recent pandemic of SARS-CoV-2 is a major challenge for healthcare systems worldwide. Lacking an effective and approved vaccine, reliable screening of samples from nasopharyngeal swabs for viral RNA is a fundamental pillar for effective disease control. Governmental measures (e.g. shutdown of social life) largely depend on such data to allow for a rapid adaptation to changes in epidemiologic indicators. Furthermore, isolation and quarantine of infected and exposed individuals are key for effective outbreak control. Here, the prompt establishment of a diagnostic real-time PCR based testing [1] has been instrumental already in the early phases of the pandemic. Such qPCR-based tests are extremely powerful due to their high sensitivity and specificity. However, these assays require specific lab equipment and expertise which is typically not widely available directly at the point-of-care making transportation to a specialized facility necessary. Furthermore, the material required for the different steps involved may become subject to shortages during a pandemic making alternative approaches an important goal. Even though RNA isolation and subsequent qPCR is performed in only a few hours, actual turnaround times from sample collection to diagnostic test results are often much longer. Decision-making in both healthcare facilities and other spheres of public life would be facilitated enormously by direct testing on site with short turn-around times. Such an approach could also limit the need for quarantine, allow healthcare workers after exposure to continue their work upon a daily negative swab and avoid shortages in systemically relevant personnel. Recently, a number of PCR-independent methods have been proposed for this purpose including isothermal amplification (RPA, LAMP [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] ) and their combination with genome editing tools such as Cas12a [13] or Cas13a [14, 15] for improved performance. The majority of these studies, however, have not been carried out on direct primary material but on RNA isolated from patient samples or generated in vitro [3] [4] [5] [6] [7] [8] [9] 13 ]. In the study at hand, we use previously described RT-LAMP and SHERLOCK assays on both isolated RNA and primary material from patients [9, 14] . In addition, we describe a newly designed multiplexed RT-LAMP assay targeting Orf3a and Orf7a of SARS-CoV-2. Orf3a and Orf7a have been selected since these targets have not been used for any available diagnostic qPCR assay, to avoid the risk of amplicon cross-contamination between different types of assays.",
+            "cite_spans": [
+                {
+                    "start": 599,
+                    "end": 602,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1802,
+                    "end": 1805,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1806,
+                    "end": 1809,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1810,
+                    "end": 1813,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1814,
+                    "end": 1817,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1818,
+                    "end": 1821,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1822,
+                    "end": 1825,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1826,
+                    "end": 1829,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1830,
+                    "end": 1833,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1834,
+                    "end": 1838,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1839,
+                    "end": 1843,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1844,
+                    "end": 1848,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1914,
+                    "end": 1918,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1929,
+                    "end": 1933,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1934,
+                    "end": 1937,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 2120,
+                    "end": 2123,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 2124,
+                    "end": 2127,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 2128,
+                    "end": 2131,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 2132,
+                    "end": 2135,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 2136,
+                    "end": 2139,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 2140,
+                    "end": 2143,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 2144,
+                    "end": 2147,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 2148,
+                    "end": 2150,
+                    "text": "13",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2288,
+                    "end": 2291,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 2292,
+                    "end": 2295,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Nasopharyngeal swabs were taken from symptomatic patients presenting at University Hospital of Cologne from March to April 2020. Swabs were directly transferred in 1-3 ml of universal transfer medium (UTM) or PBS. For diagnostic qPCR, RNA was extracted from 500 \u03bcl UTM / PBS of the swab samples using the automated MagNA Pure 96 system (Roche). Diagnostic qPCR was performed using a RealStar SARS-CoV-2 RT-PCR kit 1.0, with primers targeting E and S gene (Altona Diagnostics) on a LightCycler 480 (Roche). Positively and negatively tested UTM/PBS samples were randomly selected for RT-LAMP or SHERLOCK assays. Here, 0.5 to 1.9 \u03bcl isolated RNA or 0.5 to 1.9 \u03bcl UTM/PBS was used for subsequent RT-LAMP/Sherlock assays. This study was performed exclusively with surplus diagnostic material that was analyzed anonymously. No specific approval number from the IRB (Ethikkommission der Medizinischen Fakultaet der Universitaet zu Koeln (IRB of University of Cologne)) was required.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Samples in universal transfer medium and isolated RNA"
+        },
+        {
+            "text": "For assays from direct material 10 \u03bcl of UTM/PBS were incubated at 98\u02daC for 15 minutes in a PCR cycler with heated lid placed inside a safety cabinet. Treatment of 15 min at 92\u02daC has been shown to inactivate SARS-CoV-2 [16] and 98\u02daC was found to be preferable for downstream RNA-based applications.",
+            "cite_spans": [
+                {
+                    "start": 219,
+                    "end": 223,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sample inactivation for RT-LAMP and Sherlock"
+        },
+        {
+            "text": "For Orf1a and Gene N we used previously described primer sets [9] . Additional primer sets were designed for Orf3a, Orf7a and the M gene using the primerexplorer V5 tool (http:// primerexplorer.jp/e/). All primers were ordered from IDT, purified with standard desalting, as PAGE purification did not improve the performance of the assays. All primer sequences are listed in S1 Table.",
+            "cite_spans": [
+                {
+                    "start": 62,
+                    "end": 65,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LAMP primer design"
+        },
+        {
+            "text": "All RT-LAMP reactions were assembled on ice. In brief, each 20 \u03bcl reaction contained 10 \u03bcl WarmStart Colorimetric RT-LAMP mix (NEB), 2 \u03bcl primer mix (F3/B3 2 \u03bcM each; FIP/BIP 16 \u03bcM each; LF/LB 4 \u03bcM each), 40 mM guanidine hydrochloride (from a 4 M stock solution, pH8), DNase/RNase free water and 0,5 \u03bcl sample. For multiplexed RT-LAMP the additional primer mix replaced 2 \u03bcl of DNase/RNAse free water. Initially, the assays were performed without guanidine hydrochloride at 65\u02daC for 40 minutes, while the multiplexed reaction was done at 60\u02daC for 40 to 50 minutes, as indicated in the figures. Each assay was performed including several negative controls. Positive reactions were identified due to a clear change in color from pink/red to orange/yellow. In two cases out of almost 200, the mere addition of 0.5 \u03bcl sample to the reaction resulted in a color change. These samples are not included in the data shown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "RT-LAMP assay"
+        },
+        {
+            "text": "The two step SHERLOCK assay for Orf1a and S -gene was performed according to the protocol established in Feng Zhang's lab at MIT (https://zlab.bio/s/COVID-19-detection-v20200321.pdf) [14, 15] . In brief, an RPA reaction was set up using 5.9 \u03bcl RPA mix (Twist AMP), 0.2 \u03bcl Protoscript RT (NEB), 1\u03bcl RPA primer mix (10 \u03bcM each), 1.9 \u03bcl sample (isolated RNA or UTM/PBS) and 0.5 \u03bcl magnesium acetate (280 mM stock solution). The reaction was mixed, spun down and incubated 42\u02daC for 25 min. The Cas13a-based detection step was performed in a 20 \u03bcl reaction as follows: 2 \u03bcl TRIS-HCl buffer (400 mM, pH 7.4), 9.6 \u03bcl DNase/ RNase free water, 2 \u03bcl LwaCas13a (corresponding to 120 ng of protein), 1 \u03bcl crRNA (10 ng/\u03bcl), 1 \u03bcl Lateral-Flow-Reporter (20 \u03bcM), 1 \u03bcl SUPERase In RNase Inhibitor (Thermofisher Scientific), 0.6 \u03bcl T7 Polymerase (Lucigen), 0.8 \u03bcl rNTPs (25 \u03bcM each; NEB), 1 \u03bcl MgCl2 (120 mM stock solution) and 1 \u03bcl of previous RPA reaction. The reaction was mixed and spun down, then incubated at 37\u02daC for 30 min. Next, the reaction was diluted with 80 \u03bcl of HybriDetect Buffer (Milenia), mixed, and then a HybriDetect dipstick (Milenia) was placed in the reaction tube and incubated at RT. Results were visible within 5 minutes.",
+            "cite_spans": [
+                {
+                    "start": 183,
+                    "end": 187,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 188,
+                    "end": 191,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SHERLOCK assay with RPA"
+        },
+        {
+            "text": "To combine the RT-LAMP amplification with Cas13a detection we added a T7 promoter in the loop region of the FIP primers for the RT-LAMP assay (S1 Table) . After the RT-LAMP reaction at 65\u02daC for 40 min, 0.5 \u03bcl were used in the Cas13a detection assay assembled as described above, using a specific crRNA targeting the RT-LAMP Gene N amplicon.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 146,
+                    "end": 152,
+                    "text": "Table)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Cas13a combined with RT-LAMP"
+        },
+        {
+            "text": "To allow for the comparison of different nucleic acid detection methods for SARS-CoV-2 we collected redundant material from nasopharyngeal swabs obtained for qPCR testing in clinical routine due to suspected COVID-19. 171 samples were selected randomly from samples collected in the period from March to April 2020. The cohort included individuals between the age of 1 month and 88 years with a close to equal distribution of men and women (S2 Table) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 444,
+                    "end": 450,
+                    "text": "Table)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "We first tested two recently described assays for SARS-CoV-2 detection on isolated RNA from patient samples. Specifically, we performed colorimetric RT-LAMP assays using primers targeting Orf1a and Gene -N [9] and two-step SHERLOCK assays combined with lateral flow detection [14, 15] targeting Orf1a and S gene (S1A-S1C Fig) . Even though both assays worked well on these samples, they failed to detect the virus in specimen that were positive in diagnostic qPCR at cycle threshold (Ct) values > 30 for E and S gene (S1 Fig). Moreover, RT-LAMP appeared to be slightly more sensitive and specific (S1C Fig) .",
+            "cite_spans": [
+                {
+                    "start": 206,
+                    "end": 209,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 276,
+                    "end": 280,
+                    "text": "[14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 281,
+                    "end": 284,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "Fig)",
+                    "ref_id": null
+                },
+                {
+                    "start": 521,
+                    "end": 526,
+                    "text": "Fig).",
+                    "ref_id": null
+                },
+                {
+                    "start": 602,
+                    "end": 606,
+                    "text": "Fig)",
+                    "ref_id": null
+                }
+            ],
+            "section": "SHERLOCK and RT-LAMP on isolated RNAs"
+        },
+        {
+            "text": "Due to limited availability of the RPA reagents required for the first step of SHERLOCK at that time paired with the results described above, we focused our efforts on validation of the RT-LAMP assays. Since detection worked on isolated RNA, we went on to test this approach using primary material (i.e. transport medium from nasopharyngeal swabs without RNA isolation) Strikingly, both RT-LAMP assays performed well on these specimens. Using as little as 0.5 \u03bcl UTM as input for each reaction to avoid inhibitory effects of the medium or of tissue contaminants on the reaction, detection worked in samples tested positive by qPCR (see Ct as reference) (Fig 1A) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 653,
+                    "end": 661,
+                    "text": "(Fig 1A)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "RT-LAMP assays on primary material from nasopharyngeal swabs"
+        },
+        {
+            "text": "In parallel, 5 additional sets of RT-LAMP primers targeting additional genes of the SARS--CoV-2 genome (NC_045512) were designed, tested and validated. Here, we preferred genes that are not target of any standard diagnostic qPCR assay, to minimize and avoid any possible interference of such point of care assays with other routine diagnostic pipelines. Among these new primer sets, the oligos targeting Orf7a showed the highest sensitivity and specificity in several tests on diluted isolated RNA and was thus selected for further testing in primary material.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Establishment of primer sets for novel target genes in RT-LAMP assays"
+        },
+        {
+            "text": "In this second set of experiments we screened a total of 70 samples, 52 of which had been tested positive for SARS-CoV-2 by diagnostic qPCR. Fig 1B displays representative results of the RT-LAMP assays targeting Gene N, Orf1a and Orf7a. Assays targeting Gene N and Orf7a were more sensitive than the one targeting Orf1a as indicated by the mean Ct value of RT-LAMPpositive samples (Fig 1C) , by the total number of samples that were correctly identified ( Fig  1D and 1E ). 3 out of 70 specimens turned out positive for Gene N and 1 out of 70 for Orf1a and Orf7 respectively, that were negative by qPCR.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 141,
+                    "end": 156,
+                    "text": "Fig 1B displays",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 381,
+                    "end": 389,
+                    "text": "(Fig 1C)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 456,
+                    "end": 470,
+                    "text": "Fig  1D and 1E",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Establishment of primer sets for novel target genes in RT-LAMP assays"
+        },
+        {
+            "text": "In order to increase the sensitivity of RT-LAMP assays to a comparable level with qPCR we performed a \"two-step\" LAMP reaction, either using a small amount (0.2 to 0.5 \u03bcl) of a first RT-LAMP reaction as template for a second one or by refreshing the first reaction with new enzymes and dNTPs. All of these attempts resulted consistently in negative controls (water, empty UTM or samples from negative patients) turning positive, either because of unspecific amplification or because of the necessary re-opening of the reaction tubes after the first amplification step. The use of mineral oil on top of every reaction-performed to avoid cross-contamination-did not improve these results. In an additional set of experiments, we combined the RT-LAMP assays targeting Gene N with LwaCas13a mediated detection. To this end, we ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Increasing the sensitivity of RT-LAMP"
+        },
+        {
+            "text": "To increase accessibility of RNA and efficiently inactivate the virus we incubated UTM from swabs at 98\u02daC for 15 min. Treatment at 92\u02daC for 15 minutes has been demonstrated to efficiently inactivate SARS-CoV-2 [16] , while 98\u02daC appeared a good choice for downstream RNA applications in case of SARS-CoV-2 [17] . After incubation at 98\u02daC, some of the UTM samples showed a gel-like consistency. This was observed in only a minor fraction of the samples and was most likely caused by protein and sugar supplements contained in one specific type of UTM. This UTM was easily recognizable since it was the only one containing phenol red as pH indicator. In these cases, pipetting about 10 times up and down with a P20 pipette allowed for complete homogenization and subsequently accurate pipetting. Again, we only used 0.5 \u03bcl UTM for each reaction. In addition, we added guanidine hydrochloride as a classical RNAse inhibitor and LAMP enhancer [18] to the multiplexed reaction at 60\u02daC. These modifications in sample preparation combined with our new multiplexed assay were used to analyze a set of 102 clinical samples consisting of 74 SARS-CoV-2 positive and 28 negative swabs (Fig 2) . 54 SARS-CoV-2 positive samples with Ct values up to 38 were positive in the RT-LAMP assay (Fig 2B) , while still 20 out of 74 qPCR positive samples were not detected in our assay on direct material. However, the vast majority of samples up to a Ct of 30 were correctly identified (94%; 45 out of 48). Meanwhile, RPA reagents arrived and we performed the two step SHERLOCK assays on some of the very same direct samples. However, sensitivity was much lower with a cut-off threshold of 21 cycles (Fig 2D; representative assays shown in S4 Fig). In summary, our multiplex RT-LAMP protocol is a simple and sensitive way to detect SARS-CoV-2 RNA from clinical samples. ",
+            "cite_spans": [
+                {
+                    "start": 210,
+                    "end": 214,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 305,
+                    "end": 309,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 938,
+                    "end": 942,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1172,
+                    "end": 1179,
+                    "text": "(Fig 2)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1272,
+                    "end": 1280,
+                    "text": "(Fig 2B)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1676,
+                    "end": 1684,
+                    "text": "(Fig 2D;",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1716,
+                    "end": 1724,
+                    "text": "S4 Fig).",
+                    "ref_id": null
+                }
+            ],
+            "section": "Multiplex RT-LAMP assay on clinical samples"
+        },
+        {
+            "text": "Based on our data we conclude, that multiplexing primers in RT-LAMP reactions is a highly promising way to further increase sensitivity of these assays and to quickly develop a rapid POC test. Currently, a test based on our multiplexed RT-LAMP assay would-in contrast to a good specificity-most likely miss to identify those infected patients with very low amounts of viral RNA in the nose or throat and would not yet reach the sensitivity of the gold-standard qPCR assays. However, the RT-LAMP approach comes with several clear-cut advantages. In contrast to classical qPCR, it can be used in primary material without the need for RNA isolation and yields results rapidly. Furthermore, only little equipment is required (thermoblock) and could easily be made available in e.g. emergency rooms. The estimated costs for reagents are below 1.50 \u20ac per reaction with the advantage-compared to qPCR-that additional expenses for nucleic acid isolation are not required. Regarding the target setting of primary screening, one could hypothesize, that identifying patients with high viral loads would detect those individuals that are highly infectious. Consequently, in this setting, even a POC test with a lower sensitivity as compared to diagnostic qPCR would be extremely useful and could be backed up by a combination with qPCR the results of which get available later. Currently, a relation between the level of viral RNA in swabs and the infectivity of a patient has not yet been definitively established. Detection of viral RNA is not equivalent to detection of infectious virus. One retrospective study, however, suggested low infectivity of patients with Ct-values >24 in E gene qPCR from swabs since the authors did not observe viral growth in exposed Vero cells [19] . Besides, a statement paper of the National Centre for Infectious Diseases and the Chapter of Infectious Disease Physicians (Singapore) refers to a study with 73 COVID-19 patients where a Ct >30 was found to be the threshold of infectivity [20] . Additional studies report Ct values between 31 and 34 as cut-off for infectivity in different set-up [21, 22] . A recently updated meta-analysis provides a very comprehensive overview on this important topic supporting the conclusion that infectivity is related to the cycle threshold level, but a clear cut-off can currently not yet be defined [23] . Nonetheless, the ultimate goal would be a POC test that reaches the sensitivity of qPCR and can completely replace the current approach where favorable. Studies in the near future will clarify, whether patients with high viral RNA loads are indeed the most contagious individuals. Besides, this knowledge will also be of greatest importance for the actual clinical interpretation of qPCR results in the future. By now, it has been shown that the viral load is already high before and maybe highest at onset of symptoms [24] and at the time point of presentation to the clinic followed by a steady decline [25] . Consequently, when focusing the screening on pre-symptomatic individuals, sensitivity of the RT-LAMP assay may actually be higher than in the current cohort. Additionally, one thing to be kept in mind when directly comparing sensitivity between the different methods, is the fact that qPCR reaches this standard only in isolated RNA whilst the multiplex RT-LAMP assay attains an optimized detection rate already in primary material. Of note, further addition of a step concentrating RNA using bead-based pulldown to an RT-LAMP-based protocol has also been successful [26] . Remarkably, here the authors move from swabs, that require trained personnel and personal protection equipment, to a home-based gargle [26] and a very recent report using qPCR demonstrated, that even saliva could be used as a valid source for viral diagnostics [27] . Optimizing also the collection of samples and including such specimens will be an important step towards broadly applicable POC testing. Regarding specificity, only few specimens turned out to be positive in the multiplex RT-LAMP assay that were negative in qPCR. Since qPCR is the gold-standard this can be interpreted as a minor limitation in specificity. However, qPCR itself does not reach a sensitivity of 100% [28] . Consequently, it is not clear yet whether these individuals were truly negative or missed by the qPCR assay.",
+            "cite_spans": [
+                {
+                    "start": 1765,
+                    "end": 1769,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 2011,
+                    "end": 2015,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 2119,
+                    "end": 2123,
+                    "text": "[21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 2124,
+                    "end": 2127,
+                    "text": "22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 2363,
+                    "end": 2367,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 2889,
+                    "end": 2893,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2975,
+                    "end": 2979,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 3549,
+                    "end": 3553,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 3691,
+                    "end": 3695,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 3817,
+                    "end": 3821,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 4240,
+                    "end": 4244,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "CRISPR/ Cas12 [13] or Cas13a [15] based assays are another promising way to detect RNA in a PCR-independent manner. Comparison of this approach with RT-LAMP demonstrates a surprisingly high sensitivity even of the colorimetric one step RT-LAMP assay. Very recently, a novel protocol for Cas13a -called STOP ('SHERLOCK Testing in One Pot')-has been described [29] . As this replaces the isothermal RPA reaction of the original SHERLOCK protocol by a RT-LAMP reaction, the authors use a thermo-stable Cas13a enzyme to enable performing the entire reaction at the same temperature. Whilst being a very interesting approach, nonetheless, this comes with the difficulty the reaction tube has to be opened for the final lateral flow assay used for detection. In the real-world POC testing setting, this would require the establishment of a 'pre-amp' and 'post-amp' area to avoid cross-contamination, which may limit its use. Alternatively, lateral flow could be replaced by using a fluorescent probe together with an appropriate simple detection device. However, the highest Ct value resulting in a positive STOP assay is-at about 30 cycles-in a similar range compared to a recently described Cas12a-based method (DETECTR) [29] . The RT-LAMP assay described in our study works without re-opening the test tube after amplification and provides detection at higher Ct values. On the other side, both SHERLOCK and DETECTR add an additional level of specificity to the detection due to the crRNA directing the Cas12/13 enzyme. Both SHERLOCK and DETECTR require a considerable number of pipetting steps. In contrast, the multiplexed RT-LAMP assay demonstrates a similar or even higher sensitivity and requires only two simple pipetting steps at the POC: (1) taking a aliquot of the UTM for 'boiling' and (2) the addition of the 0.5 \u03bcl sample to the reaction tube, which could also be reached without a pipet by an inoculating loop. Reaction tubes can be prepared in anticipation elsewhere (e.g. in any nearby central facility) and stored for hours at 4\u02daC. The preparation of these reaction tubes, is also done with only four simple pipetting steps (1. primer mix pre-diluted in water, 2. RT-LAMP mix, 3. guanidine hydrochloride, ! aliquot in 200 \u03bcl tubes). This could even be further simplified by adding guanidine to the primer mix. After amplification, the tube and the according controls are photo-documented and discarded. In summary, we are convinced that systematically combining and testing different multiplex RT-LAMP primer sets on primary swab material is one of the most promising approaches to develop a powerful POC test. Transferring such assays to automated microfluidic formats [11] can become an important tool to support disease control strategies. ",
+            "cite_spans": [
+                {
+                    "start": 14,
+                    "end": 18,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 29,
+                    "end": 33,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 358,
+                    "end": 362,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1217,
+                    "end": 1221,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 2683,
+                    "end": 2687,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Detection of 2019 novel coronavirus (2019-nCoV) by real-time RT-PCR",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Corman",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Landt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kaiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Molenkamp",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Meijer",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Euro Surveill",
+            "volume": "25",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2807/1560-7917.ES.2020.25.3.2000045"
+                ],
+                "PMID": [
+                    "31992387"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Clinical assessment and validation of a rapid and sensitive SARS-CoV-2 test using reverse-transcription loop-mediated isothermal amplification",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Anahtar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Geg",
+                    "middle": [],
+                    "last": "Mcgrath",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rabe",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tanner",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jkm",
+                    "middle": [],
+                    "last": "Lennerz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.12.20095638"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Development of a reverse transcription-loopmediated isothermal amplification as a rapid early-detection method for novel SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Baek",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Um",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kjc",
+                    "middle": [],
+                    "last": "Antigua",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Oh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerg Microbes Infect",
+            "volume": "9",
+            "issn": "1",
+            "pages": "998--1007",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/22221751.2020.1756698"
+                ],
+                "PMID": [
+                    "32306853"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "RT-LAMP for rapid diagnosis of coronavirus SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hsu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Microb Biotechnol",
+            "volume": "13",
+            "issn": "4",
+            "pages": "950--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1751-7915.13586"
+                ],
+                "PMID": [
+                    "32333644"
+                ],
+                "PMCID": [
+                    "PMC7264870"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "A Novel Reverse Transcription Loop-Mediated Isothermal Amplification Method for Rapid Detection of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jin",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Mol Sci",
+            "volume": "21",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijms21082826"
+                ],
+                "PMID": [
+                    "32325642"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Development of a Novel Reverse Transcription Loop-Mediated Isothermal Amplification Method for Rapid Detection of SARS-CoV-2. Virol Sin. 2020",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zuo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12250-020-00218-1"
+                ],
+                "PMID": [
+                    "32239445"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Development of Reverse Transcription Loop-Mediated Isothermal Amplification Assays Targeting Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2)",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ku",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Baek",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Mol Diagn",
+            "volume": "22",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmoldx.2020.03.006"
+                ],
+                "PMID": [
+                    "32276051"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Rapid and visual detection of 2019 novel coronavirus (SARS-CoV-2) by a reverse transcription loop-mediated isothermal amplification assay",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Microbiol Infect",
+            "volume": "26",
+            "issn": "6",
+            "pages": "773--782",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cmi.2020.04.001"
+                ],
+                "PMID": [
+                    "32276116"
+                ],
+                "PMCID": [
+                    "PMC7144850"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Rapid Molecular Detection of SARS-CoV-2 (COVID-19) Virus RNA Using Colorimetric LAMP",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Odiwuor",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Nyaruaba",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.02.26.20028373"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "SARS-CoV-2 On-the-Spot Virus Detection Directly From Patients",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ben-Assa",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Naddaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gefen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Capucha",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hajjo",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mandelbaum",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.04.22.20072389"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Rapid isothermal amplification and portable detection system for SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ganguli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mostafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Berger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Aydin",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ramirez",
+                    "middle": [],
+                    "last": "Sasd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc Natl Acad Sci",
+            "volume": "117",
+            "issn": "37",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2014739117"
+                ],
+                "PMID": [
+                    "32868442"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Journal of clinical virology: the official publication of the Pan American Society for Clinical Virology",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "L\u00fc Bke",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Senff",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Scherger",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hauka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Andr\u00e9e",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Adams",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "130",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jcv.2020.104579"
+                ],
+                "PMID": [
+                    "32795959"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "CRISPR-Cas12-based detection of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Broughton",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Fasching",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Servellita",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Biotechnol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41587-020-0513-4"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "A protocol for detection of COVID-19 using CRISPR diagnostics",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Abudayyeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gootenberg",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "SHERLOCK: nucleic acid detection with CRISPR nucleases",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kellner",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Koob",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gootenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Abudayyeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nat Protoc",
+            "volume": "14",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41596-019-0210-2"
+                ],
+                "PMID": [
+                    "31548639"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Evaluation of heating and chemical protocols for inactivating SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Pastorino",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Touret",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gilles",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "De Lamballerie",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Charrel",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.04.11.036855"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "An alternative workflow for molecular detection of SARS-CoV-2-escape from the NA extraction kit-shortage",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fomsgaard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Rosenstierne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Euro Surveill",
+            "volume": "25",
+            "issn": "14",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2807/1560-7917.ES.2020.25.14.2000398"
+                ],
+                "PMID": [
+                    "32290902"
+                ],
+                "PMCID": [
+                    "PMC7160440"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Enhancing colorimetric loop-mediated isothermal amplification speed and sensitivity with guanidine chloride",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Buss",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Barry",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Patton",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tanner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Biotechniques",
+            "volume": "69",
+            "issn": "3",
+            "pages": "178--85",
+            "other_ids": {
+                "DOI": [
+                    "10.2144/btn-2020-0078"
+                ],
+                "PMID": [
+                    "32635743"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Predicting infectious SARS-CoV-2 from diagnostic samples",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bullard",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dust",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Funk",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Strong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexander",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Garnett",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Clin",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa638"
+                ],
+                "PMID": [
+                    "32442256"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "National Centre for Infectious Diseases and the Chapter of Infectious Disease Physicians, Academy of Medicine",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Presymptomatic SARS-CoV-2 Infections and Transmission in a Skilled Nursing Facility",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Arons",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hatfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Reddy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kimball",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "James",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Jacobs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "22",
+            "pages": "2081--90",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2008457"
+                ],
+                "PMID": [
+                    "32329971"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Viral RNA load as determined by cell culture as a management tool for discharge of SARS-CoV-2 patients from infectious disease wards",
+            "authors": [
+                {
+                    "first": "La",
+                    "middle": [],
+                    "last": "Scola",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Bideau",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Andreani",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hoang",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Grimaldier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Colson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur J Clin Microbiol Infect Dis",
+            "volume": "39",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10096-020-03913-9"
+                ],
+                "PMID": [
+                    "32342252"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Viral cultures for COVID-19 infectivity assessment. Systematic review",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Jefferson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Spencer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brassey",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Heneghan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.08.04.20167932"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Temporal dynamics in viral shedding and transmissibility of COVID-19",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ehy",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Hao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "26",
+            "issn": "5",
+            "pages": "672--677",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-020-0869-5"
+                ],
+                "PMID": [
+                    "32296168"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Temporal profiles of viral load in posterior oropharyngeal saliva samples and serum antibody responses during infection by SARS-CoV-2: an observational cohort study",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Infect Dis",
+            "volume": "20",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099%2820%2930196-1"
+                ],
+                "PMID": [
+                    "32213337"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "rapid and highly sensitive isothermal detection of SARS-CoV-2 for laboratory and home testing",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kellner",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ross",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schnabl",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mps",
+                    "middle": [],
+                    "last": "Dekens",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Heinen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tanner",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.06.23.166397"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Saliva or Nasopharyngeal Swab Specimens for Detection of SARS-CoV-2. The New England journal of medicine",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Wyllie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fournier",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Casanovas-Massana",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tokuyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Vijayakumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "383",
+            "issn": "",
+            "pages": "1283--1289",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMc2016359"
+                ],
+                "PMID": [
+                    "32857487"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Correlation of Chest CT and RT-PCR Testing in Coronavirus Disease 2019 (COVID-19) in China: A Report of 1014 Cases",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1148/radiol.2020200642"
+                ],
+                "PMID": [
+                    "32101510"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Point-of-care testing for COVID-19 using SHERLOCK diagnostics",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Joung",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ladha",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saito",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Segel",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bruneau",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.05.04.20091231"
+                ],
+                "PMID": [
+                    "32511521"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Detection of viral RNA with RT-LAMP. A. Representative pictures of a RT-LAMP assay. UTM samples from 6 patients, 4",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "added a T7 promoter in the loop region of the FIP-primer and designed a crRNA targeting the amplicon of the RT-LAMP reaction. The addition of the T7 promotor did not affect the efficiency of the RT-LAMP reaction (S2A Fig) and a positive LwaCas13a mediated detection is indicated by the upper band in the lateral flow assay (S2B Fig).While this combination of RT-LAMP and LwaCas13a provides an additional proof of specificity as compared to the RT-LAMP reaction alone, sensitivity was not increased. An additional possibility to improve sensitivity of RT-LAMP is multiplexing, using primer mixes for different genes of the viral genome in the same reaction. After testing different combinations of these primer sets, we observed superior performance of RT-LAMP assays containing primer sets amplifying Orf7a and Orf3a (primer set A) combined with a lower reaction temperature (S3Fig).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Detection of viral RNA with multiplexed RT-LAMP. A. Workflow of the optimized multiplexed RT-LAMP protocol. B. 104 samples were analyzed with the multiplexed RT-LAMP assay targeting Orf7a and Orf3a. The individual value plot shows Ct values of the diagnostic qPCR for the E gene of positive and negative RT-LAMP assays. C. Total number of positive and negative multiplexed RT-LAMP assays from patient samples tested positive or negative for SARS-CoV-2. D. Heat map summarizing the results (left column: Ct value for E gene from diagnostic PCR in ascending order; middle and right column: pink indicating positive, blue indicating negative result. Grey: not performed).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Fig. Detection of viral RNA with RT-LAMP and SHERLOCK using isolated RNA from swabs. A. representative result from RT-LAMP assay targeting Gene N and Orf1a. Shift from red/pink to yellow/orange indicates a positive result (Ct value of E gene from diagnostic qPCR). B. Sherlock assay for S gene and Orf1a. The upper band indicates a positive result while the lower band is a control (Ct value of E gene from diagnostic qPCR). C. Summary of the RT-LAMP and Sherlock results on all available RNA samples (assay was regarded as positive with at least one positive result out of two RT-LAMP or SHERLOCK assays; left column: Ct value for E gene from diagnostic PCR in ascending order; green: positive result, blue negative result). (TIF) S2 Fig. Detection of viral RNA with RT-LAMP and LwaCas13a. A. Results from the colorimetric RT-LAMP assay using 0,5 \u03bcl sample (UTM) with primers containing a T7 promotor in the loop region. B. 1 \u03bcl of the RT-LAMP reaction from A was entered in the Cas13a recognition reaction followed by lateral flow assay. Upper band indicates positive recognition of the Gene N target sequence. (TIF) S3 Fig. Multiplexing of RT-LAMP reactions. Representative results from experiments trying to combine different RT-LAMP reactions in one tube. A multiplexed reaction targeting both Orf7a and Orf3a (set A) with a slight elongation of reaction time appears to be more sensitive and specific. (TIF) S4 Fig. Direct comparison of multiplexed RT-LAMP with two-step SHERLOCK. A. Representative results from 8 samples analyzed by multiplexed RT-LAMP assay (Orf3a and Orf7a) and Sherlock (Orf1a and S gene). B. Summary of all RT-LAMP and Sherlock assays performed in parallel (SHERLOCK assay was regarded as positive with at least one positive result out of two assays; left column: Ct value for E gene from diagnostic PCR in ascending order; green: positive result, blue negative result). (TIF) S1",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Rapid SARS-CoV-2 testing with RT-LAMP PLOS ONE | https://doi.org/10.1371/journal.pone.0238612 November 2, 2020 2 / 12 does not alter our adherence to PLOS ONE's policies on sharing data and materials. O.O.A., J.S. G., and F.Z. are co-founders, scientific advisors, and hold equity interests in Sherlock Biosciences, Inc. F.Z. is also a co-founder of Editas Medicine,",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Sequences of all primers and RNAs used in this study. (PDF) S2Table. Basic characteristics of the cohort. (PDF)",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Stefanie Keller for her outstanding technical support during very special and challenging times. Special thanks to the team of Benchling for revolutionizing the work with DNA/RNA sequences. Venn diagrams were generated using \"Venny 2.1\" by J.C. Oliveros (https://bioinfogp.cnb.csic.es/tools/venny/index.html, accessed in May 2020). ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

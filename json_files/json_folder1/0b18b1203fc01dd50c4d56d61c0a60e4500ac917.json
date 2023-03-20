@@ -1,0 +1,3846 @@
+{
+    "paper_id": "0b18b1203fc01dd50c4d56d61c0a60e4500ac917",
+    "metadata": {
+        "title": "Article 785293 1 Roshorm YM (2022) Immunodominant and Neutralizing Linear B-Cell Epitopes Spanning the Spike and Membrane Proteins of Porcine Epidemic Diarrhea Virus",
+        "authors": [
+            {
+                "first": "Kanokporn",
+                "middle": [],
+                "last": "Polyiam",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "King Mongkut's University of Technology Thonburi",
+                    "location": {
+                        "settlement": "Bangkok",
+                        "country": "Thailand"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Marasri",
+                "middle": [],
+                "last": "Ruengjitchatchawalya",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "King Mongkut's University of Technology Thonburi",
+                    "location": {
+                        "settlement": "Bangkok",
+                        "country": "Thailand"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Phenjun",
+                "middle": [],
+                "last": "Mekvichitsaeng",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "King Mongkut's University of Technology Thonburi",
+                    "location": {
+                        "settlement": "Bangkok",
+                        "country": "Thailand"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Kampon",
+                "middle": [],
+                "last": "Kaeoket",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Mahidol University",
+                    "location": {
+                        "settlement": "Salaya",
+                        "country": "Thailand"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Tawatchai",
+                "middle": [],
+                "last": "Hoonsuwan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kagoshima University",
+                    "location": {
+                        "settlement": "Bangkok",
+                        "country": "Thailand, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Pichai",
+                "middle": [],
+                "last": "Joiphaeng",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kagoshima University",
+                    "location": {
+                        "settlement": "Bangkok",
+                        "country": "Thailand, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yaowaluck",
+                "middle": [
+                    "Maprang"
+                ],
+                "last": "Roshorm",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "King Mongkut's University of Technology Thonburi",
+                    "location": {
+                        "settlement": "Bangkok",
+                        "country": "Thailand"
+                    }
+                },
+                "email": "yaowaluck.ros@kmutt.ac.th"
+            },
+            {
+                "first": "Makoto",
+                "middle": [],
+                "last": "Ozawa",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Tamaki",
+                "middle": [],
+                "last": "Okabayashi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Tatsunori",
+                "middle": [],
+                "last": "Masatani",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Polyiam",
+                "middle": [
+                    "K"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ruengjitchatchawalya",
+                "middle": [
+                    "M"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hoonsuwan",
+                "middle": [
+                    "T"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Joiphaeng",
+                "middle": [
+                    "P"
+                ],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Porcine epidemic diarrhea virus (PEDV) is the causative agent of PED, an enteric disease that causes high mortality rates in piglets. PEDV is an alphacoronavirus that has high genetic diversity. Insights into neutralizing B-cell epitopes of all genetically diverse PEDV strains are of importance, particularly for designing a vaccine that can provide broad protection against PEDV. In this work, we aimed to explore the landscape of linear B-cell epitopes on the spike (S) and membrane (M) proteins of global PEDV strains. All amino acid sequences of the PEDV S and M proteins were retrieved from the NCBI database and grouped. Immunoinformatics-based methods were next developed and used to identify putative linear B-cell epitopes from 14 and 5 consensus sequences generated from distinct groups of the S and M proteins, respectively. ELISA testing predicted peptides with PEDV-positive sera revealed nine novel immunodominant epitopes on the S protein. Importantly, seven of these novel immunodominant epitopes and other subdominant epitopes were demonstrated to be neutralizing epitopes by neutralization-inhibition assay. Our findings unveil important roles of the PEDV S2 subunit in both immune stimulation and virus neutralization. Additionally, our study shows the first time that the M protein is also the target of PEDV neutralization with seven neutralizing epitopes identified. Conservancy profiles of the epitopes are also provided. In this study, we offer immunoinformatics-based methods for linear B-cell epitope identification and a more complete profile of linear B-cell epitopes across the PEDV S and M proteins, which may contribute to the development of a greater next-generation PEDV vaccine as well as peptide-based immunoassays.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "A swine disease named porcine epidemic diarrhea (PED) is one of the main diseases that causes huge economic losses in the swine industry worldwide, including Asia, America, and Europe (1, 2) . Porcine epidemic diarrhea virus (PEDV) is the causative agent of PED (3) . PEDV can infect and cause symptoms in all ages of pigs; however, it has more effect on suckling piglets with 80%-100% death rate (4) . PEDV is a member of the Alphacoronavirus genus and it is an enveloped, positive-sense, single-stranded RNA virus (2) . The PEDV genome is approximately 28 kb long that encodes three non-structural proteins and four structural proteins, which are spike protein (S), membrane protein (M), envelope protein (E), and nucleocapsid protein (N) (2) .",
+            "cite_spans": [
+                {
+                    "start": 184,
+                    "end": 187,
+                    "text": "(1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 188,
+                    "end": 190,
+                    "text": "2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 262,
+                    "end": 265,
+                    "text": "(3)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 397,
+                    "end": 400,
+                    "text": "(4)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 516,
+                    "end": 519,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 741,
+                    "end": 744,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Studies on the genetic profile of PEDV have demonstrated that the PEDV genome is highly diverse (5) . Outbreaks and reemergences of PEDV with high genetic diversity have been reported in many countries (6, 7) . Even though vaccination is an effective method to prevent and control infection, the high genetic variation of PEDV remains one of the challenges in designing an effective PEDV vaccine. Although both B cells and T cells can be elicited by vaccines, it is generally thought that most vaccines confer protection through the induction of B cells to produce neutralizing antibodies (8) . Hence, understanding of antibody responses following PEDV infection in regard to the landscape of immunodominant and neutralizing B-cell epitopes as well as conserved and unique epitopes in distinct strains will facilitate designing a more powerful universal vaccine that can cope with all diverse strains of PEDV.",
+            "cite_spans": [
+                {
+                    "start": 96,
+                    "end": 99,
+                    "text": "(5)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 202,
+                    "end": 205,
+                    "text": "(6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 206,
+                    "end": 208,
+                    "text": "7)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 589,
+                    "end": 592,
+                    "text": "(8)",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "While the M protein is the most abundant in the PEDV particle and plays an important role in the viral assembly process (9, 10) , the PEDV S protein interacts with the host receptor and is composed of immunogenic regions capable of inducing neutralizing antibodies (11, 12) . The S protein is thus considered the main target for vaccination. Similar to other coronaviruses, the PEDV S protein is a large glycoprotein composed of 1,383 amino acids (based on the classical strain PEDV CV777), and it can be divided into two functional subunits: i) the N-terminal S1 subunit, responsible for receptor binding, and ii) the C-terminal S2 subunit, responsible for membrane fusion (13, 14) . The S1 subunit is comprised of the Nterminal domain (NTD) and the CO-26K equivalent (COE) domain (residues 499-638), which is responsible for receptor binding (13, 15) . The S2 subunit consists of three domains: a large ectodomain, a transmembrane domain, and a cytoplasmic tail or endodomain (13, 16) . A large ectodomain is composed of protease cleavage site, fusion peptide (FP), and two heptad repeat (HR1 and HR2) regions, which play important roles in viral and host cell membrane fusion (13, 16, 17) .",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 123,
+                    "text": "(9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 124,
+                    "end": 127,
+                    "text": "10)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 265,
+                    "end": 269,
+                    "text": "(11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 270,
+                    "end": 273,
+                    "text": "12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 674,
+                    "end": 678,
+                    "text": "(13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 679,
+                    "end": 682,
+                    "text": "14)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 844,
+                    "end": 848,
+                    "text": "(13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 849,
+                    "end": 852,
+                    "text": "15)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 978,
+                    "end": 982,
+                    "text": "(13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 983,
+                    "end": 986,
+                    "text": "16)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1179,
+                    "end": 1183,
+                    "text": "(13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1184,
+                    "end": 1187,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1188,
+                    "end": 1191,
+                    "text": "17)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "The COE domain has been identified as an immunogenic domain containing B-cell epitopes recognized by neutralizing antibodies (12, 15, 18) ; therefore, it is considered an alternative vaccine target and has been extensively used in the development of recombinant PEDV vaccines (19) (20) (21) . In the M protein, an epitope named M-14 has been identified from the PEDV CH/SHH/06 strain (9) . In the S protein, four linear B-cell epitopes, namely, i) S1D5 with SS2 as a core epitope (22) , ii) S1D6 with SS6 as a core epitope (22) , iii) peptide M (23) , and iv) 2C10, a neutralizing B-cell epitope located at the C-terminus of the S protein (24, 25) , were first identified. More recently, two conformational neutralizing epitopes located in the S1 NTD and COE were identified from truncated S proteins of the PEDV PT strain (12) . Additionally, neutralizing epitopes located at the same region with the S1D5 and S1D6 epitopes were reported (11, 22) . All these epitopes were identified based on experimental methods such as ELISA with truncated proteins, pepscan, and phage display, which are laborious, costly, and time-consuming. Additionally, by using these techniques, B-cell epitope identification can focus only on some regions of the proteins, while a complete profile of B-cell epitope across the entire proteins is of importance for vaccine design and antibody detection.",
+            "cite_spans": [
+                {
+                    "start": 125,
+                    "end": 129,
+                    "text": "(12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 130,
+                    "end": 133,
+                    "text": "15,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 134,
+                    "end": 137,
+                    "text": "18)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 276,
+                    "end": 280,
+                    "text": "(19)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 281,
+                    "end": 285,
+                    "text": "(20)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 286,
+                    "end": 290,
+                    "text": "(21)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 384,
+                    "end": 387,
+                    "text": "(9)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 480,
+                    "end": 484,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 523,
+                    "end": 527,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 545,
+                    "end": 549,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 639,
+                    "end": 643,
+                    "text": "(24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 644,
+                    "end": 647,
+                    "text": "25)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 823,
+                    "end": 827,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 939,
+                    "end": 943,
+                    "text": "(11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 944,
+                    "end": 947,
+                    "text": "22)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Recently, immunoinformatics has been demonstrated to be a powerful tool for the identification of B-and T-cell epitopes (26, 27) as well as for vaccine design and in-silico evaluation (28, 29) . Importantly, the immunoinformatics approach can facilitate big data analysis with less cost and time but high output compared with experimental methods. Currently, there are many tools available for in-silico B-cell epitope prediction. Among the epitope prediction resources, the IEDB database provides multiple tools for B-cell epitope prediction with high accuracy (30) . Generally, the peptides predicted by immunoinformatics methods cannot be claimed as epitopes, although they are well characterized as potential B-cell epitopes. Thus, experimental validation is crucial and necessary for confirming whether predicted epitopes are genuine epitopes. Based on this combined method, a complete set of B-cell epitopes across the entire protein can be identified.",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 124,
+                    "text": "(26,",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 125,
+                    "end": 128,
+                    "text": "27)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 184,
+                    "end": 188,
+                    "text": "(28,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 189,
+                    "end": 192,
+                    "text": "29)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 562,
+                    "end": 566,
+                    "text": "(30)",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "In the present work, we aimed to identify linear B-cell epitopes of two PEDV structural proteins, S and M, from all diverse strains available in the database and to characterize their potential as neutralizing epitope. The amino acid sequences of the PEDV S and M available in the National Center for Biotechnology Information (NCBI) database were retrieved and a phylogenetic tree was generated. Consensus sequences obtained from each group were then subject to linear B-cell epitope prediction using multiple immunoinformatics tools. We developed our own prediction methods for identifying potential B-cell epitopes based on four known epitopes [S1D5 (SS2), S1D6 (SS6), peptide M, and 2C10]. The predicted peptides were then experimentally validated using ELISA by testing synthetic peptides with PEDV-positive sera. Their potential as a neutralizing epitope was then investigated using neutralizationinhibition assay. Based on this approach, the whole set of neutralizing linear B-cell epitopes as well as immunodominant epitopes across the PEDV S and M protein was identified. 560 and 924 sequences of the M and S proteins were obtained, respectively. The sequences of each protein were next grouped and phylogenetic trees were generated. Sequences of the M protein were classified into 5 groups, while sequences of the S protein were classified into 14 groups ( Figures 1A, C) . The consensus sequence of each group of both proteins was next generated and aligned as shown in Supplementary Figures 1, 2 . Percent similarity among different groups was in the range from 32% to 99.71% for the S protein and from 20.35% to 99.55% for the M protein. The M and S consensus sequences were subsequently aligned with representative sequences of each genotype and subgenotype of PEDV and a phylogenetic tree was generated using the SeaView program. Consensus sequences of groups M1-M4 were clustered in genotype G2 and only consensus sequence of the M5 group was clustered in genotype G1 which is genetically related to CV777 ( Figure 1B) . For the S protein, only the consensus sequences of groups S2 and S14 were clustered in genotype G1, while all the other sequences were clustered in genotype G2 ( Figure 1D ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1367,
+                    "end": 1381,
+                    "text": "Figures 1A, C)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1481,
+                    "end": 1507,
+                    "text": "Supplementary Figures 1, 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 2024,
+                    "end": 2034,
+                    "text": "Figure 1B)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2199,
+                    "end": 2208,
+                    "text": "Figure 1D",
+                    "ref_id": null
+                }
+            ],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "We employed immunoinformatics to screen for B-cell epitopes from diverse PEDV strains. Linear B-cell epitopes have been suggested to be correlated with surface accessibility, flexibility, coil probability, antigenicity, and hydrophilicity (31, 32) ; thus, we utilized multiple immunoinformatics tools to predict linear B-cell epitopes and peptide characteristics. BepiPred-2.0 was used to predict linear Bcell epitopes. In parallel, IUPred was used to predict intrinsically unstructured proteins inferring coil probability, while other features including accessibility, antigenicity, and hydrophilicity were predicted using the methods of Emini, Kolaskar and Tongaonkar, and Parker, respectively ( Figure 2A) .",
+            "cite_spans": [
+                {
+                    "start": 239,
+                    "end": 243,
+                    "text": "(31,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 244,
+                    "end": 247,
+                    "text": "32)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 698,
+                    "end": 708,
+                    "text": "Figure 2A)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Three Prediction Methods Are Developed and Used to Identify Linear B-Cell Epitopes"
+        },
+        {
+            "text": "To search for a prediction tool/method that gives the best performance in terms of accuracy and epitope coverage, we aligned and compared all predicted peptides obtained from each prediction tool with the reference epitopes. Four well-known B-cell epitopes of the PEDV S protein, namely, i) peptide M (MQYVYEPTYYML) (23) , ii) S1D5 (PVLVYSNIGVCKSGSI) [with the core epitope SS2 (YSNIGVCK)] (22) , iii) S1D6 (SGSIGYVPLQDGQVKI) [with the core epitope SS6 (LQDGQVKI)] (22) , and iv) 2C10 (GPRLQPY) (24, 25) , were exploited as reference epitopes (Figure 2A) . Mapping of the reference epitopes with predicted peptides revealed that none of the prediction tools could positively predict all four reference epitopes (Figures 2A, B) ; we, thus, created three new prediction methods, designated methods A, B, and C, for identifying and selecting linear B-cell epitopes as described in Figure 2C . In method A, epitope is identified based on the peptide with the following characteristics: i) predicted to be B-cell epitope by BepiPred, A B D C FIGURE 1 | Grouping of the retrieved PEDV M and S proteins and phylogenetic tree analysis of the consensus sequences. (A, C) Phylogenetic tree and grouping of the retrieved PEDV M and S proteins, respectively. Phylogenetic trees were generated using the SeaView program (left panel) and groups were subsequently generated using the FigTree tool (right panel). (B, D) Phylogenetic tree analysis of the consensus sequences of the M (B) and S (D) proteins, respectively. The consensus sequences generated from each group of the proteins S and M were analyzed and grouped with PEDV from different genotypes using the SeaView program. The amino acid sequences were aligned using MUSCLE and trees were constructed based on distance analysis, NJ method, and bootstrap 1,000 replication. Numbers at nodes represent the percentage of 1,000 bootstrap replicates. ACC_PEDV (highlighted in yellow) is the virus used in the assays. Consensus sequences are highlighted in gray.",
+            "cite_spans": [
+                {
+                    "start": 316,
+                    "end": 320,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 390,
+                    "end": 394,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 465,
+                    "end": 469,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 495,
+                    "end": 499,
+                    "text": "(24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 500,
+                    "end": 503,
+                    "text": "25)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 543,
+                    "end": 554,
+                    "text": "(Figure 2A)",
+                    "ref_id": null
+                },
+                {
+                    "start": 711,
+                    "end": 726,
+                    "text": "(Figures 2A, B)",
+                    "ref_id": null
+                },
+                {
+                    "start": 878,
+                    "end": 887,
+                    "text": "Figure 2C",
+                    "ref_id": null
+                }
+            ],
+            "section": "Three Prediction Methods Are Developed and Used to Identify Linear B-Cell Epitopes"
+        },
+        {
+            "text": "ii) composed of coil structure predicted by BepiPred and/or IUPred, and iii) accessible peptide predicted by BepiPred and/or Emini method. For method B, the epitopes are identified based on the peptides predicted to be antigenic and hydrophilic by the methods of Kolaskar and Tongaonkar and Parker, respectively. For method C, the peptides predicted to be antigenic and accessible by the methods of Kolaskar and Tongaonkar and Emini, respectively, are considered B-cell epitope. By using our prediction methods, the reference epitopes S1D6 and 2C10 were positively predicted by all three methods, while epitope S1D5 and peptide M were positively predicted only by methods B and C, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Three Prediction Methods Are Developed and Used to Identify Linear B-Cell Epitopes"
+        },
+        {
+            "text": "The consensus sequences from all 14 groups of the S protein and 5 groups of the M protein were subject to linear B-cell epitope prediction. Putative B-cell epitopes were identified and selected based on prediction methods A, B, and C, and prediction of the M protein group 3 (M3) is shown as a representative ( Figure 3A) . Note that the predicted peptides that overlap or are located in close proximity were combined into one long peptide. Prediction of the M protein yielded seven putative B-cell epitopes, designated M-1 to M-7 ( Figures 3A, B and Table 1 ). Prediction of B-cell epitopes on the S protein from one representative group (out of 14 groups) using our methods is shown in Supplementary Figure 3 . Predicted peptides from 14 S consensus sequences were aligned, and a total of 50 peptides located in 33 regions of the S protein, designated S1B and S2B for the epitopes located on the S1 and S2 subunits, respectively, were predicted as B-cell epitopes ( Figure 4 , Table 1 ). In the COE region, three epitopes, namely, S1B-15, S1B-16, and S1B-17, were identified. Most of the B-cell epitopes predicted from consensus sequences of different groups are located on the same regions although some residues in the epitope are variable among different groups. Impressively, our immunoinformatics A B C FIGURE 2 | Development of immunoinformatics-based methods for linear B-cell prediction. Amino acid sequence of the S protein was predicted for various characteristics including probability as B-cell epitope, coil structure, surface accessibility, antigenicity, and hydrophilicity using multiple immunoinformatics prediction tools as indicated in (A, B). Predicted peptides obtained from each tool were aligned and mapped to reference epitopes, which are four published epitopes: peptide M, S1D5, S1D6, and 2C10 (A). Tools that gave positive prediction for the four reference epitopes are summarized in (B). Three immunoinformatics-based prediction methods were subsequently developed and designated methods (A-C) with criteria indicated in (C). methods could identify all published epitopes in the S protein but not in the M protein as indicated in Table 1 and Supplementary  Figures 4, 5 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 311,
+                    "end": 321,
+                    "text": "Figure 3A)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 533,
+                    "end": 546,
+                    "text": "Figures 3A, B",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 551,
+                    "end": 558,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 688,
+                    "end": 710,
+                    "text": "Supplementary Figure 3",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 968,
+                    "end": 976,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 979,
+                    "end": 986,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 2159,
+                    "end": 2166,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 2171,
+                    "end": 2198,
+                    "text": "Supplementary  Figures 4, 5",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Potential Linear B-Cell Epitopes Are Identified in 7 and 33 Regions of the PEDV M and S Proteins"
+        },
+        {
+            "text": "B-Cell Epitopes on the S2 Subunit and M Protein Are More Conserved Than Those on the S1 Subunit We further analyzed the strain coverage of each predicted epitope as information toward epitope conservancy could be beneficial to the design and development of a vaccine, particularly a universal vaccine. For the M protein, six out of seven predicted epitopes cover higher than 70% of 560 accession numbers with four epitopes (M-3, M-4, M-5, and M-6) having strain coverage greater than 90% ( Figure 5A ). Analyzed with 924 accession numbers of the PEDV S protein, 34 out of 50 predicted epitopes of the S protein exhibited strain coverage greater than 70% ( Figure 5B ). Among these 34 epitopes, 24 showed strain coverage higher than 80%, of which 8 and 16 are located on the S1 and S2 subunits, respectively, suggesting that sequences in the S1 subunit are more variable than those in the S2 subunit.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 490,
+                    "end": 499,
+                    "text": "Figure 5A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 656,
+                    "end": 665,
+                    "text": "Figure 5B",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Potential Linear B-Cell Epitopes Are Identified in 7 and 33 Regions of the PEDV M and S Proteins"
+        },
+        {
+            "text": "To further validate the predicted linear B-cell epitopes, ELISA was performed. PEDV-positive sera were prepared from F1 and F3 pigs raised in the farms and naturally infected with PEDV. Neutralizing activity of the pig sera was investigated using neutralization assay and only serum samples with neutralizing antibody titers at least 32 (reciprocal serum dilution) were further used in ELISA analysis. A total of 12 F1 pigs and 11 F3 pigs showed neutralizing activity that passes the criteria ( Figure 6 ) and were subject to ELISA. Control sera were prepared from 10 uninfected F3 pigs raised in the animal research facility, and their neutralizing antibody titer was confirmed to be lower than 32 by neutralization assay (Supplementary Table 1) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 495,
+                    "end": 503,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 738,
+                    "end": 746,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Predicted B-Cell Epitopes Are Recognized by PEDV-Positive Sera"
+        },
+        {
+            "text": "Three well known epitopes, SS2, SS6, and 2C10 (22, 25) , were included in ELISA as reference epitopes. Reactivity of the peptides with their target antibodies was determined based on statistical analysis comparing OD450 value of the F1 and F3 pig sera to that of the control group (p < 0.05). All seven peptides from the M protein showed reactivity with sera from at least one pig strain ( Figure 7A ). Out of 50, 48 peptides of the S protein showed reactivity with the sera from at least one pig strain ( Figure 7C ). Immunodominant and subdominant epitopes were next defined. In reactivity with a particular peptide, if all sera from both F1 and F3 pigs exhibited OD450 value higher than OD450 mean of the control group + 2SD, such peptide was considered an immunodominant epitope. On the other hand, if all sera from both F1 and F3 pigs exhibited OD450 value higher than OD450 mean of the control group + 1SD, such peptide was considered a subdominant epitope. Based on these analyses, the epitopes S1B-1, S1B-2.2, S1B-3, S1B-9.2, S1B-14.2, S1B-19.1, S1B-19.3, S2B-22, S2B-25, S2B-29, and S2B-30.2 on the S protein and the epitope M-2 on the M protein were categorized as immunodominant epitopes, while the epitopes S1B-2, S1B-5, S1B-9.1, S1B-15, S1B-16, S1B-19.2, S2B-21, S2B-24, S2B-26.1, and S2B-32 were categorized as subdominant Table 2 ). Two subdominant epitopes, S1B-15 and S1B-16, are located within the COE domain. Furthermore, we demonstrated that antibody response in the sera with high neutralizing titer (NT \u2265 64) and low neutralizing titer (NT = 32) against some epitopes was significantly different (p < 0.05) as indicated in Figures 7A, C . This information may suggest the correlation between antibodies targeting these epitopes and neutralizing activity of the serum. Based on the B-cell epitopes we identified in the present study, some have already been reported. The epitope S1B-19 (aa. 719-772) is a part of the S1D domain (aa. 636-789) containing neutralizing epitopes (34) . The S1B-19.1 epitope (aa. 719-730) overlaps with the known epitope S1D SE16 (722-SSTFNSTREL-731) (33) , while the S1B-19.3 epitope (aa. 748-772) consists of two known epitopes, SS2 (22) and SS6 (22) . The S1B-8 epitope (aa. 203-211) corresponds to the known epitope, peptide M (23), while the epitope S2B-33 (aa. 1,345-1,379) contains the 2C10 epitope (25) . The epitope S1B-14.1 (aa. 457-477) entirely maps in the neutralizing epitope (aa. 432-481) (12) . In the COE region, all three epitopes (S1B-15 to S1B-17) are parts of the conformational epitope (572-TLQSVNDYLSFSKFCVST",
+            "cite_spans": [
+                {
+                    "start": 46,
+                    "end": 50,
+                    "text": "(22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 51,
+                    "end": 54,
+                    "text": "25)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1996,
+                    "end": 2000,
+                    "text": "(34)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 2100,
+                    "end": 2104,
+                    "text": "(33)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 2184,
+                    "end": 2188,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 2197,
+                    "end": 2201,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 2355,
+                    "end": 2359,
+                    "text": "(25)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 2453,
+                    "end": 2457,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 390,
+                    "end": 399,
+                    "text": "Figure 7A",
+                    "ref_id": null
+                },
+                {
+                    "start": 506,
+                    "end": 515,
+                    "text": "Figure 7C",
+                    "ref_id": null
+                },
+                {
+                    "start": 1337,
+                    "end": 1344,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1645,
+                    "end": 1658,
+                    "text": "Figures 7A, C",
+                    "ref_id": null
+                }
+            ],
+            "section": "Predicted B-Cell Epitopes Are Recognized by PEDV-Positive Sera"
+        },
+        {
+            "text": "Additionally, the S1B-16 epitope also has three amino a c i d s ( G Y P ) o v e r l a p p i n g w i t h t h e C 2 -1 e p i t o p e (TSLLASACTIDLFGYP) (18) . Besides these known epitopes, other B-cell epitopes identified in our study are considered novel. Thus, epitopes S1B-1, S1B-2.2, S1B-3, S1B-9.2, S1B-14.2, S2B-22, S2B-25, S2B-29, and S2B-30.2 can be recognized as novel immunodominant epitopes in the PEDV S protein. For the M protein, one B-cell epitope named M14 (9) has been reported; however, this epitope does not overlap with the epitopes identified in our study. Therefore, all seven B-cell epitopes in the M protein we identified are novel epitopes.",
+            "cite_spans": [
+                {
+                    "start": 150,
+                    "end": 154,
+                    "text": "(18)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Predicted B-Cell Epitopes Are Recognized by PEDV-Positive Sera"
+        },
+        {
+            "text": "Neutralization ability of the antibodies against each epitope were further tested using neutralization-inhibition assay as shown in the schematic representation in Figure 8A . The assay was conducted with serially diluted serum and 100 TCID 50 of PEDV. Neutralization inhibition mediated by a peptide was determined at the endpoint neutralizing antibody titer, at which the amount of antibodies is only sufficient to neutralize the virus and depletion of neutralizing antibodies will result in the loss of the neutralization potential of the serum. Four sera including F1 1-3, F1 1-4, F1 1-5, and F3 1-10 were used in the assay. Peptides corresponding to the known epitopes SS2, SS6, and 2C10 were used as references, and irrelevant peptides N (MHC) and E(CTL) were included as negative controls. All three reference peptides exhibited their ability to inhibit the neutralizing activity of the sera, while irrelevant peptides did not ( Figure 8B) . Notably, peptides from the M protein were tested with only two sera, F1 1-4 and Figure 8B, Supplementary Figures 7, 8) . A combined result from both sera suggested that all seven epitopes of the M protein had the potential to be neutralizing epitopes. However, the three M peptides, namely, M-1, M-2, and M-6, could inhibit the neutralizing activity of both sera tested, suggesting them to be the most promising targets in the M protein for virus neutralization. Linear B-cell epitopes were identified following the three prediction methods described in Figure 2 . Peptides resulting from the prediction of all 14 groups of the S protein were aligned and the peptides selected for further experimental evaluation are indicated in the \"selected epitope\" line with the designated name. In the presence of the S peptides, four pig sera showed different patterns of neutralization inhibition as summarized in Table 2 , Supplementary Figures 6-9 . In Figure 8B , neutralizing epitopes were concluded based on the combined results of all four sera. The peptide that inhibited the neutralizing activity of at least one serum was considered a neutralizing epitope. Almost all peptides, except S1B-7, S1B-11, S1B-14.2, S1B-19.1, S1B-19.2, and S2B-22, could inhibit the neutralizing activity of at least one serum. Hence, epitopes S1B-1, S1B-2.2, S1B-3, S1B-9.2, S1B-19.3, S2B-25, S2B-29, and S2B-30.2 posed as both neutralizing and immunodominant epitopes. Importantly, antibodies recognizing the three epitopes in the COE domain, which are S1B-15, S1B-16, and S1B-17, were demonstrated with neutralization ability. Among the peptides capable of inhibiting the neutralizing activity of the serum, peptides S1B1, S1B-2.2, S1B-5, S2B-26.1, S2B-27, S2B-29, S2B-30, and S2B-33 showed neutralization inhibition in all sera tested, strongly confirming them as promising targets for PEDV neutralization. While most of the former epitope identifications focus on the S1 subunit, our work demonstrates that the S2 subunit indeed harbors multiple immunodominant as well as neutralizing epitopes, representing targets for both vaccine development and antibody detection. Figure 9A , most of the epitopes are exposed on the surface, by which surface accessibility is one main feature associated with Bcell epitopes. Although coil is generally recognized as one main characteristic of the linear B-cell epitopes, B-cell epitopes identified in our study were found to be composed of various structures including coil, alpha helix, and beta sheet ( Figure 9B ). However, close-ups of the immunodominant epitopes and neutralizing epitopes in the COE revealed that these epitopes are either partly or entirely composed of coil structure and some epitopes also consist of other structures either alpha helix or beta sheet ( Figures 9C, D) . Close-ups and the secondary structure of all the other epitopes are shown in Supplementary Figure 10 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 164,
+                    "end": 173,
+                    "text": "Figure 8A",
+                    "ref_id": null
+                },
+                {
+                    "start": 936,
+                    "end": 946,
+                    "text": "Figure 8B)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1029,
+                    "end": 1067,
+                    "text": "Figure 8B, Supplementary Figures 7, 8)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1503,
+                    "end": 1511,
+                    "text": "Figure 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1854,
+                    "end": 1861,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1864,
+                    "end": 1889,
+                    "text": "Supplementary Figures 6-9",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1895,
+                    "end": 1904,
+                    "text": "Figure 8B",
+                    "ref_id": null
+                },
+                {
+                    "start": 3100,
+                    "end": 3109,
+                    "text": "Figure 9A",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 3474,
+                    "end": 3483,
+                    "text": "Figure 9B",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 3746,
+                    "end": 3760,
+                    "text": "Figures 9C, D)",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 3840,
+                    "end": 3863,
+                    "text": "Supplementary Figure 10",
+                    "ref_id": null
+                }
+            ],
+            "section": "Novel Neutralizing Epitopes Are Verified by Neutralization-Inhibition Assay"
+        },
+        {
+            "text": "The genetic diversity of PEDV, particularly in the gene encoding S protein (6) , has limited the protective potency of the PEDV vaccine. Identification of neutralizing B-cell epitopes that are conserved across all diverse PEDV strains will contribute to the development of a more effective universal vaccine to combat all diverse strains of PEDV. So far, eight B-cell epitopes have been identified from five regions of the PEDV S protein. With the aim to identify B-cell epitopes from diverse strains of PEDV, immunoinformatics approach allows us to primarily screen for candidate B-cell epitopes from a large number of sequences retrieved from the database. By using multiple prediction tools, none of these prediction tools gave the prediction result that covers all four known epitopes [peptide M (23), SS2 (22) , SS6 (22) , and 2C10 (25)] when they were used alone. Our work is in agreement with the previous study showing that prediction using two or more tools increased both accuracy and probability in defining a genuine B-cell epitope (36) . Thus, we developed our own prediction methods combining multiple immunoinformatics tools to predict and identify peptides with high potential as B-cell epitopes. Our immunoinformatics methods allowed us to identify important Bcell epitopes from diverse sequences of PEDV. Moreover, we have employed the prediction methods developed in this study in identifying B-cell epitopes of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (37), and we have proven that our immunoinformatics-based method is potent and useful in facilitating the identification of immunodominant epitopes with less time and cost compared with conventional methods.",
+            "cite_spans": [
+                {
+                    "start": 75,
+                    "end": 78,
+                    "text": "(6)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 810,
+                    "end": 814,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 821,
+                    "end": 825,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1044,
+                    "end": 1048,
+                    "text": "(36)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "After prediction, the predicted B-cell epitopes of the PEDV S and M proteins were verified with PEDV-positive sera. Pig sera with PEDV-neutralizing activity were screened by neutralization assay with CV777 lineage virus (ACC_PEDV). Both PEDV genotypes (G1 and G2) were found and reported to be the cause of several PEDV outbreaks in Thailand in the past recent years (7, 38) ; therefore, the pig sera we collected from different farms may be varied in terms of PEDV strain specificity. However, by using our CV777 lineage PEDV, we were able to measure the neutralization potential of the pig serum samples. This neutralizing activity is possibly mediated by antibodies recognizing conserved epitopes on the PEDV S protein. ELISA test confirmed the reactivity of the predicted peptides with PEDV-positive sera. However, the patterns of antibody responses in two different pig strains, F1 and F3, were different with some peptides. This may be influenced by several factors such as pig genetic background, age, duration, and dose of infection. Moreover, it is also possible that the infection in each farm is caused by different PEDV strains as different genotypes and subgenotypes of PEDV were reported in different regions of Thailand (7, 38) .",
+            "cite_spans": [
+                {
+                    "start": 367,
+                    "end": 370,
+                    "text": "(7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 371,
+                    "end": 374,
+                    "text": "38)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1235,
+                    "end": 1238,
+                    "text": "(7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1239,
+                    "end": 1242,
+                    "text": "38)",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Statistical analysis of antibody responses in both F1 and F3 pig sera defined 11 immunodominant within the PEDV S proteins. Interestingly, although PEDV (alphacoronavirus) and SARS-CoV-2 (betacoronavirus) belong to different genus, the landscape of immunodominant epitopes on the S protein of these two coronaviruses remarkably resembles. The following epitopes including i) S1B-1, ii) S1B-19 (19. 1 and 19.3) , iii) S2B-22, and iv) S2B-29 and S2B-30.2 are located at the following regions: i) the N-terminus next to the signal sequence; ii) CTD, upstream region of the S1/S2 cleavage site; iii) FP region; and iv) upstream region of the HR2, respectively, which have also been indicated to be the main sites of immunodominant epitopes on the SARS-CoV-2 S protein recently reported by our group (37) and Li et al. (39) . Moreover, the epitopes S1B-15, S1B-16, and S1B-17, which are located within the COE domain, also mirror A B D C FIGURE 7 | Antibody responses against predicted epitopes and landscapes of the immunodominant B-cell epitopes. (A, C) Antibody responses against predicted B-cell epitopes of the M and S proteins, respectively. ELISA was performed with PEDV-positive F1 (12 samples) and F3 (11 samples) pig sera whose neutralizing activity against PEDV had been confirmed. Sera from uninfected F3 pigs were used as a control. ELISA plates were coated with synthetic peptides corresponding to the predicted epitopes as indicated in the X-axis. Serum was diluted 1:50 and used in ELISA. The optical density at the wavelength of 450 nm was measured. Antibody response of the serum samples with neutralizing antibody titer (NT) \u226564 is shown in yellow circle. Non-parametric Mann-Whitney U test was used in statistical analysis. The significant difference of the infected F1 group vs control group and infected F3 group vs control group is indicated with * (red asterisk) indicates p <0.05 but >0.001; * (black asterisk) indicates p <0.001, # indicates a significant difference between sera with NT \u226564 and NT = 32 in reactivity with the same peptide. Immunodominant and subdominant epitopes were defined as follows. In reactivity with a particular peptide, if i) all sera from both F1 and F3 pigs exhibited OD450 value higher than OD450 mean of the control group + 2SD and ii) all sera from both F1 and F3 pigs exhibited OD450 value higher than OD450 mean of the control group + 1SD, such peptide was considered an i) immunodominant and ii) subdominant epitope, respectively. Immunodominant and subdominant are highlighted with yellow and blue box, respectively. the three most dominant epitopes within the SARS-CoV-2 S RBD identified in our previous work (37) . Additionally, the Cterminal endodomain of the S protein is another main site accommodating an immunodominant B-cell epitope of SARS-CoV-2 (37, (39) (40) (41) as well as the neutralizing epitope 2C10 with the GPRLQPY motif (epitope S2B-33 in this study) of PEDV (25) . The neutralizing activity of the antibodies targeting these novel epitopes was addressed using neutralization-inhibition assay, by which the target antibodies are depleted/blocked with their cognate peptides. This technique has been previously used to identify neutralizing epitopes from SARS-CoV-2 (40) and coxsackievirus A16, a causative agent of HFMD (human, foot, hand and mouth disease) (42) . However, we observed that the inhibitory effect of a peptide on different sera was different for some peptides. This may be because of the varied levels of antibodies against each epitope in different sera. Surprisingly, we did not see the inhibitory effect of three immunodominant epitopes, S1B-14.2, S1B-19.1, and S2B-22, on any sera. This result can be explained by two possibilities: i) these epitopes are indeed non-neutralizing epitopes recognized by nonneutralizing antibodies, and ii) the peptides cannot compete with the epitope present on the virus particle, which is perhaps more complete than the peptide in terms of amino acid composition and conformation, in binding to their cognate antibodies; thus, the neutralizing activity of the serum is maintained.",
+            "cite_spans": [
+                {
+                    "start": 393,
+                    "end": 397,
+                    "text": "(19.",
+                    "ref_id": null
+                },
+                {
+                    "start": 795,
+                    "end": 799,
+                    "text": "(37)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 814,
+                    "end": 818,
+                    "text": "(39)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 2667,
+                    "end": 2671,
+                    "text": "(37)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 2812,
+                    "end": 2816,
+                    "text": "(37,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 2817,
+                    "end": 2821,
+                    "text": "(39)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 2822,
+                    "end": 2826,
+                    "text": "(40)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 2827,
+                    "end": 2831,
+                    "text": "(41)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 2935,
+                    "end": 2939,
+                    "text": "(25)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 3334,
+                    "end": 3338,
+                    "text": "(42)",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 398,
+                    "end": 409,
+                    "text": "1 and 19.3)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The neutralizing epitopes we identified are located at the regions that are functionally important during virus infection. Epitopes S1B-1 to S1B-9 are located at the NTD of the S1 subunit, A B FIGURE 8 | Neutralization-inhibition assay. (A) Schematic representation of neutralization-inhibition assay. Inhibitory effect of a peptide on the neutralizing activity of the serum was investigated at endpoint neutralization (with serum diluted to endpoint neutralization titer). (B) Inhibition of PEDV neutralization by peptides corresponding to B-cell epitopes. Peptides (as indicated in the picture) were incubated with sera from four PEDV-infected F1 (F1 1-3, 1-4, 1-5) and F3 1-10 pigs, prior to a further incubation with PEDV. The mixture was inoculated into Vero cells and incubated for 3 or 5 days. PEDV was detected using anti-PEDV monoclonal antibody and shown by red fluorescence. DAPI was used to determine the nucleus (blue fluorescence). Immunofluorescence images were observed and taken under an inverted fluorescence microscope. S, serum; V, virus. N(MHC) and E(CTL) are irrelevant peptides.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "the region that is involved in binding to sialoglycoconjugate receptor on the host cell (43, 44) . The neutralizing epitope S1B-10 is located at the S1 region that plays an important role in PEDV attachment to the host cell using sugar-binding activity (45) . Moreover, the neutralizing epitope S1B 14.1 overlaps with the C-terminal sequence of the conformational epitope (aa. 435-485) formerly identified in the PEDV PT strain (12) , suggesting that the overlapping sequence (457-RILYCDDPVSQLKCSQVAFDL-477) may function as a core neutralizing epitope in that region. The S1D domain located in the S1 CTD, which also includes our neutralizing epitope S1B-19, is well documented as an immunodominant epitope/domain and a target of neutralizing antibodies (11, 22, 35) . Within the COE domain, three neutralizing epitopes (S1B-15, S1B-16, and S1B-17) identified in our study may be the main targets for neutralizing antibody recognition in the neutralizing conformational epitope (aa. 575-639) previously identified by Chang et al. (12) . Generally, a conformational epitope requires correct conformation to interact with its target antibody; however, we demonstrate here that short linear peptides within the long conformational epitope can also be recognized by antibodies and binding of these short linear peptides to the antibody is sufficient to interfere the neutralizing activity of the antibody. On the other hand, it is also possible that the linear epitopes we identified are functionally complete as an epitope. This hypothesis is supported by one of our studies showing that epitope S1B-17 is immunodominant and elicited neutralizing antibody in mice immunized with PEDV COE (unpublished work). Moreover, epitopes identified with continuous sequence and thought to be a linear epitope may actually function in the form of conformational epitope as shown by Chang et al. (12) and one of our immunodominant linear epitopes, S1B-9.2, by which only non-denatured peptide but not the denatured one could bind to the antibody (data not shown).",
+            "cite_spans": [
+                {
+                    "start": 88,
+                    "end": 92,
+                    "text": "(43,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 93,
+                    "end": 96,
+                    "text": "44)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 253,
+                    "end": 257,
+                    "text": "(45)",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 428,
+                    "end": 432,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 754,
+                    "end": 758,
+                    "text": "(11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 759,
+                    "end": 762,
+                    "text": "22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 763,
+                    "end": 766,
+                    "text": "35)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1030,
+                    "end": 1034,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1880,
+                    "end": 1884,
+                    "text": "(12)",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "While most of the known neutralizing B-cell epitopes are located in the S1 subunit, information of B-cell epitopes in the S2 subunit is limited with only one neutralizing epitope identified. The epitope 2C10 located at the C-terminus of the S2 domain has been identified as a neutralizing epitope (24, 25) . In this study, in addition to the 2C10 epitope, more neutralizing B-cell epitopes in the S2 subunit were identified. The neutralizing epitope S2B-20 is located next to the S1/S2 cleavage site; thus, antibody binding to this region may interfere S1/S2 cleavage, resulting in a loss of viral infectivity. The coronavirus S2 subunit consists of fusion peptide (FP) and heptad repeat regions (HR) that play important roles in cell membrane fusion (46) . In a betacoronavirus, SARS-CoV-2, the epitopes located in the FP and HR2 regions have been identified as immunodominant and neutralizing epitope (47) . In our study, the neutralizing epitopes S2B-21 and S2B-23 map in the FP, a region responsible for protease cleavage and membrane fusion (44) ; thus, antibody binding to this region could affect these processes during viral cell entry. The neutralizing epitopes S2B-24, 25, and 26 are located within the HR1 region, whereas neutralizing epitopes S2B-27, 28, 29, 30, and 31 are located in the upstream region of the HR2 and S2B-32 is located within the HR2. The HR1 and HR2 domains of coronaviruses play important roles in membrane fusion (44) ; thus, blocking these regions with antibodies may result in inhibition of the membrane fusion process.",
+            "cite_spans": [
+                {
+                    "start": 297,
+                    "end": 301,
+                    "text": "(24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 302,
+                    "end": 305,
+                    "text": "25)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 751,
+                    "end": 755,
+                    "text": "(46)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 903,
+                    "end": 907,
+                    "text": "(47)",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1046,
+                    "end": 1050,
+                    "text": "(44)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1447,
+                    "end": 1451,
+                    "text": "(44)",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In addition to the S protein, we showed that M protein is also a target for virus neutralization. Based on neutralizationinhibition assay, epitopes M-1, M-2, and M-6 are the most promising as evidenced by the loss of neutralizing ability of both tested sera in the presence of these three peptides. The neutralization potential of antibodies against coronavirus M protein has been previously reported in the study of transmissible gastroenteritis virus (TGEV), a PEDV closely related alphacoronavirus, that the antibodies against the TGEV membrane protein had neutralizing activity in the presence of complement (48) . Together with the profile of B-cell epitope within the M protein, our study shows for the first time that antibodies targeting the M protein could mediate PEDV neutralization. This new finding suggests that the nextgeneration PEDV vaccine may need to include either epitopes or the entire M protein in the vaccine design. Epitopes in the M protein are generally more conserved than those in the S protein; they thus have a potential use in the development of a detection kit.",
+            "cite_spans": [
+                {
+                    "start": 612,
+                    "end": 616,
+                    "text": "(48)",
+                    "ref_id": "BIBREF49"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "As our B-cell epitopes are predicted based on consensus sequence of each group of the S and M proteins, the epitope sequence may not match 100% with all PEDV strains/variants. However, some epitopes are highly conserved as evidenced by a high percentage of strain coverage among global PEDV strains. Epitopes in the M protein were found to be more conserved compared with those in the S protein. Within the S protein, epitopes in the S2 subunit are more conserved than those in the S1 subunit. These conserved epitopes may serve as candidates for the development of a multi-epitope universal vaccine.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Taken together, the method combining immunoinformatics with immunoassays enabled the identification of novel neutralizing linear B-cell epitopes on the PEDV S and M proteins. Even though these B-cell epitopes are derived from a consensus sequence, some are highly conserved among the global PEDV strains, which represent a promising vaccine target for the development of a universal epitope-based vaccine as well as for antibody detection. Importantly, the immunoinformatics method developed in this study can serve as a useful tool for the prediction of linear B-cell epitopes from proteins of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Amino acid sequences of the PEDV S and M proteins were retrieved from NCBI (https://www.ncbi.nlm.nih.gov/protein/). The retrieved protein sequences were analyzed individually based on a defined name and length using Sublime Text 3 program. Based on sequence similarity, the amino acid sequences of the S and M proteins were grouped using alignment and phylogenetic tree tools in the SeaView program (version 4). In the SeaView program, these amino acid sequences were aligned using MUSCLE and grouped using a tree based on distance analysis, NJ method, ignore gap, and bootstrap 1,000 replication. The consensus sequence of each group was generated using the MUSCLE method in Unipro UGENE program (version 1.24.2; September 1, 2016) (49, 50) . These consensus sequences were then subjected to epitope prediction.",
+            "cite_spans": [
+                {
+                    "start": 733,
+                    "end": 737,
+                    "text": "(49,",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 738,
+                    "end": 741,
+                    "text": "50)",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Protein Sequence Retrieval and Phylogenetic Analysis"
+        },
+        {
+            "text": "Immunoinformatics tools were exploited to predict B-cell epitopes and properties of the amino acid residues. Firstly, linear B-cell epitope prediction was performed using BepiPred-2.0 (http://www.cbs.dtu.dk/services/BepiPred/), which predicts linear B-cell epitopes from a protein sequence, using a random forest algorithm trained on epitopes and non-epitope amino acids determined from crystal structures, followed by performing sequential prediction smoothing (51) . In our study, the residues with the threshold score of epitope probability above 0.5 were considered as parts of a B-cell epitope. Putative B-cell epitopes were selected based on the region with at least six consecutive residues predicted to have epitope probability above 0.5. Notably, BepiPred-2.0 also predicts and provides accessibility and coil probability of each amino acid residue. In addition, other properties of the proteins were also characterized using multiple immunoinformatics tools provided by IEDB (http:// tools.iedb.org/bcell/), except IUPred. IUPred (https://iupred.elte. hu/) was used to predict intrinsically unstructured proteins which infers to coil probability (52) . The method of Emini (53) was used to predict surface accessibility, while the method of Kolaskar and Tongaonkar, the semi-empirical method (54) , was used to predict antigenicity determinant. Hydrophilicity of the protein was predicted using the method of Parker. The results of prediction from each method were aligned and three methods for identifying and selecting candidate B-cell epitopes were created based on the four known B-cell epitopes derived from PEDV protein as described in the result part.",
+            "cite_spans": [
+                {
+                    "start": 462,
+                    "end": 466,
+                    "text": "(51)",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1156,
+                    "end": 1160,
+                    "text": "(52)",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1183,
+                    "end": 1187,
+                    "text": "(53)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 1302,
+                    "end": 1306,
+                    "text": "(54)",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "B-Cell Epitope Prediction"
+        },
+        {
+            "text": "As epitopes were predicted based on consensus sequences of each group of the PEDV S (14 groups) and M (5 groups) proteins, we further analyzed the conservancy of our predicted epitopes. Epitope conservancy was analyzed by calculating the percent strain coverage of the predicted epitopes in comparison to all of the sequences in the group using the formula below. Blood samples (10 ml) were collected from pigs naturally infected with PEDV. Infected pigs were observed and diagnosed by a veterinarian based on signs and symptoms of PED. Pigs showing PED signs or had been diagnosed with PED within the past 4 weeks were used as subjects. Bloods were collected from two different pig strains: F1 sow (Danish Landrace, age 35-40 weeks old) and F3 fattening pigs (Danish Landrace \u00d7 Large white \u00d7 Danish Duroc, age 7-12 weeks old). Blood was collected from 13 female F1 pigs and 14 either male or female pigs raised in three different farms. Control sera were prepared from 10 uninfected F3 pigs (age 7 weeks old) raised in the animal research facility of Mahidol University. Bloods were left to clot at room temperature for approximately 2 h, followed by centrifugation at 1,500\u00d7g for 10 min in a refrigerated centrifuge to separate the serum. Serum was aliquoted and separated to new tubes and stored at \u221220\u00b0C until used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Epitope Conservancy Analysis"
+        },
+        {
+            "text": "PEDV used in this study is a lineage of PEDV CV777, designated ACC_PEDV (classification is shown in Figures 1B, D) . Vero cells were cultured in complete DMEM medium supplemented with 10% fetal bovine serum (FBS, HyClone) and 1% penicillin/ streptomycin (Pen/Strep, Gibco), and then incubated at 37\u00b0C with 5% CO 2 . The seed virus was sequentially propagated in Vero cell with PEDV medium [DMEM supplemented with 0.02% yeast extract (HiMedia), 10 mg/ml of trypsin (Sigma), and 0.3% tryptose phosphate broth] (tryptose, 20 g/L; dextrose, 2 g/L; sodium chloride, 5 g/L; disodium hydrogen phosphate, 2.5 g/L). To prepare the PEDV stock, Vero cells were cultured in 10 T-175 flasks. When the cell confluency was over 90%, the old medium was removed and the cells were infected with PEDV resuspended in 20 ml of PEDV medium. When the cytopathic effect (CPE) reached 70%, the medium was harvested and pooled. Sodium chloride (NaCl) was added to the medium to a final concentration of 0.5 M and polyethylene glycol (PEG, Sigma) was then added to a final concentration of 8%. After an overnight incubation, PEDV was harvested by centrifugation at 8,000 rpm for 20 min. The viral pellet was next resuspended in 5 ml of endotoxin-free PBS, aliquoted in a small volume to new tubes, and stored at \u221280\u00b0C. Virus titer was determined using 50% tissue culture infectious dose (TCID 50 ) method. Virus suspension was diluted in 10-fold serial dilutions and pipetted into 10 wells of confluent Vero cells. After 3 days post-infection, PEDV-infected cells were observed and counted using immunofluorescence staining assay. TCID 50 was next calculated.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 100,
+                    "end": 114,
+                    "text": "Figures 1B, D)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Cell and PEDV Preparation"
+        },
+        {
+            "text": "Three days post-infection, Vero cells in 96-well plate were fixed with 1% formaldehyde at RT for 15 min and then washed with PBS once. Cells were permeabilized with cold 90% methanol and then incubated at 4\u00b0C for 5 min. Cells were washed once with PBS and blocked with 2% FBS/PBS for 1 h at RT. The blocking solution in each well was replaced with 50 \u03bcl of mouse anti-PEDV (Median Diagnostic) diluted 1:1,000 in PBS. Following an incubation for 2 h at RT, the cells were washed twice with PBS. Secondary antibody, donkey anti-mouse IgG conjugated with Alexa Fluor \u00ae 594 (Abcam) diluted 1:1,000 in PBS, was added to the cell and incubated for 1 h at RT. The cells were washed twice with PBS and then the nucleus was stained with DAPI (Sigma) diluted 1:1,000 in PBS and incubated at RT for 30 min, followed by washing once with PBS. Fluorescence images were directly examined under an inverted fluorescence microscope (Olympus DP74).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunofluorescence Staining Assay"
+        },
+        {
+            "text": "All pig serum samples were 2-fold serially diluted with DMEM containing 1% Pen/Strep to the dilution ranging from 1:32 to 1:4,096. PEDV at the concentration of 200 TCID 50 /ml was prepared using PEDV medium. PEDV (10 TCID 50 in 50 ml) was mixed with 50 ml of diluted serum or medium (control) and incubated at 37\u00b0C with 5% CO 2 . After, a 1-h incubation, the mixture of 100 ml was transferred into 96-well plates containing approximately 90% confluent monolayer of Vero cells. Each condition was performed in duplicate. After a 3-h incubation, the medium was removed and replaced with new PEDV medium. At day 3 post-infection, immunofluorescence staining assay was performed and the number of infected cells was counted. Endpoint neutralizing antibody titer was determined based on the serum dilution that completely inhibited virus infection. As all of the sera from the control pig did not neutralize PEDV at dilution 1:32 and higher, we thus set the cutoff of neutralizing antibody at neutralization titer 32 (reciprocal dilution titer). Only sera with neutralization titer \u226532 were subject to ELISA and neutralization and inhibition assay.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Antibody Neutralization Assays"
+        },
+        {
+            "text": "Synthetic peptides (0.75 nmol in 50 ml PBS/per well) were added into 96-well ELISA microplates (Greiner Bio-One). After an overnight incubation at 4\u00b0C, plates were washed three times using PBS containing 0.05% Tween 20 (PBST). Plates were blocked using 100 ml of PBST containing 5% FBS and incubated with agitation at room temperature (RT) for 1 h. Pig sera diluted 1:50 in PBST containing 1% FBS were added to the plates. After a 2-h incubation at RT, the plates were washed three times with PBST, and goat anti-pig IgG HRP antibody (Abcam) diluted 1:10,000 in PBST containing 1% FBS was added to the well (60 ml/well), followed by an incubation at RT for 90 min. After a three-time wash with PBST, the TMB substrate (BioLegend) was added (70 ml/well) and the plate was incubated in the dark at RT for 30 min, allowing the color to develop. The reaction was stopped by adding 35 ml of 1 M sulfuric acid (H 2 SO 4 ), and the optical density was measured at a wavelength of 450 (OD450) (Multiskan FC, Thermo Scientific).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ELISA"
+        },
+        {
+            "text": "Neutralization-inhibition assay was conducted as previously described by Shi et al. (42) with some modifications. Sera from three F1 pigs (F1 1-3, F-1 1-4, and F1 1-5) and one F3 pig (F3 1-10) were subject to the assay. Serum was 2-fold serially diluted with DMEM containing 1% antibiotic to the dilution ranging from 1:32 to 1:256. PEDV was diluted in PEDV medium to 2,000 TCID 50 /ml. Synthetic peptides were mixed with the diluted serum to a final concentration of 200 nmol/ml in a volume of 50 ml. After an incubation at 37\u00b0C for 1 h, PEDV (100 TCID 50 in 50 ml) was added to the peptide-serum mixture. After an incubation at 37\u00b0C for 1 h, the mixture (100 ml) was transferred to the Vero cells grown in 96-well plates. Following an incubation at 37\u00b0C with 5% CO 2 .for 3 h, the virus suspension was removed from the well and a new medium was added into the wells. In addition, the conditions that the Vero cells were incubated with i) medium alone, ii) serum alone, iii) PEDV alone, and iv) the mixture of PEDV and serum were also included in the assay as control conditions. All conditions were performed in duplicate. Following a 3-day (F1 1-4 and F1 1-5) or 5-day (F1 1-3 and F3 1-10) incubation, PEDV infection in Vero cell was investigated using immunofluorescence staining assay. Neutralization inhibition mediated by a peptide was determined at the endpoint neutralizing antibody titer.",
+            "cite_spans": [
+                {
+                    "start": 73,
+                    "end": 88,
+                    "text": "Shi et al. (42)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Neutralization-Inhibition Assay"
+        },
+        {
+            "text": "Putative neutralizing B-cell epitopes were aligned and compared with full-length S protein of PEDV USA/Colorado/2013 strain for the identification of epitope position. To localize each epitope within the trimeric PEDV S protein, the prefusion structure of the PEDV spike named 6VV5 (35) was used as a model. All predicted epitopes were depicted using PyMOL 2.3.4 program.",
+            "cite_spans": [
+                {
+                    "start": 282,
+                    "end": 286,
+                    "text": "(35)",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Labeling of Neutralizing B-Cell Epitopes"
+        },
+        {
+            "text": "The statistical significance of the samples in different groups was analyzed using SPSS 22 for Windows software (SPSS, USA). Data analyses were performed using non-parametric Mann-Whitney U test. The difference between the two groups was determined based on p <0.05. Immunodominant and subdominant epitopes were defined with the following criteria. In response to a particular peptide, if all sera from both F1 and F3 pigs exhibited OD450 value higher than OD450 mean of the control group + 2SD, such peptide was considered an immunodominant. On the other hand, if all sera from both F1 and F3 pigs exhibited OD450 value higher than OD450 mean of the control group + 1SD, such peptide was considered a subdominant epitope.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "The original contributions presented in the study are included in the article/Supplementary Material. Further inquiries can be directed to the corresponding author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY STATEMENT"
+        },
+        {
+            "text": "The animal study was reviewed and approved by King Mongkut's University of Technology Thonburi Institutional Animal Care and Use Committee (IACUC). Written informed consent for participation was not obtained from the owners because informed consent was obtained through verbal agreement between the veterinarian and farm owners.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ETHICS STATEMENT"
+        },
+        {
+            "text": "KP designed and performed the experiments, analyzed and interpreted the data, wrote the original draft, and revised the manuscript. MR supervised the immunoinformatics methods and experimental design. PM provided the materials and reagent. KK prepared the uninfected pig sera. TH provided financial support, materials, and reagents. PJ collected the blood samples from PEDV-infected pigs. YR designed the experiments, analyzed and interpreted the data, provided supervision to KP, and reviewed and edited the manuscript. All authors read the manuscript and gave comments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        },
+        {
+            "text": "This study received funding from B.F. Feed Company Limited. The funder was not involved in the study design, collection, analysis, interpretation of data, the writing of this article, or the decision to submit it for publication. The PhD study of KP is funded by the Development and Promotion of Science and Technology Talents Project (DPST).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "FUNDING"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Updated Estimated Economic Welfare Impacts of Porcine Epidemic Diarrhea Virus (PEDV)",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Paarlberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "14",
+            "issn": "",
+            "pages": "1--38",
+            "other_ids": {
+                "DOI": [
+                    "10.22004/ag.econ.174517"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Porcine Epidemic Diarrhoea Virus: A Comprehensive Review of Molecular Epidemiology, Diagnosis, and Vaccines",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Virus Genes",
+            "volume": "44",
+            "issn": "2",
+            "pages": "167--75",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11262-012-0713-1"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Origin, Evolution, and Genotyping of Emergent Porcine Epidemic Diarrhea Virus Strains in the United States",
+            "authors": [
+                {
+                    "first": "Y-W",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Dickerman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pi\u00f1eyro",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kiehne",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "MBio",
+            "volume": "4",
+            "issn": "5",
+            "pages": "737--750",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/mBio.00737-13"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Outbreak of Porcine Epidemic Diarrhea in Suckling Piglets",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Cr",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "China. Emerging Infect Dis",
+            "volume": "18",
+            "issn": "1",
+            "pages": "161--164",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid1801.111259"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Porcine Epidemic Diarrhea Virus: Current Insights",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Virus Adapt Treat",
+            "volume": "8",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {
+                "DOI": [
+                    "10.2147/VAAT.S107275"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Porcine Epidemic Diarrhea Virus: An Emerging and Re-Emerging Epizootic Swine Virus",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Virol J",
+            "volume": "12",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12985-015-0421-2"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Genetic Diversity of ORF3 and Spike Genes of Porcine Epidemic Diarrhea Virus in Thailand",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Temeeyasen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Srijangwad",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tripipat",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tipsombatboon",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Piriyapongsa",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Phoolcharoen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Infect Genet Evol",
+            "volume": "21",
+            "issn": "",
+            "pages": "205--218",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.meegid.2013.11.001"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "A Guide to Vaccinology: From Basic Principles to New Developments",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Pollard",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bijker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nat Rev Immunol",
+            "volume": "21",
+            "issn": "2",
+            "pages": "83--100",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41577-020-00479-7"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Identification of a Conserved Linear B-Cell Epitope in the M Protein of Porcine Epidemic Diarrhea Virus",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Virol J",
+            "volume": "9",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1743-422X-9-225"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A Conserved Domain in the Coronavirus Membrane Protein Tail is Important for Virus Assembly",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Arndt",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Larson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Hogue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Virol",
+            "volume": "84",
+            "issn": "21",
+            "pages": "11418--11446",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.01131-10"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The S2 Glycoprotein Subunit of Porcine Epidemic Diarrhea Virus Contains Immunodominant Neutralizing Epitopes",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Okda",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lawson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singrey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Nelson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hain",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Joshi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Virology",
+            "volume": "509",
+            "issn": "",
+            "pages": "185--94",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virol.2017.06.013"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Identification of Neutralizing Monoclonal Antibodies Targeting Novel Conformational Epitopes of the Porcine Epidemic Diarrhoea Virus Spike",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Protein. Sci Rep",
+            "volume": "9",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-019-39844-5"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The Coronavirus Spike Protein is a Class I Virus Fusion Protein: Structural and Functional Characterization of the Fusion Core Complex",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bosch",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Van Der Zee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "De Haan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rottier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J Virol",
+            "volume": "77",
+            "issn": "16",
+            "pages": "8801--8812",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.77.16.8801-8811.2003"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Mutation in the Cytoplasmic Retrieval Signal of Porcine Epidemic Diarrhea Virus Spike (S) Protein is Responsible for Enhanced Fusion Activity",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shirato",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Maejima",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matsuyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ujike",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Miyazaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Takeyama",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Virus Res",
+            "volume": "161",
+            "issn": "2",
+            "pages": "188--93",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2011.07.019"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Identification of the Epitope Region Capable of Inducing Neutralizing Antibodies Against the Porcine Epidemic Diarrhea Virus",
+            "authors": [
+                {
+                    "first": "S-H",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-L",
+                    "middle": [],
+                    "last": "Bae",
+                    "suffix": ""
+                },
+                {
+                    "first": "T-J",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "G-H",
+                    "middle": [],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-W",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Mol Cells",
+            "volume": "14",
+            "issn": "2",
+            "pages": "295--304",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Proteolytic Activation of the Porcine Epidemic Diarrhea Coronavirus Spike Fusion Protein by Trypsin in Cell Culture",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Wicht",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Willems",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Meuleman",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wubbolts",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Kuppeveld",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Virol",
+            "volume": "88",
+            "issn": "14",
+            "pages": "7952--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00297-14"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Two-Step Conformational Changes in a Coronavirus Envelope Glycoprotein Mediated by Receptor Binding and Proteolysis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matsuyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Taguchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Virol",
+            "volume": "83",
+            "issn": "21",
+            "pages": "11133--11174",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00959-09"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Identification of a Novel Linear B-Cell Epitope Within the Collagenase Equivalent Domain of Porcine Epidemic Diarrhea Virus Spike Glycoprotein",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Qiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Virus Res",
+            "volume": "266",
+            "issn": "",
+            "pages": "34--42",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2019.04.003"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Recombinant Adenovirus Carrying a Core Neutralizing Epitope of Porcine Epidemic Diarrhea Virus and Heat-Labile Enterotoxin B of Escherichia Coli as a Mucosal Vaccine",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Do",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Dao",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Hahn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Arch Virol",
+            "volume": "165",
+            "issn": "3",
+            "pages": "609--627",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00705-019-04492-7"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "PED Subunit Vaccine Based on COE Domain Replacement of Flagellin Domain D3 Improved Specific Humoral and Mucosal Immunity in Mice",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Vaccine",
+            "volume": "36",
+            "issn": "11",
+            "pages": "1381--1389",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vaccine.2018.01.086"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Oral Recombinant Lactobacillus Vaccine Targeting the Intestinal Microfold Cells and Dendritic Cells for Delivering the Core Neutralizing Epitope of Porcine Epidemic Diarrhea Virus",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Microb Cell Fact",
+            "volume": "17",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12934-018-0861-7"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Identification of Two Novel B Cell Epitopes on Porcine Epidemic Diarrhea Virus Spike Protein",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Vet Microbiol",
+            "volume": "131",
+            "issn": "1-2",
+            "pages": "73--81",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vetmic.2008.02.022"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Putative Phage-Display Epitopes of the Porcine Epidemic Diarrhea Virus S1 Protein and Their Anti-Viral Activity",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ge",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zarlenga",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Virus Genes",
+            "volume": "51",
+            "issn": "2",
+            "pages": "217--241",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11262-015-1234-5"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Phage-Displayed Peptides Having Antigenic Similarities With Porcine Epidemic Diarrhea Virus (PEDV) Neutralizing Epitopes",
+            "authors": [
+                {
+                    "first": "Djm",
+                    "middle": [],
+                    "last": "Cruz",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-J",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "H-J",
+                    "middle": [],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Virology",
+            "volume": "354",
+            "issn": "1",
+            "pages": "28--34",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virol.2006.04.027"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "The GPRLQPY Motif Located at the Carboxy-Terminal of the Spike Protein Induces Antibodies That Neutralize Porcine Epidemic Diarrhea Virus",
+            "authors": [
+                {
+                    "first": "Djm",
+                    "middle": [],
+                    "last": "Cruz",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-J",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "H-J",
+                    "middle": [],
+                    "last": "Shin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Virus Res",
+            "volume": "132",
+            "issn": "1",
+            "pages": "192--198",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2007.10.015"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "PEDV Immunodominant and Neutralizing Epitopes Frontiers in Immunology | www",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Polyiam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2022,
+            "venue": "",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Novel in Silico Tools for Designing Peptide-Based Subunit Vaccines and Immunotherapeutics",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Dhanda",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Usmani",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Agrawal",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Nagpal",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gautam",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Raghava",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Briefings Bioinf",
+            "volume": "18",
+            "issn": "3",
+            "pages": "467--78",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/bib/bbw025"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "In-Silico Design of a Multi-Epitope Vaccine Candidate Against Onchocerciasis and Related Filarial Diseases",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Shey",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ghogomu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Esoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Nebangwa",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Shintouo",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Nongley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sci Rep",
+            "volume": "9",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-019-40833-x"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Immunoinformatics Approach for Multi-Epitope Vaccine Design Against Structural Proteins and ORF1a Polyprotein of Severe Acute Respiratory Syndrome Coronavirus-2 (SARS-CoV-2)",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Adam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Trop Dis Travel Med Vaccines",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s40794-021-00147-1"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Immunoinformatic Design of a COVID-19 Subunit Vaccine Using Entire Structural Immunogenic Epitopes of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Behmard",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Soleymani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Najafi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Barzegari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Rep",
+            "volume": "10",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-020-77547-4"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Epitope Database and Analysis Resource",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iedb",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Immune",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Structural Analysis of B-Cell Epitopes in Antibody: Protein Complexes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kringelum",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Padkjaer",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Lund",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Mol Immunol",
+            "volume": "53",
+            "issn": "1",
+            "pages": "24--34",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.molimm.2012.06.001"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Identification of a Novel B-Cell Epitope in the Spike Protein of Porcine Epidemic Diarrhea Virus",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zuo",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Virol J",
+            "volume": "17",
+            "issn": "1",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12985-020-01305-1"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Spike Protein Region (Aa 636789) of Porcine Epidemic Diarrhea Virus is Essential for Induction of Neutralizing Antibodies",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Acta Virol",
+            "volume": "51",
+            "issn": "3",
+            "pages": "149--56",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Structure and Immune Recognition of the Porcine Epidemic Diarrhea Virus Spike Protein",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Kirchdoerfer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bhandari",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Martini",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sewall",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bangaru",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Structure",
+            "volume": "29",
+            "issn": "4",
+            "pages": "385--92",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.str.2020.12.003"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Identification of a Highly Antigenic Linear B Cell Epitope Within Plasmodium Vivax Apical Membrane Antigen 1 (AMA-1)",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bueno",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Lobo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Morais",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mour\u00e3o",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ram",
+                    "middle": [],
+                    "last": "De A\u0301vila",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Soares",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "PloS One",
+            "volume": "6",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0021289"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Immunodominant Linear B Cell Epitopes in the Spike and Membrane Proteins of SARS-CoV-2 Identified by Immunoinformatics Prediction and Immunoassay",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Polyiam",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Phoolcharoen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Butkhot",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Srisaowakarn",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Thitithanyanont",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Auewarakul",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Sci Rep",
+            "volume": "11",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-021-99642-w"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Full-Length Genome Analysis of Two Genetically Distinct Variants of Porcine Epidemic Diarrhea Virus in Thailand",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Cheun-Arom",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Temeeyasen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tripipat",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kaewprommal",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Piriyapongsa",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sukrong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Infect Genet Evol",
+            "volume": "44",
+            "issn": "",
+            "pages": "114--135",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.meegid.2016.06.046"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Linear Epitope Landscape of the SARS-CoV-2 Spike Protein Constructed From 1",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "51--70",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Linear Epitopes of SARS-CoV-2 Spike Protein Elicit Neutralizing Antibodies in COVID-19 Patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Mol Immunol",
+            "volume": "17",
+            "issn": "10",
+            "pages": "1095--1102",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41423-020-00523-5"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Viral Epitope Profiling of COVID-19 Patients Reveals Cross-Reactivity and Correlates of Severity",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Shrock",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Fujimura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kula",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Timms",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Leng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "370",
+            "issn": "6520",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abd4250"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Identification of Conserved Neutralizing Linear Epitopes Within the VP1 Protein of Coxsackievirus A16",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Vaccine",
+            "volume": "",
+            "issn": "17",
+            "pages": "2130--2136",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.vaccine.2013.02.051"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Cell Attachment Domains of the Porcine Epidemic Diarrhea Virus Spike Protein are Key Targets of Neutralizing Antibodies",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "De Esesarte",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Den Elzen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Aarts",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Virol",
+            "volume": "91",
+            "issn": "12",
+            "pages": "273--290",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.00273-17"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Cellular Entry of the Porcine Epidemic Diarrhea Virus",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Kuppeveld",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rottier",
+                    "suffix": ""
+                },
+                {
+                    "first": "B-J",
+                    "middle": [],
+                    "last": "Bosch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Virus Res",
+            "volume": "226",
+            "issn": "",
+            "pages": "117--144",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2016.05.031"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Identification and Comparison of Receptor Binding Characteristics of the Spike Protein of Two Porcine Epidemic Diarrhea Virus Strains",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Navid",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Viruses",
+            "volume": "8",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/v8030055"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Functional Characterization of Heptad Repeat 1 and 2 Mutants of the Spike Protein of Severe Acute Respiratory Syndrome Coronavirus",
+            "authors": [
+                {
+                    "first": "W-E",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C-K",
+                    "middle": [],
+                    "last": "Chuang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-H",
+                    "middle": [],
+                    "last": "Yeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M-S",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chen",
+                    "middle": [],
+                    "last": "Ss-L",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Virol",
+            "volume": "80",
+            "issn": "7",
+            "pages": "3225--3262",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.80.7.3225-3237.2006"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Functional Mapping of B-Cell Linear Epitopes of SARS-CoV-2 in COVID-19 Convalescent Population",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ling",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerg Microbes Infect",
+            "volume": "9",
+            "issn": "1",
+            "pages": "1988--96",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/22221751.2020.1815591"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Neutralization of Porcine Transmissible Gastroenteritis Virus by Complement-Dependent Monoclonal Antibodies",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Woods",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Wesley",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kapke",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "Am J Vet Res",
+            "volume": "49",
+            "issn": "3",
+            "pages": "300--304",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "A Unified Bioinformatics Toolkit",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Okonechnikov",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Golosova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fursov",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ugene",
+                    "middle": [],
+                    "last": "Unipro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "28",
+            "issn": "",
+            "pages": "1166--1173",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/bioinformatics/bts091"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Unipro UGENE NGS Pipelines and Components for Variant Calling, RNA-Seq and ChIP-Seq Data Analyses",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Golosova",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Henderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Vaskin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gabrielian",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Grekhov",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Nagarajan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "PeerJ",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7717/peerj.644"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "BepiPred-2.0: Improving Sequence-Based B-Cell Epitope Prediction Using Conformational Epitopes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Jespersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Peters",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nielsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Marcatili",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nucleic Acids Res",
+            "volume": "45",
+            "issn": "W1",
+            "pages": "24--33",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/nar/gkx346"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "The Pairwise Energy Content Estimated From Amino Acid Composition Discriminates Between Folded and Intrinsically Unstructured Proteins",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Dosztanyi",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Csizmok",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tompa",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Simon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Mol Biol",
+            "volume": "347",
+            "issn": "4",
+            "pages": "827--866",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmb.2005.01.071"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Induction of Hepatitis A Virus-Neutralizing Antibody by a Virus-Specific Synthetic Peptide",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Emini",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Hughes",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Perlow",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Boger",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "J Virol",
+            "volume": "55",
+            "issn": "3",
+            "pages": "836--845",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/jvi.55.3.836-839.1985"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "A Semi-Empirical Method for Prediction of Antigenic Determinants on Protein Antigens",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kolaskar",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tongaonkar",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "FEBS Lett",
+            "volume": "",
+            "issn": "",
+            "pages": "172--176",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/0014-5793(90)80535-Q"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Immunoinformatics prediction of the linear B-cell epitopes from the consensus sequence of the M protein. Consensus sequences from the M protein were subject to B-cell epitope prediction using prediction methods describe inFigure 2A(A). Consensus sequence from group M-3 is shown as a representative. Linear B-cell epitopes were then identified based on the criteria of those three prediction methods. Predicted peptides obtained from all five groups of the M protein were then aligned (B). Peptides selected for further experimental validation are indicated in the \"selected epitope\" line with the designated name.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Predicted B-cell epitopes of the PEDV S protein. B-cell epitopes were predicted from the consensus sequences of 14 groups of the S protein.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Conservancy of each predicted epitope among global PEDV strains. Strain coverage of the predicted epitopes of the M and S proteins are shown in (A, B), respectively. Percentage of strain coverage was calculated based on 100% amino acid sequence identity between the predicted epitope and the target sequence.Depiction of the Identified B-Cell Epitopes in the 3-D Structure of the PEDV S ProteinSurface representation of all epitopes is depicted on the prefusion structure of the trimeric S protein of the PEDV strain USA/ Colorado/2013 (PDB: 6VV5) (35) using PyMOL 2.3.4. As shown in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Neutralization titer of the pig sera. Pig sera were 2-fold serially diluted ranging from 1:32 to 1:4,096 and incubated for 1 h with PEDV (10 TCID 50 ) before adding to Vero cells grown in 96-well plates (10 wells/dilution). PEDV infection was investigated by immunofluorescence staining using anti-PEDV monoclonal antibody at day 3 post-inoculation. Only serum samples with neutralization titer at least 32 are shown and chosen for further studies.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "(B, D) Landscape of the immunodominant B-cell epitopes on the PEDV M and S proteins, respectively. Positions of amino acid residues in the M and S proteins are based on the sequence of PEDV CV777 (accession no. AAK38659.1). The N-terminal domain (NTD), fusion peptide (FP), heptad repeat regions (HR1 and HR2), and transmembrane domain (TM) are indicated in the diagram. All immunodominant epitopes and some subdominant epitopes with their locations are indicated on the protein.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Surface representation and locations of the B-cell epitopes on the PEDV S protein. (A) Surface representation of the B-cell epitopes on the 3-D structure of the trimeric PEDV S protein (PDB: 6VV5) (35). The left panel demonstrates the epitopes in the COE and immunodominant epitopes; the right panel demonstrates all other epitopes with subdominant epitopes highlighted in bold. (B) Localization and secondary structure of the epitopes on the monomeric S protein. Immunodominant and subdominant epitopes are highlighted in bold. (C) Close-ups of immunodominant epitopes. (D) Close-ups of neutralizing epitopes in the COE domain.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "accession sequences with 100% match to the predicted epitope Total accession number in the group \u00c2 100Peptide Synthesis and PreparationPeptides corresponding to the predicted epitopes were chemically synthesized (Mimotopes, Australia). All synthetic peptides include i) 57 predicted epitopes; ii) 3 known reference B-cell epitopes, SS2 (YSNIGVCK)(22), SS6 (LQDGQVKI)(22), and 2C10 (GPRLQPY)(25); and iii) irrelevant peptides, N (MHC) (LADSYEITY) and E(CTL) (AVYTPIGRLY). Synthetic peptides were dissolved to the concentration of 3 nmol/ml (3 mM) as a peptide stock in sterile distilled water containing 0.1% acetic acid. Peptide stocks were aliquoted and stored at \u221220\u00b0C until used.Animal Ethics and Preparation of Pig SeraAll procedures of sample collection from pigs raised in the farms were performed in accordance with the guidelines of the Institutional Animal Care and Use Committee (IACUC) of Institute for Animals for Scientific Purpose Development and carried out under the regulation and permission of King Mongkut's University of Technology Thonburi IACUC protocol no. KMUTT-IACUC-2019/018. For the control group, pigs were raised in the animal research facility of Mahidol University. All procedures were carried out under the regulation and permission of the Faculty of Veterinary Science, Mahidol University IACUC protocol No. MUVS-KA-2021-01-01.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Predicted B-cell epitopes of the PEDV M and S proteins that were selected for further experimental validation.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Continued * Positions of amino acid residues are based on the M and S amino acid sequences of PEDV CV777.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Potential as a neutralizing epitope determined by neutralizion-inhibition assay.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to thank B.F. Feed Company Limited for providing blood samples from PEDV-infected pigs. We thank Sochanwattey Meas for her help with pig sample collection and preparation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        },
+        {
+            "text": "The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.Publisher's Note: All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.Copyright \u00a9 2022 Polyiam, Ruengjitchatchawalya, Mekvichitsaeng, Kaeoket, Hoonsuwan, Joiphaeng and Roshorm. This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SUPPLEMENTARY MATERIAL"
+        }
+    ]
+}

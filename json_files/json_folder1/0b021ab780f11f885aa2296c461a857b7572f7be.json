@@ -1,0 +1,3452 @@
+{
+    "paper_id": "0b021ab780f11f885aa2296c461a857b7572f7be",
+    "metadata": {
+        "title": "Modeling the impact of delaying surgery for early esophageal cancer in the era of COVID-19",
+        "authors": [
+            {
+                "first": "Maren",
+                "middle": [
+                    "E"
+                ],
+                "last": "Shipe",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Vanderbilt University Medical Center",
+                    "location": {
+                        "settlement": "Nashville",
+                        "region": "TN",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jordan",
+                "middle": [
+                    "J"
+                ],
+                "last": "Baechle",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Meharry Medical College",
+                    "location": {
+                        "settlement": "Nashville",
+                        "region": "TN",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Stephen",
+                "middle": [
+                    "A"
+                ],
+                "last": "Deppen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Tennessee Valley Healthcare System",
+                    "location": {
+                        "settlement": "Nashville",
+                        "region": "TN",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Erin",
+                "middle": [
+                    "A"
+                ],
+                "last": "Gillaspie",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Vanderbilt University Medical Center",
+                    "location": {
+                        "addrLine": "609 Oxford House, 1313 21st Ave. South",
+                        "postCode": "37232",
+                        "settlement": "Nashville",
+                        "region": "TN",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Eric",
+                "middle": [
+                    "L"
+                ],
+                "last": "Grogan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Tennessee Valley Healthcare System",
+                    "location": {
+                        "settlement": "Nashville",
+                        "region": "TN",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background Surgical society guidelines have recommended changing the treatment strategy for early esophageal cancer during the novel coronavirus pandemic. Delaying resection can allow for interim disease progression, but the impact of this delay on mortality is unknown. The COVID-19 infection rate at which immediate operative risk exceeds benefit is unknown. We sought to model immediate versus delayed surgical resection in a T1b esophageal adenocarcinoma. Methods A decision analysis model was developed, and sensitivity analyses performed. The base case was a 65-year-old male smoker presenting with cT1b esophageal adenocarcinoma scheduled for esophagectomy during the COVID-19 pandemic. We compared immediate surgical resection to delayed resection after 3 months. The likelihood of key outcomes was derived from the literature where available. The outcome was 5-year overall survival. Results Proceeding with immediate esophagectomy for the base case scenario resulted in slightly improved 5-year overall survival when compared to delaying surgery by 3 months (5-year overall survival 0.74 for immediate and 0.73 for delayed resection). In sensitivity analyses, a delayed approach became preferred when the probability of perioperative COVID-19 infection increased above 7%. Conclusions Immediate resection of early esophageal cancer during the COVID-19 pandemic did not decrease 5-year survival when compared to resection after 3 months for the base case scenario. However, as the risk of perioperative COVID-19 infection increases above 7%, a delayed approach has improved 5-year survival. This balance should be frequently re-examined by surgeons as infection risk changes in each hospital and community throughout the COVID-19 pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "on resources has decreased, or to consider alternative therapies (such as neoadjuvant treatment or endoscopic resection). The guidelines for esophageal adenocarcinoma suggest expedient resection by endoscopic approach for superficial disease or surgical resection of clinical stage T1b and above during the Phase I response. However, during Phase 2 delaying surgery is recommended for all stages until the COVID-19 burden has decreased [9] . As COVID-19 prevalence spikes and declines in different communities healthcare centers are forced to start and stop non-emergent surgeries such as esophageal resections without data-driven guidelines.",
+            "cite_spans": [
+                {
+                    "start": 436,
+                    "end": 439,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Esophageal cancer is common, ranking seventh in incidence and sixth in mortality worldwide [11] . In the United States, only 20% of patients present with early stage disease. The depth of tumor invasion has been established as the most influential risk factor for nodal involvement [12, 13] . Patients with early stage esophageal cancer without nodal involvement have a > 80% 5-year overall survival compared to < 25% for patients with nodal involvement [14] [15] [16] . A delay in therapy for esophageal adenocarcinoma could result in a drastic reduction in survival.",
+            "cite_spans": [
+                {
+                    "start": 91,
+                    "end": 95,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 282,
+                    "end": 286,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 287,
+                    "end": 290,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 454,
+                    "end": 458,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 459,
+                    "end": 463,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 464,
+                    "end": 468,
+                    "text": "[16]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Surgeons must weigh the risk of esophageal cancer progression secondary to delayed resection against the risk of morbidity and mortality from the COVID-19 infection. This issue will remain important as COVID-19 prevalence fluctuates across the country. The primary aim of this study was to model the optimal management strategy by comparing immediate versus delayed surgical resection in a cT1b esophageal adenocarcinoma during the COVID-19 pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "We developed a decision analysis model to evaluate two treatment strategies for an early esophageal cancer during the COVID-19 pandemic: immediate esophagectomy or delayed esophagectomy after 3 months (Fig. 1) . The decision tree details the initial choice (the decision node) of immediate or delayed resection and follows branch points to the ultimate outcomes of death or 5-year overall survival (terminal nodes). Each operative subtree has chance nodes for operative mortality, perioperative COVID-19 infection, and mortality due to COVID-19. Finally, under the delayed resection choice there is a third option at the first chance node: no surgery due to disease progression in the interim (see below).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 201,
+                    "end": 209,
+                    "text": "(Fig. 1)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Decision model design"
+        },
+        {
+            "text": "We used TreeAge Pro version 2018 (TreeAge Software, Inc., Williamson, MA) to construct the decision tree model. The literature review and expert opinion (when published data was not available) were used to estimate model parameters and ranges for sensitivity analysis. As no human or animal subjects were involved in this project, institutional review board approval and informed consent were not required.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Decision model design"
+        },
+        {
+            "text": "Our base clinical case was a 65-year-old male smoker with a 20 mm cT1b middle esophageal adenocarcinoma. An early stage esophageal adenocarcinoma was chosen for modeling due to the equipoise in society recommendations for treatment of these patients during the COVID-19 pandemic. He had negative preoperative COVID-19 testing. The patient was a candidate for esophagectomy and presented to a hospital during the acute phase of the COVID-19 pandemic. This assumes the presence of COVID-19 in the community and hospital, but not to a degree that hospital resources are exhausted, the institution still has ICU vent capacity and the COVID trajectory is not in the rapid escalation phase.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patients"
+        },
+        {
+            "text": "Treatment simulations were performed for both immediate and delayed resection via minimally invasive or open transhiatal esophagectomy. Assumptions for patients undergoing immediate surgery were a 7-10 days hospitalization [17] [18] [19] [20] , during which time the patient would be at risk for a COVID-19 infection.",
+            "cite_spans": [
+                {
+                    "start": 223,
+                    "end": 227,
+                    "text": "[17]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 228,
+                    "end": 232,
+                    "text": "[18]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 233,
+                    "end": 237,
+                    "text": "[19]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 238,
+                    "end": 242,
+                    "text": "[20]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Treatment strategies"
+        },
+        {
+            "text": "Patients undergoing a delayed resection at 3 months did not undergo interval therapy (neoadjuvant chemotherapy or radiation). Each patient was restaged with imaging prior to surgery to rule out progression; those with clinical stage I or II proceeded with standard operative therapy while those exhibiting progression (stage III or IV) followed a different branch point in the decision analysis ( Fig. 1 and Table 1 ). The COVID-19 prevalence in the community and thus hospital burden was assumed to have decreased to almost zero.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 397,
+                    "end": 403,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 408,
+                    "end": 415,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Treatment strategies"
+        },
+        {
+            "text": "Surgical morbidity was assumed to be identical in immediate or delayed surgery and thus not influenced by the decision to delay. Therefore, they were omitted from the model. Operative mortality was assumed to be equal for immediate or delayed esophagectomy but was included in the model to allow for sensitivity analyses [21] [22] [23] .",
+            "cite_spans": [
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[21]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 326,
+                    "end": 330,
+                    "text": "[22]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 331,
+                    "end": 335,
+                    "text": "[23]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Treatment strategies"
+        },
+        {
+            "text": "The distribution of pathologic stages determined at the time of surgery for a patient with clinical T1b esophageal adenocarcinoma were derived from the literature (Table 1) [24] [25] [26] [27] [28] [29] . The distribution of esophageal cancer stages after delayed resection were adjusted from the baseline distribution to account for potential stage progression during the delay. This included the potential increase in the depth of invasion, which was calculated from reported doubling times in the literature, as well as the possibility of new nodal involvement or metastatic disease [12, 13, 24, [27] [28] [29] [30] . For example, if the base case patient underwent immediate resection he would have a 94% chance of having Stage I disease discovered at the time of surgery; if he underwent delayed resection would have the possibility of disease progression and would only have a 91% chance of having Stage I disease ( Table 1) . As a patient's probability of advanced disease increases, so does their probability of mortality (see below).",
+            "cite_spans": [
+                {
+                    "start": 173,
+                    "end": 177,
+                    "text": "[24]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 178,
+                    "end": 182,
+                    "text": "[25]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 183,
+                    "end": 187,
+                    "text": "[26]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 188,
+                    "end": 192,
+                    "text": "[27]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 193,
+                    "end": 197,
+                    "text": "[28]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 198,
+                    "end": 202,
+                    "text": "[29]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 586,
+                    "end": 590,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 591,
+                    "end": 594,
+                    "text": "13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 595,
+                    "end": 598,
+                    "text": "24,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 599,
+                    "end": 603,
+                    "text": "[27]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 604,
+                    "end": 608,
+                    "text": "[28]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 609,
+                    "end": 613,
+                    "text": "[29]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 614,
+                    "end": 618,
+                    "text": "[30]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 163,
+                    "end": 172,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 922,
+                    "end": 930,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Esophageal cancer"
+        },
+        {
+            "text": "The COVID-19 parameters (Table 1) were derived from the limited published reports available as of April 15, 2020. International reports of the risk of in-hospital COVID-19 exposure reported is much higher than community exposure rates (estimated to be 1-40% of cases) [3, 4, 31] , but this has not been our domestic experience, where the community rate exceeds the hospital rate [32] . Thus, we created one variable, perioperative COVID-19 infection, that encompasses the risk to patients of both communityacquired and hospital-acquired infection around surgery. The risk of perioperative COVID-19 infection for our base case undergoing immediate surgery was set at 1.4% by the research team to reflect the local prevalence of disease.",
+            "cite_spans": [
+                {
+                    "start": 268,
+                    "end": 271,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 272,
+                    "end": 274,
+                    "text": "4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 275,
+                    "end": 278,
+                    "text": "31]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 379,
+                    "end": 383,
+                    "text": "[32]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 24,
+                    "end": 33,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "COVID-19"
+        },
+        {
+            "text": "For the delayed esophagectomy, the risk of perioperative COVID-19 exposure was set to almost zero as the purpose of delaying surgery 3 months was to allow the prevalence to decrease. All delayed patients are at risk for community infection during the delay as well as hospital-acquired infection during re-staging and any recommended therapy-surgery in those not exhibiting progression or port placement and chemotherapy in those who do.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "COVID-19"
+        },
+        {
+            "text": "The risk of COVID-19-related mortality after esophagectomy was derived from reports of hospitalized or institutionalized patients with any type of cancer or other significant comorbidities, which contributed to a more virulent infection and higher acuity disease [4, 31, 33, 34] . We felt these estimates appropriately reflected risk in esophageal patients because of their cancer diagnosis and high prevalence of post-operative pulmonary [35] . The probability of mortality is higher than in the general population of 60-69-year-old patients, which was deemed appropriate for our base case.",
+            "cite_spans": [
+                {
+                    "start": 263,
+                    "end": 266,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 267,
+                    "end": 270,
+                    "text": "31,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 271,
+                    "end": 274,
+                    "text": "33,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 275,
+                    "end": 278,
+                    "text": "34]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 439,
+                    "end": 443,
+                    "text": "[35]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "COVID-19"
+        },
+        {
+            "text": "The 5-year overall survival for esophageal adenocarcinoma by pathological stage was established from the literature ( Table 2) . Progression data for each stage was limited, therefore we used averaged 5-year overall survival data for the substages as an aggregate for stage I-IV disease.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 118,
+                    "end": 126,
+                    "text": "Table 2)",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Five-year overall survival"
+        },
+        {
+            "text": "As COVID-19 is a new disease emerging in late 2019 there is no long-term follow up of patients available for reference. To approximate the effect of COVID-19 on overall survival after esophagectomy, we utilized available data on the impact of significant pulmonary complications after esophagectomy on 5-year overall survival [15, 36] . The decrease in 5-year overall survival due to COVID-19 was set at 0.26 (range 0.1-0.35), and this was used to discount the cancer-related survival for each stage. In other words, if the patient had pathologic stage I esophageal cancer but contracted and survived a perioperative COVID-19 infection, his likelihood of surviving 5-years would decrease from 81 to 59%.",
+            "cite_spans": [
+                {
+                    "start": 326,
+                    "end": 330,
+                    "text": "[15,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 331,
+                    "end": 334,
+                    "text": "36]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Five-year overall survival"
+        },
+        {
+            "text": "One-way sensitivity analyses were performed to account for uncertainty in key model parameters (Tables 1 and 2) and to approximate how differences in the base case could [15, 36] affect the model outcome. This is accomplished by altering one parameter at a time while holding all other variables constant at baseline values. These analyses included varying the stage progression of esophageal adenocarcinoma with the delay, the 5-year overall survival of esophageal adenocarcinoma by stage, the probability of perioperative COVID-19 infection, and the probability of mortality from COVID-19. Two-way sensitivity analysis was performed by simultaneously varying the probability of perioperative COVID-19 infection and COVID-19-related mortality while holding all other parameters constant.",
+            "cite_spans": [
+                {
+                    "start": 170,
+                    "end": 174,
+                    "text": "[15,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 175,
+                    "end": 178,
+                    "text": "36]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 95,
+                    "end": 111,
+                    "text": "(Tables 1 and 2)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Sensitivity analyses"
+        },
+        {
+            "text": "For the base case scenario, proceeding with immediate resection of a cT1b esophageal adenocarcinoma resulted in slightly improved 5-year overall survival when compared to delaying by 3 months to allow for COVID-19 prevalence to decrease from 1.4% to almost zero (5-year overall survival 0.74 for immediate and 0.73 for delayed resection).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "Altering the probability of malignancy or the mortality attributed to each stage of esophageal adenocarcinoma did not change the outcome of favoring immediate esophagectomy. If the model was altered to have decreased stage progression after the 3-month delay (1% change in pathologic stage 1 progression rather than 2%), then the timing of resection was equivocal (0.74). If the probability of perioperative COVID-19 infection was increased to between 4 and 6% then the two choices are equivocal (0.73). If the probability of infection exceeded 7% then delayed resection is increasingly favored. The two-way sensitivity analysis results are presented in Fig. 2 . Delayed resection was increasingly preferred as the probability of either perioperative infection or mortality from COVID-19 are increased. For example, delayed resection was preferred if mortality is > 10% and infection risk is > 8%. Similarly, delayed resection was preferred if mortality is > 50% and infection is > 5%.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 654,
+                    "end": 660,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Sensitivity analyses"
+        },
+        {
+            "text": "Triaging the care of patients requiring non-emergent surgeries during a new infectious disease pandemic presents a new challenge to surgeons of all specialties. Hospitals must balance the consumption of resources potentially needed for COVID patients with the potential harm to cancer patients if operations are delayed. As survival from esophageal cancer precipitously decreases with stage progression [15, 36, 37] , we created a simple and informative model to estimate the potential harm to a patient with an early stage cT1b Our decision analysis model found that delaying resection for 3 months would likely impact 5-year overall survival, though not significantly (0.73 vs. 0.74 for immediate esophagectomy). The model was strongly impacted by the probability of COVID-19 infection as well as the resultant morbidity and mortality. If either of these parameters increased significantly, the model favored delaying resection to theoretically allow for COVID-19 burden to decrease. For example, if the risk of perioperative COVID-19 infection exceeded 7%, a patient undergoing an immediate esophagectomy could have worse survival than with a delayed operation.",
+            "cite_spans": [
+                {
+                    "start": 403,
+                    "end": 407,
+                    "text": "[15,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 408,
+                    "end": 411,
+                    "text": "36,",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 412,
+                    "end": 415,
+                    "text": "37]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The decrease in COVID-19 prevalence at 3 months assumes the success of public health measures such as social distancing, widely available testing and contract tracing. Otherwise, a 3-month delay will carry both risk of disease progression as well as risk of COVID-19 infection. A probability of infection of nearly zero after the delay seems unlikely to occur at this point in the pandemic, but it was chosen for the base case scenario as the ideal outcome. We modeled higher probabilities of infection after the delay and as the probability of infection increased, proceeding immediately with surgery was even more strongly favored. However, while higher rates of COVID-19 after a 3-month delay did not impact the overall outcome of the model, it could impact the resources available for non-emergent surgeries. Hospitals must be equipped to handle not only a surge in patients with COVID-19, but also post-operative patients with or without complications such as prolonged ventilation and intensive care stays.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "While the decision analysis model parameters are very narrow in scope by design, the sensitivity analyses allow for modeling a range of uncertainty. The two-way sensitivity analysis, for example, can allow clinicians to adapt the results to different patient-or community-level factors. If a patient presents who is younger and healthier than our base case, he would likely be at a lower risk for both COVID-19 infection and mortality. Using Fig. 2 , if the probability of infection is set at 1% and the mortality at 5%, then immediate resection is favored. Conversely, an older patient with multiple comorbidities who is at higher risk of COVID-19 complications can be approximated setting the probability of infection at 10% and mortality at 60%. This would strongly favor delaying resection until COVID-19 prevalence has decreased in the community.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 436,
+                    "end": 448,
+                    "text": "Using Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "This study had several limitations. First, the paucity of literature available on COVID-19 resulted in estimating several model parameters from similar but non-identical clinical scenarios. We addressed this by analyzing a wide range of values for the COVID-19 parameters in our sensitivity analyses. Secondly, we did not model community-acquired COVID-19 infection separately from hospital-acquired COVID-19. While hospital-acquired infection seemed to drive the epidemic in China, we have not had the same experience thus far in the pandemic, but significant differences between these two infection rates could impact the outcome of the model. Finally, we did not account for surgical complications in the model. While the probability should be nearly equivalent between the two strategies, if there was a predominance in one arm it would likely have a significant impact on the probability of COVID-19 infection and mortality.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Despite these limitations, we believe this simplified model provided a robust framework to inform the surgical decision and was more adaptable for other, similar operative triaging decisions during the COVID-19 pandemic. This model should be easily adaptable as COVID-19 prevalence ebbs and surges in different communities, and if other infectious pandemics emerge posing similar dilemmas to surgeons.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Proceeding with immediate esophagectomy for early esophageal adenocarcinoma during the COVID-19 pandemic resulted in a similar but slightly improved 5-year overall survival when compared to resection after a 3-month delay in our base case scenario. However, as the risk of infection with COVID-19 increased above 7%, delaying operations for 3 months has an improved longterm survival. This balance should be frequently re-examined at each healthcare facility based on local COVID-19 prevalence throughout the curve of the pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Early transmission dynamics in Wuhan, China, of novel coronavirus-infected pneumonia",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ksm",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ehy",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xing",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jin",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tty",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "13",
+            "pages": "1199--1207",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2001316"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "COVID-19) events as they happen. World Health Organization",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Who",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Coronavirus",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Clinical characteristics of 138 hospitalized patients with 2019 novel coronavirus-infected pneumonia in Wuhan, China",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA J Am Med Assoc",
+            "volume": "323",
+            "issn": "11",
+            "pages": "1061--1069",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.1585"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "SARS-CoV-2 transmission in patients with cancer at a tertiary care hospital in Wuhan, China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Ouyang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mlk",
+                    "middle": [],
+                    "last": "Chua",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Oncol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamaoncol.2020.0980"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Active and effective measures for the care of patients with cancer during the COVID-19 spread in China",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Oncol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamaoncol.2020.1198"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Patients with cancer appear more vulnerable to SARS-COV-2: a multi-center study during the COVID-19 outbreak",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "You",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ge",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mei",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Tenen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chai",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mucci",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Santillana",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cancer Discov",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/2159-8290.CD-20-0422"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Cancer patients in SARS-CoV-2 infection: a nationwide analysis in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ai",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Oncol",
+            "volume": "21",
+            "issn": "3",
+            "pages": "30096--30102",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1470-2045(20)30096-6"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Risk of COVID-19 for patients with cancer",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jin",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Oncol",
+            "volume": "21",
+            "issn": "4",
+            "pages": "30150--30159",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1470-2045(20)30150-9"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "American College of Surgeons. COVID-19 Guidelines for Triage of Thoracic Patients. American College of Surgeons Commission on Cancer",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "policy statement: implementation of low-dose computed tomography lung cancer screening programs in clinical practice",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wiener",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gould",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Arenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Au",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Fennig",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lamb",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mazzone",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Midthun",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Napoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Ost",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Powell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Rivera",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Slatore",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tanner",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vachani",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wisnivesky",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Yoon",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Black",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Detterbeck",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hirschowitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jett",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kinsinger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "192",
+            "issn": "7",
+            "pages": "881--891",
+            "other_ids": {
+                "DOI": [
+                    "10.1164/rccm.201508-1671ST"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Global cancer statistics 2018: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bray",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ferlay",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Soerjomataram",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Siegel",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Torre",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "CA Cancer J Clin",
+            "volume": "68",
+            "issn": "6",
+            "pages": "394--424",
+            "other_ids": {
+                "DOI": [
+                    "10.3322/caac.21492"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Predictors of pathologic upstaging in early esophageal adenocarcinoma: results from the National Cancer Database",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gwilliam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kyrillos",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lutfi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lapin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Krantz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Howington",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ujiki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Am J Surg",
+            "volume": "216",
+            "issn": "1",
+            "pages": "124--130",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.amjsurg.2017.07.015"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Prognostic value of tumor length for causespecific death in resectable esophageal cancer",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu-Helmersson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Ann Thorac Surg",
+            "volume": "106",
+            "issn": "4",
+            "pages": "1038--1046",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.athoracsur.2018.05.018"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "AJCC/ UICC staging of cancers of the esophagus and esophagogastric junction: application to clinical practice",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Rice",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Patil",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Blackstone",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Ann Cardiothorac Surg",
+            "volume": "6",
+            "issn": "2",
+            "pages": "119--130",
+            "other_ids": {
+                "DOI": [
+                    "10.21037/acs.2017.03.14"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Comparison of the 6th and 7th editions of the UICC-AJCC TNM classification for esophageal cancer",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Talsma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Van Hagen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Grotenhuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Steyerberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tilanus",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jjb",
+                    "middle": [],
+                    "last": "Van Lanschot",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bpl",
+                    "middle": [],
+                    "last": "Wijnhoven",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Ann Surg Oncol",
+            "volume": "19",
+            "issn": "7",
+            "pages": "2142--2148",
+            "other_ids": {
+                "DOI": [
+                    "10.1245/s10434-012-2218-5"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Staging accuracy of endoscopic ultrasound for esophageal cancer after neoadjuvant chemotherapy: a meta-analysis and systematic review",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Dis Esophagus",
+            "volume": "28",
+            "issn": "8",
+            "pages": "757--771",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/dote.12274"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Endoscopic and surgical resection of T1a/T1b esophageal neoplasms: a systematic review",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sgourakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Gockel",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "World J Gastroenterol",
+            "volume": "19",
+            "issn": "9",
+            "pages": "1424--1437",
+            "other_ids": {
+                "DOI": [
+                    "10.3748/wjg.v19.i9.1424"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Minimally invasive esophagectomy provides equivalent survival to open esophagectomy: an analysis of the National Cancer Database",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Mitzman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lutfi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Krantz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Howington",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Semin Thorac Cardiovasc Surg",
+            "volume": "29",
+            "issn": "2",
+            "pages": "244--253",
+            "other_ids": {
+                "DOI": [
+                    "10.1053/j.semtcvs.2017.03.007"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Hospital esophagectomy volume and postoperative length of stay: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Giwa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Salami",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Abioye",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Am J Surg",
+            "volume": "215",
+            "issn": "1",
+            "pages": "155--162",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.amjsurg.2017.03.022"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Transhiatal vs. transthoracic esophagectomy: a NSQIP analysis of postoperative outcomes and risk factors for morbidity",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Schlottmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Strassle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Patti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Gastrointest Surg",
+            "volume": "21",
+            "issn": "11",
+            "pages": "1757--1763",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11605-017-3572-1"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Transthoracic versus transhiatal resection for esophageal adenocarcinoma of the lower esophagus: a value-based comparison",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Khullar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Force",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pickens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Sancheti",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ward",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gillespie",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Fernandez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Surg Oncol",
+            "volume": "112",
+            "issn": "5",
+            "pages": "517--523",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jso.24024"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Laparoscopic transhiatal esophagectomy for invasive esophageal adenocarcinoma",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Haisley",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Abdelmoaty",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Dunst",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Gastrointest Surg",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11605-019-04506-4"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Clinical stage T1-T2N0M0 oesophageal cancer: accuracy of clinical staging and predictive factors for lymph node metastasis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Shim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Eur J Cardio-Thorac Surg",
+            "volume": "46",
+            "issn": "2",
+            "pages": "274--279",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Accuracy of endoscopic ultrasound in preoperative staging of esophageal cancer: results from a referral center for early esophageal cancer",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Pech",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "G\u00fcnter",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Dusemund",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Origer",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lorenz",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Endoscopy",
+            "volume": "42",
+            "issn": "6",
+            "pages": "456--461",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0029-1244022"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Endoscopic diagnosis of 115 cases of early esophageal carcinoma",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guanrei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Sungliang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yuming",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "Endoscopy",
+            "volume": "14",
+            "issn": "5",
+            "pages": "157--161",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-2007-1021608"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Growth of squamous cell esophageal carcinoma observed by serial esophagographies",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Takagi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Karasawa",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "J Surg Oncol",
+            "volume": "21",
+            "issn": "1",
+            "pages": "57--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jso.2930210115"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Using the National Cancer Database to create a scoring system that identifies patients with early-stage esophageal cancer at risk for nodal metastases",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Weksler",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Kennedy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sullivan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Thorac Cardiovasc Surg",
+            "volume": "154",
+            "issn": "5",
+            "pages": "1787--1793",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jtcvs.2017.07.036"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Early diagnosis of esophageal cancer",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nabeya",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Onozawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ri",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nyumura",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kaku",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Hepatogastroenterology",
+            "volume": "37",
+            "issn": "4",
+            "pages": "368--370",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Comorbidity and its impact on 1590 patients with Covid-19 in China: a nationwide analysis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Respir J",
+            "volume": "",
+            "issn": "",
+            "pages": "547--2020",
+            "other_ids": {
+                "DOI": [
+                    "10.1183/13993003.00547-2020"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Risk factors associated with acute respiratory distress syndrome and death in patients with coronavirus disease",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "JAMA Intern Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamainternmed.2020.0994"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Coronavirus Disease (COVID-19), Cases by County",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "25",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Characteristics and outcomes of 21 critically ill patients with COVID-19 in Washington State",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Arentz",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Yim",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Klaff",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lokhandwala",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Riedo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "4720",
+            "issn": "",
+            "pages": "2019--2021",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.4326"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Lessons learned during the COVID-19 virus pandemic",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Sterpetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Am Coll Surg",
+            "volume": "230",
+            "issn": "6",
+            "pages": "1092--1093",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jamcollsurg.2020.03.018"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Minimally invasive oesophagectomy versus open esophagectomy for resectable esophageal cancer: a meta-analysis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yibulayin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abulizi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "World J Surg Oncol",
+            "volume": "14",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12957-016-1062-7"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Influence of postoperative pneumonia on esophageal cancer survival and recurrence",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tamagawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Aoyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tamagawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ju",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Komori",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Maezawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kano",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kazama",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Murakawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Atsumi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sawazaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hara",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Numata",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sato",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Yukawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Masuda",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Rino",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Anticancer Res",
+            "volume": "39",
+            "issn": "5",
+            "pages": "2671--2678",
+            "other_ids": {
+                "DOI": [
+                    "10.21873/anticanres.13392"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Outcomes of patients with submucosal (T1b) esophageal adenocarcinoma: a multicenter cohort study",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Otaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Krigel",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dierkhising",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Blevins",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Gopalakrishnan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ravindran",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Leggett",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wigle",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Falk",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Abrams",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Nakagawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Rustgi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lightdale",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Ginsberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Iyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gastrointest Endosc",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.gie.2020.01.013"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Decision analysis tree for timing of esophagectomy for patient with cT1b esophageal adenocarcinoma during COVID-19 pandemic. Blue square: decision node, whether to choose immediate or delayed surgical resection. Green circles: chance nodes. Red triangles: terminal nodes (Color figure online)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Two-way sensitivity analysis for probability of infection and mortality from COVID-19. Graph displays the favored strategy (immediate or delayed resection) across a range of possible periop-erative COVID-19 infection and COVID-19-related mortality probabilities while holding all other model variables constant at baseline values (color figure online) esophageal adenocarcinoma if his care was delayed due to the COVID-19 pandemic.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Model parameters *Parameters set by research team based on base case clinical scenario, current local data",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Acknowledgements Dr. Shipe is supported by the Agency for Healthcare Research and Quality (AHRQ) under Award Number T32 HS026122. Dr. Grogan's research time is supported by the Department of Veterans Affairs. The views expressed in this article are those of the authors and do not necessarily represent the views of the Department of Veterans Affairs. Dr. Deppen has support from the Early Detection Research Network NCI-5U24-CA0866368. The funding agency had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; the preparation, review, or approval of the manuscript; or in the decision to submit the manuscript for publication. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        }
+    ]
+}

@@ -1,0 +1,4068 @@
+{
+    "paper_id": "0b47b587510f2343b5d5ced3c26deba9f9cb5114",
+    "metadata": {
+        "title": "Mathematical modeling of COVID-19 in British Columbia: An age-structured model with time-dependent contact rates Mathematical modeling of COVID-19 in British Columbia: an age-structured model with time-dependent contact rates",
+        "authors": [
+            {
+                "first": "Sarafa",
+                "middle": [
+                    "A"
+                ],
+                "last": "Iyaniwura",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": "iyaniwura@math.ubc.ca"
+            },
+            {
+                "first": "Rebeca",
+                "middle": [
+                    "C"
+                ],
+                "last": "Falc\u00e3o",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Notice",
+                "middle": [],
+                "last": "Ringa",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Prince",
+                "middle": [
+                    "A"
+                ],
+                "last": "Adu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michelle",
+                "middle": [],
+                "last": "Spencer",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Marsha",
+                "middle": [],
+                "last": "Taylor",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Caroline",
+                "middle": [],
+                "last": "Colijn",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Daniel",
+                "middle": [],
+                "last": "Coombs",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of British Columbia",
+                    "location": {
+                        "settlement": "Van-couver, British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Naveed",
+                "middle": [
+                    "Z"
+                ],
+                "last": "Janjua",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [
+                    "A"
+                ],
+                "last": "Irvine",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [],
+                "last": "Otterstatter",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "British Columbia Centre for Disease Control",
+                    "location": {
+                        "settlement": "Vancouver",
+                        "region": "British Columbia",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Following the emergence of COVID-19 at the end of 2019, several mathematical models have been developed to study the transmission dynamics of this disease. Many of these models assume homogeneous mixing in the underlying population. However, contact rates and mixing patterns can vary dramatically among individuals depending on their age and activity level. Variation in contact rates among age groups and over time can significantly impact how well a model captures observed trends. To properly model the age-dependent dynamics of COVID-19 and understand the impacts of interventions, it is essential to consider heterogeneity arising from contact rates and mixing patterns. We developed an age-structured model that incorporates time-varying contact rates and population mixing computed from the ongoing BC Mix COVID-19 survey to study transmission dynamics of COVID-19 in British Columbia (BC), Canada. Using a Bayesian inference framework, we fit four versions of our model to weekly reported cases of COVID-19 in BC, with each version allowing different assumptions of contact rates. We show that in addition to incorporating age-specific contact rates and mixing patterns, timedependent (weekly) contact rates are needed to adequately capture the observed transmission dynamics of COVID-19. Our approach provides a framework for explicitly including empirical contact rates in a transmission model, which removes the need to otherwise model the impact of many non-pharmaceutical interventions. Further, this approach allows projection of future cases based on clear assumptions of age-specific contact rates, as opposed to less tractable assumptions regarding transmission rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "COVID-19 disease is an infectious respiratory disease caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) [2] . It was first detected in the city of Wuhan, Hubei province, China, in Several mathematical models have been deployed to study the transmission dynamics of COVID-19. Many of these models assume homogeneous mixing in the population, using the same contact rate and mixing pattern for everyone [3, 31, 60, 8, 49, 42, 9, 35] . These types of models can help to answer broad populationlevel questions, but are not suitable for understanding age-related dynamics. Age-structured models have also been used to study COVID-19, including the impact of social distancing on its spread [40, 56] , the effectiveness of different vaccination strategies [47, 48, 13, 41, 55, 30, 54, 37] , and the effects of herd immunity and re-opening [12, 11, 10, 64, 14, 5] . Although these models incorporate heterogeneity in the contact rates and mixing patterns by age group, they assume fixed contact rate for each age group throughout the epidemic. This can be problematic since NPIs, such as physical distancing, self-isolation, stay-at-home orders, and travel restrictions alter contact and activity levels over time, and these impacts may differ by age group. In order to overcome these limitations, it is necessary to incorporate ongoing population-based measures of contact rates by age group into a transmission modeling approach.",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 132,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 426,
+                    "end": 429,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 430,
+                    "end": 433,
+                    "text": "31,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 434,
+                    "end": 437,
+                    "text": "60,",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 438,
+                    "end": 440,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 441,
+                    "end": 444,
+                    "text": "49,",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 445,
+                    "end": 448,
+                    "text": "42,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 449,
+                    "end": 451,
+                    "text": "9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 452,
+                    "end": 455,
+                    "text": "35]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 710,
+                    "end": 714,
+                    "text": "[40,",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 715,
+                    "end": 718,
+                    "text": "56]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 775,
+                    "end": 779,
+                    "text": "[47,",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 780,
+                    "end": 783,
+                    "text": "48,",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 784,
+                    "end": 787,
+                    "text": "13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 788,
+                    "end": 791,
+                    "text": "41,",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 792,
+                    "end": 795,
+                    "text": "55,",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 796,
+                    "end": 799,
+                    "text": "30,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 800,
+                    "end": 803,
+                    "text": "54,",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 804,
+                    "end": 807,
+                    "text": "37]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 858,
+                    "end": 862,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 863,
+                    "end": 866,
+                    "text": "11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 867,
+                    "end": 870,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 871,
+                    "end": 874,
+                    "text": "64,",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 875,
+                    "end": 878,
+                    "text": "14,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 879,
+                    "end": 881,
+                    "text": "5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this work, we develop a susceptible-exposed-infectious-recovered (SEIR) age-structured model to study the transmission dynamics of COVID-19 in British Columbia, Canada. This model incorporates the average weekly contact rates and population mixing patterns computed from the ongoing BC Mix COVID-19 Survey (BC-Mix) [1] . Unlike other age-structured models used to study COVID-19 dynamics, where contact rate for each age group is fixed throughout the epidemic or adjusted by re-scaling an initial rate, our model uses the near real-time contact rates among age groups to inform transmission dynamics. Using a Bayesian inference framework, we calibrate our model to the weekly reported cases of COVID-19 in BC, starting from September 2020 to the end of January 2021, just as COVID-19 vaccination was beginning in the province. Scaling parameters are estimated by age group to account for the differential impact of contacts on transmission. We considered four different scenarios that allow or exclude variation in contact rates and scaling parameters in our model fitting and show that optimal fits require both the age-specific scaling and J o u r n a l P r e -p r o o f Journal Pre-proof time-dependent contact rates.",
+            "cite_spans": [
+                {
+                    "start": 318,
+                    "end": 321,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We develop an age-structured SEIR model to study the transmission dynamics of COVID-19 in British Columbia (BC), Canada. Our model follows a design similar to an age-and activity-structured model used previously to study the dynamics of the 2009 H1N1 influenza pandemic in the Greater Vancouver Regional District of British Columbia [16] . It has six compartments tracking the disease trajectory: where S represents the susceptible population, E 1 and E 2 are for the exposed population, I 1 and I 2 represent the infectious population, and R represents those who have recovered from the disease. Individuals in E 1 Figure 1 : Schematic of the age-structured model. Compartments are defined as follows: Susceptible individuals (S); exposed (E 1 ); pre-symptomatic (E 2 ); Infected individuals in the first half of their infectious period (I 1 ); Infected individuals in the second half of their infectious period (I 2 ); and recovered (R). It is assumed that recovered individuals become immune to the disease. Each compartment is a vector whose elements represent the corresponding population for each age-group in the model. The index in the schematic represents the j th age group. The solid black arrows show the flow of individuals between the model compartments at rates indicated beside the arrows, while the dashed red arrows indicated disease transmission (see (2.1) for more details). are considered exposed, but not yet able to transmit infection (exposed), while those in E 2 can transmit infections without showing any symptoms of the disease (pre-symptomatic). An infected individual spends the first half of their infectious period in I 1 and the other half in I 2 . Here, we used an infectious period of 5 days [59, 28, 3] . See Table 1 for all the model parameters. Figure 1 shows the schematic diagram of the model with solid black arrows indicating the direction of flow of individuals between the compartments at the rates indicated beside the arrows, while the dashed red arrows show disease transmission. The index j represents the age groups. The compartments E 2 , I 1 , and I 2 (in red) are the infectious compartments of the model, representing individuals who may transmit the disease to their contacts. We assume that the total population size of BC remains constant over the epidemic period and that recovered individuals develop permanent immunity to the virus.",
+            "cite_spans": [
+                {
+                    "start": 333,
+                    "end": 337,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1727,
+                    "end": 1731,
+                    "text": "[59,",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 1732,
+                    "end": 1735,
+                    "text": "28,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1736,
+                    "end": 1738,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 616,
+                    "end": 624,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1745,
+                    "end": 1752,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1783,
+                    "end": 1791,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Mathematical Model"
+        },
+        {
+            "text": "Let N age be the number of age groups in the model so that each of the compartments S, E 1 , E 2 , I 1 , I 2 , and R is a vector with N age elements. We stratify the BC population into N age = 10 age groups given by < 2 years, 2-5 years, 6-17 years, 18-24 years, 25-34 years, 35-44 years, 45-54 years, 55-64 years, 65-74 years, and 75+ J o u r n a l P r e -p r o o f Journal Pre-proof years. These age groups largely follow those used in the influenza study of [16] ; however, other groupings could be used within this framework. Each compartment of the model is divided into ten sub-compartments based on age groups. This gives a total of 60 sub-compartments and ordinary differential equations for the model. Our model further assumes that each individual remains in the same age group throughout the epidemic. The differential equations for the model in vector notation are given by:",
+            "cite_spans": [
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Mathematical Model"
+        },
+        {
+            "text": "where H 1 is the rate of transitioning from E 1 to E 2 , H 2 is the rate of transitioning from E 2 to I 1 , and \u03b3 is the recovery rate. We have assumed that the transition rates H 1 , H 2 , and \u03b3 are the same for all age groups. The model can easily be extended to have age-specific transition rates. In this case, H 1 , H 2 , and \u03b3 would be vectors with N age elements. Note that . * represent element-wise multiplication. The vector \u03a8 = \u03a6. * K, where K is a vector for the contact rates of the age groups and \u03a6 \u2261 (\u03c6 1 , . . . , \u03c6 Nage ) is a vector whose entries are the scaling parameters for the contact rates. These scaling parameters are used to account for the differential impact of contacts on transmission. They translate self-reported contact rates computed for each age group from the survey data into impacts on transmission that helps to account for aspects such as recall bias, sampling bias, and challenges in defining which contacts actually lead to transmission. In addition, these scaling parameters are used to account for other factors that affect disease transmission such as physical distancing, hand washing, wearing of face mask, e.t.c, which are not explicitly included in our model. The scaling parameters are fixed throughout the epidemic period. We consider a scenario where the contact rate K is fixed throughout the epidemic period and another where it changes from week to week during the epidemic. In addition, a fixed scaling parameter can be used for the entire population; in this case, \u03a6 becomes a scalar. More details about the scaling parameters and the different scenarios can be found in Section 2.3.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model"
+        },
+        {
+            "text": "In the ODE model (2.1), \u03b2 is the transmission rate given by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model"
+        },
+        {
+            "text": "where R 0 is the basic reproduction number and C N is the normalization constant for R 0 that incorporates the effect of the contact rates and the population mixing patterns into the basic reproduction number. Details of how C N is calculated are given below. The fractions 1/H 2 and 1/\u03b3 are the pre-symptomatic and recovery periods, respectively. The heterogeneity in disease transmission depends largely on the vector C inf , whose j th entry is defined as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mathematical Model"
+        },
+        {
+            "text": "where C kj is the k th element in the j th column of the N age \u00d7N age mixing matrix C, which gives the proportion of the total contacts of the j th age group that is made with the k th age group (see Figure 3 ). Here, P age is a vector for the BC population size stratified by age group and P age,k is the population of the k th age group. The expression (E 2k + I 1k + I 2k )/P age,k gives the proportion of infectious individuals in the k th age group. Unlike the model of [16] , we do not further stratify our population by activity levels here. The activity level J o u r n a l P r e -p r o o f Journal Pre-proof Table 1 : Model parameters, descriptions, and values. The basic reproduction number R 0 in the SEIR model (2.1) is taken to be the effective reproduction number R 0t in BC at the beginning of September 2020 since the case data considered are from September 2020 to January 2021. The normalization constant C N for R 0t was computed for the two population mixing matrices shown in Figure 3 . For the BC Mix matrix (left panel of Figure 3 ) C N = 35.1027 and for the 2009 matrix (right panel of Figure 3 ) C N = 30.2650. The total population of BC is 5,147,712 [6] . of each age group is implicitly captured by their average weekly contact rates. We computed the average weekly contact rates K and population mixing matrix C from the BC Mix COVID-19 survey [1] . Table 1 provides a description of the model parameters and their values. The population size of BC, stratified by the age groups of our model, is also given in Table 1 . Since the case data considered in our fits start at September 2020, in order to coincide with the beginning of the BC Mix survey, rather than at the beginning of the COVID-19 epidemic in BC, the basic reproduction number R 0 in the model (2.1) is the effective reproduction number R 0t in BC at the beginning of the period (September 2020 -January 2021). We compute the normalization constant C N for the effective reproduction number R 0t using numerical bootstrapping based on the next-generation matrix approach of computing R 0 [18, 62, 38] . To compute C N , we numerically construct the next-generation matrix for (2.1) with the transmission rate \u03b2 as given in (2.2). Observe that (2.2) contains R 0 and the parameter C N , which we want to compute. We set R 0 = 1 and loop over a range of values of C N . For each value of C N , we compute the spectrum of the next-generation matrix and output the value of C N for which the spectral radius of the matrix equals unity as our normalization constant. In other words, our desired normalization constant is the value of C N that returns unity as the dominant eigenvalues of the next-generation matrix of the ODE system (2.1) when the basic reproduction number R 0 = 1 in (2.2). It is important to mention that since the next-generation matrix depends on the contact rates and population mixing patterns, C N also depends on these parameters. C N incorporates the effect of population heterogeneity into the basic reproduction number and the transmission rate \u03b2 (2.2). For all the results presented in this paper, individuals aged 0-17 are assumed to be 50% as susceptible as J o u r n a l P r e -p r o o f Journal Pre-proof individuals 18 years or older [17, 7, 71] . Using a seropositivity rate of 4.5% at the start of the study period [15] , we calculated the ascertainment fraction for reported cases to be 0.255 (i.e., 25.50% of all cases were assumed reported), which was then used when fitting to the age specific reported case numbers.",
+            "cite_spans": [
+                {
+                    "start": 475,
+                    "end": 479,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1176,
+                    "end": 1179,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1372,
+                    "end": 1375,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 2080,
+                    "end": 2084,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 2085,
+                    "end": 2088,
+                    "text": "62,",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 2089,
+                    "end": 2092,
+                    "text": "38]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 3255,
+                    "end": 3259,
+                    "text": "[17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 3260,
+                    "end": 3262,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 3263,
+                    "end": 3266,
+                    "text": "71]",
+                    "ref_id": "BIBREF73"
+                },
+                {
+                    "start": 3338,
+                    "end": 3342,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 208,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 617,
+                    "end": 624,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 997,
+                    "end": 1005,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1045,
+                    "end": 1053,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1110,
+                    "end": 1118,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1378,
+                    "end": 1385,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1538,
+                    "end": 1545,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Mathematical Model"
+        },
+        {
+            "text": "The reported number of cases of COVID-19 in British Columbia were obtained from the British Columbia Centre for Disease Control (BCCDC) and stratified by the age groups of our model. Based on symptom onset date, we extracted these data from a line list generated by BCCDC Public Health Reporting Data Warehouse (PHRDW). Approximately 12.93% of the total reported cases during our study period do not have symptoms onset date. These cases were removed from our analysis. The collected data was incorporated into the model likelihood based on disease incidence (2.4). The case data used here covered the time period September 2020 to January 2021, inclusive. This time period was selected to match with the available contact rate data (see below), but also provides a wide range of COVID-19 dynamics for modeling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data"
+        },
+        {
+            "text": "We focused here on the dynamics of community transmission and therefore excluded residents of long-term care homes (LTCH). In particular, cases were removed if the transmission setting was specifically identified as a long-term care facility and the case was identified as a patient or resident (not staff). In the SEIR model (2.1), incidence is computed as the number of pre-symptomatic individuals (E 2 ) transitioning to the infectious class (I 1 ). Figure 2 shows the weekly reported cases of COVID-19 in BC by age group from September 2020 to January 2021 (top left) and the percentage of cumulative reported cases for each age group within this period (top right). The 18-24 age group had the highest reported infection rate (by population size), with total reported cases during our study period corresponding to 1.77% of their population, followed by the 25-34 age group with 1.59%, and the 35-44 age group with 1.32% of their total population. The percentage of reported cases in the remaining age groups were; 45-54 years (1.15%), 55-64 years (0.81%), 6-17 years (0.80%), 75+ years (0.57%), 65-74 years (0.55%), < 2 (0.45%), and 2-5 (0.43%). We observe from this figure that the reported cumulative cases of COVID-19 was not uniform across age groups, possibly due to the variation in contact rates and mixing patterns between age groups, differences in reporting, and reduced susceptibility among younger individuals [17, 7, 71] .",
+            "cite_spans": [
+                {
+                    "start": 1428,
+                    "end": 1432,
+                    "text": "[17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1433,
+                    "end": 1435,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1436,
+                    "end": 1439,
+                    "text": "71]",
+                    "ref_id": "BIBREF73"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 453,
+                    "end": 461,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Data"
+        },
+        {
+            "text": "Heterogeneity in contact rates and mixing patterns among age groups are essential aspects of our model. These parameters are introduced through the average weekly contact rate vector K and the N age \u00d7 N age mixing matrix C, which we compute from the BC-Mix survey [1] . This survey was initiated in September 2020 by the British Columbia Center for Disease Control (BCCDC) as part of ongoing public health surveillance for COVID-19. In the survey, BC residents 18 years of age and older were asked questions related to their daily contacts, response to non-pharmaceutical interventions such as the wearing of face masks and physical distancing, and vaccination. We computed the average weekly contact rate based on survey responses to the question: \"How many people did you have in-person contact with between 5 am yesterday and 5 am today?\", where an in-person contact is defined as either having an in-person two-way conversation with three or more words or physical skin-to-skin contact, e.g. a handshake, hug, kiss, or contact sports (see [1] for more details). For each week from September 2020 to January 2021, contact rates were stratified by the age groups: 18-24 years, 25-34 years, 35-44 years, 45-54 years, 55-64 years, 65-75 years and 75+ years, and then used to compute the average contact made by each age group weekly. These results are presented in Figure 2 (bottom left), where the dots are the computed average contact rates and local polynomial regression lines using the loess method [4] are included to illustrate time trends. Since the BC-Mix survey is only available for individuals 18 years and above, the average weekly contact rates for the age groups < 2 years, 2-5 years, and 6-17 years were fixed at 5.5280, 12.4169, and 13.4486, respectively, throughout the epidemic period of September 2020 -January 2021. We derived these contact rates from the original influenza model of [16] , which was based on empirical contact data from 2009 for the lower mainland of BC.",
+            "cite_spans": [
+                {
+                    "start": 264,
+                    "end": 267,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1043,
+                    "end": 1046,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1504,
+                    "end": 1507,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1905,
+                    "end": 1909,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1365,
+                    "end": 1373,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Data"
+        },
+        {
+            "text": "Although it is difficult to determine if these contact rates remain fully representative in the current time period, our model structure allows flexibility (through scaling parameters, described below) in how contacts impact transmission. The bottom right panel of Figure 2 shows the BC population size distribution by age group [6] (see Table 1 for actual values).",
+            "cite_spans": [
+                {
+                    "start": 329,
+                    "end": 332,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 265,
+                    "end": 273,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 338,
+                    "end": 345,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Data"
+        },
+        {
+            "text": "We constructed the population mixing matrix C from the BC-Mix survey data. Respondents were asked to Cumulative reported cases by age group during study period, as a percentage of that age group's population size. Bottom left: Average weekly contact rates by age group over time from September 2020 to January 2021. The dots are the computed average contact rates, while the solid lines are fits from local polynomial regressions with loess method (shown only for illustration of trends) [4] . Bottom right panel: BC population distribution by age group. The color codes are consistent across all the panels.",
+            "cite_spans": [
+                {
+                    "start": 488,
+                    "end": 491,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data"
+        },
+        {
+            "text": "provide their own age, as well as the ages of their first ten contacts from the previous day. This information was used to compute, for each age group, the proportion of their total contacts that were made with each of the other age groups. This corresponds to the columns in the N age \u00d7 N age population mixing matrix C, each of which sum to 1. Unlike the average contact rates by age group, which we computed weekly, only one mixing matrix was constructed from the survey data based on the total data from September 2020 to January 2021. In Figure 3 , we present the population mixing matrix C derived from the BC-Mix survey (left panel) and, for comparison (and later use in modeling), the corresponding matrix from the 2009 influenza study of [16] (right panel). For convenience, we refer to the mixing matrix derived from the influenza model of [16] as the 2009 matrix, and the one constructed from the BC-Mix survey as BC-Mix matrix. Note that in order to complete the first three columns of the BC-Mix matrix (i.e., for individuals under 18 years of age), we adapted data from the 2009 matrix for age groups < 2 years, 2-5 years, and 6-17 years. We observe a pattern of assortative mixing from the BC-Mix matrix (i.e., contact proportions are higher within age groups than between age groups), although this pattern is not as evident in the 2009 matrix. It is also apparent that children \u2264 5 years of age make a relatively large proportion of their contacts with adults of child-bearing age (25-54 years) and with adolescents 6-17 years of age. This pattern likely reflects family contacts among children, parents and siblings. ",
+            "cite_spans": [
+                {
+                    "start": 747,
+                    "end": 751,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 850,
+                    "end": 854,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 543,
+                    "end": 551,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Data"
+        },
+        {
+            "text": "We fit our age-structured model (2.1) to the weekly reported cases of COVID-19 in BC (top left panel of Figure 2 ) for all the age groups simultaneously, using a Bayesian inference framework and the RStan package in R version 3.6.3 [57] . For each age group, the likelihood is constructed according to",
+            "cite_spans": [
+                {
+                    "start": 232,
+                    "end": 236,
+                    "text": "[57]",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 104,
+                    "end": 112,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Bayesian inference"
+        },
+        {
+            "text": "where NegBin(.) is the negative binomial distribution, cases(t) and incidence(t) are the weekly reported cases of COVID-19 in BC and the incidence computed from our SEIR model (2.1), respectively. The ascertainment fraction is given by ascert fraction and \u03c8 is the over-dispersion parameter. This framework allows us to incorporate our prior knowledge into the model parameters and gives us the ability to evaluate probabilistic statements of the data given the model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Bayesian inference"
+        },
+        {
+            "text": "To translate contact rates computed from the BC-Mix survey into impacts on transmission, we introduce scaling parameters for the average weekly contact rates, which are estimated for each age group from the fit. We also incorporate as a parameter the prevalence of COVID-19 in BC at the beginning of our study period (September 2020). As a validation step we simulated incidence data from our SEIR model (2.1) using known parameter values and tested our model's ability to recover these values. The resulting posterior distributions were inspected for biases and coverage of the true parameters. All inferences performed in this paper were done using the Variational Bayes (VB) method with the meanfield algorithm implemented in RStan [58, 70] , where the Bayesian model parameters were the initial total disease prevalence in the population and the scaling parameters for the contact rates. Other fixed parameters of the model are given in Table 1 . The VB method was compared to the adaptive Hamiltonian Monte Carlo method No-U-Turn sampling and found to produce comparable estimates of the posterior distribution with significant reduction in total computation time [32] . Although, we set the maximum number of iterations for optimizing the evidence-lower bound (ELBO) in VB to 10,000, the mean and/or median ELBO usually converge in 1000 -3000 iterations of the stochastic gradient ascent algorithm (see [33, 70, 29] for more information about ELBO in the variational Bayes method).",
+            "cite_spans": [
+                {
+                    "start": 735,
+                    "end": 739,
+                    "text": "[58,",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 740,
+                    "end": 743,
+                    "text": "70]",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 1169,
+                    "end": 1173,
+                    "text": "[32]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1409,
+                    "end": 1413,
+                    "text": "[33,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1414,
+                    "end": 1417,
+                    "text": "70,",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 1418,
+                    "end": 1421,
+                    "text": "29]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 941,
+                    "end": 948,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Bayesian inference"
+        },
+        {
+            "text": "We considered four variations of the above Bayesian model based on the age-specific contact rates and the scaling parameters used to remove biases from the contact rates computed from the BC-Mix survey. These specific models, in order of increasing parameter flexibility, are:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Bayesian inference"
+        },
+        {
+            "text": "1. A single scaling parameter for contact rates across all age groups and a fixed contact rate for each age group throughout the study period (SSFR).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Bayesian inference"
+        },
+        {
+            "text": "Journal Pre-proof 2. Age-specific scaling parameters and a fixed contact rate for each age group (ASSFR).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "3. A single scaling parameter across age groups and time-dependent average weekly contact rates for each age group (SSVR).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Performing inference with each of these models provided a framework to understand the independent and combined effects of contact rates (fixed or time-varying) and scaling parameters (one for all age groups, or one for each age group) on the posterior predictive distribution and to determine which of the four models produces the best recreation of the observed data. We rank the models by comparing their leaveone-out predictions and standard errors, computed using the leave-one-out cross-validation (LOO) method [45, 21, 63] . Further comparisons were done using the widely applicable information criterion (WAIC) method [65, 20] . The fixed contact rates used for the SSFR and ASSFR models were given as the average of the weekly contact rates for each age group from September 2020 to January 2021. As an additional model to compare the impact of the contact mixing matrix on the posterior predictive distribution, we constructed each of the above four models using the 2009 survey-derived contact matrix as opposed to the BC-MIX survey-derived contact matrix (see Supplementary material A.3).",
+            "cite_spans": [
+                {
+                    "start": 516,
+                    "end": 520,
+                    "text": "[45,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 521,
+                    "end": 524,
+                    "text": "21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 525,
+                    "end": 528,
+                    "text": "63]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 625,
+                    "end": 629,
+                    "text": "[65,",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 630,
+                    "end": 633,
+                    "text": "20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Age-specific scaling parameters and time-dependent average weekly contact rates (ASSVR)."
+        },
+        {
+            "text": "We fit our age-structured SEIR model (2.1) to the weekly reported cases of COVID-19 in BC from September 2020 to January 2021, shown in the top left panel of Figure 2 . Of primary interest was the model fits based on 2020/2021 contact rates from the BC-Mix survey [1] ; however, we also compared fits based on previous contact network data collected during 2009 [16] .",
+            "cite_spans": [
+                {
+                    "start": 264,
+                    "end": 267,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 362,
+                    "end": 366,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 158,
+                    "end": 166,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "In Figure 4 , we present our model fits for the BC-Mix matrix (left panel of Figure 3 ) for the four models described above for selected age groups (2-5 years, 35-44 years, and 55-64 years) and the total reported cases. The fits for the remaining age groups are presented in Supplementary material A.1. In the first scenario (SSFR), only a single scaling parameter is estimated across age groups (0.949, 90% CrI: 0.936 -0.964; initial prevalence estimate = 9,827, 90% CrI: 8,455 -11,245) and contact rates for each age group are fixed over time. This model predicts an approximately linear increase in cases over time, which fails to capture the true trends in the data. Similar results are shown for the ASSFR model, which had separate age-specific scaling parameters (see Figure 5 and Table S1 of Supplementary material A.1; initial prevalence estimate = 5,488, 90% CrI: 5,173 -5,806), but still used fixed contact rates for each age group. This scenario again predicts a linear increase in cases, although, in contrast to the SSFR model, the credible intervals of the predictions are narrower and the predicted median incidence crudely approximates the overall trend in the underlying data. Nevertheless, the ASSFR model still fails to capture the dynamic time trends in the case data.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 3,
+                    "end": 11,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 77,
+                    "end": 85,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 774,
+                    "end": 782,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 787,
+                    "end": 795,
+                    "text": "Table S1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Model fitting scenarios"
+        },
+        {
+            "text": "The remaining results in Figure 4 show the SSVR and ASSVR scenarios, where time-dependent average weekly contact rates were used. In these scenarios, our model was able to capture the trends in the reported cases. Due to the single scaling parameter (0.930, 90% CrI: 0.919 -0.940; initial prevalence estimate= 5,039, 90% CrI: 4,430 -5,496), the SSVR model was unable to accurately predict case numbers, even though it captured the temporal trends in the data. It either overestimated or underestimated reported cases with large credible intervals. In contrast, the ASSVR model (initial prevalence estimate= 2,824, 90% CrI: 2,690 -2,959; age-specific scaling parameters provided in Figure 5 and Table S1 of Supplementary material A.1), captured both the trends in reported cases and the case numbers with a higher accuracy compared to the other scenarios. In this scenario, we used age-specific scaling parameters together with time-dependent average weekly contact rates. Of all the four models considered, ASSVR with age-specific scaling parameters and time-dependent contact rates provided the best reconstruction of the reported cases data (fourth row of Figure 4 ). In addition, a comparison of the leave-one-out predictions and standard error for the four models, computed using the leave-one-out cross-validation (LOO) method [21, 63] , ranked the ASSVR model as having the highest predictive accuracy, followed by ASSFR, SSVR, and then SSFR. A similar ranking was obtained using the widely applicable information criterion (WAIC) method [65, 20] . See Table S2 of Supplementary material A.1 for detailed output of the model comparison. Taken together, these results suggest that the time-dependent weekly contact rates are required to accurately capture the trends in the reported cases, while the age-specific scaling parameters allow the fits to properly match actual numbers of reported cases. Similar results were obtained using the 2009 mixing matrix (right panel of Figure 3 ). ",
+            "cite_spans": [
+                {
+                    "start": 1332,
+                    "end": 1336,
+                    "text": "[21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1337,
+                    "end": 1340,
+                    "text": "63]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 1544,
+                    "end": 1548,
+                    "text": "[65,",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 1549,
+                    "end": 1552,
+                    "text": "20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 25,
+                    "end": 33,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 681,
+                    "end": 689,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 694,
+                    "end": 702,
+                    "text": "Table S1",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 1158,
+                    "end": 1166,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1559,
+                    "end": 1567,
+                    "text": "Table S2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1979,
+                    "end": 1987,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Model fitting scenarios"
+        },
+        {
+            "text": "Comparisons of the estimated age-specific scaling parameters for the ASSFR and ASSVR models based on the BC-Mix contact data are shown in Figure 5 (similar results are shown for the 2009 matrix in Figure S10 of Appendix A.3). The blue vertical dashed line at 1 indicates where the scaling parameter has no effect on Estimates (with 90% CrI)",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 138,
+                    "end": 146,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 197,
+                    "end": 207,
+                    "text": "Figure S10",
+                    "ref_id": null
+                }
+            ],
+            "section": "Scaling contact rates"
+        },
+        {
+            "text": "Scaling parameter Scenarios ASSFR ASSVR Figure 5 : Estimated age-specific scaling parameters for the BC-Mix matrix. ASSFR model (red) and ASSVR model (blue). The blue vertical dashed line at 1 indicates where the scaling parameter has no effect on the fit. These estimates are presented in Table S1 of Supplementary material A.1.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 40,
+                    "end": 48,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 290,
+                    "end": 298,
+                    "text": "Table S1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Scaling contact rates"
+        },
+        {
+            "text": "the fit. When the scaling parameter is less than 1, it indicates a reduction in the contribution the observed contact rates have to transmission; conversely, scaling parameters greater than one indicate an increase in the contribution observed contact rates make to transmission. We observe that the estimated scaling parameters for the ASSFR and ASSVR models are generally similar and closer to 1 for all age groups except < 2 years, 2-5 years, and 6-17 years. Overall, relatively little re-scaling was needed for contact rates computed from the BC-Mix survey, suggesting that the survey was able to capture contact activity relevant for COVID-19 transmission. However, the estimated scaling parameters for ages < 2 years, 2-5 years, and 6-17 years were notably greater than 1 and with wider 90% credible intervals. This suggests that self-reported contact rates for youngest age groups tended to under-estimates the level of contact relevant to COVID-19 transmission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Scaling contact rates"
+        },
+        {
+            "text": "Recall that these youngest age groups were not available in the BC-Mix survey and that we used instead the contact rates derived from the original influenza model of [16] for age 0-17 years. It is possible that these contact rates, recorded during 2009, were not fully representative of contacts made during our 2020/2021 study period. Nevertheless, model fits for the 0-17 ages groups were generally close to the observed data S4, suggesting the scaling parameters were able to largely accommodate any discrepancies. We also assumed in our model that individuals in these youngest age groups are only 50% as susceptible as adults. This may contribute to the high estimates in the scaling parameters as reduction in susceptibility would lead to fewer infections, and the scaling parameters may reflect a correction for this. The estimates of the age-specific J o u r n a l P r e -p r o o f Journal Pre-proof scaling parameters shown in Figure 5 are presented in ",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 170,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 936,
+                    "end": 944,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Scaling contact rates"
+        },
+        {
+            "text": "Next, we generated short-term projections of new cases from our model fits to help validate our modeling framework. We fit our model to a subset of the reported cases (September to December 2020), and projected forward to predict cases for the month of January 2021 (4 weeks). We then compared the predicted cases against actual reported cases for this 4-week period. The ASSVR model was used for this study with the results presented in Figure 6 for all the age groups and total reported cases. Figure 6 : Model validation and projection. Model fits for the period from September to December 2020 (in blue) and projection for January 2021 (in red) with 50% and 90% credible interval (CrI) bands, using the BC-Mix matrix. The solid lines are the median predicted cases, narrow bands are 50% CrI, and wider bands are 90% CrI. Black dot are weekly reported cases of COVID-19 in BC.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 438,
+                    "end": 446,
+                    "text": "Figure 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 496,
+                    "end": 504,
+                    "text": "Figure 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Model validation and projection"
+        },
+        {
+            "text": "Our model was able to accurately predict trends in most, but not all, age groups. True case numbers fell within the 90% credible intervals of our predictions for most age groups, except 18-24 and 25-34 years, where our model slightly underestimated reported cases. It is important to mention that for the prediction period January 2021, we used the average weekly contact rates for this month as computed from the BC-Mix survey. In reality, contact rates for future dates would not be available and would need to be hypothesized based on historical contact rates for different possible scenarios. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model validation and projection"
+        },
+        {
+            "text": "We developed an SEIR-type age-structured model that explicitly incorporates contact rate data and mixing patterns computed from the BC-Mix survey [1] for studying the transmission dynamics of COVID-19. Our model builds upon a framework that used age-and activity-structure to study the dynamics of the 2009 H1N1 virus in the Greater Vancouver area of British Columbia, Canada [16] . It divides the population of BC into: susceptible (S), exposed (not infectious E 1 and pre-symptomatic infectious E 2 ), infectious (I 1 and I 2 ) and recovered compartment (R), and stratifies each into ten age groups: < 2 years, 2-5 years, 6-17 years, 18-24 years, 25-34 years, 35-44 years, 45-54 years, 55-64 years, 65-74 years, and 75+ years. Unlike the other age-structured models [47, 48, 13, 12, 11] used to study the dynamics of COVID-19, where the contact rates are fixed throughout the epidemic period, our model uses time-varying weekly contact rates computed directly from ongoing survey data (BC Mix COVID-19 survey (BC-Mix) [1] ). Hence, the effects of non-pharmaceutical interventions (NPIs) on the activity level of each age group are implicitly captured by the contact rates computed from the survey. Further, we use a population mixing matrix, derived from the same survey data, which specifies the proportion of total contacts of an age group that is made with each of the other age groups. For simplicity, we elected to use a single mixing matrix for the entire study period from September 2020 to January 2021, which assumes population mixing patterns in BC were roughly constant.",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 149,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 376,
+                    "end": 380,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 768,
+                    "end": 772,
+                    "text": "[47,",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 773,
+                    "end": 776,
+                    "text": "48,",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 777,
+                    "end": 780,
+                    "text": "13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 781,
+                    "end": 784,
+                    "text": "12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 785,
+                    "end": 788,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1020,
+                    "end": 1023,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "For comparison, we also implemented our model with the age mixing matrix of [16] used to study 2009 H1N1 transmission in the Greater Vancouver area. It is likely that patterns of mixing among age groups change over time (e.g., due to age-specific seasonal behaviours, responses to public health measures, etc.); an interesting extension of this work would be to explore time trends in the mixing matrix itself and assess how this impacts the observed transmission dynamics.",
+            "cite_spans": [
+                {
+                    "start": 76,
+                    "end": 80,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Using a Bayesian inference framework, we calibrate our model to weekly reported cases of COVID-19 in BC from September 2020 to January 2021. We show that our framework is robust to population mixing patterns, with similar results found using the current (2020/2021 BC-Mix survey) and previous (2009 influenza mixing survey) mixing matrices. Our use of scaling parameters to translate self-reported contact rates in each age group into impacts on transmission helps to account for aspects of self-reported survey data, such as recall bias and challenges in defining which contacts actually lead to transmission. We considered four different Bayesian models based on the scaling parameters (single scaling parameter vs age-specific scaling) and on the contact rates themselves (fixed contact rates vs time-varying rate). Fixed contact rates for each age group, predicted an approximately linear growth in cases and failed to capture observed trends in the data. With time-varying contact rates, our model captured trends in reported cases, but significantly underor over-estimated the actual values. Only the combination of age-specific scaling parameters and timedependent contact rates provided adequate fits to observed cases data. In addition, the Bayesian model with age-specific scaling parameters and time-varying average weekly contact rates was ranked the most preferred using the leave-one-out cross-validation (LOO) and the widely applicable information criterion (WAIC) methods. These results show that, beyond incorporating population heterogeneity from contact rates and mixing patterns, it is also essential to use time-varying contact rates and allow age-specific scaling of these rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We validated our modeling framework by fitting our model to the cases data from September to December 2020 and projected forward to predict the reported cases for January 2021 using the posterior distribution of the estimated parameters. Our projections provide moderate to good fits to the observed reported cases. In most age groups, we captured the reported cases within the 90% credible intervals of our model prediction.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "As expected, our projections are highly dependent on the underlying contact rates; as a result, we were able to capture the true trends in cases particularly for older age groups, which are well represented in the contact survey data. In contrast, the lower response rates among younger adults (18-34 years) in the BC-Mix survey may have resulted in contact rates (and hence, projections) that were less representative of the true trends. A related limitation of our framework is that it requires one to specify the future weekly contact rates in order to project future cases. One way to approach this issue would be to use contact rates from previous weeks and assume these will be representative of future contact rates. Such projections would be interpreted as a possible scenario if future contact rates remained similar to historical levels. A distinct benefit of our model is that future projections can be made based on clear assumptions about contact rates in the underlying population, as opposed to more challenging assumptions about changes in transmission rates (which could be due to many factors).",
+            "cite_spans": [
+                {
+                    "start": 294,
+                    "end": 307,
+                    "text": "(18-34 years)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our modeling framework is based on deterministic ODE equations, which are well suited to capturing smooth changes in transmission but may not be suitable for sudden fluctuations. The sensitivity to underlying contact rates can be a limitation if contact data are, for any reason (including poor data quality) unstable. Fluctuating contact rates could lead to unrealistic predictions as the model tries to capture these dynamics with a series of small exponential growths and decays. This appears to be the case for our 18-24 age group, which typically had unstable contact rates due to small numbers of survey respondents of this age.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We show the importance of including population-based contact rates in modeling of COVID-19. In this study, we used self-reported rates of close contact from the BC-Mix survey which began during September 2020 and is (as of October 2021) still ongoing. By including such contact information, it removes the need to otherwise estimate how contact rates might change over time due to, for example, non-pharmaceutical interventions (NPIs), such as restrictions on gathering sizes, travel, and closure of businesses (e.g., stores, restaurants, etc.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "). Yet, this approach is not without limitations. Certain NPIs, such as face masks and handwashing, may reduce transmission without affecting contact rates. It is possible to include additional parameters in our model to account for changes in the probability of infection per contact, and this would be an interesting area for further work. In this paper, we take a more general approach and introduce scaling parameters that 'translate' self-reported contact rates into contributions to transmission, by age group to account for possible biases in the survey data. Another limitation to note is that current contact rates for the age groups < 2 years, 2-5 years and 6-17 years were not available (BC-Mix survey respondents must be 18+ years of age) and so were instead derived from the previous influenza model of [16] . These contact rates were computed during 2009 and thus may no longer represent the true pattern of population mixing in BC. Although the scaling parameters for these age groups seems to largely account for any discrepancies, it would be preferable to have current contact rates for all age groups in our model. Lastly, we excluded 12.93% of the reported cases in our line list data from our analysis dues to lack of symptoms onset date. This is a relatively large proportion of the total reported cases. Not applying a correction to the remaining data set used for our analysis can be seen as a limitation of this work.",
+            "cite_spans": [
+                {
+                    "start": 816,
+                    "end": 820,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our modeling framework focuses on age-related patterns of contact and transmission and does not consider other possible sources of variation. For example, we used average provincial contact rates for each age group and did not explore regional differences or variation by socio-economic or occupation group (e.g., essential workers). We are currently developing a variation of this SEIR model that focuses on the meta-population dynamics of transmission within and among health regions of BC. Another interesting extension of this work would be to use time-dependent scaling parameters and mixing matrices. By allowing these parameters and matrices to vary, the model may be better able to capture changes in mixing patterns among age groups and how contact rates translate into impacts on transmission. The impact of certain non-pharmaceutical interventions may vary among age groups, particularly for measures such as closure of schools and businesses; time-varying mixing and scaling would reduce the need to adjust the model fits specifically to reflect the implementation of these measures. Other interesting directions, already under investigation by our team, include incorporating the effect of COVID-19 vaccination and variants of concern (VoCs) in this modeling framework. Certain variants have been shown to be more contagious than the original SAR-CoV-2 virus and responsible for spikes in reported cases during spring/summer of 2021 in many parts of the world. Yet, at the same time, vaccination has substantially reduced transmission in many populations. These factors had negligible impact on the results presented here, given that our data ended January 2021, but are of critical importance when looking at later time periods. Indeed, the effects of VoCs and vaccination may be highly age specific and our modeling framework is thus naturally suited to incorporating these elements.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Incorporating real-time contact survey data into models of COVID-19 dynamics has the potential to provide more rapid and improved estimates of infection rates and projected trends. Our study shows how empirical contact rate data can be integrated into a transmission modeling framework and used to capture age-specific trends in cases. Further work could consider how different types and levels of contact, as reported through ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "This work was supported by funding from the Michael Smith Foundation for Health Research and the Peter Wall Institute for Advanced Studies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding statement"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Quantifying contact patterns: development and characteristics of the british columbia covid-19 population mixing patterns survey (bc-mix). medRxiv",
+            "authors": [
+                {
+                    "first": "Mawuena",
+                    "middle": [],
+                    "last": "Prince A Adu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mahmood",
+                    "middle": [],
+                    "last": "Binka",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dahn",
+                    "middle": [],
+                    "last": "Bushra",
+                    "suffix": ""
+                },
+                {
+                    "first": "Terri",
+                    "middle": [],
+                    "last": "Jeong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Makuza",
+                    "middle": [],
+                    "last": "Buller-Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sarafa",
+                    "middle": [],
+                    "last": "Jean Damascene",
+                    "suffix": ""
+                },
+                {
+                    "first": "Notice",
+                    "middle": [],
+                    "last": "Iyaniwura",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hector",
+                    "middle": [],
+                    "last": "Ringa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Stanley",
+                    "middle": [],
+                    "last": "Velasquez",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The proximal origin of sars-cov-2",
+            "authors": [
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Kristian G Andersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ian",
+                    "middle": [],
+                    "last": "Rambaut",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Lipkin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Edward",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robert F",
+                    "middle": [],
+                    "last": "Holmes",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Garry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature medicine",
+            "volume": "26",
+            "issn": "4",
+            "pages": "450--452",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Estimating the impact of covid-19 control measures using a bayesian model of physical distancing",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sean",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Madi",
+                    "middle": [],
+                    "last": "Edwards",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nicola",
+                    "middle": [],
+                    "last": "Yerlanov",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jessica",
+                    "middle": [],
+                    "last": "Mulberry",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Stockdale",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sarafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rebeca",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Iyaniwura",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Falcao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Otterstatter",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Irvine",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Naveed",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Janjua",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Literature review for local polynomial regression. Unpublished manuscript",
+            "authors": [
+                {
+                    "first": "Matthew",
+                    "middle": [],
+                    "last": "Avery",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Age-structured sir model and resource growth dynamics: a covid-19 study",
+            "authors": [
+                {
+                    "first": "Kang",
+                    "middle": [],
+                    "last": "Sg Babajanyan",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hao Cheong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nonlinear Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "British Columbia -Population Estimates",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bcstats",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Don't blame the bame: Ethnic and structural inequalities in susceptibilities to covid-19",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gillian",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bentley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "American Journal of Human Biology",
+            "volume": "32",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Integrated vaccination and non-pharmaceutical interventions based strategies in ontario, canada, as a case study: a mathematical modeling study. medRxiv",
+            "authors": [
+                {
+                    "first": "Matthew",
+                    "middle": [],
+                    "last": "Betti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nicola",
+                    "middle": [
+                        "Luigi"
+                    ],
+                    "last": "Bragazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jane",
+                    "middle": [],
+                    "last": "Heffernan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jude",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Angie",
+                    "middle": [],
+                    "last": "Raad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Covid-19: Mathematical modeling and predictions",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Manav",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bhatnagar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Covid-19 herd immunity strategies: walking an elusive and dangerous tightrope. medRxiv",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tobias",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pejman",
+                    "middle": [],
+                    "last": "Brett",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Rohani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Transmission dynamics reveal the impracticality of covid-19 herd immunity strategies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tobias",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pejman",
+                    "middle": [],
+                    "last": "Brett",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Rohani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "117",
+            "issn": "41",
+            "pages": "25897--25903",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "A mathematical model reveals the influence of population heterogeneity on herd immunity to sars-cov-2",
+            "authors": [
+                {
+                    "first": "Tom",
+                    "middle": [],
+                    "last": "Britton",
+                    "suffix": ""
+                },
+                {
+                    "first": "Frank",
+                    "middle": [],
+                    "last": "Ball",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pieter",
+                    "middle": [],
+                    "last": "Trapman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "369",
+            "issn": "6505",
+            "pages": "846--849",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Model-informed covid-19 vaccine prioritization strategies by age and serostatus",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kate",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kyle",
+                    "middle": [],
+                    "last": "Bubar",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Reinholt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stephen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marc",
+                    "middle": [],
+                    "last": "Kissler",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sarah",
+                    "middle": [],
+                    "last": "Lipsitch",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Cobey",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yonatan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Grad",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Larremore",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Science",
+            "volume": "371",
+            "issn": "6532",
+            "pages": "916--921",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Data-driven study of the covid-19 pandemic via age-structured modelling and prediction of the health system failure in brazil amid diverse intervention strategies",
+            "authors": [
+                {
+                    "first": "Askery",
+                    "middle": [],
+                    "last": "Canabarro",
+                    "suffix": ""
+                },
+                {
+                    "first": "Elayne",
+                    "middle": [],
+                    "last": "Ten\u00f3rio",
+                    "suffix": ""
+                },
+                {
+                    "first": "Renato",
+                    "middle": [],
+                    "last": "Martins",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lais",
+                    "middle": [],
+                    "last": "Martins",
+                    "suffix": ""
+                },
+                {
+                    "first": "Samura\u00ed",
+                    "middle": [],
+                    "last": "Brito",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rafael",
+                    "middle": [],
+                    "last": "Chaves",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Plos one",
+            "volume": "15",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Presenting the latest seroprevalence results from across Canada: what they mean for the future of our pandemic response",
+            "authors": [],
+            "year": 2021,
+            "venue": "COVID-19 Immunity Task Force (CITF)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Vaccination against 2009 pandemic h1n1 in a population dynamical model of vancouver, canada: timing is everything",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jessica",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ashleigh",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Conway",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tuite",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nathaniel",
+                    "middle": [],
+                    "last": "David N Fisman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rafael",
+                    "middle": [],
+                    "last": "Hupert",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bahman",
+                    "middle": [],
+                    "last": "Meza",
+                    "suffix": ""
+                },
+                {
+                    "first": "Krista",
+                    "middle": [],
+                    "last": "Davoudi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pauline",
+                    "middle": [],
+                    "last": "English",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fred",
+                    "middle": [],
+                    "last": "Van Den Driessche",
+                    "suffix": ""
+                },
+                {
+                    "first": "Junling",
+                    "middle": [],
+                    "last": "Brauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMC public health",
+            "volume": "11",
+            "issn": "1",
+            "pages": "1--14",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Agedependent effects in the transmission and control of covid-19 epidemics",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Nicholas",
+                    "suffix": ""
+                },
+                {
+                    "first": "Petra",
+                    "middle": [],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yang",
+                    "middle": [],
+                    "last": "Klepac",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kiesha",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mark",
+                    "middle": [],
+                    "last": "Prem",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rosalind",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jit",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Eggo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature medicine",
+            "volume": "26",
+            "issn": "8",
+            "pages": "1205--1211",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "On the definition and the computation of the basic reproduction ratio r 0 in models for infectious diseases in heterogeneous populations",
+            "authors": [
+                {
+                    "first": "Odo",
+                    "middle": [],
+                    "last": "Diekmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Johan",
+                    "middle": [
+                        "Andre"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Peter",
+                    "middle": [],
+                    "last": "Heesterbeek",
+                    "suffix": ""
+                },
+                {
+                    "first": "Johan Aj",
+                    "middle": [],
+                    "last": "Metz",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Journal of mathematical biology",
+            "volume": "28",
+            "issn": "4",
+            "pages": "365--382",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Epidemiological characteristics of 2143 pediatric patients with 2019 coronavirus disease in china",
+            "authors": [
+                {
+                    "first": "Yuanyuan",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yabin",
+                    "middle": [],
+                    "last": "Mo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xin",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fang",
+                    "middle": [],
+                    "last": "Qi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zhongyi",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shilu",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Pediatrics",
+            "volume": "145",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Widely applicable information criterion (WAIC)",
+            "authors": [
+                {
+                    "first": "Aki",
+                    "middle": [],
+                    "last": "Vehtari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Approximate leave-one-out cross-validation",
+            "authors": [
+                {
+                    "first": "Jiqiang",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Impact of non-pharmaceutical interventions (npis) to reduce covid19 mortality and healthcare demand",
+            "authors": [
+                {
+                    "first": "Neil",
+                    "middle": [],
+                    "last": "Ferguson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Laydon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gemma",
+                    "middle": [],
+                    "last": "Nedjati-Gilani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Natsuko",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kylie",
+                    "middle": [],
+                    "last": "Ainslie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marc",
+                    "middle": [],
+                    "last": "Baguelin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sangeeta",
+                    "middle": [],
+                    "last": "Bhatia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adhiratha",
+                    "middle": [],
+                    "last": "Boonyasiri",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zulma",
+                    "middle": [],
+                    "last": "Cucunub\u00e1",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gina",
+                    "middle": [],
+                    "last": "Cuomo-Dannenburg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Report",
+            "volume": "9",
+            "issn": "77482",
+            "pages": "491--497",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Estimating the effects of non-pharmaceutical interventions on covid-19 in europe",
+            "authors": [
+                {
+                    "first": "Seth",
+                    "middle": [],
+                    "last": "Flaxman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Swapnil",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "Axel",
+                    "middle": [],
+                    "last": "Gandy",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Unwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Helen",
+                    "middle": [],
+                    "last": "Thomas A Mellan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Charles",
+                    "middle": [],
+                    "last": "Coupland",
+                    "suffix": ""
+                },
+                {
+                    "first": "Harrison",
+                    "middle": [],
+                    "last": "Whittaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tresnia",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jeffrey",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Berah",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Eaton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "584",
+            "issn": "7820",
+            "pages": "257--261",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "British Columbia Center for Disease Control (BCCDC). Epidemiology & Modelling Presentations: September 3, 2020 press briefing",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "British Columbia Weekly COVID-19 Surveillance Report",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "BCCDC) and Provincial Health Service Authority (PHSA). The story of B.C.'s leading-edge COVID-19 test development",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bc Center For Diseases",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Control",
+                    "suffix": ""
+                }
+            ],
+            "year": 2022,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "British Columbia COVID-19 Dashboard",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Estimating the generation interval for coronavirus disease (covid-19) based on symptom onset data",
+            "authors": [
+                {
+                    "first": "Tapiwa",
+                    "middle": [],
+                    "last": "Ganyani",
+                    "suffix": ""
+                },
+                {
+                    "first": "C\u00e9cile",
+                    "middle": [],
+                    "last": "Kremer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dongxuan",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrea",
+                    "middle": [],
+                    "last": "Torneri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eurosurveillance",
+            "volume": "25",
+            "issn": "17",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The ELBO in Variational Inference",
+            "authors": [
+                {
+                    "first": "Gregory",
+                    "middle": [],
+                    "last": "Gundersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Impact of booster covid-19 vaccine for moroccan adults: A discrete age-structured model approach. medRxiv",
+            "authors": [
+                {
+                    "first": "Aayah",
+                    "middle": [],
+                    "last": "Hammoumi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hanane",
+                    "middle": [],
+                    "last": "Hmarrass",
+                    "suffix": ""
+                },
+                {
+                    "first": "Redouane",
+                    "middle": [],
+                    "last": "Qesmi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Seir modeling of the covid-19 and its dynamics",
+            "authors": [
+                {
+                    "first": "Shaobo",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yuexi",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kehui",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nonlinear Dynamics",
+            "volume": "101",
+            "issn": "3",
+            "pages": "1667--1680",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The no-u-turn sampler: adaptively setting path lengths in hamiltonian monte carlo",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Matthew",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Hoffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Gelman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J. Mach. Learn. Res",
+            "volume": "15",
+            "issn": "1",
+            "pages": "1593--1623",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Elbo surgery: yet another way to carve up the variational evidence lower bound",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Matthew",
+                    "suffix": ""
+                },
+                {
+                    "first": "Matthew J Johnson",
+                    "middle": [],
+                    "last": "Hoffman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Workshop in Advances in Approximate Bayesian Inference, NIPS",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Older age groups and country-specific case fatality rates of covid-19 in europe, usa and canada",
+            "authors": [
+                {
+                    "first": "Christian",
+                    "middle": [],
+                    "last": "Hoffmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "Eva",
+                    "middle": [],
+                    "last": "Wolf",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Infection",
+            "volume": "49",
+            "issn": "1",
+            "pages": "111--116",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Mathematical modeling and analysis of covid-19 pandemic in nigeria. medRxiv",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Enahoro",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iboi",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Oluwaseun",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Sharomi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Calistus",
+                    "suffix": ""
+                },
+                {
+                    "first": "Abba B",
+                    "middle": [],
+                    "last": "Ngonghala",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Gumel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "A structured model for covid-19 spread: modelling age and healthcare inequities",
+            "authors": [
+                {
+                    "first": "Alex",
+                    "middle": [],
+                    "last": "James",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rachelle",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Plank",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kate",
+                    "middle": [],
+                    "last": "Binny",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hannah",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shaun",
+                    "suffix": ""
+                },
+                {
+                    "first": "Audrey",
+                    "middle": [],
+                    "last": "Hendy",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nicholas",
+                    "middle": [],
+                    "last": "Lustig",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Steyn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "MedRxiv",
+            "volume": "",
+            "issn": "",
+            "pages": "2020--2025",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Prioritising covid-19 vaccination in changing social and epidemiological landscapes: a mathematical modelling study. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Peter",
+                    "suffix": ""
+                },
+                {
+                    "first": "Madhur",
+                    "middle": [],
+                    "last": "Jentsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chris",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Anand",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bauch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Notes on r0. California: Department of Anthropological Sciences",
+            "authors": [
+                {
+                    "first": "James",
+                    "middle": [],
+                    "last": "Holland",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jones",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "",
+            "volume": "323",
+            "issn": "",
+            "pages": "1--19",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Covid-19: risk factors for severe disease and death",
+            "authors": [
+                {
+                    "first": "Peymane",
+                    "middle": [],
+                    "last": "Rachel E Jordan",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Adab",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Age-structured model for covid-19: Effectiveness of social distancing and contact reduction",
+            "authors": [
+                {
+                    "first": "Mark",
+                    "middle": [],
+                    "last": "Kimathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Samuel",
+                    "middle": [],
+                    "last": "Mwalili",
+                    "suffix": ""
+                },
+                {
+                    "first": "Viona",
+                    "middle": [],
+                    "last": "Ojiambo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Duncan",
+                    "middle": [],
+                    "last": "Gathungu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "A net benefit approach for the optimal allocation of a covid-19 vaccine. medRxiv",
+            "authors": [
+                {
+                    "first": "Erin",
+                    "middle": [],
+                    "last": "Kirwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ellen",
+                    "middle": [],
+                    "last": "Rafferty",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kate",
+                    "middle": [],
+                    "last": "Harback",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jeff",
+                    "middle": [],
+                    "last": "Round",
+                    "suffix": ""
+                },
+                {
+                    "first": "Christopher",
+                    "middle": [],
+                    "last": "Mccabe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Early dynamics of transmission and control of covid-19: a mathematical modelling study. The lancet infectious diseases",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Adam",
+                    "suffix": ""
+                },
+                {
+                    "first": "Timothy",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Kucharski",
+                    "suffix": ""
+                },
+                {
+                    "first": "Charlie",
+                    "middle": [],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yang",
+                    "middle": [],
+                    "last": "Diamond",
+                    "suffix": ""
+                },
+                {
+                    "first": "John",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sebastian",
+                    "middle": [],
+                    "last": "Edmunds",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rosalind",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Funk",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fiona",
+                    "middle": [],
+                    "last": "Eggo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mark",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "James",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Jit",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Munday",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "20",
+            "issn": "",
+            "pages": "553--558",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Effect of non-pharmaceutical interventions to contain covid-19 in china",
+            "authors": [
+                {
+                    "first": "Shengjie",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Nick",
+                    "suffix": ""
+                },
+                {
+                    "first": "Liangcai",
+                    "middle": [],
+                    "last": "Ruktanonchai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Olivia",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wei",
+                    "middle": [],
+                    "last": "Prosper",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jessica",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Amy",
+                    "middle": [],
+                    "last": "Floyd",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mauricio",
+                    "middle": [],
+                    "last": "Wesolowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chi",
+                    "middle": [],
+                    "last": "Santillana",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiangjun",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "585",
+            "issn": "7825",
+            "pages": "410--413",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Early transmission dynamics in wuhan, china, of novel coronavirusinfected pneumonia",
+            "authors": [
+                {
+                    "first": "Qun",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xuhua",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Peng",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiaoye",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lei",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yeqing",
+                    "middle": [],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ruiqi",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kathy",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Eric",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jessica",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England journal of medicine",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Leave-one-out cross-validation for bayesian model comparison in large data",
+            "authors": [
+                {
+                    "first": "M\u00e5ns",
+                    "middle": [],
+                    "last": "Magnusson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aki",
+                    "middle": [],
+                    "last": "Vehtari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Johan",
+                    "middle": [],
+                    "last": "Jonasson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Michael",
+                    "middle": [],
+                    "last": "Andersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Conference on Artificial Intelligence and Statistics",
+            "volume": "",
+            "issn": "",
+            "pages": "341--351",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Age groups that sustain resurging covid-19 epidemics in the united states",
+            "authors": [
+                {
+                    "first": "M\u00e9lodie",
+                    "middle": [],
+                    "last": "Monod",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexandra",
+                    "middle": [],
+                    "last": "Blenkinsop",
+                    "suffix": ""
+                },
+                {
+                    "first": "Xiaoyue",
+                    "middle": [],
+                    "last": "Xi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Hebert",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sivan",
+                    "middle": [],
+                    "last": "Bershan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Simon",
+                    "middle": [],
+                    "last": "Tietze",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marc",
+                    "middle": [],
+                    "last": "Baguelin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Valerie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yu",
+                    "middle": [],
+                    "last": "Bradley",
+                    "suffix": ""
+                },
+                {
+                    "first": "Helen",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Coupland",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Science",
+            "volume": "371",
+            "issn": "6536",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Modelling optimal vaccination strategy for sars-cov-2 in the uk",
+            "authors": [
+                {
+                    "first": "Sam",
+                    "middle": [],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Edward",
+                    "suffix": ""
+                },
+                {
+                    "first": "Louise",
+                    "middle": [],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Dyson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "Matt",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tildesley",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Keeling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "PLoS computational biology",
+            "volume": "17",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Vaccine rollout strategies: The case for vaccinating essential workers early. medRxiv",
+            "authors": [
+                {
+                    "first": "Nicola",
+                    "middle": [],
+                    "last": "Mulberry",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tupper",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kirwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Caroline",
+                    "middle": [],
+                    "last": "Mccabe",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Colijn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Mathematical modeling of covid-19 transmission dynamics with a case study of wuhan",
+            "authors": [
+                {
+                    "first": "Fa\u00ef\u00e7al",
+                    "middle": [],
+                    "last": "Nda\u00efrou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Iv\u00e1n",
+                    "middle": [],
+                    "last": "Area",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Juan",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Nieto",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Delfim",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Torres",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chaos, Solitons & Fractals",
+            "volume": "135",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Office of the Senior advocate British Columbia. REVIEW OF COVID-19 OUTBREAKS IN CARE HOMES IN BRITISH COLUMBIA",
+            "authors": [],
+            "year": 2022,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Non-pharmaceutical interventions during the covid-19 pandemic: A review",
+            "authors": [
+                {
+                    "first": "Nicola",
+                    "middle": [],
+                    "last": "Perra",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Physics Reports",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Agestructured non-pharmaceutical interventions for optimal control of covid-19 epidemic",
+            "authors": [
+                {
+                    "first": "Quentin",
+                    "middle": [],
+                    "last": "Richard",
+                    "suffix": ""
+                },
+                {
+                    "first": "Samuel",
+                    "middle": [],
+                    "last": "Alizon",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marc",
+                    "middle": [],
+                    "last": "Choisy",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Mircea",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rams\u00e8s",
+                    "middle": [],
+                    "last": "Sofonea",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Djidjou-Demasse",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "PLoS computational biology",
+            "volume": "17",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Epidemiology of covid-19 in bc: The first 3 months",
+            "authors": [
+                {
+                    "first": "Caren",
+                    "middle": [],
+                    "last": "Rose",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kate",
+                    "middle": [],
+                    "last": "Smolina",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bccdc Surveillance",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Team",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BC MEDICAL JOURNAL(BCMJ)",
+            "volume": "62",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Importance of covid-19 vaccine efficacy in older age groups",
+            "authors": [
+                {
+                    "first": "Manish",
+                    "middle": [],
+                    "last": "Sadarangani",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jessica",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bahaa Abu Raya",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Conway",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sarafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rebeca",
+                    "middle": [
+                        "Cardim"
+                    ],
+                    "last": "Iyaniwura",
+                    "suffix": ""
+                },
+                {
+                    "first": "Caroline",
+                    "middle": [],
+                    "last": "Falcao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Colijn",
+                    "suffix": ""
+                },
+                {
+                    "first": "Soren",
+                    "middle": [],
+                    "last": "Coombs",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Gantt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Vaccine",
+            "volume": "39",
+            "issn": "15",
+            "pages": "2020--2023",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Covid-19 spreading dynamics in an agestructured population with selective relaxation of restrictions for vaccinated individuals: a mathematical modeling study. medRxiv",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Shayak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Manoj",
+                    "middle": [],
+                    "last": "Mohit",
+                    "suffix": ""
+                },
+                {
+                    "first": "Anand Kumar",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Age-structured impact of social distancing on the covid-19 epidemic in india",
+            "authors": [
+                {
+                    "first": "Rajesh",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ronojoy",
+                    "middle": [],
+                    "last": "Adhikari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.12055"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "RStan: the R interface to Stan",
+            "authors": [
+                {
+                    "first": "Stan",
+                    "middle": [],
+                    "last": "Development Team",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "The Stan Development Team. Variational algorithm for approximate posterior sampling",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Transmission interval estimates suggest pre-symptomatic spread of covid-19",
+            "authors": [
+                {
+                    "first": "Lauren",
+                    "middle": [],
+                    "last": "Tindale",
+                    "suffix": ""
+                },
+                {
+                    "first": "Michelle",
+                    "middle": [],
+                    "last": "Coombe",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jessica",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Stockdale",
+                    "suffix": ""
+                },
+                {
+                    "first": "Emma",
+                    "middle": [],
+                    "last": "Garlock",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wing Yin Venus",
+                    "suffix": ""
+                },
+                {
+                    "first": "Manu",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yen-Hsiang Brian",
+                    "middle": [],
+                    "last": "Saraswat",
+                    "suffix": ""
+                },
+                {
+                    "first": "Louxin",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dongxuan",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jacco",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wallinga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Mathematical modelling of covid-19 transmission and mitigation strategies in the population of ontario",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Ashleigh R Tuite",
+                    "suffix": ""
+                },
+                {
+                    "first": "Amy",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "David N Fisman",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Greer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "canada. Cmaj",
+            "volume": "192",
+            "issn": "19",
+            "pages": "497--505",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Case fatality risk by age from covid-19 in a high testing setting in latin america: Chile",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Eduardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gerardo",
+                    "middle": [],
+                    "last": "Undurraga",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kenji",
+                    "middle": [],
+                    "last": "Chowell",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mizumoto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Reproduction numbers and sub-threshold endemic equilibria for compartmental models of disease transmission",
+            "authors": [
+                {
+                    "first": "Pauline",
+                    "middle": [],
+                    "last": "Van Den Driessche",
+                    "suffix": ""
+                },
+                {
+                    "first": "James",
+                    "middle": [],
+                    "last": "Watmough",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Mathematical biosciences",
+            "volume": "180",
+            "issn": "1-2",
+            "pages": "29--48",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Practical bayesian model evaluation using leave-oneout cross-validation and waic",
+            "authors": [
+                {
+                    "first": "Aki",
+                    "middle": [],
+                    "last": "Vehtari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Gelman",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jonah",
+                    "middle": [],
+                    "last": "Gabry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Statistics and computing",
+            "volume": "27",
+            "issn": "5",
+            "pages": "1413--1432",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Assessing age-specific vaccination strategies and post-vaccination reopening policies for covid-19 control using seir modeling approach. medRxiv",
+            "authors": [
+                {
+                    "first": "Xia",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hulin",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sanyi",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Asymptotic equivalence of bayes cross validation and widely applicable information criterion in singular learning theory",
+            "authors": [
+                {
+                    "first": "Sumio",
+                    "middle": [],
+                    "last": "Watanabe",
+                    "suffix": ""
+                },
+                {
+                    "first": "Manfred",
+                    "middle": [],
+                    "last": "Opper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of machine learning research",
+            "volume": "11",
+            "issn": "12",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "WHO Coronavirus (COVID-19) Dashboard",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "World Health Organization (WHO)",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "WHO's COVID-19 response timeline",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Statement on the second meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV)",
+            "authors": [],
+            "year": 2005,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "WHO Director-General's opening remarks at the media briefing on",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "who-director-general-s-opening-remarks-at-the-media-briefing-on-covid",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Yes, but did it work?: Evaluating variational inference",
+            "authors": [
+                {
+                    "first": "Yuling",
+                    "middle": [],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aki",
+                    "middle": [],
+                    "last": "Vehtari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Simpson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Gelman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "International Conference on Machine Learning",
+            "volume": "",
+            "issn": "",
+            "pages": "5581--5590",
+            "other_ids": {}
+        },
+        "BIBREF73": {
+            "ref_id": "b73",
+            "title": "Changes in contact patterns shape the dynamics of the covid-19 outbreak in china",
+            "authors": [
+                {
+                    "first": "Juanjuan",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Maria",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yuxia",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yan",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wei",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shanlu",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Qianhui",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Stefano",
+                    "middle": [],
+                    "last": "Merler",
+                    "suffix": ""
+                },
+                {
+                    "first": "C\u00e9cile",
+                    "middle": [],
+                    "last": "Viboud",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alessandro",
+                    "middle": [],
+                    "last": "Vespignani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "6498",
+            "pages": "1481--1486",
+            "other_ids": {}
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "Sars-cov-2 viral load in upper respiratory specimens of infected patients",
+            "authors": [
+                {
+                    "first": "Lirong",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Feng",
+                    "middle": [],
+                    "last": "Ruan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mingxing",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lijun",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Huitao",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zhongsi",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jianxiang",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Min",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yingchao",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jinyu",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England Journal of Medicine",
+            "volume": "382",
+            "issn": "12",
+            "pages": "1177--1179",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "Reported cases of COVID-19 and contact rates in BC. Top left: Weekly reported cases of COVID-19 in BC by symptom onset date from September 2020 to January 2021. Top right:",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Population mixing patterns. Heat maps showing the mixing patterns between individuals of different age groups as derived from the BC-Mix survey[1] (left panel) and influenza model of[16] (right panel). Each column represents the proportion of the total contacts of a specific age group made with each of the other age groups. Since the BC-Mix survey does not include individuals < 18 years, the columns for the age groups: < 2 years, 2-5 years, and 6-17 years in the BC-Mix matrix (left panel) were derived from the 2009 matrix (right panel).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Observed and estimated case counts obtained using the BC-Mix matrix. Top row (red): Single scaling parameter and fixed contact rates (SSFR). Second row (gold): Age-specific scaling parameter and fixed contact rates (ASSFR), third row (green): single scaling parameter and time-dependent contact rates (SSVR), and fourth row (blue): Age specific scaling parameter and time-dependent contact rates (ASSVR). The black dots are the weekly reported cases of COVID-19 in BC, the solid lines are the median predicted cases, the darker bands are the 50% CrI, while the lighter bands are the 90% CrI. Similar plots for the remaining age groups are provided in Supplementary material A.1.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF1": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors declare that there is no competing interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of Competing Interest"
+        }
+    ]
+}

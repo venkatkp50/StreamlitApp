@@ -1,0 +1,2642 @@
+{
+    "paper_id": "0b24c0177d367124911e90ced4951520a793c86d",
+    "metadata": {
+        "title": "",
+        "authors": []
+    },
+    "abstract": [
+        {
+            "text": "Citation: Zhang, Z.; Li, X.; Wang, Q.; Zhao, X.; Xu, J.; Jiang, Q.; Jiang, S.; Lyu, J.; Liu, S.; Ye, L.; et al. Simulation Studies Provide Evidence of Aerosol Transmission of SARS-CoV-2 in a Multi-Story",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "In June 2021, a cross-layer non-vertical transmission of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) occurred in a ten-story quarantine hotel in Guangzhou, Guangdong Province, China. During quarantine, the early quarantined persons on the fifth floor and the late quarantined person in the non-vertically adjacent room on the seventh floor were detected as successively positive for the novel coronal nucleic acid. The index cases and infected case at a different layer had no direct contact before and after entering the hotel and were not the close contacts of the same confirmed case of coronavirus disease 2019 (COVID- 19) , but the virus gene sequencing results were highly consistent. After investigation, there were no external windows of the rooms they lived in, the air conditioning system of the rooms was a fan coil unit and the central air conditioning air supply system to supply air partly taken from the outdoor and partly from the corridor, the sewage and drainage pipes in bathrooms of the fifth to eighth floor for quarantine did not directly exhaust from the top through the vertical pipes but were gathered to a horizontal pipe at the top of the eighth floor and then exhausted through the roof exhaust fan, which was always closed due to elevator maintenance during the quarantine period.",
+            "cite_spans": [
+                {
+                    "start": 640,
+                    "end": 643,
+                    "text": "19)",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The WHO pointed out on 30 April 2021: \"The virus can also spread in poorly ventilated and/or crowded indoor settings, where people tend to spend longer periods of time. This is because aerosols can remain suspended in the air or travel farther than conversational distance (this is often called long-range aerosol or long-range airborne transmission).\" During the outbreak of the COVID-19 epidemic, high-risk populations such as close contacts needed home isolation or centralized isolation for a long time. Usually, the isolation sites were multilayer or high-rise buildings and people were more concentrated, so it was very important to explore virus transmission in the building. Previous viral transmissions in high-rise buildings, including the severe acute respiratory syndrome coronavirus 1 (SARS-CoV-1) outbreak in Amoy Garden in Hong Kong [1, 2] and SARS-CoV-2 transmission in a high-rise building in Guangzhou [3] and so on, usually took place in vertically distributed rooms on different floors where index cases and infected cases stayed, and the virus was transmitted through vertical sanitary pipelines in the form of aerosol. In addition, viral aerosol can be transmitted from one building to an adjacent building (commonly known as handshake buildings) under a certain airflow layout that was confirmed in a study about SARS-CoV-2 in Guangzhou [4] .",
+            "cite_spans": [
+                {
+                    "start": 848,
+                    "end": 851,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 852,
+                    "end": 854,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 920,
+                    "end": 923,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1360,
+                    "end": 1363,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To explore the transmission path and influencing factors of SARS-CoV-2 aerosol in quarantine hotels, we simulated respiration and toilet flushing after defecation and urination of the quarantined person, conducted field simulation experiments, and proposed rectification suggestions for quarantine hotels according to the research results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The simulation site of this survey was a hotel in Guangzhou, Guangdong Province, China that was used for quarantine of close contacts during the epidemic period. The hotel building showed a rectangular-ambulatory-plane structure. The early quarantined persons on the 5th floor came from the same family in a community and were distributed in rooms 510, 511, 552, which were relatively close. The possibility of infection before occupancy or personnel contact during occupancy was not excluded. The late infected case in room 705 on the 7th floor, which was non-vertically distributed with the three rooms on the 5th floor, had never contacted them but the virus gene sequencing results were highly consistent.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and Methods"
+        },
+        {
+            "text": "At present, viable novel coronavirus has been detected in both the exhaled air [5] and feces [6, 7] of COVID-19 patients. Therefore, we selected two scenarios to simulate respiration in the bedroom and toilet flushing after defecation and urination in the bathroom for field simulation experiments. During the quarantine period, quarantined persons need to stay in a closed indoor space for a long time so as to generate a relatively large amount of aerosol. Meanwhile, the asymptomatic or COVID-19 case in the incubation period also have diarrhea symptoms [8] , so toilets will be frequently used during the quarantine period. Based on this, two modes of virus excretion lasted for 4 h and 1.5 h (flushing four times), respectively. The fluorescent polystyrene microspheres consistent with the similar aerodynamic characteristics of the SARS-CoV-2 spike pseudovirus which did not exist in nature were used as the simulants for field simulation experiments. Fluorescent the three rooms at the same time at 0.5 h, significant peak concentrations were observed at different particle sizes and the background value was restored in about 20 min. The number concentration of particles in different rooms was room 552 > 652 > 752, and fluorescent microspheres were detected in swab samples of the exhaust fans in room 652 and 752. Pouring the simulants to flush again at 1 h, the concentration of particles did not change immediately, and the peak concentration appeared in different rooms at different times (10-30 min) . Fluorescent microspheres were detected in swab samples collected on the floor drain, toilet lid and seat ring, and exhaust fan in the bathroom of room 652. Flushing simultaneously at 1.5 h, fluorescent microspheres were detected on the floor drain, toilet lid and seat ring, air supply outlet of the air conditioning, and fresh air system of room 652, and the exhaust fan and floor drain of room 752. Detailed changes in the particle size spectrum are shown in Figure S1 . ",
+            "cite_spans": [
+                {
+                    "start": 79,
+                    "end": 82,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 93,
+                    "end": 96,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 97,
+                    "end": 99,
+                    "text": "7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 557,
+                    "end": 560,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1503,
+                    "end": 1514,
+                    "text": "(10-30 min)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1978,
+                    "end": 1987,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Materials and Methods"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equipment. The increasing particle concentration was also observed under the fresh air inlets on both sides of the fifth corridor and in the outdoor corridor of the room with simulated ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 98,
+                    "end": 114,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equipment. The increasing particle concentration was also observed under the fresh air inlets on both sides of the fifth corridor and in the outdoor corridor of the room with simulated ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 98,
+                    "end": 114,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equipment. The increasing particle concentration was also observed under the fresh air inlets on both sides of the fifth corridor and in the outdoor corridor of the room with simulated ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 98,
+                    "end": 114,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel air inlets were set on both sides of each floor corridor near the outer window t air outside the window. Fresh air was mixed with air from the inside corridor plied to the room through two air outlets in the room. The fan coil unit adjusted temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected in th membrane samples and liquid samples collected in rooms 553, 652, and 705 hours, the swab samples collected at different times in rooms 510, 511, and 5 respiration was simulated, the swab samples collected on the roof exhaust outle sewage pipe riser vent on the roof. The increasing concentrations of particles w ent sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation ex fluorescent microspheres were not detected in swab samples of rooms 553, 652 However, the concentrations of particles with different sizes increased in room not change in room 705, and was not monitored in room 553 due to the limited fi ment. The increasing particle concentration was also observed under the fresh on both sides of the fifth corridor and in the outdoor corridor of the room with ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 77,
+                    "end": 84,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 89,
+                    "end": 105,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the air inlets were set on both sides of each floor corridor near the outer win air outside the window. Fresh air was mixed with air from the inside co plied to the room through two air outlets in the room. The fan coil unit ad temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the resu Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected membrane samples and liquid samples collected in rooms 553, 652, and hours, the swab samples collected at different times in rooms 510, 511, respiration was simulated, the swab samples collected on the roof exhaus sewage pipe riser vent on the roof. The increasing concentrations of parti ent sizes were monitored in rooms 510, 511, and 552. After the 1 h simulat fluorescent microspheres were not detected in swab samples of rooms 55 However, the concentrations of particles with different sizes increased i not change in room 705, and was not monitored in room 553 due to the lim ment. The increasing particle concentration was also observed under th on both sides of the fifth corridor and in the outdoor corridor of the room ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 70,
+                    "end": 77,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 82,
+                    "end": 98,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning sys air inlets were set on both sides of each floor co air outside the window. Fresh air was mixed w plied to the room through two air outlets in the r temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Res"
+        },
+        {
+            "text": "The respiratory simulation experiment laste Table 1 and Figures 1 and S4 . Fluorescent mic membrane samples and liquid samples collecte hours, the swab samples collected at different respiration was simulated, the swab samples col sewage pipe riser vent on the roof. The increasin ent sizes were monitored in rooms 510, 511, and fluorescent microspheres were not detected in s However, the concentrations of particles with d not change in room 705, and was not monitored i ment. The increasing particle concentration was on both sides of the fifth corridor and in the outd ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 44,
+                    "end": 51,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 56,
+                    "end": 72,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Res"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equip- ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 98,
+                    "end": 114,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and Figures 1 and S4 . Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equip- ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 98,
+                    "end": 114,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The f air inlets were set on both sides of each floor corridor near the outer window to take air outside the window. Fresh air was mixed with air from the inside corridor and plied to the room through two air outlets in the room. The fan coil unit adjusted the r temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are show Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 82,
+                    "end": 89,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel air inlets were set on both sides of each floor corridor near the outer window t air outside the window. Fresh air was mixed with air from the inside corridor plied to the room through two air outlets in the room. The fan coil unit adjusted temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 77,
+                    "end": 84,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in air inlets were set on both sides of each floor corridor near th air outside the window. Fresh air was mixed with air from t plied to the room through two air outlets in the room. The fan temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four ho Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 57,
+                    "end": 64,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning sys air inlets were set on both sides of each floor co air outside the window. Fresh air was mixed w plied to the room through two air outlets in the r temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Res"
+        },
+        {
+            "text": "The respiratory simulation experiment laste Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 44,
+                    "end": 51,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Res"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the air inlets were set on both sides of each floor corridor near the outer win air outside the window. Fresh air was mixed with air from the inside co plied to the room through two air outlets in the room. The fan coil unit ad temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the resu Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 70,
+                    "end": 77,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. Th air inlets were set on both sides of each floor corridor near the outer window to t air outside the window. Fresh air was mixed with air from the inside corridor an plied to the room through two air outlets in the room. The fan coil unit adjusted th temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are sh Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 87,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems we air inlets were set on both sides of each floor corridor ne air outside the window. Fresh air was mixed with air fr plied to the room through two air outlets in the room. Th temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for fou ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. Th air inlets were set on both sides of each floor corridor near the outer window to t air outside the window. Fresh air was mixed with air from the inside corridor an plied to the room through two air outlets in the room. The fan coil unit adjusted th temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are sh ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems we air inlets were set on both sides of each floor corridor ne air outside the window. Fresh air was mixed with air fr plied to the room through two air outlets in the room. Th temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for fou Table 1 and Figures 1 and S4 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 53,
+                    "end": 60,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 65,
+                    "end": 81,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. T air inlets were set on both sides of each floor corridor near the outer window to air outside the window. Fresh air was mixed with air from the inside corridor plied to the room through two air outlets in the room. The fan coil unit adjusted temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are s ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning sys air inlets were set on both sides of each floor co air outside the window. Fresh air was mixed w plied to the room through two air outlets in the r temperature by self-circulating cooling. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Res"
+        },
+        {
+            "text": "Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The respiratory simulation experiment lasted for four hours; the results are shown in Table 1 and Figure 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equipment. The increasing particle concentration was also observed under the fresh air inlets on both sides of the fifth corridor and in the outdoor corridor of the room with simulated respiration, and the higher the particle concentration in the room, the higher the corridor. In 2 h, fluorescent microspheres were detected in swab samples collected in room 553, air supply outlets of air conditioning and fresh air system in room 652, and only the air supply outlet of the air conditioning system in room 752. The number concentration of particles in rooms 652 and 705 increased significantly. In 3 h, fluorescent microspheres were detected in swab samples of rooms 553, 652, and 705. The PM 10 concentration in the room was also monitored, and significant increases were observed in about 40 min in room 553, about 60 min in room 652, and 100 min in room 705. Detailed changes in the particle size spectrum are shown in Figures S2 and S3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 93,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 98,
+                    "end": 106,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1794,
+                    "end": 1811,
+                    "text": "Figures S2 and S3",
+                    "ref_id": "FIGREF25"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "In a toilet-flushing simulation experiment after defecation and urination for 1.5 h, fluorescent polystyrene microspheres (0.1-2 \u03bcm) were detected in air filter membrane samples and liquid samples collected in rooms 552, 652, and 752, all smeared swab samples collected in room 552 and on the exhaust outlet and sewage pipe riser vent on the roof. The results are shown in Table 1 and Figures 1 and S4 . When flushing simultaneously in rooms 552, 652, and 752 after the simulants were poured into the toilet in room 552 at 0 h, no change in the particle concentration occurred in any of the three rooms; when flushing in the three rooms at the same time at 0.5 h, significant peak concentrations were observed at different particle sizes and the background value was restored in about 20 min. The number concentration of particles in different rooms was room 552 > 652 > 752, and fluorescent microspheres were detected in swab samples of the exhaust fans in room 652 and 752. Pouring the simulants to flush again at 1h, the concentration of particles did not change immediately, and the peak concentration appeared in different rooms at different times (10-30 min) . Fluorescent microspheres were detected in swab samples collected on the floor drain, toilet lid and seat ring, and exhaust fan in the bathroom of room 652. Flushing simultaneously at 1.5 h, fluorescent microspheres were detected on the floor drain, toilet lid and seat ring, air supply outlet of the air conditioning, and fresh air system of room 652, and the exhaust fan and floor drain of room 752. Detailed changes in the particle size spectrum are shown in Figure S1 . ",
+            "cite_spans": [
+                {
+                    "start": 1153,
+                    "end": 1164,
+                    "text": "(10-30 min)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 373,
+                    "end": 380,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 385,
+                    "end": 401,
+                    "text": "Figures 1 and S4",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1628,
+                    "end": 1637,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Aerosol Transmission Induced by Simulated Respiration"
+        },
+        {
+            "text": "The results of the simulation experiment showed that the simulated toilet flushing after defecation and urination in room 552 can produce aerosols and spread to the upper bathrooms in 652 and 752. The schematic diagram of vertical transmission is shown in Figure 2 . When flushing the toilet, the pressure generated by flushing would cause the fluorescent microspheres to form aerosols [11] [12] [13] , partly into the bathroom and partly into the sewage pipe. The simulated virus aerosol into the bathroom entered the air duct through the exhaust fan. The virus transmission events and field simulation experiments occurred in June, and the outdoor temperature could reach 34 \u2022 C. The open indoor air conditioning led to a lower temperature than the outdoors, so the warm air outdoors would flow down into the air duct. Under a certain wind direction, the air in the air duct can pour into other rooms with the vertical distribution. The positive results of smeared swab samples of exhaust fans in three rooms and the roof exhaust outlet after the experiment confirmed that the simulated aerosol can be transmitted through the exhaust duct. ",
+            "cite_spans": [
+                {
+                    "start": 386,
+                    "end": 390,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 391,
+                    "end": 395,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 396,
+                    "end": 400,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 256,
+                    "end": 264,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF25"
+                }
+            ],
+            "section": "Cross-Layer Vertical Transmission Caused by Sewage and Exhaust Pipe of the Bathroom"
+        },
+        {
+            "text": "The rooms in this hotel were relatively confined because the room had no outer windows and the door was closed during the quarantine period. The viral aerosol generated by simulated respiration gradually increased in the room that can be diffused into the corridor through the door gap or open the door to take food and move out the garbage and other behaviors. The fresh air system mixed the fresh air taken from the outside and the polluted air in the corridor to send to the rooms on the same floor and polluted these rooms. The positive results of swab samples at the fresh air outlet in the rooms on the fifth floor indicated that the fresh air system was polluted and the positive results of air samples and swab samples on the surface in room 553 proved that the room on the same floor was polluted. It can be speculated that the simulated aerosol could also be transmitted to rooms such as room 505. The monitoring and sampling results at different times showed that the simulated aerosol can pollute the fresh air system and be transmitted in the same layer within 1 h of the simulated respiration experiment. The schematic diagram of the transmission in the same layer is shown in Figure 3 . Due to the reconstruction of the sewage and drainage pipes in the fifth to eighth bathroom, the virus aerosol entering the sewage pipe first converged into the horizontal pipe and was then discharged by the exhaust fan at the roof through the riser vents. During quarantine, the exhaust fan of the roof riser has not been turned on; viral aerosol constantly converged in the horizontal pipe and could not be discharged normally. With the change in pressure in the pipe caused by toilet flushing, it would be poured into the sewage and drainage pipe of other floors, and then transmitted to the bathroom through the dry floor drain or washbasin. This hypothesis was confirmed by the positive results of swab samples of the sewage roof riser vents and the floor drain and the toilet seat ring in rooms 652 and 752.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1191,
+                    "end": 1199,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF27"
+                }
+            ],
+            "section": "Same-Floor Transmission Caused by Ventilation Systems"
+        },
+        {
+            "text": "With the increase in simulated aerosols in the air, the concentration of particles will appear at a peak, but it will return to the background in about 20 min, and the peak time of different rooms was different. In addition, the detection time of fluorescent microspheres in different locations of different rooms was also different, indicating that the time of aerosols reaching different floors was not consistent. Diffusion of viral aerosols accumulated in exhaust pipes was related to the direction and velocity of external airflow. The aerosol generated by room 552 spread faster in the exhaust pipe and was transmitted to rooms 652 and 752 in about 0.5 h. The simulated aerosols entering the sewage pipes spread slowly in the pipeline and entered the bathroom of room 652 at the third flush and the bathroom of room 752 at the fourth flush. In addition, with the increase in the amount of simulated aerosol entering the bathroom in room 652, it spread to the bedroom in room 652 and polluted the air conditioning system.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Same-Floor Transmission Caused by Ventilation Systems"
+        },
+        {
+            "text": "The rooms in this hotel were relatively confined because the room had no outer windows and the door was closed during the quarantine period. The viral aerosol generated by simulated respiration gradually increased in the room that can be diffused into the corridor through the door gap or open the door to take food and move out the garbage and other behaviors. The fresh air system mixed the fresh air taken from the outside and the polluted air in the corridor to send to the rooms on the same floor and polluted these rooms. The positive results of swab samples at the fresh air outlet in the rooms on the fifth floor indicated that the fresh air system was polluted and the positive results of air samples and swab samples on the surface in room 553 proved that the room on the same floor was polluted. It can be speculated that the simulated aerosol could also be transmitted to rooms such as room 505. The monitoring and sampling results at different times showed that the simulated aerosol can pollute the fresh air system and be transmitted in the same layer within 1 h of the simulated respiration experiment. The schematic diagram of the transmission in the same layer is shown in Figure 3 . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1191,
+                    "end": 1199,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF27"
+                }
+            ],
+            "section": "Same-Floor Transmission Caused by Ventilation Systems"
+        },
+        {
+            "text": "The airflow carrying viral aerosols in the rooms on the fifth floor continued to flow to the bathroom because the exhaust fan was turned on and entered the exhaust duct. The airflow in the duct was poured into the bathrooms on the sixth and seventh floor under a certain wind direction, causing cross-layer vertical transmission. The positive results of swab samples at the roof exhaust outlet after the simulation experiment further confirmed this conclusion. At the same time, the air in the bathrooms of the sixth and seventh floors was mixed with the air in the bedroom, which polluted the air in the bedroom and entered the corridor. The fresh air system running in mixed mode sent polluted air to different rooms on the same floor, which aggravated the aerosol pollution in the room. The positive results of swab samples on the fresh air supply outlets of rooms 652 and 705 confirmed the pollution of the fresh air system on the sixth and seventh floors. The application of the bathroom exhaust system and the room air supply system caused the cross-layer nonvertical transmission. In addition, the fecal aerosols after toilet flushing would continue to cause cross-layer transmission through sewage pipes. Vertical and non-vertical crosslayer transmission was observed within 2 h in the simulated respiration experiment. The longer the distance of virus aerosol transmission was, the longer the time required.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cross-Layer Non-Vertical Transmission Caused by the Superposition of the Exhaust System in the Bathroom and the Ventilation System in the Room"
+        },
+        {
+            "text": "Virus aerosols can spread through the toilet sewage system [13] [14] [15] and the room ",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 63,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 64,
+                    "end": 68,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 69,
+                    "end": 73,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Influence Factors of Aerosol Transmission"
+        },
+        {
+            "text": "The airflow carrying viral aerosols in the rooms on the fifth floor continued to flow to the bathroom because the exhaust fan was turned on and entered the exhaust duct. The airflow in the duct was poured into the bathrooms on the sixth and seventh floor under a certain wind direction, causing cross-layer vertical transmission. The positive results of swab samples at the roof exhaust outlet after the simulation experiment further confirmed this conclusion. At the same time, the air in the bathrooms of the sixth and seventh floors was mixed with the air in the bedroom, which polluted the air in the bedroom and entered the corridor. The fresh air system running in mixed mode sent polluted air to different rooms on the same floor, which aggravated the aerosol pollution in the room. The positive results of swab samples on the fresh air supply outlets of rooms 652 and 705 confirmed the pollution of the fresh air system on the sixth and seventh floors. The application of the bathroom exhaust system and the room air supply system caused the cross-layer nonvertical transmission. In addition, the fecal aerosols after toilet flushing would continue to cause cross-layer transmission through sewage pipes. Vertical and non-vertical cross-layer transmission was observed within 2 h in the simulated respiration experiment. The longer the distance of virus aerosol transmission was, the longer the time required.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cross-Layer Non-Vertical Transmission Caused by the Superposition of the Exhaust System in the Bathroom and the Ventilation System in the Room"
+        },
+        {
+            "text": "Virus aerosols can spread through the toilet sewage system [13] [14] [15] and the room ventilation system [16] [17] [18] . In the SARS-CoV-1 outbreak in Amoy Garden of Hong Kong in 2003, an on-site investigation indicated that the U-shaped water trap of the sanitary fixture played an important role in the vertical transmission of the different floors [1] . In an outbreak of COVID-19 in vertically aligned flats in a high-rise building, Kang et al. used ethane tracer gas in the bathroom for airflow and dispersion tests and clarified the importance of U-shaped water traps and bathroom ventilation [3] . In two housing blocks in Hong Kong, Wang et al. used SF6 tracer gas to conduct toilet simulation experiments and believed that SARS-CoV-2 could be transmitted by long-range aerosol through drainage pipes [19] . Li et al. adopted computational fluid dynamics to model the trajectories of aerosol particles during toilet flushing and observed massive upward transport of virus particles [13] . The above studies provided evidence for virus transmission through sanitary pipes from the aspects of field investigation, experiment, and computer simulation, which were consistent with our experimental results. However, in several experimental studies, tracer gas cannot simulate the agglomeration and resuspension of particles, while SARS-CoV-2 was a particle with a diameter of 100 nm [7] which can aggregate or agglomerate under certain humidity, so the results may have some shortcomings. In our experiment, fluorescent polystyrene microspheres consistent with the similar aerodynamic characteristics of the SARS-CoV-2 spike pseudovirus were used to investigate the effects of the toilet sewage system and exhaust system on the transmission of virus aerosol, which can better simulate the aerosol transmission characteristics of SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 63,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 64,
+                    "end": 68,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 69,
+                    "end": 73,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 106,
+                    "end": 110,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 111,
+                    "end": 115,
+                    "text": "[17]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 353,
+                    "end": 356,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 601,
+                    "end": 604,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 811,
+                    "end": 815,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 992,
+                    "end": 996,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1388,
+                    "end": 1391,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Influence Factors of Aerosol Transmission"
+        },
+        {
+            "text": "Central air conditioning and air supply systems were the transmission routes of infectious diseases such as influenza and SARS-CoV-1 [20, 21] . The usage, ventilation rate, and air exchange rate of the air supply system all affected the transmission of the virus. The N and E genes of SARS-CoV-2 were detected by Nissen et al. 2020 in ventilation vents of a COVID-19 ward in Sweden. The central ventilation HEPA filters were found to be positive for both genes in samples from adjacent wards, indicating that the virus can be transported through the central conditioning system for long-distance transmission [22] . Horve et al. also collected SARS-CoV-2 RNA on air handling units in a healthcare setting, which also showed that the virus may spread through the air conditioning system in the room [23] . Our research proved that the use of air conditioning and air supply systems played a key role in virus transmission through field simulation experiments.",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[20,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 138,
+                    "end": 141,
+                    "text": "21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 313,
+                    "end": 331,
+                    "text": "Nissen et al. 2020",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 609,
+                    "end": 613,
+                    "text": "[22]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 798,
+                    "end": 802,
+                    "text": "[23]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Influence Factors of Aerosol Transmission"
+        },
+        {
+            "text": "In this study, two different scenarios of simulation experiments of toilet flushing after fecal and urine excretion and respiration were used to explore the path and influencing factors of viral aerosol transmission, including sewage and exhaust pipes, air conditioning, and the air supply system. The results showed that the mixed mode of the fresh air system in the quarantine hotel would mix the polluted air dispersed from the room with the fresh air outside the window and sent it to different rooms on the same floor, resulting in the transmission of simulated aerosols on the same floor. Although the fresh air system had filter devices, the filters that were not often disinfected or replaced not only did not purify the polluted air but also became sources of pollution after running for a certain time. When the novel coronal nucleic acid of quarantined person was detected as positive, caused the infection risk of other persons on the same layer and cross-layer. The investigation and simulation experiments have confirmed that in the case that the fan was not in normal use, the viral aerosol would accumulate in the sewage pipe collected by the horizontal pipe and could not be discharged, which would enter the rooms of different floors through the dry floor drain and the washbasin. In addition, the up-and-down toilet exhaust systems were easy to make the airflow carrying viral aerosols flow into other floors in a specific wind direction, causing vertical cross-layer transmission. The superposition of the toilet sewage and exhaust system and room ventilation system would aggravate the risk of viral aerosol transmission, causing non-vertical cross-layer transmission.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "At present, people have a preliminary understanding of SARS-CoV-2 [24, 25] , but outbreaks still occur in different countries around the world. In epidemic prevention and control, it is very important to find the source of infection that is an index case and cut off the transmission path in time. The confirmation of the index case is closely related to various factors. Even if the sequencing results of the novel coronavirus gene of the infected case are completely consistent with those of the early case, it is necessary to determine a clear transmission path to judge the index case. In addition, nosocomial infection incidents have occurred; other than nonstandard operations of medical staff, some infections were caused by environmental factors. However, the factors in different regions have various kinds of complexity and interfere with each other, so it is difficult to accurately judge by field investigation or computer simulation. In the field simulation experiment, different simulation scenarios can be set according to different influencing factors, and fluorescent polystyrene microspheres consistent with the similar aerodynamic characteristics of the SARS-CoV-2 spike pseudovirus can be used to determine the transmission path of the virus and the main influencing factors, so as to provide the basis for the relevant departments to take measures to achieve precise prevention and control, effectively cutting off the source of infection, controlling the spread of the virus.",
+            "cite_spans": [
+                {
+                    "start": 66,
+                    "end": 70,
+                    "text": "[24,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 71,
+                    "end": 74,
+                    "text": "25]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "This field simulation experiment was a qualitative study. There was a certain deviation between the transmission characteristics of the simulant aerosol and SARS-CoV-2 aerosol as the viable virus cannot be used in the field. The viable virus and its load in aerosols cannot be simulated by fluorescent polystyrene microspheres so the risk of infection cannot be quantitatively predicted; in addition, there was a difference between simulated aerosol amounts and the reality of the confirmed case. Therefore, the field simulation experiment can only provide the transmission path and influencing factors of viral aerosol.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Limitations"
+        },
+        {
+            "text": "During quarantine, hotels with windows open to the outside should be chosen to prevent the risk of cross-infection of quarantined persons, and natural ventilation is preferred; windows should be regularly opened for ventilation every day. Hotel managers need to conduct an examination of the hotel's environmental risks to eliminate the hidden dangers of drainage pipes, the central air conditioning supply system, and bathroom exhaust system before using as a quarantine hotel. This can be achieved as follows: the air conditioning and ventilation system should adopt the full fresh air mode and turn off the return air to avoid using contaminated air in the corridor to mix with fresh air and supply to the room. The exhaust volume of the bathroom should be greater than the fresh air volume. The exhaust pipes of the bathroom need to be set up independently and cannot be interconnected or connected in series. The riser of the sewage and drainage pipeline of the bathroom should be maintained vertical to exhaust independently and cannot be arbitrarily changed to horizontal pipe assembly. The floor drain in the bathroom should be ensured to have a good water seal. The central air conditioning supply system should be cleaned and disinfected, and its filters should be replaced regularly.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sanitation Requirements for Environmental Management in Quarantine Hotels"
+        },
+        {
+            "text": "Supplementary Materials: The following are available online at https://www.mdpi.com/article/ 10.3390/ijerph19031532/s1: Table S1 : The method, time, sample location in different rooms for the aerosol generation, monitor and acquisition in the scenario of toilet flushing and respiration simulation. Figure S1 : The changes of particle concentration over time in three different rooms (rooms 552, 652, and 752) in the scenario of toilet flushing. Figure S2: The changes in particle concentration over time at 0.3 \u00b5m, 0.5 \u00b5m, and 5 \u00b5m; PM 10 in different rooms in the scenario of respiration simulation. Figure S3 : The changes in particle concentration at 0, 60, 180, and 240 min at 0.5 \u00b5m in the bedroom, bathroom, and outdoor corridor of different rooms in the scenario of respiration simulation. Figure S4 : Representative photos of fluorescent microspheres tracked by different sampling methods in different sites.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 120,
+                    "end": 128,
+                    "text": "Table S1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 299,
+                    "end": 308,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 446,
+                    "end": 456,
+                    "text": "Figure S2:",
+                    "ref_id": "FIGREF25"
+                },
+                {
+                    "start": 602,
+                    "end": 611,
+                    "text": "Figure S3",
+                    "ref_id": "FIGREF27"
+                },
+                {
+                    "start": 798,
+                    "end": 807,
+                    "text": "Figure S4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Sanitation Requirements for Environmental Management in Quarantine Hotels"
+        },
+        {
+            "text": "Author Contributions: Conceptualization, D.X.; methodology, Z.Z., X.L., Q.W. and D.X.; validation, Z.Z., X.L., Q.W. and D.X.; formal analysis, Z.Z. and D.X.; investigation, Z.Z., X.L., Q.W. and D.X.; experiments, Z.Z., X.L., Q.W., J.X. (Jin Xu), Q.J., S.J., J.L., S.L., L.Y., J.X. (Jiamin Xie), Q.C., H.Z. and D.X.; resources, X.Z.; data curation, Z.Z., X.L. and Q.W.; coordination, J.Y. and W.F.; writing-original draft preparation, Z.Z. and D.X.; writing-review and editing, Z.Z. and D.X.; supervision, D.X.; funding acquisition, D.X. All authors have read and agreed to the published version of the manuscript. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sanitation Requirements for Environmental Management in Quarantine Hotels"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The SARS epidemic in Hong Kong: What lessons have we learned?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J. R. Soc. Med",
+            "volume": "96",
+            "issn": "",
+            "pages": "374--378",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/014107680309600803"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Evidence of airborne transmission of the severe acute respiratory syndrome virus",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y C"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "N. Engl. J. Med",
+            "volume": "350",
+            "issn": "",
+            "pages": "1731--1739",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa032867"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Probable Evidence of Fecal Aerosol Transmission of SARS-CoV-2 in a High-Rise Building",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhuang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ann. Intern. Med",
+            "volume": "173",
+            "issn": "",
+            "pages": "974--980",
+            "other_ids": {
+                "DOI": [
+                    "10.7326/M20-0928"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Simulation of Aerosol Transmission of SARS-CoV-2 in a Special Building Layout",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lyu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "China CDC Wkly",
+            "volume": "3",
+            "issn": "",
+            "pages": "711--715",
+            "other_ids": {
+                "DOI": [
+                    "10.46234/ccdcw2021.176"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Coronavirus Disease 2019 Patients in Earlier Stages Exhaled Millions of Severe Acute Respiratory Syndrome Coronavirus 2 Per Hour",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Qi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morawska",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Clin. Infect. Dis",
+            "volume": "72",
+            "issn": "",
+            "pages": "652--654",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa1283"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Detection of SARS-CoV-2 in Different Types of Clinical Specimens",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1843--1844",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.3786"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Isolation of 2019-nCoV from a Stool Specimen of a Laboratory-Confirmed Case of the Coronavirus Disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China CDC Wkly",
+            "volume": "2",
+            "issn": "",
+            "pages": "123--124",
+            "other_ids": {
+                "DOI": [
+                    "10.46234/ccdcw2020.033"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Clinical Characteristics of Coronavirus Disease 2019 in China",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S C"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "1708--1720",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2002032"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Risk factors and on-site simulation of environmental transmission of SARS-CoV-2 in the largest wholesale market of Beijing",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cha",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Mao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ying",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "China. Sci. Total Environ",
+            "volume": "778",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.scitotenv.2021.146040"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Targeted Prevention and Control of Key Links in Airports to Mitigate Public Health Risks",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "China CDC Wkly",
+            "volume": "3",
+            "issn": "",
+            "pages": "859--862",
+            "other_ids": {
+                "DOI": [
+                    "10.46234/ccdcw2021.212"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Aerosol Generation by Modern Flush Toilets",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lynch",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Marshall",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mead",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hirst",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Aerosol. Sci. Technol",
+            "volume": "47",
+            "issn": "",
+            "pages": "1047--1057",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/02786826.2013.814911"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The bioaerosols emitted from toilet and wastewater treatment plant: A literature review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lou",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Environ. Sci. Pollut. Res. Int",
+            "volume": "28",
+            "issn": "",
+            "pages": "2509--2521",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11356-020-11297-8"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Can a toilet promote virus transmission? From a fluid dynamics perspective",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Phys. Fluids",
+            "volume": "32",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/5.0013318"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Possible transmission of viruses from contaminated human feces and sewage: Implications for SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Elsamadony",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fujii",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Miura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Watanabe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Sci. Total Environ",
+            "volume": "755",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.scitotenv.2020.142575"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Shedding of SARS-CoV-2 in feces and urine and its potential role in person-to-person transmission and the environment-based spread of COVID-19",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Baluja",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Graham",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Corbishley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Mcdonald",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Malham",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hillary",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Connor",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Gaze",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Moura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci. Total Environ",
+            "volume": "749",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.scitotenv.2020.141364"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Ventilation control for airborne transmission of human exhaled bio-aerosols in buildings",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Qian",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Thorac. Dis",
+            "volume": "10",
+            "issn": "",
+            "pages": "2295--2304",
+            "other_ids": {
+                "DOI": [
+                    "10.21037/jtd.2018.01.24"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Airborne route and bad use of ventilation systems as non-negligible factors in SARS-CoV-2 transmission",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Correia",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rodrigues",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S M"
+                    ],
+                    "last": "Gameiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Goncalves",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "141",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.mehy.2020.109781"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Investigation of potential aerosol transmission and infectivity of SARS-CoV-2 through central ventilation systems",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Pease",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Salsbury",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Underhill",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Flaherty",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vlachokostas",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kulkarni",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "James",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.buildenv.2021.107633"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Aerosol transmission of SARS-CoV-2 due to the chimney effect in two high-rise housing drainage stacks",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lung",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Dung",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Miao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Hazard",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jhazmat.2021.126799"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Can Air-Conditioning Systems Contribute to the Spread of SARS/MERS/COVID-19 Infection? Insights from a Rapid Review of the Literature",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Chirico",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sacco",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bragazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Magnavita",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Environ. Res. Public Health",
+            "volume": "17",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijerph17176052"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Airborne transmission may have played a role in the spread of 2015 highly pathogenic avian influenza outbreaks in the United States",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Takle",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chai",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Schmitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Sci. Rep",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-019-47788-z"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Long-distance airborne dispersal of SARS-CoV-2 in COVID-19 wards",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Nissen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Krambrich",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Akaberi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hoffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ling",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lundkvist",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Svensson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Salaneck",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci. Rep",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-020-76442-2"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Van Den Wymelenberg, K.G. Identification of SARS-CoV-2 RNA in healthcare heating, ventilation, and air conditioning units",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Horve",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Dietz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fretz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Constant",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wilkes",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Townes",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Martindale",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Messer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Indoor Air",
+            "volume": "31",
+            "issn": "",
+            "pages": "1826--1832",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/ina.12898"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "A guideline to limit indoor airborne transmission of COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Bazant",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bush",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc. Natl. Acad. Sci. USA 2021",
+            "volume": "118",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2018995118"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "COVID-19, the Built Environment, and Health. Environ. Health Perspect. 2021, 129, 075001",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Frumkin",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1289/EHP8888"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. drain, toilet lid and seat ring J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Exhaust fan of bathroomJ. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Figures 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did not change in room 705, and was not monitored in room 553 due to the limited field equip-Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 Table 1. The detection results of fluorescent microspheres of swab samples and air samples colle in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the air f membrane samples and liquid samples collected in rooms 553, 652, and 705 every hours, the swab samples collected at different times in rooms 510, 511, and 552, w respiration was simulated, the swab samples collected on the roof exhaust outlet, and sewage pipe riser vent on the roof. The increasing concentrations of particles with di ent sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experim fluorescent microspheres were not detected in swab samples of rooms 553, 652, and However, the concentrations of particles with different sizes increased in room 652, not change in room 705, and was not monitored in room 553 due to the limited field eq Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sampl in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in th membrane samples and liquid samples collected in rooms 553, 652, and 705 hours, the swab samples collected at different times in rooms 510, 511, and 5 respiration was simulated, the swab samples collected on the roof exhaust outle sewage pipe riser vent on the roof. The increasing concentrations of particles w ent sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation ex fluorescent microspheres were not detected in swab samples of rooms 553, 652 However, the concentrations of particles with different sizes increased in room not change in room 705, and was not monitored in room 553 due to the limited fi Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab sa in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres we membrane samples and liquid samples collected in rooms 5 hours, the swab samples collected at different times in room respiration was simulated, the swab samples collected on the sewage pipe riser vent on the roof. The increasing concentrat ent sizes were monitored in rooms 510, 511, and 552. After the fluorescent microspheres were not detected in swab samples However, the concentrations of particles with different sizes not change in room 705, and was not monitored in room 553 d Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEWTable 1. The detection results of fluorescent microsphe in different locations of different rooms in different ti",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "and Figures 1 and S4. Fluorescent mic membrane samples and liquid samples collecte hours, the swab samples collected at different respiration was simulated, the swab samples col sewage pipe riser vent on the roof. The increasin ent sizes were monitored in rooms 510, 511, and fluorescent microspheres were not detected in s However, the concentrations of particles with d not change in room 705, and was not monitored i air supply outlets of fresh air system and the air conditioning J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. However, the concentrations of particles with different sizes increased in room 652, did Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected membrane samples and liquid samples collected in rooms 553, 652, and hours, the swab samples collected at different times in rooms 510, 511, respiration was simulated, the swab samples collected on the roof exhaus sewage pipe riser vent on the roof. The increasing concentrations of parti ent sizes were monitored in rooms 510, 511, and 552. After the 1 h simulat fluorescent microspheres were not detected in swab samples of rooms 55 However, the concentrations of particles with different sizes increased i air sample (filter member) Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with different sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation experiment, fluorescent microspheres were not detected in swab samples of rooms 553, 652, and 705. Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air samples c in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the a membrane samples and liquid samples collected in rooms 553, 652, and 705 eve hours, the swab samples collected at different times in rooms 510, 511, and 552, respiration was simulated, the swab samples collected on the roof exhaust outlet, sewage pipe riser vent on the roof. The increasing concentrations of particles with ent sizes were monitored in rooms 510, 511, and 552. After the 1 h simulation expe fluorescent microspheres were not detected in swab samples of rooms 553, 652, a Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEWTable 1. The detection results of fluorescent microspheres of swa in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "and Figures 1 and S4. Fluorescent microspheres were detected in the air filter membrane samples and liquid samples collected in rooms 553, 652, and 705 every two hours, the swab samples collected at different times in rooms 510, 511, and 552, where respiration was simulated, the swab samples collected on the roof exhaust outlet, and the sewage pipe riser vent on the roof. The increasing concentrations of particles with differ-Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air samples c in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": ". Fluorescent microsphere membrane samples and liquid samples collected in roo hours, the swab samples collected at different times in respiration was simulated, the swab samples collected on sewage pipe riser vent on the roof. The increasing concen exhaust outlet of the roof Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air samples in different locations of different rooms in different time. riser vent on the roof3.2. Aerosol Transmission Induced by Simulated RespirationFan coil units and fresh air conditioning systems were in place in the hotel. T air inlets were set on both sides of each floor corridor near the outer window to air outside the window. Fresh air was mixed with air from the inside corridor plied to the room through two air outlets in the room. The fan coil unit adjusted temperature by self-circulating cooling.The respiratory simulation experiment lasted for four hours; the results are sTable 1 and Figures 1 and S4. Fluorescent microspheres were detected in the membrane samples and liquid samples collected in rooms 553, 652, and 705 ev hours, the swab samples collected at different times in rooms 510, 511, and 55 respiration was simulated, the swab samples collected on the roof exhaust outlet sewage pipe riser vent on the roof Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air samples in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF21": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. of the roof age pipe riser vent on the roof3.2. Aerosol Transmission Induced by Simulated RespirationFan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof3.2. Aerosol Transmission Induced by Simulated RespirationFan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof3.2. Aerosol Transmission Induced by Simulated RespirationFan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room temperature by self-circulating cooling.Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 Table 1. The detection results of fluorescent microspheres of swab samples and air samples colle in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The f air inlets were set on both sides of each floor corridor near the outer window to take air outside the window. Fresh air was mixed with air from the inside corridor and plied to the room through two air outlets in the room. The fan coil unit adjusted the r temperature by self-circulating cooling. Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sampl in different locations of different rooms in different time. (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel air inlets were set on both sides of each floor corridor near the outer window t air outside the window. Fresh air was mixed with air from the inside corridor plied to the room through two air outlets in the room. The fan coil unit adjusted temperature by self-circulating cooling. Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air in different locations of different rooms in different time. (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the air inlets were set on both sides of each floor corridor near the outer win air outside the window. Fresh air was mixed with air from the inside co plied to the room through two air outlets in the room. The fan coil unit ad temperature by self-circulating cooling. Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab sa in different locations of different rooms in different time. (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in air inlets were set on both sides of each floor corridor near th air outside the window. Fresh air was mixed with air from t plied to the room through two air outlets in the room. The fan temperature by self-circulating cooling. Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of sw in different locations of different rooms in different time. (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems w air inlets were set on both sides of each floor corridor n air outside the window. Fresh air was mixed with air plied to the room through two air outlets in the room. T temperature by self-circulating cooling. Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microsphe in different locations of different rooms in different ti (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF22": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. of the roof age pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and supplied to the room through two air outlets in the room. The fan coil unit adjusted the room Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sampl in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel air inlets were set on both sides of each floor corridor near the outer window t air outside the window. Fresh air was mixed with air from the inside corridor plied to the room through two air outlets in the room. The fan coil unit adjusted Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEWTable1. The detection results of fluorescent microspheres of swab samples and air in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the air inlets were set on both sides of each floor corridor near the outer win air outside the window. Fresh air was mixed with air from the inside co plied to the room through two air outlets in the room. The fan coil unit ad Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of sw in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems w air inlets were set on both sides of each floor corridor n air outside the window. Fresh air was mixed with air plied to the room through two air outlets in the room. T Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microsphe in different locations of different rooms in different ti outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Res Fan coil units and fresh air conditioning sys air inlets were set on both sides of each floor co air outside the window. Fresh air was mixed w plied to the room through two air outlets in the r air supply outlets of fresh air system J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. of fresh air system sample (filter member) sample (liquid) aust outlet of the roof age pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and sup-Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and sup-Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the air outside the window. Fresh air was mixed with air from the inside corridor and sup-Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 Table 1. The detection results of fluorescent microspheres of swab samples and air samples colle in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The f air inlets were set on both sides of each floor corridor near the outer window to take air outside the window. Fresh air was mixed with air from the inside corridor and Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sampl in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel air inlets were set on both sides of each floor corridor near the outer window t air outside the window. Fresh air was mixed with air from the inside corridor Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the air inlets were set on both sides of each floor corridor near the outer win air outside the window. Fresh air was mixed with air from the inside co Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of sw in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems w air inlets were set on both sides of each floor corridor n air outside the window. Fresh air was mixed with air Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microsphe in different locations of different rooms in different ti outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Res Fan coil units and fresh air conditioning sys air inlets were set on both sides of each floor co air outside the window. Fresh air was mixed w air sample (filter member) viron. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. of fresh air system ple (filter member) ple (liquid) st outlet of the roof e pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh air inlets were set on both sides of each floor corridor near the outer window to take the Int. J. Environ. Res. Public Health 2022, 19, The detection results of fluorescent microspheres of swab samples and air samples collecte in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fres air inlets were set on both sides of each floor corridor near the outer window to take th Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sam in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the ho air inlets were set on both sides of each floor corridor near the outer windo Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samp in different locations of different rooms in different time. outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in pl air inlets were set on both sides of each floor corridor near the o Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres in different locations of different rooms in different time outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respir Fan coil units and fresh air conditioning system air inlets were set on both sides of each floor corrid air sample (liquid) viron. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. of fresh air system ple (filter member) ple (liquid) st outlet of the roof e pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12 Table 1. The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fresh Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 1Table 1. The detection results of fluorescent microspheres of swab samples and air samples collecte in different locations of different rooms in different time. outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the hotel. The fres Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sam in different locations of different rooms in different time. outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in place in the ho Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samp in different locations of different rooms in different time. outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration Fan coil units and fresh air conditioning systems were in pl Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres in different locations of different rooms in different time outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respir Fan coil units and fresh air conditioning system exhaust outlet of the roof Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air samples in different locations of different rooms in different time. outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof 3.2. Aerosol Transmission Induced by Simulated Respiration sewage pipe riser vent on the roof Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air samples in different locations of different rooms in different time. supply outlet of the air conditioning table, door, bed air supply outlets of fresh air system air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF23": {
+            "text": "The changes of particle concentration over time at 0.5 \u03bcm (scenarios 1), PM10 (scenarios 2) in different rooms. (A) Scenarios 1; (B) scenarios 2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF24": {
+            "text": "The changes of particle concentration over time at 0.5 \u00b5m (scenarios 1), PM 10 (scenarios 2) in different rooms. (A) Scenarios 1; (B) scenarios 2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF25": {
+            "text": "The schematic diagrams of vertical transmission in bathrooms and pipeline convergence. Yellow pipes indicate sewage pipes, white pipes indicate drainage pipes, blue pipes indicate exhaust pipes, and red dots indicate simulated viral aerosols.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF26": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW8 The layout of rooms in the hotel and schematic diagram of the transmission in the same layer. Blue arrows indicate fresh air from the outside, red arrows indicate the polluted air from rooms, and purple arrows indicate increasing contaminated air by toilet flushing.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF27": {
+            "text": "The layout of rooms in the hotel and schematic diagram of the transmission in the same layer. Blue arrows indicate fresh air from the outside, red arrows indicate the polluted air from rooms, and purple arrows indicate increasing contaminated air by toilet flushing.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF28": {
+            "text": "This study was supported by Key Program of National Natural Science Foundation of China (Grant No. 92043201). Institutional Review Board Statement: Not applicable. Informed Consent Statement: Not applicable. Data Availability Statement: Not applicable.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time. floor drain, toilet lid and seat ring Exhaust fan of bathroom air supply outlets of fresh air system and the air conditioning air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air sampl in different locations of different rooms in different time. floor drain, toilet lid and seat ring Exhaust fan of bathroom air supply outlets of fresh air system and the air conditioning air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microspheres of swab samples and air in different locations of different rooms in different time. floor drain, toilet lid and seat ring Exhaust fan of bathroom air supply outlets of fresh air system and the air conditioning air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW Table 1. The detection results of fluorescent microsphe in different locations of different rooms in different ti floor drain, toilet lid and seat ring Exhaust fan of bathroom air supply outlets of fresh air system and the air conditioning air sample (filter member) air sample (liquid) exhaust outlet of the roof sewage pipe riser vent on the roof",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "The detection results of fluorescent microspheres of swab samples and air samples collected in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Figures 1 and S4. Fluorescent microsphere membrane samples and liquid samples collected in roo hours, the swab samples collected at different times in respiration was simulated, the swab samples collected on sewage pipe riser vent on the roof. The increasing concen ent sizes were monitored in rooms 510, 511, and 552. Afte fluorescent microspheres were not detected in swab sam air sample (liquid) Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "Figures 1 and S4. Fluorescent microspheres were detected in the a membrane samples and liquid samples collected in rooms 553, 652, and 705 eve hours, the swab samples collected at different times in rooms 510, 511, and 552, respiration was simulated, the swab samples collected on the roof exhaust outlet, sewage pipe riser vent on the roof. The increasing concentrations of particles with Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEWTable 1. The detection results of fluorescent microspheres of swa in different locations of different rooms in different time.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF9": {
+            "text": "Figures 1 and S4. Fluorescent microspheres were detected in the membrane samples and liquid samples collected in rooms 553, 652, and 705 ev hours, the swab samples collected at different times in rooms 510, 511, and 55 J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF10": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF11": {
+            "text": "door, bed J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 5 of 12",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF12": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF13": {
+            "text": "Int. J. Environ. Res. Public Health 2022, 19, x FOR PEER REVIEW 7 of 12 Figure 2. The schematic diagrams of vertical transmission in bathrooms and pipeline convergence. Yellow pipes indicate sewage pipes, white pipes indicate drainage pipes, blue pipes indicate exhaust pipes, and red dots indicate simulated viral aerosols.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We are grateful to Guangdong Provincial Center for Disease Control and Prevention; and Cubic Sensor and Instrument Co., Ltd., Wuhan, China.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments:"
+        },
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest:"
+        }
+    ]
+}

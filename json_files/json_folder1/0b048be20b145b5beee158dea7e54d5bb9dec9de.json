@@ -1,0 +1,3511 @@
+{
+    "paper_id": "0b048be20b145b5beee158dea7e54d5bb9dec9de",
+    "metadata": {
+        "title": "Genes Common in Primary Immunodeficiencies and Cancer Display Overrepresentation of Codon CTG and Dominant Role of Selection Pressure in Shaping Codon Usage",
+        "authors": [
+            {
+                "first": "Rekha",
+                "middle": [],
+                "last": "Khandia",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Barkatullah University",
+                    "location": {
+                        "postCode": "462026",
+                        "settlement": "Bhopal",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Taha",
+                "middle": [],
+                "last": "Alqahtani",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "King Khalid University",
+                    "location": {
+                        "postCode": "62529",
+                        "settlement": "Abha",
+                        "country": "Saudi Arabia"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ali",
+                "middle": [
+                    "M"
+                ],
+                "last": "Alqahtani",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "King Khalid University",
+                    "location": {
+                        "postCode": "62529",
+                        "settlement": "Abha",
+                        "country": "Saudi Arabia"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "A fully functional immune system is a prerequisite to fight against infections and surveil cellular transformations like cancer development. Primary immunodeficiency diseases (PIDs) encompass a heterogeneous group of heritable genetic disorders into which the immune system is partially or fully non-functional [1] . PIDs may culminate in increased susceptibility to infections, autoimmunity, inflammatory organ damage, and malignancy [2] . Initial evidence for linkages between cancer and primary immunodeficiencies (PIDs) was first reported in 1958 [3, 4] . Technological intervention in next-generation sequencing made genome analysis possible at a large level and made the PID genetics analysis faster. So far, more than 350 PID-causing genes have been reported [5] . In patients with PID, an enhanced risk of malignancy is reported. There is at least a 1.6-fold greater risk of malignancies in PID patients in comparison to the general population [6] , and lymphomas [7] and skin tumors are the commonest ones [8] . Malignancy is considered as a diagnostic marker in a few PIDs [European Society of Immunodeficiencies (ESID) (https://esid.org (accessed on 26 June 2021))] and is the second leading cause of mortality in PID patients [2] . The information regarding the genetic basis of PIDs and malignancy predisposition is chiefly based on monogenic disorders. A single or similar phenotype will be produced by different genes [9] . Neven et al. (2013) reported molecular and immunophenotypical resemblance between the lymphomas in patients with IL10 and IL10R loss-of-function mutations (responsible for early-onset of inflammatory bowel disease) and germinal center B-cell diffuse large B-cell lymphoma [10] .",
+            "cite_spans": [
+                {
+                    "start": 311,
+                    "end": 314,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 435,
+                    "end": 438,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 551,
+                    "end": 554,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 555,
+                    "end": 557,
+                    "text": "4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 766,
+                    "end": 769,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 952,
+                    "end": 955,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 972,
+                    "end": 975,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1015,
+                    "end": 1018,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1238,
+                    "end": 1241,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1433,
+                    "end": 1436,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1439,
+                    "end": 1458,
+                    "text": "Neven et al. (2013)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1711,
+                    "end": 1715,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A visualization of the intersection of PID-causing genes (https://esid.org (accessed on 26 June 2021)) with true cancer genes (https://cancer.sanger.ac.uk/census (accessed on 26 June 2021)) and cancer predisposition genes [11] by Derpoorter et al., (2018) revealed a panel of 42 genes that encompass genes involved in defects in innate immunity, antibody disorders, phagocytic disorders, combined immunodeficiency, and immune dysregulation, and common to cancer [2] . To understand the genetic architecture of genes involved in PID, in the present study, various features of these genes like compositional parameters, expression level, protein indices, relative synonymous codon usage (RSCU), and codon usage bias (CUB), and the effects of various evolutionary forces like selectional, mutational, and compositional ones were calculated along with the determination of their inter-relationship. The study will help in investigating the genetic architecture of the genes common to both PIDs and cancer. Elucidation of genetic architecture in the future might be helpful to obtain a common therapeutic substance addressing both diseases simultaneously. Also, the study will help envisage the evolutionary forces responsible for shaping codon usage.",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 226,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 462,
+                    "end": 465,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Sequences of 42 genes (Table 1 ) common to both PIDs and cancer in human beings were retrieved from the National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine nucleotide database. Sequences in the open reading frame and divisible by three were included, and those with internal stop codons or bases other than A, T, C, and G were omitted. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 22,
+                    "end": 30,
+                    "text": "(Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Data Collection"
+        },
+        {
+            "text": "The overall %A, %T, %G, and %C were analyzed, and %A3, %T3, %C3, and %G3 (nucleotide occurrence at the third codon position) were also evaluated and used for parity analysis. The average %GC12 (G/C present at the first and second positions) and %GC3 (G/C present at the third position) were calculated to obtain neutrality. Informatics software CodonW 1.4.4, (an open source software by John F. Peden) available at http: //codonw.sourceforge.net (accessed on 26 June 2021), was used for these calculations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compositional Analysis"
+        },
+        {
+            "text": "The odds ratio (observed to expected frequency of dinucleotides) was obtained for 42 genes using DNASTAR Lasergene Inc. software (https://www.dnastar.com/software/ lasergene/ (accessed on 28 June 2021)). An odds ratio below 0.78 is considered underrepresented and above 1.23 is considered overrepresented [12] .",
+            "cite_spans": [
+                {
+                    "start": 305,
+                    "end": 309,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dinucleotide Abundance"
+        },
+        {
+            "text": "There are 64 codons (nucleotide triplets) in the standard genetic code, three of which (TAA, TAG, TGA) are stop codons. The remaining 61 codons encode for the 20 standard amino acids [13] . Except for methionine and tryptophan, all amino acids are encoded by two or more than two triplets, and such codons are called synonymous codons. These synonymous codons are not used in equal proportions by cells. This bias, often observed in codon usage, is referred to as codon usage bias (CUB) or codon usage preferences.",
+            "cite_spans": [
+                {
+                    "start": 183,
+                    "end": 187,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Relative Synonymous Codon Usage (RSCU) Analysis"
+        },
+        {
+            "text": "The ratio observed to the expected frequency of a codon coding for a particular amino acid (AA) is its relative synonymous codon usage (RSCU) value. It indicates the frequency with which a codon is used among all codons coding for the same amino acid. The codons with RSCU values below 0.6 are underrepresented, while those above 1.6 are overrepresented [14] . We performed RSCU analysis using CodonW 1.4.4 software (http://codonw.sourceforge.net (accessed on 28 June 2021)). The RSCU values of each gene sharing role in PIDs and cancers are enlisted, and the codon with the highest RSCU value for a given amino acid is highlighted in supplementary Table S1.",
+            "cite_spans": [
+                {
+                    "start": 354,
+                    "end": 358,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Relative Synonymous Codon Usage (RSCU) Analysis"
+        },
+        {
+            "text": "The CAI value suggests the adaptability of any gene and also indicates the level of expression. Two kinds of CAI values, namely, CAI59 and CAI18, were calculated using COUSIN software developed by Bourret et al. (2019) [15] . CAI59 is the classical CAI value, where the impact of 59 codons is assessed, while in CAI18, the impact of amino acid composition on CUB is estimated. The value of CAI ranges between 0 and 1 [16] . Values closer to 1 are present in highly expressed genes.",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 218,
+                    "text": "Bourret et al. (2019)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 219,
+                    "end": 223,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 417,
+                    "end": 421,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Codon Adaptation Index (CAI59 and CAI18)"
+        },
+        {
+            "text": "ENc is a non-directional measure of CUB, with values ranging between 20 and 61. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ENc Determination"
+        },
+        {
+            "text": "A regression plot between %GC3 and an average of %GC12 was constructed to quantify the selectional and mutational pressures imposed on the genes studied. Regression coefficients represent the equilibrium point between mutation and selection force [17] . Values approaching 1 indicate the dominance of mutational force.",
+            "cite_spans": [
+                {
+                    "start": 247,
+                    "end": 251,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Quantitation of Selection and Mutational Forces"
+        },
+        {
+            "text": "PCA analysis is a statistical method to determine the most influential principal component and used to determine the two principal components most affecting the codon usage. RSCU values of 59 codons excluding the stop codons (TAA, TAG, TGA), a start codon (ATG), and tryptophan (UGG) were represented by 59 independent vectors, and a plot was drawn between the first and second axes. Biplot analysis was also conducted to determine the most influential codons along the two axes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Principal Component Analysis (PCA Analysis)"
+        },
+        {
+            "text": "Different characteristics of proteins have been reported to influence CUB. Various parameters explaining the properties of amino acids such as GRAVY (grand average of hydropathy, encompassing features of both the hydrophobicity and hydrophilicity), AROMA (aromaticity-the frequency of aromatic amino acids, i.e., Phe, Tyr, and Trp, in a given amino acid sequence), isoelectric point (PI), aliphatic index (AI), hydrophobicity index (HY), instability index (INSTAB), and the numbers of acidic amino acid residues (acidic AA), basic amino acid residues (basic AA), and neutral amino acid residues (neutral AA) were determined. GRAVY protein values range between \u22122 and +2, with a positive value indicating a more hydrophobic protein nature, and vice versa [18] . AROMA refers to the frequency of phenylalanine, tyrosine, and tryptophan (all aromatic amino acids) in any protein sequence [19] . Both of these indices are indicative of selection pressure [20] . The hydrophobicity index measures a protein's solubility and has roles in protein-protein interactions [21] . The instability index indicates protein stability under both in vivo and in vitro conditions, and values of more than 40 indicate unstable proteins [22] . The aliphatic index (AI) refers to the volume occupied by aliphatic side chains, and with the instability index, AI is another parameter to define the stability of the proteins [23] . All the parameters were calculated using Protparam Expasy available at https://web.expasy.org/protparam/ (assessed on 6 July 2021) [24] and PEPTIDE 2 tools (https://www.peptide2.com/) assessed on 6 July 2021.",
+            "cite_spans": [
+                {
+                    "start": 754,
+                    "end": 758,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 885,
+                    "end": 889,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 951,
+                    "end": 955,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1061,
+                    "end": 1065,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1216,
+                    "end": 1220,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1400,
+                    "end": 1404,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1538,
+                    "end": 1542,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Protein Indices Calculation"
+        },
+        {
+            "text": "Correlation analysis was conducted for various parameters, including protein indices, nucleotide positions, and dinucleotide frequencies, and correlation coefficients were calculated and plotted using PAST4 software. Regression analysis was done using PAST4 software [25] .",
+            "cite_spans": [
+                {
+                    "start": 267,
+                    "end": 271,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Nucleotide %A values ranged between 12.28% (CDKN2A) and 37.04% (KRAS), %C ranged between 14.10% (KRAS) and 37.14% (GATA2), %T ranged between 13.84% (TCF3) and 28.66% (ATM), and %G ranged between 20.42% (BLM) and 37.84% (CDKN2A). Among all the nucleotides, %T representation was the lowest and is depicted by a percentile graph ( Figure 1 ). Percent GC components at all positions (overall %GC, %GC1, %GC2, %GC12, and %GC3) were determined, plotted, and are presented in Figure 2 , showing that the maximum variation in composition occurred in %GC3. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 329,
+                    "end": 337,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 470,
+                    "end": 478,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Compositional Analysis"
+        },
+        {
+            "text": "The majority of proteins were smaller than 1500 amino acids. In all the proteins from 150 to 3000 amino acids, GC12 content was lower than GC3 without any exception ( Figure  3 ). The genes below this size (CDKN2A) and above this size (ATM), had a %GC12 content higher than %GC3 (76.31% and 40.81% for CDKN2A and ATM genes, respectively). ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 167,
+                    "end": 176,
+                    "text": "Figure  3",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Relation of Protein Length on GC12 and GC3 Content"
+        },
+        {
+            "text": "The majority of proteins were smaller than 1500 amino acids. In all the proteins from 150 to 3000 amino acids, GC12 content was lower than GC3 without any exception ( Figure 3 ). The genes below this size (CDKN2A) and above this size (ATM), had a %GC12 content higher than %GC3 (76.31% and 40.81% for CDKN2A and ATM genes, respectively). ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 167,
+                    "end": 175,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Relation of Protein Length on GC12 and GC3 Content"
+        },
+        {
+            "text": "A correlation analysis between overall GC content and GC components at different positions for CAI-59 and ENc was conducted to determine the impact of the GC compo- ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Relationship between GC Component and Gene Expression and CUB"
+        },
+        {
+            "text": "A correlation analysis between overall GC content and GC components at different positions for CAI-59 and ENc was conducted to determine the impact of the GC composition on the gene component and CUB ( Table 2 ). The analysis revealed that gene expression was significantly correlated with components at the GC3 position (r = 0.889, p < 0.0001) but did not correlate with either the %GC2 or %GC12 positions. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 202,
+                    "end": 209,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Relationship between GC Component and Gene Expression and CUB"
+        },
+        {
+            "text": "The red color font shows the negative correlation and black colored font shows positive correlation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Relationship between GC Component and Gene Expression and CUB"
+        },
+        {
+            "text": "The effect of the nucleotide position in the codon on CUB was determined by correlation analysis, which revealed all the nucleotides had a significant effect on CUB, except for T1 and G1, which demonstrated that these nucleotides at the first position of the codon had no impact on CUB. Nucleotide T at the second position of the codon (T2) had the least impact (p < 0.05), followed by C2 (p < 0.01), when compared to all other nucleotides (p < 0.001) at different positions of the codon (Table 3) . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 488,
+                    "end": 497,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Relationship between the CUB and Nucleotide Composition with Respect to Codon Position"
+        },
+        {
+            "text": "The CpG and TpA dinucleotide combination is commonly underrepresented [17, 26] . A correlation analysis between the frequency of 16 dinucleotides with CAI-59 revealed that among CpG and TpA, the two nucleotides at those frequencies are strongly driven by selectional force [17] ; CpG did not correlate with CAI-59, while TpA negatively correlated (r = \u22120.770, p < 0.0001). CAI-59 correlated negatively with AA, AT, TA, and TT and positively with CA, CC, CT, GC, and GG (r = 0.535, p < 0.001; r = 0.643, p < 0.001; r = 0.538, p < 0.001; r = 0.518, p < 0.001 and r = 0.621, p < 0.001, respectively). AC and TG dinucleotides positively correlated with their palindromic dinucleotides (CA and GT only).",
+            "cite_spans": [
+                {
+                    "start": 70,
+                    "end": 74,
+                    "text": "[17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 75,
+                    "end": 78,
+                    "text": "26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 273,
+                    "end": 277,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dinucleotide Analysis"
+        },
+        {
+            "text": "A correlation analysis of the odds ratios with ENc to determine CUB revealed a correlation (p < 0.05) in all dinucleotide combinations except for AC, AG, CA, TC, and TG ( Figure 4 ). ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 171,
+                    "end": 179,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Dinucleotide Analysis"
+        },
+        {
+            "text": "RSCU analysis of 59 codons (methionine, tryptophan, and stop codons were excluded) indicated low usage of codons ending in A and T while codons ending in C and G were preferred, with high RSCU ( Figure 5 ). Codon CTG was overrepresented in most genes. The CTG codon was overexpressed in all the genes except for a few (overrepresentation [RSCU > 1.6] in 80.95% of genes; underrepresentation [RSCU = 0] in 2.38% of genes; random usage (1.6 > RSCU > 0.6) in 16.66% of genes]. Despite general overrepresentation, this codon was not used by the KRAS gene (RSCU = 0). The RSCU value was highest for CTG in the NFKB2 gene (RSCU = 4.17). Plots of underrepresented AGA (RSCU < 0.6) with corresponding CTG usage and overrepresented AGA (RSCU > 1.6) are depicted in Figure 6a ,b, respectively. Notably, these results indicate that the AGA codon was underrepresented and the CTG codon overrepresented (Figure 6a,b) . A correlation analysis between AGA and CTG revealed a very high negative correlation (r = \u2212825, p < 0.0001). However, AGA and CTG were not mutually exclusive, and in a few genes, both AGA and CTG were overrepresented.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 195,
+                    "end": 203,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 756,
+                    "end": 765,
+                    "text": "Figure 6a",
+                    "ref_id": "FIGREF9"
+                },
+                {
+                    "start": 890,
+                    "end": 903,
+                    "text": "(Figure 6a,b)",
+                    "ref_id": "FIGREF9"
+                }
+            ],
+            "section": "RSCU Analysis"
+        },
+        {
+            "text": "A correlation analysis was performed between the RSCU values and CAI-59 to elucidate the relationship between the relative frequency of codon usage and gene expression (Figure 7) . CGA, CGT, AGG, CCG, TCG, and GCG did not correlate with CAI-59. The CGA codon frequency only correlated with CGT (r = \u22120.337, p < 0.05), while CGT correlated with CGA (r = \u22120.270, p < 0.05), TGT (r = \u22120.380, p < 0.05), TGC (r = \u22120.381, p < 0.05), and GCT (r = \u22120.405, p < 0.05). All other codons correlated with at least ten other codons. All codons ending with CG negatively correlated with codons ending in AT except for TTG and AGG, which positively correlated with codons ending in AT and negatively correlated with codons ending in GC. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 168,
+                    "end": 178,
+                    "text": "(Figure 7)",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "Relationship between Gene Expression and Relative Frequency of Codon Usage"
+        },
+        {
+            "text": "To further analyze the codon usage patterns in genes common in PIDs and cancers, PCA analysis was performed to determine the distribution of 59 independent variables [27] . The distribution of each vector is depicted in Figure 8 . The PCA analysis indicated that the first four axes contributed 54.94%, 7.03%, 5.06%, and 4.08% of all variation, respectively, for a total of 71.11%.",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 170,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 220,
+                    "end": 228,
+                    "text": "Figure 8",
+                    "ref_id": "FIGREF12"
+                }
+            ],
+            "section": "Principal Component Analysis (PCA)"
+        },
+        {
+            "text": "Biplot analysis (Figure 9 ) shows genes and the variable projections to the first two axes simultaneously. The length of the arrow indicates the most influential vectors with the highest loading values [28] . CTG and AGA codons had the highest loading values across PC1, while codons TCT and GCC had the highest loading values across PC2.",
+            "cite_spans": [
+                {
+                    "start": 202,
+                    "end": 206,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 16,
+                    "end": 25,
+                    "text": "(Figure 9",
+                    "ref_id": "FIGREF13"
+                }
+            ],
+            "section": "Principal Component Analysis (PCA)"
+        },
+        {
+            "text": "The ENc-GC3 plot was constructed to assess the compositional constraints, selection pressure, and mutational forces acting upon genes, determining codon usage. If the data points occur only on the expected ENc line, then the codon usage is driven solely by compositional constraints. The values above the curve indicate mutational forces, while values below the expected curve indicate selectional forces. In the present study, all the values but one were below the expected curve (Figure 10 ), indicating the presence of selectional forces. One data point above the expected curve explained the presence of mutational forces. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 481,
+                    "end": 491,
+                    "text": "(Figure 10",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Assessment of Compositional Constraints, Selection Pressure, and Mutational Force"
+        },
+        {
+            "text": "To further analyze the codon usage patterns in genes common in PIDs and cancers, PCA analysis was performed to determine the distribution of 59 independent variables [27] . The distribution of each vector is depicted in Figure 8 . The PCA analysis indicated that the first four axes contributed 54.94%, 7.03%, 5.06%, and 4.08% of all variation, respectively, for a total of 71.11%. ",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 170,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 220,
+                    "end": 228,
+                    "text": "Figure 8",
+                    "ref_id": "FIGREF12"
+                }
+            ],
+            "section": "Principal Component Analysis (PCA)"
+        },
+        {
+            "text": "The %GC3 values ranged between 31.25% to 83.49%, while the average GC12% value ranged between 40.31% and 76.31%. The linear regression model of GC12 on GC3 indicated (GC12%) = 0.2718 (GC3%) + 32.468, with R 2 = 0.316. This meant that relative neutrality was 27.18%, while the contribution of selectional forces was 72.82%. The plot also indicated that GC3 is responsible for 31.6% of the variation in GC12. (Figure 11 ) This result shows a high correlation between GC12 and GC3, indicating that the directional mutational force acted on all codon positions [29] . ",
+            "cite_spans": [
+                {
+                    "start": 557,
+                    "end": 561,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 407,
+                    "end": 417,
+                    "text": "(Figure 11",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Selection Force Is Dominant over Mutational Force"
+        },
+        {
+            "text": "Sequence changes can result from mutational pressure, which is one of the imperative factors affecting CUB. The correlation analysis between the overall nucleotide composition of an individual nucleotide and its composition at the third codon position was determined to elucidate how these are related. The correlations are provided in Table 4 . Positive correlations were observed between A3-A, A3-T, C3-C, C3-G, C3-GC3, T3-A, T3-T, G3-C, G3-G, G3-GC3, GC3-C, GC3-G, and GC3-GC, hence showing a proportionate dependence. Negative correlations between A3-C, A3-G, A3-GC3, C3-A, C3-T, T3-C, T3-G, T3-GC, G3-A, G3-T, GC3-A, and GC3-T (for all correlations, p < 0.0001) represented inversely proportional dependence. Significant correlations among homogeneous nucleotide compositions indicated that the compositional properties attributed to the mutational forces helped shape codon usage [30] . Regression analysis conducted between the overall nucleotide composition and composition at the third codon position (Figure 12 ) revealed that mutational forces operated on all nucleotides. Nucleotide A was subjected to the greatest mutational forces (61.71%), while T was subjected to the least (41.18%). ",
+            "cite_spans": [
+                {
+                    "start": 886,
+                    "end": 890,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 336,
+                    "end": 343,
+                    "text": "Table 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1010,
+                    "end": 1020,
+                    "text": "(Figure 12",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Role of Mutational Force on CUB"
+        },
+        {
+            "text": "Parity plot analysis provides insight into the effects of evolutionary forces on codon usage [31] . Chargaff's rule dictates that the number of A=T and C=G (Sueoka, 1999) [32] . At the center of the plot, the value of the average position of x = 0.466 \u00b1 0.055 (AT bias) and y = 0.509 \u00b1 0.067 (GC bias) ( Figure 13 ). This result reveals a preference for T and G over A and C.",
+            "cite_spans": [
+                {
+                    "start": 93,
+                    "end": 97,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 156,
+                    "end": 170,
+                    "text": "(Sueoka, 1999)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 171,
+                    "end": 175,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 304,
+                    "end": 313,
+                    "text": "Figure 13",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Parity Plot Analysis"
+        },
+        {
+            "text": "A correlation was determined between CAI-18 and ENc and various protein characteristics including GRAVY, AROMA, PI, AI, HY, INSTAB, and acidic, basic, and neutral AAs ( Figure 14) . The analysis revealed CAI-18 was positively correlated with the insatiability index (r = 0.309; p < 0.05) and hydrophobicity (r = 0.490; p < 0.01) but negatively correlated with acidic (r = \u22120.327; p < 0.05) and basic amino acid residues (r = \u22120.382; p < 0.05). ENc was negatively correlated with the insatiability index (r = \u22120.356; p < 0.05) and hydrophobicity (r = \u22120.334; p < 0.05), and positively correlated with acidic AAs (r = \u22120.403; p < 0.01). Protein length did not correlate with any of the protein indices, CUB, or gene expression (data not presented). ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 169,
+                    "end": 179,
+                    "text": "Figure 14)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Relation of Protein Indices with CAI-18"
+        },
+        {
+            "text": "Compositional analysis of the selected genes revealed an overall lower occurrence of the T nucleotide. GC3 composition varied the most among all GC positions due to its neutral position on the codon; mutations at this position are silent and do not alter what the codon represents with regard to the amino acid coded. It indicates the action of mutational force in determining the composition of the gene.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In proteins 150 to 3000 AAs in length, the GC3 content was higher than GC12 without exception. Proteins less than 150 AAs and more than 3000 AAs showed higher GC12. The protein length affects several parameters, including folding enthalpy, entropy, and heat capacity [33] . Furthermore, protein stability depends on the chain length and numbers of acidic and basic side chains [34, 35] . Hence, to retain optimum stability, the PID gene protein chain length ranged between 150 and 1500 AAs (Figure 3 ). The abundance of GC3 content is consistent with results obtained by O'Connell et al. (2012), who reported gene expression depended upon the abundance of G and C at the third codon position (GC3) in the genome of Arabidopsis thaliana [36] . Also similar to O'Connell et al. (2012), we observed a significantly high positive correlation between the CAI-59 and GC3 contents (p < 0.0001). The lack of a correlation between CAI-59 and GC2 and GC12 and a positive correlation with GC1 (p < 0.05) cumulatively suggest that at non-neutral positions, the composition plays a minor role in affecting gene expression. The GC components at all positions were inversely correlated with ENc. Hence when the GC3 component increased, CUB also increased [37] . Concerning the CUB and individual codon position, the analysis revealed that CUB was independent of T and G nucleotide compositions at the first codon position (Table 4) .",
+            "cite_spans": [
+                {
+                    "start": 267,
+                    "end": 271,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 377,
+                    "end": 381,
+                    "text": "[34,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 382,
+                    "end": 385,
+                    "text": "35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 736,
+                    "end": 740,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1240,
+                    "end": 1244,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 490,
+                    "end": 499,
+                    "text": "(Figure 3",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 1407,
+                    "end": 1416,
+                    "text": "(Table 4)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Protein length and CUB have been found to be negatively correlated in Saccharomyces cerevisiae, and highly expressed proteins also tend to be of smaller size [38] . A positive correlation was found between CUB and Drosophila melanogaster, results opposite to those found for Saccharomyces cerevisiae. Energetically costly, longer genes have higher CUB values to maximize translational efficiency. Both positive and negative correlations can be understood based on selection [39] . However, in the present study, protein length did not correlate with any of the protein indices, CUB, or gene expression (data not presented).",
+            "cite_spans": [
+                {
+                    "start": 158,
+                    "end": 162,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 474,
+                    "end": 478,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The four standard DNA nucleotides can form 16 combinations of dinucleotides. These dinucleotides do not appear in numbers as expected, and few dinucleotides are underrepresented relative to others [40] . Our correlation analysis between the 16 dinucleotide odds ratio and gene expression with CUB revealed that of the two dinucleotides TpA and CpG, which are considered to be under extreme selection pressure, TpA negatively affected protein expression, while CpG did not [26] . It has been shown for the human immunodeficiency virus type 1 gag gene that codon optimization resulted in enhancement of CpG rich sequences and had a high level of expression compared to non-optimized sequences [41] . In contrast, CpG dinucleotides are statistically underrepresented in eukaryotes because CpG dinucleotides are often methylated at the fifth position of cytosine and subsequently prone to deamination, resulting in the formation of thymidine out of cytosine [42] . CpG-dense areas are also present in the genome and are mainly confined within or near promoter regions. Furthermore, these CpG-dense regions are protected from CpG methylation through the occupation of the regions by nuclear factors [43] . Bauer et al. (2010) revealed the influence of intragenic CpG content on gene expression by comparing the expression of a GFP reporter in a codon-optimized CpG-depleted version with its CpGrich equivalent [44] . The GFP variant lacking CpG led to reduced GFP reporter expression irrespective of the cell type and promoter used. In the present study, the CpG dinucleotide had no impact on PID gene expression but negatively affected CUB.",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 201,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 472,
+                    "end": 476,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 691,
+                    "end": 695,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 954,
+                    "end": 958,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1194,
+                    "end": 1198,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1201,
+                    "end": 1220,
+                    "text": "Bauer et al. (2010)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1405,
+                    "end": 1409,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Dinucleotide TpA negatively affects gene expression in PID genes, and possibly due to being a part of stop codons TAA, TAG, and TGA, leads to the premature termination of the growing protein chain. ENc was positively correlated with TpA dinucleotides, showing that with an increase in TpA content, CUB decreased [17] .",
+            "cite_spans": [
+                {
+                    "start": 312,
+                    "end": 316,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In PID genes, codons ending in CG were preferred over codons ending in AT ( Figure 5 ). This pattern was not followed by CASP, FAS, ATM, BLM, NBN, KRAS, PIK3R1, NRAS, MALT1, PTPRC, IL7R, SBDS, and PMS2 genes, in which codons ending in AT were preferred over GC-ending codons, observed in the richness of A and T nucleotides in the overall composition of these genes. Our results indicate the influence of composition on codon usage preference. Furthermore, as we found no effect of the CpG dinucleotide on protein expression (Figure 4) , it is obvious to expect no effect of CpG-containing codons on gene expression. This assumption was partially correct as five codons-CGA, CGT, CCG, TCG, and GCG-did not correlate with either gene expression or CUB, while three codons-CGG, ACG, and CGC-positively correlated with gene expression and negatively correlated with CUB. Moreover, CUB did not correlate with %T1 and %C1 but correlated with nucleotide compositions at other codon positions to varying degrees (p < 0.5 to p < 0.0001) ( Table 4 ). All of these assertions indicate that not only the compositional properties but also other factors influence gene expression and CUB.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 76,
+                    "end": 84,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 525,
+                    "end": 535,
+                    "text": "(Figure 4)",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1031,
+                    "end": 1038,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Codon CTG was overrepresented with a very high RSCU value in most genes and negatively correlated with the AGA codon (Figure 6a ). The CTG codon was overexpressed (overrepresentation, RSCU > 1.6) in 80.95% of genes, underexpressed (underrepresentation, RSCU = 0) in 2.38% of genes, and randomly used (RSCU >0.6 and <1.6) in 16.66% of genes. The CTG codon has been found overexpressed in obesity, housekeeping [45] , and central nervous system genes [46] . In Y-linked genes, the RSCU values indicated overrepresentation of both AGA and CTG codons [47] . In PID genes, all three AGA and CTG codon representation scenarios were observed. In a few PID genes, the AGA codon was highly underrepresented while CTG was overrepresented (17 genes) [ Figure 6a ], while in a few genes, the reverse occurred (one gene with underrepresentation of CTG and overrepresentation of AGA). Some genes showed overrepresentation of both AGA and CTG (Figure 6b ). Runs of AGA codons have been linked to translational regulation by tRNA methyltransferase [48] . Hence, the number of AGA codons utilized appears tightly linked with transitional regulation and selection pressure.",
+            "cite_spans": [
+                {
+                    "start": 409,
+                    "end": 413,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 449,
+                    "end": 453,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 547,
+                    "end": 551,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1032,
+                    "end": 1036,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 117,
+                    "end": 127,
+                    "text": "(Figure 6a",
+                    "ref_id": "FIGREF9"
+                },
+                {
+                    "start": 741,
+                    "end": 750,
+                    "text": "Figure 6a",
+                    "ref_id": "FIGREF9"
+                },
+                {
+                    "start": 928,
+                    "end": 938,
+                    "text": "(Figure 6b",
+                    "ref_id": "FIGREF9"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "ENc-GC3 curve analysis ( Figure 10 ) demonstrated that selectional pressure was strongly involved with mutational forces. A significant positive correlation was observed between overall nucleotide composition and nucleotide composition at the third position of the codon in homologous and heterologous nucleotides. Furthermore, a negative correlation observed between overall nucleotide composition and nucleotide composition at the third codon position in heterologous nucleotides indicates the role of mutational forces on CUB [49] . Overall, selectional forces contributed 72.82% of the variation, while mutational forces contributed 31.6% of the variation (Figure 11 ). Mutational forces at the individual nucleotide level were observed the most in nucleotide A (61.71%), while nucleotide T experienced the least (41.18%) ( Figure 12 ).",
+            "cite_spans": [
+                {
+                    "start": 529,
+                    "end": 533,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 25,
+                    "end": 34,
+                    "text": "Figure 10",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 660,
+                    "end": 670,
+                    "text": "(Figure 11",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 828,
+                    "end": 837,
+                    "text": "Figure 12",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "When selection and mutational forces are equal, on a parity plot, all the points will be positioned in the center where A=T and C=G. The parity plot can distinguish between AT and GC bias [50] . All the nucleotides were not used equally in the PID genes, and T and G were preferred over A and C.",
+            "cite_spans": [
+                {
+                    "start": 188,
+                    "end": 192,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Various protein characteristics were evaluated for their correlation with gene expression and CUB. The instability index refers to the protein stability under both in vivo and in vitro conditions. Proteins with instability indices >40 are considered unstable, while those <40 are stable [51] . Instability index values ranged from 27.89 (FAS) to 70.11 (WAS). The instability index was positively correlated with CAI-18 and negatively correlated with ENc, indicating that gene expression and CUB increase with an increasing instability index.",
+            "cite_spans": [
+                {
+                    "start": 287,
+                    "end": 291,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Hydrophobic interactions are the forces that keep the protein structure together. Molecules with similar hydropathy have an affinity for each other and are compatible and interact [52] . Hydrophobic bonds in a protein contribute to the formation of the protein's native structure and nucleation site to initiate protein folding [53] . Hydrophobicity positively correlated with CAI-18 and negatively correlated with CUB, indicating that hydrophobicity promotes both protein expression and CUB.",
+            "cite_spans": [
+                {
+                    "start": 180,
+                    "end": 184,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 328,
+                    "end": 332,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Protein expression and CUB significantly correlated with the number of acidic amino acid residues present in the protein. A positive association with protein expression was found for basic AAs with no impact on CUB, cumulatively signifying their role in contributing to selection pressure.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The immune system is a set of highly specialized cells, tissues, and organs that together provide an organism's immunity. A faulty immune system with dysregulation in the humoral, cellular, or both arms of the immune system might result in developmental disorders, autoimmunity, inflammatory disorders, recurrent infections, and increased cancer incidence. Initial evidence of the linkage between cancer and PIDs was revealed in 1958, and the genetic basis of PIDs and cancer is based mainly on monogenic disorders. To date, more than 350 genes have been identified as contributing to PIDs. The close association of PIDs and cancer prompted researchers to investigate their common features at the genetic level. In the present study, a panel of 42 genes shared in both PIDs and cancer were investigated for codon usage bias, nucleotide composition, protein properties, and expression profiling to gain in-depth knowledge of these genes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The T nucleotide was generally present at a low level in these genes, and %GC3 was the most variable among all %GC positions. The %GC3 was high for all the genes except those smaller than 150 amino acids and larger than 3000 amino acids, without exception. In the present study, no correlation between gene length and gene expression was observed. The dinucleotides TpA and CpG experienced the highest selectional force. TpA negatively correlated with gene expression, while CpG had no impact on gene expression. Regarding CUB, increased CpG resulted in an increase in bias, and the opposite was true for TpA. Codon CTG was the most overexpressed in most genes (80.95%), with random usage in few genes (16.66%).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "ENc-GC3 curve analysis, parity analysis, and neutrality analysis revealed that selection pressure, mutation pressure, and compositional constraints are all responsible for shaping codon bias, and the role of selection force is dominant. Among all nucleotides, T was subjected to the least mutational force. Analysis of various protein properties influencing codon usage, including GRAVY, AROMA, isoelectric point, aliphatic index, hydrophobicity index, instability index, numbers of acidic amino acid residues, basic amino acid residues, and neutral amino acid residues revealed that hydrophobicity index, instability index, and numbers of acidic and basic amino acid residues were the factors affecting gene expression. Hydrophobicity index, instability index, and numbers of acidic amino acids were the factors affecting CUB.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "To summarize, selection pressure was the primary force. Selection favored few protein characteristics such as hydrophobicity index, instability index, and numbers of acidic and basic amino acid residues and codon CTG in order to facilitate the protein expression in genes common to PIDs and cancer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Overall, in present analysis, we tried to investigate various compositional parameters, CUB, effects of various parameters on CUB including length, physical properties of proteins, mutational, selectional, and other forces, and upon analysis, it was determined that selection pressure, mutation pressure, and compositional constraints all participated in shaping codon usage.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Supplementary Materials: The following are available online at https://www.mdpi.com/article/ 10.3390/biomedicines9081001/s1, Table S1: The RSCU values of genes involved in both PIDs and cancer. The codon having highest RSCU value for a given amino acid is highlighted. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Ten warning signs of primary immunodeficiency: A new paradigm is needed for the 21st century",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Arkwright",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Gennery",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Ann. N. Y. Acad. Sci",
+            "volume": "1238",
+            "issn": "",
+            "pages": "7--14",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1749-6632.2011.06206.x"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Genes at the Crossroad of Primary Immunodeficiencies and Cancer",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Derpoorter",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Bordon",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Laureys",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Haerynck",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lammens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Front. Immunol",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2018.02544"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Occurrence of Leukemia and Lymphoma in Patients with Agammaglobulinemia",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Page",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Good",
+                    "suffix": ""
+                }
+            ],
+            "year": 1963,
+            "venue": "Blood",
+            "volume": "21",
+            "issn": "",
+            "pages": "197--206",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood.V21.2.197.197"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Ataxia-telangiectasia; a familial syndrome of progressive cerebellar ataxia, oculocutaneous telangiectasia and frequent pulmonary infection",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Boder",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sedgwick",
+                    "suffix": ""
+                }
+            ],
+            "year": 1958,
+            "venue": "Pediatrics",
+            "volume": "21",
+            "issn": "",
+            "pages": "526--554",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "International Union of Immunological Societies: 2017 Primary Immunodeficiency Diseases Committee Report on Inborn Errors of Immunity",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Picard",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bobby Gaspar",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Al-Herz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bousfiha",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Casanova",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chatila",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Crow",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cunningham-Rundles",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Etzioni",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Luis Franco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Clin. Immunol",
+            "volume": "38",
+            "issn": "",
+            "pages": "96--128",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10875-017-0464-9"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Are antibody deficiency disorders associated with a narrower range of cancers than other forms of immunodeficiency? Blood",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Vajdic",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Van Leeuwen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kirkpatrick",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Grulich",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Riminton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "116",
+            "issn": "",
+            "pages": "1228--1234",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2010-03-272351"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Cancer in primary immunodeficiency diseases: Cancer incidence in the United States Immune Deficiency Network Registry",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mayor",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Eng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Singel",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Abrams",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Odunsi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Moysich",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fuleihan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Garabedian",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lugar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ochs",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Allergy Clin. Immunol",
+            "volume": "141",
+            "issn": "",
+            "pages": "1028--1035",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jaci.2017.05.024"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Primary immunodeficiencies in the Netherlands: National patient data demonstrate the increased risk of malignancy",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jonkman-Berk",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Van Den",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Berg",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": ".; Ten",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Berge",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Bredius",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Driessen",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dalm",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Van Dissel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van Deuren",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ellerbroek",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van Der Flier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin. Immunol",
+            "volume": "156",
+            "issn": "",
+            "pages": "154--162",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.clim.2014.10.003"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Primary Immunodeficiency and Cancer Predisposition Revisited: Embedding Two Closely Related Concepts Into an Integrative Conceptual Framework",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Haas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front. Immunol",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2018.03136"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A Mendelian predisposition to B-cell lymphoma caused by IL-10R deficiency",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Neven",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mamessier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bruneau",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kaltenbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kotlarz",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Suarez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Masliah-Planchon",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Billot",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Canioni",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Frange",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Blood",
+            "volume": "122",
+            "issn": "",
+            "pages": "3713--3722",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2013-06-508267"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Realizing the promise of cancer predisposition genes",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rahman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nature",
+            "volume": "505",
+            "issn": "",
+            "pages": "302--308",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nature12981"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Codon Pair Bias Is a Direct Consequence of Dinucleotide Bias",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kunec",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Osterrieder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Cell Rep",
+            "volume": "14",
+            "issn": "",
+            "pages": "55--67",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.celrep.2015.12.011"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Causes and Implications of Codon Usage Bias in RNA Viruses",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Belalov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Lukashev",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "PLoS ONE",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0056642"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Insight into Codon Utilization Pattern of Tumor Suppressor Gene EPB41L3 from Different Mammalian Species Indicates Dominant Role of Selection Force",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khandia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Puranik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tripathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pateriya",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Emran",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dhama",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Munjal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Cancers",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/cancers13112739"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "COUSIN (COdon Usage Similarity INdex): A Normalized Measure of Codon Usage Preferences",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bourret",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Alizon",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Bravo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Genome Biol. Evol",
+            "volume": "11",
+            "issn": "",
+            "pages": "3523--3528",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/gbe/evz262"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The codon Adaptation Index-A measure of directional synonymous codon usage bias, and its potential applications",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sharp",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Nucleic Acids Res",
+            "volume": "15",
+            "issn": "",
+            "pages": "1281--1295",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/nar/15.3.1281"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Analysis of Nipah Virus Codon Usage and Adaptation to Hosts",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khandia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ansari",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Tiwari",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Dhama",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Das",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Munjal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front. Microbiol",
+            "volume": "886",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fmicb.2019.00886"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "A simple method for displaying the hydropathic character of a protein",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kyte",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Doolittle",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "J. Mol. Biol",
+            "volume": "157",
+            "issn": "",
+            "pages": "105--132",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/0022-2836(82)90515-0"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "expressivity and aromaticity are the major trends of amino-acid usage in 999 Escherichia coli chromosome-encoded genes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lobry",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gautier",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hydrophobicity",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Nucleic Acids Res",
+            "volume": "22",
+            "issn": "",
+            "pages": "3174--3180",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/nar/22.15.3174"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Codon bias and gene expression of mitochondrial ND2 gene in chordates",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Mazumder",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Choudhury",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Bioinformation",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.6026/97320630011407"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "A role for surface hydrophobicity in protein-protein recognition",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jernigan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Covell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Protein Sci",
+            "volume": "3",
+            "issn": "",
+            "pages": "717--729",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pro.5560030501"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A combined transmembrane topology and signal peptide prediction method",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kall",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Krogh",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L L"
+                    ],
+                    "last": "Sonnhammer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J. Mol. Biol",
+            "volume": "338",
+            "issn": "",
+            "pages": "1027--1036",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmb.2004.03.016"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Physico-chemical characterization and topological analysis of pathogenesis-related proteins from Arabidopsis thaliana and Oryza sativa using in-silico approaches",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nagpal",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "PLoS",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0239836"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Protein Identification and Analysis Tools on the ExPASy Server",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Gasteiger",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hoogland",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gattiker",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Duvaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Wilkins",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Appel",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bairoch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Proteom. Protoc. Handb",
+            "volume": "",
+            "issn": "",
+            "pages": "571--607",
+            "other_ids": {
+                "DOI": [
+                    "10.1385/1-59259-890-0:571"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Past: Paleontological Statistics Software Package for Education and Data Analysis",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A T"
+                    ],
+                    "last": "Hammer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00d8",
+                    "middle": [],
+                    "last": "Hammer",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A T"
+                    ],
+                    "last": "Harper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Palaeontol. Electron",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Mycobacterium lepromatosis genome exhibits unusually high CpG dinucleotide content and selection is key force in shaping codon usage",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Munjal",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Khandia",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Shende",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Das",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infect. Genet. Evol",
+            "volume": "84",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.meegid.2020.104399"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Characterization of the porcine epidemic diarrhea virus codon usage bias",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Infect. Genet. Evol",
+            "volume": "28",
+            "issn": "",
+            "pages": "95--100",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.meegid.2014.09.004"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Serological immunochromatographic approach in diagnosis with SARS-CoV-2 infected COVID-19 patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Infect",
+            "volume": "81",
+            "issn": "",
+            "pages": "28--32",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.03.051"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Composition, codon usage pattern, protein properties, and influencing factors in the genomes of members of the family Anelloviridae",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Deb",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Arch. Virol",
+            "volume": "166",
+            "issn": "",
+            "pages": "461--474",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00705-020-04890-2"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Genome-wide comparison of codon usage dynamics in mitochondrial genes across different species of amphibian genus Bombina",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Barbhuiya",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Exp. Zool. Part B Mol. Dev. Evol",
+            "volume": "332",
+            "issn": "",
+            "pages": "99--112",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jez.b.22852"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Genome-wide analysis of codon usage pattern in herpesviruses and its relation to evolution",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Deb",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Virus Res",
+            "volume": "292",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2020.198248"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Translation-coupled violation of Parity Rule 2 in human genes is not the cause of heterogeneity of the DNA G+C content of third codon position",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sueoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Gene",
+            "volume": "238",
+            "issn": "",
+            "pages": "53--58",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0378-1119(99)00320-0"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Protein Structure and the Energetics of Protein Stability",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Robertson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Murphy",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Chem. Rev",
+            "volume": "97",
+            "issn": "",
+            "pages": "1251--1267",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/cr960383c"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "The Effects of Chain Length on the Structural Properties of Intrinsically Disordered Proteins in Concentrated Solutions",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Fagerberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "M\u00e5nsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lenton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Skep\u00f6",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Phys. Chem",
+            "volume": "2020",
+            "issn": "",
+            "pages": "11843--11853",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jpcb.0c09635"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Computing protein stabilities from their chain lengths",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dill",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "106",
+            "issn": "",
+            "pages": "10649--10654",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.0903995106"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Arabidopsis thaliana codon volatility scores reflect GC3 composition rather than selective pressure",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "O&apos;connell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Doyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Juenger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Donoghue",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Keshavaiah",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Tuteja",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Spillane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "BMC Res. Notes",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1756-0500-5-359"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Factors influencing synonymous codon and amino acid usage biases in Mimivirus",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sau",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sau",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mandal",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Ghosh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Biosystems",
+            "volume": "85",
+            "issn": "",
+            "pages": "107--113",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.biosystems.2005.12.004"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Evolutionary constraints on yeast protein size",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Warringer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Blomberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "BMC Evol. Biol",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2148-6-61"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Gene length and codon usage bias in Drosophila melanogaster, Saccharomyces cerevisiae and Escherichia coli",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Moriyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Powell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Nucleic Acids Res",
+            "volume": "26",
+            "issn": "",
+            "pages": "3188--3193",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/nar/26.13.3188"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Analysis of dinucleotide signatures in HIV-1 subtype B genomes",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pandit",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Vadlamudi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sinha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J. Genet",
+            "volume": "92",
+            "issn": "",
+            "pages": "403--412",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12041-013-0281-8"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Codon usage optimization of HIV type 1 subtype C gag, pol, env, and nef genes: In vitro expression and immune responses in DNA-vaccinated mice",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Decker",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Peyerl",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bibollet-Ruche",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Rodenburg",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Shaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Musonda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "AIDS Res. Hum. Retroviruses",
+            "volume": "19",
+            "issn": "",
+            "pages": "817--823",
+            "other_ids": {
+                "DOI": [
+                    "10.1089/088922203769232610"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The DNA methyltransferases of mammals",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Bestor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Hum. Mol. Genet",
+            "volume": "9",
+            "issn": "",
+            "pages": "2395--2402",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/hmg/9.16.2395"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "DNA methylation and chromatin structure: The puzzling CpG islands",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Caiafa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zampieri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J. Cell Biochem",
+            "volume": "94",
+            "issn": "",
+            "pages": "257--265",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcb.20325"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The impact of intragenic CpG content on gene expression",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Bauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Leikam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Krinner",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Notka",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ludwig",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "L\u00e4ngst",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wagner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Nucleic Acids Res",
+            "volume": "38",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/nar/gkq115"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "A Crosstalk on Codon Usage in Genes Associated with Leukemia",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Nath",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Paul",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Choudhury",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Cho",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Biochem. Genet",
+            "volume": "59",
+            "issn": "",
+            "pages": "235--255",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10528-020-10000-3"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Codon Usage Pattern of Genes Involved in Central Nervous System",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Mol. Neurobiol",
+            "volume": "56",
+            "issn": "",
+            "pages": "1737--1748",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12035-018-1173-y"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Codon usage bias and its influencing factors for Y-linked genes in human",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nath Choudhury",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput. Biol. Chem",
+            "volume": "69",
+            "issn": "",
+            "pages": "77--86",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.compbiolchem.2017.05.005"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Gene-and genome-based analysis of significant codon patterns in yeast, rat and mice genomes with the CUT Codon UTilization tool",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Doyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Leonardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Endres",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tenenbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Dedon",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Begley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Methods",
+            "volume": "107",
+            "issn": "",
+            "pages": "98--109",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ymeth.2016.05.010"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Compositional Features and Codon Usage Pattern of Genes Associated with Anxiety in Human",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Uddin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Mol. Neurobiol",
+            "volume": "57",
+            "issn": "",
+            "pages": "4911--4920",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12035-020-02068-0"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Comprehensive analysis of synonymous codon usage patterns and influencing factors of porcine epidemic diarrhea virus",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ning",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Arch. Virol",
+            "volume": "166",
+            "issn": "",
+            "pages": "157--165",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00705-020-04857-3"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Correlation between stability of a protein and its dipeptide composition: A novel approach for predicting in vivo stability of a protein from its primary sequence",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Guruprasad",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "V B"
+                    ],
+                    "last": "Reddy",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Pandit",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Protein Eng. Des. Sel",
+            "volume": "4",
+            "issn": "",
+            "pages": "155--161",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/protein/4.2.155"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Amino acid size, charge, hydropathy indices and matrices for protein structure analysis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Biro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Theor. Biol. Med. Model",
+            "volume": "3",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1742-4682-3-15"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "A Method for Predicting Nucleation Sites for Protein Folding Based on Hydrophobic Contacts",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Matheson",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Jr",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Scheraga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Macromolecules",
+            "volume": "11",
+            "issn": "",
+            "pages": "819--829",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ma60064a038"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The lowest value indicates the highest CUB, and vice versa. A value of 20 indicates usage of only one codon out of several synonymous codons, while a value of 61 indicates equal usage of all the codons encoding for a particular amino acid. ENc values were calculated for all the 42 genes using informatics software CodonW 1.4.4, available at http://codonw.sourceforge.net (accessed on 28 June 2021).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Percentile graph depicting overall nucleotide composition of 42 genes related to SCID.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Percentile graph depicting overall nucleotide composition of 42 genes related to SCID.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Jitter and boxplot showing percent occurrence of GC components at all positions.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Jitter and boxplot showing percent occurrence of GC components at all positions.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Relationship between protein length and %GC12 and %GC3 content of genes. Blue dots indicate %GC3 and red dots indicate %GC12.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Relationship between protein length and %GC12 and %GC3 content of genes. Blue dots indicate %GC3 and red dots indicate %GC12.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Mirror image plot depicting the correlation between CAI-59 and 16 dinucleotides. A bigger-sized eclipse described a higher Pearson's correlation coefficient (r) value, and vice versa. The red color shows a positive correlation, while blue indicates a negative correlation. Empty boxes show an insignificant correlation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Matrix heat map for RSCU values of codons ending with A, T, G, and G (from right to left).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "(a) Plot of under-represented AGA (RSCU values below 0.6) with corresponding CTG usage. (b) Plot of overrepresented AGA (RSCU > 1.6) with corresponding CTG usage.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Mirror image plot depicting the correlation between RSCU values with gene expression and CUB. A bigger-sized eclipse described a higher Pearson's correlation coefficient (r) value, and vice versa. The red colored circles show a positive correlation, whilst blue circles indicate a negative correlation. Crossed boxes show an insignificant correlation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Mirror image plot depicting the correlation between RSCU values with gene expression and CUB. A bigger-sized eclipse described a higher Pearson's correlation coefficient (r) value, and vice versa. The red colored circles show a positive correlation, whilst blue circles indicate a negative correlation. Crossed boxes show an insignificant correlation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "PCA analysis using RSCU values as 59 independent variables. Each dot corresponds to the position of a gene across axis 1 and 2. Each black dot represents a gene. Besides the dot, the name of the gene has been written in blue font.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "Biplot analysis showing CTG and AGA codons are most influential across axis 1. The length of the arrow is proportional to the influence of the codon on codon usage bias.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "Nc-GC3 curve for determining the compositional constrain selection pressure and mutational force.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "Neutrality plot analysis between %GC12 and %GC3. The slope signifies the impact of mutation and selectional forces.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "Correlation analysis for overall nucleotide composition with composition at third codon position. are depicted with red colored font while positive correlations have been depicted with black font. *** p < 0.0001.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "Regression analysis between the overall nucleotide composition and composition at the third position of the codon.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "Parity plot analysis depicting preference of T and G over A and C.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "A mirror image plot depicting the correlation between CAI-18 and different protein indices. A bigger-sized eclipse described a higher Pearson's correlation coefficient (r) value, and vice versa. The red color shows a positive correlation, whilst blue indicates a negative correlation. Empty boxes show an insignificant correlation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "Contributions: Conceptualization, R.K. and T.A.; methodology, R.K. and A.M.A.; software, R.K., T.A. and A.M.A.; validation, R.K., T.A. and A.M.A.; formal analysis, R.K., T.A. and A.M.A.; investigation, T.A.; resources, A.M.A.; data curation, R.K.; writing-original draft preparation, R.K., T.A. and A.M.A., writing-review and editing, R.K., T.A. and A.M.A.; supervision, R.K.; funding acquisition, T.A. and A.M.A. All authors have read and agreed to the published version of the manuscript.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Panel of 42 of genes common to both PIDs and cancer.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Correlation analysis between overall GC content and GC components at different positions along with CAI-59 and ENc.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Effect of nucleotides in agreement to their position in codon on CUB.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Funding: This research received no external funding.Data Availability Statement: Available upon request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        },
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest:"
+        }
+    ]
+}

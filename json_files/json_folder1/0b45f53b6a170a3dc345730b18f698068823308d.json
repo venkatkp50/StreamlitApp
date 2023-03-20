@@ -1,0 +1,2686 @@
+{
+    "paper_id": "0b45f53b6a170a3dc345730b18f698068823308d",
+    "metadata": {
+        "title": "Effect of clinical decision support systems on clinical outcome for acute kidney injury: a systematic review and meta-analysis",
+        "authors": [
+            {
+                "first": "Youlu",
+                "middle": [],
+                "last": "Zhao",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u2020",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Xizi",
+                "middle": [],
+                "last": "Zheng",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jinwei",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Damin",
+                "middle": [],
+                "last": "Xu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Shuangling",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jicheng",
+                "middle": [],
+                "last": "Lv",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Li",
+                "middle": [],
+                "last": "Yang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Clinical decision support systems including both electronic alerts and care bundles have been developed for hospitalized patients with acute kidney injury. Methods: Electronic databases were searched for randomized, before-after and cohort studies that implemented a clinical decision support system for hospitalized patients with acute kidney injury between 1990 and 2019. The studies must describe their impact on care processes, patient-related outcomes, or hospital length of stay. The clinical decision support system included both electronic alerts and care bundles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "We identified seven studies involving 32,846 participants. Clinical decision support system implementation significantly reduced mortality (OR 0.86; 95 % CI, 0.75-0.99; p = 0.040, I 2 = 65.3 %; n = 5 studies; N = 30,791 participants) and increased the proportion of acute kidney injury recognition (OR 3.12; 95 % CI, 2.37-4.10; p < 0.001, I 2 = 77.1 %; n = 2 studies; N = 25,121 participants), and investigations (OR 3.07; 95 % CI, 2.91-3.24; p < 0.001, I 2 = 0.0 %; n = 2 studies; N = 25,121 participants). Conclusions: Nonrandomized controlled trials of clinical decision support systems for acute kidney injury have yielded evidence of improved patient-centered outcomes and care processes. This review is limited by the low number of randomized trials and the relatively short follow-up period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "As a common disorder occurring in up to 22 % of hospitalized patients [1] , and more than 50 % of the critically ill [2] , acute kidney injury (AKI) is associated with high in-hospital mortality rates (> 20 %) [1] , prolonged hospital stays and increased healthcare expenditure. Inadequate detection and management were closely related to the poor outcomes of AKI patients [3] [4] [5] and were highlighted as a challenge for healthcare systems, particularly in developing countries [6] . In a nationwide, cross-sectional survey of AKI in China [7] , the nonrecognition rate of AKI was up to 74.2 %, and 17.6 % of patients with recognized AKI were given a delayed diagnosis, which was further shown to be an independent risk factor for in-hospital death.",
+            "cite_spans": [
+                {
+                    "start": 70,
+                    "end": 73,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 117,
+                    "end": 120,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 210,
+                    "end": 213,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 373,
+                    "end": 376,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 377,
+                    "end": 380,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 381,
+                    "end": 384,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 482,
+                    "end": 485,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 544,
+                    "end": 547,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "As recommended by the Acute Dialysis Quality Initiative (ADQI) consensus [8] , information technology is increasingly being used in the healthcare setting worldwide to automatically recognize AKI and send electronic alerts (e-alerts) to physicians. However, except for effectively changing physician behavior, e-alerts alone did not improve the clinical outcomes of AKI patients [9] [10] [11] [12] . Therefore, care bundles were implemented in conjunction with e-alerts to construct integrated clinical decision support system. The system has been widely implemented in sepsis, mechanical ventilation and central venous catheters usage, with promoted compliance in process of care variables and beneficial clinical outcomes. The system effectively reduced catheter-related bloodstream infection and ventilator-associated pneumonia [13] [14] [15] . Care bundles are defined as a structured set of straight forward and evidence-based practices, treatments and interventions designed to improve the processes of care delivery and ultimately outcomes. Potential elements of AKI care bundles design could be monitoring kidney function, assessment for drugs with renal toxicity, volume assessment and so on [16] . There is a strong rationale for their use in AKI, and the evidence base around clinical decision support system is growing but conflicting. Existing data suggested that the process of care could be improved in various degrees [17, 18] . However, the impact on patient's overall and renal outcomes are inconsistent [18, 19] .",
+            "cite_spans": [
+                {
+                    "start": 73,
+                    "end": 76,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 379,
+                    "end": 382,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 383,
+                    "end": 387,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 388,
+                    "end": 392,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 393,
+                    "end": 397,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 831,
+                    "end": 835,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 836,
+                    "end": 840,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 841,
+                    "end": 845,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1201,
+                    "end": 1205,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1434,
+                    "end": 1438,
+                    "text": "[17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1439,
+                    "end": 1442,
+                    "text": "18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1522,
+                    "end": 1526,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1527,
+                    "end": 1530,
+                    "text": "19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "Hereby, we systematically review the studies that evaluate the effect of e-alerts and care bundles on the clinical outcomes of patients with AKI. We focused mainly on the characteristics of AKI alerting systems and care bundle contents, especially the effects of this system on clinical outcomes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Background"
+        },
+        {
+            "text": "We performed a systematic review and meta-analysis adhering to the statement for the conduct of meta-analyses of intervention studies and Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) (Additional file 1: Appendix 1). The protocol was registered in the International Prospective Register of Systematic Reviews (PROSPERO; Identifier CRD42020163856). We included original research articles including randomized, before-after, and cohort studies of hospitalized patients with both AKI e-alerts and care bundles implemented. Studies must have clear definitions for AKI, and describe its impact on care processes, patient-centered outcomes, or hospital length of stay. Studies with either e-alerts or care bundles alone were excluded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Search strategy and selection criteria"
+        },
+        {
+            "text": "Relevant studies were identified by searching Medline (from 1990 to 2019), Embase (from 1990 to 2019), and the Cochrane Library database (Cochrane Central Register of Controlled Trials; no date restriction) were searched. The search strategy was developed in consultation with an expert research librarian (GH R) (Additional file 1: Appendix 2). The literature search, data extraction, and quality assessment were undertaken independently by two authors (YL Z, XZ Z). Disagreements were resolved through discussion with a third reviewer (L Y).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Search strategy and selection criteria"
+        },
+        {
+            "text": "Relevant information was extracted into a standardized spreadsheet, which included sample size, baseline patient characteristics [age, sex, history of chronic kidney disease (CKD)], clinical course and prognosis of AKI, follow-up duration, clinical decision support system especially care bundles details, care processes, outcome events (patient-related outcomes, length of stay). We assessed methodological quality for randomized controlled trials (RCTs) using the Cochrane collaboration's tool for assessing risk of bias [20] . Other nonrandomized experimental studies were assessed by methodological index for non-randomized studies (MI-NORS), a validated tool to discern the methodological quality of nonrandomized studies [21] .",
+            "cite_spans": [
+                {
+                    "start": 523,
+                    "end": 527,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 727,
+                    "end": 731,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data extraction"
+        },
+        {
+            "text": "The process of care included medication reviews (defined by nephrotoxin dose adjustment or discontinuation, or medical chart review), AKI recognition (defined by documented AKI in clinical notes), fluid assessment, and investigations (defined by approaches looking for the major causes of AKI or monitoring renal function, which include urinalysis, serum creatinine, other laboratory examinations, and kidney ultrasonography). Because the process of care lacking comparisons between the intervention and control groups, missing data, or heterogeneity among studies, only AKI recognition and investigations were eventually incorporated in the meta-analysis. Other management practices, including care bundle usage, nephrology consultation, and risk assessment, were presented solely in tables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data extraction"
+        },
+        {
+            "text": "The primary outcome was all-cause mortality. Secondary outcomes were receipt of renal replacement therapy (RRT), AKI progression (defined as an increase in AKI stages), and hospital length of stay. Other renal outcomes included renal recovery and AKI duration.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcomes"
+        },
+        {
+            "text": "We obtained summary estimated of odds ratios (ORs) with 95 % confidence intervals (CIs) for categorical variables and weighted standard mean differences with 95 % CIs for continuous variables by using a random-effects or fixed-effects model. Statistical heterogeneity was assessed using I 2 statistic. The sensitivity analysis was conducted to test if a particular study contributed appreciably to the observed heterogeneity by excluding studies with extreme ORs from the meta-analysis. Publication bias was tested by the Egger's test. Subgroup analysis by mortality observed at different times was performed. A two-sided p value less than 0.05 was regarded as statistically significant. Study quality graph was presented with Review Manager ( ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 742,
+                    "end": 743,
+                    "text": "(",
+                    "ref_id": null
+                }
+            ],
+            "section": "Statistical analyses"
+        },
+        {
+            "text": "Our search yielded 8882 articles (Fig. 1) . Of 102 articles reviewed in full text, seven studies met the eligibility requirements [17] [18] [19] [22] [23] [24] [25] . Of the included studies, two were RCTs [17, 18] , three were before-after designs [23] [24] [25] , one used a propensity score-matched cohort [19] and the other one was a prospective cohort [22] ( Table 1) . Table 2 summarizes the characteristics of patients with AKI. The mean age was 74.2 years (interquartile range, 59.5-76.3). Male patients accounted for 48.2 % of the sample. The incidence of AKI was approximately 7.58 %, and more than half of the patients had a moderate to severe stage of AKI. Patients suffering from AKI progression were reported to account for 6.02 % of the sample. RRT support accounted for 2.66 % of involved patients. The average length of stay was 11.9 days (interquartile range, 10.1-16.3). The AKI population was subject to substantial in-hospital mortality or follow-up mortality (22.74 and 27.07 %, respectively). Risk of bias and quality of evidence. All studies had moderate to good quality of reporting (Fig. 2) .",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 134,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 135,
+                    "end": 139,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 140,
+                    "end": 144,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 145,
+                    "end": 149,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 150,
+                    "end": 154,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 155,
+                    "end": 159,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 160,
+                    "end": 164,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 206,
+                    "end": 210,
+                    "text": "[17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 211,
+                    "end": 214,
+                    "text": "18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 249,
+                    "end": 253,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 254,
+                    "end": 258,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 259,
+                    "end": 263,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 309,
+                    "end": 313,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 357,
+                    "end": 361,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 33,
+                    "end": 41,
+                    "text": "(Fig. 1)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 364,
+                    "end": 372,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 375,
+                    "end": 382,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 1108,
+                    "end": 1116,
+                    "text": "(Fig. 2)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Study selection"
+        },
+        {
+            "text": "In all the enrolled studies, e-alerts were generated and delivered to physicians through electronic medical record (EMR). In Selby's study, an additional phone call would be made by the duty biochemist to the attending physician if the patient was classified as moderate-severe AKI (AKI stage 2-3) [18] . The contents of care bundles were ummarized in Table 3 .",
+            "cite_spans": [
+                {
+                    "start": 298,
+                    "end": 302,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 352,
+                    "end": 359,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Clinical decision support system Delivery methods"
+        },
+        {
+            "text": "Only Hodgson et al. assessed the risk of developing AKI [23] . By combining multiple predictors such as medical history, age and physiological parameters to calculate an AKI-Predict-Score, his study stratified patients at different risks of AKI according to the AKI-Predict-Score and further provided corresponding therapy.",
+            "cite_spans": [
+                {
+                    "start": 56,
+                    "end": 60,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Risk assessment"
+        },
+        {
+            "text": "The process measure improvements of all studies included medication reviews. All the included studies recommended the review of drug charts and adjustment for potential nephrotoxicity, including contrast media, angiotensin-converting enzyme inhibitors, angiotensin receptor blockers, non-steroidal anti-inflammatory drugs and diuretics [17] [18] [19] [22] [23] [24] [25] . The McCoy team [17, 24] provided detailed recommendations to modify or discontinue specific drugs.",
+            "cite_spans": [
+                {
+                    "start": 336,
+                    "end": 340,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 341,
+                    "end": 345,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 346,
+                    "end": 350,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 351,
+                    "end": 355,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 356,
+                    "end": 360,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 361,
+                    "end": 365,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 366,
+                    "end": 370,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 388,
+                    "end": 392,
+                    "text": "[17,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 393,
+                    "end": 396,
+                    "text": "24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Medications"
+        },
+        {
+            "text": "Kolhe [19, 22] and Selby et al [18] recommended a nephrology consult for patients in AKI stage 3 and potential specific causes for AKI. In Thomas's study, a nephrology consultation was requested, and overall management for AKI was performed [25] . In Hodgson's study [23] , a discussion with nephrology is recommended if the patient's condition did not improve.",
+            "cite_spans": [
+                {
+                    "start": 6,
+                    "end": 10,
+                    "text": "[19,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 11,
+                    "end": 14,
+                    "text": "22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 31,
+                    "end": 35,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 267,
+                    "end": 271,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Nephrology consult"
+        },
+        {
+            "text": "Most of the studies highlighted the importance of fluid balance and volume assessment, including urine output measurement [18, 19, 22, 23, 25] .",
+            "cite_spans": [
+                {
+                    "start": 122,
+                    "end": 126,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 127,
+                    "end": 130,
+                    "text": "19,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 131,
+                    "end": 134,
+                    "text": "22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 135,
+                    "end": 138,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 139,
+                    "end": 142,
+                    "text": "25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Fluid assessment"
+        },
+        {
+            "text": "Laboratory tests that help search for underlying causes of AKI, including urinalysis, renal ultrasound, X-rays and other specific blood tests for patients, are generally requested [18, 19, 22, 23, 25] .",
+            "cite_spans": [
+                {
+                    "start": 180,
+                    "end": 184,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 185,
+                    "end": 188,
+                    "text": "19,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 189,
+                    "end": 192,
+                    "text": "22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 193,
+                    "end": 196,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 197,
+                    "end": 200,
+                    "text": "25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Investigation"
+        },
+        {
+            "text": "Other aspects that support the management of AKI are also suggested, for instance, treatment of the underlying causes, nutritional assessment, physiotherapy, care pathways, escalation and palliative care [18, 19, 22, 23, 25] . ",
+            "cite_spans": [
+                {
+                    "start": 204,
+                    "end": 208,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 209,
+                    "end": 212,
+                    "text": "19,",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 213,
+                    "end": 216,
+                    "text": "22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 217,
+                    "end": 220,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 221,
+                    "end": 224,
+                    "text": "25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Other aspects"
+        },
+        {
+            "text": "Clinical outcome was summarized in Table 4 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 35,
+                    "end": 42,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Clinical outcome"
+        },
+        {
+            "text": "In the pooled analysis, clinical decision support system implementation showed a reduction in overall mortality (OR 0.86; 95 % CI, 0.75-0.99; p = 0.040; n = 5 studies; N = 30,791 participants; I 2 = 65.3 %) (Fig. 3 ). In the subgroup analysis according to mortality observed at different time points, there was a decrease in in-hospital mortality (OR 0.80; 95 % CI, 0.65-0.98; p = 0.033; n = 3 studies; N = 6324 participants; I 2 = 72.3 %), whereas the trend was not favorable regarding follow-up mortality (Fig. 3) . No significant publication bias can be seen on the Egger's test (P = 0.283, Supplementary Fig. 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 207,
+                    "end": 214,
+                    "text": "(Fig. 3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 507,
+                    "end": 515,
+                    "text": "(Fig. 3)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 594,
+                    "end": 614,
+                    "text": "Supplementary Fig. 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Mortality"
+        },
+        {
+            "text": "Five studies (N = 30,791 participants) reported hospitalization days, where clinical decision support system performance was not associated with a reduced (Fig. 4) . To assess the influence of individual studies on the pooled result, we conducted a sensitivity analysis by omitting one study in each turn (supplementary Fig. 2 ). The I 2 dropped to 44.0 % after removing the study by Selby [18] , with a materially unchanged result [standard mean difference \u2212 0.02, 95 %CI (-0.10 \u2212 0.06), p = 0.612] (the forrest plot seen in the supplementary Fig. 3 ). Publication bias can be seen on the Egger's test (p = 0.042, Supplementary Fig. 4) .",
+            "cite_spans": [
+                {
+                    "start": 390,
+                    "end": 394,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 155,
+                    "end": 163,
+                    "text": "(Fig. 4)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 320,
+                    "end": 326,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 544,
+                    "end": 550,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 615,
+                    "end": 636,
+                    "text": "Supplementary Fig. 4)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Length of stay"
+        },
+        {
+            "text": "In a meta-analysis of three studies (27,229 participants), there was no difference observed in RRT usage between groups with or without intervention (OR, 1.002; 95 % CI, 0.76 to 1.32; I 2 = 0.0 %) (Fig. 5a) . Clinical decision support system usage was nonsignificantly associated with lower odds of AKI progression (OR, 0.81; 95 % CI, 0.60 to 1.11; I 2 = 62.7 %, n = 4 studies, N = 30,383 participants) (Fig. 5b) . Sensitivity analysis was conducted by omitting one study in each turn (supplementary Fig. 5 ). The I 2 dropped to 36.0 % after removing the study by Kolhe ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 197,
+                    "end": 206,
+                    "text": "(Fig. 5a)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 403,
+                    "end": 412,
+                    "text": "(Fig. 5b)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 500,
+                    "end": 506,
+                    "text": "Fig. 5",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Renal outcome"
+        },
+        {
+            "text": "Heterogeneity was observed in terms of different processes of care. Adherence to a clinical decision support system was associated with higher odds of AKI recognition (OR 3.12; 95 % CI, 2.37-4.10; p < 0.001; n = 2 studies; N = 25,121 participants; I 2 = 77.1 %) (Fig. 6a ) and investigations (OR 3.07; 95 % CI, 2.91-3.24; p < 0.001; n = 2 studies; N = 25,121 participants; I 2 = 0.0 %) (Fig. 6b) . As studies showed significant heterogeneity with regards to medications review and fluid assessment, meta-analysis was not conducted regarding these two processes of care.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 262,
+                    "end": 270,
+                    "text": "(Fig. 6a",
+                    "ref_id": null
+                },
+                {
+                    "start": 386,
+                    "end": 395,
+                    "text": "(Fig. 6b)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Process of care"
+        },
+        {
+            "text": "This systematic review and meta-analysis described the characteristics of clinical decision support system implementation and evaluated its effects on clinical outcome. The study found that clinical decision support system varied in design. Care bundles mostly focus on AKI risk assessment, medication review and adjustment, nephrology consultation, fluid assessment and completion of investigations. In the pooled analysis, the combined intervention significantly improved the clinical outcomes of patients with AKI, including reducing all deaths or inhospital death events. It also improved AKI recognition and corresponding investigations. System usage did not shorten hospital length of stay and reduce the risk of AKI progression or RRT usage. This overview systemically evaluated the effects of ealerts coupled with care bundles and found a clear benefit on the clinical outcomes of patients with AKI. However, e-alerts alone did not improve these outcomes of AKI, including mortality [9, 11, 12] , kidney function, AKI progression [11] and frequency of RRT usage [12] , as well as health service use comprising hospital stay [11] , intensive care unit duration [12] , and total pharmacy or hospital costs [9, 11] . In most studies with ealerts alone, physician behavior improved, such as a shorter time to modification of medications [11] ; more reasonable application of fluid therapy, diuretics or vasopressors [12] ; or earlier detection of AKI [21] (Supplementary Table 1 , [9, 11, 12, [26] [27] [28] [29] [30] [31] [32] [33] [34] ). Only one study in which e-alerts automatically engaged nephrology teams when AKI occurred showed that e-alerts considerably reduced the rate of severe AKI and promoted AKI recovery [27] . Another three studies including care bundles only (Supplementary Table 2 , [35] [36] [37] ) suggest that care bundles can potentially improve the process of care, including AKI recognition, care bundle completion [35] , fluid status assessment, and appropriate investigation and cessation of medications contributing to AKI [36, 37] . These findings, as well as our overview, highlight the importance of e-alerts coupled with care bundles for AKI intervention. Until now, few trials have evaluated the effects of ealerts coupled with care bundles. One enrolled a small sample size and focused on pharmacy surveillancerelated management without reporting patient-centered or medical resource-associated outcomes [17] . Another RCT [18] was a stepped wedge cluster randomized trial, which failed to show benefits on the primary outcome of mortality but significantly reduced the duration of AKI and the length of hospitalization. In spite of robust methodology, incomplete intervention coverage across participating sites might affect the result. In addition, mortality associated with AKI is a complex condition with multiple etiologies or, rather, a kaleidoscope of comorbidities and coexisting acute illness; therefore, it is not the only indicator of primary outcomes. Moreover, the study did provide evidence that a combined intervention can bring benefits such as reductions in both length of hospitalization and duration of AKI, which are also meaningful positive effects of these combined interventions.",
+            "cite_spans": [
+                {
+                    "start": 991,
+                    "end": 994,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 995,
+                    "end": 998,
+                    "text": "11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 999,
+                    "end": 1002,
+                    "text": "12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1038,
+                    "end": 1042,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1070,
+                    "end": 1074,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1132,
+                    "end": 1136,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1168,
+                    "end": 1172,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1212,
+                    "end": 1215,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1216,
+                    "end": 1219,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1341,
+                    "end": 1345,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1420,
+                    "end": 1424,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1455,
+                    "end": 1459,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1485,
+                    "end": 1488,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1489,
+                    "end": 1492,
+                    "text": "11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1493,
+                    "end": 1496,
+                    "text": "12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1497,
+                    "end": 1501,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1502,
+                    "end": 1506,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1507,
+                    "end": 1511,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1512,
+                    "end": 1516,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1517,
+                    "end": 1521,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1522,
+                    "end": 1526,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1527,
+                    "end": 1531,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1532,
+                    "end": 1536,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1537,
+                    "end": 1541,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1726,
+                    "end": 1730,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1808,
+                    "end": 1812,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1813,
+                    "end": 1817,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1818,
+                    "end": 1822,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1946,
+                    "end": 1950,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 2057,
+                    "end": 2061,
+                    "text": "[36,",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 2062,
+                    "end": 2065,
+                    "text": "37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 2444,
+                    "end": 2448,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 2463,
+                    "end": 2467,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1460,
+                    "end": 1482,
+                    "text": "(Supplementary Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1783,
+                    "end": 1805,
+                    "text": "(Supplementary Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "This meta-analysis revealed a decrease in in-hospital mortality; nevertheless, the trend was not favorable regarding long-term mortality. Although pooled together, the overall mortality was lowered, and the included studies had a relatively short follow-up period. Long-term mortality associated with AKI is driven by multiple factors, including the effects of comorbidity and coexisting acute illness [18] . In a large cohort study of patients who initially survived hospitalization with AKI, 28 % of patients died in the subsequent year after discharge, and the most common causes of death were cardiovascular disease (28 %) and cancer (28 %) [38] . CKD may lower the threshold for developing AKI. However, the percentage of preexisting CKD is lacking in the included study, where only one study reported that CKD was present in 22.6 % of the enrolled participants (Table 2) . Furthermore, even mild renal dysfunction may predispose patients to CKD, and thus, it increases the risk of subsequent AKI recurrence and ultimately end stage renal disease [39] . In a systematic review of 19 cohort studies, the prevalence of CKD over the next three years after hospital discharge was nearly threefold higher among patients with AKI than among those without AKI [40] . Moreover, a recent large registry study demonstrated an association between CKD and death [41] . However, the included studies rarely reported renal recovery. Our study discovered that the intervention was nonsignificantly associated with lower odds of AKI progression, as once AKI progressed to stage 3 or initiated RRT, it became difficult to halt progression and escalation, which highlighted the importance of the completion of early intervention. In this study, there was no difference observed in RRT usage between groups with or without a clinical decision support system. Possibly due to the reason that patients who undergo RRT have the most severe form of AKI, and the addition of RRT to the ongoing support of critically ill patients would contribute to an increase in complexity and expenditure [26] . Therefore the benefit for starting a critically ill patient on RRT would have to be balanced between addition to bedside workload or resource utilization, and impact on patient's and family's preferences for care [42] . This study is the first systematic review and metaanalysis on the effect of e-alerts in combination with care bundles on outcomes. The study included a large sample size and noted a beneficial outcome. However, several limitations are present. First, there was a lack of RCTs identified and included. Second, the follow-up period among the included studies was relatively short. Only one study [25] with a longer-term follow-up of approximately four years found that a nonsignificantly improved survival appeared immediately, consistent with an effect due to the intervention, yet then attenuated further. Besides, due to the scarcity of data on renal outcomes including RRT usage, progression, duration and recovery of AKI, meta-analysis could not be conducted on the AKI recovery or duration. And this would lead to a result coincided with the findings of the limited studies that had been included. What is more, heterogeneity exits in \"the process of care\" among different studies, especially in \"medication reviews\" and \"fluid assessment\", which was partly related to difference in definitions and assessment methods. Therefore, meta-analysis was not conducted to pool results regarding these two care processes. Finally, as all the included studies were conducted in either the United Kingdom or the United States, the results may not be generalizable to other populations.",
+            "cite_spans": [
+                {
+                    "start": 402,
+                    "end": 406,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 645,
+                    "end": 649,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1052,
+                    "end": 1056,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1258,
+                    "end": 1262,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 1355,
+                    "end": 1359,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 2072,
+                    "end": 2076,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 2292,
+                    "end": 2296,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 2693,
+                    "end": 2697,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 867,
+                    "end": 876,
+                    "text": "(Table 2)",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "In conclusion, this systematic review and meta-analysis indicates that the combined implementation of e-alerts and care bundles showed a reduction in overall mortality and inhospital mortality. It also promoted process of care containing AKI detection and relevant investigations. Studies with ealerts only could help improve AKI recognition and process of care. When combined with treatment recommendations, clinical decision support system employment could ameliorate short-term clinical outcomes. However, RCTs with longterm follow-up conducted in clinical practice in the near future are imperative. Figure 3 . Pooled effect estimates for the impact on length of stay after removing the study by Selby [18] . Supplementary Figure 4 . The Egger's test of length of stay. Supplementary Figure 5 . Sensitivity analysis for AKI progression. Supplementary Figure 6 . Pooled effect estimates for the impact on AKI progression after removing the study by Kolhe [22] . Supplementary Figure 7 . The Egger's test of AKI-RRT usage. Supplementary Figure 8 . The Egger's test of AKI progression. Supplementary Table 1 . Summary of clinical outcome for studies using only e-alert system. Supplementary Table 2 . Studies with a design of care bundles only.",
+            "cite_spans": [
+                {
+                    "start": 706,
+                    "end": 710,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 958,
+                    "end": 962,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 604,
+                    "end": 612,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 713,
+                    "end": 735,
+                    "text": "Supplementary Figure 4",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 788,
+                    "end": 796,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 841,
+                    "end": 863,
+                    "text": "Supplementary Figure 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 965,
+                    "end": 987,
+                    "text": "Supplementary Figure 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 1039,
+                    "end": 1047,
+                    "text": "Figure 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 1101,
+                    "end": 1108,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1192,
+                    "end": 1199,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "World incidence of AKI: a metaanalysis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Susantitaphong",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Cruz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cerda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Clin J Am Soc Nephrol",
+            "volume": "8",
+            "issn": "",
+            "pages": "1482--93",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Epidemiology of acute kidney injury in critically ill patients: the multinational AKI-EPI study",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hoste",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bagshaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bellomo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Intensive Care Med",
+            "volume": "41",
+            "issn": "",
+            "pages": "1411--1434",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Acute kidney injury electronic alerts in primary care -findings from a large population cohort",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Holmes",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Roberts",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Geen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "QJM",
+            "volume": "110",
+            "issn": "",
+            "pages": "577--82",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Nephrology consultation in acute renal failure: does timing matter?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Mcdonald",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gabbai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Am J Med",
+            "volume": "15",
+            "issn": "6",
+            "pages": "456--61",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Weekend hospital admission, acute kidney injury, and mortality",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "James",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wald",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bell",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Am Soc Nephrol",
+            "volume": "21",
+            "issn": "5",
+            "pages": "845--51",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Acute Kidney Injury in Critically Ill Patients with Sepsis: Clinical Characteristics and Outcomes",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zhi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Zhuang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Invest Surg",
+            "volume": "32",
+            "issn": "8",
+            "pages": "689--96",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Acute kidney injury in China: a cross-sectional survey",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xing",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wet",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Lancet",
+            "volume": "10",
+            "issn": "",
+            "pages": "1465--71",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Impact of electronic-alerting of acute kidney injury: workgroup statements from the 15(th) ADQI Consensus Conference",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hoste",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kashani",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gibney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Can J Kidney Health Dis",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Automated, electronic alerts for acute kidney injury: a single-blind, parallel-group, randomised controlled trial",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shashaty",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Testani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Lancet",
+            "volume": "385",
+            "issn": "",
+            "pages": "1966--74",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Association between e-alert implementation for detection of acute kidney injury and outcomes: a systematic review",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lachance",
+                    "suffix": ""
+                },
+                {
+                    "first": "P-M",
+                    "middle": [],
+                    "last": "Villeneuve",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Rewa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nephrol Dialysis Transplant",
+            "volume": "32",
+            "issn": "",
+            "pages": "265--72",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Effect of computer-based alerts on the treatment and outcomes of hospitalized patients",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Rind",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Safran",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Phillips",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Arch Intern Med",
+            "volume": "154",
+            "issn": "",
+            "pages": "1511--1518",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Impact of real-time electronic alerting of acute kidney injury on therapeutic intervention and progression of RIFLE class",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Colpaert",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hoste",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Steurbaut",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Crit Care Med",
+            "volume": "40",
+            "issn": "4",
+            "pages": "1164--70",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Improvement in process of care and outcome after a multicenter severe sepsis educational program in Spain",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ferrer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Artigas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Levy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "JAMA",
+            "volume": "299",
+            "issn": "",
+            "pages": "2294--303",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "An intervention to decrease catheter-related bloodstream infections in the ICU",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pronovost",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Needham",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Berenholtz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "N Engl J Med",
+            "volume": "355",
+            "issn": "",
+            "pages": "2725--2757",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Using a bundle approach to improve ventilator care processes and reduce ventilator-associated pneumonia",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Resar",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pronovost",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Haraden",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Simmonds",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Rainey",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nolan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Jt Comm J Qual Patient Saf",
+            "volume": "31",
+            "issn": "",
+            "pages": "243--251",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Acute Kidney Injury Care Bundles",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bagshaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nephron",
+            "volume": "131",
+            "issn": "",
+            "pages": "247--51",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Real-time pharmacy surveillance and clinical decision support to reduce adverse drug events in acute kidney injury: a randomized, controlled trial",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mccoy",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cox",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Neal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Appl Clin Inform",
+            "volume": "3",
+            "issn": "2",
+            "pages": "221--259",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "An Organizational-Level Program of Intervention for AKI: A Pragmatic Stepped Wedge Cluster Randomized Trial",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Selby",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Casula",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lamming",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Am Soc Nephrol",
+            "volume": "30",
+            "issn": "3",
+            "pages": "505--520",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "A simple care bundle for use in acute kidney injury: a propensity score-matched cohort study",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kolhe",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Reilly",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nephrol Dial Transplant",
+            "volume": "31",
+            "issn": "11",
+            "pages": "1846--54",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The Cochrane Collaboration's tool for assessing risk of bias in randomised trials",
+            "authors": [
+                {
+                    "first": "Jpt",
+                    "middle": [],
+                    "last": "Higgins",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Altman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "G\u00f8tzsche",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMJ",
+            "volume": "343",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Methodological index for non-randomized studies (minors): development and validation of a new instrument",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Slim",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Nini",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Forestier",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Kwiatkowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Panis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chipponi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "ANZ J Surg",
+            "volume": "73",
+            "issn": "",
+            "pages": "712--718",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Impact of Compliance with a Care Bundle on Acute Kidney Injury Outcomes: A Prospective Observational Study",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kolhe",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Staples",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Reilly",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PLoS One",
+            "volume": "10",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The ICE-AKI study: Impact analysis of a Clinical prediction rule and Electronic AKI alert in general medical patients",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hodgson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Roderick",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Venn",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Dimitrov",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Forni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PloS One",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "A computerized provider order entry intervention for medication safety during acute kidney injury: a quality improvement report",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mccoy",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Waitman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gadd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Am J Kidney Dis",
+            "volume": "56",
+            "issn": "",
+            "pages": "832--873",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Earlier intervention for acute kidney injury: evaluation of an outreach service and a long-term follow-up",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sitch",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Baharani",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dowswell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nephrol Dial Transplant",
+            "volume": "30",
+            "issn": "2",
+            "pages": "239--283",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Use of electronic results reporting to diagnose and monitor AKI in hospitalized patients",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Selby",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Crowley",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Fluck",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Clin J Am Soc Nephrol",
+            "volume": "7",
+            "issn": "",
+            "pages": "533--573",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Impact of Electronic Acute Kidney Injury (AKI) Alerts With Automated Nephrologist Consultation on Detection and Severity of AKI: A Quality Improvement Study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Baek",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ahn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Am J Kidney Dis",
+            "volume": "71",
+            "issn": "1",
+            "pages": "9--19",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Clinical Decision Support for In-Hospital AKI",
+            "authors": [
+                {
+                    "first": "Al-Jaghbeer M",
+                    "middle": [],
+                    "last": "Dealmeida",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bilderback",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ambrosino",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kellum",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Am Soc Nephrol",
+            "volume": "29",
+            "issn": "2",
+            "pages": "654--60",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Impact of Daily Electronic Laboratory Alerting on Early Detection and Clinical Documentation of Acute Kidney Injury in Hospital Settings",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kothari",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mallon",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Brogan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Crawford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Acad Pathol",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Improved management of acute kidney injury in primary care using e-alerts and an educational outreach programme",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tollitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Flanagan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mccorkindale",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Fam Pract",
+            "volume": "35",
+            "issn": "6",
+            "pages": "684--693",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Value of electronic alerts for acute kidney injury in high-risk wards: a pilot randomized controlled trial",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int Urol Nephrol",
+            "volume": "50",
+            "issn": "8",
+            "pages": "1483--1491",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Impact of introducing electronic acute kidney injury alerts in primary care",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Aiyegbusi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Witham",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gauld",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Clin Kidney J",
+            "volume": "12",
+            "issn": "2",
+            "pages": "253--260",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The impact of the NHS electronic-alert system on the recognition and management of acute kidney injury in acute medicine",
+            "authors": [],
+            "year": 2019,
+            "venue": "Clin Med (Lond)",
+            "volume": "19",
+            "issn": "2",
+            "pages": "109--122",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Improvement of drug prescribing in acute kidney injury with a nephrotoxic drug alert system",
+            "authors": [
+                {
+                    "first": "Arias",
+                    "middle": [],
+                    "last": "Pou",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aquerreta",
+                    "middle": [],
+                    "last": "Gonzalez",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Idoate",
+                    "middle": [],
+                    "last": "Garc\u00eda",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Garcia-Fernandez",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur J Hosp Pharm",
+            "volume": "26",
+            "issn": "1",
+            "pages": "33--41",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Acute Kidney Injury: It's as easy as ABCDE",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Forde",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mccaughan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Leonard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "BMJ Qual Improv Rep",
+            "volume": "1",
+            "issn": "1",
+            "pages": "200370--326",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Improving recognition and management of acute kidney injury",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tsui",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rajani",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Doshi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Acute Med",
+            "volume": "13",
+            "issn": "3",
+            "pages": "108--120",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Recognition and management of acute kidney injury in hospitalised patients can be partially improved with the use of a care bundle",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Joslin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zubli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin Med (Lond)",
+            "volume": "15",
+            "issn": "5",
+            "pages": "431--437",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Causes of Death after a Hospitalization with AKI",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Silver",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Harel",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mcarthur",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Am Soc Nephrol",
+            "volume": "29",
+            "issn": "3",
+            "pages": "1001--1011",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Choice of renal replacement therapy modality and dialysis dependence after acute kidney injury: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bellomo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bagshaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Intensive Care Med",
+            "volume": "39",
+            "issn": "6",
+            "pages": "987--97",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Long-term risk of adverse outcomes after acute kidney injury: a systematic review and metaanalysis of cohort studies using consensus definitions of exposure",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "See",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Jayasinghe",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Glassford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Kidney Int",
+            "volume": "95",
+            "issn": "1",
+            "pages": "160--72",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Long-term mortality and risk factors for development of end-stage renal disease in critically ill patients with and without chronic kidney disease",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rimes-Stigare",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Frumento",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bottai",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "M\u00e5rtensson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Martling",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Crit Care",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Strategies for the optimal timing to start renal replacement therapy in critically ill patients with acute kidney injury",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bagshaw",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wald",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Kidney Int",
+            "volume": "91",
+            "issn": "5",
+            "pages": "1022--1054",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "RevMan version 5.3.5, Copenhagen: The Nordic Cochrane Centre, The Cochrane Collaboration, 2014). Meta analyses were performed using STATA (version 15; Stata Corp, College Station, TX, USA).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Flow chart for study inclusionZhao et al.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Risk of bias summary of included studies. a Risk of bias details of each study by methodological index for non-randomized studies (MINORS); b Risk of bias summary by MINORS; c Risk of bias details of each study by Cochrane collaboration's tool; d Risk of bias details by Cochrane collaboration's tool",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Pooled effect estimates for the impact on mortality",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Pooled effect estimates for the impact on length of stay Zhao et al.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Pooled effect estimates for the impact on renal outcomeFig. 6 Pooled effect estimates for the impact on care process Zhao et al. BMC Nephrology (2021) 22:271",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Abbreviations AKI: Acute kidney injury; ADQI: Acute Dialysis Quality Initiative; Ealerts: Electronic alerts; PRISMA: Preferred Reporting Items for Systematic Reviews and Meta-Analyses; PROSPERO: Prospective Register of Systematic Reviews; CKD: Chronic kidney disease; RCTs: Randomized controlled trials; MINORS: Methodological index for non-randomized studies; RRT: Renal replacement therapy; ORs: Odds ratios; CIs: Confidence intervals; EMR: Electronic medical record Supplementary Information The online version contains supplementary material available at https://doi. org/10.1186/s12882-021-02459-y. Additional file 1: Appendix 1. PRISMA 2009 Checklist. Appendix 2. Search strategy. Supplementary Figure 1. The Egger's test of mortality. Supplementary Figure 2. Sensitivity analysis of length of stay. Supplementary",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Characteristics of included studies",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Characteristics of included participantsNote: Abbreviations: AKI Acute kidney injury, CKD Chronic kidney disease, NA Not available, IQR Interquartile range, RRT Renal replacement therapy, los length of stay",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Summary of care bundles contents",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Summary of clinical outcomes and care process assessment of included studies Note: Abbreviations: AKI Acute kidney injury, RRT Renal replacement therapy, Los length of stay",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Not applicable.Authors' contributions L Y and JC L conceived the study. XZ Z and YL Z performed the systematic review and meta-analysis. JW W, SL L and DM X helped carry out the analysis. YL Z drafted the manuscript. L Y and JC L revised the manuscript. All authors read and approved the final version of the manuscript. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        }
+    ]
+}

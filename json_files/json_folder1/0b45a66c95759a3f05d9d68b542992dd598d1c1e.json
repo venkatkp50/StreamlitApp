@@ -1,0 +1,2891 @@
+{
+    "paper_id": "0b45a66c95759a3f05d9d68b542992dd598d1c1e",
+    "metadata": {
+        "title": "Numerical Simulation of MHD Couette Flow of a Fuzzy Nanofluid through an Inclined Channel with Thermal Radiation Effect",
+        "authors": [
+            {
+                "first": "Imran",
+                "middle": [],
+                "last": "Siddique",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Management and Technology",
+                    "location": {
+                        "postCode": "54770",
+                        "settlement": "Lahore",
+                        "country": "Pakistan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Rana",
+                "middle": [
+                    "Muhammad"
+                ],
+                "last": "Zulqarnain",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Management and Technology",
+                    "location": {
+                        "settlement": "Lahore, Sialkot Campus",
+                        "country": "Pakistan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Muhammad",
+                "middle": [],
+                "last": "Nadeem",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Management and Technology",
+                    "location": {
+                        "postCode": "54770",
+                        "settlement": "Lahore",
+                        "country": "Pakistan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Fahd",
+                "middle": [],
+                "last": "Jarad",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Cankaya University",
+                    "location": {
+                        "settlement": "Etimesgut, Ankara",
+                        "country": "Turkey"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "e present study especially concerns the investigation of the Couette flow and heat transfer with thermal radiation through an inclined channel. Single-wall carbon nanotube (SWCNT) and multiple-wall carbon nanotube (MWCNT) are nanoparticles embedded in the host fluid. e dimensionless highly nonlinear differential equations (DEs) are solved via numerical scheme bvp4c. e effects of the physical parameters on heat transfer are presented in the form of graphs. e results demonstrate that the heat transfer is enhanced by using solid particle frictions (SWCNT and MWCNT). e large estimation of a magnetic parameter declines the velocity component. e current and existing results with their comparisons are shown in the tabular form for the validation of our code. e current results are in good agreement with their existing results. Generally, fuzziness or uncertainty is inherent in modeling, analysis, and experimentation. Due to the uncertain environmental conditions, fuzziness broadly exists in various engineering heat transfer problems. In this work, the nanoparticles' volume fraction of the SWCNT and MWCNT is taken as uncertain parameters in terms of triangular fuzzy numbers (TFNs). e TFNs are controlled by the \u03b1 \u2212 cut which has less computational effort for analyzing the fuzziness or uncertainties. Also, a comparison between the SWCNT and MWCNT through the membership function and the variability of the uncertainty is studied.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "e study of the flow of third-grade fluids [1] [2] [3] over an inclined channel is an important application in engineering, science, and technology. Some of these applications can be found in materials manufactured by the extraction procedure particularly in polymer processing, the flow of synovial fluid in human joints, geological flows inside the Earth's mantle, microfluids, drilling of oil and gas wells, etc. In fluid dynamics, the study of fundamental flow, namely, Couette flows to attract the researchers by several non-Newtonian fluids because of their uses in the technology and engineering industry. e unidirectional flow is used in polymer engineering such as die flow, injection molding, extrusion, plastic forming, continuous casting, and asthenosphere flows [4] [5] [6] [7] . Magnetohydrodynamics (MHD) deals with the study of the motion of electrical fluids in the presence of a magnetic field. MHD flow has significant importance applications in the inclined channel such as geophysical, astrophysical, metallurgical processing, MHD generators, pumps, geothermal reservoirs, polymer technology, and mineral industries. MHD fluid uses as a lubricant to stop the unexpected variation of fluid viscosity with temperature under certain norms. ermal radiation is a process by which energy, in the form of electromagnetic radiation, is emitted by a heated surface in all directions and travels directly to its point of absorption at the speed of light; thermal radiation does not require an intervening medium to carry it. ermal radiation plays an important role in science and technology, such as the furnace design, glass production, ship compressors, space vehicles, plasma physics, propulsion systems, spacecraft, flow structure of atomic plants, internal combustion engines, combustion processes, gas turbines, solar radiations, and solar power technology. Kamran and Siddique [8] calculated the analytical solutions for MHD flow between infinite parallel plates. Siddiqui et al. [9] calculated the deliberated flow of a third-grade fluid between two inclined parallel plates with heat transfer using the homotopy perturbation method (HPM). Aiyesimi et al. [10] studied the MHD Couette flow and Poiseuille flow problems using the homotopy perturbation method (HPM) and perturbation method (PM). ey examined that both methods have the same solutions. Later on, Aiyesimi et al. [11] studied the solution of MHD Couette flow and Poiseuille flow problems of the temperature and velocity profile utilizing the perturbation method (PM). Yusuf et al. [12] studied the Couette flow with the effect of Soret, Dufour, and thermal radiation using the modified domain decomposition method (MADM) in an inclined channel. Okedayo et al. [13] used the MADM to study the viscous dissipation, Joule heating, and MHD flow of a thirdgrade fluid in an inclined channel. Farooq et al. [14] used the PM to study the Poiseuille flow of a couple of stress fluids with variable viscosity between two parallel inclined heated plates. Zeeshan et al. [15] studied the impact of variable thermal conductivity, heat generation, heat flux, and inclined uniform magnetic field on Poiseuille flow employing the homotopy analysis method (HAM). In this way, there are large kinds of literature about MHD and thermal radiation such as [16] [17] [18] [19] [20] [21] [22] [23] .",
+            "cite_spans": [
+                {
+                    "start": 42,
+                    "end": 45,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 46,
+                    "end": 49,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 50,
+                    "end": 53,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 774,
+                    "end": 777,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 778,
+                    "end": 781,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 782,
+                    "end": 785,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 786,
+                    "end": 789,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1894,
+                    "end": 1897,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1997,
+                    "end": 2000,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 2174,
+                    "end": 2178,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 2393,
+                    "end": 2397,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 2561,
+                    "end": 2565,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 2740,
+                    "end": 2744,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 2881,
+                    "end": 2885,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 3040,
+                    "end": 3044,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 3316,
+                    "end": 3320,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 3321,
+                    "end": 3325,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 3326,
+                    "end": 3330,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 3331,
+                    "end": 3335,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 3336,
+                    "end": 3340,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 3341,
+                    "end": 3345,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 3346,
+                    "end": 3350,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 3351,
+                    "end": 3355,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Heat transfer is important in industrial areas to launch transportation of energy in the system. Heat transfer is an essential task due to the requirement for energy in the world. In recent years, nanofluids have great attention because of their large-scale usage in industries.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "ere are many applications of nanofluids in science and engineering, such as heat exchangers, solar cells, cooling of electronic equipment, solar water heaters, cooling of diesel-electric generators, nuclear reactors, cooling, and heating in buildings. e range of nanoscale particles is 1-100 nm, which benefits to increase the thermophysical properties of the nanofluid. Due to an increase in energy prices, the management of heat transfer is a vital role in energy systems. e nanofluids are the mixture of solid-liquid which contain nanoparticles for enhancing the heat transfer, investigated by Choi and Eastman [24] . e performance of nanoparticles in a heat transfer mechanism is better than the base fluid; the reason is that the suspended ultrafine particles increase the thermal conductivity of the mixture and raise their competency of energy transfer. Numerous literature studies [25] [26] [27] disclose the low volume fractions (1%-20% volume) for better performance of thermal conductivity of the suspensions; we can take more than 20% nanoparticles' concentrations.",
+            "cite_spans": [
+                {
+                    "start": 614,
+                    "end": 618,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 889,
+                    "end": 893,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 894,
+                    "end": 898,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 899,
+                    "end": 903,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Carbon nanotubes (CNTs) are cylindrical shape materials made of graphene. ere are two types of CNTs, SWCNT and MWCNT, which are used in this work. As compared to other nanomaterials, SWCNT and MWCNT are of great importance for scholars due to their significant thermal conductivities, bent without any damage, and mechanical power. Saqib et al. [28] studied natural convection flow using carboxymethyl cellulose (CMS) as a base fluid and CNTs as hybrid nanofluids between two vertical parallel plates. For the exact solution, the Caputo-Fabrizio fractional derivative with the Laplace transform method is used. Hatami and Ganji [29] discussed the natural convection flow of sodium alginate (SA) as a base fluid and copper (Cu) and silver (Ag) as a nanofluid between two vertical parallel plates using the differential transform method (DTM). Khan et al. [30] studied the Navier slip boundary conditions for heat transfer using CNTs. Noreen et al. [31] studied the velocity slips and thermal analysis on MHD peristaltic flow in an asymmetric channel using CNTs. Ebaid and Al Sharif [32] deliberated the effect of MHD on nanofluids' motion using CNTs and enhanced the heat transfer rate. e flow and heat transport of a special kind of second-grade hybrid Al 2 O 3 + Cu/H 2 O nanofluid over a permeable stretching/shrinking sheet was addressed by Roy and Pop [33] . e flow of fluids with heat transfer is essential in science and engineering. After controlling the physical quantities like chemical diffusion, magnetic effect, volume friction of nanoparticles, and heat transmission, the fluid models are transformed into linear and nonlinear DEs. After governing these physical problems, they are converted into linear or nonlinear DEs. In general, the physical problems with involved geometry, coefficients, parameters, and initial and boundary conditions greatly affect the solution of DEs. en, the coefficients, parameters, and initial and boundary conditions are not crisp due to the mechanical defect, experimental error, and measurement error. So, in this situation, fuzzy set theory is a powerful tool for a better understanding of the considered phenomena, and it is more accurate than assuming the crisp or classical physical problems. To be more specific, FDEs play a significant role in reducing uncertainity and providing a correct approach to characterise a physical issue with unknown parameters, initial and boundary conditions.",
+            "cite_spans": [
+                {
+                    "start": 345,
+                    "end": 349,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 628,
+                    "end": 632,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 854,
+                    "end": 858,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 947,
+                    "end": 951,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1081,
+                    "end": 1085,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1356,
+                    "end": 1360,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In 1965, Zadeh [34] presented the fuzzy set theory (FST). FST is a very valuable tool to define the situation in which information is imprecise, vague, or uncertain. FST is completely defined by its membership function or belongingness, and the membership function describes each element of the universe of discourse by a number from the [0, 1] interval. On the contrary, the degree of nonbelongingness is a complement to \"one\" of the membership degree or belongingness. Fuzzy number (FN) can be expected as a function whose range is specified from zero to one. Every numerical value in the range is allocated a definite grade of the membership function where zero signifies the minimum possible grade and one is the maximum possible grade. Arithmetic operations on FNs were developed by Dubois and Prade [35] . Different types of FNs can be categories in triangular, 2 Computational Intelligence and Neuroscience trapezoidal, and Gaussian fuzzy numbers. Here, we consider TFNs for the sake of completeness. Also, many scholars have applied FST to obtain well-known results in the field of commerce and science [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] . e information of dynamical systems modeled by partial or ordinary differential equations is commonly incomplete, vague, or uncertain, while FDEs represent a proper way to model the dynamical systems under vagueness or uncertainty. is impreciseness or vagueness can be defined mathematically using FNs or TFNs. In recent years, there have been many studies revolving around the concept of FDEs. Seikala [47] introduced the fuzzy differentiability concept. Later on, Kaleva [48] presented fuzzy differentiation and integration. Kandel and Byatt [49] introduced the FDEs in 1987. Buckley et al. [50] used two methods' extension principle and FNs for the solution of FDEs. Gasilov et al. [51] studied the system of FDEs with the TFNs. Salahshour et al. [52] studied the fuzzy logistic equation and alley effect using FDEs with the help of TFNs. Biswal et al. [53] studied the natural convection of nanofluid flow between two parallel plates using the HPM in a fuzzy environment. e volume fraction of nanoparticles is considered as the TFN and also shows that the fuzzy result is better than a crisp result. Borah et al. [54] discussed the MHD flow of second-grade fluids in a fuzzy environment using fractional derivatives Atangana-Baleanu and Caputo-Fabrizio. e nondimensional governing equations are converted into fuzzified governing equations with the help of the Zadeh extension principle and triangular fuzzy number. MHD and ohmic heating on the third-grade fluid in an inclined channel in a fuzzy environment was investigated by Nadeem et al. [55] . To discuss the uncertainty, the triangle membership function was used.",
+            "cite_spans": [
+                {
+                    "start": 15,
+                    "end": 19,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 805,
+                    "end": 809,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 868,
+                    "end": 869,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1111,
+                    "end": 1115,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1116,
+                    "end": 1120,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1121,
+                    "end": 1125,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1126,
+                    "end": 1130,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1131,
+                    "end": 1135,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 1136,
+                    "end": 1140,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1141,
+                    "end": 1145,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1146,
+                    "end": 1150,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1151,
+                    "end": 1155,
+                    "text": "[44]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1156,
+                    "end": 1160,
+                    "text": "[45]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1161,
+                    "end": 1165,
+                    "text": "[46]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1570,
+                    "end": 1574,
+                    "text": "[47]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1640,
+                    "end": 1644,
+                    "text": "[48]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1711,
+                    "end": 1715,
+                    "text": "[49]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1760,
+                    "end": 1764,
+                    "text": "[50]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 1852,
+                    "end": 1856,
+                    "text": "[51]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 1917,
+                    "end": 1921,
+                    "text": "[52]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 2023,
+                    "end": 2027,
+                    "text": "[53]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 2284,
+                    "end": 2288,
+                    "text": "[54]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 2714,
+                    "end": 2718,
+                    "text": "[55]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the literature review, it scrutinized that there is no such study that has been accounted in an MHD Couette flow with pure water as the base fluid and CNTs (SWCNTs and MWCNTs) as nanoparticles through the inclined heated channel in the presence of thermal radiation. e governing nonlinear coupled ordinary differential equations are solved by numerical scheme bvp4c. Furthermore, after checking the accuracy of bvp4c, the results of existing works in the literature are compared. e nanoparticles' volume fraction performs the main role in the enhancement of heat transfer and thermophysical properties. e particular applications of nanoparticles are in solar water heating, engine cooling, cooling of transformer oil, cooling of the radiator, cooling in machining, and defense. Some researchers take nanoparticles' volume fraction 0 to 4% for the enhancement of heat transfer. However, from different sources [25] [26] [27] , we can take nanoparticles' volume fraction more than 20% for better performance of heat transfer. So, the volume fraction of nanoparticles (SWCNTs and MWCNTs) is taken as a fuzzy number or uncertain because it depends on the added nanoparticle volume or dimensions of particles or the shape of particles of the fluid. In this respect, volume fraction has been taken as an uncertain parameter in terms of fuzzy numbers in the present study. To handle this problem in a fuzzy environment, FDEs and the triangular fuzzy plot with the \u03b1 \u2212 cut approach were used. Also, the comparison of SWCNTs and MWCNTs is discussed through triangular fuzzy plots.",
+            "cite_spans": [
+                {
+                    "start": 912,
+                    "end": 916,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 917,
+                    "end": 921,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 922,
+                    "end": 926,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this section, some basic notations and definitions are used.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "Definition 1 (see [34] ). Fuzzy set is defined as a set of ordered pairs such that U \ufffd (y, \u03bc U (y)): y \u2208 X, \u03bc U (y) \u2208 [0, 1]}, where X is the universal set and \u03bc U (y) is the membership function of U and mapping defined as",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 22,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "Definition 2 (see [35] ). e \u03b1 \u2212 levelor \u03b1 \u2212 cut of a fuzzy set U is a crisp set U \u03b1 and defined by",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 22,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "Definition 3 (see [35, 55] ",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 22,
+                    "text": "[35,",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 23,
+                    "end": 26,
+                    "text": "55]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "Membership functions allow us to graphically represent a fuzzy set. e x-axis signifies the universe of discourse, while the y-axis signifies the degrees of membership in the [0, 1] interval. e TFNs with peak (or center) a 2 , left width a 2 -a 1 > 0, and right width a 3 -a 2 > 0 are transformed into the interval numbers through \u03b1-cut approach, which is written ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "U \u03b1 must be a closed interval for every 0 \u2264 \u03b1 \u2264 1; also, \u03b1 is called the level of credibility or presumption. Membership function or grade is also named as a grade of possibility or grade of credibility for a given number. Also, Figure 1 describes the membership function of a triangular fuzzy uncertainty. So, the triangular fuzzy uncertainty is defined as u 1 (y; \u03b1) (lower bound), u(y) (most belief value), and u 2 (y; \u03b1) (upper bound).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 229,
+                    "end": 237,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "Definition 4 (see [47, 50, 55] ). Let I be a real interval. A mapping u: I \u27f6 F is called a fuzzy process, defined as u(y; \u03b1) \ufffd [u 1 (y; \u03b1), u 1 (y; \u03b1)], y \u2208 I and \u03b1 \u2208 [0, 1]. e derivative du(y; \u03b1)/dy \u2208 F of a fuzzy process u(y; \u03b1) is defined by du(y; \u03b1)/dy \ufffd [du 1 (y; \u03b1)/dy/du 2 (y; \u03b1)/dy].",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 22,
+                    "text": "[47,",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 23,
+                    "end": 26,
+                    "text": "50,",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 27,
+                    "end": 30,
+                    "text": "55]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Preliminaries"
+        },
+        {
+            "text": "Definition 5 (see [47, 50, 55] ). Let I\u2286R and u be a fuzzyvalued function defined on I. Let u(y; \u03b1) \ufffd [u 1 (y; \u03b1), u 2 (y; \u03b1)] for all \u03b1-cuts. Assume that u 1 (y; \u03b1) and u 2 (y; \u03b1) have continuous derivatives or are differentiable, for all y \u2208 I and \u03b1; then, [du(y; \u03b1)/dy] \u03b1 \ufffd [du 1 (y; \u03b1)/dy/du 2 (y; \u03b1)/ dy] \u03b1 . Similarly, we can define higher-order ordinary derivatives in the same way. An FN by an ordered pair of functions [du(y; \u03b1)/dy] \u03b1 satisfies the following conditions:",
+            "cite_spans": [
+                {
+                    "start": 18,
+                    "end": 22,
+                    "text": "[47,",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 23,
+                    "end": 26,
+                    "text": "50,",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 27,
+                    "end": 30,
+                    "text": "55]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Computational Intelligence and Neuroscience"
+        },
+        {
+            "text": "Consider the steady incompressible Couette flow of pure water as a base fluid, and SWCNT and MWCNT nanoparticles are added separately in an inclined channel with heat transfer. e distance between two inclined parallel plates is 2H with the x-axis as the flow direction. e upper plate is moving with constant speed U, while the lower plate is fixed. e plates having constant temperatures with the upper plate instantaneously change in temperature T 2 \u2212 T 1 . An unchanging magnetic field B 0 is applied in the y-direction and is expected undisturbed as the induced magnetic field is neglected under the assumption of a small magnetic Reynolds number. Radiative heat flux is considered here. e pressure and ambient air are ignored so that the flow is due to the movement of the upper plate and alone with gravity. e properties of SWCNTs, MWCNTs, and water are given in Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 867,
+                    "end": 874,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "In the equations, the flow of an incompressible, unidirectional, third-grade fluid with the effects of MHD is given [8] [9] [10] [11] :",
+            "cite_spans": [
+                {
+                    "start": 116,
+                    "end": 119,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 120,
+                    "end": 123,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 124,
+                    "end": 128,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 129,
+                    "end": 133,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "where \u03c1 is the constant density, d/dt is the material derivative, V is the velocity vector, p is the pressure, \u03c4 * is the stress tensor, J is the electric current density, B is the total magnetic field, B \u2218 denotes the imposed magnetic field, and b represents the induced magnetic field.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "where E is the electric field (E \ufffd 0), \u03bc m is the magnetic permeability, and \u03c3 is the electrical conductivity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "wherein \u03bc is the coefficient of viscosity and \u03b1 1 , \u03b1 2 , \u03b2 1 , \u03b2 2 , and \u03b2 3 are material constants. e Rivlin-Ericksen tensors A n are defined as A \u2218 \ufffd I is the identity tensor:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "e geometry of the problem is presented in Figure 2 . For radiation, Rosseland approximation is used [16] [17] [18] : ",
+            "cite_spans": [
+                {
+                    "start": 100,
+                    "end": 104,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 105,
+                    "end": 109,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 110,
+                    "end": 114,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 42,
+                    "end": 50,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "Define velocity and temperature profiles for one-dimensional flows as follows [8, 11, 55] :",
+            "cite_spans": [
+                {
+                    "start": 78,
+                    "end": 81,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 82,
+                    "end": 85,
+                    "text": "11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 86,
+                    "end": 89,
+                    "text": "55]",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "Using equations (2)-(6) along with equations (7)- (11),",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "Introduce the following nondimensional parameters. Eqs. (11) and (12), with the boundary conditions become, work done due to deformation and Joule heating in a nondimensional form is given as",
+            "cite_spans": [
+                {
+                    "start": 56,
+                    "end": 60,
+                    "text": "(11)",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "with boundary conditions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "with boundary conditions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "where \u03b2 \ufffd (U/H) 2 \u03b2 2 + \u03b2 3 /\u03bc f is a third-grade fluid parameter, K \ufffd \u03c1 f gH 2 /U\u03bc f sin \u03d5 is a gravitational parameter,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "Here, \u03c1 nf , \u03bc nf , k nf , (\u03c1C p ) nf , \u03c3 f , and \u03c8 denote the density, viscosity, thermal conductivity, specific heat, electrical conductivity, and nanoparticles' volume fraction of nanofluids, respectively [29, 32] .",
+            "cite_spans": [
+                {
+                    "start": 208,
+                    "end": 212,
+                    "text": "[29,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 213,
+                    "end": 216,
+                    "text": "32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "e properties of the base fluid and nanoparticles are listed in Table 1 . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 63,
+                    "end": 70,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Problem Formulation"
+        },
+        {
+            "text": "e velocity and temperature are affected by a small change in the value of the volume fraction of nanoparticles. Some researchers take the volume fraction of nanoparticles in the range [0.01-0.04], so the point is that the flow of fluid just depends on these values. en, uncertainty arises due to the fixed crisp values of the volume fraction of nanoparticles. So, it is better to handle a difficult problem in a fuzzy environment by taking volume fraction as the FN.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "For the fuzzy form, the governing coupled differential equations (15)- (18) can be written as",
+            "cite_spans": [
+                {
+                    "start": 71,
+                    "end": 75,
+                    "text": "(18)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "with boundary conditions",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "For the fuzzy solution, equations (15)-(18) can be converted into FDEs using the \u03b1-cut approach. So, according to Definitions 4 and 5, we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "with boundary conditions u 1 (y, \u03b1), u 2 (y, \u03b1) \ufffd (0, 0), \u03b8 1 (y, \u03b1), \u03b8 2 (y, \u03b1) \ufffd (0, 0) at y \ufffd \u2212 1,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "where \" ___ \" stands for the fuzzy form and fuzzy velocity profile is u(y, \u03b1) \ufffd [u 1 (y, \u03b1), u 2 (y, \u03b1)], 0 \u2264 \u03b1 \u2264 1. Here, u 1 (y, \u03b1) is the lower bound and u 2 (y, \u03b1) the upper bound of fuzzy velocity profiles. Similarly, the fuzzy temperature profiles are \u03b8(y, \u03b1) \ufffd [\u03b8 1 (y, \u03b1), \u03b8 2 (y, \u03b1)], 0 \u2264 \u03b1 \u2264 1. e crisp values and TFNs of these FNs are listed in Table 2 . e TFN defined the variation of the FN at each \u03b1-cut. e TFNs are used to describe the triangular membership functions of the FNs which range from 0 to 1; see Figure 1 . e investigated ranges are generally used to build up the said problem. Now we proposed a numerical method bvp4c to solve crisp differential equations and FDEs. It is a Lobatto IIIa formula with three stages based on the finite-difference algorithm. It has a collocation polynomial, and in [a, b], the collocation formula yields a sixth-order accurate uniform C1 continuous solution. For error control and mesh selection, the continuous solution residual is employed. Further solvers, such as NDSOLVE, HPM, HAM, and ADM, and many other similar approaches are less consistent than bvp4c.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 356,
+                    "end": 363,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 523,
+                    "end": 531,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "We transformed the governing ODEs to the system of the first order as follows.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "Let",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "6 Computational Intelligence and Neuroscience",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "Boundary conditions are",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Formulation of the Crisp Problem into the Fuzzy Problem Using FDEs."
+        },
+        {
+            "text": "To find the solution of Eqs. (24) to (28) , a code in MATLAB software for bvp4c method is constructed.",
+            "cite_spans": [
+                {
+                    "start": 29,
+                    "end": 33,
+                    "text": "(24)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 37,
+                    "end": 41,
+                    "text": "(28)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(30)"
+        },
+        {
+            "text": "In this section, pure water (H 2 O) is chosen as a base fluid, and SWCNT and MWCNT are nanoparticles added into the base fluid to enhance the heat transfer rate between two heated inclined parallel plates. e numerical solutions of governing coupled nonlinear differential equations are achieved through numerical technique bvp4c. e effect of crisp thermophysical parameters, such as nanoparticle volume fraction \u03c8, gravitational parameter K, magnetic parameter M, Brinkman number Br, and nondimensionless non-Newtonian viscosity \u03b2, on velocity and temperature profiles is drawn in Figures 3-8 . Tables 3 and 4 show the comparison of velocity and temperature fields for different values of \u03b2 [10, 11] when K \ufffd 1, Br \ufffd 5, M \ufffd 5, N \ufffd 0, and \u03c8 \ufffd 0. e validation of our results of the present study was found to be in excellent agreement. Figure 3 demonstrates the impact of \u03b2 on velocity and temperature profiles when other parameters are fixed. It is seen that the velocity and temperature of the nanofluid increase with increasing the values of \u03b2 because of the increase in the boundary layer thickness. Figure 4 displays the influence of gravitational parameter K on velocity and temperature profiles when other physical parameters are fixed. It is noticed that the velocity and temperature of the nanofluid rise rapidly in the center of the inclined plates with increasing the values of K. e reason is that when K increases, the upper plate movement expands the nanofluid velocity, which strengthens Joule dissipation; thereby, the rate of heat transfer is enhanced. e effect of M on the velocity and temperature profile is seen in Figure 5 . When the value of M is increased, the velocity drops due to the Lorentz forces, but the temperature profile rises. e rate at which the nanofluid flow declines is less noticeable from the lower plate to the higher plate. Physically, when the magnetic parameter rises, the rate of nanofluid flow near the moving upper plate is significantly reduced compared to the stationary lower plate. Also, it is noticed that increases in the magnetic parameter cause an increase in Joule heating, which raises the heat transfer rate. Figure 6 visualizes the effect of N on the nanofluid of the temperature profile. As depicted, it is seen that the temperature profile performs a decreasing function with increasing N, therefore, representing a damping impact on the heat transfer performance and nanofluid flow. e effect of the viscous dissipation parameter Br on the temperature profile is demonstrated in Figure 7 . It is observed that the temperature of the nanofluid increases with increasing the values of Br. e physical meaning of Br is when Br increases, the dissipation of heat in the boundary layer region increases, so the flow of the nanofluid is enhanced, and the heat transfer rate grows. e effect of \u03c8 via the velocity profile of nanomaterials SWCNT and MWCNT is shown in Figure 8 (a). When \u03c8 increases, the velocity of the nanofluid decreases. e velocity of the regular fluid is maximum at \u03c8 \ufffd 0, which means that, by increasing the nanofluid volume fraction, it becomes denser. Physically, it means that the boundary layer of nanofluids is thicker than regular fluids; consequently, the velocity shows a decreasing behavior with increasing values of \u03c8. e effect of \u03c8 on the temperature profile of nanomaterials SWCNT and MWCNT is depicted in Figure 8(b) . It can be seen that the temperature profiles increase with an increase in \u03c8. Physically, this is true because of the thicker thermal boundary layer which increases the heat transfer. Now, we discuss the nanoparticles' volume fraction of the SWCNTand MWCNT in a fuzzy environment. e governing equations of momentum and energy are converted into FDEs; then, the bvp4c scheme is employed for the numerical solution. e nanoparticle volume fraction \u03c8 is taken as TFN (see Table 2 ). Moreover, we utilized the \u03b1-cut approach (0\u2264\u03b1\u22641) to analyze the uncertainty. en, the velocity and temperature profiles are said to be fuzzy. e \u03b1-cut controls the fuzzy terms, for instance, if \u03b1-cut \ufffd 0, it will cover the whole interval of nanoparticles' volume fraction; that is, \u03c8 \ufffd [0, 0.2]. \u03b1-cut increases as (0.05 to 0.95) the width of lower and upper bounds of fuzzy velocity or temperature profiles decreases. When \u03b1-cut \ufffd 1, then the lower and upper bounds of fuzzy velocity or temperature profiles are coherent with each other, so they provide a crisp result. It is important to note that if the width between lower and upper bounds of the velocity or temperature profile is less, the uncertainty is less. e fuzzy velocity and temperature profiles are plotted in Figures 9 and 10 for some particular values of \u03b1-cut, (\u03b1 \ufffd 0, 0.3, 0.6, and 1). e triangular membership functions are depicted in Figures 11  and 12 for different values of y. Figures 9 and 10 show the nanoparticles' volume fraction of SWCNTs and MWCNTs taken as the TFN (see in Table 1 ); then, the fuzzy velocity and temperature profiles When \u03b1-cut increases, the width between u 1 (y, \u03b1) and u 2 (y, \u03b1) decreases, and at \u03b1-cut \ufffd 1, they coherent with one another which is a real flow of the nanofluid. It is noted that the width between u 1 (y, \u03b1) and u 2 (y, \u03b1) is very less, so the uncertainty is less. e effect of the \u03b1-cut on temperature profile \u03b8(y, \u03b1) is represented in Figures 9(b) and 10(b) for the fuzzy volume fraction of SWCNTs and MWCNTs, respectively. e lower bound of the temperature profile shows the regular fluid, and the upper bound of the temperature profile shows the nanofluid at \u03b1 \ufffd 0. Physically, it means that, at \u03b1 \ufffd 0, the thermal boundary layer of \u03b8 1 (y, \u03b1) is denser, and the thermal boundary layer of \u03b8 2 (y, \u03b1) is thinner. Momentum and thermal boundary layers show opposite behavior at \u03b1 \ufffd 0, which shows that the heat transfer is maximum. When \u03b1-cut increases, the width between \u03b8 1 (y, \u03b1) and \u03b8 2 (y, \u03b1) decreases, and at \u03b1-cut \ufffd 1, they coherent with one another which is the real flow of the nanofluid. It is noted Figures 11 and 12 represent the fuzzy plots of fuzzy velocity and temperature profiles for different values of y. e fuzzy velocity of SWCNTs is greater than the fuzzy velocity of MWCNTs. Physically, it is correct because the density of SWCNTs is less than the density of MWCNTs. Comparing for the fuzzy temperature distribution, SWCNTs have greater thermal conductivity than MWCNTs but less density. So, SWCNTs bear more heat than MWCNTs, and in this study, we suggest that SWCNTs are better for the enhanced heat transfer as compared to MWCNTs. Also, the SWCNTs show better behavior as compared to MWCNTs because of their less width according to the membership function. ",
+            "cite_spans": [
+                {
+                    "start": 691,
+                    "end": 695,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 696,
+                    "end": 699,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 581,
+                    "end": 592,
+                    "text": "Figures 3-8",
+                    "ref_id": null
+                },
+                {
+                    "start": 595,
+                    "end": 609,
+                    "text": "Tables 3 and 4",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 834,
+                    "end": 842,
+                    "text": "Figure 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1102,
+                    "end": 1110,
+                    "text": "Figure 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1632,
+                    "end": 1640,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 2164,
+                    "end": 2172,
+                    "text": "Figure 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 2537,
+                    "end": 2545,
+                    "text": "Figure 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 2916,
+                    "end": 2924,
+                    "text": "Figure 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 3388,
+                    "end": 3399,
+                    "text": "Figure 8(b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 3869,
+                    "end": 3876,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 4652,
+                    "end": 4668,
+                    "text": "Figures 9 and 10",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 4782,
+                    "end": 4800,
+                    "text": "Figures 11  and 12",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 4828,
+                    "end": 4844,
+                    "text": "Figures 9 and 10",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 4931,
+                    "end": 4938,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 5331,
+                    "end": 5353,
+                    "text": "Figures 9(b) and 10(b)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 6005,
+                    "end": 6022,
+                    "text": "Figures 11 and 12",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Results and Discussion"
+        },
+        {
+            "text": "In this study, the effect of CNTs on MHD Couette flow via an inclined channel in a fuzzy environment is reported. e SWCNTs and MCNTs are nanoparticles, while pure water is the base fluid. e effects of Brinkman number (B r ), magnetic parameter (M), the volume fraction of nanoparticles (\u03c8), viscosity (\u03b2), thermal radiation (N), and gravitational parameter (K) are considered. e impact of different parameters on heat transfer, velocity, and temperature profiles is analyzed. For mathematical computation, bvp4c is used, and the present results are found to be in excellent agreement as compared to existing results. e governing nonlinear DEs are converted into FDEs; then, the numerical technique bvp4c employed. e volume fraction of nanoparticles is considered as TFNs through \u03b1-cut(0 \u2264 \u03b1 \u2264 1), and the fuzziness is controlled. Some of the important and convenient achieved results are as follows: ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "e Non-Linear Field's eories of Mechanics",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Truesdell",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Noll",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "On the stability of third-grade fluids",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Archives of Mechanics",
+            "volume": "32",
+            "issn": "6",
+            "pages": "867--875",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "ermodynamics and stability of fluids of third grade",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "",
+            "volume": "339",
+            "issn": "",
+            "pages": "351--377",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "e role of poiseuille flow in creating depth-variation of asthenospheric shear",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Natarov",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Conrad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Geophysical Journal International",
+            "volume": "190",
+            "issn": "3",
+            "pages": "1297--1310",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Couette and poiseuille flows of an oldroyd 6-constant fluid with magnetic field",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hayat",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ayub",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of Mathematical Analysis and Applications",
+            "volume": "298",
+            "issn": "1",
+            "pages": "225--244",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "On the homotopy solution for poiseuille flow of a fourth grade fluid",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hayat",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Naz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sajid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Communications in Nonlinear Science and Numerical Simulation",
+            "volume": "15",
+            "issn": "3",
+            "pages": "581--589",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Analysis of transient generalized couette flow of a reactive variable viscosity thirdgrade liquid with asymmetric convective cooling",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chinyoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Makinde",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Mathematical and Computer Modelling",
+            "volume": "54",
+            "issn": "1",
+            "pages": "160--174",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "MHD couette and poiseuille flow of a third grade fluid",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kamran",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Open Journal of Mathematical Analysis",
+            "volume": "1",
+            "issn": "2",
+            "pages": "1--19",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Homotopy perturbation method for heat transfer flow of a third grade fluid between parallel plates",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Siddiqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zeb",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ghori",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Benharbit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Chaos, Solitons & Fractals",
+            "volume": "36",
+            "issn": "1",
+            "pages": "182--192",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Viscous dissipation effect on the MHD flow of a third grade fluid down an inclined plane with ohmic heating",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aiyesimi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Okedayo",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Mathematical eory and Modeling",
+            "volume": "2",
+            "issn": "9",
+            "pages": "2224--5804",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Effects of magnetic field on the MHD flow of a third grade fluid through inclined channel with ohmic heating",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aiyesimi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Okedayo",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Applied Mathematics and Computational Mechanics",
+            "volume": "3",
+            "issn": "2",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Analysis of couette flow of a nanofluid in an inclined channel with soret and dufour effects",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yusuf",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aiyesimi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jiya",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Okedayo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "American Journal of Computational and Applied Mathematics",
+            "volume": "6",
+            "issn": "2",
+            "pages": "57--64",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "A modified adomian decomposition method for a MHD third grade flow with ohmic heating",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Okedayo",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Abolarin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Titiloye",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Ilorin Journal of Science",
+            "volume": "2",
+            "issn": "2",
+            "pages": "455--463",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Steady poiseuille flow and heat transfer of couple stress fluids between two parallel inclined plates with variable viscosity",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Farooq",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Rahim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Siddiqui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of the Association of Arab Universities for Basic and Applied Sciences",
+            "volume": "14",
+            "issn": "1",
+            "pages": "9--18",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Analysis of activation energy in couette-poiseuille flow of nanofluid in the presence of chemical reaction and convective boundary conditions",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zeeshan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Shehzad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ellahi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Results in Physics",
+            "volume": "8",
+            "issn": "",
+            "pages": "502--512",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "A study of two dimensional unsteady MHD free convection flow over a vertical plate in the presence of radiation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ullah",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tarammim",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Uddin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Open Journal of Fluid Dynamics",
+            "volume": "11",
+            "issn": "1",
+            "pages": "20--33",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Significance of double diffusion for unsteady carreau micropolar nanofluid transportation across an extending sheet with thermo-radiation and uniform heat source",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Afzal",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jarad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abdal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hussain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Case Studies in ermal Engineering",
+            "volume": "28",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "ermal Radiative Transfer and Properties",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Brewster",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "MHD flows of an oldroyd-B fluid",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hayat",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hutter",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Asghar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Siddiqui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Mathematical and Computer Modelling",
+            "volume": "36",
+            "issn": "9",
+            "pages": "987--995",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Homotopy perturbations analysis of couette and poiseuille flows of a third-grade fluid with magnetic field",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Islam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Science International",
+            "volume": "22",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "MHD flow of sodium alginate-based casson type nanofluid passing through a porous medium with Newtonian heating",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Karim",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Imran",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Scientific Reports \"Pros R Scotland A",
+            "volume": "8",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "e effect of wall shear stress on two phase fluctuating flow of dusty fluids by using light hill technique",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Rahman",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kumam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kaewkhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Water",
+            "volume": "13",
+            "issn": "11",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "MHD flow of brinkman type H\u2082O-Cu, Ag, TiO\u2082 and Al\u2082O\u2083 nanofluids with chemical reaction and heat generation effects in a porous medium",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Karim",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Nisar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of Magnetics",
+            "volume": "24",
+            "issn": "2",
+            "pages": "262--270",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Enhancing thermal conductivity of fluids with nanoparticles",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "U S"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Eastman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Proceedings of the ASME International Mechanical Engineering Congress and Exposition",
+            "volume": "",
+            "issn": "",
+            "pages": "99--105",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Measuring thermal conductivity of fluids containing oxide nanoparticles",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "U S"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Eastman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Journal of Heat Transfer",
+            "volume": "121",
+            "issn": "2",
+            "pages": "280--289",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Alteration of thermal conductivity and viscosity of liquid by dispersing ultra-fine particles. dispersion of Al 2 O 3 , SiO 2 and TiO 2 ultra-fine particles",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Masuda",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ebata",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Teramae",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hishinuma",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Netsu Bussei",
+            "volume": "7",
+            "issn": "4",
+            "pages": "227--233",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Heat transfer enhancement of nanofluids",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "International Journal Heat Fluid Flow",
+            "volume": "21",
+            "issn": "",
+            "pages": "158--164",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Natural convection channel flow of CMC-based CNTs nanofluid",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saqib",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shafie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "European Physics Journal Plus",
+            "volume": "133",
+            "issn": "549",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Natural convection of sodium alginate (SA) non-Newtonian nanofluid flow between two vertical flat plates by analytical and numerical methods",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hatami",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ganji",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Case Studies in ermal Engineering",
+            "volume": "2",
+            "issn": "",
+            "pages": "14--22",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Fluid flow and heat transfer of carbon nanotubes along a flat plate with navier slip boundary",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rahi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Applied Nanoscience",
+            "volume": "4",
+            "issn": "",
+            "pages": "633--641",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "ermal and velocity slip effects on the MHD peristaltic flow with carbon nanotubes in an asymmetric channel: application of radiation therapy",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Noreen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nadeem",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Applied Nanoscience",
+            "volume": "4",
+            "issn": "",
+            "pages": "849--857",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Application of laplace transform for the exact effect of a magnetic field on heat transfer of carbon nanotubes-suspended nanofluids",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ebaid",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sharif",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Zeitschrift f\u00fcr Naturforschung A",
+            "volume": "70",
+            "issn": "6",
+            "pages": "471--475",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Flow and heat transfer of a secondgrade hybrid nanofluid over a permeable stretching/shrinking sheet",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Roy",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Pop",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "European Physics Journal Plus",
+            "volume": "135",
+            "issn": "768",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Fuzzy sets",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zadeh",
+                    "suffix": ""
+                }
+            ],
+            "year": 1965,
+            "venue": "Information Control",
+            "volume": "8",
+            "issn": "3",
+            "pages": "338--353",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Operations on fuzzy numbers",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Dubois",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Prade",
+                    "suffix": ""
+                }
+            ],
+            "year": 1978,
+            "venue": "International Journal of Systems Science",
+            "volume": "9",
+            "issn": "6",
+            "pages": "613--626",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "First order linear homogeneous ordinary differential equation in fuzzy environment based on laplace transform",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Mondal",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Roy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of Fuzzy Set Valued Analysis",
+            "volume": "2013",
+            "issn": "",
+            "pages": "1--18",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Fuzzy modeling and control of HIV infection",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zarei",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kamyad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Heydari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Computational and Mathematical Methods in Medicine",
+            "volume": "2012",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Applications of fuzzy laplace transform",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Allahviranloo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Salahshour",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Soft Computing",
+            "volume": "17",
+            "issn": "1",
+            "pages": "145--158",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "A mathematical fuzzy model to giving up smoking",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "El"
+                    ],
+                    "last": "Allaoui",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Melliani",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chadli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the IEEE 6th International Conference on Optimization and Appication, (ICOA)",
+            "volume": "",
+            "issn": "",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "An analysis of microbial population of chemostat model in fuzzy environment",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Bhandari",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Jha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "e Nepali Mathematical Sciences Report",
+            "volume": "36",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Mathematical model for dengue virus infected populations with fuzzy differential equations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rajkumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jesuraj",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Communications in Computer and Information Science",
+            "volume": "955",
+            "issn": "",
+            "pages": "206--217",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "TOPSIS method based on correlation coefficient under pythagorean fuzzy soft environment and its application towards green supply chain management",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zulqarnain",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Xin",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "Asghar"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Yousif",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Sustainability",
+            "volume": "13",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Neutrosophic hypersoft matrices with application to solve multiattributive decision-making",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zulqarnain",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jarad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Samad",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Abdeljawad",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Computational Intelligence and Neuroscience",
+            "volume": "15",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Robust aggregation operators for intuitionistic fuzzy hypersoft set with their application to solve MCDM problem",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zulqarnain",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pamucar",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Marinkovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bozanic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Entropy",
+            "volume": "23",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Development of TOPSIS technique under pythagorean fuzzy hypersoft environment based on correlation coefficient and its application towards the selection of antivirus mask in COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zulqarnain",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Saddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jarad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Abdeljawad",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Complexity",
+            "volume": "2021",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Multicriteria decision-making approach for aggregation operators of pythagorean fuzzy hypersoft sets",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Zulqarnain",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jarad",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Iampan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Computational Intelligence and Neuroscience",
+            "volume": "2021",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "On the fuzzy initial value problem",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Seikala",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Fuzzy Sets and Systems",
+            "volume": "24",
+            "issn": "3",
+            "pages": "319--330",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Fuzzy differential equations",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Kaleva",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Fuzzy Sets and Systems",
+            "volume": "24",
+            "issn": "3",
+            "pages": "301--317",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Fuzzy differential equations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kandel",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Byatt",
+                    "suffix": ""
+                }
+            ],
+            "year": 1978,
+            "venue": "Proceedings of the International Conference Cybernetics and Society",
+            "volume": "",
+            "issn": "",
+            "pages": "1213--1216",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Linear systems of first order ordinary differential equations: fuzzy initial conditions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Buckley",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Feuring",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hayashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Soft Computing-A Fusion of Foundations, Methodologies and Applications",
+            "volume": "6",
+            "issn": "",
+            "pages": "415--421",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Solution method for a non-homogeneous fuzzy linear system of differential equations",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gasilov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Fatullayev",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u015e",
+                    "middle": [
+                        "Emrah"
+                    ],
+                    "last": "Amrahov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Applied Soft Computing",
+            "volume": "70",
+            "issn": "",
+            "pages": "225--237",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "e behavior of logistic equation with alley effect in fuzzy environment: FDE approach",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Salahshour",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ahmadian",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mahata",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "International Journal of Applied and Computational Mathematics",
+            "volume": "4",
+            "issn": "62",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Natural convection of nanofluid flow between two vertical flat plates with imprecise parameter",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Biswal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraverty",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ojha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Coupled Systems Mechanics",
+            "volume": "9",
+            "issn": "3",
+            "pages": "219--235",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Numerical study on second-grade fluid flow problems using analysis of fractional derivatives under fuzzy environment",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Borah",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Dutta",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hazarika",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Soft Computing Techniques and Applications. Advances in Intelligent Systems and Computing",
+            "volume": "1248",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Numerical study of MHD third-grade fluid flow through an inclined channel with ohmic heating under fuzzy environment",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nadeem",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Siddique",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jarad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Mathematical Problems in Engineering",
+            "volume": "2021",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "a 3 ) and the \u03b1-cut of the membership function are seen in Figure 1. An arbitrary TFN satisfies the following conditions: (i) u 1 (y;\u03b1) is an increasing function on [0, 1]. (ii) u 2 (y;\u03b1) is a decreasing function on [0, 1]. (iii) u 1 (y;\u03b1)\u2264u 2 (y;\u03b1) on [0, 1]. (iv) u 1 (y;\u03b1) and u 2 (y;\u03b1) are bounded on left continuous and right continuous at [0, 1], respectively.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Membership functions of a TFN.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Geometry of the problem.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Influence of \u03b2 on u(y) and \u03b8(y). M = 4, N = 3, \u03c8 = 0.04, \u03b2 = 0.= M = 4, N = 3, \u03c8 = 0.04, \u03b2 = 0.= Influence of K on u(y) and \u03b8(y). N = 3, K = 2, \u03c8 = 0.04, \u03b2 = 0.= N = 3, K = 2, \u03c8 = 0.04, \u03b2 = 0.= Influence of M on u(y) and \u03b8(y).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "by \u03b1-cut (\u03b1 \u2208 [0, 1]). Figures 9(a) and 10(a) describe the effect of the \u03b1-cut on fuzzy velocity profile u(y, \u03b1) for the volume fraction of SWCNTs and MWCNTs which are TFNs, respectively. It is seen that \u03b1 significantly affects the fuzzy velocity profile of the regular fluid and nanofluid. e lower bound of the velocity profile shows the regular fluid, and the upper bound of the velocity profile displays the nanofluid at \u03b1 \ufffd 0. Physically, it means that, at \u03b1 \ufffd 0, the thermal boundary layer of u 1 (y, \u03b1) is thinner, and the thermal boundary layer of u 2 (y, \u03b1) is denser. e velocity of a regular fluid is maximum compared to the velocity of the nanofluid for different values of \u03b1.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Influence of N on \u03b8(y). = 4, N = 3, K = 2, \u03c8 = 0.04, \u03b2 Influence of Br on \u03b8(y). Influence of \u03c8 on u(y) and \u03b8(y).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Effect of the fuzzy volume fraction of the nanofluid (SWCNT) on u(y, \u03b1) and \u03b8(y, \u03b1).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Effect of the fuzzy volume fraction of the nanofluid (MWCNT) on u(y, \u03b1) and \u03b8(y, \u03b1). Effects of the TFN volume fraction of the SWCNT and MWCNT on u(y, \u03b1). (a) At y \ufffd \u2212 0.25. (b) At y \ufffd 0.25. (c) At y \ufffd \u2212 0.75. (d) At y \ufffd 0.75.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Effects of the TFN volume fraction of the SWCNT and MWCNT on \u03b8(y, a) (a) At y \ufffd \u2212 0.25. (b) At y \ufffd 0.25. (c) At y \ufffd \u2212 0.75. (d) At y \ufffd 0.75.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "TFNs of fuzzy nanoparticles of volume fraction.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Comparison of numerical results with analytical results for the velocity of Couette flow when K \ufffd 1, Br \ufffd 5, M \ufffd 5, N \ufffd 0, and \u03c8 \ufffd 0.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Comparison of numerical results with analytical results for the temperature of Couette flow when K \ufffd 1, Br \ufffd 5, M \ufffd 5, N \ufffd 0, and \u03c8 \ufffd 0.that the width between \u03b8 1 (y, \u03b1) and \u03b8 2 (y, \u03b1) is very less, so the uncertainty is less. e comparison of SWCNTs and MWCNTs through fuzzy plots for various values of y is depicted inFigures 11 and 12. e volume fraction of SWCNTs and MWCNTs is the TFN.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "(i) e velocity and temperature profiles increase when the gravitation parameter (K) and fluid parameter (\u03b2) increase. (ii) e velocity profile decreases when a magnetic parameter (M) increases, and the temperature profile increases near the boundary layer. (iii) e temperature profile decreases when the thermal radiation parameter (N) increases due to heat transfer. e temperature profile increases with an increase in the Brinkman number (Br). ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "x, y: Cartesian coordinates u:Normal component of the flow T:Transpose of the matrix \u03b8 (y):Dimensionless temperature T 1 , T 2 :Reference and ambient temperatures M:Magnetic parameter Br:Brinkman number \u03b2:ird-grade fluid parameter P:Pressure S:Cauchy stress tensor \u03b1 1 , \u03b1 2 , \u03b2 1 , \u03b2 2 , and \u03b2 3 : Material constants \u03bc m :Magnetic permeability \u03bc:Coefficient of viscosity \u03b8(y, \u03b1):Fuzzy temperature profile \u03c3 * :Stefan-Boltzmann constant k * : Absorption coefficient N: ermal radiation \u03c1 nf :Density of the nanofluid \u03bc nf :Viscosity of the nanofluid (\u03c1C p ) nf :Specific heat of the nanofluid \u03c8:Nanoparticles' volume fraction \u03b8 1 (y, \u03b1):Lower fuzzy temperature profile \u03b8 2 (y, \u03b1):Upper fuzzy temperature profile d/dt: Material derivative \u03b4:Electrical conductivity K:Gravitational parameter \u03c1: Density of the fluid \u03b1:Level or cut technique FDE:Fuzzy differential equation \u03bc U (x):Membership function u(y, \u03b1):Fuzzy velocity profile u 1 (y, \u03b1):Lower fuzzy velocity profile u 2 (y, \u03b1):Upper fuzzy velocity profile TFN: Triangular fuzzy number B:Total magnetic field f:External body force A n :Rivlin-Ericksen tensors A \u2218 :Identity tensor H:Distance between two plates k nf : ermal conductivity of the nanofluid \u03c3 f : Electrical conductivity of the nanofluid.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abbreviations"
+        },
+        {
+            "text": "No data were used to support this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Availability"
+        },
+        {
+            "text": "e authors declare that they have no conflicts of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest"
+        }
+    ]
+}

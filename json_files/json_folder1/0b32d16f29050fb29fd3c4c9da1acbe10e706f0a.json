@@ -1,0 +1,1388 @@
+{
+    "paper_id": "0b32d16f29050fb29fd3c4c9da1acbe10e706f0a",
+    "metadata": {
+        "title": "A cross-sectional study of socioeconomic status and treatment interruption among Japanese workers during the COVID-19 pandemic",
+        "authors": [
+            {
+                "first": "Kenji",
+                "middle": [],
+                "last": "Fujimoto",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Tomohiro",
+                "middle": [],
+                "last": "Ishimaru",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "|",
+                "middle": [],
+                "last": "Seiichiro Tateishi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Tomohisa",
+                "middle": [],
+                "last": "Nagata",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Mayumi",
+                "middle": [],
+                "last": "Tsuji",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Hisashi",
+                "middle": [],
+                "last": "Eguchi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Akira",
+                "middle": [],
+                "last": "Ogami",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Shinya",
+                "middle": [],
+                "last": "Matsuda",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yoshihisa",
+                "middle": [],
+                "last": "Fujino",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Occupational and Environmental Health",
+                    "location": {
+                        "settlement": "Kitakyushu",
+                        "country": "Japan, Japan"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The COVID-19 pandemic has caused interruptions to chronic disease and non-emergency treatment. The purpose of this study is to examine which socioeconomic status groups are most at risk of treatment interruption among Japanese workers. Methods: This cross-sectional internet monitor study was conducted among Japanese workers on December 22-26, 2020. Out of a total of 33 302 participants in the survey, 9510 (5392 males and 4118 females) who responded that they required regular treatment or hospital visits were included in the analysis. A multilevel logistic model nested in the prefecture of residence was used to estimate the odds ratio (OR) for treatment disruption. We examined separate multivariate models for socioeconomic factors, health factors, and lifestyle factors. Results: During a period of rapid COVID-19 infection, about 11% of Japanese workers who required regular treatment experienced interruptions to their treatment. The OR of treatment interruption associated with not being married compared with being married was 1.44 (95%CI: 1.17-1.76); manual labor work compared with desk work 2 of 10 | FUJIMOTO eT al.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Soon after COVID-19 was first confirmed in China, it quickly spread around the world. In January 2020, health authorities confirmed that the infection had spread to Japan. Subsequently, the country experienced peaks of infection in April and August 2020, which lasted for relatively short periods of time. The number of infected people and deaths was considered low compared with that in other countries. However, in November 2020, the number of infections rose again, and in December, Japan was experiencing its third wave of infection. This time, a larger number of people were becoming infected compared with the previous two waves. The hospital bed occupancy rate was high, and medical treatment was being affected. In January 2021, the Japanese government declared a second state of emergency for 11 prefectures.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| INTRODUCTION"
+        },
+        {
+            "text": "The COVID-19 pandemic has caused interruptions to chronic disease and non-emergency treatment around the world. [1] [2] [3] [4] [5] In the United States, 40% of adults are reportedly avoiding medical care. 1 According to a survey of 47 countries, only 14% of responding healthcare providers continued to provide normal face-to-face care. 2 In Japan, the number of prescriptions in May 2020 made up just 75% of the prescriptions given out 1 year prior in May 2019. 3 In pediatrics and otolaryngology, the number of prescriptions halved. 3 There are several reasons why treatment may be being interrupted during the COVID-19 pandemic. Because hospitals are perceived as high-risk places for infection, patients may be voluntarily abstaining from treatment because they are concerned about becoming infected in the hospital. 1 In addition, many medical institutions are rescheduling visits with nonemergency patients to enable them to deal with COVID-19 and to set up fever outpatient clinics. 6, 7 It is also likely that the financial impact of COVID-19 is causing patients to discontinue treatment, given that financial difficulties generally lead to interruption of treatment for chronic diseases. [8] [9] [10] Delay or avoidance of medical care may increase excess mortality directly or indirectly related to COVID-19. 1 Delays and avoidance of treatment can lead to worse management of chronic diseases, missed opportunities for regular checkups, and missed or delayed initiation of treatment for deteriorating health conditions. This results in an increase of morbidity and mortality from health conditions that are otherwise treatable or preventable. 4, 11, 12 Furthermore, interruptions to treatment among workers increase presenteeism, 13 a practice in which individuals continue to work while unwell. Continued presenteeism can lead to lower productivity, further deterioration of health status, and even difficulties with staying in the labor market. 14 Anxieties related to possible infection after seeking medical care and the need to reschedule regular medical appointments due to the COVID-19 pandemic are causing interruptions to medical treatment for workers. In addition, economic insecurity and job insecurity are causing workers to feel that they need to make their presence known to management, which can discourage workers from actively taking sick leave.",
+            "cite_spans": [
+                {
+                    "start": 112,
+                    "end": 115,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 116,
+                    "end": 119,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 120,
+                    "end": 123,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 124,
+                    "end": 127,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 128,
+                    "end": 131,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 206,
+                    "end": 207,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 338,
+                    "end": 339,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 464,
+                    "end": 465,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 536,
+                    "end": 537,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 822,
+                    "end": 823,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 991,
+                    "end": 993,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 994,
+                    "end": 995,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1198,
+                    "end": 1201,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1202,
+                    "end": 1205,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1206,
+                    "end": 1210,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1320,
+                    "end": 1321,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1655,
+                    "end": 1657,
+                    "text": "4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1658,
+                    "end": 1661,
+                    "text": "11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1662,
+                    "end": 1664,
+                    "text": "12",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1742,
+                    "end": 1744,
+                    "text": "13",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| INTRODUCTION"
+        },
+        {
+            "text": "While treatment interruptions are increasing in Japan due to the COVID-19 pandemic, 3 it is unclear which groups of individuals are most at risk. COVID-19 is having a significant impact on the socioeconomic status of workers, and such changes are expected to affect the consultation behavior of workers with chronic diseases. Therefore, the purpose of this study is to examine which socioeconomic status groups are most at risk of treatment interruption.",
+            "cite_spans": [
+                {
+                    "start": 84,
+                    "end": 85,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| INTRODUCTION"
+        },
+        {
+            "text": "This cross-sectional internet monitor study was conducted on December 22-26, 2020, when the third wave of COVID-19 infection started in Japan. Details of the protocol of this survey have already been reported. 15 Briefly, data were collected from workers who had employment contracts at the time of the survey, and were assigned by prefecture, job type, and sex. Since was 1.30 (95%CI: 1.11-1.52); loss of employment when the COVID-19 pandemic started and continued unemployment compared with being employed over the entire pandemic period was 1.62 (95%CI: 1.13-2.31) and 2.57 (95%CI: 1.63-4.07), respectively; and feeling financially unstable was 2.92 (95%CI: 2.25-3.80). Conclusion: Treatment interruption is a new health inequality brought about by COVID-19 with possible medium-and long-term effects, including excess mortality, morbidity, and productivity loss due to increased presenteeism. Efforts are needed to reduce treatment interruptions among workers who require regular treatment. COVID-19 infection rates, hospital visits, hospital bed utilization rates, and socioeconomic status vary widely from region to region, we adopted regional sampling in this study.",
+            "cite_spans": [
+                {
+                    "start": 210,
+                    "end": 212,
+                    "text": "15",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Study design and subjects"
+        },
+        {
+            "text": "Out of a total of 33 302 people who participated in the survey, 27 036 people were included in the study after removing those found to have provided fraudulent responses. We used the following exclusion criteria: extremely short response time (\u22646 minutes), extremely low body weight (<30 kg), extremely short height (<140 cm), inconsistent answers to similar questions throughout the survey (eg, inconsistency to questions about marital status and living area), and wrong answers to a staged question used to identify fraudulent responses (choose the third largest number from the following five numbers). Of these, 9510 (5392 males and 4118 females) who responded that they required regular treatment or hospital visits were included in the present analysis ( Figure 1 ). This study was approved by the ethics committee of the University of Occupational and Environmental Health, Japan (reference No. R2-079). Informed consent was obtained in the form of the website.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 761,
+                    "end": 769,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Study design and subjects"
+        },
+        {
+            "text": "We used the following single-item question to examine the participants' treatment status: \"Do you have any disease that requires regular visits to the hospital or treatment?\" Respondents were asked to select from the following options: \"I do not have such a disease;\" \"I am continuing with hospital visits and treatment as scheduled;\" \"I am not able to continue with hospital visits and treatment as scheduled.\"",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Assessment of treatment status"
+        },
+        {
+            "text": "The subjects provided responses to the questionnaire via the Internet. Socioeconomic factors included age, sex, marital status (married, unmarried, bereaved/divorced), occupation (mainly desk work, jobs mainly involving interpersonal communication, mainly labor), educational background, equivalent income (household income divided by the square root of household size), job change or unemployment after April 2020 (did not resign or change jobs; transferred to another company; resigned and entered into a new job immediately; unemployed for a period, but currently working; retired and started a business), and perception of financial situation (very difficult, slightly difficult, fairly difficult, comfortable). Health and psychological factors included self-rated health, psychological distress, feeling alone, having a friend who can provide support, and having a health condition that requires company support to enable work. Psychological distress was assessed using Kessler 6 (K6), 16 the validity of the Japanese version of which has been confirmed. 17 In the present study, a K6 score of 5 or higher was used as the cutoff for mild psychological distress. The following question was used to examine loneliness: \"Have you ever felt alone?\" Subjects chose from the following options: \"never,\" \"a little,\" \"sometimes,\" \"usually,\" \"always.\" Subjects were asked the following questions to determine if they had a health condition that required company support to enable work: \"Do you require consideration or support from your company to continue working in your current health condition?\" Subjects chose from the following three options: \"no\"; \"yes, but I have not received support\"; \"yes, and I have received support.\"",
+            "cite_spans": [
+                {
+                    "start": 991,
+                    "end": 993,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1060,
+                    "end": 1062,
+                    "text": "17",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Assessment of socioeconomic status, health status, and lifestyle and workrelated factors"
+        },
+        {
+            "text": "The following lifestyle and work-related factors were examined: smoking (never; quit smoking more than 1 year ago; quit smoking within the past year; started smoking less than 1 year ago; smoking for more than 1 year), alcohol consumption (6-7 days a week; 4-5 days a week; 2-3 days a week; less than 1 day a week; hardly ever), exercise habit, breakfast routine, time spent on one-way commute and overtime work hours per day. For exercise habit, subjects were asked to indicate the number of days per week for which they exercised for 30 minutes or more. For breakfast routine, subjects indicated the number days per week for which they ate breakfast.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Assessment of socioeconomic status, health status, and lifestyle and workrelated factors"
+        },
+        {
+            "text": "Age-sex adjusted odds ratios (ORs) and multivariate adjusted ORs were estimated using a multilevel logistic model nested in the prefecture of residence in order to account area variety. We conducted separate multivariate analyses of socioeconomic factors, health factors, and lifestyle factors. For socioeconomic factors, the multivariate model was adjusted for sex, age, marital status, job type, equivalent household income, educational background, employment status, and financial comfort. For health-related factors, the multivariate model was adjusted for age, sex, self-rated health, psychological distress, feeling alone, presence of a friend who can provide support, and presence of a health condition that requires company support to enable work. For lifestyle-related factors and work-related factors, the multivariate model was adjusted for age, sex, smoking, alcohol consumption, exercise habit, breakfast routine, time spent on one-way commute and overtime work hours per day. All analyses used the incidence rate of COVID-19 by prefecture as a prefecture-level variable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Statistical analysis"
+        },
+        {
+            "text": "A p value less than 0.05 was considered statistically significant. All analyses were conducted using Stata (Stata Statistical Software: Release 16; StataCorp LLC). Table 1 presents the basic characteristics of the survey subjects. Of the 9510 subjects who required regular treatment, 1059 subjects (11%) discontinued treatment. Those who were continuing treatment reported better self-rated health than those who had discontinued treatment. Those who had experienced treatment interruption were more likely to experience psychological distress (77%), feel alone (30.8%), and skip breakfast. Those who had interrupted treatment also worked more overtime hours. Table 2 presents the association between socioeconomic status and treatment interruption. Marital status, job type, equivalent household income, employment status, and financial well-being were all associated with treatment interruption. Multivariate analysis showed that the OR of treatment discontinuation associated with not being married compared with being married was 1.44 (95%CI: 1.17-1.76); manual labor compared with desk work was 1.30 (95%CI: 1.11-1.52); loss of employment when the COVID-19 pandemic started and continued unemployment compared with being employed over the entire pandemic period was 1.62 (95%CI: 1.13-2.31) and 2.57 (95%CI: 1.63-4.07), respectively; and feeling financially unstable was 2.92 (95%CI: 2.25-3.80). Table 3 presents the association between health status, psychological distress, and treatment interruption. Multivariate analysis showed that the OR of treatment interruption associated with poor self-rated health was 5.27 (95%CI:4.39-6.34); experiencing psychological distress ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 164,
+                    "end": 171,
+                    "text": "Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 660,
+                    "end": 667,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1400,
+                    "end": 1407,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Statistical analysis"
+        },
+        {
+            "text": "This study showed that during the COVID-19 pandemic, 11% of workers in Japan who required regular medical attention discontinued treatment. Workers with poorer socioeconomic status, health status, and unfavorable lifestyle and working conditions were more likely to have experienced treatment discontinuation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "It is well known that socioeconomic status is an important factor in an individual's ability to access to healthcare. Further, the circumstances of disadvantaged persons are exacerbated in emergencies such as disasters. 8, 18 In this study, we showed that during the COVID-19 pandemic, workers with more disadvantaged socioeconomic status were more likely to experience interruptions to the medical treatment. In particular, individuals with low income, who experienced unemployment, and had poor financial stability were more likely to experience treatment interruption. These results are consistent with reports on the impact of economic deprivation on treatment discontinuation due to COVID-19 in other countries. 1 While we were unable to determine causality due to the cross-sectional nature of this study, it is possible that there is causality in both directions in the relationship between socioeconomic status and treatment discontinuation. Economic deprivation can be a direct reason for treatment interruption. 8, 18 Workers in precarious employment situations may not have the right to sick leave or may be hesitant to take sick leave, 13, 19 and thus give up treatment. On the other hand, interruptions to treatment may lead to exacerbation of health conditions, leading to job loss and reduced income.",
+            "cite_spans": [
+                {
+                    "start": 220,
+                    "end": 222,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 223,
+                    "end": 225,
+                    "text": "18",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 717,
+                    "end": 718,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1022,
+                    "end": 1024,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1025,
+                    "end": 1027,
+                    "text": "18",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1148,
+                    "end": 1151,
+                    "text": "13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1152,
+                    "end": 1154,
+                    "text": "19",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "In the present study, we showed that workers with poorer health status were more likely to experience treatment interruption: those with poorer self-rated health, psychological distress, loneliness, and workplace support were more likely to experience treatment interruption. The causal relationship between health status and treatment interruption may also be bi-directional. Several studies have reported that a major reason for treatment interruption is anxiety related to becoming infected when visiting a hospital. 1, 2, 4 In the present study, greater psychological distress was associated with higher odds of discontinuing treatment, suggesting that anxiety about infection may influence treatment discontinuation. In addition, subjects who did not receive company support were more likely to discontinue treatment. This may be because company support includes adjustment of an individual's work hours for treatment and encouragement from management for the worker to see a doctor. Loneliness may also be related to whether or not a work colleague is able to accompany the subject to the doctor. Alternatively, treatment interruption may lead to deterioration of health status. Treatment interruption can increase the incidence of serious myocardial infarction. 4 It is also possible that treatment interruption may lead to deterioration in health status and self-rated health.",
+            "cite_spans": [
+                {
+                    "start": 520,
+                    "end": 522,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 523,
+                    "end": 525,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 526,
+                    "end": 527,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1269,
+                    "end": 1270,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "T A B L E 4 Association between lifestyle, occupational factors and treatment interruption"
+        },
+        {
+            "text": "The present study also examined the association of unfavorable lifestyle and work-related factors with treatment interruption. Unfavorable lifestyle habits may be related to health literacy, 20,21 which may in turn affect adherence to regular medical visits and treatment. 22 This finding emphasized that a strategy to ensure that outreach messages are delivered efficiently is needed, especially to populations with low health literacy. It is also conceivable that the relationship between lifestyle and treatment interruption may be confounded by socioeconomic status. Our findings also suggest that increased commute times and overtime work may reduce workers' free time and hinder them from seeking medical attention, which is consistent with the findings of a previous study. 23, 24 Treatment discontinuation is a health disparity caused by COVID-19 and is an emerging public health issue. This study shows the relationship between socioeconomic status and treatment discontinuation in terms of health disparities. Regardless of the causal relationship, individuals with more disadvantaged socioeconomic status and health status were more likely to experience treatment interruption. It is therefore paramount that we prepare for the possibility that COVID-19 may not only threaten as an acute infectious disease, but also by affecting the prognosis and complications of those with chronic and lifestyle-related diseases through the socioeconomic environment. Campaigns to encourage the public to refrain from interrupting treatment are important. Relevant medical organizations and the Ministry of Health, Labor and Welfare in Japan are already conducting such campaigns. Telemedicine is a promising method by which to handle treatment interruptions arising due to infection-related anxiety. 25 Extending the length of prescriptions is also a good approach. However, the safety of these approaches must be monitored, given that there are now fewer opportunities to observe patients' health status. Our findings also demonstrate the importance of proactive support by companies to facilitate the delivery of treatment to sick workers. Such support is expected to reduce presenteeism and improve labor productivity.",
+            "cite_spans": [
+                {
+                    "start": 273,
+                    "end": 275,
+                    "text": "22",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 781,
+                    "end": 784,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 785,
+                    "end": 787,
+                    "text": "24",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1798,
+                    "end": 1800,
+                    "text": "25",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "T A B L E 4 Association between lifestyle, occupational factors and treatment interruption"
+        },
+        {
+            "text": "Some limitations of this study warrant mention. First, we did not identify the reasons for treatment discontinuation. There are many possible explanations for why workers may discontinue treatment, including anxiety about COVID-19, financial reasons, lack of understanding of their disease, and lack of time to see a doctor. Second, we did not identify what diseases the workers were attempting to manage. Workers' reasons for treatment interruption and the resulting effects are likely to be very different in the case of chronic diseases such as hypertension and diabetes, compared with cancer. Third, we did not inquire about the timing of treatment interruption; thus, we were unable to clarify the relationship between the timing of treatment interruption and changes in socioeconomic status, including employment and income, and lifestyle.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "T A B L E 4 Association between lifestyle, occupational factors and treatment interruption"
+        },
+        {
+            "text": "In conclusion, during a period of rapid COVID-19 infection, about 11% of Japanese workers who required regular treatment experienced treatment interruption. Disadvantageous socioeconomic status, poor health, and unfavorable lifestyle habits were associated with treatment interruption. Thus, treatment interruption is a new health inequality brought about by COVID-19 with possible mediumand long-term effects, including excess mortality, morbidity, and productivity loss due to increased presenteeism. Efforts are needed to reduce treatment interruption among workers who require regular treatment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "T A B L E 4 Association between lifestyle, occupational factors and treatment interruption"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Delay or avoidance of medical care because of COVID-19-related concerns -United States",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "\u00c9"
+                    ],
+                    "last": "Czeisler",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Marynak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ken",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "MMWR Morb Mortal Wkly Rep",
+            "volume": "69",
+            "issn": "36",
+            "pages": "1250--1257",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Impact of COVID-19 on routine care for chronic diseases: a global survey of views from healthcare professionals",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Chudasama",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Gillies",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zaccardi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Diabetes Metab Syndr",
+            "volume": "14",
+            "issn": "5",
+            "pages": "965--967",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Pandemics and access to care: use of real-world DATA to examine the IMPACT of COVID-19 on pharmacy visits in Japan",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lopresti",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sato",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Value Health",
+            "volume": "23",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Treatment delays and in-hospital outcomes in acute myocardial infarction during the Covid-19 pandemic: a nationwide study",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Erol",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Anatolian J Cardiol. Published online",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.14744/anatoljcardiol.2020.98607"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The impact of the COVID-19 pandemic on hospital admissions in the United States",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Birkmeyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Barnato",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Birkmeyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bessler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Skinner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Health Aff",
+            "volume": "39",
+            "issn": "11",
+            "pages": "2010--2017",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "COVID-19 and the financial health of US hospitals",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Khullar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bond",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Schpero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "21",
+            "pages": "2127--2128",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "How should U.S. hospitals prepare for coronavirus disease 2019 (COVID-19)?",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Chopra",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Toner",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Waldhorn",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Washer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ann Intern Med",
+            "volume": "172",
+            "issn": "9",
+            "pages": "621--622",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The relationship between socioeconomic status and health: a review of the literature",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Feinstein",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Milbank Q",
+            "volume": "71",
+            "issn": "2",
+            "pages": "279--322",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Socioeconomic status and access to healthcare: interrelated drivers for healthy aging",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mcmaughan",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Oloruntoba",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front Public Health",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Sociodemographic inequalities in patients' experiences of primary care: an analysis of the General Practice Patient Survey in England between",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Saunders",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Flynn",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Massou",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lyratzopoulos",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Abel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Burt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Health Services Res Policy",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "All-cause excess mortality and COVID-19-related mortality among US adults aged 25-44 years",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Faust",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Krumholz",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "325",
+            "issn": "8",
+            "pages": "25--44",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Excess Deaths Associated with COVID-19",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Presenteeism during the COVID-19 pandemic: risks and solutions",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kinman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Grant",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Occupational Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/occmed/kqaa193"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Prospective cohort study of work functioning impairment and subsequent absenteeism among Japanese workers",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Fujino",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shazuki",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Izumi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Occup Environ Med",
+            "volume": "58",
+            "issn": "7",
+            "pages": "264--267",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Protocol for a nationwide Internet-based health survey in workers during the COVID-19 pandemic in 2020. medRxiv",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Fujino",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ishimaru",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Eguchi",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Short screening scales to monitor population prevalences and trends in non-specific psychological distress",
+            "authors": [
+                {
+                    "first": "R C",
+                    "middle": [],
+                    "last": "Kessler",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Andrews",
+                    "suffix": ""
+                },
+                {
+                    "first": "L J",
+                    "middle": [],
+                    "last": "Colpe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Psychol Med",
+            "volume": "32",
+            "issn": "6",
+            "pages": "959--976",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The performance of the Japanese version of the K6 and K10 in the World Mental Health Survey Japan",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Furukawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kawakami",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saitoh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Int J Methods Psychiatr Res",
+            "volume": "17",
+            "issn": "3",
+            "pages": "152--158",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "How does economic and social disadvantage affect health",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Swain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Focus",
+            "volume": "33",
+            "issn": "1",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "The consequences of sickness presenteeism on health and wellbeing over time: a systematic review",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Skagen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Collins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Soc Sci Med",
+            "volume": "161",
+            "issn": "",
+            "pages": "169--177",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Health literacy is associated with health behaviour and self-reported health: a large population-based study in individuals with cardiovascular disease",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aaby",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Friis",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Christensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Rowlands",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Maindal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Eur J Prev Cardiol",
+            "volume": "24",
+            "issn": "17",
+            "pages": "1880--1888",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The impact of health literacy and life style risk factors on health-related quality of life of Australian patients",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Jayasinghe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Harris",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Parker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Health Qual Life Outcomes",
+            "volume": "14",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "WHO Regional Office for Europe. Health literacy: the solid facts. World Health Organization",
+            "authors": [],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Relationship between amount of overtime work and untreated decayed teeth in male financial workers in Japan",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yoshino",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ishizuka",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Takayanagi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sugihara",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kamijyo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Occup Health",
+            "volume": "59",
+            "issn": "3",
+            "pages": "280--285",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Association between overtime work hours and preventive dental visits among Japanese workers",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Harada",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nagata",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nagata",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Harada",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Oya",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mori",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "BMC Public Health",
+            "volume": "21",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Reduced access to care among older American adults during CoVID-19 pandemic: results from a prospective cohort study. bioRxiv",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Das",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gopalan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.11.29.20240317"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "for the CORoNaWork Project. A cross-sectional study of socioeconomic status and treatment interruption among Japanese workers during the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Fujimoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ishimaru",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tateishi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "J Occup Health",
+            "volume": "63",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/1348-9585.12232"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Flow chart of study population",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "presents the association between lifestyle, occupational factors, and treatment interruption. Smoking, drinking habit, breakfast habit, commuting time, and overtime work hours were associated with treatment interruption. By contrast, there was no association between exercise habit and treatment interruption. Multivariate analysis showed that the OR of treatment discontinuation associated with current smoking was 1.23 (95%CI: 1.06-1.43); habitual drinking was 1.32 (95%CI: 1.06-1.65); rarely eating breakfast was",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "This study was funded by a research grant from the University of Occupational and Environmental Health, Japan; a general incorporated foundation (Anshin Zaidan) for the development of educational materials on mental health measures for managers at small-sized enterprises; ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        },
+        {
+            "text": "Ethical approval: This study was approved by the ethics committee of the University of Occupational and Environmental Health, Japan (reference No. R2-079). Informed consent: Informed consent was obtained in the form of the website. Registry and the Registration No. of the study/Trial: N/A. Animal Studies: N/A. Conflict of Interest: The authors declare that they have no conflicts of interest associated with this manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCLOSURE"
+        },
+        {
+            "text": "KF involved in writing the manuscript; TI created the questionnaire, reviewed the manuscripts, and advised on interpretation; TN reviewed manuscripts and advised on interpretation; ST, HE, MT, KM and SM reviewed the manuscripts, advised on interpretation, and funded for research, YF did overall survey planning, created the questionnaire, analysis, and drafted the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        },
+        {
+            "text": "https://orcid. org/0000-0002-9334-1423 Tomohisa Nagata https://orcid. org/0000-0001-9173-420X Yoshihisa Fujino https://orcid. org/0000-0002-9126-206X",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tomohiro Ishimaru"
+        }
+    ]
+}

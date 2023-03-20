@@ -1,0 +1,589 @@
+{
+    "paper_id": "0b45ff2fe4cde0010d8839bfbbbab1e543fd0ffa",
+    "metadata": {
+        "title": "Advancing automatic guidance in virtual science inquiry: from ease of use to personalization",
+        "authors": [
+            {
+                "first": "Xiaoming",
+                "middle": [],
+                "last": "Zhai",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Georgia",
+                    "location": {
+                        "addrLine": "105J Aderhold Hall, 110 Carlton Street",
+                        "postCode": "30602",
+                        "settlement": "Athens",
+                        "region": "GA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This article is in response to the review entitled \"Identifying potential types of guidance for supporting student inquiry when using virtual and remote labs in science: a literature review\" (Zacharia et al. in Educ Technol Res Dev 63(2): 257-302). As COVID-19 alerts us to shift science education to digital when in-person schooling is not viable, one approach to facilitate this shift, as reviewed by Zacharia et al. (2015) , is to involve students in computer supported inquiry learning (CoSIL) with appropriate guidance. As CoSIL guidance is critical to student success in CoSIL, Zacharia et al. (2015) contribute to our knowledge by systematically reviewing the forms and the efficacy of such guidance tools that are associated with each phase of scientific inquiry. With such knowledge we may develop decent guidance so that students can experience scientific inquiry virtually as they used to do inperson. Zacharia et al. (2015) indicated that the various guidance tools had increased the ease of use of CoSIL but failed in personalizing CoSIL to individual students. I agree with Zacharia et al. that the personalization of CoSIL guidance is vital. Further, I argue that the emergent machine learning may significantly increase the personalization of CoSIL without burdening teachers. I conclude the essay with suggestions to further investigate the cognitive needs of students in CoSIL and integrate the content, CoSIL, and guidance tools, as a way to move forward the personalization of CoSIL.",
+            "cite_spans": [
+                {
+                    "start": 403,
+                    "end": 425,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 584,
+                    "end": 606,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 913,
+                    "end": 935,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The COVID-19 pandemic has almost ended the historical debate on whether we should broadly engage students in computer supported inquiry learning (CoSIL). An increasing number of educators has started to realize the critical merit of CoSIL when participating in in-person scientific practices with students is not viable (Sikora et al. 2020) . CoSIL allows students to investigate phenomena and figure out problems in virtual environments which are safe, low-cost, and self-paced; however, CoSIL is also highly self-regulated and requires guidance for students to feasibly and deeply engage in virtual activities. Without designed guidance, students are likely to be disrupted and may end up with limited engagement and gains.",
+            "cite_spans": [
+                {
+                    "start": 320,
+                    "end": 340,
+                    "text": "(Sikora et al. 2020)",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Impact and value"
+        },
+        {
+            "text": "The existing need, fortunately, has been partially filled by a large body of research which was synthesized in Zacharia et al. (2015) . Zacharia and his colleagues contributed to our understanding of existing CoSIL guidance by examining the forms and efficacy framed under a CoSIL taxonomy (de Jong and Lazonder 2014) . Using the taxonomy, Zacharia et al. found 89 guidance tools in the form of performance dashboards, prompts, process constraints, heuristics, scaffolds, and the direct presentation of information, which prevalently existed in all phases of CoSIL. They also found a significant variation in terms of the number of guidance tools available for each of the five phases of CoSIL: orientation, conceptualization, investigation, discussion, and conclusion. That is, the investigation phase was offered a significantly larger number of guidance tools than any of the other phases. Unsurprisingly, variation was also found in amounts of forms of guidance within each phase. They reported that 44 out of 89 guidance tools had a positive effect on student learning and articulated the characteristics of the reviewed guidance. Zacharia et al.'s (2015) review indicated that various guidance tools had increased the ease of use of CoSIL for students, inspiring the shift from in-person to digital. Challenges were left for teachers: How teachers can continue providing effective support to students, given that CoSIL has provided automatic guidance and allows students to self-regulate their learning. Zacharia et al.'s study may help teachers better understand the characteristics of CoSIL guidance that are associated with a specific phase of inquiry, as well as their efficacy, so that teachers may redefine their pedagogical roles in virtual inquiry settings in a way to accommodate the guidance.",
+            "cite_spans": [
+                {
+                    "start": 111,
+                    "end": 133,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 290,
+                    "end": 317,
+                    "text": "(de Jong and Lazonder 2014)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1136,
+                    "end": 1160,
+                    "text": "Zacharia et al.'s (2015)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Impact and value"
+        },
+        {
+            "text": "A critical step for the \"shift to digital\" is to move the purpose of technology implementation from ease of use to personalization. I appreciate that Zacharia et al. concluded their study with a remark suggesting newly designed CoSIL should continue to be personalized to support self-regulated learning. Given that students may have diverse backgrounds, pre-knowledge, and levels of learning, personalized guidance is needed to shift learning to digital (Gerard et al. 2016) . Personalizing CoSIL indicates that students should be able to receive customized and timely guidance according to their learning so that they can adjust and improve learning performance, no matter what their peers do. Zacharia et al.'s (2015) review found that this remark was unfounded in the literature and they were concerned about the potential extra burden of programming platforms that may move to teachers' shoulders if personalization were processed.",
+            "cite_spans": [
+                {
+                    "start": 455,
+                    "end": 475,
+                    "text": "(Gerard et al. 2016)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 696,
+                    "end": 720,
+                    "text": "Zacharia et al.'s (2015)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Personalizing automatic guidance using machine learning"
+        },
+        {
+            "text": "A recent review has revealed that personalized guidance in CoSIL is very likely to be viable through machine learning (Zhai et al. 2020 ). Within the 49 reviewed studies that involved machine learning, Zhai et al. found multiple platforms that had been developed to provide personalized feedback according to students' performance on a virtual inquiry. For example, in their project, Lee et al. (2019) developed a virtual platform HASbot that employs machine learning to automatically score students' arguments. According to students' argumentation performance, the system would provide real-time guidance to help students revise arguments. A similar study that focused on the explanation practice (Tansomboon et al. 2017) demonstrated great potential as well. The Tansomboon team connected the Web-Based Inquiry Science Environment (WISE) system with ETS's c-raterML to provide students with timely guidance for their explanations. They found that personalized guidance of revisiting and planning writing changes significantly improved students' explanation practice.",
+            "cite_spans": [
+                {
+                    "start": 118,
+                    "end": 135,
+                    "text": "(Zhai et al. 2020",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 384,
+                    "end": 401,
+                    "text": "Lee et al. (2019)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 698,
+                    "end": 722,
+                    "text": "(Tansomboon et al. 2017)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Personalizing automatic guidance using machine learning"
+        },
+        {
+            "text": "It is encouraging to find that after Zacharia et al. (2015) was first published five years ago, machine learning has significantly advanced Zacharia et al.'s work by providing customized CoSIL guidance, shifting the purpose of ease of use to that of personalization. While Zacharia et al. (2015) have made a significant contribution in the line of developing personalized CoSIL guidance, limitations exist. Two strands of work are particularly urgent for continuing to advance the personalization of CoSIL guidance.",
+            "cite_spans": [
+                {
+                    "start": 37,
+                    "end": 59,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 267,
+                    "end": 295,
+                    "text": "While Zacharia et al. (2015)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Personalizing automatic guidance using machine learning"
+        },
+        {
+            "text": "First, cognitive evidence is needed to support personalized CoSIL guidance design. Zacharia et al. (2015) claimed that their study \"provides evidence as to which inquiry phases of CoSIL implementations need more guidance (e.g., Conceptualization) or which inquiry phases of CoSIL implementations have a reasonable number of guidance tools\" (p. 295), which I thought may need additional evidence to validate. The authors had not thoroughly analyzed students' cognitive needs in phases of CoSIL, which have been deemed as critical to determine the specific scaffolds needed for CoSIL (de Jong and Lazonder 2014) . I believe such a claim is critical to design personalized CoSIL guidance yet can be made only if cognitive evidence is collected so that we can justify whether the guidance is appropriate or not.",
+            "cite_spans": [
+                {
+                    "start": 83,
+                    "end": 105,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 582,
+                    "end": 609,
+                    "text": "(de Jong and Lazonder 2014)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Limitations and future suggestions"
+        },
+        {
+            "text": "Second, the degree to which and the means of integration of content with CoSIL, as well as guidance for using it, need further study. While Zacharia et al. (2015) claim that 44 guidance tools were found effective, I was not fully convinced. I thought the effectiveness was a consequence of the integration of content with specific inquiry activity, as well as the guidance, rather than purely that of guidance tools. Research has suggested that integration levels of educational technology (Zhai et al. 2019 ) significantly impact the effectiveness of technology on learning, and thus a given guidance may be effective in one CoSIL activity but fails in another. Without considering how the integration is processed in the specific CoSIL, we are not likely to design personalized and effective guidance for students.",
+            "cite_spans": [
+                {
+                    "start": 140,
+                    "end": 162,
+                    "text": "Zacharia et al. (2015)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 490,
+                    "end": 507,
+                    "text": "(Zhai et al. 2019",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Limitations and future suggestions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The guided discovery principle in multimedia learning",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "De Jong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lazonder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "371--390",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Automated guidance for student inquiry",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gerard",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ryoo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Mcelhaney",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Rafferty",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Linn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Journal of Educational Psychology",
+            "volume": "108",
+            "issn": "1",
+            "pages": "60--81",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Automated text scoring and real-time adjustable feedback: Supporting revision of scientific arguments involving uncertainty",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pallant",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pryputniewicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lord",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mulholland",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Science Education",
+            "volume": "103",
+            "issn": "3",
+            "pages": "590--622",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Responses to the COVID-19 pandemic by the biochemistry authentic scientific inquiry lab (BASIL) CURE consortium: Reflections and a case study on the switch to remote learning",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sikora",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Irby",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mills",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Koeppe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Pikaart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Chemical Education",
+            "volume": "97",
+            "issn": "9",
+            "pages": "3455--3462",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Designing automated guidance to promote productive revision of science explanations",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tansomboon",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Gerard",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Vitale",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Linn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "International Journal of Artificial Intelligence in Education",
+            "volume": "27",
+            "issn": "4",
+            "pages": "729--757",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Identifying potential types of guidance for supporting student inquiry when using virtual and remote labs in science: A literature review",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Zacharia",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Manoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Xenofontos",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "De Jong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pedaste",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Van Riesen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Educational Technology Research and Development",
+            "volume": "63",
+            "issn": "2",
+            "pages": "257--302",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Applying machine learning in science assessment: A systematic review",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pellegrino",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Haudek",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Studies in Science Education",
+            "volume": "56",
+            "issn": "1",
+            "pages": "111--151",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Understanding the relationship between levels of mobile technology use in high school physics classrooms and the learning outcome",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhai",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "British Journal of Educational Technology",
+            "volume": "50",
+            "issn": "2",
+            "pages": "750--766",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {},
+    "back_matter": [
+        {
+            "text": "Acknowledgements The work is supported by the National Science Foundation under Grant DUE-1561159.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        },
+        {
+            "text": "The author has no conflict of interest to disclose.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        },
+        {
+            "text": "Informed consent The author agrees to submit the manuscript to Educational Technology Research and Development. The manuscript is not concurrently under consideration with other journals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Research involving human participants and/or animals None."
+        },
+        {
+            "text": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.Xiaoming Zhai is an Assistant Professor of Science Education at the Department of Mathematics and Science Education, the University of Georgia. He earned his Ph.D. at Beijing Normal University. He is interested in developing and using innovative assessment to support science teaching and learning. Currently, he is working on machine learning-based assessment development and implementation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

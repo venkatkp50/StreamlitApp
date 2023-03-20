@@ -1,0 +1,1858 @@
+{
+    "paper_id": "0b47ae226f79be654dfe31b45f910b4483e72a0f",
+    "metadata": {
+        "title": "Impact of physical distancing policy on reducing transmission of SARS-CoV-2 globally: Perspective from government's response and residents' compliance",
+        "authors": [
+            {
+                "first": "Ping-Chen",
+                "middle": [],
+                "last": "Chung",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Ministry of Health and Welfare",
+                    "location": {
+                        "settlement": "Chiayi",
+                        "country": "Taiwan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Ta-Chien",
+                "middle": [],
+                "last": "Chan Id",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Academia Sinica",
+                    "location": {
+                        "settlement": "Taipei",
+                        "country": "Taiwan"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "was declared a public health emergency by the World Health Organization (WHO) in January 2020. Various physical distancing interventions were introduced to flatten the epidemic curve and reduce the disease burden. We evaluated the impacts of policy stringency and residents' compliance on time-varying reproduction number in 17 countries.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Data were from WHO reports of local transmission (Apple Maps' mobility trends reports. We estimated the daily time-varying reproduction number (Rt) by country. 0-, 7-and 14-day lagged effects of non-pharmaceutical interventions and changes in human mobility on Rt were estimated by linear mixedeffects models.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Rt initially surged rapidly, then declined gradually depending on policy stringency. The highest mean policy stringency scores were for Italy (69.97) and South Korea (61.00). Variations in stringency scores were higher in Europe, the US and Australia than in Asia. The human mobility reduction was greater in countries with strict policies (median stringency score > = 50). In terms of immediate (0-day lag) effects, Rt reductions were found for workplace-closure, limited-gathering, and stay-at-home policies. At a 7-day lag, Rt reductions were found for workplace closure, restrictions on gatherings, stay-at-home requirements, international PLOS ONE",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "a1111111111 a1111111111 a1111111111 a1111111111 a1111111111",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Emerging, highly contagious SARS-CoV-2 has spread out globally since the large outbreak in January 2020 in China [1] and has caused a global COVID-19 pandemic, for which there are no effective, safe pharmaceutical agents for treatment or prevention. Non-pharmaceutical intervention (NPI) is the only public health approach to reduce transmission, control the pandemic and lower the disease burden. However, in the past few decades, people have not experienced extensive city lockdowns or physical distancing (also known as social distancing) policies. In some epidemics of influenza or enterovirus, some public health authorities have implemented school closures [2] or temporary class suspensions [3] , but rarely for a whole city. Unprecedented physical distancing policies have been implemented to cope with the COVID-19 pandemic in different countries [4] . Due to the huge socio-economic impacts from control policies, governments in different countries have set different stringency levels for physical distancing policies, taking into consideration feasibility [5] , the culture [6] , medical capacity [7] , social acceptance [6] , and economic loss [6] , and such policies have also evolved with the pandemic situation.",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 116,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 663,
+                    "end": 666,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 698,
+                    "end": 701,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 856,
+                    "end": 859,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1068,
+                    "end": 1071,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1086,
+                    "end": 1089,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1109,
+                    "end": 1112,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1133,
+                    "end": 1136,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1157,
+                    "end": 1160,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In order to control the pandemic, physical distancing policies have been introduced to reduce the chance of interpersonal contact and transmission. Unlike seasonal influenza, the asymptomatic infection rate has been estimated to be as high as 20.8% for SARS-CoV-2 [8] , and the virus also has higher transmissibility as measured by the reproduction number (R0, ranging from 2 to 3) [1, 9] than seasonal influenza (R0: 1.19-1.37) [10] . In addition, epidemiological investigation has found that transmission occurs before the onset of symptoms [11] . These factors, as well as similarity of the symptoms to those of influenza, all increase the barrier to early detection of the disease. The different physical distancing policies have lowered the effective reproduction number (Rt) over time, aiming to interrupt the chain of transmission and maintain the Rt below 1.",
+            "cite_spans": [
+                {
+                    "start": 264,
+                    "end": 267,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 382,
+                    "end": 385,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 386,
+                    "end": 388,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 429,
+                    "end": 433,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 543,
+                    "end": 547,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The effectiveness of physical distancing policies depends on their stringency and public compliance. A previous simulation study showed that social distancing intervention starting earlier in an epidemic could delay the epidemic curve, and intervention introduced later could flatten the epidemic curve [7] . Empirically, the effectiveness of NPIs including travel restrictions, stay-at-home policies, school closures, cancelling public gatherings and so on has been reported on in different countries. In contrast to NPIs, public compliance affects the probability of transmission. With the technology of mobile devices, changes in human mobility can be measured in an aggregated fashion. Those data reflect human movements during an epidemic period under different physical distancing policies. This paper will primarily focus on only confirmed cases based on local transmission, which is a fair way to measure the policy effectiveness. The effective reproduction number (Rt) was used to measure transmissibility, based on time after introducing particular physical distancing interventions. In the real world, government policies and residents' compliance occur at the same time. In this study, we visualize the Rt and policy stringency in a spatio-temporal manner. We then compare the strategies of different NPIs and changes in human mobility in different countries. Finally, we model the effectiveness of NPIs and residents' compliance on reducing Rt with different lagged effects.",
+            "cite_spans": [
+                {
+                    "start": 303,
+                    "end": 306,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A confirmed case of COVID-19 infection was defined as a person with laboratory confirmation, irrespective of clinical signs and symptoms. All the data were captured from novel coronavirus (2019-nCoV) situation reports published by the World Health Organization (https:// www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports). The data were updated daily starting January 21, 2020 and covered the situation of COVID-19 infection worldwide. The WHO Novel Coronavirus (2019-nCoV) SITUATION REPORT presented transmission classification starting from February 28, 2020. Before that date, the WHO reported confirmed cases containing local and imported cases. From February 28, 2020 to April 8, 2020, daily reported laboratory-confirmed cases of COVID-19 included transmission classification based on WHO analysis of available official data, and may be subject to reclassification as additional data become available. We extracted the data classified as \"local transmission\" in this study. Therefore, we searched for data from local sources on daily confirmed cases on each country's official website, found South Korea, Japan, and Singapore reported daily new local confirmed cases, and added these data into the analysis. In addition, Taiwan's daily local cases were not reported from the WHO, so we collected data between January 28, 2020 and April 8, 2020 from official press releases of the Taiwan CDC. We obtained Taiwan's daily confirmed, locally transmitted cases of COVID-19 from January 28, 2020 to April 8, 2020 from announcements by the Taiwan Centers for Disease Control (https://www.cdc.gov.tw/En/ Bulletin/List/7tUXjTBf6paRvrhEl-mrPg). We took South Korea daily confirmed, locally transmitted cases from the Korea Centers for Disease Control and Prevention (http://ncov.mohw. go.kr/tcmBoardList.do?brdId=3) from January 30, 2020 to February 27, 2020. We counted the daily confirmed, locally transmitted cases of COVID-19 from press releases by the Ministry of Health Labor and Welfare (https://www.mhlw.go.jp/stf/houdou/index.html) during January 28, 2020 to February 27, 2020 in Japan and from the Ministry of Health (https://www.moh. gov.sg/news-highlights) during February 4, 2020 to February 27, 2020 in Singapore. The data included 17 different countries (regions)-Australia, Canada, Finland, France, Germany, Greece, Italy, Japan, South Korea, Singapore, Spain, Sweden, Taiwan, Thailand, the United Kingdom, United States and Vietnam-around the world, with few missing values during the study period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data source"
+        },
+        {
+            "text": "The Oxford COVID-19 Tracker collects publicly available information on 17 indicators such as containment and closure, as well as economic and health system policies from more than 160 countries to track and compare policy responses around the world. The stringency index was calculated using eight policy indicators (C1-C8) recording information on containment and closure policies, and one indicator (H1) recording health system policies (each indicator's coding is provided on https://github.com/OxCGRT/covid-policy-tracker/blob/master/ documentation/codebook.md. The indicators include C1 School closing, C2 Workplace closing, C3 Cancel public events, C4 Restrictions on gatherings, C5 Close public transport, C6 Stay at home requirements, C7 Restrictions on internal movement, C8 International travel controls and H1 Public information campaigns.). The daily value of the index is the average of nine sub-indices ranging between 0 and 100. We obtained the dataset from January 1, 2020 to April 8, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Oxford COVID-19 Government Response Tracker [12]"
+        },
+        {
+            "text": "This dataset shows daily percentage changes in people's visits to and staying time in six categories of places compared to a baseline which is the median value for the corresponding day of the week during the five-week period from January 3 to February 6, 2020. The categories for grouping places with similar characteristics for purposes of social distancing guidance include grocery stores and pharmacies, parks, transit stations, retail and recreation, residences, and workplaces. We used the data from February 15, 2020 to April 8, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "COVID-19 Community Mobility Reports [13]"
+        },
+        {
+            "text": "The daily Mobility Trends Reports reflect changes in requests for directions by transportation type including driving, using public transport and walking for all available countries, regions and cities compared to a baseline volume on January 13, 2020 in Apple Maps in order to learn about COVID-19 mobility trends. We used the data from January 13, 2020 to April 8, 2020 after normalizing the data by day of the week effects. We further used these changes to normalize the different days of week. We took all mobility changes on Monday to conduct normalization and continued this process from Tuesday to Sunday. The purpose of this normalization is to consider the periodic pattern of human mobility on specific days of the week.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mobility Trends Reports using information collected from Apple Maps [14]"
+        },
+        {
+            "text": "The serial interval of COVID-19 is the time between a primary case's (infector's) clinical onset and secondary case's (infectee's) clinical onset. Du et al. estimated the distribution of the serial interval from 468 confirmed cases of COVID-19 reported in 93 Chinese cities by February 8, 2020 [15] . Following the estimated results from Du et al., we assumed a gamma distribution for the serial interval with a mean of 3.96 and a standard deviation of 4.75 days, and calculated time-dependent daily reproduction numbers over a seven-day moving window.",
+            "cite_spans": [
+                {
+                    "start": 294,
+                    "end": 298,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Estimation of time-varying reproduction number (Rt)"
+        },
+        {
+            "text": "Cori et al. suggested fulfilling the following three criteria on estimating Rt: at least after the time window, at least after one mean serial interval, and when at least 12 cases have been observed since the beginning of the epidemic [16] . Thus, we didn't take the beginning reproduction number into account until we met the above criteria in Taiwan, South Korea, Japan and Singapore. The data of other countries were left truncated starting from February 28, 2020, and their reproduction numbers met the criteria of at least after the time window and at least after one mean serial interval. The time-dependent daily reproduction numbers were computed using R 4.0.0 (R Core Team) and the EpiEstim (v2.2-1) package.",
+            "cite_spans": [
+                {
+                    "start": 235,
+                    "end": 239,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Estimation of time-varying reproduction number (Rt)"
+        },
+        {
+            "text": "The policy time was regarded as the time interval between the first confirmed COVID-19 case, whether local or imported, and the beginning of the government's response according to the stringency index.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Policy timing"
+        },
+        {
+            "text": "We assumed that NPIs and individual behavioral change could influence the time-varying reproduction number without delay, and with delays of 7 days and 14 days. The reasons for the chosen delay periods were as follows. First, the incubation period of COVID-19 has been estimated at around 5.2 days [17] . Second, a test for COVID-19 is usually performed after the onset of symptoms, and it takes time to get the test results. Third, people need time to adjust to the intervention and change their behavior. Thus, we did 0-day, 7-day and 14-day lagged effects as sensitivity analysis.",
+            "cite_spans": [
+                {
+                    "start": 298,
+                    "end": 302,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Lagged effect on non-pharmaceutical interventions and personal protective behavior"
+        },
+        {
+            "text": "The Mobility Trends Reports on using public transportation collected from Apple Maps had more than 20% missing values (n = 150), and this variable was excluded in the following analysis. The variables of income support, debt or contract relief, fiscal measures, international support, emergency investment in healthcare, and investment in vaccines were excluded due to a large percentage of missing values at the early stage of the pandemic. We stratified different countries into two groups based on the median stringency index of 50. After examining the normality of the distribution, we used a random effects model with a random intercept to compare the difference in people's behavioral changes across two different stringency groups, and to figure out the relationship between policy stringency and people's behavioral changes. The variables of the stringency index and community mobility trends were evaluated in multivariable models using stepwise selection to eliminate those with p values >0.1 after excluding multicollinearity (variance inflation factor (VIF) > 10). The missing data including debt or contract relief (E2, n = 14), fiscal measures (E3, n = 6), emergency investment in healthcare (H4, n = 30), investment in vaccines (H5, n = 4) and community mobility data (n = 14) were excluded. We used linear mixed-effects models to explore the daily reproduction number with countries as a random effect. We also estimated 7-and 14-day lagged effects of policy on the time-varying reproduction number. All statistical tests were two-sided with a significance level of 0.05. All analyses were performed with R 4.0.0 statistical software. We used ArcGIS (ArcMap, version10.3; ESRI Inc., Redlands, CA, USA) and our developed ringmap toolbox (https://www.esri.com/about/newsroom/arcuser/looking-at-temporal-changes) to visualize the daily local confirmed cases, Rt and stringency scores in 17 countries during the study period. The world base map is downloaded from a publicly available website (http:// thematicmapping.org/downloads/, CC BY-SA 3.0).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "The earliest implementation of NPI was 21 days before the first case was confirmed. International travel controls (C8), public information campaigns (H1) and testing policy (H2) were implemented early in Singapore. And the latest implementation of NPI was 53 days after the first case was confirmed ( Table 1 ). The median of the stringency index, which represents strictness of policies, was 52.78 (interquartile range = 43.12), the loosest stringency index was 2.78, and the strictest stringency index was 97.35 during the study period.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 301,
+                    "end": 308,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Our estimates of the time-varying reproduction number Rt are based on daily confirmed cases from local transmission, and the longest estimated period was from February 5 through April 8. Each ring in Fig 1 represents the daily number of local transmission cases in different countries. The temporal order starts from the innermost ring on February 5, 2020 to the outermost ring on April 8, 2020. The number of daily confirmed cases rose gradually, although it decreased in the last period in some places like South Korea (Fig 1) . Each ring in Fig 2 repre sents a 7-day window of the estimated daily effective reproduction number from local transmission cases in different countries. The temporal order starts from the innermost ring on February 11, 2020 to the outermost ring on April 8, 2020. In the first few weeks, there were no local COVID-19 cases in most countries, thus there were no estimated Rt in the rings with gray color. Most countries had high Rt at the beginning and gradually slowed the transmission rate after introducing the NPI policies. For Taiwan, the reproduction number increased to 2.07 on March 20 and decreased to 1.06 on April 8. For the United States, the reproduction number increased to 3.58 over the first week of Marchand decreased to 1.25 in the last week of the study period. During the study period, in Spain the reproduction number increased to a peak of 2.33 before March 14, and then gradually decreased to 0.93 before April 8.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 205,
+                    "text": "Fig 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 521,
+                    "end": 528,
+                    "text": "(Fig 1)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 544,
+                    "end": 555,
+                    "text": "Fig 2 repre",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Each ring in Fig 3 represents the daily stringency score in different countries. The temporal order is from the innermost ring on February 11, 2020 to the outermost ring on April 8, 2020. Among these countries, the strictness of NPIs increased over time during the pandemic, especially in Italy and Spain (Fig 3) . In some countries, the stringency was less changed during February 11 to April 8, such as Taiwan and Sweden (Fig 4) . The highest two mean policy stringency scores were for Italy (69.97) and South Korea (61.00). Variations in stringency ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 13,
+                    "end": 18,
+                    "text": "Fig 3",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 305,
+                    "end": 312,
+                    "text": "(Fig 3)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 423,
+                    "end": 430,
+                    "text": "(Fig 4)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission scores were higher in Europe, the US and Australia than in Asia. Regarding the implementation of the stringency policies, these 17 countries had a greater tendency to close schools and universities, limit private gatherings and restrict international travel, and less tendency to shut down public transport in the study period (Table 1 , Fig 5) . The two groups are classified by the median of the stringency index during the study period. In each region, if the median of the stringency index was below 50, it was classified as lower stringency, otherwise it was classified as higher stringency. The human mobility reduction was greater in countries with strict policies (median stringency score > = 50). And the two groups were significantly different in some community mobility changes including retail and recreation, transit stations, workplaces and residences (Table 2) . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 387,
+                    "end": 395,
+                    "text": "(Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 398,
+                    "end": 404,
+                    "text": "Fig 5)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 926,
+                    "end": 935,
+                    "text": "(Table 2)",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "In the pandemic period, the median of decreases in visits and length of stay was about 24% in retail and recreation, 6% in grocery stores and pharmacies, 9% in parks, 31.5% in transit stations, and 14% in workplaces, while the median increase was 9% in residence compared to the baseline (Table 1, Fig 6) . In the countries with stricter NPIs, the behavioral changes were greater. For example, in countries with higher stringency, people visited less often and remained for less time at grocery stores and pharmacies, transit stations, retail and recreation, and workplaces, and stayed at home more (Fig 6) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 288,
+                    "end": 304,
+                    "text": "(Table 1, Fig 6)",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 599,
+                    "end": 606,
+                    "text": "(Fig 6)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "The requests for directions by different transportation types in Apple Maps declined in most of the studied countries. Especially in Finland and Sweden, the search times for driving, using public transport and walking to the desired destination were obviously lower than in January 13, 2020 (Fig 7) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 291,
+                    "end": 298,
+                    "text": "(Fig 7)",
+                    "ref_id": null
+                }
+            ],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "While taking the stringency index into account rather than the 11 policies, if the interventions had immediate effect (0-day lagged effect), the percent changes in going to parks, grocery ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission stores and pharmacies, and the changes in requests for directions by walking were significantly associated with the reproduction number. As for the 7-day lagged effect on policies and behavioral change, the results are similar to the 0-day lagged effect, except that there was no significant effect on the percent change for parks. With a 14-day lagged effect on policies and behavioral change, the reproduction number was significantly associated with the stringency index, the percent change to go to workplaces and the changes in requests for directions by walking (Table 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 628,
+                    "end": 637,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "While taking the 11 policies into account, school closures, workplace closures, public event cancellations, restrictions on gatherings, requirements of staying at home, testing policies, the percent change to visits and staying in parks, and the changes in requests for directions by ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission walking were all significantly associated with the reproduction number under an immediate intervention effect. As to the 7-day lagged effect on policies and behavioral change, the results are similar to the 0-day lagged effect, except that the percentage changes in visits and stay in ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission parks were insignificant. Moreover, international arrivals screening, ban on entry from all countries or total border closure, and comprehensive contact tracing were significantly associated with the reproduction number. Looking at the 14-day lagged effect, restrictions on gatherings, contact tracing, the percent change to visits and staying in parks, and changes in requests for directions by walking were significantly associated with the reproduction number (Table 4 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 523,
+                    "end": 531,
+                    "text": "(Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "To the best of our knowledge, this is the first paper to evaluate the effects of both the stringency of policies and residents' compliance on the transmissibility of COVID-19 globally. In our findings, time-varying reproduction numbers surged rapidly at the initial epidemic stage and declined gradually depending on policy stringency. The human mobility reduction was greater in countries with stricter policies. By examining the 0-day, 7-day and 14-day lagged effects of policies and changes in human mobility on Rt, stay-at-home policies, workplace closures, limiting gatherings, international travel controls, contact tracing, less visiting and staying in parks, and reducing walking around were all effective at reducing Rt. In this study, the highest mean time-varying reproduction number was 2.13 in Vietnam, which means an average of 2.13 secondary cases generated by a primary case. Our estimated average time-varying reproduction numbers were 1.34 for Italy and 1.53 for South Korea. Compared to previous studies, the median value of the time-varying reproduction number for Italy's province of Macerata was 1.792 (1.0-3.5) with the exponential growth (EG) method, estimated with data from February 26, 2020 to April 20, 2020 [18] . The mean estimated reproduction number was 1.5 (1.4-1.6) on February 26, 2020 in South Korea [19] . A portion of COVID-19 cases were imported from other areas, which might lead the reproduction number to be overestimated due to \"imported cases\" (cases infected abroad who then entered the country, rather than being locally transmitted). Most countries required travelers to fill out a health declaration form, have their temperature measured, undergo self-quarantine and be tested for SARS-CoV-2, the virus causing COVID-19, if necessary. The probability of a potentially infected traveler spreading the disease to healthy local people declines with close confinement. Therefore, this study did not examine imported cases which were unrelated to transmission of local outbreaks. ",
+            "cite_spans": [
+                {
+                    "start": 1236,
+                    "end": 1240,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1336,
+                    "end": 1340,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission Moreover, the reproduction number may be underestimated because asymptomatic cases or mild cases may not be detected and reported, especially at the start of an outbreak. Early in the epidemic, Read et al. estimated that the ascertainment rate was only 5.1% in Wuhan [20] . The potential number of infectors was underreported. Furthermore, the reproduction number may change over time based on changing infectivity of the virus, modes of social interaction, effectiveness of interventions and so on [21] .",
+            "cite_spans": [
+                {
+                    "start": 327,
+                    "end": 331,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 559,
+                    "end": 563,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "A combination of different non-pharmaceutical interventions has been proved to be useful in reducing the epidemic peak, but the timing, duration and useful combination of different interventions still need to be explored. At the same time, the effectiveness of each intervention is constantly being explored. The case number after intervention policies might be overcounted if the counts include infectees who were still asymptotic and undiagnosed before intervention. Thus, there were lags for the interventions to take effect. We assess the 0-day, 7-day and 14-day lagged effects as a sensitivity analysis. For the 0-day lagged effect scenario, workplace closure, restrictions on gatherings of over a certain number of people (ranging from over 100 to over 1000) and staying at home were effective in reducing the reproduction number. Working at home or work bans were effective when the workplace was a key infection site. Workplace distancing reduced the number of infections in simulation models based on geographical, demographic, and epidemiological data from Singapore [22] . In another study, under other control measures such as bans on public gatherings, prohibition of movement without valid reason, suspension of intra-city public transport and closure of entertainment venues, fewer confirmed cases were reported during the early stage of the outbreak [23] . However, school closures, cancelling public events, testing only those who both have symptoms and meet specific criteria, or open public testing result in increasing, not decreasing, reproduction numbers. The contribution of school closures to transmission control may depend on the features of a disease. There has been limited information about the effectiveness of school closures alone in coronavirus outbreaks such as Severe Acute Respiratory Syndrome (SARS) and Middle East Respiratory Syndrome (MERS). As S1 Table shows, we found an effect from implementing school closure policy alone on reducing the effective reproduction number. However, when we considered other NPI policies together, the effect of school closures disappeared. But for influenza outbreaks, school closures have been shown to be effective. There are several theoretical reasons promoted for the reduced effectiveness of school closures in containing COVID-19 compared to influenza outbreaks [24] . First, relatively few child diagnoses of COVID-19 have been reported worldwide. As of March 8, 2020 the largest proportion of laboratory-confirmed COVID-19 infectees was among the age group of 40-79 in Wuhan, China [25] . Secondly, studies elsewhere have shown that the symptoms are relatively mild in ",
+            "cite_spans": [
+                {
+                    "start": 1077,
+                    "end": 1081,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1366,
+                    "end": 1370,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 2342,
+                    "end": 2346,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2564,
+                    "end": 2568,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "Physical distancing policy reducing SARS-CoV-2 transmission children when compared to adults [26] , and the mortality rate is higher in the elderly with underlying diseases [19] . Moreover, when only school closures are implemented, household and community contact tends to increase, such as at day care centers or parks, so the transmission risk does not change much [24] . Alternative measures such as distance learning and closing only confirmed cases' classes may be considered in the early stage of an outbreak. To sum up, we cannot rule out the possibility that the results of school closure in our study were affected by statistical imprecision such as measurement error, but the reversed effect of school closure in other studies might be related to interactions with other interventions. A policy of testing for SARS-CoV-2 may not work so well if testing is not performed until after onset of symptoms and time is needed to get the test results. For a 7-day lagged effect scenario, recommendations to work from home, required closure of workplaces for some sectors, restrictions on gatherings of over a certain number of people (ranging from over 100 to over 1000), requirements to stay at home, international travel controls (i.e. screening international airplane arrivals or total border closure), and contact tracing done for all identified cases were all effective in reducing the reproduction number. In a study on travel restrictions in China, the imported cases from Wuhan dropped under a travel ban which prevented people from traveling into and out of Wuhan [17] . The effectiveness of travel restrictions has been supported by studies modeling its effectiveness in preventing the spread of COVID-19, suggesting they are useful in the early stage of an outbreak when cases are limited to a certain area [22] . In the later stages of an epidemic, travel restrictions may be less effective due to the disease already being widespread [17] . The factors causing the reproduction number to rise were similar to those in a 0-day lagged effect scenario. For a 14-day lagged effect scenario, restrictions on gatherings of more than 10 people had the effect of decreasing the reproduction number, but limited contact tracing (not done for all cases) increased the reproduction number. Not tracing for all confirmed cases may be due to the fact that too many cases have been confirmed at the same time and some footprints are too complex to be recalled, resulting in some healthy people coming into contact with the infected person but not being discovered. If we replace the 11 policies with an NPI in our study, the results show that a stricter NPI policy inhibited an increase in the reproduction number, and show that a combination of different NPI policies was useful. People changed their behavior due to interventions and the threat of COVID-19. The same mobility pattern was found in the US from January 1 to April 20, 2020 [27] . These protective behaviors were related to concern over the severity of infection. Studies have shown that people tend to decrease their daily contacts, reduce trips to crowded places, and wear masks when leaving home during COVID-19 outbreaks [28] . People may integrate physical distancing into their lifestyle or postpone some activities until an epidemic wanes. Simulations in other studies have suggested that if people are in a state of panic such as panic-buying in a crowded area, physical distancing is of little use [29] . Using social incentives and support to educate people on the importance of physical distancing would be suitable in this kind of situation to inhibit spread of the virus.",
+            "cite_spans": [
+                {
+                    "start": 93,
+                    "end": 97,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 173,
+                    "end": 177,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 368,
+                    "end": 372,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1576,
+                    "end": 1580,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1821,
+                    "end": 1825,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1950,
+                    "end": 1954,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 2941,
+                    "end": 2945,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 3192,
+                    "end": 3196,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 3474,
+                    "end": 3478,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "Each policy had its implementation timing, and if the policy was too late or was never implemented, there may be too many nulls in the interaction terms between policy options and the timing of its implementation. Because the timing of each policy was different, we used the earliest policy implementation time as our definition of timing. We considered the interaction term between the stringency index and the timing of the earliest policy implementation. The results in S2 Table showed that the interaction term between the stringency index and the timing of the earliest policy implementation is not significant (p value>0.05). The stringency of the policy and the reduction of human mobility are more important at the earlier stage of pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "In addition, the direct effect from the policy implementation or the human mobility on the Rt in the real world might happen together or have some delays. We examined this issue in two parts, including the effect of the policy on human mobility, and that of human mobility on Rt, and considered possible lag times of 7 days and 14 days. We found an inverse relationship between the stringency index and the change in human mobility, and a positive relationship between lower human mobility and lower Rt. The supplementary results are presented in S1 Appendix.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "In our findings, regardless of the length of the lag, leaving home by walking increased the risk of the reproduction number ascending. Adding the times and length staying at parks reveals a risk of increasing the reproduction number at a 14-day lag.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "The limitation of our research is that the available time interval for local cases was about 1.5 months. This is because some countries did not clearly define the local and non-local transmission cases in press releases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "In our study, we explored the strength of the implemented interventions, individual behaviors and time-varying reproduction number to analyze the association between intervention, behavioral change and time-varying reproduction number worldwide. We show the effect of each type of intervention on the reproduction number so that authorities can evaluate the effect of different combinations of interventions. Authorities can evaluate the influence on transmission rates, economic activity, vulnerable populations, and substantial costs for society based on empirical experience.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "PLOS ONE"
+        },
+        {
+            "text": "COVID-19 is an emerging infectious disease which has rapidly become a worldwide crisis. Using early data to estimate the reproduction number can let policy makers know the disease transmission situation, equipping them with information on how to execute interventions early, advise people to pay attention to personal protection, and alter their behavior to prevent the pandemic from expanding further.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Supporting information S1 Table. Univariate regression of school closure policy versus effective reproduction number. (PDF) S2 Table. Estimated effects on effective reproduction number. (PDF) S1 Appendix. The estimated effects of the stringency of policy on human mobility and of effective reproduction number on human mobility (A: 0-day lag, B: 7-day lag, C: 14-day lag). (A-1) Estimated 0-day lagged stringency index effects on community mobility reports and mobility trends reports; (A-2) Estimated 0-day lagged community mobility and mobility trends effects on effective reproduction number; (B-1) Estimated 7-day lagged stringency index effects on community mobility reports and mobility trends reports; (B-2) Estimated 7-day lagged community mobility and mobility trends effects on effective reproduction number; (C-1) Estimated 14-day lagged stringency index effects on community mobility reports and mobility trends reports; (C-2) Estimated 14-day lagged community mobility and mobility trends effects on effective reproduction number. (PDF)",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 26,
+                    "end": 32,
+                    "text": "Table.",
+                    "ref_id": null
+                },
+                {
+                    "start": 127,
+                    "end": 133,
+                    "text": "Table.",
+                    "ref_id": null
+                }
+            ],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus-Infected Pneumonia",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England Journal of Medicine",
+            "volume": "382",
+            "issn": "13",
+            "pages": "1199--207",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2001316"
+                ],
+                "PMID": [
+                    "31995857"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "School Closures and Influenza: Systematic Review of Epidemiological Studies",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Vynnycky",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hawker",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Olowokure",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mangtani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "BMJ Open",
+            "volume": "3",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmjopen-2012-002149"
+                ],
+                "PMID": [
+                    "23447463"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A Molecular Approach Applied to Enteroviruses Surveillance in Northern Taiwan",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "PLoS One",
+            "volume": "11",
+            "issn": "12",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0167532"
+                ],
+                "PMID": [
+                    "27907198"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Estimating the Effects of Non-Pharmaceutical Interventions on COVID-19 in Europe",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Flaxman",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gandy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2405-7"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Feasibility of Controlling COVID-19 Outbreaks by Isolation of Cases and Contacts",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hellewell",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abbott",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gimma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Glob Health",
+            "volume": "8",
+            "issn": "4",
+            "pages": "30074--30081",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2214-109X%2820%2930074-7"
+                ],
+                "PMID": [
+                    "32119825"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Considerations Relating to Social Distancing Measures in Response to the COVID-19 Epidemic. European Centre for Disease Prevention and Control",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Adlhoch",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Baka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ciotti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Evaluating the Effectiveness of Social Distancing Interventions to Delay or Flatten the Epidemic Curve of Coronavirus Disease",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Matrajt",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Leung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerg Infect Dis",
+            "volume": "26",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid2608.201093"
+                ],
+                "PMID": [
+                    "32343222"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Clinical and Immunological Assessment of Asymptomatic SARS-CoV-2 Infections",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Long",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Shi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-020-0965-6"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Public Health Measures and the Reproduction Number of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Inglesby",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.7878"
+                ],
+                "PMID": [
+                    "32356869"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Estimates of the Reproduction Number for Seasonal, Pandemic, and Zoonotic Influenza: A Systematic Review of the Literature",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Biggerstaff",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cauchemez",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Reed",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gambhir",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Finelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "BMC Infect Dis",
+            "volume": "14",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2334-14-480"
+                ],
+                "PMID": [
+                    "25186370"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Contact Tracing Assessment of COVID-19 Transmission Dynamics in Taiwan and Risk at Different Exposure Periods Before and After Symptom Onset",
+            "authors": [
+                {
+                    "first": "H-Y",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S-W",
+                    "middle": [],
+                    "last": "Jian",
+                    "suffix": ""
+                },
+                {
+                    "first": "D-P",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Internal Medicine",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamainternmed.2020.2020"
+                ],
+                "PMID": [
+                    "32356867"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Oxford COVID-19 Government Response Tracker, Blavatnik School of Government",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hale",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sam",
+                    "middle": [],
+                    "last": "Webster",
+                    "suffix": ""
+                },
+                {
+                    "first": "Anna",
+                    "middle": [],
+                    "last": "Petherick",
+                    "suffix": ""
+                },
+                {
+                    "first": "Toby",
+                    "middle": [],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "Beatriz",
+                    "middle": [],
+                    "last": "Kira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Google COVID-19 Community Mobility Reports",
+            "authors": [
+                {
+                    "first": "Llc",
+                    "middle": [],
+                    "last": "Google",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Serial Interval of COVID-19 among Publicly Reported Confirmed Cases",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cowling",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Meyers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerging Infectious Diseases",
+            "volume": "26",
+            "issn": "6",
+            "pages": "1341--1343",
+            "other_ids": {
+                "DOI": [
+                    "10.3201/eid2606.200357"
+                ],
+                "PMID": [
+                    "32191173"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "A New Framework and Software to Estimate Time-Varying Reproduction Numbers during Epidemics",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cori",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ferguson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fraser",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cauchemez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "American Journal of Epidemiology",
+            "volume": "178",
+            "issn": "9",
+            "pages": "1505--1517",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/aje/kwt133"
+                ],
+                "PMID": [
+                    "24043437"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The Effect of Human Mobility and Control Measures on the COVID-19 Epidemic in China",
+            "authors": [
+                {
+                    "first": "Mug",
+                    "middle": [],
+                    "last": "Kraemer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gutierrez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "6490",
+            "pages": "493--500",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abb4218"
+                ],
+                "PMID": [
+                    "32213647"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "COVID-19 Outbreak Reproduction Number Estimations and Forecasting in Marche",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Chintalapudi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Battineni",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Sagaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Amenta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Italy. International Journal of Infectious Diseases",
+            "volume": "96",
+            "issn": "",
+            "pages": "327--360",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2020.05.029"
+                ],
+                "PMID": [
+                    "32437930"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Transmission Potential and Severity of COVID-19 in South Korea",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Shim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tariq",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chowell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Infectious Diseases",
+            "volume": "93",
+            "issn": "",
+            "pages": "339--383",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2020.03.031"
+                ],
+                "PMID": [
+                    "32198088"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Novel Coronavirus 2019-nCoV: Early Estimation of Epidemiological Parameters and Epidemic Predictions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Read",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bridgen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cummings",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Jewell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Improved Inference of Time-Varying Reproduction Numbers during Infectious Disease Outbreaks",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Stockwin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Van Gaalen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Epidemics",
+            "volume": "29",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.epidem.2019.100356"
+                ],
+                "PMID": [
+                    "31624039"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A Systematic Review of COVID-19 Epidemiology Based on Current Evidence",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Cook",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Dickens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Clinical Medicine",
+            "volume": "9",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/jcm9040967"
+                ],
+                "PMID": [
+                    "32244365"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "An Investigation of Transmission Control Measures during the First 50 Days of the COVID-19 Epidemic in China",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "368",
+            "issn": "",
+            "pages": "638--680",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "School Closure and Management Practices during Coronavirus Outbreaks including COVID-19: A Rapid Systematic Review",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Viner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Croker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet Child & Adolescent Health",
+            "volume": "4",
+            "issn": "5",
+            "pages": "397--404",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2352-4642%2820%2930095-X"
+                ],
+                "PMID": [
+                    "32272089"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Association of Public Health Interventions with the Epidemiology of the COVID-19 Outbreak in Wuhan, China",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "19",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.6130"
+                ],
+                "PMID": [
+                    "32275295"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Coronavirus Disease 2019 (COVID-19) in Children-What We Know So Far and What We Do Not",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Balasubramanian",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Rao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Goenka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roderick",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Ramanan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Indian Pediatrics",
+            "volume": "57",
+            "issn": "5",
+            "pages": "435--477",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s13312-020-1819-5"
+                ],
+                "PMID": [
+                    "32273490"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Association between Mobility Patterns and COVID-19 Transmission in the USA: A Mathematical Modelling Study. The Lancet Infectious Diseases 2020",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Badr",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marshall",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Squire",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099%2820%2930553-3"
+                ],
+                "PMID": [
+                    "32621869"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Changes in Contact Patterns Shape the Dynamics of the COVID-19 Outbreak in China",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "6498",
+            "pages": "1481--1487",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abb8001"
+                ],
+                "PMID": [
+                    "32350060"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A Hybrid Multi-Scale Model of COVID-19 Transmission Dynamics to Assess the Potential of Non-Pharmaceutical Interventions",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bouchnita",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jebrane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chaos, Solitons & Fractals",
+            "volume": "138",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.chaos.2020.109941"
+                ],
+                "PMID": [
+                    "32834575"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Ring map of daily confirmed local transmission cases of COVID-19, Feb. 5 to Apr. 8, 2020. https://doi.org/10.1371/journal.pone.0255873.g001 Fig 2. Ring map of daily effective reproduction number (Rt) with 7-day window of COVID-19, Feb. 11 to Apr. 8, 2020. https://doi.org/10.1371/journal.pone.0255873.g002",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Ring map of daily stringency score from Feb. 11 to Apr. 8, 2020. https://doi.org/10.1371/journal.pone.0255873.g003",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Box plots of stringency scores in 17 countries. https://doi.org/10.1371/journal.pone.0255873.g004",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Radar chart of different physical distancing policies with maximum scores in each country. https://doi.org/10.1371/journal.pone.0255873.g005",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Radar charts of maximum mobility changes during studied period provided by Google. https://doi.org/10.1371/journal.pone.0255873.g006Fig 7. Radar charts of maximum mobility changes during studied period provided by Apple. https://doi.org/10.1371/journal.pone.0255873.g007",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Descriptive statistic of the explanatory variables.Oxford Covid-19 Government Response TrackerCOVID-19 Community Mobility Reports (percent change from baseline)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Difference of mobility changes in the countries with high or low stringency index.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Estimated effects on effective reproduction number.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Estimated effects on effective reproduction number with specific policies.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "(Continued)",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We would like to express our sincere gratitude to Mr. Kent M. Su\u00e1rez for his English editing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        },
+        {
+            "text": "Conceptualization: Ta-Chien Chan.Data curation: Ping-Chen Chung.Formal analysis: Ping-Chen Chung, Ta-Chien Chan.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author Contributions"
+        },
+        {
+            "text": "Project administration: Ta-Chien Chan.Visualization: Ta-Chien Chan.Writing -original draft: Ping-Chen Chung, Ta-Chien Chan.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methodology: Ta-Chien Chan."
+        },
+        {
+            "text": "Ta-Chien Chan.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Writing -review & editing:"
+        }
+    ]
+}

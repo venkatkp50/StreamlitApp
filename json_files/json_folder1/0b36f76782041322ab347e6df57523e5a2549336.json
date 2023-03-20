@@ -1,0 +1,935 @@
+{
+    "paper_id": "0b36f76782041322ab347e6df57523e5a2549336",
+    "metadata": {
+        "title": "The SARS-CoV-2 infection in Thailand: analysis of spike 1 variants complemented by protein structure insights 2 3 7",
+        "authors": [
+            {
+                "first": "Sirawit",
+                "middle": [],
+                "last": "Ittisoponpisan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Shalip",
+                "middle": [],
+                "last": "Yahangkiakan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [
+                    "J E"
+                ],
+                "last": "Sternberg",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Structural Bioinformatics Group",
+                    "institution": "",
+                    "location": {
+                        "postCode": "SW7 2AZ",
+                        "settlement": "London",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Alessia",
+                "middle": [],
+                "last": "David",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Structural Bioinformatics Group",
+                    "institution": "",
+                    "location": {
+                        "postCode": "SW7 2AZ",
+                        "settlement": "London",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "13",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "performed on variants of global concern identified in Europe, America and Africa, where the infections 61 were severe and the fatality rates high [15] [16] [17] . However, studies on the effect of variants identified in 62",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 150,
+                    "text": "[15]",
+                    "ref_id": null
+                },
+                {
+                    "start": 151,
+                    "end": 155,
+                    "text": "[16]",
+                    "ref_id": null
+                },
+                {
+                    "start": 156,
+                    "end": 160,
+                    "text": "[17]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Thailand are limited [18] [19] [20] [21] . 63",
+            "cite_spans": [
+                {
+                    "start": 21,
+                    "end": 25,
+                    "text": "[18]",
+                    "ref_id": null
+                },
+                {
+                    "start": 26,
+                    "end": 30,
+                    "text": "[19]",
+                    "ref_id": null
+                },
+                {
+                    "start": 31,
+                    "end": 35,
+                    "text": "[20]",
+                    "ref_id": null
+                },
+                {
+                    "start": 36,
+                    "end": 40,
+                    "text": "[21]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this study, we aim to provide structural insights into SARS-CoV-2 spike variants identified 64 in Thailand to obtain insights into SARS-CoV-2 Thai outbreaks and identify variants of interest which 65 may require additional investigations. 66",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "were from Thailand and contained 52 spike variants. Forty-one of these variants could be mapped onto 114 a phylogenetic tree (Figure 1 ). Two major clusters of strains from the first and second SARS-CoV-2 115",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 125,
+                    "end": 134,
+                    "text": "(Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "Thai outbreaks were identified. The first outbreak contained variants from seven clades of SARS-CoV-116 2 strains. Although the variant of global concern p.D614G was already detected in many strains since 117",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "March 2020, it became the prevalent strain in the second outbreak (clade GH, Figure 1) . 118",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 77,
+                    "end": 86,
+                    "text": "Figure 1)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "Six SARS-CoV-2 spike variants, p.T51N, p.P57T, p.I68R, p.S205T, p.K278T, p.G832C, were 119 unique to Thai strains and not identified in genetic sequences from other countries. Notably, three 120 variants (p.I68R, p.S205T, and p.G832C) were found during the first outbreak, and one (p.K278T) was 121 found during the second outbreak. The other two Thailand-specific variants (p.T51N and p.P57T), 122 which co-localized in one genomic sequence, could not be mapped onto the phylogenetic tree (ID: 123 708814, clade: GH, collected on 9 October 2020). This strain had a total of 11 variants: eight of them -124 p.V47A, p.T51N, p.Q52K, p.F55L, p.P57T, p.V70L, p.S71P, and p.A688P -were not shared by any 125 other Thai strains. When the whole genome of this record was used in a BLAST search against SARS-126",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "CoV-2 records on the GISAID web server, similar strains were found mainly in samples from Saudi 127",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Arabia (data not shown). This suggests that this strain was not a result of local transmission but may 128 have been introduced into Thailand from overseas and later mutated to contain the two unique variants 129 p.T51N and p. P57T. 130 No structural changes to the spike trimer and the spike-hACE2 interaction were identified with the 140 exception of p.S205T, which was predicted to reduce the structural stability of the spike protein due to 141 drastic reduction of a surface cavity. Cavity alteration has been shown to affect protein stability [14-142 16]. Hence, it is likely that this variant is deleterious to the virus. Recently, p.I68R was discovered in a 143 mutagenesis study of SARS-CoV-2 strains in mice and reported to be associated with the virus's ability 144",
+            "cite_spans": [
+                {
+                    "start": 227,
+                    "end": 236,
+                    "text": "P57T. 130",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "to escape neutralising antibodies [29] . However, whether this variant enhances the viral escape 145 mechanism in humans is yet to be elucidated. Despite no structural damage found from p.K278T, the 146 extra h-bond formed between the main chain of Thr278 and the side chain of Thr286 was due to the 147 side chain repacking of Thr286 rather than the mutation from Lys278 to Thr278. Nevertheless, the fact 148 that all of the six Thailand-specific variants were rare (found in < 1% of the samples collected) could 149 imply that they are unlikely to enhance the virus's transmissibility. We next examined additional 150 variants identified in Thailand (the full structural analysis of the 52 spike variants found in Thailand is 151 provided in Supplementary Table 1) South East Asian countries [32, 33] . The higher transmissibility of p.D614G can also explain the higher outbreak. No clear structural damage was identified by our analysis. Variant p.S459F was predicted to 165 disrupt an H-bond formed within surface residues (an H-bond linking Arg457 and Ser459 was disrupted 166 when the variant was simulated on PDB 6XR8, while a disruption of an H-bond formed between two 167 consecutive residues Ser459 and Asn460 was detected when tested on PDB 4M0J), which is likely to 168 be compensated by the interaction with nearby water molecules and therefore not structurally 169 destabilising. Variant p.L5F was a newly emerging variant in the second Thai outbreak. It is located 170 near the N-terminal of the spike protein. Unfortunately, this residue was not covered by the available 171 3D coordinates and no structural analysis could be performed. Variant p.S939F was not predicted to 172 affect the structure of the spike trimer or its interaction with ACE2. Accordingly, a previous study 173 suggested that this variant is not likely to enhance SARS-CoV-2 infectivity [34] . is a critical residue for spike-hACE2, and its substitution to tyrosine is a variant of concern. However, 191 our analysis did not suggest that the asparagine to threonine substitution may cause any major structural Interestingly, despite analysing nearly 500,000 sequences, some residues in the SARS-CoV-2 195 spike protein did not contain any variant. Many of these highly conserved residues are clustered in the 196 receptor-binding domain, which binds to the human ACE2 and triggers host cell invasion [12, 13, 35] , 197 and the Coronavirus S2 domain, which mediates viral cell membrane fusion [41] . The lack of variants 198 in these regions may suggest biological importance of those particular residues on protein folding and/or 199 interaction. As genetic variations are usually maintained by natural selection, any alteration on these 200 highly conserved residues could be deleterious to the survival of the virus. Conserved domains and 201 residues could therefore serve as biomarkers [42] or promising drug targets against SARS-CoV-2 [41, 202 43] . 203",
+            "cite_spans": [
+                {
+                    "start": 34,
+                    "end": 38,
+                    "text": "[29]",
+                    "ref_id": null
+                },
+                {
+                    "start": 794,
+                    "end": 798,
+                    "text": "[32,",
+                    "ref_id": null
+                },
+                {
+                    "start": 799,
+                    "end": 802,
+                    "text": "33]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1875,
+                    "end": 1879,
+                    "text": "[34]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2388,
+                    "end": 2392,
+                    "text": "[12,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2393,
+                    "end": 2396,
+                    "text": "13,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2397,
+                    "end": 2400,
+                    "text": "35]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2480,
+                    "end": 2484,
+                    "text": "[41]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 2878,
+                    "end": 2882,
+                    "text": "[42]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 2928,
+                    "end": 2940,
+                    "text": "[41, 202 43]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 744,
+                    "end": 766,
+                    "text": "Supplementary Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "One limitation in this study is that the Thai sequences available on NCBI and GISAID were 204 from two sources: the state quarantines and domestic hospitals/research institutions. The strains 205 collected in the state quarantine zones are likely imported in Thailand and less likely to cause local 206 transmission. Unfortunately, the available data did not allow to distinguish the variant source. Hence, 207 the number of variants found in Thailand in this study could be an overestimation of the variants that 208 actually caused local transmissions. Nevertheless, it is always important to keep tracking of possible 209 new strains as the mutation rate is very high in single-stranded RNA viruses compared to DNA viruses 210 [44] . The high mutation rate poses a great challenge for developing vaccines [45] , highlighting why 211 incorporating conserved residue information into structural analyses could be essential for discovering 212 other alternative measures for COVID-19 diagnosis, treatment, and prevention. 213",
+            "cite_spans": [
+                {
+                    "start": 730,
+                    "end": 734,
+                    "text": "[44]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 808,
+                    "end": 812,
+                    "text": "[45]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Another limitation is that at the time of this study only the 3D coordinates of the spike trimer 214 and the spike-hACE2 interaction were available. Recently, the spike protein was reported to bind to 215 other human proteins, such as CD209 [46] , HAVCR1 [47] , and NRP1 [48, 49] , and other mammal 216 proteins [50] . Therefore, in this study, the number of interface residues could have been underestimated, 217",
+            "cite_spans": [
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[46]",
+                    "ref_id": null
+                },
+                {
+                    "start": 255,
+                    "end": 259,
+                    "text": "[47]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 271,
+                    "end": 275,
+                    "text": "[48,",
+                    "ref_id": null
+                },
+                {
+                    "start": 276,
+                    "end": 279,
+                    "text": "49]",
+                    "ref_id": null
+                },
+                {
+                    "start": 312,
+                    "end": 316,
+                    "text": "[50]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "and it is possible that in the future, additional variants will be classified according to their effect on 218 additional virus-host interaction. It is well established that interface residues are hot spots for disease 219 variants [51-53]. The p.N501Y is an example that shows how viral variants occurring at protein 220 interface could increase viral transmissibility and highlights that any SARS-CoV-2 variant occurring at 221 the spike trimer interface or spike-hACE2 interface should be carefully analysed. 222 223",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this study, we explored the structural effect of SARS-CoV-2 spike variants identified in 225",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions 224"
+        },
+        {
+            "text": "Thailand, highlighting how the second Thai outbreak was likely caused by the variant of global concern 226 p.D614G. Additionally, we highlighted highly conserved residues on the spike protein, which could ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions 224"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Genomic epidemiology of novel coronavirus -Thailand-focused subsampling",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Dictionary of Protein Secondary Structure: Pattern Recognition of Hydrogen-bonded and Geometrical",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Kabsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sander",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Conservation and Prediction of Solvent Accesibility in Protein Families",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rost",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sander",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "Proteins Struct. Funct. Genet",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "An Introduction to Hydrogen Bonding",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jeffrey",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Protein Stabilization by Salt Bridges: Concepts, Experimental Approaches and",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bosshard",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Marti",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Jelesarov",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Can Predicted Protein 3D Structures",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ittisoponpisan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Khanna",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Alhuzimi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sternberg",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmb.2019.04.009"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "A Pair of Non-Competing Neutralizing Human Monoclonal Antibodies Protecting from Disease in a SARS",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Habenicht",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "CoV-2 Infection Model. bioRxiv",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2021.04.16.440101"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Veesler, D. Structure, Function, and Antigenicity of the",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Walls",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tortorici",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wall",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mcguire",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Structural and Functional Properties of SARS-CoV-2 Spike Protein",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Biomarkers of COVID-19 and Technologies to Combat SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Adv. Biomark. Sci. Technol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Viral Mutation Rates",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sanju\u00e1n",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Nebot",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Chirico",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mansky",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Belshaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Virol",
+            "volume": "84",
+            "issn": "19",
+            "pages": "9733--9748",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Rapid Evolution of RNA Viruses",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Steinhauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Holland",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Annu. Rev. Microbiol",
+            "volume": "",
+            "issn": "1",
+            "pages": "409--431",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "KIM-1/TIM-1 Is a Receptor for SARS-CoV-2 in Lung and Kidney\" License: Creative Commons Attribution 363 4.0 International License (CC-BY 4.0). Rapid Rev. COVID-19",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Review",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1162/2e3983f5.919b71a6.364"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Neuropilin-1 Facilitates SARS-CoV-2 Cell Entry and Infectivity. Science (80-. )",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anastasina",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "856--366",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abd2985"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Neuropilin-1 Is a Host Factor for SARS-CoV-2 Infection",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hollandi",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Science",
+            "volume": "2020",
+            "issn": "6518",
+            "pages": "861--369",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abd3072"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "SARS-CoV-2 Spike Protein Predicted to Form Complexes with Host Receptor Protein Orthologues from a Broad Range 372 of Mammals",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Sci. Rep",
+            "volume": "2020",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41598-020-71936-5"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Protein-Protein Interaction Sites Are Hot Spots for Disease",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Razali",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Wass",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sternberg",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The Contribution of Missense Mutations in Core and Rim Residues of Protein-Protein Interfaces to",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sternberg",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": ". p.D614G was identified in 48.7% of all sequences analysed. This 152 variant was predicted to cause the loss of inter-chains H-bonds between aspartic acid 614 and lysines 153 835 and 854 in the spike trimer, which could affect the spike trimer packing. A study by Yurkovetskiy 154 et al. using cryo-electron microscopy, indeed, confirms that p.D614G disrupts an interprotomer contact, 155 thus facilitating the spike \"open conformation\" [16, 30]. This variant is estimated to increase the 156 transmissibility of SARS-CoV-2 by 20% [31], thus explaining why, although identified in few samples 157 in March 2020 (first Thai outbreak) before a strict lockdown measure was enforced, it had become the 158 dominant strain by February 2021 (second Thai outbreak), similarly to what was observed in other 159",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "174Variant p. N501T was the only amino acid substitution occurring at the interface between spike 175 and the hACE2. Asparagine 501 is a critical residue involved in the stabilization of lysine 353, one of 176 the two critical lysines involved in spike-hACE2 interaction[35]. Indeed, asparagine 501 harbors the 177 variant of concern p.N501Y, which has been proposed to enhance spike-hACE2 affinity through the 178 introduction of new hydrogen bonds between tyrosine 501 on the spike protein and residues on the 179 hACE2 [17, 36, 37]. We analysed the structural consequences of p.N501T and did not observe major 180 structural changes. Indeed, an in vitro study showed this variant may cause a reduction in spike-hACE2 during the two major SARS-CoV-2 outbreaks. Our phylogenetic analysis shows how the variant of 185 global concern p.D614G already present in March 2020 became the dominant strain during the second 186Thai outbreak in late December 2020 -February 2021. This variant was detected in the majority of the 187 strains collected from the seafood market [38, 39]. Found predominantly in Europe, this spike protein 188 variant has been shown to have a higher transmissibility rate compared to the original Wuhan strain 189 [31, 40]. The screening of variants present in Thailand also identified variant p.N501T. Aspargine 501 190",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "192 change. Our results are supported by the in vitro analysis performed by Shang et al. (2020b) , which did 193 not show an increased spike-hACE2 binding affinity. 194",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "227 have implications for the development of biomarkers or drug targets. The insights obtained from this 228 study could aid SARS-CoV-2 variants prioritisations and help molecular biologists and virologists 229 working on strain surveillance 230 [31] Volz, E.; Hill, V.; McCrone, J. T.; Price, A.; Jorgensen, D.; O'Toole, \u00c1.; Southgate, J.; Johnson, R.; Jackson, B.; Nascimento, F. 323 F.; et al. Evaluating the Effects of SARS-CoV-2 Spike Mutation D614G on Transmissibility and Pathogenicity. Cell, 2021, 184 324(1). https://doi.org/10.1016/j.cell.2020.11.020.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Phylogenetic analysis of SARS-CoV-2 strains collected in Thailand from December 2019 to In the phylogenetic tree, each node represents a strain. White boxes with colour borders 394 representbranches where variants evolved and are shared among descendants. Colour boxes indicate newly 395 evolved variants found on each particular leaf node. Variants that cannot be mapped directly onto this tree due to 396 incomplete strain information are estimated and represented as white boxes with dotted borders. Variants that 397 were unique to Thai strains are indicated by the red asterisk (\uf0ab).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Structural analysis of Thai unique variants. In each panel, the wild type structure is presented on 400 top and the predicted mutant on the bottom. The PDB structure used in this analysis was 6XR8. Chain A, B, and 401 C are represented in pale blue, light pink, and yellow, respectively. All variants were simulated on Chain A. H-402 bonds are shown as orange dashed lines.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Analysis of six variants found specifically in Thailand. 386",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

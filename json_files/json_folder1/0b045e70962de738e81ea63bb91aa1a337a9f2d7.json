@@ -1,0 +1,3332 @@
+{
+    "paper_id": "0b045e70962de738e81ea63bb91aa1a337a9f2d7",
+    "metadata": {
+        "title": "CAUSAL INFERENCE FOR MULTIPLE CONTINUOUS EXPOSURES VIA THE MULTIVARIATE GENERALIZED PROPENSITY SCORE A PREPRINT",
+        "authors": [
+            {
+                "first": "Justin",
+                "middle": [
+                    "R"
+                ],
+                "last": "Williams",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of California",
+                    "location": {
+                        "postCode": "90049",
+                        "settlement": "Los Angeles Los Angeles",
+                        "region": "CA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Catherine",
+                "middle": [
+                    "M"
+                ],
+                "last": "Crespi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of California",
+                    "location": {
+                        "postCode": "90049",
+                        "settlement": "Los Angeles Los Angeles",
+                        "region": "CA",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The generalized propensity score (GPS) is an extension of the propensity score for use with quantitative or continuous exposures (e.g., dose of medication or years of education). Current GPS methods allow estimation of the dose-response relationship between a single continuous exposure and an outcome. However, in many real-world settings, there are multiple exposures occurring simultaneously that could be causally related to the outcome. We propose a multivariate GPS method (mvGPS) that allows estimation of a dose-response surface that relates the joint distribution of multiple continuous exposure variables to an outcome. The method involves generating weights under a multivariate normality assumption on the exposure variables. Focusing on scenarios with two exposure variables, we show via simulation that the mvGPS method can achieve balance across sets of confounders that may differ for different exposure variables and reduces bias of the treatment effect estimates under a variety of data generating scenarios. We apply the mvGPS method to an analysis of the joint effect of two types of intervention strategies to reduce childhood obesity rates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Analyzing data from observational studies and non-randomized experiments to estimate causal effects is challenging due to potential confounding between the exposure and outcome. Techniques such as propensity score methods can help to remove sources of potential confounding and return valid estimates of the treatment effect [39] . Propensity score methods were first developed for binary treatments, and then extended to categorical, or multiple, treatments, which introduced the term \"generalized propensity score\" (GPS) [21] . In the context of a categorical treatment variable, the GPS corresponds to the conditional probability of receiving a particular treatment given a set of confounders. Following the extension to categorical treatments, the GPS was adapted to the setting of continuous exposures via the use of conditional densities [16, 20] .",
+            "cite_spans": [
+                {
+                    "start": 325,
+                    "end": 329,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 523,
+                    "end": 527,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 844,
+                    "end": 848,
+                    "text": "[16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 849,
+                    "end": 852,
+                    "text": "20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Originally, the GPS for continuous exposures was estimated using Gaussian densities, with adjustment for confounding accomplished through either covariate regression [16] or stratification [20] . Several recent methods have aimed at increasing flexibility for estimating the GPS by using gradient boosting [54] , kernel smoothing [9, 24] , or ensemble algorithms [27] . Other methods focus on the use of weights [37] , including incorporating covariate balancing properties in estimation using a penalized likelihood approach [10] or constrained optimization on the entropy of the weights [45, 49] . All of these methods have maintained the assumption that the exposure is univariate, i.e., a single continuous treatment variable. Methods to accommodate multiple simultaneous treatment exposures have been only briefly mentioned in the literature [20] .",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 170,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 189,
+                    "end": 193,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 306,
+                    "end": 310,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 330,
+                    "end": 333,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 334,
+                    "end": 337,
+                    "text": "24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 363,
+                    "end": 367,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 412,
+                    "end": 416,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 526,
+                    "end": 530,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 589,
+                    "end": 593,
+                    "text": "[45,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 594,
+                    "end": 597,
+                    "text": "49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 847,
+                    "end": 851,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "There are many situations in which evaluating the combined effect of multiple simultaneous exposures is critical to answering scientific questions. In medicine, combination therapies, which involve the patient taking several medi-cations simultaneously, have been shown to be effective for treating Crohn's disease [6] , cancer [22] , hypertension [13] , and HIV [34] . Typical methods for estimation of the dose response surface for combination treatments requires careful design with repeated randomized experiments in order to estimate the optimal combination of treatment doses [25] . When such experimentation is not feasible, researchers may wish to use available data from observational or non-randomized studies to estimate the joint effects. For example, there is currently interest in studying potential combination therapies for COVID-19 using available data from non-randomized studies. However, determining a potentially beneficial dose of several medications may be complicated due to confounding by patient demographic characteristics, comorbities or other factors [11, 12, 43, 44] .",
+            "cite_spans": [
+                {
+                    "start": 315,
+                    "end": 318,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 328,
+                    "end": 332,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 348,
+                    "end": 352,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 363,
+                    "end": 367,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 582,
+                    "end": 586,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1080,
+                    "end": 1084,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1085,
+                    "end": 1088,
+                    "text": "12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1089,
+                    "end": 1092,
+                    "text": "43,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1093,
+                    "end": 1096,
+                    "text": "44]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this article we develop methods to estimate the causal effects of multiple continuous exposures occurring simultaneously, using data from a non-randomized study. We develop a general framework for estimating the causal effects of a multivariate exposure of arbitrary dimension, but focus on bivariate exposures in our simulations and motivating example. The primary objective is unbiased estimation of the dose-response surface of the average outcome given a particular combination of exposure values. We propose methods for estimating weights using a multivariate generalized propensity score, which we call mvGPS, and use weighted regression to estimate the dose-response surface. Our methods rely on the assumption that the exposure variables have a multivariate normal distribution.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In Section 2, we introduce our motivating example, which involves assessing the joint effect of two types of intervention strategies for reducing childhood obesity rates in Los Angeles County. In Section 3, we propose a method of causal inference with multiple simultaneous continuous exposures using the multivariate generalized propensity score. Section 4 presents a simulation study designed to highlight strengths and limitations of the methodology. Section 5 applies the proposed methods to our motivating example. A discussion in Section 6 concludes the paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Obesity rates among low-income preschool-aged children in Los Angeles County were consistently higher than the national average in [2003] [2004] [2005] [2006] [2007] [2008] [2009] , with about 20% of such children classified as obese (BMI \u2265 30 kg/m 2 ) [35] . In response, several organizations, including Los Angeles County Department of Public Health, First 5 LA, Nemours, and the Special Supplemental Nutrition Program for Women, Infants and Children (WIC), implemented programs and policies aimed at reducing childhood obesity in the county. The interventions used a wide variety of different approaches and reflected a large investment of resources.",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 137,
+                    "text": "[2003]",
+                    "ref_id": null
+                },
+                {
+                    "start": 138,
+                    "end": 144,
+                    "text": "[2004]",
+                    "ref_id": null
+                },
+                {
+                    "start": 145,
+                    "end": 151,
+                    "text": "[2005]",
+                    "ref_id": null
+                },
+                {
+                    "start": 152,
+                    "end": 158,
+                    "text": "[2006]",
+                    "ref_id": null
+                },
+                {
+                    "start": 159,
+                    "end": 165,
+                    "text": "[2007]",
+                    "ref_id": null
+                },
+                {
+                    "start": 166,
+                    "end": 172,
+                    "text": "[2008]",
+                    "ref_id": null
+                },
+                {
+                    "start": 173,
+                    "end": 179,
+                    "text": "[2009]",
+                    "ref_id": null
+                },
+                {
+                    "start": 253,
+                    "end": 257,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Motivation"
+        },
+        {
+            "text": "The Early Childhood Obesity Systems Science (ECOSyS) study, funded by National Institute of Health R01 HD072296, sought to evaluate the impact of these programs on childhood obesity prevalence. To this end, ECOSyS collected information on the nature, timing, location and reach of programs implemented in the county in 2003-2016. The research team also developed a method of calculating a \"community intervention dose index that aggregates exposure to childhood obesity interventions over multiple different programs [52] . The community intervention dose index is calculated using a multistep procedure. Each program is coded to location and year of implementation, extent of reach into the target population, and which of nine different intervention strategies it used. The nine strategies are listed in Table 1 . The strategies are categorized as \"micro strategies, which target specific individuals, or \"macro strategies, which target a population at large. By aggregating over the strategies implemented in a particular location during a particular year, strategy-specific as well as total micro and macro intervention dose indices can be calculated.",
+            "cite_spans": [
+                {
+                    "start": 517,
+                    "end": 521,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 806,
+                    "end": 813,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Motivation"
+        },
+        {
+            "text": "For this paper, we focus on intervention exposures stemming from WIC programs. WIC serves low-income families and has seven agencies within Los Angeles County with approximately 90 clinics. While WIC offers many regular services, primarily food assistance and nutrition education that are uniform from clinic to clinic, WIC agencies can also receive additional funding to implement intervention programs. These programs are implemented non-randomly at clinics due to differences in community needs and other considerations. Our motivating example focuses on WIC intervention programs implemented in 2010-2016, given that a major change in the WIC food package occurred in 2009 that may have altered family behaviors and neighborhood food environments [15, 47] .",
+            "cite_spans": [
+                {
+                    "start": 751,
+                    "end": 755,
+                    "text": "[15,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 756,
+                    "end": 759,
+                    "text": "47]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Motivation"
+        },
+        {
+            "text": "A total of 32 WIC intervention programs implemented in Los Angeles County from 2010-2016 were cataloged by the ECOSyS research team. Information about each program was obtained, including how it was implemented, the estimated reach in terms of client participation, which clinics participated, and how long the program was active. These exposures were mapped to census tracts where WIC participating children live by identifying the implementing WIC clinics and then defining a catchment area around the clinic intended to capture the exposed population. Catchment areas were defined for each clinic using records of client attendance, and varied by strategy type (macro vs. micro). Children living in census tracts that fell within a catchment area were assumed to be exposed. Exposure values at census tracts were then aggregated across programs by strategy and by year to obtain a single continuous dose for each of the nine intervention strategies. Strategy-specific doses were then summed into macro and micro intervention doses, which were log transformed due to skewness. More details about the dose construction procedure are provided in a forthcoming paper. Figure 1 shows the resultant joint distribution of macro and micro intervention dose for the WIC intervention programs averaged over our defined intervention period, 2010-2016. Each point in the figure represents a census tract. WICparticipating children residing in a particular census tract were presumed to receive the calculated doses.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1167,
+                    "end": 1175,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Motivation"
+        },
+        {
+            "text": "The outcome of interest was change in census tract-level childhood obesity prevalence. Childhood obesity prevalence was measured using administrative records from children ages 2-5 years who participated in WIC in Los Angeles County during 2007-2016, compiled by the WIC Data Mining Project, see https://lawicdata.org for more details. From these records, obesity prevalence by census tract and year was constructed for census tracts with at least 30 WIC-enrolled children. Census tracts used in the analysis were restricted to 8 regions within Los Angeles County that were targeted as part of the ECOSyS data collection effort. This resulted in a total of n = 1079 census tracts which serve as the units of analysis. The outcome of interest, Y , was the difference in average obesity prevalence between post, 2012-2016, and pre, 2007-2009, intervention, i.e., Y =p post \u2212p pre . The post intervention period was taken to start in 2012 rather than 2010 to account for potential lag in treatment effects.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Motivation"
+        },
+        {
+            "text": "We aimed to estimate the dose-response surface of Y, change in childhood obesity prevalence, associated with combinations of macro and micro intervention exposure doses, after removing bias due to non-random assignment of programs. Understanding the simultaneous effect of macro and micro intervention strategy exposures is important to help policy makers make decisions about the allocation of scarce resources to various intervention strategies [40] .",
+            "cite_spans": [
+                {
+                    "start": 447,
+                    "end": 451,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Motivation"
+        },
+        {
+            "text": "Our approach to developing the multivariate generalized propensity score follows the Neyman-Rubin causal model and uses the potential outcome notation introduced by Neyman [30] and made popular by Rubin [41] . Let Y i denote the outcome of interest for unit i from a population of size n and D i be a vector of length m providing the values for m continuous exposures for unit i. The confounders relevant to each exposure are allowed to be different. Let C i = {C i1 , . . . , C im } be a set of size m where each element in the set, C ij , j = 1, . . . , m, is a p j dimensional vector of baseline confounders associated with the j th exposure and the outcome. We denote the value of the k th confounder of the j th exposure for the i th individual as C ijk , with i = 1, . . . , n, j = 1, . . . , m, and k = 1, . . . , p j . If all exposures have identical confounders, then C i1 = \u00b7 \u00b7 \u00b7 = C im = C i and p 1 = \u00b7 \u00b7 \u00b7 = p m = p. The observed data for the i th unit is represented as (Y i , D i1 , . . . , D im , C i11 , . . . , C i1p1 , . . . , C im1 , . . . , C impm ). Further, we define the potential outcome Y i (d) as the outcome that the i th subject would have if assigned the exposure vector d = (d 1 , . . . , d m ). We will use capital D to represent the multivariate random variable representing dose combinations, and lowercase d as a particular value in the multidimensional space. Estimation focuses on the average dose-response function defined as",
+            "cite_spans": [
+                {
+                    "start": 172,
+                    "end": 176,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 203,
+                    "end": 207,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Notation"
+        },
+        {
+            "text": ", which is assumed to be well defined for any d \u2208 D \u2286 R m . Note that with a bivariate exposure, i.e., m = 2, \u00b5(d) is a dose-response surface in 3-dimensional space.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Notation"
+        },
+        {
+            "text": "We make the following identifying assumptions: weak ignorability, positivity, and stable-unit treatment value. Weak ignorability, also known as selection on observables or unconfoundedness, states that exposure is conditionally independent of the potential outcomes given the appropriate set of confounders. We write this in the multivariate case as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": "When this assumption holds, we can replace the high-dimensional conditioning set with a scalar value by means of the conditional density function of exposure [39] . In our case the conditional density is defined as the multivariate generalized propensity score (mvGPS), which we denote f D|C1,...,Cm . Weak ignorability is often the most difficult assumption to rationalize as it requires perfect knowledge and collection of all possible confounders of the exposures and outcome in the set C. We assume that the set C is well defined and that there is no unmeasured confounding.",
+            "cite_spans": [
+                {
+                    "start": 158,
+                    "end": 162,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": "The second assumption, positivity, claims that all units have the potential to receive a particular level of exposure given any value of the confounders. In notation, we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": "This assumption requires that we carefully define D such that all units have the potential to receive any particular value in the domain. In the case of a univariate continuous exposure, positivity is often enforced by restricting estimation to either the observed range or a trimmed version [7] . For example, using the observed range we would define D = [d 0 , d 1 ] where d 0 and d 1 correspond to the minimum and maximum observed exposure. In the case of a multivariate exposure, a natural inclination might be to extend this approach to multiple dimensions by setting D = G where G is defined as",
+            "cite_spans": [
+                {
+                    "start": 292,
+                    "end": 295,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": "where d 0j and d 1j are the minimum and maximum observed exposure, respectively, along dimension j. However, when exposure variables are correlated, i.e., Cov(D j , D j ) = 0 for j = j , the region G may include areas with few or no observations. Instead, we propose defining the estimable region for multivariate exposures as D = H \u2282 G, where H is defined as the convex hull of the multivariate exposure [5] . Using a convex hull ensures that inference is restricted to regions where data are observed and avoids extrapolating to sparse data regions in the multidimensional space. For the case of m = 2, Figure 2 shows the difference between regions G and H when Cov(D 1 , D 2 ) = 0.5. Additionally, similar to the univariate case, we can define trimmed versions of G or H. By specifying a value q \u2208 [0.5, 1], we construct G q using trimmed minimum and maximum values as",
+            "cite_spans": [
+                {
+                    "start": 405,
+                    "end": 408,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 605,
+                    "end": 613,
+                    "text": "Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": ", and Q(\u00b7, q) is the sample quantile function. To create the trimmed convex hull, H q , we recalculate the convex hull using the subset of observations that falls within the trimmed minimum and maximum across all exposure dimensions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": "The final assumption is the stable-unit treatment value assumption (SUTVA), which states that the potential outcome of each unit does not depend on the exposure that other units receive and that there exists only one version of each exposure [42] . This assumption rules out potential interference between units or other errors in defining the potential outcomes caused by multiple versions of the exposure. Therefore the potential outcomes are well-defined for each unit and the observed outcome given exposure D = d corresponds to the potential outcome, i.e., Y i (d) = Y i . We discuss the tenability of this assumption to our data application in the Discussion.",
+            "cite_spans": [
+                {
+                    "start": 242,
+                    "end": 246,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Identification Assumptions"
+        },
+        {
+            "text": "Using the identifying assumptions above, there are a variety of different methods to estimate the dose-response function including covariate adjustment [16] or stratification [20] . We focus on weighted estimation, originally proposed for binary treatments with marginal structural models [38] and motivated by weights used in survey sampling [17] . We aim to construct a set of weights, w, that when applied to the observed data return a consistent estimate for the average dose-response function, i.e.,",
+            "cite_spans": [
+                {
+                    "start": 152,
+                    "end": 156,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 175,
+                    "end": 179,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 289,
+                    "end": 293,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 343,
+                    "end": 347,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "In the case of univariate continuous exposure, weights are constructed by either estimating the generalized propensity score [10, 16, 20, 24, 54] or by direct optimization using an entropy loss function [45, 49] . We choose to extend the generalized propensity score by using an appropriately defined multivariate conditional distribution, which we refer to as the multivariate generalized propensity score (mvGPS). The weights are thus constructed as the ratio of the multivariate marginal density to the conditional density",
+            "cite_spans": [
+                {
+                    "start": 125,
+                    "end": 129,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 130,
+                    "end": 133,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 134,
+                    "end": 137,
+                    "text": "20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 138,
+                    "end": 141,
+                    "text": "24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 142,
+                    "end": 145,
+                    "text": "54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 203,
+                    "end": 207,
+                    "text": "[45,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 208,
+                    "end": 211,
+                    "text": "49]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where the numerator is the marginal density of the multivariate exposure and the denominator is the mvGPS. These weights are referred to in the literature as stabilized inverse probability of treatment weights (IPTW) [38] . To motivate the intuition behind constructing weights in this manner, we can note that w = 1 when the probability of exposure is independent of the confounding set C, i.e., f (D | C 1 , . . . , C m ) = f (D), which would hold in the case of a randomized experiment. For tractability, we propose using multivariate normal models for both densities, i.e.,",
+            "cite_spans": [
+                {
+                    "start": 217,
+                    "end": 221,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where each \u03b2 T j is a row vector of length p j corresponding to the effect of the set of confounders C j on D j . By factorizing both the numerator and denominator in Equation 2, we can compute w using full conditionals, i.e.,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where each conditional expression is univariate normal. The second line is a result of the fact that the j th exposure is independent of the confounders of other exposures given C j , i.e.,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where C \u2212j represents the set of confounders excluding C j , i.e.,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "Evaluating only the conditional densities reduces computational burden by eliminating the need to directly estimate the covariance matrices, \u03a3 and \u2126.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "Let \u03b8 be the collection of mean and variance parameters from all of the univariate normal densities in Equation 3 . Estimation of the parameters to obtain\u03b8 proceeds by maximizing the corresponding conditional density via least squares. The weight for the i th subject, w i , is obtained by evaluating the densities using\u03b8 with the values of the observed exposures, D i1 , . . . , D im , and confounders, C i1 , . . . , C im .",
+            "cite_spans": [
+                {
+                    "start": 112,
+                    "end": 113,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "When the weights are properly specified, the covariance between each exposure D j and confounder C jk for j = 1, . . . , m and k = 1, . . . , p j is zero:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "This balancing property of the weights serves as an important diagnostic when using the mvGPS as part of a causal analysis [2] . Weights that do not reduce the exposure-confounder correlation suggest that the distributional assumptions are invalid, the propensity equations are misspecified, or that there are insufficient data as the balance is achieved asymptotically.",
+            "cite_spans": [
+                {
+                    "start": 123,
+                    "end": 126,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "Further, it follows that these weights are already normalized, i.e, E[w] = 1, and they maintain the marginal moments of D and",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where the expectations are taken with respect to the joint density f (D, C 1 , . . . , C m ).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "It remains to show that the weights as constructed satisfy Equation 1. To do this we follow the logic proposed by Robins on using IPTW to correct for confounding [37] . We first note that the joint density of the potential outcome can be factorized as",
+            "cite_spans": [
+                {
+                    "start": 162,
+                    "end": 166,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where the second line follows from the assumption of weak ignorability. We can then let f (D) be a density for our multivariate exposure and construct a new joint density f * where we replace f (D | C 1 , . . . , C m ) with f (D) as would be the case if the exposures were independent of the confounders. This new density is written as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "where the marginal mean of the potential outcomes is equivalent under either joint density f or f * , i.e.,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "Using this new density we can write our dose response as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "using the SUTVA assumption. The resulting expression, E * [Y | D = d], is equivalent to the mean expression in a linear regression of the observed exposures on outcome. Finally, we have",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "which gives us the result from Equation 1 that our weighted regression does indeed provide a consistent estimate of the dose-response function.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Multivariate Generalized Propensity Score"
+        },
+        {
+            "text": "We conducted a simulation study to demonstrate the performance of the mvGPS method under different scenarios of confounding and compare it to three commonly used univariate methods. The univariate methods were entropy balancing [45] , the covariate balanced generalized propensity score (CBGPS) [10] , and the generalized linear propensity score (PS). The entropy balancing method uses non-parametric constrained optimization with an entropy loss function to solve for weights without specifying a propensity score model. CBGPS attempts to achieve propensity specification and covariate balance simultaneously by introducing a penalty term into the likelihood. The PS method uses univariate normal densities for the marginal distribution of exposure and the generalized propensity score without balance constraints. Although these univariate methods can handle only single exposure variables, we expected that they might perform adequately when the multiple exposure variables are highly correlated and have the same confounders. However, when exposure variables have separate sets of confounders and/or are only weakly correlated, we expected that the mvGPS method would outperform the univariate methods.",
+            "cite_spans": [
+                {
+                    "start": 228,
+                    "end": 232,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 295,
+                    "end": 299,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "In our simulations we focus exclusively on a bivariate exposure, m = 2, similar to that found in our motivating example. For each simulated data scenario, each univariate method was applied twice, once to each exposure variable, with each such application yielding a set of weights that were used to assess balance on confounders and estimate the dose-response function.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "The first step of the simulation is to draw the vector of covariates X for each unit. We assume that there are a total of 10 covariates collected prior to exposure and that the covariates follow a normal distribution,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "where the covariance matrix \u03a3 X is compound symmetric with variance 1 and covariance 0.2, to create a set of correlated covariates.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "Realizations of the conditional distribution of the bivariate continuous exposure levels, D = (D 1 , D 2 ) T given X, were then generated as bivariate normal,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "is a 2 \u00d7 10 matrix with row vectors \u03b2 T 1 and \u03b2 T 2 representing the effects of X on D 1 and D 2 , respectively, and \u03a3 D|X is the 2 \u00d7 2 conditional covariance matrix. For all simulations the conditional standard deviation for each exposure was set to 2, while values of the conditional correlation \u03c1 D|X were allowed to vary over {0, 0.1, 0.3, 0.5, 0.7, 0.9}.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "Note that the marginal covariance matrix of the exposures, \u03a3 D , is equal to \u03a3 D = \u03a3 D|X + \u03b2\u03a3 X \u03b2 T . This means that the marginal correlation of the two exposure variables, \u03c1 D , depends on their conditional correlation \u03c1 D|X , the covariance of X and the degree of overlap of covariates. The degree of overlap is reflected in the number of non-zero elements that are common between \u03b2 T 1 and \u03b2 T 2 . As the degree of overlap increases, the marginal correlation also increases. Since \u03a3 X is compound symmetric with constant covariance of 0.2, the marginal correlation is guaranteed to be non-zero even with zero overlap and zero conditional correlation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "Finally, the outcome Y was sampled from a univariate normal distribution conditional on D and X as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "where \u03b1 T = \u03b1 T X \u03b1 T D is a 1 \u00d7 12 vector of coefficients, which we separate as \u03b1 T X , a 1 \u00d7 10 vector representing the effect of covariates on the outcome, and \u03b1 T D , a 1 \u00d7 2 vector corresponding to the treatment effects. In all simulations the conditional standard deviation of the outcome was equal to 4, i.e., \u03c3 Y = 4.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "Three scenarios were constructed to reflect different degrees of overlap of confounding for the two exposures: M1: No Common Confounding, M2: Partially Common Confounding, and M3: Common Confounding. Directed acyclic graphs (DAGs) for each scenario are shown in Figure 3 . Tables 2, 3, and 4 display the coefficients in the vectors \u03b2 T 1 , \u03b2 T 2 and \u03b1 T for each scenario. In M1, the two exposures D 1 and D 2 each have five covariates, with none in common; for each exposure, two of the covariates are true confounders (i.e., also associated with Y ). The outcome Y is a function of the two exposures as well as the four true confounders, none of which are shared between D 1 and D 2 . In M2, D 1 and D 2 again have five covariates each, but they share three in common. Two of the shared covariates are true confounders, and each exposure has a confounder that is not shared with the other exposure. The outcome Y is again a function of the two exposures and the four true confounders, two of which are shared and two of which are not. In M3, D 1 and D 2 share the same five covariates. Four of these are true confounders, and Y is a function of the two exposures and four common confounders. In all scenarios, the treatment effect for each of the exposures was set to 1, i.e., \u03b1 T D = (1, 1). The three simulation scenarios were run with a sample size of n = 200 for a total of B = 1000 Monte Carlo repetitions using R Version 4.0 [36] . For each repetition, weights were estimated using mvGPS and the three univariate methods with the proper set of confounders specified for each exposure. For example, for Scenario M1, weights were constructed for D 1 using X 2 and X 4 while D 2 depended on X 6 and X 9 (see Table 2 ). The three univariate methods, entropy balancing, CBGPS and PS, were implemented using the WeightIt package in R [14] . The parametric version of CBGPS was used. The mvGPS method was implemented using the mvGPS package in R. All methods were compared against an unweighted approach equivalent to applying a weight of 1 to all observations. Weighted Pearson correlations between the exposures and confounders were used to assess balancing performance [2, 54] . We examined maximum absolute correlation, which reflects the most imbalanced confounder after weighting and has been shown to be a key metric to assess balance [8] , and the average absolute correlation, which summarizes how well balance is achieved over all confounders. These correlation values were taken over both sets of exposures.",
+            "cite_spans": [
+                {
+                    "start": 1433,
+                    "end": 1437,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1836,
+                    "end": 1840,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 2173,
+                    "end": 2176,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 2177,
+                    "end": 2180,
+                    "text": "54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 2343,
+                    "end": 2346,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 262,
+                    "end": 270,
+                    "text": "Figure 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1713,
+                    "end": 1720,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Design"
+        },
+        {
+            "text": "Effective sample sizes, (\u03a3 i w i ) 2 /\u03a3 i w 2 i , were calculated to summarize the relative power of each method [26] . The weights were then used to estimate the dose-response model. The performance metrics were absolute total bias, \u03a3 j |\u03b1 Dj \u2212\u03b1 Dj | for j = 1, 2, and root mean squared error, 1 n \u03a3 i (y * i \u2212\u0177 i ) 2 , where i = 1, . . . , 500 samples, y * , were drawn from a uniform grid on the convex hull, H, over the observed joint distribution of the two exposures. Each of the metrics was averaged over the 1000 repetitions.",
+            "cite_spans": [
+                {
+                    "start": 113,
+                    "end": 117,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Design"
+        },
+        {
+            "text": "All methods reduce the effective sample size when weights are applied to the sample. Of particular concern for practitioners are extreme weights. When sample sizes are small or moderate, extreme weights can have an outsized influence. They may also result in limited power to detect treatment effects and erratic estimation [23] . One remedy is to trim extreme weights [18, 28] . As all simulations were run with moderate sample sizes, i.e., n = 200, we wanted to test performance when weight trimming was applied as might be done in practice by analysts when faced with extreme weights. Our simulation analyses were thus repeated using trimmed weights for each method, w q , where q \u2208 {0.99, 0.95}. Weights were trimmed at both the upper and lower bounds of the respective sample percentile such that values above or below the thresholds were replaced with the threshold value. Figure 4 plots the absolute maximum correlation between the exposures and confounders for each method along with the original unweighted correlations for comparison. In general, with no common confounding or partially common confounding, the mvGPS method substantially outperformed each univariate method. However, for common founding, mvGPS performs best only when the marginal correlation is low. The performance of univariate methods tended to cluster differently based on the degree of confounding overlap. In models with low overlap, performance was clustered based on exposure, D 1 or D 2 , but as the degree of overlap increased, performance became clustered by type of estimation, Entropy, CBGPS, or PS. Applying trimmed weights, we see a slight improvement for q = 0.99 while q = 0.95 has little to no effect. Figure 5 shows the average absolute exposure-covariate correlation along with a reference line at 0.1, a benchmark suggesting sufficient covariate balance [54] . For all simulation models, the mvGPS is consistently near the 0.1 threshold. For the univariate methods, we see trends in performance similar to those observed for the maximum correlation, but differences between methods are smaller. Entropy methods consistently had the lowest average correlation, especially with high overlap or high marginal correlation. Trimming the weights tended to eliminate the effect of the marginal correlation on the mvGPS, resulting in flatter lines for q = 0.99 and q = 0.95, particularly for models with at least some common confounding. Figure 6 displays trends in effective sample size for each method across the various simulation scenarios, with a reference line at 100, which is often a minimum desirable quantity for inference in the dose-response model [49] . The mvGPS method tends to have lower effective sample sizes compared to the univariate methods. Importantly, using untrimmed weights, the mvGPS method has effective sample sizes less than 100 in the presence of partial or common confounding, indicating particularly low power. Trimming the weights increases the effective sample size for all methods and the difference between methods decreases as q increases. Figure 7 shows the results of each method with respect to total absolute bias for the treatment effects estimated from weighted regression. Generally, the mvGPS method has the lowest total bias, with the exception of high correlation in the model with partially common confounding or no common confounding. Of particular note, although the effective sample size and balancing diagnostics were lower for mvGPS in the common confounding model, it significantly outperforms all univariate methods with respect to bias even with high marginal correlation. We also observe that certain univariate methods have greater bias than the unweighted estimates, such as those that estimate weights using D 2 for the common confounding model. Trimming the weights tended to reduce bias for mvGPS when there was high correlation of the exposures, particularly under models with either partially overlapping confounding or no common confounding, while slightly increasing the bias for the common confounding models. Figure 8 shows the root mean squared error based on 500 points sampled along a grid from the convex hull, H q , of the exposures. The precision of predicted values for the mvGPS is often worse than that for univariate methods. As \u03c1 increases, the mvGPS method has worse performance, with decreased power from low effective sample sizes. Trimming the weights helps reduce this trend and reduces the root mean squared error across all methods.",
+            "cite_spans": [
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 369,
+                    "end": 373,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 374,
+                    "end": 377,
+                    "text": "28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1853,
+                    "end": 1857,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 2651,
+                    "end": 2655,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 879,
+                    "end": 887,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1698,
+                    "end": 1706,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 2429,
+                    "end": 2437,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 3069,
+                    "end": 3077,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 4069,
+                    "end": 4077,
+                    "text": "Figure 8",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Design"
+        },
+        {
+            "text": "In summary, using a multivariate method for weight estimation is critical to achieve balance as univariate methods in general do not effectively balance on the confounders for both exposures. The multivariate method protects against any single confounder being strongly imbalanced across either exposure at the expense of slightly lower average balance, while the univariate methods have potentially large imbalance on the unused exposure dimension. The notable exception is when there is high overlap in terms of confounders. In this case univariate methods can sufficiently balance confounders, particularly when the marginal correlation of exposures is high. However, despite achieving balance in these scenarios, the univariate methods still resulted in high total bias of the treatment effect estimates. Although mvGPS weights were advantageous with respect to balance and bias, they tend to produce smaller effective sample sizes, resulting in lower power and higher root mean squared error. Weight trimming, particularly with q = 0.99, offers a potential remedy to reduce these effects while also maintaining balance and low bias.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulation Results"
+        },
+        {
+            "text": "The WIC program is designed to provide nutrition education, 'vouchers' for selected healthy food, and referrals. The rapid increase in childhood obesity rates in the early 2000s led to interventions to increase physical activity, and improve access to healthy food especially in communities where affordable fresh produce is not available. In this motivating example, we estimated the causal effects of interventions that were implemented by individual WIC clinics in attempts to meet the specific needs of the communities they served. As discussed in Section 2, the intervention programs were classified as using macro or micro strategies and we calculated two continuous dose measures for n = 1079 census tracts. The outcome was the difference in average obesity prevalence from post, 2012-2016, to pre, 2007-2009, intervention period, calculated as Y =p post \u2212p pre at the census tract level. Negative values of Y indicate that the prevalence of obesity decreased. We hypothesized that areas with more macro and micro strategies would have the greatest reduction in rates of obesity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Effect of Intervention Strategies on Childhood Obesity Prevalence"
+        },
+        {
+            "text": "Data on potential census tract-level confounders came from three sources: US Census American Community Survey (ACS) 5-year estimates [46] , WIC administrative data, and the National Establishment Time-Series (NETS) [51] . Variables from the ACS captured community level demographic characteristics such as median household income, education level, primary language spoken at home, and ethnicity, which have been shown in previous research to be associated with obesity rates [31, 32] . WIC administrative data were used to calculate average pre-treatment overweight and obesity prevalence for each census tract. Overweight and obesity prevalence were considered potential confounders because agencies may have directed interventions towards clinics in higher prevalence regions. Finally, NETS provided information on neighborhood food environments, specifically on the density per square mile of unhealthy and healthy food outlets [1, 53] . Previous analysis has shown that higher density of healthy outlets was associated with lower obesity prevalence among low-income preschool-aged children in Los Angeles County [4] . Both macro and micro propensity dose equations included the same set of potential confounders from these three data sources, but each exposure was assessed separately to determine if higher order polynomial terms for any confounders were needed. These analyses showed that both macro and micro dose had quadratic relationships with education level and density of food outlets, while only macro dose had evidence of a quadratic relationship with median household income.",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 215,
+                    "end": 219,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 475,
+                    "end": 479,
+                    "text": "[31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 480,
+                    "end": 483,
+                    "text": "32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 931,
+                    "end": 934,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 935,
+                    "end": 938,
+                    "text": "53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1116,
+                    "end": 1119,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Effect of Intervention Strategies on Childhood Obesity Prevalence"
+        },
+        {
+            "text": "After defining the appropriate functional form for each exposure and confounder, weights were then estimated using the mvGPS method and the three univariate methods discussed in Section 4.1. To maintain the assumption of positivity, data used for estimating the weights were restricted to the trimmed convex hull H 0.95 shown in Figure 1 , where a bivariate normal distribution is plausible. The marginal correlation of exposures was moderate, r = 0.28, in this highdensity region. As both exposures had nearly identical sets of potential confounders, the data generating mechanism was akin to the common confounding scenario described in the simulations. Therefore, to protect against extreme weights and reduce the variability of the resulting dose-response estimates, weights for each method were trimmed using q = 0.99. Table 5 shows the balancing diagnostics, maximum absolute correlation and average absolute correlation, and the effective sample sizes. The confounders were significantly imbalanced prior to weighting with the average absolute correlation above 0.2 and the maximum absolute correlation above 0.4. All methods were able to improve balance, but the mvGPS method had substantially greater reduction in imbalance than the univariate methods. The average absolute correlation and maximum absolute correlation were reduced to 0.04 and 0.10 respectively after applying mvGPS weights. The effective sample size for mvGPS was reduced from the original sample of n = 1079 to 604. However, since the population included over 1000 census tract units, the power was still reasonably high.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 329,
+                    "end": 337,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 824,
+                    "end": 831,
+                    "text": "Table 5",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Effect of Intervention Strategies on Childhood Obesity Prevalence"
+        },
+        {
+            "text": "Finally, we applied weights from the mvGPS method to estimate the joint effect of macro and micro exposure doses on change in obesity prevalence using weighted least squares regression and compare these to unweighted estimates. Only exposures within the trimmed convex hull, H 0.95 , were used to estimate treatment effects and predict the dose-response surface. The dose-response model for both methods included linear terms for each exposure and an interaction between the two exposures. Figure 9 shows the weighted and unweighted dose-response surfaces along with a reference plane of no change in obesity prevalence. Both the weighted and unweighted surfaces suggest reductions in obesity prevalence from our pre-intervention period, 2007-2009, to the post-intervention period, 2012-2016, for all dose combinations. This is consistent with studies showing a decrease in obesity risk among WIC-participating children in Los Angeles County associated with the 2009 change in the WIC food packages [3, 33] . The unweighted dose-response surface is a monotonic plane; increases in micro dose and in macro dose are each associated with greater reduction in obesity prevalence, the associations are additive, and the greatest reduction in prevalence corresponds to the highest levels of macro and micro doses. The mvGPS dose-response surface is more complex and shows an interaction effect. At low levels of macro dose, increases in micro dose are associated with a steep reduction in obesity prevalence. However, as macro dose increases, high micro dose becomes gradually less effective. In the quadrant where both macro and micro dose are high, higher micro doses appear to be less beneficial rather than more beneficial. There are several possible explanations for this result. There could be important confounders that were not accounted for in the analysis. There could also have been measurement error in estimating exposures. We noted that the data set included several observations with high macro and high micro doses that were assigned high weights and had either no decrease or a slight increase in child obesity prevalence. Further investigation of these census tracts may yield more information and guide model refinements.",
+            "cite_spans": [
+                {
+                    "start": 999,
+                    "end": 1002,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1003,
+                    "end": 1006,
+                    "text": "33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 490,
+                    "end": 498,
+                    "text": "Figure 9",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Effect of Intervention Strategies on Childhood Obesity Prevalence"
+        },
+        {
+            "text": "In this manuscript, we introduced methodology for generating a multivariate generalized propensity score, mvGPS, to be used in estimating the causal effect of multiple simultaneous continuous exposures in observational or nonrandomized studies. We have developed the R package mvGPS available at https://github.com/williazo/mvGPS to implement the methods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Through simulations we have shown that, when estimating the causal effects of two simultaneous exposures, mvGPS weights are effective at reducing both the maximum and average absolute correlation between exposures and confounders. Further, the weights can minimize bias in estimating the dose-response function in realistic data generating settings with moderate sample sizes. The simulations identified two key factors that affect performance. When the exposures have highly overlapping sets of confounders or large marginal correlation, the mvGPS method may generate extreme weights, resulting in smaller effective sample sizes and higher average root mean squared error. Trimming the weights improves performance in these situations. We suggest that in settings with a high degree of overlap in the confounders or moderate to large marginal exposure correlation, weights should be trimmed at q = 0.99.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "While our method could in principle be extended to an arbitrary number of continuous exposures, we have confined attention in our simulations and application to the setting of two exposures. Assessing the joint effect of two interventions is a common scientific question, and we expect that there are many practical applications of the methods. The resulting dose-response surface for bivariate exposures can be easily visualized and interpreted, which is key in practice. Further work is needed to explore performance for settings with more than two exposures. In particular, positivity and achieving adequate balance may be increasingly difficult as dimensions of exposure increase. For higher order exposures, dimension reduction techniques such as principal component analysis or manifold learning might be applied to transform the problem to a lower order continuous exposure space.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We applied the mvGPS method to evaluate the joint effectiveness of macro and micro intervention strategies used in childhood obesity programs on change in obesity prevalence among low-income preschool aged children. Due to nonrandom selection of participating clinics, there was significant imbalance on potential confounders as evidenced by large absolute maximum and average correlations prior to weighting. The mvGPS method achieved superior balance compared to univariate alternatives, reducing the maximum absolute correlation to the benchmark of 0.1 and the average absolute correlation to nearly zero. Estimates of the dose-response surface using weights from the mvGPS method differed substantially from the results of the unweighted surface. The results showed that the most effective intervention combination was higher levels of micro strategies and lower levels of macro strategies. However, our results should be interpreted with caution. As with other causal inference methods, all confounders must be adequately captured and modeled to produce unbiased estimates. Thus our estimated treatment effects may be biased due to unknown confounders. In particular, communities that received higher levels of macro and micro doses may have been inherently more difficult to change due to a complex interplay of community and personal factors not captured by our set of potential confounders. In addition, we have assumed that the potential outcomes of the change in obesity given macro and micro exposures are well-defined via SUTVA as discussed in Section 3.2. Specifically, SUTVA stipulates that multiple versions of the exposures do not exist. In our application, however, there are potentially different sets of interventions that can yield the same macro and micro exposure scores. In the presence of multiple versions of the exposures, the resulting potential outcomes may be unidentifiable. Further, we had to estimate exposure to the interventions at the census tract level using various assumptions, which may have resulted in measurement error. Thus our application, while demonstrating the methods, has important limitations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our approach assumes that the exposures have a multivariate normal distribution. The multivariate normal distribution is particularly attractive for working in higher dimensions. In our case, it allows for the full conditionals used to generate weights in Equation 3 to be tractable univariate normal densities. Further, the asymptotics of the estimates are well behaved due to the central limit theorem. We note that it is common practice when using the generalized propensity score for continuous treatments in the univariate case to assume normality [10, 16, 20, 37, 54] . However, this reliance on multivariate normality is an important limitation of the methodology, particularly in assessing its validity [29] . Possible extensions include replacing the multivariate normal distribution with non-parametric or semi-parametric alternatives as has been done recently with univariate methods [24, 45, 49] . Other possible extensions include allowing for time-varying outcomes and exposures such has been recently proposed for CBGPS [19] . Additionally, SUTVA might be relaxed to test for potential geographic interference [48, 50] . ",
+            "cite_spans": [
+                {
+                    "start": 553,
+                    "end": 557,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 558,
+                    "end": 561,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 562,
+                    "end": 565,
+                    "text": "20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 566,
+                    "end": 569,
+                    "text": "37,",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 570,
+                    "end": 573,
+                    "text": "54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 711,
+                    "end": 715,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 895,
+                    "end": 899,
+                    "text": "[24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 900,
+                    "end": 903,
+                    "text": "45,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 904,
+                    "end": 907,
+                    "text": "49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1035,
+                    "end": 1039,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1125,
+                    "end": 1129,
+                    "text": "[48,",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1130,
+                    "end": 1133,
+                    "text": "50]",
+                    "ref_id": "BIBREF49"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "All values of the covariates enter in each equation linearly with the respective coefficients shown in the table. In this scenario, covariates X 1 \u2212 X 5 are associated with exposure D 1 ; however, only X 2 and X 4 are true confounders also associated with Y . Similarly, covariates X 6 \u2212 X 10 are associated with exposure D 2 ; however, only X 6 and X 9 are true confounders also associated with Y . There are no common confounders in this model. Each exposure has a true treatment effect coefficient of 1. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "All values of the covariates enter in each equation linearly with the respective coefficients shown in the table. In this scenario, covariates X 3 \u2212 X 7 are associated with exposure D 1 ; however, only X 3 , X 6 , and X 7 are true confounders also associated with Y . Similarly, covariates X 5 \u2212 X 9 are associated with exposure D 2 ; however, only X 6 X 7 , and X 9 are true confounders also associated with Y . Common confounders of exposure D 1 and D 2 are X 6 and X 7 . Confounder of exposure D 1 only is X 3 , and X 9 is a confounder of D 2 only. Each exposure has a true treatment effect coefficient of 1. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "All values of the covariates enter in each equation linearly with the respective coefficients shown in the table. In this scenario, covariates X 1 \u2212 X 5 are associated with exposure D 1 and D 2 ; however, only X 1 , X 3 , X 4 and X 5 are true confounders also associated with Y . Common confounders of exposure D 1 and D 2 are X 1 , X 3 , X 4 , and X 5 . There are no confounders of D 1 or D 2 only in this model. Each exposure has a true treatment effect coefficient of 1. Assessing balance and effective sample size (ESS) using various weighted methods for the motivating example. Data used for estimating weights were restricted to H 0.95 . The univariate methods were applied separately to the two exposure metrics, macro or micro dose. The correlations are taken over both exposure metrics. The unweighted method represents the original values before applying weights. The weights for each method are trimmed using q = 0.99. Directed acyclic graphs for each of the three data generating simulation scenarios. D 1 and D 2 are continuous exposure measures and Y is the outcome of interest. C 1 and C 2 represent confounder sets that are specific to exposures D 1 and D 2 , while C 12 represents a confounder set common to both exposures. Rows correspond to the three simulation scenarios, M1, M2 and M3, and each column corresponds to quantiles used for weight trimming. The y-axis is the average effective sample size, (\u03a3 i w i ) 2 /\u03a3 i w 2 i , for n = 200 from B = 1000 repetitions. The x-axis, \u03c1, is the marginal correlation of the exposures. The red line corresponds to an effective sample size of 100 which is often a minimum desirable quantity for hypothesis testing and inference of the dose-response model. Rows correspond to the three simulation scenarios, M1, M2 and M3, and each column corresponds to quantiles used for weight trimming. The y-axis is the average total absolute bias, \u03a3 j |\u03b1 Dj \u2212\u03b1 Dj |, for n = 200 from B = 1000 repetitions. The x-axis, \u03c1, is the marginal correlation of the exposures. For univariate methods, weights were generated twice, once for each exposure variable. Rows correspond to the three simulation scenarios, M1, M2 and M3, and each column corresponds to quantiles used for weight trimming. The y-axis is the average root mean squared error (RMSE) for 500 points sampled on a convex hull H q grid for n = 200 from B = 1000 repetitions. The x-axis, \u03c1, is the marginal correlation of the exposures. For univariate methods, weights were generated twice, once for each exposure variable. Estimated dose-response surface of change in obesity prevalence as a function of log macro and micro dose, obtained using mvGPS weights and unweighted. The surface is restricted to the convex hull of observed bivariate exposure, H 0.95 , shown in Figure 1 and points are sampled evenly along this grid. A reference plane of no change is included. For a 3D interactive version of the dose-response surface that includes lower and upper bound 95% confidence interval surfaces for the mvGPS method, visit https://williazo.github.io/resources/.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 2777,
+                    "end": 2785,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The neighborhood food environment modifies the effect of the 2009 WIC food package change on",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Whaley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chaparro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMC Public Health",
+            "volume": "20",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Assessing covariate balance when using the generalized propensity score with quantitative or continuous exposures",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Austin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Statistical Methods in Medical Research",
+            "volume": "28",
+            "issn": "",
+            "pages": "1365--1377",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "The 2009 Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) food package change and children's growth trajectories and obesity in Los Angeles County",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chaparro",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Whaley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Am J Clin Nutr",
+            "volume": "109",
+            "issn": "",
+            "pages": "1414--1421",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Influences of the neighbourhood food environment on adiposity of low-income preschool-aged children in Los Angeles County: A longitudinal study",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chaparro",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Whaley",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Koleilat",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Nobari",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Seto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Epidemiol Community Health",
+            "volume": "68",
+            "issn": "",
+            "pages": "1027--1033",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "An optimal convex hull algorithm in any fixed dimension",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Chazelle",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Discrete & Computational Geometry",
+            "volume": "10",
+            "issn": "",
+            "pages": "377--409",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Infliximab, azathioprine, or combination therapy for Crohn's disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Colombel",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Sandborn",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Reinisch",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mantzaris",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kornbluth",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rachmilewitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lichtiger",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Haens",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Diamond",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Broussard",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Der Woude",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rutgeerts",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "New England Journal of Medicine",
+            "volume": "362",
+            "issn": "",
+            "pages": "1383--1395",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Dealing with limited overlap in estimation of average treatment effects",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Crump",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hotz",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Imbens",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mitnik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Biometrika",
+            "volume": "96",
+            "issn": "",
+            "pages": "187--199",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Genetic matching for estimating causal effects: A general multivariate matching method for achieving balance in observational studies",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Diamond",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Sekhon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Review of Economics and Statistics",
+            "volume": "95",
+            "issn": "",
+            "pages": "932--945",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Estimating the effects of length of exposure to instruction in a training program: The case of job corps",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Flores",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Flores-Lagunes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gonzalez",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Neumann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Review of Economics and Statistics",
+            "volume": "94",
+            "issn": "",
+            "pages": "153--171",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Covariate balancing propensity score for a continuous treatment: application to the efficacy of political advertisements",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hazlett",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Annals of Applied Statistics",
+            "volume": "12",
+            "issn": "",
+            "pages": "156--177",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Hydroxychloroquine and azithromycin as a treatment of COVID-19: Results of an openlabel non-randomized clinical trial",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gautret",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-C",
+                    "middle": [],
+                    "last": "Lagier",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Parola",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hoang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Meddeb",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mailhe",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Doudier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Courjon",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Giordanengo",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Vieira",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Dupont",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Honor\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Colson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Chabri\u00e8re",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "La"
+                    ],
+                    "last": "Scola",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-M",
+                    "middle": [],
+                    "last": "Rolain",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Brouqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Raoult",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Antimicrobial Agents",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijantimicag.2020.105949"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Clinical and microbiological effect of a combination of hydroxychloroquine and azithromycin in 80 COVID-19 patients with at least a six-day follow up: A pilot observational study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gautret",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-C",
+                    "middle": [],
+                    "last": "Lagier",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Parola",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hoang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Meddeb",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sevestre",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mailhe",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Doudier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Aubry",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Amrane",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Seng",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hocquart",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Eldin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Finance",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Vieira",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tissot-Dupont",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Honor\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Stein",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Million",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Colson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "La"
+                    ],
+                    "last": "Scola",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Veit",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jacquier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-C",
+                    "middle": [],
+                    "last": "Deharo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Drancourt",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Fournier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-M",
+                    "middle": [],
+                    "last": "Rolain",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Brouqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Raoult",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Travel Medicine and Infectious Disease",
+            "volume": "34",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tmaid.2020.101663"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Combination therapy in hypertension",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Gradman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Basile",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Carter",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bakris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of the American Society of Hypertension",
+            "volume": "4",
+            "issn": "",
+            "pages": "90--98",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "WeightIt: Weighting for Covariate Balance in Observational Studies",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Greifer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The impact of WIC food package changes on access to healthful food in 2 low-income urban neighborhoods",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hillier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mclaughlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Cannuscio",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Krasny",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Karpyn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of Nutrition Education and Behavior",
+            "volume": "44",
+            "issn": "",
+            "pages": "210--216",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Applied Bayesian Modeling and Causal Inference from Incomplete-Data Perspectives",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hirano",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Imbens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "73--84",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "A generalization of sampling without replacement from a finite universe",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Horvitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1952,
+            "venue": "Journal of the American Statistical Association",
+            "volume": "47",
+            "issn": "",
+            "pages": "663--685",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "The performance of estimators based on the propensity score",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Huber",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lechner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wunsch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of Econometrics",
+            "volume": "175",
+            "issn": "",
+            "pages": "1--21",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Covariate balancing inverse probability weights for time-varying continuous interventions",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Van Gameren",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Causal Inference",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1515/jci-2017-0002"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Causal inference with general treatment regimes: Generalizing the propensity score",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Van Dyk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of the American Statistical Association",
+            "volume": "99",
+            "issn": "",
+            "pages": "854--866",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The role of the propensity score in estimating dose-response functions",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Imbens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Biometrika",
+            "volume": "87",
+            "issn": "",
+            "pages": "706--710",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Normalizing tumor vasculature with anti-angiogenic therapy: A new paradigm for combination therapy",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jain",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Nature Medicine",
+            "volume": "7",
+            "issn": "",
+            "pages": "987--989",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Demystifying double robustness: A comparison of alternative strategies for estimating a population mean from incomplete data",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Schafer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Statistical Science",
+            "volume": "22",
+            "issn": "",
+            "pages": "523--539",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Non-parametric methods for doubly robust estimation of continuous treatment effects",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kennedy",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mchugh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Small",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Journal of the Royal Statistical Society: Series B",
+            "volume": "79",
+            "issn": "",
+            "pages": "1229--1245",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Response surface methodology",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Khuri",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mukhopadhyay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "WIREs Computational Statistics",
+            "volume": "2",
+            "issn": "",
+            "pages": "128--149",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Survey Sampling",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kish",
+                    "suffix": ""
+                }
+            ],
+            "year": 1965,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Evaluation of the effect of a continuous treatment: A machine learning approach with an application to treatment for traumatic brain injury",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kreif",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Grieve",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "D\u00edaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Harrison",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Health Economics",
+            "volume": "24",
+            "issn": "",
+            "pages": "1213--1228",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Weight trimming and propensity score weighting",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lessler",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Stuart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "PLOS ONE",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0018174"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "An appraisal and bibliography of tests for multivariate normality",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mecklin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mundfrom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "International Statistical Review",
+            "volume": "72",
+            "issn": "",
+            "pages": "123--138",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "On the application of probability theory to agricultural experiments. Essay on principles",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Neyman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1923,
+            "venue": "",
+            "volume": "9",
+            "issn": "",
+            "pages": "465--480",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Immigrant enclaves and obesity in preschool-aged children in Los Angeles County",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Nobari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chaparro",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Koleilat",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Whaley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Social Science & Medicine",
+            "volume": "92",
+            "issn": "",
+            "pages": "1--8",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Widening socio-economic disparities in early childhood obesity in Los Angeles County after the great recession",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Nobari",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Whaley",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Prelip",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Public Health Nutrition",
+            "volume": "21",
+            "issn": "",
+            "pages": "2301--2310",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Trends in socioeconomic disparities in obesity prevalence among low-income children aged 2-4 years in Los Angeles County",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Nobari",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Whaley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Prelip",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Childhood Obesity",
+            "volume": "14",
+            "issn": "",
+            "pages": "248--258",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Decay characteristics of HIV-1-infected compartments during combination therapy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Perelson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Essunger",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vesanen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hurley",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Saksela",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Markowitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Nature",
+            "volume": "387",
+            "issn": "",
+            "pages": "188--191",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "WIC data 2003-2009: A report on low income families with young children in Los Angeles County",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Phfe Wic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "R: A Language and Environment for Statistical Computing, R Foundation for Statistical Computing",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "R Core Team",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Marginal structural models versus structural nested models as tools for causal inference",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Robins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Statistical Models in Epidemiology: The Environment and Clinical Trials",
+            "volume": "",
+            "issn": "",
+            "pages": "95--134",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Marginal structural models and causal inference in epidemiology",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Robins",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hernan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Brumback",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Epidemiology",
+            "volume": "11",
+            "issn": "",
+            "pages": "550--560",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The central role of the propensity score in observational studies for causal effects",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Rosenbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Biometrika",
+            "volume": "70",
+            "issn": "",
+            "pages": "41--55",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Model of the home food environment pertaining to childhood obesity",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Rosenkranz",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dzewaltowski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Nutrition Reviews",
+            "volume": "66",
+            "issn": "",
+            "pages": "123--140",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Estimating causal effects of treatments in randomized and nonrandomized studies",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "Journal of Educational Psychology",
+            "volume": "66",
+            "issn": "",
+            "pages": "688--701",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Randomization analysis of experimental data: The Fisher randomization test comment",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Journal of the American Statistical Association",
+            "volume": "75",
+            "issn": "",
+            "pages": "591--593",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Pharmacologic treatments for coronavirus disease 2019 (COVID-19): A review",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sanders",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Monogue",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Jodlowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Cutrell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "",
+            "pages": "1824--1836",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "COVID-19: Combining antiviral and anti-inflammatory treatments",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Stebbing",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Phelan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Griffin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tucker",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Oechsle",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Richardson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "The Lancet Infectious Diseases",
+            "volume": "20",
+            "issn": "",
+            "pages": "400--402",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Entropy balancing for continuous treatments",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "T\u00fcbbicke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2001.06281"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "American community survey",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Final rule: Revisions in the WIC food packages",
+            "authors": [],
+            "year": 2014,
+            "venue": "Food and Nutrition Service",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Ignorability and stability assumptions in neighborhood effects research",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Vanderweele",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Statistics in Medicine",
+            "volume": "27",
+            "issn": "",
+            "pages": "1934--1943",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Nonparametric estimation of population average dose-response curves using entropy balancing weights for continuous exposures",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Vegetabile",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Griffin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Coffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cefalu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Mccaffrey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2003.02938"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Causal inference under interference in spatial settings: A case study evaluating community policing program in chicago",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Verbitsky-Savitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Raudenbush",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Epidemiologic Methods",
+            "volume": "1",
+            "issn": "",
+            "pages": "107--130",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "National Establishment Time-Series (NETS) database",
+            "authors": [
+                {
+                    "first": "&amp;",
+                    "middle": [],
+                    "last": "Walls",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Associates",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Developing an index of dose of exposure to early childhood obesity community interventions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crespi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nobari",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Roper-Fingerhut",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rauzon",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Robles",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Blocklin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Davoudi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kuo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Macleod",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Seto",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Whaley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Prelip",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Preventive Medicine",
+            "volume": "111",
+            "issn": "",
+            "pages": "135--141",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "The neighborhood food environment: Sources of historical data on retail food stores",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gonzalez",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ritchie",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Winkleby",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "International Journal of Behavioral Nutrition and Physical Activity",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "A boosting algorithm for estimating generalized propensity scores with continuous treatments",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Coffman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Journal of Causal Inference",
+            "volume": "3",
+            "issn": "",
+            "pages": "25--40",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Joint Distribution of Macro and Micro Intervention Doses Observed values of log macro and micro exposure doses averaged over the study intervention period 2010-2016. Trimmed convex hull region with q = 0.95, i.e., H 0.95 , is shown in red Defining Estimable Region with Bivariate Exposure Sample of n = 500 units drawn from population where D 1 \u223c N (0, 1), D 2 \u223c N (0, 1), Cov(D 1 , D 2 ) = 0.5. Region defined by dark blue box corresponds to G while region defined in dark red represents H. Trimmed regions are also shown for q = 0.95 with the light blue box corresponds to G 0.95 while the region defined in light red represents H 0.Simulation Scenarios",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Assessing Covariate Balance: Maximum Absolute Exposure-Covariate CorrelationRows correspond to the three simulation scenarios, M1, M2 and M3, and each column corresponds to quantiles used for weight trimming. The y-axis is the average maximum absolute exposure-covariate correlation for n = 200 from B = 1000 repetitions. This maximum is taken across both exposure values, D 1 and D 2 . The x-axis, \u03c1, is the marginal correlation of the exposures. For univariate methods, weights were generated twice, once for each exposure variable.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Assessing Covariate Balance: Average Absolute Exposure-Covariate CorrelationRows correspond to the three simulation scenarios, M1, M2 and M3, and each column corresponds to quantiles used for weight trimming. The y-axis is the average absolute exposure-covariate correlation for n = 200 from B = 1000 repetitions. This average is taken across both exposure values, D 1 and D 2 . The x-axis, \u03c1, is the marginal correlation of the exposures. For univariate methods, weights were generated twice, once for each exposure variable. The red line corresponds to an average value of 0.1, which is often used as a benchmark for sufficient balance.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Effective Sample Size",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Outcome Modeling Performance Metric: Average Total Absolute Bias",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Outcome Modeling Performance Metric: Average RMSE",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Estimated Dose-Response Surface of Change in Obesity Prevalence as a Function of Macro and Micro Intervention Dose",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Coefficients for Simulation Scenario M1: No Common Confounding Param. X 1",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Coefficients for Simulation Scenario M2: Partially Common Confounding Param. X 1",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Coefficients for Simulation Scenario M3: Common Confounding Param. X 1",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Covariate Balance Max Abs. Corr. Avg. Abs. Corr. ESS",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "This work was supported in part by funding from the National Institute of Health R01 HD072296. We would like to thank May Wang and Michael Prelip, co-principal investigators of the study, for their feedback and help throughout the development of this project. Special thanks to Shannon Whaley and Christopher Anderson from PHFE WIC in providing access to the data from WIC and helping to generate catchment areas. Finally, thanks to the members of the ECOSyS team that have provided assistance on this project: Shelley Jung, Linghui Jiang, Roch Nianogo, Tabashir Nobari, Kara MacLeod, and Lilly Nhan. The opinions about the data used in the manuscript are solely those of the authors and do not reflect official positions of either government or individual agencies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        },
+        {
+            "text": "Each intervention program was classified based on the strategies that were implemented. Programs could use multiple strategies, e.g., Group Education and Counseling. Strategies are categorized as either micro and macro based on whether they directly targeted individuals or the population at large. The final column represents how many of the 32 programs used that particular strategy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        }
+    ]
+}

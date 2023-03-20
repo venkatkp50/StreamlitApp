@@ -1,0 +1,627 @@
+{
+    "paper_id": "0b32bdaea93b9f9f878eafaf16aef252ca87a20e",
+    "metadata": {
+        "title": "Online Appendix to the Paper \"Pausing Transplants in the Face of a Global Pandemic: Patient Survival Implications\"",
+        "authors": [
+            {
+                "first": "Minmin",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {},
+                "email": "minmin.zhang@utdallas.edu"
+            },
+            {
+                "first": "Guihua",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": "guihua.wang@utdallas.edu"
+            },
+            {
+                "first": "Jun",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {},
+                "email": "junwli@umich.edu"
+            },
+            {
+                "first": "\u2020",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Wallace",
+                "middle": [
+                    "J"
+                ],
+                "last": "Hopp",
+                "suffix": "",
+                "affiliation": {},
+                "email": "whopp@umich.edu"
+            },
+            {
+                "first": "David",
+                "middle": [
+                    "D"
+                ],
+                "last": "Lee",
+                "suffix": "",
+                "affiliation": {},
+                "email": "david.d.lee@lumc.edu"
+            },
+            {
+                "first": "Naveen",
+                "middle": [],
+                "last": "Jindal",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Stephen",
+                "middle": [
+                    "M"
+                ],
+                "last": "Ross",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "Article submitted to ; manuscript no.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In this section, we calculate the threshold probability from a patient's perspective to guide the decision of accepting or declining an offer. When a patient on the waiting list receives an offer, she or he needs to compare the risk of infection due to the pandemic and the risk of health deterioration due to delaying an organ transplant. Because the probability of mortality due to the pandemic is an important parameter for a patient to make a decision, we derive the threshold probability above which a patient should delay an organ transplant by declining the offer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A: Patient-Level Analyses"
+        },
+        {
+            "text": "Before calculating the threshold probability for a patient, we introduce a few new parameters specifically for patient-level analyses. We denote by h \u2206 m the probability of a category m patient dying without an organ transplant within \u2206 days. Unlike the rate of mortality defined in the main analysis (i.e., center-level analysis), the probability of \u2206-day mortality describes the likelihood a patient dying within \u2206 days on the waiting list.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A: Patient-Level Analyses"
+        },
+        {
+            "text": "We denote by d \u2206 mn the probability of a patient transitioning from category m to category n within \u2206 days. We denote by y \u2206 1m the expected life months of a patient with the organ transplant being delayed by \u2206 days. If a center continues organ transplants for a patient in category m and the patient accepts a matched organ, we denote by q m the probability of the patient dying from the pandemic. The probability of the patient surviving the pandemic and getting additional life months from the organ transplant is 1 \u2212 q m . We calculate the patient's expected life months from accepting an organ transplant during the pandemic as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A: Patient-Level Analyses"
+        },
+        {
+            "text": "If the patient decides to wait for \u2206 days because of the pandemic, we denote by h \u2206 m the probability of the patient dying without an organ transplant and not getting any additional life months. The probability of the patient surviving and getting additional life months from the organ transplant with a \u2206-day delay is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A: Patient-Level Analyses"
+        },
+        {
+            "text": "We calculate the patient's expected life months from delaying an organ transplant by \u2206 days as",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A: Patient-Level Analyses"
+        },
+        {
+            "text": "To calculate the threshold probability q * m at which the patient is indifferent between accepting an organ or waiting for \u2206 days, we let V N oP ause m equal V P ause m and solve q m . That is,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix A: Patient-Level Analyses"
+        },
+        {
+            "text": "In this section, we describe how to estimate the probability of \u2206-day mortality and the probability of transition for a patient.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "A.1.1. Probability of Mortality We denote by Death i a binary outcome variable that equals 1 if patient i does not receive a liver transplant and dies within a given period after being added to the waiting list. The independent variable of primary interest is the MELD-Na score (denoted by M ELD-N a i ). Note we include the MELD-Na score as a categorical instead of a continuous variable, because the MELD-Na score may affect mortality in a complex nonlinear way.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "We include a broad range of patient features (denoted by P atientF eatures i ) such as age, gender, race/ethnicity, blood type, diagnoses (e.g., alcoholic liver disease, cholestatic liver disease, and metabolic liver disease), prior transplant, and insurance type. We can describe the relationship between the outcome variable and patient features using a logit model:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "where f is a function that links the dependent and independent variables and \u03f5 i is an idiosyncratic error. Table A1 summarizes the results from the logistic regression for 30-day mortality probability. From the upper part of the table, we see all coefficients of MELD-Na are negative and significantly different from zero at the 1% significance level, which suggests patients with MELD-Na scores between 5 and 35 have lower mortality probabilities than those with MELD-Na scores above 35 (control group). Comparing the magnitude of the coefficients, we see patients with higher MELD-Na scores are more likely to die than those with lower MELD-Na scores.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 108,
+                    "end": 116,
+                    "text": "Table A1",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "From the middle part of the table, we see the coefficient of age is positive and significantly different from zero at the 1% significance level, which suggests older patients are more likely to die than younger patients.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "Interestingly, patients of blood type AB are more likely to die than those of the other blood types. Finally, we do not find significant effects of gender and malignancy on waitlist mortality probability.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "From the lower part of the table, we see the coefficients of cholestatic liver disease, cirrhosis viral hepatitis, malignancy, metabolic liver disease, and others are positive and significantly different from zero at the 5% significance level, which suggests patients with those diagnoses are more likely to die than those with alcoholic liver disease (control group). The coefficient of fatty liver is not significantly different from zero at the 10% significance level, which suggests the mortality probability of patients with fatty liver is not significantly different from that of patients with alcoholic liver disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "A.1.2. Probability of Transition Recall the probability of \u2206-day transition describes how a patient transitions from one category to another within \u2206 days given that the patient does not receive a liver transplant. We use the probability of transition to calculate the expected life months of a patient with the organ transplant being delayed. The outcome variable is patient category (e.g., MELD-Na score), and independent variables are patient features. Because the outcome variable is categorical, we use the ordered logit model to estimate the transition probability. That is,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "where g is a function that links the dependent and independent variables and \u03f5 i is an idiosyncratic error. in the second category remain in their respective categories. We also observe the probability of patients remaining in the same category decreases as the MELD-Na score increases, except for the last category.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "Finally, we see the probability of a patient transitioning from a category to a nearby category is higher than the probability of the patient transitioning to a remote category. For example, the probability of the first category transitioning to the second category is 4% and to the seventh category is 0.04%. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.1. Parameters Estimation"
+        },
+        {
+            "text": "Because how long a patient needs to wait for the next offer when she or he declines the current offer is unclear, we perform three scenario analyses by letting \u2206 = 30, 60, and 90, respectively. Table A3 summarizes the results based on these scenarios.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 194,
+                    "end": 213,
+                    "text": "Table A3 summarizes",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "A.2. Threshold Probability"
+        },
+        {
+            "text": "We illustrate the results by using patients with MELD-Na scores between 16 and 20 as an example. From column \"\u2206 = 30\", we see a patient in this category should accept the organ if the probability of mortality due to the pandemic is lower than 4.9% and should decline the organ otherwise. Similarly, from the columns \"\u2206 = 60\" and \"\u2206 = 90\", we see a patient in this category should accept the organ if the probability of morality due to the pandemic is lower than 7.4% and 8.9%, respectively. Comparing different columns of the table, we see the threshold probability increases as the length of the delay increases, which suggests a patient should take more risks to accept an organ if receiving the next organ takes longer.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.2. Threshold Probability"
+        },
+        {
+            "text": "Article submitted to ; manuscript no.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A.2. Threshold Probability"
+        },
+        {
+            "text": "We follow Kaplan et al. (1992) to analyze the impact of overall-capacity constraints. To describe this approach, we denote by r m and r \u2032 m the capacity for patient category m before and after the reduction, respectively, and by \u03b1 the reduction in the overall capacity. Denote by M the number of patient categories. The overall capacity is M m=1 r m before the reduction and M m=1 r \u2032 m after the reduction. We derive the optimal pause policy by using equation (10) with an additional constraint that M m=1 r \u2032 m = M m=1 r m \u2212 \u03b1. We first analyze the impact of capacity constraints on the loss of patient life months. Figure B1 depicts the results by using scenario 1 (see Table 6 ) and the center-specific tiered shutdown policy for a center as an example. The horizontal axis indicates the reduction in the overall capacity, and the vertical axis indicates the loss of patient life months. 1 We see the loss of patient life months increases as the reduction in the overall capacity increases. Table 6 ) and the center-specific tiered shutdown policy.",
+            "cite_spans": [
+                {
+                    "start": 10,
+                    "end": 30,
+                    "text": "Kaplan et al. (1992)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 892,
+                    "end": 893,
+                    "text": "1",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 618,
+                    "end": 627,
+                    "text": "Figure B1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 673,
+                    "end": 680,
+                    "text": "Table 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 995,
+                    "end": 1002,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix B: Impact of Capacity Constraints at Center Level"
+        },
+        {
+            "text": "We then analyze the impact of capacity constraints on the length of the waiting list. Figure B3 depicts the results by using scenario 1 (see Table 6 ) and the center-specific tiered shutdown policy for a center as an example. The horizontal axis indicates the reduction in the overall capacity, and the vertical axis indicates the average number of extra patients on the waiting list across the periods under consideration (i.e., t 1 + t 2 ). 2 1 Figure B2 depicts the reduction in the overall capacity and the extra loss of patient life months in percentage numbers.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 95,
+                    "text": "Figure B3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 141,
+                    "end": 148,
+                    "text": "Table 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 447,
+                    "end": 456,
+                    "text": "Figure B2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Appendix B: Impact of Capacity Constraints at Center Level"
+        },
+        {
+            "text": "2 Figure B4 depicts the reduction in the overall capacity and the average number of extra patients on the waiting list in percentage numbers. Table 6 ) and the center-specific tiered shutdown policy.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 2,
+                    "end": 11,
+                    "text": "Figure B4",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 142,
+                    "end": 149,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix B: Impact of Capacity Constraints at Center Level"
+        },
+        {
+            "text": "We see the average number of extra patients on the waiting list increases as the reduction in the overall capacity increases. Table   6 ) and the center-specific tiered shutdown policy.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 126,
+                    "end": 135,
+                    "text": "Table   6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix B: Impact of Capacity Constraints at Center Level"
+        },
+        {
+            "text": "Article submitted to ; manuscript no. Table 6 ) and the center-specific tiered shutdown policy.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 38,
+                    "end": 45,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix B: Impact of Capacity Constraints at Center Level"
+        },
+        {
+            "text": "Appendix C: Capacity Constraints in Percentage Numbers Figure Table 6 ) and the nation-guidance tiered shutdown policy. Table 6 ) and the nation-guidance tiered shutdown policy.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 55,
+                    "end": 61,
+                    "text": "Figure",
+                    "ref_id": null
+                },
+                {
+                    "start": 62,
+                    "end": 69,
+                    "text": "Table 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 120,
+                    "end": 127,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "9"
+        },
+        {
+            "text": "To understand the nonlinear relationship between the loss of patient life months and the reduction in capacity, we perform sensitivity analyses by reducing the capacity for one patient category at a time. Table D1 summarizes the results based on the scenario in which we reduce the capacity by 0.1 transplants per day for the selected patient category indicated by MELD-Na scores (see column \"MELD-Na Score\"). 3 For ease of interpretation, we decompose the total loss of patient life months (see column \"Total Loss\") into three parts:",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 205,
+                    "end": 213,
+                    "text": "Table D1",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Appendix D: Loss of Patient Life Months by Patient Category"
+        },
+        {
+            "text": "(1) loss due to deaths on the waiting list (see column \"Waitlist Deaths\"), (2) loss due to health deteriorations (see column \"Health Deteriorations\"), and (3) loss due to the pandemic (see column \"The Pandemic\").",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix D: Loss of Patient Life Months by Patient Category"
+        },
+        {
+            "text": "We now discuss the results from the table. First, the loss of patient life months due to waitlist deaths is larger for patient categories with higher MELD-Na scores, because sicker patients are more likely to die on the waiting list. Second, the loss of patient life months due to health deteriorations is larger for patient categories with medium MELD-Na scores, because these patients are more likely to transition to sicker categories (excluding deaths). Third, the loss of patient life months due to the pandemic is almost the same across different categories, because scenario 1 (see Table 6 ) specifies the probability of mortality due to the pandemic is the same across different categories. Finally, the total loss is the smallest for patients with low MELD-Na scores and the largest for patients with medium MELD-Na scores. Note: We calculate the loss by reducing the capacity by 0.1 transplants per day for the selected patient category indicated by MELD-Na scores. The results are estimated based on scenario 1 (see Table 6 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 589,
+                    "end": 596,
+                    "text": "Table 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 1027,
+                    "end": 1034,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix D: Loss of Patient Life Months by Patient Category"
+        },
+        {
+            "text": "axis indicates the reduction in the overall capacity, and the vertical axis indicates the average number of extra patients on the waiting list across the periods under consideration (i.e., t 1 + t 2 ). From the figure, we see the average number of extra patients on the waiting list increases as the reduction in the overall capacity increases. For example, when the overall capacity reduces by two transplants per day, the average number of extra patients on the waiting list increases by 32, and when the overall capacity reduces by four transplants per day, the average number of extra patients on the waiting list increases by 44.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Appendix D: Loss of Patient Life Months by Patient Category"
+        },
+        {
+            "text": "Finally, comparing figures E1, E2, 3, and 4, we see the total loss of patient life months from the optimal approach is smaller than that from the greedy approach. For example, when the overall capacity reduces by two transplants per day, the marginal benefit from the optimal approach is 1, 162 \u2212 1, 028 = 134 in terms of the loss of patient life months, and 42 \u2212 32 = 10 in terms of the average number of extra patients on the waiting list. When the overall capacity reduces by four transplants per day, the marginal benefit from the optimal approach is 3, 552 \u2212 2, 374 = 1, 178 in terms of the loss of patient life months, and 77 \u2212 44 = 33 in terms of the average number of extra patients on the waiting list. The total loss of patient life months from the optimal approach is smaller because it prioritizes patients with medium MELD-Na scores over those with high MELD-Na scores, whereas the greedy approach prioritizes patients with higher MELD-Na scores over those with lower MELD-Na scores. Table 6 ) and the nation-guidance tiered shutdown policy.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 997,
+                    "end": 1004,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix D: Loss of Patient Life Months by Patient Category"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "To be or not to be? That is conception! Managing in vitro fertilization programs",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kaplan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hershlag",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Decherney",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lavy",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Management Science",
+            "volume": "38",
+            "issn": "9",
+            "pages": "1217--1229",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "COVID-19: A global transplant perspective on successfully navigating a pandemic",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Manuel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Natori",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Egawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Grossi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fern\u00e1ndez-Ruiz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Humar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "American Journal of Transplantation",
+            "volume": "20",
+            "issn": "7",
+            "pages": "1773--1779",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Impact of Overall-Capacity Constraints on the Loss of Patient Life Months (Center Level) Note: This figure depicts the impact of overall-capacity constraints on the loss of patient life months in absolute numbers. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Impact of Overall-Capacity Constraints on the Loss of Patient Life Months (Center Level) Note: This figure depicts the impact of overall-capacity constraints on the loss of patient life months in percentage numbers. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Impact of the Overall-Capacity Constraints on Waitlist Length (Center Level) Note: This figure depicts the impact of overall-capacity constraints on the average number of extra patients on the waiting list in absolute numbers. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Impact of the Overall-Capacity Constraints on Waitlist Length (Center Level) Note: This figure depicts the impact of overall-capacity constraints on the average number of extra patients on the waiting list in percentage numbers. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "C1 depicts the reduction in the overall capacity and the loss of patient life months in percentage numbers. From the figure, we see the extra loss of patient life months increases as the percentage reduction in the overall capacity increases. For example, when the overall capacity reduces by 20%, the extra loss of patient life months increases by (55, 507 \u2212 54, 653)/54, 653 = 1.6%, and when the overall capacity reduces by 40%, the extra loss of patient life months increases by (57, 428 \u2212 54, 653)/54, 653 = 5.1%.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Impact of Overall-Capacity Constraints on the Loss of Patient Life Months Note: This figure depicts the impact of overall-capacity constraints on the loss of patient life months in percentage numbers. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "C2 depicts the reduction in the overall capacity and the average number of extra patients on the waiting list in percentage numbers. From the figure, we see the percentage of the average number of extra patients on the waiting list increases as the percentage reduction in the overall capacity increases. The average number of extra patients on the waiting list (in percentage) is relatively small, because the total number of patients on the waiting list is large.Article submitted to ; manuscript no.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Impact of the Overall-Capacity Constraints on Waitlist Length Note: This figure depicts the impact of overall-capacity constraints on the average number of extra patients on the waiting list in percentage numbers. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Impact of the Capacity Constraints on Waitlist Length Note: This figure depicts the impact of capacity constraints on the average number of extra patients on the waiting list. The results are estimated based on scenario 1 (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "the results for the scenario in which we divide patients based on MELD-Na scores into seven categories and let \u2206 = 30 days. From the table, we see the majority of patients remain in the same category within 30 days. For example, 93.66% of patients in the first category and 90.68% of patients",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Results from the Logit ModelNote: *** p < 0.01, ** p < 0.05. Insurance type and prior transplant are dropped due to multi-collinearity issues.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Results from the Ordered Logit Model",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Loss of Patient Life Months by Patient CategoryLoss of Patient Life Months due to MELD-Na Score Waitlist Deaths Health Deteriorations The Pandemic",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "In the main analysis, we following existing studies (see, e.g., Kumar et al. 2020) to prioritize sicker patient categories for capacity allocation (designated as \"greedy approach\"). In this section, we allow different patient categories to have different capacity reductions (designated as \"optimal approach\"). To describe this approach, we denote by r m and r \u2032 m the capacity for patient category m before and after the capacity reduction, respectively. We denote by \u03b1 the reduction in the overall capacity and \u03b1 m the reduction in the capacity for patient category m. We derive the optimal pause policy with additional constraints that r \u2032 m = r m \u2212 \u03b1 m and M m=1 \u03b1 m = \u03b1. Given an overall-capacity reduction \u03b1, we find the optimal solution by comparing different combinations of \u03b1 m .We first analyze the impact of capacity constraints on the loss of patient life months. Figure E1 depicts the results by using scenario 1 (see Table 6 ) and the nation-guidance tiered shutdown policy as an example. are estimated based on scenario 1 (see Table 6 ) and the nation-guidance tiered shutdown policy.We then analyze the impact of capacity constraints on waitlist length. Figure E2 depicts the results by using scenario 1 (see Table 6 ) and the nation-guidance tiered shutdown policy as an example. The horizontal",
+            "cite_spans": [
+                {
+                    "start": 64,
+                    "end": 82,
+                    "text": "Kumar et al. 2020)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 876,
+                    "end": 885,
+                    "text": "Figure E1",
+                    "ref_id": null
+                },
+                {
+                    "start": 931,
+                    "end": 938,
+                    "text": "Table 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 1042,
+                    "end": 1049,
+                    "text": "Table 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 1170,
+                    "end": 1179,
+                    "text": "Figure E2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1225,
+                    "end": 1232,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Appendix E: Additional Analyses of Capacity Constraints"
+        }
+    ]
+}
