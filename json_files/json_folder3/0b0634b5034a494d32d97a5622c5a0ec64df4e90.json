@@ -1,0 +1,1659 @@
+{
+    "paper_id": "0b0634b5034a494d32d97a5622c5a0ec64df4e90",
+    "metadata": {
+        "title": "EasyCatch, a convenient, sensitive and specific CRISPR detection system for cancer gene mutations Main text",
+        "authors": [
+            {
+                "first": "Yin",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Zhongnan Hospital of Wuhan University",
+                    "location": {
+                        "addrLine": "No.169 Donghu Road",
+                        "postCode": "430072",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yanling",
+                "middle": [],
+                "last": "Chen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Zhongnan Hospital of Wuhan University",
+                    "location": {
+                        "addrLine": "No.169 Donghu Road",
+                        "postCode": "430072",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Lu",
+                "middle": [],
+                "last": "Dang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yixin",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Shisheng",
+                "middle": [],
+                "last": "Huang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "ShanghaiTech University",
+                    "location": {
+                        "addrLine": "100 Haike Rd",
+                        "postCode": "201210",
+                        "settlement": "Pudong New Area, Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sanyun",
+                "middle": [],
+                "last": "Wu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Zhongnan Hospital of Wuhan University",
+                    "location": {
+                        "addrLine": "No.169 Donghu Road",
+                        "postCode": "430072",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Peixiang",
+                "middle": [],
+                "last": "Ma",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Hongqiang",
+                "middle": [],
+                "last": "Jiang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Zhongnan Hospital of Wuhan University",
+                    "location": {
+                        "addrLine": "No.169 Donghu Road",
+                        "postCode": "430072",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Yi",
+                "middle": [],
+                "last": "Li",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yunbao",
+                "middle": [],
+                "last": "Pan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Yongchang",
+                "middle": [],
+                "last": "Wei",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Xiaodong",
+                "middle": [],
+                "last": "Ma",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ming",
+                "middle": [],
+                "last": "Liu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Quanjiang",
+                "middle": [],
+                "last": "Ji",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Tian",
+                "middle": [],
+                "last": "Chi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "ShanghaiTech University",
+                    "location": {
+                        "addrLine": "100 Haike Rd",
+                        "postCode": "201210",
+                        "settlement": "Pudong New Area, Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Xingxu",
+                "middle": [],
+                "last": "Huang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "ShanghaiTech University",
+                    "location": {
+                        "addrLine": "100 Haike Rd",
+                        "postCode": "201210",
+                        "settlement": "Pudong New Area, Shanghai",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Xinjie",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Guangdong Laboratory of Lingnan Modern Agriculture, Genome Analysis Laboratory",
+                    "institution": "Chinese Academy of Agricultural Sciences",
+                    "location": {
+                        "settlement": "Shenzhen",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Fuling",
+                "middle": [],
+                "last": "Zhou",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Zhongnan Hospital of Wuhan University",
+                    "location": {
+                        "addrLine": "No.169 Donghu Road",
+                        "postCode": "430072",
+                        "settlement": "Wuhan",
+                        "country": "China"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "Convenient, sensitive and specific detection of rare genetic variants and mutations is essential for early cancer diagnosis and precision medicine [1] , but tools that are simultaneously endowed with all these attributes remain elusive despite years of intense quest. Recently, Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) associated (Cas) proteins have shown great potential for rapid and sensitive nucleic acid detection [2] [3] [4] [5] . Guided by a CRISPR-derived RNA (crRNA) complementary to the target sequence, the CRISPR/Cas complex can recognize and cleave the target nucleic acid with single-base resolution specificity [6] . Cas12a is one of the most commonly used CRISPR/Cas proteins for DNA detection. Upon recognition and cleavage of target double-strand DNA, the collateral cleavage activity of Cas12a is activated, resulting in cleavage of nearby single-strand DNA (including fluorescence reporters) in a non-specific manner [7] , and this \"collateral cleavage\" has been widely exploited for sensitive and specific detection of target sequences [8, 9] . However, for detection of rare mutations in cancers, the majority of the DNA are wildtype (WT) sequences, significantly hampering the analysis. We have now solved the problem by simply including restriction digestion in the detection system, making our method (EasyCatch, for Excision-amplification-synchronous Cas12a-targeted checkout) the first capable of convenient, specific, sensitive (0.001%), and rapid (< 1 h) detection of mutations in cancer samples.",
+            "cite_spans": [
+                {
+                    "start": 147,
+                    "end": 150,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 445,
+                    "end": 448,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 449,
+                    "end": 452,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 453,
+                    "end": 456,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 457,
+                    "end": 460,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 652,
+                    "end": 655,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 963,
+                    "end": 966,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1083,
+                    "end": 1086,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1087,
+                    "end": 1089,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Main text"
+        },
+        {
+            "text": "For traditional CRISPR detection, when the target mutation sequence in the samples constitutes only a minority of total DNA, the detection becomes difficult due to the interference by the non-target WT sequences, even after target enrichment by recombinase polymerase amplification (RPA, in 20 min at 37 ~ 42 \u00b0C) (Fig. 1a) [10] . We hypothesized that by adding a restriction enzyme recognizing the WT sequence to the RPA system, we can destroy the interfering sequences, and thereby inhibit the amplification of the WT sequences while facilitate the amplification of mutant templates, thus increasing the detection sensitivity (Fig. 1a) . This strategy is the basis of EasyCatch.",
+            "cite_spans": [
+                {
+                    "start": 323,
+                    "end": 327,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 313,
+                    "end": 322,
+                    "text": "(Fig. 1a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 627,
+                    "end": 636,
+                    "text": "(Fig. 1a)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Development of EasyCatch"
+        },
+        {
+            "text": "For proof-of-concept demonstration, we used Easy-Catch to detect the drug-resistant FLT3 gene D835Y/H/ V/F mutations in acute myeloid leukemia (AML) [11] .",
+            "cite_spans": [
+                {
+                    "start": 149,
+                    "end": 153,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Development of EasyCatch"
+        },
+        {
+            "text": "Since EcoRV restriction enzyme can recognize and digest WT D835 sequence (\u2212GAT ATC -), but not the D835 mutant sequences (Fig. S1a) . The feasibility of EcoRV digestion in the RPA reaction was validated using PCR fragments, wherein the fluorescence signal of WT D835 fragments was eliminated by EcoRV digestion, while that of the D835Y/H/V/F fragments was enhanced ( Fig.  S1b-d) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 121,
+                    "end": 131,
+                    "text": "(Fig. S1a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 367,
+                    "end": 379,
+                    "text": "Fig.  S1b-d)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Development of EasyCatch"
+        },
+        {
+            "text": "In a Cas12a reaction, a mutation-specific crRNA is required to avoid the cross-reactivity against WT. To screen for the optimal crRNA for detecting FLT3-D835Y, we designed four crRNAs, with FLT3-D835Y-crRNA1 perfectly matching the mutant sequence and FLT3-D835Y-crRNA2 ~ 4 bearing various mismatches (Fig. 1b) . We compared the sensitivity and specificity of these four crRNAs in detecting D835Y in PCR fragments (1e10 copies) comprising the D835Y and WT alleles. After 30 min of the Cas12a reaction, all the 4 crRNAs, particularly crRNA1 and crRNA2, could detect the sample with 100% D835Y, while crRNA1 but not crRNA2 produced a strong signal even for WT sample ( Fig. 1c; S2 ). Thereby crRNA2 is the optimal crRNA for D835Y detection based on its excellent sensitivity and specificity. Optimal crRNAs for D835H/V/F and WT were similarly identified, which are D835H-crRNA2, D835V-crRNA2, D835F-crRNA, WT-crRNA2, respectively ( Fig. 1d ; S3-6), and an inner control (IC)-crRNA was also designed to target a non-mutation sequence near the mutation site. To simplify the diagnosis of the four mutations, we pooled the D835Y/H/V/F crRNAs (MMT-crRNAs) and the 4 mutant fragments into a single reaction, resulting in a strong fluorescence signal, whereas the WT sample did not show any signal, as expected ( Fig. 1e , f; S7).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 300,
+                    "end": 309,
+                    "text": "(Fig. 1b)",
+                    "ref_id": null
+                },
+                {
+                    "start": 666,
+                    "end": 677,
+                    "text": "Fig. 1c; S2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 929,
+                    "end": 936,
+                    "text": "Fig. 1d",
+                    "ref_id": null
+                },
+                {
+                    "start": 1304,
+                    "end": 1311,
+                    "text": "Fig. 1e",
+                    "ref_id": null
+                }
+            ],
+            "section": "Development of EasyCatch"
+        },
+        {
+            "text": "Next, we screened 9 pairs of RPA primers to improve EasyCatch sensitivity (Fig. S8 ). Using the best primers and MMT-crRNAs, as low as 10 copies of D835Y plasmid templates could be detected only after 20 min of RPA and 20 min of Cas12a reaction (Fig. 1g) . Therefore, we chose this primer pair and 20 min as the Cas12a reaction time in the subsequent experiments.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 74,
+                    "end": 82,
+                    "text": "(Fig. S8",
+                    "ref_id": null
+                },
+                {
+                    "start": 245,
+                    "end": 254,
+                    "text": "(Fig. 1g)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Development of EasyCatch"
+        },
+        {
+            "text": "With the optimized crRNAs and primers, we set out to determine the detection limit of EasyCatch for FLT3-D835Y. We first quantified the effect of EcoRV on WT sequence, finding that EcoRV could completely inhibit the amplification of up to 1e6 copies of WT templates but spared the mutant target as expected (Fig. S9, 10) . We then mixed the mutant and WT templates at various ratios, with FLT3-D835Y comprised 100, 50, 25, 10, 1, 0.1, 0.01, and 0.001% of the total templates, and used 1e6 copies of the templates as the input for EasyCatch, finding the detection limit being 0.001% (i.e., 10 copies of D835Y template amid 999,990 copies of WT template). In contrast, in the absence of EcoRV, namely CRISPR detection, the detection limit was 1000x lower (1%) (Fig. 1h , i; S11). Finally, FGS directly demonstrated that EcoRV markedly enriched the mutant allele in the RPA mixture from 10, 1 and 0.1% to 100, 98 and 51%, respectively (Fig. 1j) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 307,
+                    "end": 320,
+                    "text": "(Fig. S9, 10)",
+                    "ref_id": null
+                },
+                {
+                    "start": 758,
+                    "end": 766,
+                    "text": "(Fig. 1h",
+                    "ref_id": null
+                },
+                {
+                    "start": 932,
+                    "end": 941,
+                    "text": "(Fig. 1j)",
+                    "ref_id": null
+                }
+            ],
+            "section": "EasyCatch achieves a 0.001% sensitivity in FLT3-D835Y detection"
+        },
+        {
+            "text": "We next compared EasyCatch with the commonly used qPCR-based detection method. We designed and tested two D835Y-specific TaqMan probes (Fig. S12) , and then chose the more specific one (probe 1) for the comparison (Fig. S13, 14) . The qPCR results showed that the amplification curves and Ct values of 1, 0.1, 0.01% mutant samples cannot be distinguished from that of the WT sample ( Fig. 1k, l) , indicating its sensitivity of only 1% ~ 10%. Together, these results suggested that EasyCatch is much more sensitive than TaqMan qPCR in detecting FLT3-D835Y mutation.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 135,
+                    "end": 145,
+                    "text": "(Fig. S12)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 214,
+                    "end": 228,
+                    "text": "(Fig. S13, 14)",
+                    "ref_id": null
+                },
+                {
+                    "start": 384,
+                    "end": 395,
+                    "text": "Fig. 1k, l)",
+                    "ref_id": null
+                }
+            ],
+            "section": "EasyCatch achieves a 0.001% sensitivity in FLT3-D835Y detection"
+        },
+        {
+            "text": "With these, AML patient samples were used for Easy-Catch detection of D835Y/V/H/F mutations. Briefly, 200 ~ 500 \u03bcl of blood was incubated with red blood cell (RBC) lysis buffer for 1 min, and the cell precipitate was obtained by 1 min of centrifugation. Next, genomic DNA was released by a nucleic acid releaser under 95 \u00b0C for 3 min and then treated by the EasyCatch assay (Fig. S15) . From drawing blood to making treatment decisions, the whole process can be completed within 1 h (Fig. 2a) . We then simultaneously applied EasyCatch and first-generation sequencing (FGS) to detect 32 AML samples whose FLT3 gene mutation status had been analyzed by next-generation sequencing (NGS) previously, wherein P6, P12, P17, P27, and P31 carried drugresistant D835Y/V/H/F mutations ( Fig. 2b; S16, 17) . The results showed that EasyCatch successfully identified all five mutant samples; in contrast, only two samples with relatively high mutation rates, P12 of 17.2% and P31 of 10.9%, were identified by FGS (Fig. 2b) . Thus, Easy-Catch outperforms FGS for clinical sample analysis. More importantly, the EasyCatch method is simple and economical, and only needs a mini centrifuge, a 20 \u03bcl pipette and tips, a heat blocker, and a blue lamp with a 485 nm wavelength (Fig. S18) . We next benchmarked EasyCatch against the commonly used FGS for detecting FLT3-D835 mutations in 80 AML patients (P33 -P112) with unknown FLT3-D835 mutation status, with NGS as the gold standard. Easy-Catch, but not FGS, was able to detect D835Y in P38, P59, P71, P80, P83, and P106 (Fig. 2c) . NGS confirmed that all the six samples harbored the D835Y mutation (at 4.5, 2.7, 4.1, 3.5, 1.2 and 2.4%, respectively) (Fig. S19,  20) . Notably, NGS showed that P86 carried 10.9% nondrug-resistant D835E (GAT>GAA) mutation. As this mutation did not produce a signal in EasyCatch, further confirming the high specificity of this method (Fig. 2c) . The statistical analysis of the 80 cases further showed that EasyCatch is much more sensitive than FGS (100% vs. 0%) (Fig. 2d) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 374,
+                    "end": 384,
+                    "text": "(Fig. S15)",
+                    "ref_id": null
+                },
+                {
+                    "start": 483,
+                    "end": 492,
+                    "text": "(Fig. 2a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 778,
+                    "end": 795,
+                    "text": "Fig. 2b; S16, 17)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1002,
+                    "end": 1011,
+                    "text": "(Fig. 2b)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1259,
+                    "end": 1269,
+                    "text": "(Fig. S18)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1555,
+                    "end": 1564,
+                    "text": "(Fig. 2c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1686,
+                    "end": 1701,
+                    "text": "(Fig. S19,  20)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1902,
+                    "end": 1911,
+                    "text": "(Fig. 2c)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 2031,
+                    "end": 2040,
+                    "text": "(Fig. 2d)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "EasyCatch accurately detected FLT3-D835Y/V/H/F mutations in clinical samples"
+        },
+        {
+            "text": "To verify the versatility of EasyCatch, we applied it to detect 4 mutations at 3 other genes (IDH2, EGFR and NRAS). IDH2 R172K is a hotspot mutation in glioma and leukemia, and of prognostic and therapeutic value [12, 13] . EGFR e19del and L858R are the two main mutations sensitive to EGFR-TKIs, thus of great therapeutic value for patients with lung cancer [14] . At the same time, the NRAS G12D is a driver mutation in leukemia and colorectal cancer [15] . All four mutations are important testing items in the clinic. We first compared EasyCatch with the CRISPR detection method to detect 1e5 copies of plasmid templates of 1 and 0.1% mutation rate. The results showed that the WT fluorescence signals were strong while the signals of all the four mutations were weak in CRISPR detection. However, the WT signals were almost invisible while the mutation signals were significantly increased in EasyCatch (Fig. 2e; S21a) . The FGS results of the amplified products also confirmed the excellent mutation enrichment effect of EasyCatch (Fig. S21b) . Further analysis indicated that the MT/WT fluorescence ratios in EasyCatch were hundreds of times higher than that of CRISPR detection (Fig. 2f ). More samples with decreasing frequencies (100, 50, 25, 10, 1, 0.1%, and 0) of these mutations were also tested, with consistent results (Fig. S22-25) .",
+            "cite_spans": [
+                {
+                    "start": 213,
+                    "end": 217,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 218,
+                    "end": 221,
+                    "text": "13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 359,
+                    "end": 363,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 453,
+                    "end": 457,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 908,
+                    "end": 923,
+                    "text": "(Fig. 2e; S21a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1037,
+                    "end": 1048,
+                    "text": "(Fig. S21b)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1186,
+                    "end": 1194,
+                    "text": "(Fig. 2f",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1334,
+                    "end": 1347,
+                    "text": "(Fig. S22-25)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "EasyCatch is applicable to other cancer mutations"
+        },
+        {
+            "text": "We also detected EGFR-e19del, EGFR-L858R, and NRAS-G12D mutations using commercial kits based on fluorescence qPCR. The tested samples were 1e5 copies of plasmid templates with a mutation rate of 10, 1, 0.1, and 0% (WT), respectively. The results of all three sites showed that the amplification curves of different samples were gradually shifted to right, consistent with the decreased mutation rate. However, we noticed strong fluorescence signals in WT samples (Fig. 2g-i; S26-28 ). In our EasyCatch detection, the WT signal was completely inhibited by restriction digestion and mutation-specific crRNA, ensuring the reliability of the results.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 464,
+                    "end": 482,
+                    "text": "(Fig. 2g-i; S26-28",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "EasyCatch is applicable to other cancer mutations"
+        },
+        {
+            "text": "Finally, we predicted the scope of application of Easy-Catch. Total 91,771 human disease-related sites have been documented in the ClinVar database (www. ncbi. nlm. nih. gov/ clinv ar), and more than 63,000 restriction enzymes reported in the REBASE database (http:// rebase. neb. com/ rebase/ azlist. re2. html), 485 of them commercially available and functioning at 37 \u00b0C. We of EasyCatch compared with FGS using NGS as a standard reference. e Sensitivity comparison between EasyCatch and CRISPR detection in the detection of IDH2-R172K, EGFR-e19del and L858R, and NRAS-G12D mutations. Genomic locations of these mutations were shown above, wherein exons and mutation sites were colored in blue and red, respectively. The tested samples were 1e5 copies of plasmid templates with a mutation rate of 0.1%. Each amplified product was detected by both WT-crRNA and mutation-crRNA induced Cas12a reaction. Fluorescence intensity and naked eye results were both recorded. f Statistic analysis of the MT/WT fluorescence ratio in EasyCatch and CRISPR detection. The results of 1 and 0.1% mutated samples were counted together. g, h, i The qPCR assay for EGFR-e19del, L858R and NRAS-G12D detection, respectively. The qPCRs were performed on 10, 1 and 0.1% mutated templates. A 100% WT template and ddH 2 O (NC) served as control. j The statistical chart of restriction enzyme cuttable human disease-related genomic sites (mutation < 27 bp, which is the detection length of crRNA), wherein commercial available 37 \u00b0C restriction enzyme cuttable sites can be potentially detected by EasyCatch. The inclusion relation is shown in the upper-right corner found that 53,434 (58.2%) sites can be cut by the 485 enzymes, indicating that the EasyCatch system can potentially diagnose ~ 60% of human disease-related mutations (Fig. 2j) . In addition to restriction enzymes, PAM requirement also imposes restriction on the target range of EasyCatch, but this can be alleviated using Cas12a variants (Table S5) , and primer-introduced PAM (Fig. S29) . Thus, EasyCatch is a versatile method for detecting gene mutations.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1809,
+                    "end": 1818,
+                    "text": "(Fig. 2j)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1981,
+                    "end": 1991,
+                    "text": "(Table S5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2020,
+                    "end": 2030,
+                    "text": "(Fig. S29)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "EasyCatch is applicable to other cancer mutations"
+        },
+        {
+            "text": "We have adapted the Cas12a-based DNA detection platform for evaluating rare cancer-related mutations by establishing EasyCatch assay with the sensitivity of 0.001%, which can be completed (from sample preparation to data output) within an hour using only simple instruments and operations. Our study established Easy-Catch as the first mutation detection method that is not only superbly sensitive and specific, but also extremely fast, simple, and convenient, showing its versatility in point-of-care cancer diagnosis and precision medicine. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The online version contains supplementary material available at https:// doi. org/ 10. 1186/ s12943-021-01456-x.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Additional file 2: Supplementary Fig. 1 Validation of the activity and specificity of EcoRV in RPA system. Supplementary Fig. 2 Specificity assay of FLT3-D835Y-crRNAs. Supplementary Fig. 3 Specificity assay of FLT3-D835H-crRNAs. Supplementary Fig. 4 Specificity assay of FLT3-D835V-crRNAs. Supplementary Fig. 5 Specificity assay of FLT3-D835F-crRNAs. Supplementary Fig. 6 Specificity assay of FLT3-D835WT-crRNAs. Supplementary Fig. 7 Specificity assay of MMT-crRNAs. Supplementary Fig. 8 RPA primer screen for highly sensitive EasyCatch detection. Supplementary Fig. 9 WT inhibition assay by RPA with or without EcoRV. Supplementary Fig. 10 Detection of 1e6 ~ 1e1 copies of D835Y and WT plasmids using RPA with or without EcoRV. Supplementary Fig. 11 Inhibition of WT amplification by EasyCatch. Supplementary  Fig. 12 Design of TaqMan qPCR for the detection of FLT3-D835Y. Supplementary Fig. 13 The amplification plot of D835Y-probe 1-involved qPCR in detecting 1e5 copies of plasmid templates with gradient D835Y mutation rates. Supplementary Fig. 14 The amplification plot of D835Yprobe 2-involved qPCR in detecting 1e5 copies of plasmid templates with gradient D835Y mutation rates.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 19,
+                    "end": 39,
+                    "text": "Supplementary Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 107,
+                    "end": 127,
+                    "text": "Supplementary Fig. 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 168,
+                    "end": 188,
+                    "text": "Supplementary Fig. 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 229,
+                    "end": 249,
+                    "text": "Supplementary Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 290,
+                    "end": 310,
+                    "text": "Supplementary Fig. 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 351,
+                    "end": 371,
+                    "text": "Supplementary Fig. 6",
+                    "ref_id": null
+                },
+                {
+                    "start": 413,
+                    "end": 433,
+                    "text": "Supplementary Fig. 7",
+                    "ref_id": null
+                },
+                {
+                    "start": 467,
+                    "end": 487,
+                    "text": "Supplementary Fig. 8",
+                    "ref_id": null
+                },
+                {
+                    "start": 548,
+                    "end": 568,
+                    "text": "Supplementary Fig. 9",
+                    "ref_id": null
+                },
+                {
+                    "start": 619,
+                    "end": 640,
+                    "text": "Supplementary Fig. 10",
+                    "ref_id": null
+                },
+                {
+                    "start": 743,
+                    "end": 750,
+                    "text": "Fig. 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 796,
+                    "end": 818,
+                    "text": "Supplementary  Fig. 12",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 888,
+                    "end": 895,
+                    "text": "Fig. 13",
+                    "ref_id": null
+                },
+                {
+                    "start": 1031,
+                    "end": 1052,
+                    "text": "Supplementary Fig. 14",
+                    "ref_id": null
+                }
+            ],
+            "section": "Additional file 1. Methods."
+        },
+        {
+            "text": "Additional file 3: Supplementary Fig. 15 Exploration of the fastest blood processing time before EasyCatch. Supplementary Fig. 16 Classification information and NGS results of the FLT3-D835 mutation status of 32 AML samples. Supplementary Fig. 17 EasyCatch and FGS results of the 32 AML samples in the detection of FLT3-D835Y/V/H/F nutations. Supplementary Fig. 18 Equipment needed in EasyCatch assay. Supplementary Fig. 19 EasyCatch results of 80 AML patient samples read by naked eyes. Supplementary Fig. 20 EasyCatch, FGS and NGS results of 80 AML patient blood samples. Supplementary Fig. 21 Broad application of EasyCatch in cancer mutation diagnosis. Supplementary Fig. 22 Comparison of CRISPR detection and EasyCatch on IDH2-R172K mutation. Supplementary Fig. 23 Comparison of CRISPR detection and EasyCatch on EGFR-e19del mutation. Supplementary Fig. 24 Comparison of CRISPR detection and EasyCatch on EGFR-L858R mutation. Supplementary  Fig. 25 Comparison of CRISPR detection and EasyCatch on NRAS-G12D mutation. Supplementary Fig. 26 The amplification plot of fluorescence qPCR detection of EGFR gene e19del mutation using a commercial kit. Supplementary Fig. 27 The amplification plot of fluorescence qPCR detection of EGFR gene L858R mutation using a commercial kit. Supplementary Fig. 28 The amplification plot of fluorescence qPCR detection of EGFR gene L858R mutation using a commercial kit. Supplementary  Fig. 29 The RPA primer design for IDH2-R172K mutation detection. Table 3 Next-generation sequencing primer sequences. Supplementary Table 4 Primers and probes of Taqman qPCR. Supplementary Table 5 Cas12a nuclease natural and engineered variants.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 19,
+                    "end": 40,
+                    "text": "Supplementary Fig. 15",
+                    "ref_id": null
+                },
+                {
+                    "start": 108,
+                    "end": 129,
+                    "text": "Supplementary Fig. 16",
+                    "ref_id": null
+                },
+                {
+                    "start": 225,
+                    "end": 246,
+                    "text": "Supplementary Fig. 17",
+                    "ref_id": null
+                },
+                {
+                    "start": 343,
+                    "end": 364,
+                    "text": "Supplementary Fig. 18",
+                    "ref_id": null
+                },
+                {
+                    "start": 402,
+                    "end": 423,
+                    "text": "Supplementary Fig. 19",
+                    "ref_id": null
+                },
+                {
+                    "start": 488,
+                    "end": 509,
+                    "text": "Supplementary Fig. 20",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 574,
+                    "end": 595,
+                    "text": "Supplementary Fig. 21",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 657,
+                    "end": 678,
+                    "text": "Supplementary Fig. 22",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 748,
+                    "end": 769,
+                    "text": "Supplementary Fig. 23",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 840,
+                    "end": 861,
+                    "text": "Supplementary Fig. 24",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 931,
+                    "end": 953,
+                    "text": "Supplementary  Fig. 25",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1022,
+                    "end": 1043,
+                    "text": "Supplementary Fig. 26",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1151,
+                    "end": 1172,
+                    "text": "Supplementary Fig. 27",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1293,
+                    "end": 1300,
+                    "text": "Fig. 28",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1407,
+                    "end": 1429,
+                    "text": "Supplementary  Fig. 29",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1487,
+                    "end": 1494,
+                    "text": "Table 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 1554,
+                    "end": 1561,
+                    "text": "Table 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 1611,
+                    "end": 1618,
+                    "text": "Table 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Additional file 1. Methods."
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The emerging clinical relevance of genomics in cancer medicine",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Berger",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mardis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Rev Clin Oncol",
+            "volume": "15",
+            "issn": "6",
+            "pages": "353--65",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41571-018-0002-6"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "CRISPR/Cas systems towards next-generation biosensing",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Trends Biotechnol",
+            "volume": "37",
+            "issn": "7",
+            "pages": "730--773",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tibtech.2018.12.005"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "CDetection: CRISPR-Cas12b-based DNA detection with sub-attomolar sensitivity and singlebase specificity",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Teng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Genome Biol",
+            "volume": "20",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13059-019-1742-z"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Field-deployable viral diagnostics using CRISPR-Cas13",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Myhrvold",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Freije",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gootenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Abudayyeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Metsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Durbin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Science",
+            "volume": "360",
+            "issn": "6387",
+            "pages": "444--452",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.aas8836"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Next-generation pathogen diagnosis with CRISPR/Cas-based detection methods",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Shang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Emerg Microbes Infect",
+            "volume": "9",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/22221751.2020.1793689"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Nucleic acid detection with CRISPR-Cas13a/C2c2",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gootenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Abudayyeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Essletzbichler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Dy",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Joung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Science",
+            "volume": "356",
+            "issn": "6336",
+            "pages": "438--480",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.aam9321"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Harrington",
+                    "suffix": ""
+                },
+                {
+                    "first": "Da",
+                    "middle": [],
+                    "last": "Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Palefsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Science",
+            "volume": "360",
+            "issn": "6387",
+            "pages": "436--445",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.aar6245"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Ultrasensitive and visual detection of SARS-CoV-2 using all-in-one dual CRISPR-Cas12a assay",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Lalla",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ballesteros",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Sfeir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Commun",
+            "volume": "11",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41467-020-18575-6"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "MeCas12a, a highly sensitive and specific system for COVID-19 detection",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Adv Sci (Weinh)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/advs.202001300"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Recombinase polymerase amplification: Basics, applications and recent advances",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lobato",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "O&apos;sullivan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Trends Anal Chem",
+            "volume": "98",
+            "issn": "",
+            "pages": "19--35",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.trac.2017.10.015"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Secondary mutations as mediators of resistance to targeted therapy in leukemia",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Daver",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cortes",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ravandi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Burger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Konopleva",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Blood",
+            "volume": "125",
+            "issn": "21",
+            "pages": "3236--3281",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2014-10-605808"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Highly sensitive detection of IDH2 mutations in acute myeloid leukemia",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Petiti",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Rosso",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Croce",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Franceschi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Andreani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dragani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Med",
+            "volume": "9",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/jcm9010271"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "IDH1 and IDH2 mutations in tumorigenesis: mechanistic insights and clinical perspectives",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Clin Cancer Res",
+            "volume": "18",
+            "issn": "20",
+            "pages": "5562--71",
+            "other_ids": {
+                "DOI": [
+                    "10.1158/1078-0432.CCR-12-1773"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "EGFR mutations in lung cancer: correlation with clinical response to gefitinib therapy",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Paez",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Janne",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tracy",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Greulich",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gabriel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Science",
+            "volume": "304",
+            "issn": "5676",
+            "pages": "1497--500",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.1099314"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Nras(G12D/+) promotes leukemogenesis by aberrantly regulating hematopoietic stem cell functions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Blood",
+            "volume": "121",
+            "issn": "26",
+            "pages": "5203--5210",
+            "other_ids": {
+                "DOI": [
+                    "10.1182/blood-2012-12-475863"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "See figure on next page.) Fig. 1 Development and validation of EasyCatch system for specific and sensitive mutation detection. a Schemes of EasyCatch compared with CRISPR detection. b Sequences of D835Y-crRNAs, and FLT3-WT and D835Y gene region. Base G mutates to T in D835Y. c Fluorescence heatmap of different D835Y-crRNA-induced Cas12a reactions detecting 1e10 copies of PCR fragments with different D835Y mutation rates (100, 50, 10%, and 0), Cas12a reactions for 10, 20 and 30 min were recorded. d Specificity assay of D835Y-crRNA2, D835H-crRNA, D835V-crRNA, and D835F-crRNA. Time-course of fluorescence intensity and naked-eye observation after 60 min of Cas12a reaction are shown. e Schematic diagram of MMT-crRNAs-guided Cas12a reaction to identify D835Y/H/V/F mutations from WT background. f Specificity assay of MMT-crRNAs using 1e10 copies of D835Y/H/V/F and WT fragments. Fluorescence intensity after 60 min of Cas12a reaction are shown. IC, inner control. g Time-course analysis of the detection of 1e1 D835Y plasmid templates by RPA combined with MMT-crRNAs induced Cas12a reaction. h, i Sensitivity comparison of EasyCatch and CRISPR detection in detecting 1e6 copies of plasmid templates with gradient D835Y mutation rates. j FGS results of the amplified products in EasyCatch and CRISPR detection. The D835Y mutation rates were quantified using the online tool EditR (https:// moria rityl ab. shiny apps. io/ editr_ v10/). k The design and amplification plot of D835Y-probe-mediated qPCR in detecting 1e6 copies of plasmid templates with gradient D835Y mutation rates. l Ct value comparison of different qPCR samples Liu et al. Molecular Cancer (2021) 20:See legend on previous page.)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "EasyCatch is applicable to clinical samples and other cancer mutations. a Schematic diagram of the whole mutation diagnosis. b EasyCatch and FGS results of 32 AML samples with known FLT3-D835 mutation status, 10/32 cases are shown. D835Y/V/H/F-positive patients are marked by red IDs, and red triangles indicate mutant bases. c EasyCatch, FGS, and NGS results of 80 AML samples with unknown FLT3-D835 mutation status, 9/80 cases are shown. WT and mutated bases in NGS are marked by green and red, respectively. d Statistical table of the sensitivity and specificity",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "See figure on next page.) Liu et al. Molecular Cancer (2021) 20:See legend on previous page.)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "CRISPR: Clustered Regularly Interspaced Short Palindromic Repeats; Cas: CRISPR associated proteins; AML: Acute myeloid leukemia; FLT3: FMS-like tyrosine kinase 3; PCR: Polymerase chain reaction; WT: Wild-type; crRNA: CRISPR RNA; RPA: Recombinase polymerase amplification; RBC: Red blood cell; WBC: White blood cell; FGS: First-generation sequencing; NGS: Next-generation sequencing.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "PCR and RPA primer sequences. Supplementary Table 2 crRNA sequences. Supplementary",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank members of Huang lab and Zhou lab for helpful discussions. We also thank the Molecular and Cell Biology Core Facility (MCBCF) and the Molecular Imaging Core Facility (MICF) at the School of Life Science and Technology, ShanghaiTech University for providing technical support. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The data supporting the conclusions of this article have been given in this article and its additional files, and can also be requested from the corresponding authors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "Ethics approval and consent to participate This study was approved by Zhongnan Hospital of Wuhan University, and School of Life Science and Technology, ShanghaiTech University.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        },
+        {
+            "text": "All authors have agreed to publish this manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The authors declare that they have no competing interests. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

@@ -1,0 +1,2345 @@
+{
+    "paper_id": "0b336a7e895783a25a7bf81cf823b1a0bbf2b209",
+    "metadata": {
+        "title": "Explaining the homogeneous diffusion of COVID-19 nonpharmaceutical interventions across heterogeneous countries",
+        "authors": [
+            {
+                "first": "Abiel",
+                "middle": [],
+                "last": "Sebhatu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Link\u00f6ping University",
+                    "location": {
+                        "postCode": "SE-601 74",
+                        "settlement": "Norrk\u00f6ping",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Karl",
+                "middle": [],
+                "last": "Wennberg",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Link\u00f6ping University",
+                    "location": {
+                        "postCode": "SE-601 74",
+                        "settlement": "Norrk\u00f6ping",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Stefan",
+                "middle": [],
+                "last": "Arora-Jonsson",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Uppsala University",
+                    "location": {
+                        "postCode": "SE-751 20",
+                        "settlement": "Uppsala",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Staffan",
+                "middle": [
+                    "I"
+                ],
+                "last": "Lindberg",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Gothenburg",
+                    "location": {
+                        "postCode": "SE-405 30",
+                        "settlement": "Gothenburg",
+                        "country": "Sweden"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We analyze the adoption of nonpharmaceutical interventions in the Organisation for Economic Co-operation and Development (OECD) countries during the early phase of the coronavirus disease 2019 (COVID-19) pandemic. Given the complexity associated with pandemic decisions, governments are faced with the dilemma of how to act quickly when their core decision-making processes are based on deliberations balancing political considerations. Our findings show that, in times of severe crisis, governments follow the lead of others and base their decisions on what other countries do. Governments in countries with a stronger democratic structure are slower to react in the face of the pandemic but are more sensitive to the influence of other countries. We provide insights for research on international policy diffusion and research on the political consequences of the COVID-19 pandemic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "COVID-19 pandemic | policy diffusion | democracy",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "We analyze the adoption of nonpharmaceutical interventions in the Organisation for Economic Co-operation and Development (OECD) countries during the early phase of the coronavirus disease 2019 (COVID- 19) pandemic. Given the complexity associated with pandemic decisions, governments are faced with the dilemma of how to act quickly when their core decision-making processes are based on deliberations balancing political considerations. Our findings show that, in times of severe crisis, governments follow the lead of others and base their decisions on what other countries do. Governments in countries with a stronger democratic structure are slower to react in the face of the pandemic but are more sensitive to the influence of other countries. We provide insights for research on international policy diffusion and research on the political consequences of the COVID-19 pandemic.",
+            "cite_spans": [
+                {
+                    "start": 201,
+                    "end": 204,
+                    "text": "19)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "COVID-19 pandemic | policy diffusion | democracy F ollowing the coronavirus disease 2019 (COVID-19) outbreak, unprecedented policy measures restricting individual movement and behavior have been adopted across the world-locking down societies to different degrees. These policies-often known as \"nonpharmaceutical interventions\" (NPIs)-include school closures, travel restrictions, curfews, and quarantines, and are motivated by the need for \"social distancing\" in order to slow the spread of the COVID-19 virus (severe acute respiratory syndrome coronavirus 2 [SARS-CoV-2]).* While timing of NPIs is crucial, it is challenging to determine an optimal timing. Waiting too long may lead to the spread spiraling out of control and overwhelm the healthcare system. Introducing interventions too early or too uniformly across an entire country may also be perilous since it may increase the risk of a \"second wave\" of infections once initial interventions are halted (1, 2) . Every intervention also carries significant and longlasting social and economic cost in terms of citizens' well-being and lost economic activity (3, 4) . Further, interventions are dependent on citizens' willingness to comply-a willingness that is likely to wane over the course of the intervention (5) . Finally, the timing of easing interventions is problematic and related to when in the epidemic phase interventions were initially initiated (4) .",
+            "cite_spans": [
+                {
+                    "start": 963,
+                    "end": 966,
+                    "text": "(1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 967,
+                    "end": 969,
+                    "text": "2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1117,
+                    "end": 1120,
+                    "text": "(3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1121,
+                    "end": 1123,
+                    "text": "4)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1271,
+                    "end": 1274,
+                    "text": "(5)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1417,
+                    "end": 1420,
+                    "text": "(4)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Given these complexities and epidemiological recommendations to carefully evaluate the timing of NPIs and tailor the exact schedule to country-specific needs (2) , it is surprising to see how homogeneous countries have been in the timing of the adoption of interventions. Fig. 1 shows that four out of five COVID- 19 NPIs spread to about 80% of the Organisation for Economic Cooperation and Development (OECD) countries within a period of 2 wk in March. \u2020 Given the heterogeneity among these countries in terms of the preparedness of their healthcare systems, their population demography, and the degree to which the pandemic had taken hold in each country at this time, the homogeneity in timing of adoption is striking.",
+            "cite_spans": [
+                {
+                    "start": 158,
+                    "end": 161,
+                    "text": "(2)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 314,
+                    "end": 316,
+                    "text": "19",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 272,
+                    "end": 278,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "While researchers across disciplines struggle to gauge the efficacy of these policies, a key task for social scientists is to explain why public decision makers responded as they did during the pandemic outbreak. Distinct from the majority of studies that seek to gauge the relative efficacy of NPI policies under various conditions, this paper examines the timing of NPI policies as a decision that may be influenced by the adoptions of other countries. We model the decision to adopt as a policy diffusion process (7, 8) that is defined, in part, by decision makers considering the country-specific necessity and, in part, by them mimicking other countries. Mimicry is a common response among decision makers when the effect of a decision is uncertain; adopting with others may shelter decision makers from criticism of looking \"the laggard\"-that is, a country that is slow to act (9) . Countries may also follow the lead of others to show that they are similar to those that have adopted earlier (10). Pressures of not being \"left behind\" and wanting to look like others can come from within the country as well as from its neighbors, and decision makers may find adoption difficult to",
+            "cite_spans": [
+                {
+                    "start": 516,
+                    "end": 519,
+                    "text": "(7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 520,
+                    "end": 522,
+                    "text": "8)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 883,
+                    "end": 886,
+                    "text": "(9)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "We investigate what drives OECD countries to adopt COVID-19 restrictive policies such as lockdowns and school closures, and find that government policies are strongly driven by the policies initiated in other countries. The level of democracy also matters: While strong democracies are slower to initiate restrictive policies, they are more likely to follow the policies of nearby countries. Following the lead of others rather than making decisions based on the specific situation of the country may have led to countries locking down either too early or too late. Conversely, if countries follow each other when easing restrictive policies or reinitiate such policies, there may be a situation where countries adopt epidemiologically suboptimal policies. resist when these pressures grow strong (11) . A central insight from the decision-making literature, which is often elided in diffusion models, is that the decision-making context matters (7). In our case, differences across countries in their democratic systems may lead to variation in adoption timing as decision rights vary. Decision-making structures requiring more deliberation are likely to be slower to react, suggesting that moredemocratic systems could be expected to be slower in adopting radical policies. We study the OECD, a set of similarly advanced economies with fairly well-developed healthcare systems where decision makers are exposed to political opposition and (mostly) democratic institutions. Our paper provides three research contributions: First, contemporary scholarly debate surrounding NPIs has largely focused on modeling their relative efficacy, separately (12, 13) or when enacted simultaneously (2, 14) . Our analysis shifts attention to determinants of NPI timing, a crucial factor for the efficiency and efficacy of NPIs as well their social and economic costs. Focusing on adoption timing recognizes the issue of the sustainability of NPIs. If countries mimic each other to a large extent, it follows that many countries may have locked down too soon or too late (3) . Second, we pioneer the modeling of decision-making under uncertainty common in the political and behavioral sciences (e.g., refs. 15 and 16) which, to date, have not been used to explain policy choices during the COVID-19 pandemic. \u2021 By examining the timing of COVID-19 NPIs, our paper sheds light on the underlying mechanisms surrounding policy adoption where authorities are forced into snap decisions over whether to enact or abstain from policies with uncertain tradeoffs. Extending such modeling also to deescalation or reintroduction of current NPIs may be used to evaluate countries' ability to follow the World Health Organization (WHO) recommendation to \"innovate and learn\" as they seek to manage the pandemic (17) . To the extent that such \"learning\" is driven by mimicry rather than adaptation to necessity, a behavioral science perspective on policy responses to the pandemic is needed (4, 9) . Third, while our findings show that stronger democracies are slower to react in the face of the pandemic, we also unexpectedly found democracies to be more sensitive to the influence of other countries' policy choices. Distinguishing the propensity to adopt from the susceptibility of influence from others provides important nuancing of the policy diffusion literature (18) . This finding also holds insights for research on the political consequences of pandemics. As of May 2020, over 100 countries had enacted emergency legislation further concentrating power in the executive, and a recent estimate suggests that 82 countries are at high or medium risk of \"pandemic backsliding\" on democracy (19) .",
+            "cite_spans": [
+                {
+                    "start": 797,
+                    "end": 801,
+                    "text": "(11)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1646,
+                    "end": 1650,
+                    "text": "(12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1651,
+                    "end": 1654,
+                    "text": "13)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1686,
+                    "end": 1689,
+                    "text": "(2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1690,
+                    "end": 1693,
+                    "text": "14)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 2057,
+                    "end": 2060,
+                    "text": "(3)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 2783,
+                    "end": 2787,
+                    "text": "(17)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 2962,
+                    "end": 2965,
+                    "text": "(4,",
+                    "ref_id": null
+                },
+                {
+                    "start": 2966,
+                    "end": 2968,
+                    "text": "9)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 3341,
+                    "end": 3345,
+                    "text": "(18)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 3668,
+                    "end": 3672,
+                    "text": "(19)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Significance"
+        },
+        {
+            "text": "The question of whether interventions are adopted by need or mimicry has been well studied in political science and sociology. It is normally considered in terms of the spread of policies between states/regions and between countries (20) (21) (22) . \"Diffusion\" is the general term for the process by which something-for instance, a new policy-spreads throughout a set of actors, such as nation states (23) . Here, the diffusion of a policy among sovereign countries is seen as a function of its perceived usefulness, and usefulness is broadly determined by the policy's \"fit\" with the needs of the nation. Because countries are different, they may learn about a new policy at different times, and, because they tend to differ in their need for a policy, policies normally do not spread to all at once, but spread gradually-from \"early adopters\" to \"laggards.\" Often, not all policies are ultimately adopted by all countries. A key question for diffusion studies concerns what distinguishes an \"early\" adopter from a \"late\" one, and what the maximum diffusion of the policy might be (24) .",
+            "cite_spans": [
+                {
+                    "start": 233,
+                    "end": 237,
+                    "text": "(20)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 238,
+                    "end": 242,
+                    "text": "(21)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 243,
+                    "end": 247,
+                    "text": "(22)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 402,
+                    "end": 406,
+                    "text": "(23)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1083,
+                    "end": 1087,
+                    "text": "(24)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "When the efficacy of a policy is uncertain, the number of earlier adopters can serve as a form of \"social validation\" of its usefulness that need not be founded in actual usefulness (25, 26) . Furthermore, if the policy becomes imbued with a positive normative value-that is, adoption is considered virtuous-the act of adoption signals value beyond the usefulness of the policy itself and therefore drives further adoption (27) . Diffusion processes are thus shaped by the fit of a policy with the needs of potential adopters along with the pressure to adopt that is imposed by the cumulative earlier adoptions of other countries.",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 186,
+                    "text": "(25,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 187,
+                    "end": 190,
+                    "text": "26)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 423,
+                    "end": 427,
+                    "text": "(27)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "Policy diffusion models hold that the importance of earlier adoptions depends critically on the uncertainty of the efficacy of the policy in question: The greater the uncertainty, the greater the influence of earlier adoptions (7, 28, 29) . However, rather than mimicking the decisions made in \"any other country,\" decision makers usually benchmark with countries considered more relevant or prestigious. Nearby countries or those who share a border have often been shown to look to each other for adoption cues (22, 30, 31) . Countries may also be more strongly influenced by countries with whom they share a religion and therefore norm systems (ref. 10; ref. 32, pp. 93-123; and ref. 33) or with whom they have intense relations and thereby share an interdependence (34, 35) .",
+            "cite_spans": [
+                {
+                    "start": 227,
+                    "end": 230,
+                    "text": "(7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 231,
+                    "end": 234,
+                    "text": "28,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 235,
+                    "end": 238,
+                    "text": "29)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 512,
+                    "end": 516,
+                    "text": "(22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 517,
+                    "end": 520,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 521,
+                    "end": 524,
+                    "text": "31)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 686,
+                    "end": 689,
+                    "text": "33)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 768,
+                    "end": 772,
+                    "text": "(34,",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 773,
+                    "end": 776,
+                    "text": "35)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "Whether a country adopts COVID-19 policies based primarily on the fit with country-specific factors or the adoption by other countries is important, as it guides the adoption timing. Most COVID-19 NPIs carry heavy social and economic costs, and every \"extra\" day that a restriction remains in place imposes an additional burden on society. Closing schools means that parents need to stay at home, closing workplaces puts jobs at risk, and closing borders limits the economic exchange among countries. Conversely, adopting too late can incur suffering and costs in terms of excess deaths and a collapsed healthcare system.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "One of the most widely shared studies cited by political decision makers was Imperial College's simulation study assessing \"the impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand\" (ref. 2, released March 16) . This report explicates \"many uncertainties in policy effectiveness\" and \"very large uncertainties around the transmission of this virus, the likely effectiveness of different interventions and the extent to which the population spontaneously adopts risk reducing behaviors.\" Based on simulation results for five COVID-19 NPIs, the report suggests that a minimum policy for effective suppression is \"population-wide social distancing combined with home isolation of cases and school and university closure.\" The report also suggests that interventions such as a ban on public events and other mass gatherings have relatively little impact in reducing COVID-19 mortalities. As Fig. 1 shows, countrywide school closures and bans on public events are among the most prevalent COVID-19 NPIs adopted by OECD countries. A striking feature of this figure is the homogeneity in the timing of the decision to adopt four out of five restrictions; within a span of 2 wk, almost 80% of the OECD countries adopted the same four restrictions. This is curious, since these countries are widely different and the relative efficacy of these and other interventions is still clouded by uncertainty. In a recent overview examining these uncertainties, Ioannidis (13) advances the explanation that \"policymakers feel pressure from opponents who lambast inaction. Also, adoption of measures in one institution, jurisdiction or country creates pressure for taking similar measures elsewhere under fear of being accused of negligence\"-and, as a consequence, that \"priorities can become irrational.\"",
+            "cite_spans": [
+                {
+                    "start": 248,
+                    "end": 257,
+                    "text": "March 16)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1502,
+                    "end": 1506,
+                    "text": "(13)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 935,
+                    "end": 941,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "If countries look beyond their own situation and mimic each other in the decision to adopt NPIs, we expect that the number of prior adoptions of a practice would matter to the adoption decision of a focal country-over and above the influence of epidemiological variables such as epidemic incidences, capacity of the healthcare system, and population demography. Yet, even if we were to find a positive effect of the total number of earlier adoptions, the interpretation of such a finding is unclear. While it could be that countries are emulating each other, it could also just reflect the fact that countries are all facing a similar problem and take action more or less simultaneously. To strengthen the inferential power of including earlier adoptions in a diffusion analysis, we derive from theory a more specific measure than \"all earlier adoptions.\" As discussed above, a standard finding in diffusion studies is that proximity-social, cultural, or geographicalpredicts facsimile behavior (26) . There is no clear reason why social or cultural proximity would influence the adoption of COVID-19 NPIs, so we adopt the most generic form of similarity: geographical proximity. We reason that information about the efficacy, the likelihood of seeing the adoption experiences of another country as relevant, and the risk of unfavorable comparisons with respect to the pace of policy-making, is greater for countries that are geographically closer than for those farther apart. This does not mean that the adoption of countries that are farther away does not matter at all, but that we expect it to matter relatively less. Our key hypothesis is as follows.",
+            "cite_spans": [
+                {
+                    "start": 995,
+                    "end": 999,
+                    "text": "(26)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "Hypothesis 1. The more neighboring countries adopt a COVID-19 policy, the faster a focal country will adopt the same policy-all else being equal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "International Policy Diffusion under Uncertainty"
+        },
+        {
+            "text": "Political decision-making theory holds that it is not only what others have done that may influence the decision to adopt, but also the context of the decision maker, as this sets expectations on how decisions should be made (7, 16) . In our context, the relevant decision makers are democratically elected political leaders. Yet, democracy is not a unitary concept but a spectrum of different types of decision-making contexts (36) . We follow Dahl (37) in defining democracy as the extent to which rulers and their interventions are responsive to citizens through the institutions of power vested in officials elected in clean elections with extensive suffrage, and an enabling environment of freedom of expression and association.",
+            "cite_spans": [
+                {
+                    "start": 225,
+                    "end": 228,
+                    "text": "(7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 229,
+                    "end": 232,
+                    "text": "16)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 428,
+                    "end": 432,
+                    "text": "(36)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 445,
+                    "end": 454,
+                    "text": "Dahl (37)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "How Variety of Democracy Across Countries Affects Policy Actions under Uncertainty"
+        },
+        {
+            "text": "It is not clear ex ante whether one should expect highly democratic countries to adopt policies more quickly than their less democratic counterparts (31, 38, 39) . When it comes to adopting radical interventions to contain the spread of COVID-19, democracies might be expected to be slower than dictatorships, or the other way around, for different reasons. One might, for example, expect democratic countries to act more quickly in adopting strict interventions to counter an imminent pandemic since democratically elected leaders depend on public approval to stay in power (40) . Further, free media and freedom of expression should improve both the quantity and quality of information available for rapid disaster responses (41) , although this may also serve as a conduit of fake news and conspiracy theories.",
+            "cite_spans": [
+                {
+                    "start": 149,
+                    "end": 153,
+                    "text": "(31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 154,
+                    "end": 157,
+                    "text": "38,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 158,
+                    "end": 161,
+                    "text": "39)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 575,
+                    "end": 579,
+                    "text": "(40)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 727,
+                    "end": 731,
+                    "text": "(41)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "How Variety of Democracy Across Countries Affects Policy Actions under Uncertainty"
+        },
+        {
+            "text": "It is also plausible that drastic policy interventions are more difficult to enact in countries with more developed electoral democracy. Democracies have wide-ranging rights and freedoms that autocracies and less developed democracies lack (e.g., ref. 42) . Policy makers' reluctance to encroach on liberties inherent in democracies may lead them to hesitate when contemplating interventions that limit these freedoms (43) . Leaders in democracies also face a great uncertainty regarding citizens' reactions to far-reaching interventions entailing restrictions on their personal freedom, even if those interventions are motivated by public health concerns. Negative public perceptions jeopardize politicians' hold on power in democracies, but far less so in autocracies (44) . A strong civil society and free media put politicians at risk for fierce resistance and mass mobilization against interventions the public may not approve of. Finally, strong democracies tend to have relatively robust mechanisms of horizontal accountability, where opposition parties in the legislature, law courts, and other independent state bodies such as ombudsmen all have a say in shaping policy (45) . As a consequence, democratic decision-making is much more of a deliberative process regulated by institutions to prevent governments' abuse of power, meaning it also takes more time to turn ideas into legislation and action (46) . During this process, democracies' transparency typically leads to debates in the media involving actors in civil society, where alternatives are weighed and considered (47) . This further adds to our expectation that countries with a high level of democracy would be slower in deciding on restrictions on civil liberties in response to a pandemic such as COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 252,
+                    "end": 255,
+                    "text": "42)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 418,
+                    "end": 422,
+                    "text": "(43)",
+                    "ref_id": null
+                },
+                {
+                    "start": 770,
+                    "end": 774,
+                    "text": "(44)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1179,
+                    "end": 1183,
+                    "text": "(45)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1410,
+                    "end": 1414,
+                    "text": "(46)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1585,
+                    "end": 1589,
+                    "text": "(47)",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "How Variety of Democracy Across Countries Affects Policy Actions under Uncertainty"
+        },
+        {
+            "text": "Hypothesis 2. The more democratically developed a country, the slower it will adopt COVID-19 policies-all else being equal. NPIs are drawn from OxCGRT, which also includes daily counts of the number of people infected and number of deaths related to COVID-19 for each country between January 15 and March 30, 2020. We focus on the OECD, since it represents a group of countries that are relatively homogeneous from an economic and democratic perspective, which means that the alternative cost of policy adoption will be similar across these countries and they have similarly developed democratic systems and healthcare systems. If nonepidemiological factors explain the spread of COVID-19 NPIs across countries, it should be relatively harder to detect such patterns in a group of well-developed economies like the OECD countries. Table 1 summarizes the policy variables modeled. Intervention/policy adoption is coded on an ordinal scale ranging from 0 to 3, and there is also an indicator of whether the policy is \"targeted\"-that is, that it only applies within a specific geographical area-or \"general\"-that is, that it applies nationwide. The ordinal coding allows for the construction of a \"stringency index,\" which scores the stringency of policy adoption as an index of the number of policy measures adopted, whether it is recommended or required, and whether it is targeted or general.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 831,
+                    "end": 838,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "How Variety of Democracy Across Countries Affects Policy Actions under Uncertainty"
+        },
+        {
+            "text": "We focus on the speed of adoption of the different COVID-19 policies of Fig. 1 and Table 1 (for a similar model, see ref. 50 analysis of US states). We construct a 0/1 adoption variable for each policy by coding the variable \"1\" the day a general policy is adopted (i.e., becomes applicable to the whole country) and \"0\" otherwise. \u00a7",
+            "cite_spans": [
+                {
+                    "start": 122,
+                    "end": 124,
+                    "text": "50",
+                    "ref_id": "BIBREF49"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 72,
+                    "end": 78,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 83,
+                    "end": 90,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Dependent Variable"
+        },
+        {
+            "text": "Our Hypotheses Are Tested Using Two Main Predictor Variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Predictor Variables"
+        },
+        {
+            "text": "Adoption density (OECD region) is a cumulative measure of prior adoptions of a particular policy among spatially proximate countries (22, 30, 31, 51) . It is measured as the cumulative number of policy adoptions within United Nations' classification and definition of regions: Western Europe, Eastern Europe, Southern Europe, Northern Europe, Asia & Pacific, and Americas. To avoid small cell sizes, we grouped \"Asia\" to include both western and southern Asia, and \"Americas\" to include North and South America as well as Latin America. This variable thus probes whether policy adoption is relatively more strongly driven by the cumulative number of policy adoptions in nearby countries (50) . Electoral democracy. We use the 2019 Electoral Democracy Index (EDI, v2x_polyarchy) from the Varieties of Democracy (V-Dem) database (48) . EDI is derived from expert surveys of 3,000+ country experts from around the world, with a minimum of five experts rating each of the 43 indicators measuring institutions of democracy: 1) Elected Officials, 2) Clean Elections, 3) Associational Autonomy, 4) Inclusive Citizenship, and 5) Freedom of Expression and Alternative Sources of Information (37) . The EDI ranges from 0 to 100, where 0 indicates pure dictatorship and 100 indicates that electoral democracy is achieved in its fullest sense. Fig. 2 shows the correlation between electoral democracy and the time that elapsed before OECD countries adopted various COVID-19 NPIs. It indicates that countries with a low democracy score were relatively quicker to adopt COVID-19 NPIs, but also that there is a sizeable variation among countries with high levels of democracy. The EDI has a high mean (83) and low SD (9) , which is expected given that we study OECD countries that all score quite high on the democracy index (SI Appendix, Table S1 ).",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "(22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 138,
+                    "end": 141,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 142,
+                    "end": 145,
+                    "text": "31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 146,
+                    "end": 149,
+                    "text": "51)",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 687,
+                    "end": 691,
+                    "text": "(50)",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 827,
+                    "end": 831,
+                    "text": "(48)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1182,
+                    "end": 1186,
+                    "text": "(37)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1702,
+                    "end": 1705,
+                    "text": "(9)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1332,
+                    "end": 1338,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1824,
+                    "end": 1832,
+                    "text": "Table S1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Predictor Variables"
+        },
+        {
+            "text": "Since the main objective of countries' COVID-19 interventions is to counteract the spread of the coronavirus, it is essential to control for 1) the number of confirmed cases of people infected by COVID-19 in the focal country, and 2) the number of deaths due to the virus, relative to population size (per 100,000). Both measures account for what is publicly reported by each country and likely to underpin the process of policy adoption if decision makers are sensitive to official figures (50) . While confirmed cases of COVID-19 are undercounts of actual cases, confirmed cases are the only data available to officials making decisions in real time. Confirmed cases and number of deaths were highly collinear, and we therefore report only death rate (the variable having maximum influence in our model) in the main results. Replacing death rate with confirmed cases (SI Appendix, Tables S5 and S6) did not change any of the main results. The number of confirmed cases has similar but arguably even larger measurement errors than death rate, since it depends on testing carried out. We explored alternative measures, including whether the state had 10 or more confirmed cases, but found substantively similar results. All results were also robust to the inclusion of standard controls for systematic variation in public statistics provided across countries (52, 53) , indicating that such variation is low across the OECD countries.",
+            "cite_spans": [
+                {
+                    "start": 491,
+                    "end": 495,
+                    "text": "(50)",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1359,
+                    "end": 1363,
+                    "text": "(52,",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 1364,
+                    "end": 1367,
+                    "text": "53)",
+                    "ref_id": "BIBREF52"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Control Variables"
+        },
+        {
+            "text": "We also include a range of time-invariant variables in order to control for a country's economic, demographic, and public healthrelated characteristics. These variables are obtained from the World Bank. { The economic variables include the natural logarithm of We do not include the policy \"closure of public transportation\" in our main analysis, since only nine OECD countries adopted this policy throughout the country. Including it does not alter any of the main results. gross domestic product (GDP) per capita, tax revenues (% of GDP), and GINI index. The GINI index is a measure of income inequality that ranges between 0 and 100 with higher values indicating greater inequality between individuals and households. We control for differences in demography and care capability with the variables number of hospital beds (per 1,000 people), the percentage of population aged 65 or older, and the percentage of the population living in urban areas. # Older people are of importance since they are regarded as being more vulnerable to COVID-19. We also include population density (per square kilometer), since the virus may be less likely to spread in sparsely populated countries (54) .",
+            "cite_spans": [
+                {
+                    "start": 1183,
+                    "end": 1187,
+                    "text": "(54)",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Control Variables"
+        },
+        {
+            "text": "We use event history models to test our hypotheses related to the timing of implementing COVID-19 NPIs in the OECD countries between January 15 and March 30, 2020. Our model examines what factors predict the adoption of any, some, or all of the general policy interventions described in Table 1 , excluding \"Closure of public transportation.\" \u00a7 Since these interventions can be enacted at any time or in any order (or not at all), the data are organized as a multiple failure-time dataset and estimated as a semiparametric Cox proportional event history model, also called the marginal risk set model (55) with the functional form",
+            "cite_spans": [
+                {
+                    "start": 601,
+                    "end": 605,
+                    "text": "(55)",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 287,
+                    "end": 294,
+                    "text": "Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Event History Models of Timing of COVID-19 Policies"
+        },
+        {
+            "text": "We model time (t-in this case, days since first confirmed infection case) as a function of an underlying hazard h and a set of exponentiated beta coefficients (\u03b2) and covariates (X) for each country i's adoption of policy j. The baseline hazard h corresponds to the case where all covariates equal 0, and is shifted up or down proportionally with changes in the covariates. The \"time at risk\" for each country begins when it reports its first case of COVID-19. Our analysis focuses on policy adoptions applicable for the entire country (Table 1 )-that is, the more \"restrictive\" versions of each policy. This allows us to model multiple-events data to examine the effects of countries' underlying level of electoral democracy and other background variables together with the time-variant variables influencing policy adoption. The event history model treats countries that never adopt any of the interventions as right-censored, and countries adopting polices before entering the risk set as left-censored. SI Appendix, Table S1 presents descriptive statistics and variable correlations. Table 2 shows hazard ratios (HRs) obtained by the event history model predicting time to adoption of any COVID-19 policy among the OECD countries. || As might be expected, countries with more healthcare capacity (hospital beds) are slower to adopt restrictions, as are countries with more unequal income distribution (i.e., higher GINI index). The more densely populated a country is, the faster it is to adopt restrictions. Fig. 3 shows plots of the key estimated HRs with 95% CIs with all covariates standardized at their mean values. Consistent with both hypotheses, the cumulative adoption within the same OECD region predicts a more rapid rate of policy adoption, while a higher level of electoral democracy predicts a slower rate of policy adoption. Our null hypotheses of adoption density (OECD region) and electoral democracy not predicting adoption of COVID-19 policies are examined in column 4 of Table 2 , which rejects the null for both adoption density [z = 3.57, CI = 1.133 to 1.538, HR = 1.320, df (10), P = 0.000] and electoral democracy [z = \u22121.98, CI = 0.881 to 0.999, HR = 0.939, df (10), P = 0.048]. We also see that the daily count of deaths in a country is a rather poor predictor of adopting COVID-19 NPIs, with a large CI. One potential explanation for this effect is that the interventions adopted may take the form of preventive measures rather than reactions to the emergence of a national pandemic. The other two control variables for countries' healthcare capacity and demography (number of hospital beds and population density) predict a lower and a more rapid policy adoption, respectively. Population density is by far the strongest predictor in the model, albeit with high SEs due to the large between-country variation. The main conclusions from our event history model are that both hypotheses are supported: Adoption density in the same OECD region predicts a much more rapid rate of policy adoption, while a higher level of electoral democracy predicts a slightly slower rate of adoption.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 536,
+                    "end": 544,
+                    "text": "(Table 1",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1020,
+                    "end": 1028,
+                    "text": "Table S1",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1088,
+                    "end": 1095,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1513,
+                    "end": 1519,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 1995,
+                    "end": 2002,
+                    "text": "Table 2",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Event History Models of Timing of COVID-19 Policies"
+        },
+        {
+            "text": "Policy strictness. The results presented are based on the modeling of nationwide required policies (Table 1 ). In unreported models, we include both \"recommend\" and \"required\" policies with close to identical results. Modeling only \"recommended\" policies reduces explained variance by 8 to 10%, and effect sizes decrease but remain statistically significant and meaningfully large for our two hypothesized effects. Regional vs. global adoption pressure. In unreported models, we also examined adoption density (OECD), which measures accumulated prior adoptions of a policy among all of the OECD countries. Results were similar but of weaker magnitude. Since the two variables are collinear, we only report results for adoption density (OECD region). Alternative explanations. SI Appendix, Supplementary Information C and Supplementary Information E considers a range of alternative explanations and controls variables. In addition to these, we also conducted analyses including a period effect corresponding to the WHO's global pandemic announcement on March 11 . Inclusion of the period effect did not change any of the main results, but, as the variable was collinear to several of our adoption measures and control variables, we omit it from the main analysis. Since the crucial control variables \"confirmed cases\" and \"number of deaths\" from COVID-19 come with known measurement errors across countries, we explored alternative measures, including whether a country had 10 or more confirmed cases, but found substantively similar results. All results were also robust to the inclusion of standard controls for systematic variation in public statistics provided across countries (49, 56) , indicating that such variation is low across the OECD countries. We also followed ref. 54 by using a dummy for countries having experienced 100+ confirmed cases of SARS in 2003. Among the OECD countries, only Canada had over 100 SARS cases. SEs in parentheses are clustered at the country level. ***P < 0.001, **P < 0.01, *P < 0.05, + P < 0.10.",
+            "cite_spans": [
+                {
+                    "start": 1053,
+                    "end": 1061,
+                    "text": "March 11",
+                    "ref_id": null
+                },
+                {
+                    "start": 1682,
+                    "end": 1686,
+                    "text": "(49,",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1687,
+                    "end": 1690,
+                    "text": "56)",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 99,
+                    "end": 107,
+                    "text": "(Table 1",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Robustness Tests"
+        },
+        {
+            "text": "Hospital Remaining countries had six cases on average, rendering this measure nonapplicable. Outliers. To account for potential outliers of electoral democracy, for example, Turkey and Hungary, we winsorized the variable for both 5% and 10% of cases in each tail of the distribution. All results remained robust and were actually more pronounced when accounting for these outliers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "GINI index (income)"
+        },
+        {
+            "text": "Post Hoc Test: Analyzing the Adoption of Specific Interventions Since Fig. 1 showed different speeds of adoption for the various COVID-19 NPIs, as well as the more generic policy of \"public information campaigns\" included in our analysis, it is also interesting to examine these separately. SI Appendix, Table S2 shows event history results for five individual NPI adoptions. Estimated HRs from these separate event history models for each NPI are shown in Fig. 4 with 95% CIs.** Fig. 4 shows that adoption density consistently predicts quicker adoption of each NPI, while electoral democracy predicts a slower time to adopt school and workplace closures. This provides further evidence of the general pattern revealed in the main analysis, and also indicates that the overall effect of electoral democracy on the speed by which OECD countries adopt COVID-19 policies is primarily driven by more-democratic countries being slower to adopt interventions related to school and workplace closures.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 70,
+                    "end": 76,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 304,
+                    "end": 312,
+                    "text": "Table S2",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 457,
+                    "end": 463,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 480,
+                    "end": 486,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "GINI index (income)"
+        },
+        {
+            "text": "Almost 80% of the OECD countries adopted the same COVID-19 NPIs within a span of 2 wk. If adoption was the result of a decision process that took the specific situation of heterogeneous countries into account, why do we see such homogeneity? One answer would be that the countries were uniformly exposed to the same universal threat. Yet, our findings suggest this to be, at best, a partial answer. With the exception of population density, it is not primarily the needs of the country in terms of exposure to COVID-19, demographic structure, or healthcare capacity that predict the speed of NPIs adoptions, but the number of earlier adopters in the same region. Countries with stronger democracies are slower to react in the face of the pandemic and, as we see in SI Appendix, Table S3 and Fig. S1 , also less stringent in the number and type of NPIs adopted (SI Appendix, Table S3 ). However, strong democracies are more sensitive to the influence of other countries' adoptions (SI Appendix, Fig. S1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 778,
+                    "end": 786,
+                    "text": "Table S3",
+                    "ref_id": null
+                },
+                {
+                    "start": 791,
+                    "end": 798,
+                    "text": "Fig. S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 874,
+                    "end": 882,
+                    "text": "Table S3",
+                    "ref_id": null
+                },
+                {
+                    "start": 994,
+                    "end": 1001,
+                    "text": "Fig. S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our findings inform current discussions in public health research, political science, and international relations regarding reactions to and consequences of the COVID-19 pandemic, and also hold implications for social science research on how societies change across the world as a result of imitation. Much of the debate around the various types of NPIs in public health and related research has focused on whether or not a country needs a particular policy to protect its citizens' public health; little attention has been paid to the timing of policy interventions. While our paper cannot judge what an \"optimal\" adoption timing would be for any country, it follows, from our findings of what appears to be international mimicry of intervention adoptions, that some countries may have adopted restrictive measures rather sooner than necessary. If that is the case, such countries may have incurred excessively high social and economic costs, and may experience problems sustaining restrictions for as long as is necessary due to lockdown fatigue. Political scientists, international relations scholars, and public health scholars may also benefit from building on our model suggesting the adoption of COVID-19 policies across the OECD countries to be driven by consideration of what others have done. For example, it is likely that rescinding such interventions would also follow that kind of pattern (28) . Abandoning containment measures too early or too late are also uncertain decisions that risk undermining the efficiency and efficacy of interventions taken (1, 2). As much of Europe and North America has \"deescalated\" interventions during the summer of 2020 and, on occasion, reinitiated restrictive policies, future research may extend our data (open to the public) to examine adoption, \"deescalation,\" and potential \"readoption\" of COVID-19 policies. Such research may also seek to collect, for example, social network data or other data to gauge the underlying causal mechanisms of COVID-19 policy diffusion in terms of \"learning,\" \"emulation,\" or \"coercion\" across nation-states (9, 35) .",
+            "cite_spans": [
+                {
+                    "start": 1403,
+                    "end": 1407,
+                    "text": "(28)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 2093,
+                    "end": 2096,
+                    "text": "(9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 2097,
+                    "end": 2100,
+                    "text": "35)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our findings also inform the social science view of the world as an interconnected \"world society\" where countries influence each other to become more like liberal democracies (10) . The fact that more-democratic countries were slower in adopting NPIs but more sensitive to the adoption by other countries suggests that the dominance of liberal democracy as a worldwide ideal may be waning and that adoption of uncertain policies or practices may rather stem from conflicting \"institutional logics\" coexisting in any country (57) . Future research may examine logics underlying NPI adoption by, for example, studying discourses surrounding timing of adoption in countries at any given point in time, as, for example, a \"market logic\" of protecting the economy, a \"public health logic\" of protecting lives, and other salient discourses in political and public discourse.",
+            "cite_spans": [
+                {
+                    "start": 176,
+                    "end": 180,
+                    "text": "(10)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 525,
+                    "end": 529,
+                    "text": "(57)",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Finally, our analysis of the timing of COVID-19 policies can inform contemporary political science research on the consequences of exogenous events such as pandemics. Our findings reveal that countries with strong electoral democracy are slower in adopting COVID-19 policies to slow the spread of the virus, but also that these countries are more susceptible to the diffusion pressure of many proximate countries adopting such policies. If restrictions in civil liberties due to the ongoing COVID-19 pandemic are more rapidly adopted by countries already experiencing a decline in democracy, such countries may be susceptible to further autocratization in face of exogenous chocks such as pandemics. Recent evidence from Spain suggests that the pandemic may have caused the population to look more favorably on technocratic and authoritarian government (56) . Our study provides fertile ground for research on the impact of the COVID-19 pandemic, which, to date, has merely begun to grapple with the pandemic's short-term effects. In particular, issues such as the timing and effect of specific NPIs, their duration, and whether they are repeated over longer periods are all relevant for political science topics such as civil engagement, interpersonal trust, belief in authorities, and democratic practices. Economic research exploring the potential effects of NPIs as well as interventions aimed at mitigating the recession in the wake of the pandemic may also utilize these findings by incorporating potential setbacks in democratic development as externalities related to unconventional interventions (4).",
+            "cite_spans": [
+                {
+                    "start": 853,
+                    "end": 857,
+                    "text": "(56)",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Data Availability. Dataset and code (for statistical software Stata) have been deposited and are publicly available in Zenodo at https://doi.org/10.5281/zenodo.3932347 (49) .",
+            "cite_spans": [
+                {
+                    "start": 168,
+                    "end": 172,
+                    "text": "(49)",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The effect of non-pharmaceutical interventions on COVID-19 cases, deaths and demand for hospital services in the UK: A modelling study",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Davies",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "medRxiv:10.1101/2020.04.01.20049908"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ferguson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A Simple Planning Problem for Covid-19 Lockdown",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Alvarez",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Argente",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lippi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Compliance with Covid-19 Social-Distancing Measures in Italy: The Role of Expectations and Duration",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Briscese",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lacetera",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Macis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tonin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Legacy OxCGRT dataset -25",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hale",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Petherick",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Webster",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "A Primer on Decision Making -How Decisions Happen",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "March",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The uncertainty of the past: Organizational learning under ambiguity",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "March",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Olsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1975,
+            "venue": "Eur. J. Polit. Res",
+            "volume": "3",
+            "issn": "",
+            "pages": "147--171",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Policy diffusion: Seven lessons for scholars and practitioners",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Shipan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Volden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Public Adm. Rev",
+            "volume": "72",
+            "issn": "",
+            "pages": "788--796",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "World society and the nation-state",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Meyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Boli",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Ramirez",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Am. J. Sociol",
+            "volume": "103",
+            "issn": "",
+            "pages": "144--181",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Physical interventions to interrupt or reduce the spread of respiratory viruses",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Jefferson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Cochrane Database Syst. Rev",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Coronavirus disease 2019: The harms of exaggerated information and non-evidence-based measures",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P A"
+                    ],
+                    "last": "Ioannidis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur. J. Clin. Invest",
+            "volume": "50",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "How will country-based mitigation measures influence the course of the COVID-19 epidemic?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Heesterbeek",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Klinkenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Hollingsworth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "931--934",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Ambiguity and Choice in Organizations",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "March",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Olsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1976,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "World Health Organization, WHO Director-General's Opening Remarks at the Media Briefing on COVID-19",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Spatial and temporal heterogeneity in diffusion",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Strang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Tuma",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Am. J. Sociol",
+            "volume": "99",
+            "issn": "",
+            "pages": "614--639",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Successful and failed episodes of democratization: Conceptualization, identification, and description",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wilson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2139/ssrn.3274599"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The mechanisms of policy diffusion",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Shipan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Volden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Am. J. Pol. Sci",
+            "volume": "52",
+            "issn": "",
+            "pages": "840--857",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The globalization of liberalization: Policy diffusion in the international political economy",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Simmons",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Elkins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Am. Polit. Sci. Rev",
+            "volume": "98",
+            "issn": "",
+            "pages": "171--189",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Diffusion is no illusion: Neighbor emulation in the third wave of democracy",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Brinks",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Coppedge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Comp. Polit. Stud",
+            "volume": "39",
+            "issn": "",
+            "pages": "463--489",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The Diffusion of Innovations",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rogers",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Traditions of research in the diffusion of innovation",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Katz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Levin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hamilton",
+                    "suffix": ""
+                }
+            ],
+            "year": 1963,
+            "venue": "Am. Sociol. Rev",
+            "volume": "28",
+            "issn": "",
+            "pages": "237--252",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Institutional sources of change in the formal structure of organizations: The diffusion of civil service reform",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tolbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Zucker",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Adm. Sci. Q",
+            "volume": "28",
+            "issn": "",
+            "pages": "22--39",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Diffusion in organizations and social movements: From hybird corn to poison pills",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Strang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Soule",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Annu. Rev. Sociol",
+            "volume": "24",
+            "issn": "",
+            "pages": "265--290",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Isomorphism, diffusion and decoupling: Concept evolution and theoretical challenges\" in The Sage Handbook of Organizational Institutionalism",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Boxenbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jonsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "79--104",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Jumping ship: The diffusion of strategy abandonment",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Greve",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Adm. Sci. Q",
+            "volume": "41",
+            "issn": "",
+            "pages": "29--60",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Modes of interorganizational imitation: The effects of outcome salience and uncertainty",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Haunschild",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Miner",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Adm. Sci. Q",
+            "volume": "42",
+            "issn": "",
+            "pages": "472--500",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The democratic domino theory: An empirical investigation",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Leeson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Dean",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Am. J. Pol. Sci",
+            "volume": "53",
+            "issn": "",
+            "pages": "533--551",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Diffusion and the international context of democratization",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Gleditsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ward",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Int. Organ",
+            "volume": "60",
+            "issn": "",
+            "pages": "911--933",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Democracies and Dictatorships in Latin America: Emergence, Survival, and Fall",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mainwaring",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "P\u00e9rez-Li\u00f1\u00e1n",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The missionary roots of liberal democracy",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Woodberry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Am. Polit. Sci. Rev",
+            "volume": "106",
+            "issn": "",
+            "pages": "244--274",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Linkage versus leverage. Rethinking the international dimension of regime change",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Levitsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Way",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Comp. Polit",
+            "volume": "38",
+            "issn": "",
+            "pages": "379--400",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "COVID-19 Outbreak, social response, and early economic effects: A Global VAR analysis of cross-country interdependencies",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Milani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "medRxiv:10.1101/2020.05.07.20094748"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Measuring polyarchy across the globe",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Teorell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Coppedge",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lindberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-E",
+                    "middle": [],
+                    "last": "Skaaning",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Stud. Comp. Int. Dev",
+            "volume": "54",
+            "issn": "",
+            "pages": "71--95",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Would autocracies promote autocracy? A political economy perspective on regime-type export in regional neighbourhoods",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bader",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gr\u00e4vingholt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "K\u00e4stner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Contemp. Polit",
+            "volume": "16",
+            "issn": "",
+            "pages": "81--100",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The two-step model of clustered democratization",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Houle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kayser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Conflict Resolut",
+            "volume": "63",
+            "issn": "",
+            "pages": "2421--2437",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Health and democracy",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Besley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kudamatsu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Am. Econ. Rev",
+            "volume": "96",
+            "issn": "",
+            "pages": "313--318",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Gimme shelter\": The role of democracy and institutional quality in disaster preparedness",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Persson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Povitkina",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Polit. Res. Q",
+            "volume": "70",
+            "issn": "",
+            "pages": "833--847",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Elections without democracy: Thinking about hybrid regimes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Diamond",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J. Democracy",
+            "volume": "13",
+            "issn": "",
+            "pages": "21--35",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The Theory of Democracy Revisited",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Sartori",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Horizontal accountability in new democracies",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "O&apos;donnell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "J. Democracy",
+            "volume": "9",
+            "issn": "",
+            "pages": "112--126",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Democracy and \"grand",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rose-Ackerman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "corruption. Int. Soc. Sci. J",
+            "volume": "48",
+            "issn": "",
+            "pages": "365--380",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "V-Dem Dataset -Version 10",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Coppedge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Data from",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.23696/vdemds20"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Diffusion of Covid-19 non-pharmaceutical interventions",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sebhatu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.5281/zenodo.3932347"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Pandemic politics: Timing state-level social distancing responses to",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Adolph",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Amano",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bang-Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Fullman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wilkerson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "COVID-19.medRxiv:10.1101/2020.03.30.20046326"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "The diffusion of democracy",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "O&apos;loughlin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Ann. Assoc. Am. Geogr",
+            "volume": "88",
+            "issn": "",
+            "pages": "545--574",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Political regimes and deaths in the early stages of the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cepaluni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dorsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Branyiczki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "SSRN",
+            "volume": "3586767",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "A global index of information transparency and accountability",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Williams",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Comp. Econ",
+            "volume": "43",
+            "issn": "",
+            "pages": "804--824",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Demographic science aids in understanding the spread and fatality rates of COVID-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Dowd",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc. Natl. Acad. Sci. U.S.A",
+            "volume": "117",
+            "issn": "",
+            "pages": "9696--9698",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Regression analysis of multivariate incomplete failure time data by modeling marginal distributions",
+            "authors": [
+                {
+                    "first": "L.-J",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Weissfeld",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "J. Am. Stat. Assoc",
+            "volume": "84",
+            "issn": "",
+            "pages": "1065--1073",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Pandemics meet democracy. Experimental evidence from the COVID-19 crisis in Spain",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Amat",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Arenas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Falc\u00f3-Gimeno",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mu\u00f1oz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.31235/osf.io/dkusw"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Into the Clearing: Back to the future of constitutive institutional analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Lounsbury",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Organ. Theory",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Follow-my-leader: How can we explain difference in OECD countries' disease prevention policies?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sebhatu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wennberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Arora-Jonsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Lindberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Author contributions: A.S., K.W., and S.A.-J. designed research; A.S., K.W., and S.A.-J. performed research; A.S., K.W., and S.A.-J. analyzed data; and A.S., K.W., S.A.-J., and S.I.L. wrote the paper.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Our data come from the Oxford COVID-19 Government Response Tracker (OxCGRT) (6), the Varieties of Democracy (V-Dem) database (48), the World Bank, and the OECD (open access at ref. 49). Variables measuring countries' COVID-19",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "GDP and population variables are from 2018; GINI is from 2017, except for South Korea (2012), New Zealand (2014), Australia (2014), and Turkey (2018). Hospital beds are from 2013, 2014, or 2015.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Speed of COVID-19 policy adoption (A-D, respectively) and level of electoral democracy. # \"Urban population\" refers to people living in urban areas as defined by national statistical offices. The data are collected by United Nations Population Division of the World Bank (2019).jj Efron methods were used for tied events. Proportional hazard assumptions were met in all models.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "HRs and CIs of adopting COVID-19 policies. Modified with permission from ref. 58.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "HRs and CIs of specific COVID-19 policies. **Since the death rate and population density variables exhibited even larger standard errors in the separate event history models, we exclude them fromFig. 4so as not to distort the visualization of results.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "The authors declare no competing interest.This article is a PNAS Direct Submission. This open access article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 (CC BY-NC-ND). To whom correspondence may be addressed. Email: abiel.sebhatu@liu.se. This article contains supporting information online at https://www.pnas.org/lookup/suppl/ doi:10.1073/pnas.2010625117/-/DCSupplemental. First published August 11, 2020.*For simplified terminology, we refer to policies or interventions seeking to slow the spread of the SARS-CoV-2 virus as \"COVID-19 NPIs\" or \"COVID-19 policies.\"",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "COVID-19 policy variables (OxCGRT)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Marginal risk set model predicting adoption of COVID-19 policies",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "ACKNOWLEDGMENTS. We are grateful for comments from E-seminar participants at the Ratio Institute, Aalto University, ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        }
+    ]
+}

@@ -1,0 +1,1305 @@
+{
+    "paper_id": "0b215ee5b0f18deeeaca9f0a5c8b30436e3ae5e9",
+    "metadata": {
+        "title": "Development of a highly sensitive bioanalytical assay for the quantification of favipiravir",
+        "authors": [
+            {
+                "first": "Paul",
+                "middle": [],
+                "last": "Curley",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Megan",
+                "middle": [],
+                "last": "Neary",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Usman",
+                "middle": [],
+                "last": "Arshad",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Lee",
+                "middle": [],
+                "last": "Tatham",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Henry",
+                "middle": [],
+                "last": "Pertinez",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Helen",
+                "middle": [],
+                "last": "Box",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Rajith",
+                "middle": [
+                    "Kr"
+                ],
+                "last": "Rajoli",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Anthony",
+                "middle": [],
+                "last": "Valentijn",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Joanne",
+                "middle": [],
+                "last": "Sharp",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Steve",
+                "middle": [
+                    "P"
+                ],
+                "last": "Rannard",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L69 3BX",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Andrew",
+                "middle": [],
+                "last": "Owen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Liverpool",
+                    "location": {
+                        "postCode": "L7 3NY",
+                        "settlement": "Liverpool",
+                        "country": "UK"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Favipiravir (FAV; T-705) has been approved for use as an anti-influenza therapeutic and has reports against a wide range of viruses (e.g., Ebola virus, rabies and norovirus). Most recently FAV has been reported to demonstrate activity against SARS-CoV-2. Repurposing opportunities have been intensively studied with only limited success to date. If successful, repurposing will allow interventions to become more rapidly available than development of new chemical entities. Pre-clinical and clinical investigations of FAV require robust, reproducible and sensitive bioanalytical assay. Here, a liquid chromatography tandem mass spectrometry assay is presented which was linear from 0.78-200 ng/mL Accuracy and precision ranged between 89% and 110%, 101% and 106%, respectively. The presented assay here has applications in both pre-clinical and clinical research and may be used to facilitate further investigations into the application of FAV against SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Favipiravir (FAV; T-705) has been reported to exert broad spectrum activity against RNA viruses, and is approved for use in Japan as an oral anti-influenza treatment [1] . Within patients receiving FAV as an influenza treatment, a high genetic barrier of resistance has been observed but deployment is complicated by concerns about teratogenicity. [2] FAV acts through lethal viral mutagenesis [3] and has demonstrated efficacy within animal models against a wide number of viruses including pathogenic avian influenza H5N1 and H7N9, Lasa virus, haemorrhagic fever viruses and Ebola virus amongst others [1, [4] [5] [6] [7] [8] [9] [10] . FAV has also shown efficacy in humans in the treatment of Ebola virus, influenza, rabies, norovirus and severe fever with thrombocytopenia syndrome.",
+            "cite_spans": [
+                {
+                    "start": 166,
+                    "end": 169,
+                    "text": "[1]",
+                    "ref_id": null
+                },
+                {
+                    "start": 348,
+                    "end": 351,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 394,
+                    "end": 397,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 608,
+                    "end": 611,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 612,
+                    "end": 615,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 616,
+                    "end": 619,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 620,
+                    "end": 623,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 624,
+                    "end": 627,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 628,
+                    "end": 631,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 632,
+                    "end": 636,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "[1] Most recently, favipiravir has also been demonstrated to exert anti-SARS-CoV-2 activity in vitro and in the Syrian Golden Hamster model of infection [11] . High intraperitoneal doses (1000 mg/kg) were required in this model but plasma Cmin concentration at this dose were comparable to those seen in humans. Previous work by the investigators indicate that FAV plasma concentrations in humans exceed the SARS-CoV-2 in vitro EC90 (Cmax / EC90 ratio) [12] , but plasma concentrations of FAV diminish with time after multiple dosing [13] and antiviral concentrations identified in Vero E6 cells (EC50 ~62\uf06dM corresponding to an EC90 of ~159\uf06dM; [14] ) are not consistently maintained across the dosing interval. Notwithstanding, recent modelling has hinted that achievable doses should maintain intracellular concentrations of the active metabolite (favipiravir ribofuranosyl-5'-triphosphate) between doses [15] . Assessment of FAV anti-SARS-CoV-2 activity in more representative cell lines (e.g. human primary or transformed lung epithelial models) will provide more confidence in the target values.",
+            "cite_spans": [
+                {
+                    "start": 153,
+                    "end": 157,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 453,
+                    "end": 457,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 534,
+                    "end": 538,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 644,
+                    "end": 648,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 906,
+                    "end": 910,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, as of 25 th January 2021, 53 trials were listed on clinicaltrials.gov investigating the use of FAV for COVID19 applications [16] .",
+            "cite_spans": [
+                {
+                    "start": 133,
+                    "end": 137,
+                    "text": "[16]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Currently there is a paucity of published pharmacokinetic data for FAV and very few validated LC-MS/MS methods in relevant biological matrices. There are a number of HPLC based assays that while fully validated in plasma, are unlikely to produce the sensitivity required to fully assess the plasma and tissue pharmacokinetics of FAV as a SARS-CoV-2 therapeutic [17] [18] [19] [20] . While LC-MS/MS methods have been published they are lacking in validation in relevant biological matrices. Previous studies have examined FAV concentrations in an in vitro model of zika infection (samples were cell culture media, Dulbecco's modified Eagle's Medium) and FAV contamination of river environment (river and sewage water samples were analysed) [21, 22] .",
+            "cite_spans": [
+                {
+                    "start": 361,
+                    "end": 365,
+                    "text": "[17]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 366,
+                    "end": 370,
+                    "text": "[18]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 371,
+                    "end": 375,
+                    "text": "[19]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 376,
+                    "end": 380,
+                    "text": "[20]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 739,
+                    "end": 743,
+                    "text": "[21,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 744,
+                    "end": 747,
+                    "text": "22]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The assay presented here, was developed and validated in accordance with Food and Drug Administration (FDA) guidelines, [23] with fundamental parameters assessed, including accuracy, precision and sensitivity. Criteria including linearity, accuracy (the degree of variation from known value, assessed by controls [QCs]), precision (the degree of variation within repeated measurements), selectivity (ensuring detection of the analyte and not an endogenous compound within the sample matrix), recovery (determining the percentage of recovery and more importantly the reproducibility of the extraction process) and stability were all assessed. The assay was primarily developed to investigate the pharmacokinetics of FAV in preclinical species (mouse plasma, phosphate buffered saline [PBS] ). However, the assay was also validated for human plasma providing a much-needed tool for downstream pharmacokinetic-pharmacodynamic studies in clinical trials.",
+            "cite_spans": [
+                {
+                    "start": 120,
+                    "end": 124,
+                    "text": "[23]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 783,
+                    "end": 788,
+                    "text": "[PBS]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Despite the sensitivity and specificity of LC-MS/MS analysis, matrix effects are a well-documented source of major concern [24] . Matrix effects may impact various stages of the analytical process, such as ionisation of the analyte (either suppression or enhancement of ionisation) and extraction efficiency [24, 25] . Given the influence of the matrix on the quantification of an analyte, a change in matrix may have detrimental effects on the reliability of an assay. Therefore, the presented method was developed for robust quantification of FAV in multiple matrices. The majority of published methods describe quantification of FAV in a single matrix [26, 27] . The greatest advantage of the assay is robust quantification of FAV in multiple matrices, with minimal impact of matrix effect. The demonstrated versatility will allow assessment of FAV in vitro and in vivo.",
+            "cite_spans": [
+                {
+                    "start": 123,
+                    "end": 127,
+                    "text": "[24]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 308,
+                    "end": 312,
+                    "text": "[24,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 313,
+                    "end": 316,
+                    "text": "25]",
+                    "ref_id": null
+                },
+                {
+                    "start": 655,
+                    "end": 659,
+                    "text": "[26,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 660,
+                    "end": 663,
+                    "text": "27]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Given the global urgency to discover active therapeutics against SARS-CoV-2; and in light of the potential application of FAV, a robust LC-MS/MS method is described which enables the quantification of FAV in a range of biologically relevant matrices.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Materials FAV and the internal standard (IS) emtricitabine (FTC) were purchased from Stratech Scientific Ltd (Cambridge, UK). Drug free mouse plasma and human plasma with lithium heparin were purchased from VWR International (PA, USA). LCMS grade methanol (MeOH) was purchased from Fisher Scientific (MA, USA). All other consumables were purchased from Merck Life Science UK LTD (Gillingham, UK) and were of LC-MS grade.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods and Materials"
+        },
+        {
+            "text": "Detection of FAV was performed on a SCIEX 6500+ QTRAP (SCIEX MA, USA) operating in negative mode.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tuning for Favipiravir and Internal Standard"
+        },
+        {
+            "text": "FTC was selected as the IS due to similar log P (FAV 0.252, FTC -0.043) and had a similar retention time to FAV. Tuning was performed via direct infusion of FAV (10ng/mL at a flow rate of 10\u00b5L/min) to optimise compound-specific parameters (declustering potential, collision energy and collision exit potential) and source specific parameters (curtain gas, ionisation voltage, temperature, nebuliser gas and auxiliary gas).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Tuning for Favipiravir and Internal Standard"
+        },
+        {
+            "text": "Samples were separated a multi-step gradient with a Kinetex\u00ae F5 column 2.1x100mm 2.6\u00b5m (Phenomenex CA,USA). Mobile phases A and B consisted of H2O with 0.1% acetic acid and MeOH with 0.1% acetic acid, respectively. A multi-step gradient was applied over 3 minutes at a flow rate of 600 \u00b5L/min as follows: initial conditions of 100% A and 0% B were increased over 2 minutes to 25% A and 75 % B. Mobile phase B was then increased to 99 % over 0.1 minutes and held for a further 0.5 mins. Gradient was restored to start conditions at 2.5 mins and help for 0.5 mins.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Chromatographic Separation"
+        },
+        {
+            "text": "100 \u03bcl of standard, quality control (QC), blank or unknown sample was transferred to glass vials Samples were diluted with 500 \u00b5L of MeOH (containing 10ng/mL of IS) and thoroughly vortexed. Samples were then centrifuged at 3500g for 5 minutes at 4\u00b0C. 400 \u00b5L of supernatant fraction was transferred to a fresh glass vial and evaporated under a gentle stream of nitrogen. Samples were reconstituted in 100\u03bcl of H2O:MeOH (95:5). 50\u00b5l of the sample was then transferred into 200\u00b5l chromatography vials. 2\u00b5l of each sample was injected for analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Extraction from Mouse Plasma, human plasma and PBS"
+        },
+        {
+            "text": "Calibrators were prepared by spiking untreated matrix with FAV followed by serial dilution, ranging from 0.78ng/mL to 200ng/mL. Linearity was assessed over 3 independent runs. Acceptance criteria were as follows deviation of standards interpolated concentration from stated concentration was set at 15%, excluding the lower limit of quantification (LLOQ) where deviation was set at no more than 20%.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Linearity"
+        },
+        {
+            "text": "Acceptable R 2 was set at >0.99.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Linearity"
+        },
+        {
+            "text": "To ensure the reproducibility of the extraction process, recovery was assessed at 3 quality control (QC) concentrations, 2ng/mL, 75 ng/mL and 150ng/mL independent of calibrators. Extracted samples were then compared to equivalent concentrations of un-extracted samples, representing 100%.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recovery"
+        },
+        {
+            "text": "The degree of interference from the matrix (due to potential interfering substances including endogenous matrix components, metabolites and decomposition products) was assessed by spiking extracted untreated matrix. Peak area was then compared to extracted LLOQ (0.78ng/mL). The LLOQ was a minimum of 5 times greater than the background signal. The assay was initially developed in mouse plasma and then further validated for mouse lung, PBS (used for bronchoalveolar) and human plasma.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Matrix Effects"
+        },
+        {
+            "text": "Accuracy and precision were assessed by preparation of three concentrations independent of the calibrators (2ng/mL, 75ng/mL and 150ng/mL). Deviation of mean values of each concentration must be within 15% of the stated concentration, with the exception of the lower concentration, where deviation must be less than 20%. Intra-and inter-assay variability of accuracy and precision were assessed to ensure robustness of the assay [25]. Full validation was assessed in mouse plasma. As a change of matrix is considered a minor change, the assay was part validated in human plasma and PBS assessing intra assay variability [25] .",
+            "cite_spans": [
+                {
+                    "start": 619,
+                    "end": 623,
+                    "text": "[25]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Accuracy and Precision"
+        },
+        {
+            "text": "The extraction efficiency of FAV was determined at three QC concentrations using the optimised LC-MS/MS parameters (Table 1 ). The mean recovery was 76.5% (\u00b11.76), 98.5% (\u00b11.20) and 95.0% (\u00b13.10) for mouse plasma, human plasma and PBS. Recovery varied between each matrix, however mean recovery across the 3 concentrations tested demonstrate the assay performance was highly reproducible ( Figure   1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 115,
+                    "end": 123,
+                    "text": "(Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 390,
+                    "end": 400,
+                    "text": "Figure   1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Recovery of Favipiravir from Mouse Plasma"
+        },
+        {
+            "text": "Extracted calibrators demonstrated strong linearity (mouse plasma R 2 = 0.9989, human plasma R 2 = 0.9971 and PBS R 2 = 0.998) meeting all acceptance criteria ( Figure 2 ). The calibration curve was fit to the data using a linear equation with sample weighting of 1/X.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 161,
+                    "end": 169,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Linearity"
+        },
+        {
+            "text": "Matrix effects are well known to be a potential confounding factor in the development of LC-MS/MS assays. The matrix effect of mouse plasma, human plasma and PBS were determined using extracted blank matrix and compared to the peak area of the LLOQ (0.78ng/mL). The extracted blank showed no detectable peak at the retention time of FAV in mouse plasma, human plasma and PBS with a peak area of (Figure 3a, b and c) . FDA guidelines require the signal produced by the LLOQ be greater than five-fold of the signal observed by the extracted blank (Figure 3d , e and F).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 395,
+                    "end": 415,
+                    "text": "(Figure 3a, b and c)",
+                    "ref_id": null
+                },
+                {
+                    "start": 545,
+                    "end": 555,
+                    "text": "(Figure 3d",
+                    "ref_id": null
+                }
+            ],
+            "section": "Selectivity"
+        },
+        {
+            "text": "The reproducibility and robustness of the assay was determined by examining the accuracy and precision of extracted QCs. Full validation was conducted using mouse plasma. The intra-assay % error in accuracy was below 15% at all levels, mean % error at 0.78ng/mL (0.13%), 75ng/mL (1.74%) and 150ng/mL (2.67%).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Accuracy and Precision"
+        },
+        {
+            "text": "The intra-assay percentage error of precision also fell below 15%, 0.78 ng/mL (6.16%), 75ng/mL (2.21%) and 150ng/mL (1.62%) ( Table 2 ). The variability between assays was calculated to demonstrate that the assay-maintained accuracy and precision across repetitions of the assay. Table 2 shows inter-assay variance of accuracy and precision calculated from the mean values of the 3 repetitions of the assay. The percentage error in accuracy fell below 15% across all 3 repeats (range between 0.19% and 13.48%). Interassay percentage variance of precision also fell below 15% across all 3 repeats (range between 7.51% and 9.68%). In accordance with FDA guidelines human plasma and PBS required part validation [25] . The intra-assay % error in accuracy was below 15% at all levels in human plasma (mean % error at 0.78ng/mL 0.13%, 75ng/mL 1.74% and 150ng/mL2.67%) and PBS (mean % error at 0.78ng/mL 0.13%, 75ng/mL 1.74% and 150ng/mL2.67%). The intra-assay percentage error of precision also fell below 15% in human plasma (mean % error at 0.78ng/mL 0.13%, 75ng/mL 1.74% and 150ng/mL2.67%) and PBS (mean % error at 0.78ng/mL 0.13%, 75ng/mL 1.74% and 150ng/mL 2.67%, Table 3 ).",
+            "cite_spans": [
+                {
+                    "start": 709,
+                    "end": 713,
+                    "text": "[25]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 126,
+                    "end": 133,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 280,
+                    "end": 287,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 1164,
+                    "end": 1171,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Accuracy and Precision"
+        },
+        {
+            "text": "The current SARS-CoV-2 pandemic has led to an unprecedented global research effort to identify potential therapeutics for COVID-19 treatment or prevention. The repurposing of existing antiretrovirals that display opportunistic efficacy against SARS-CoV-2 presents opportunities for accelerated pharmacological interventions [12] . The identification of an antiretroviral already in use for another indication would dramatically cut the time required to identify and develop novel therapeutics. FAV was originally developed as an anti-influenza therapy but has been demonstrated to display efficacy against a range of viral infections, most recently being proposed for SARS-CoV-2 [11, 14] . The anti-SARS-CoV-2 activity of FAV requires more extensive evaluation in vitro and in vivo, but it has emerged as a potentially attractive candidate.",
+            "cite_spans": [
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 679,
+                    "end": 683,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 684,
+                    "end": 687,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The presented work describes a rapid, robust and highly sensitive FAV LC-MS/MS assay for downstream applications. Quantification in mouse plasma demonstrated the assay to be highly reproducible, precise and accurate. Furthermore, the assay was able to quantify FAV from multiple diverse matrices, indicating a tolerance to the negative impact of matrix effects.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Initially, the assay was developed to quantify FAV in mouse plasma to support ongoing preclinical research. The final assay fully met the FDA bioanalytical method development guidelines, demonstrating good accuracy, precision and linearity. In addition to plasma, other biological compartments are of significant relevance to SARS-CoV-2. The assay was further validated in human plasma and PBS in order to facilitate clinical and in vitro investigations. As previously stated, matrix effects can have a detrimental impact on the performance of a LC-MS/MS assay. Coeluting endogenous compounds have the potential to negatively impact the ionisation of the analyte of interest, by either suppression or enhancement [28] .",
+            "cite_spans": [
+                {
+                    "start": 713,
+                    "end": 717,
+                    "text": "[28]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "As FAV is 54% protein bound and slightly soluble in aqueous matrices (log P = 0.49), the change of matrix may lead to significant changes in the behaviour of the assay. In order to facilitate application of this assay by the wider research community, FAV was also quantified in human plasma. Despite the similarities between human and mouse plasma, species differences may lead to changes in the assay behaviour.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Protein binding is commonly lower in preclinical species when compared to humans. Diazepam is 98% bound in human plasma and 84.8% bound in rats [29] . The species differences can be more profound, for example valproate is 94.8% bound in human but only 12% bound in mice almost 8 fold-difference [29] .",
+            "cite_spans": [
+                {
+                    "start": 144,
+                    "end": 148,
+                    "text": "[29]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 295,
+                    "end": 299,
+                    "text": "[29]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The presented data demonstrates that matrix effects did affect the absolute recovery, but this did not affect the reproducibility and overall performance of the assay.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The presented assay is currently being adapted to quantify FAV from plasma from other preclinical species and other relevant in vitro matrices (cell culture media, foetal bovine serum and cell lysate). Additional work is also underway to adapt the assay for quantification in other tissues such as lung and nasal turbinate. However, due to the more complex nature of tissue homogenates considerable additional optimization may be required.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The presented assay surpasses many of the currently published methods for FAV detection. The most frequently used assays have been developed on HPLC with a LLOQ in the region of 100-1000ng/mL [17, 20] . Other methods have been developed for LC-MS/MS providing increased sensitivity in comparison to HPLC, with LLOQ in the region of 0.5-2000 ng/mL [21, 22] . In addition to greater sensitivity, the assay presented here demonstrates greater flexibility when applied to the analysis of a diverse array matrices relevant to the further exploration of FAV as a SARS-CoV-2 therapeutic.",
+            "cite_spans": [
+                {
+                    "start": 192,
+                    "end": 196,
+                    "text": "[17,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 197,
+                    "end": 200,
+                    "text": "20]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 347,
+                    "end": 351,
+                    "text": "[21,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 352,
+                    "end": 355,
+                    "text": "22]",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In summary, optimisation of a robust, simple and sensitive LC-MS/MS assay for FAV is presented, which conforms to FDA bioanalytical development guidelines and was capable of assessing FAV in multiple preclinical and clinical matrices. Tables   Table 1 shows the optimised parameters used to detect FAV and FTC (IS). *denotes the daughter ion used for quantitation and ** denotes the daughter ion used for qualification. Table 2 shows the intra-assay variance in accuracy and precision of 3 repetitions of the assay. Also shown is the variance in accuracy and precision of the inter-day assay performance. Accuracy and precision were assessed in triplicate at 3 levels (low (2ng/ml), medium (75ng/ml) and high (150ng/ml). 150ng/mL 140.9 \u00b19.39 -6.0 6.7 Table 3 shows the intra-assay variance in accuracy and precision of the assay in human plasma and PBS. Accuracy and precision were assessed in triplicate at 3 levels (low (2ng/ml), medium (75ng/ml) and high (150ng/ml).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 235,
+                    "end": 251,
+                    "text": "Tables   Table 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 420,
+                    "end": 427,
+                    "text": "Table 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 751,
+                    "end": 758,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Variance of accuracy (%)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intra-day"
+        },
+        {
+            "text": "Variance of precision (%) ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intra-day"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Favipiravir, an anti-influenza drug against life-threatening RNA virus infections",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shiraki",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Daikoku",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Pharmacology & therapeutics",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Favipiravir as a potential countermeasure against neglected and emerging RNA viruses",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Delang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Abdelnabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Neyts",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Antiviral research",
+            "volume": "153",
+            "issn": "",
+            "pages": "85--94",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Synthesis and anti-influenza activity of pyridine, pyridazine, and pyrimidine Cnucleosides as favipiravir (T-705) analogues",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Journal of medicinal chemistry",
+            "volume": "59",
+            "issn": "10",
+            "pages": "4611--4624",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "T-705 (favipiravir) activity against lethal H5N1 influenza A viruses",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kiso",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "107",
+            "issn": "",
+            "pages": "882--887",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Successful treatment of advanced Ebola virus infection with T-705 (favipiravir) in a small animal model",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Oestereich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Antiviral research",
+            "volume": "105",
+            "issn": "",
+            "pages": "17--21",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Favipiravir (T-705), a novel viral RNA polymerase inhibitor",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Furuta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Antiviral research",
+            "volume": "100",
+            "issn": "2",
+            "pages": "446--454",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Post-exposure efficacy of oral T-705 (Favipiravir) against inhalational Ebola virus infection in a mouse model",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Smither",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Antiviral Res",
+            "volume": "104",
+            "issn": "",
+            "pages": "153--158",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Evaluation of antiviral efficacy of ribavirin, arbidol, and T-705 (favipiravir) in a mouse model for Crimean-Congo hemorrhagic fever",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Oestereich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "PLoS Negl Trop Dis",
+            "volume": "8",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Efficacy of Favipiravir Alone and in Combination With Ribavirin in a Lethal, Immunocompetent Mouse Model of Lassa Fever",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Oestereich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J Infect Dis",
+            "volume": "213",
+            "issn": "6",
+            "pages": "934--942",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Low-dose ribavirin potentiates the antiviral activity of favipiravir against hemorrhagic fever viruses",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Westover",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Antiviral Res",
+            "volume": "126",
+            "issn": "",
+            "pages": "62--70",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Favipiravir at high doses has potent antiviral activity in SARS-CoV-2\u2212infected hamsters, whereas hydroxychloroquine lacks activity",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J F"
+                    ],
+                    "last": "Kaptein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "117",
+            "issn": "",
+            "pages": "26955--26965",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Prioritisation of potential anti-SARS-CoV-2 drug repurposing opportunities based on ability to achieve adequate target site concentrations derived from their established human pharmacokinetics. medRxiv",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Arshad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Understanding the pharmacokinetics of Favipiravir: Implications for treatment of influenza and COVID-19. EBioMedicine",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Ison",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Scheetz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "63",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Remdesivir and chloroquine effectively inhibit the recently emerged novel coronavirus (2019-nCoV) in vitro",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Research",
+            "volume": "30",
+            "issn": "3",
+            "pages": "269--271",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Pharmacokinetic modelling to estimate intracellular favipiravir ribofuranosyl-5'-triphosphate exposure to support posology for SARS-CoV-2. medRxiv, 2021. 16. medicine",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Pertinez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Favipiravir pharmacokinetics in Ebola-Infected patients of the JIKI trial reveals concentrations lower than targeted",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS Negl Trop Dis",
+            "volume": "11",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Favipiravir (T-705) inhibits Junin virus infection and reduces mortality in a guinea pig model of Argentine hemorrhagic fever",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gowen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "PLoS Negl Trop Dis",
+            "volume": "",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Intracellular metabolism of favipiravir (T-705) in uninfected and influenza A (H5N1) virus-infected cells",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Smee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Antimicrob Chemother",
+            "volume": "64",
+            "issn": "4",
+            "pages": "741--747",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Efficacy of favipiravir (T-705) in nonhuman primates infected with Ebola virus or Marburg virus",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bixler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Antiviral Res",
+            "volume": "151",
+            "issn": "",
+            "pages": "97--104",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Fate of new three anti-influenza drugs and one prodrug in the water environment",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Azuma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "169",
+            "issn": "",
+            "pages": "550--557",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Clinical Regimens of Favipiravir Inhibit Zika Virus Replication in the Hollow-Fiber Infection Model",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Pires De Mello",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Antimicrob Agents Chemother",
+            "volume": "62",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Bioanalytical Method Validation Guidance for Industry",
+            "authors": [],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Strategies for the Detection and Elimination of Matrix Effects in Quantitative LC-MS Analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Hewavitharana",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Shaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Lc Gc North America",
+            "volume": "32",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Development, validation and clinical application of a novel method for the quantification of efavirenz in dried breast milk spots using LC-MS/MS",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Olagunju",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Antimicrob Chemother",
+            "volume": "70",
+            "issn": "2",
+            "pages": "555--61",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "A sensitive and selective liquid chromatography/tandem mass spectrometry method for quantitative analysis of efavirenz in human plasma",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Srivastava",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "PLoS One",
+            "volume": "8",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Matrix effects and application of matrix effect factor",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Bioanalysis",
+            "volume": "9",
+            "issn": "23",
+            "pages": "1839--1844",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Species differences in drug plasma protein binding",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Colclough",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "MedChemComm",
+            "volume": "5",
+            "issn": "7",
+            "pages": "963--967",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "shows the percentage recovery for the low (a), medium (b) and high (c) QCs in extracted mouse plasma, human plasma and PBS. Data is show percentage of unextracted standards.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "shows the standard curve generated from extracted mouse plasma, human plasma and PBS standards of FAV over the range of 0.78ng/mL to 200ng/ml.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "shows a representative chromatogram from blank mouse plasma (A), blank human plasma (B) and blank PBS (C). Also shown is a representative chromatogram of the LLOQ in mouse plasma (D), human plasma (E) and PBS (F). The retention time of FAV is also shown (1.1 min).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Figure 2",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,1880 @@
+{
+    "paper_id": "0b452ff5d33ba3f7dfc2e2c336128ffefa6a2ab5",
+    "metadata": {
+        "title": "Ischemic Stroke Occurs Less Frequently in Patients With COVID-19 A Multicenter Cross-Sectional Study",
+        "authors": [
+            {
+                "first": "Kimon",
+                "middle": [],
+                "last": "Bekelis",
+                "suffix": "",
+                "affiliation": {},
+                "email": "kbekelis@"
+            },
+            {
+                "first": "Symeon",
+                "middle": [],
+                "last": "Missios",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Javaad",
+                "middle": [],
+                "last": "Ahmad",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Nicos",
+                "middle": [],
+                "last": "Labropoulos",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Clemens",
+                "middle": [
+                    "M"
+                ],
+                "last": "Schirmer",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Daniel",
+                "middle": [
+                    "R"
+                ],
+                "last": "Calnan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jonathan",
+                "middle": [],
+                "last": "Skinner",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Todd",
+                "middle": [
+                    "A"
+                ],
+                "last": "Mackenzie",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "A mixed-effects logistic regression analysis and a propensity score-weighted analysis were used to control for confounders and investigate the association of COVID-19 with ischemic stroke. Similar techniques were used to detect the impact of concurrent COVID-19 infection on unfavorable outcomes for patients with stroke.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Among 24 808 discharges, 2513 (10.1%) were diagnosed with COVID-19, and 566 (0.2%) presented with acute ischemic stroke. Patients diagnosed with COVID-19 were at one-quarter the odds of stroke compared with other patients (odds ratio, 0.25 [95% CI, 0.16-0.40]). This association was consistent in all age groups. Our results were robust in sensitivity analyses, including propensity score-weighted regression models. In patients presenting with stroke, concurrent infection with severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2) was associated with higher case-fatality (odds ratio,10.50 [95% CI, 3.54-31.18]) and a trend towards increased occurrence of discharge to rehabilitation (odds ratio, 2.45 [95% CI, 0.81-1.25]). CONCLUSIONS: Using a comprehensive cross-section of patients from a large NY-based healthcare system, we did not identify a positive association between ischemic stroke and COVID-19. However, patients with stroke with COVID-19 had worse outcomes compared with those without, with over a 9-fold increase in mortality. Although no definitive conclusions can be reached from our observational study, our data do not support the concerns for an epidemic of stroke in young adults with COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "T here has been recent speculation that coronavirus disease 2019 (COVID-19) is associated with increased risk of fatal ischemic stroke in young adults. [1] [2] [3] Multiple theories have been proposed for the pathophysiology of this association, with a procoagulable state in infected patients as the most commonly proposed mechanism. 1 However, several researchers and clinicians are indicating a decreased occurrence of ischemic stroke across the world during the COVID-19 pandemic. [4] [5] [6] The drop in perceived occurrence has been so dramatic that many societies and advocacy groups have issued statements 6 urging patients to not delay stroke care in fear of being exposed to severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2), the virus causing COVID-19. 7 Indeed there has been evidence found for delays in stroke care due to the pandemic. 8 However, no large multi-institutional observational studies support either observation. 9 Despite extensive literature on similar concerns for influenza, 10 is comprised mainly of small, single-institution case series, without control for confounders and limited generalization. The prior report on stroke and COVID-19 in young adults is limited by selection bias, focusing only on the patients with most severe stroke seen by the neurointerventional team. 1 This selection reflects the different preferences and backgrounds of the treating physicians, as well as specific patient characteristics. In addition, although concurrent stroke and SARS-CoV-2 infection have been documented in international series before, [13] [14] [15] the impact of COVID-19 on stroke outcomes has not been studied. There has been no prior report attempting to account for these limitations through different analytic approaches in a cross-section of patients with COVID-19 of all ages. We used a comprehensive cross-section of hospital discharges from a large NY-based healthcare system to study the association of COVID-19 with the occurrence of ischemic stroke. The frequency of unfavorable outcomes in patients with ischemic stroke concurrent SARS-CoV-2 infection was also analyzed. Mixed-effects logistic regression and a propensity score matched logistic regression was used to control for confounding.",
+            "cite_spans": [
+                {
+                    "start": 152,
+                    "end": 155,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 156,
+                    "end": 159,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 160,
+                    "end": 163,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 485,
+                    "end": 488,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 489,
+                    "end": 492,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 493,
+                    "end": 496,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1579,
+                    "end": 1583,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1584,
+                    "end": 1588,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1589,
+                    "end": 1593,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Data and analytic methods will be made available by contacting the corresponding author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "METHODS"
+        },
+        {
+            "text": "We conducted a cross-sectional study of the association of ischemic stroke and COVID-19 infection using hospital discharges from 6 hospitals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study Design"
+        },
+        {
+            "text": "This study was approved by the Institutional Review Board of Catholic Health Services of Long Island. The need for informed consent was waived by the Institutional Review Board. All patients discharged from any of the six hospitals of Catholic Health Services of Long Island in Suffolk (Good Samaritan Hospital Medical Center, Saint Joseph's Hospital, Saint Catherine's of Siena Hospital, Saint Charles Hospital) and Nassau County, New York (Saint Francis Hospital, Mercy Medical Center) between January and April 2020 were included in the analysis. We used discharge data generated through our electronic medical record system. These hospitals are comprised of a Comprehensive Stroke Center and 5 Advanced Primary Stroke Centers (one with thrombectomy capabilities), all certified by the NY Department of Health and The Joint Commission. More information about Catholic Health Services of Long Island is available at https://www.chsli.org.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Patient Population"
+        },
+        {
+            "text": "We used International Classification of Disease, Tenth Revision (ICD-10) codes to identify outcomes in the database. The primary outcome variable was the occurrence of new-onset stroke (ICD-10 code I63.xx, G45.xx) in our cross-section of patients. The diagnosis and coding of stroke was limited to patients who presented with symptoms of an acute ischemic stroke and were confirmed to have acute ischemic change on magnetic resonance imaging. Patients with negative magnetic resonance imaging were not coded as having a stroke. Secondary outcomes were case-fatality and discharge to rehabilitation for patients presenting with acute ischemic stroke.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Outcome Variables"
+        },
+        {
+            "text": "The primary exposure variable was infection with SARS-CoV-2, resulting in COVID-19 (ICD-10 code U07.1). All patients of Catholic Health Systems of Long Island received a nasopharyngeal swab using the COVID-19 RNA polymerase chain reaction testing method on arrival to emergency department during the dates of this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Exposure Variables"
+        },
+        {
+            "text": "Covariates used for risk adjustment were age, sex, race (Black, Asian, White, other), insurance status (Medicare, Medicaid, private, self pay, other), mechanical thrombectomy (ICD-10 code 03CG3ZZ), and administration of IV tPA (intravenous tissue-type plasminogen activator; ICD-10 code Z92.82).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Exposure Variables"
+        },
+        {
+            "text": "The comorbidities used for risk adjustment were diabetes, smoking, chronic obstructive lung disease, hypertension, hypercholesterolemia, congestive heart failure, coronary artery disease, alcohol abuse, peripheral vascular disease, and chronic renal failure. Only variables that were defined as present on admission were considered part of the patient's preadmission comorbidity profile (See Variable Definitions in the Data Supplement).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Exposure Variables"
+        },
+        {
+            "text": "We examined the association of COVID-19 with our primary outcome (acute ischemic stroke) using crude and 3 methods of adjustment for confounders. Our primary analysis was based on a logistic regression model controlling for age, sex, race, insurance status, and all the comorbidities mentioned previously, with hospital fixed effects to control for clustering at the hospital level. To demonstrate the robustness of our data in sensitivity analysis, we used additional techniques to account for measured confounding while accounting for clustering at the hospital level. These were comprised of inverse-weighted propensity estimation of the absolute difference and odds ratio (OR) and binned propensity scores. Inverse-weighted propensities were trimmed at their 99% percentile. The inverse-weighted propensity approach would yield estimates of the Average Treatment Effect, for example, comparison of the counterfactuals if ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "everyone versus no one had COVID-19. The results of the inverse-weighted propensity model are only presented in the tables. The propensity score bins were utilized as follows; we controlled for the 100 level factor created from percentiles of the propensity score in a logistic regression with COVID-19 and this factor. The propensity scores were derived using a logistic regression of COVID-19 as a function of the covariates mentioned above and all their pairwise interactions. To further test the sensitivity of our results, we repeated the above analyses separately for ischemic stroke (ICD-10 code I63.xx) and transient ischemic attack (ICD-10 code G45.xx). The consistency of our results was also examined by considering acute myocardial infarction (MI), a disease closely correlated with ischemic stroke, as an outcome (ICD-10 code I21.9). Observing a similar trend in cardiovascular disease would validate our analysis. For our secondary outcomes, given the limited df (relatively small number of observations), we used a step-wise logistic regression model controlling for age, sex, hypertension, hypercholesterolemia, diabetes, and peripheral vascular disease. In a sensitivity analysis, we repeated the models for our secondary outcomes forcing IV tPA administration and mechanical thrombectomy as covariates in our regression models to account for more severe strokes. The direction of the observed associations did not change and is therefore not reported any further.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CLINICAL AND POPULATION SCIENCES"
+        },
+        {
+            "text": "All results are based on 2-sided tests, and the level of statistical significance was set at 0.05. Post hoc power calculation: This study, based on 24 808 patients, has sufficient power (80%) at a 5% type I error rate to detect an increase in stroke frequency from 2% to 2.9% of patients (or a decrease from 2% to 1.2%). Statistical analyses were performed using R version 3.3.1 (R Foundation for Statistical Computing).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CLINICAL AND POPULATION SCIENCES"
+        },
+        {
+            "text": "This study is based on 24 808 discharged patients. In the selected study period, 566 patients presenting with acute ischemic stroke (mean age was 72.7 years, with 53.5% [303/566] females) were discharged from the health system. In the same time period, 2513 patients with COVID-19 (mean age was 66.3 years, with 44.2% [1111/2513] females) were discharged from the health system. The characteristics of the cross-section of patients at baseline can be seen in Table 1 . The counts of ischemic stroke, transient ischemic attack, MI, and patients with COVID-19 between January and April 2020 are plotted and smoothed using locally estimated scatterplot smoothing in the Figure. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 459,
+                    "end": 466,
+                    "text": "Table 1",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 667,
+                    "end": 674,
+                    "text": "Figure.",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Patient Characteristics"
+        },
+        {
+            "text": "During the dates for this study, all patients presenting to the emergency department and those admitted to the hospital were tested for COVID-19 using the nasopharyngeal swab RNA polymerase chain reaction testing method. Among all admissions positive for SARS-CoV-2, 0.9% (22/2513) presented with an acute ischemic stroke. Of those that were negative for SARS-CoV-2 infection, 2.4% (544/22 295) of those presented with an acute ischemic stroke. The odds of ischemic stroke in patients diagnosed with COVID-19 was 0.35 (95% CI, 0.23-0.55) times lower than in patients without a COVID-19 diagnosis. Controlling for patient characteristics and comorbidities using a logistic regression with facility fixed effects, we calculated that the odds of stroke was 0.25 (95% CI, 0.16-0.40) times less likely in COVID-19-positive patients in comparison to noninfected individuals ( Table 2 ). Figure A-I in the Data Supplement displays a forest plot of adjusted OR for common cardiovascular risk factors. The association of COVID-19 and stroke was independent of the patient's age. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 870,
+                    "end": 877,
+                    "text": "Table 2",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "COVID-19 and Ischemic Stroke"
+        },
+        {
+            "text": "The direction and magnitude of the association did not change in a propensity score-adjusted logistic regression model ( (Table 3) .",
+            "cite_spans": [
+                {
+                    "start": 119,
+                    "end": 120,
+                    "text": "(",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 121,
+                    "end": 130,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF5"
+                }
+            ],
+            "section": "Sensitivity Analysis"
+        },
+        {
+            "text": "Using a comprehensive all-payer cross-section of patients from a large healthcare system in New York State, we did not identify an increased likelihood of stroke on presentation among patients of all ages with COVID-19. Patients with stroke with concurrent SARS-CoV-2 infection demonstrated increased case-fatality and a trend more discharge to rehabilitation. Our results were robust when considering several observational techniques to account for confounders. We also did not identify an increased frequency of MI among patients with COVID-19, a disease with similar risk factors and epidemiology to stroke. Our report is contributing to an ongoing debate about possible systemic complications of SARS-CoV-2 infection. These findings do not support the concern for a stroke epidemic in young adults, 2,3 fueled by a prior case study. 1 The authors of the latter report described their experience with five patients with stroke infected with SARS-CoV-2, aged 33 to 49. COVID-19 is a mild disease in most, but occasionally it progresses to acute respiratory distress syndrome, multiorgan dysfunction, cytokine storm, inflammation, coagulation, and death. 16, 17 Proposed mechanisms contributing to strokes in this patient population include coagulopathy and endothelial dysfunction. 1 Although the authors shed light into the clinical characteristics of young adults with these 2 pathologies, they did not investigate a possible association between stroke and COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 1156,
+                    "end": 1159,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Experience from other viral respiratory epidemics has uncovered a possible association of severe influenza with cardiovascular disease. 10 However, prior observational studies on this issue have offered mixed results. Some have demonstrated that admissions for stroke and heart disease are increasing during influenza epidemics. 11 These were supported by multiple small and large international observational studies demonstrating a protective effect of flu vaccination against cardiovascular disease, stroke, and all-cause mortality. 18 Exacerbation of chronic disease processes, and possible endothelial dysfunction, have been postulated as the contributing factors to some of these associations. 10, 18 However, other extensive reports have not identified a protective effect of influenza vaccination on cardiovascular disease. 12 In our analysis, we did not observe a positive association of COVID-19 and ischemic stroke. On the contrary, Discharges from the last 10 d of April were excluded from the graph to avoid demonstrating a false drop in cases, given that a significant number of these patients were still inpatients at the time of the study. ",
+            "cite_spans": [
+                {
+                    "start": 699,
+                    "end": 702,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "a sharp decrease in stroke admissions was observed around the peak of the pandemic. This is consistent with anecdotal international reports describing a phenomenon of \"vanishing strokes and heart attacks\" during this period. [4] [5] [6] The decrease was so severe in some countries that multiple public service announcements were released, 6 urging patients to seek immediate care for signs and symptoms of stroke. 7 Most stroke experts attributed this phenomenon to the unwillingness of patients to be exposed to SARS-CoV-2 in an overwhelmed emergency room. 6 Italian researchers 4 have additionally hypothesized a pathophysiologic mechanism behind this decreased stroke occurrence, based on the controversial role of IL (interleukin)-6 in stroke. 19 There is experimental evidence that IL-6, which is elevated in severe COVID-19, has a neuroprotective effect and enhances angiogenesis. 19 Alternate explanations proposed by this group are based on the thrombocytopenia encountered even in patients with mild COVID-19. 20 It is likely that low platelets prevent the formation of large clots in the intracranial circulation. 20 Lastly, the widespread mitigation measures, which have minimized the prevalence of influenza in the community, could have decreased the negative impact of the flu on cardiovascular disease and stroke. 18, 21 Further research into the cause of the observed associations is warranted.",
+            "cite_spans": [
+                {
+                    "start": 225,
+                    "end": 228,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 229,
+                    "end": 232,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 233,
+                    "end": 236,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1329,
+                    "end": 1332,
+                    "text": "18,",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SCIENCES"
+        },
+        {
+            "text": "Regardless of the decreased occurrence of stroke among patients with COVID-19, some strokes will undoubtedly occur in this population. [13] [14] [15] Although recent investigations have demonstrated that cardiovascular disease is a negative predictive factor of outcomes for COVID-19, 22 the inverse association has not been uncovered before. We identified a higher risk of unfavorable outcomes in patients with ischemic stroke infected with SARS-CoV-2, independent of traditional stroke risk factors and surrogates of stroke severity. We observed a mortality for COVID-19 positive patients with stroke to be 31.8% as compared with 4.6% for COVID-19-negative patients with stroke. We hypothesize this to be due to the respiratory impact of COVID-19 on an already compromised patient with stroke. This observation can offer invaluable insight to epidemiologists, and clinicians treating stroke in the frontline, especially in areas of high COVID-19",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 139,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 140,
+                    "end": 144,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 145,
+                    "end": 149,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SCIENCES"
+        },
+        {
+            "text": "prevalence. This knowledge can be integrated into the recommendations of professional societies, who already have developed algorithms 5, 23, 24 to guide stroke management in the setting of the pandemic.",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 137,
+                    "text": "5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 138,
+                    "end": 141,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SCIENCES"
+        },
+        {
+            "text": "Our study has several limitations. Residual confounding can account for some of the observed associations. We used multiple sensitivity analyses and a wide selection of covariates to minimize this bias. Coding inaccuracies will undoubtedly occur and can affect our estimates, through misclassification. However, several reports have demonstrated that coding for stroke has shown nearly a perfect association with medical record review. 25, 26 Coding for COVID-19 has not been validated yet, nevertheless, the creation of a specific code for this disease and the heightened awareness during the pandemic are expected to minimize coding inaccuracies. Although our data include all hospitals from a healthcare system that spans Nassau and Suffolk counties in NY State, some of the areas impacted the most during the COVID-19 pandemic, the generalization of this analysis to the entire US population is uncertain.",
+            "cite_spans": [
+                {
+                    "start": 436,
+                    "end": 439,
+                    "text": "25,",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SCIENCES"
+        },
+        {
+            "text": "Additionally, we lack posthospitalization and long-term data on our patients. Quality metrics (ie, modified Rankin Scale), and clinical information on the functional status of the patients (National Institutes of Health Stroke Scale), which reflect stroke severity, were not available. However, using IV tPA and mechanical thrombectomy as surrogates for stroke severity can partially control for this bias, when assessing the impact of COVID-19 on stroke case-fatality. The definitive impact of COVID-19 on stroke outcomes can only be assessed in prospective registries. In this direction, the NeuroPoint Alliance has created the first module for a cerebrovascular registry, with results expected in the near future. 27 We also have not subdivided the observed strokes into subtypes, meaning it is possible that one particular cause of stroke may be a more frequent finding in patients with COVID-19. Finally, causality cannot be definitively established based on observational data, despite the use of advanced techniques.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SCIENCES"
+        },
+        {
+            "text": "Using a comprehensive all-payer cross-section of patients from a large healthcare system in New York State, we did not identify an increased occurrence of ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSIONS"
+        },
+        {
+            "text": "stroke among patients with COVID-19. Patients with stroke with concurrent SARS-CoV-2 infection demonstrated increased case-fatality and discharge to rehabilitation. Our results were robust when considering several observational techniques to account for confounders. The observed associations were paralleled in MI, a disease with similar risk factors and epidemiology to stroke. Although no definitive conclusions can be drawn about the causal relationship between COVID-19 and stroke from our observational study, our report is contributing to an ongoing debate about possible systemic complications of SARS-CoV-2 infection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CLINICAL AND POPULATION SCIENCES"
+        },
+        {
+            "text": "Received May 15, 2020; final revision received September 2, 2020; accepted October 1, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ARTICLE INFORMATION"
+        },
+        {
+            "text": "The ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Affiliations"
+        },
+        {
+            "text": "None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sources of Funding"
+        },
+        {
+            "text": "Dr Schirmer reports research support (not directly for this article) from Penumbra, is a Shareholder in Neurotechnology Investors, and receives Honorarium from American Association of Neurological Surgeons (not directly related to this article). Dr Skinner reports research support (not directly for this article) from National Institute on Aging, Consulting fee from Sutter Health, Investor in Dorsata, Inc, and is a Program Director at National Bureau of Economic Research, Inc. The other authors report no conflicts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Disclosures"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Large-vessel stroke as a presenting feature of COVID-19 in the young",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Oxley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Majidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kellner",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shoirah",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Leacy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Shigematsu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ladner",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Yaeger",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMc2009787"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Young and middle-aged people, barely sick with COVID-19, are dying of strokes",
+            "authors": [
+                {
+                    "first": "Eunjung",
+                    "middle": [],
+                    "last": "Cha",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Washington Post",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "COVID-19 causes sudden strokes in young adults, doctors say",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fox",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "The baffling case of ischemic stroke disappearance from the casualty department in the COVID-19 era",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Morelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rota",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Terracciano",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Immovilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Spallazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Colombi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zaino",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Michieletti",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Guidetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur Neurol",
+            "volume": "83",
+            "issn": "",
+            "pages": "213--215",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000507666"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Challenges and potential solutions of stroke care during the coronavirus disease 2019 (COVID-19) outbreak",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rudd",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Stroke",
+            "volume": "51",
+            "issn": "",
+            "pages": "1356--1357",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/STROKEAHA.120.029701"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "COVID-19: are acute stroke patients avoiding emergency care?",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mcnamara",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "COVID-19 and stroke-a global world stroke organization perspective",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Markus",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Brainin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Stroke",
+            "volume": "15",
+            "issn": "",
+            "pages": "361--364",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1747493020923472"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Delayed presentation of acute ischemic strokes during the COVID-19 crisis",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Schirmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ringer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Arthur",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Binning",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "James",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Levitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Tawk",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Veznedaroglu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Neurointerv Surg",
+            "volume": "12",
+            "issn": "",
+            "pages": "639--642",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/neurintsurg-2020-016299"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Time is brain-quantified",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Saver",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Stroke",
+            "volume": "37",
+            "issn": "",
+            "pages": "263--266",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/01.STR.0000196957.55928.ab"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Infection as a risk factor for infarction and atherosclerosis",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Valtonen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1991,
+            "venue": "Ann Med",
+            "volume": "23",
+            "issn": "",
+            "pages": "539--543",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/07853899109150515"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Prevention and control of seasonal influenza with vaccines: recommendations of the advisory committee on immunization practices -United States, 2019-20 influenza season",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Grohskopf",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Alyanak",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Broder",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Walter",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fry",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Jernigan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "MMWR Recomm Rep",
+            "volume": "68",
+            "issn": "",
+            "pages": "1--21",
+            "other_ids": {
+                "DOI": [
+                    "10.15585/mmwr.rr6803a1"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Vaccine Safety Datalink Study Group. Influenza vaccination is not associated with a reduction in the risk of recurrent coronary events",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Heckbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Psaty",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Malais",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Barlow",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Am J Epidemiol",
+            "volume": "156",
+            "issn": "",
+            "pages": "634--640",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/aje/kwf073"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Confirmation of the high cumulative incidence of thrombotic complications in critically ill ICU patients with COVID-19: an updated analysis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Klok",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mjha",
+                    "middle": [],
+                    "last": "Kruip",
+                    "suffix": ""
+                },
+                {
+                    "first": "Njm",
+                    "middle": [],
+                    "last": "Van Der Meer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Arbous",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gommers",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kant",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fhj",
+                    "middle": [],
+                    "last": "Kaptein",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Van Paassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mam",
+                    "middle": [],
+                    "last": "Stals",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Huisman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Thromb Res",
+            "volume": "191",
+            "issn": "",
+            "pages": "148--150",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.thromres.2020.04.041"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Neurologic manifestations of hospitalized patients with coronavirus disease 2019 in Wuhan, China",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA Neurol",
+            "volume": "77",
+            "issn": "",
+            "pages": "683--690",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamaneurol.2020.1127"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Humanitas COVID-19 Task Force. Venous and arterial thromboembolic complications in COVID-19 patients admitted to an academic hospital in",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lodigiani",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Iapichino",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Carenzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cecconi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ferrazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sebastian",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kucher",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Studt",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sacco",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alexia",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Thromb Res",
+            "volume": "191",
+            "issn": "",
+            "pages": "9--14",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.thromres.2020.04.024"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "HLH Across Speciality Collaboration, UK. COVID-19: consider cytokine storm syndromes and immunosuppression",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Mcauley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sanchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tattersall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Manson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1033--1034",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30628-0"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Clinical features of 69 cases with coronavirus disease",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin Infect Dis",
+            "volume": "71",
+            "issn": "",
+            "pages": "769--777",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa272"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Influenza vaccination and reduction in hospitalizations for cardiac disease and stroke among the elderly",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Nichol",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Nordin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mullooly",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lask",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Fillbrandt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Iwane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "N Engl J Med",
+            "volume": "348",
+            "issn": "",
+            "pages": "1322--1332",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa025028"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Peak plasma interleukin-6 and other peripheral markers of inflammation in the first week of ischaemic stroke correlate with brain infarct volume, stroke severity and long-term outcome",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Emsley",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gavin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Georgiou",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vail",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Barberan",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Del Zoppo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hallenbeck",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rothwell",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hopkins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "BMC Neurol",
+            "volume": "4",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2377-4-2"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Thrombocytopenia is associated with severe coronavirus disease 2019 (COVID-19) infections: a meta-analysis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lippi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Plebani",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Henry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Chim Acta",
+            "volume": "506",
+            "issn": "",
+            "pages": "145--148",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cca.2020.03.022"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Common infections and the risk of stroke",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Grau",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Urbanek",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Palm",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Nat Rev Neurol",
+            "volume": "6",
+            "issn": "",
+            "pages": "681--694",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nrneurol.2010.163"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Cardiovascular disease, drug therapy, and mortality in COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mehra",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Desai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kuy",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Henry",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N Engl J Med",
+            "volume": "382",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2007621"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Acute stroke management pathway during Coronavirus-19 pandemic",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Baracchini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pieroni",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Viaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Cianci",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cattelan",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Tiberio",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Munari",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Causin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Neurol Sci",
+            "volume": "41",
+            "issn": "",
+            "pages": "1003--1005",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10072-020-04375-9"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Society of Neurointerventional Surgery recommendations for the care of emergent neurointerventional patients in the setting of COVID-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Fraser",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Arthur",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Levitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Albuquerque",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ansari",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dabus",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Jayaraman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mack",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Neurointerv Surg",
+            "volume": "12",
+            "issn": "",
+            "pages": "539--541",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/neurintsurg-2020-016098"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Coding of stroke and stroke risk factors using International Classification of Diseases, Revisions 9 and 10",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kokotailo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Hill",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Stroke",
+            "volume": "36",
+            "issn": "",
+            "pages": "1776--1781",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/01.STR.0000174293.17959.a1"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Validating administrative data in stroke research",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Tirschwell",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Longstreth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Stroke",
+            "volume": "33",
+            "issn": "",
+            "pages": "2465--2470",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/01.str.0000032240.28636.bd"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The national neurosurgery quality and outcomes database (n 2 qod)",
+            "authors": [
+                {
+                    "first": "Neuropoint",
+                    "middle": [],
+                    "last": "Alliance",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "II in the Data Supplement demonstrates a scatterplot of the weekly cases of COVID-19 and ischemic stroke among patients since the first week of COVID-19. A slight negative correlation was observed for patients over 60 (Pearson correlation coeffi-cient=\u22120.575, P<0.05), and under 60 years old (Pearson correlation coefficient=\u22120.234, P<0.05).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "The counts of ischemic stroke, transient ischemic attack (TIA), myocardial infarction (MI), and coronavirus disease 2019 (COVID-19) patients between January and April 2020 are plotted and smoothed using locally estimated scatterplot smoothing.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Stroke and Brain Aneurysm Center of Long Island, Babylon, NY (K.B.). The Dartmouth Institute for Health Policy and Clinical Practice, Lebanon, NH (K.B., J.S., T.A.M.). Population Health Research Institute of New York, Melville, NY (K.B., S.M., J.A., T.A.M.). Division of Neurosurgery, Good Samaritan Hospital Medical Center, West Islip, NY (K.B., S.M., J.A.). Department of Surgery, Stony Brook University Medical Center, NY (N.L.). Department of Neurosurgery and Neuroscience Institute, Geisinger Health System and Geisinger Commonwealth School of Medicine, Wilkes-Barre, PA and Research Institute of Neurointervention, Paracelsus Medical University, Salzburg, Austria (C.M.S.). Section of Neurosurgery, Dartmouth-Hitchcock Medical Center, Lebanon, NH (D.R.C.). Department of Economics (J.S.) and Department of Biomedical Data Science (T.A.M.), Dartmouth College, Hanover, NH.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "-12 the evidence for",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "OR, 0.24 [95% CI, 0.15-0.38]). Additionally, the association of stroke and COVID-19 persisted when considering ischemic stroke (OR, 0.29 [95% CI, 0.18-0.48]) and transient ischemic attacks separately (OR, 0.14 [95% CI, 0.10-0.38]).The consistency of our results was also examined by considering MI as an outcome. Overall, a frequency of 2.9% MI was recorded in patients with COVID-19 and 3.3% among those without SARS-CoV-2 infection. In unadjusted analysis, we identified a trend of decreased frequency of MI (OR, 0.87 [95% CI, 0.68-1.12]) on presentation among patients with COVID-19. Likewise, using a logistic regression with facility fixed effects (OR, 0.89 [95% CI, 0.69-1.16]), and a propensity-matched logistic regression (OR, 0.88 [95% CI, 0.68-1.15]), we identified that SARS-CoV-2 infection was associated with decreased, albeit not significantly, the frequency of MI in comparison to noninfected individuals (Table 2).",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Patient Characteristics",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Models Examining the Association of Ischemic Stroke (and Myocardial Infarction) and COVID-19",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Models Examining the Association of COVID-19 With Unfavorable Outcomes in Patients With Acute Ischemic Stroke COVID-19 indicates coronavirus disease 2019; and OR, odds ratio. *All regressions were based on step-wise logistic models. \u2020Hospital ID was used as a fixed-effects variable. Stroke. 2020;51:3570-3576. DOI: 10.1161/STROKEAHA.120.031217",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,2424 @@
+{
+    "paper_id": "0b490f1933700ee396ef5200aeb588fb141ba4d2",
+    "metadata": {
+        "title": "",
+        "authors": [
+            {
+                "first": "Elisabetta",
+                "middle": [],
+                "last": "Baldi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Sara",
+                "middle": [],
+                "last": "Marchiani",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Lara",
+                "middle": [],
+                "last": "Tamburrino",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "Angiotensin-converting enzyme 2 (ACE2) was first discovered and cloned in 2000 as a homologue of ACE [1, 2] . It is a membrane exopeptidase, a single-pass type I transmembrane protease enzyme (glycoprotein) constituted by 805 amino acids and is expressed by multiple organs and cell types, including lungs [3] , kidneys, heart [4] , testis [5] and alveolar epithelial cells and enterocytes from the small intestine [6] . ACE2 is a key component of the renin-angiotensin system (RAS) [7] , which regulates both the blood pressure and fluid/electrolyte homeostasis [8] . It acts as a convertor of angiotensin I to angiotensin 1-9 (Ang-(1-9)) and the potent vasoconstrictor angiotensin II in the vasodilator peptide angiotensin 1-7 (Ang-(1-7)), conferring to the enzyme a cardioprotective role [7] . Moreover, ACE2 has been proposed as a modulating factor in the pathophysiology of diabetes mellitus [9] and renal failure [10] , thus extending the role of the RAS system and the molecules involved well beyond the fluid balance and blood pressure control.",
+            "cite_spans": [
+                {
+                    "start": 101,
+                    "end": 104,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 105,
+                    "end": 107,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 306,
+                    "end": 309,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 327,
+                    "end": 330,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 340,
+                    "end": 343,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 415,
+                    "end": 418,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 483,
+                    "end": 486,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 563,
+                    "end": 566,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 791,
+                    "end": 794,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 897,
+                    "end": 900,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 919,
+                    "end": 923,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "One of the most intriguing aspects of this protein is its dual role [11, 12] , acting as a protector and modulator of multiple pathophysiological processes but also implicated in the entry of viruses within the cells. The dual role of ACE2 has remained somehow in the background since December 2019, with the first reported cases of the virus named Severe Acute Respiratory Syndrome CoronaVirus-2 (SARS-CoV-2) responsible for the Coronavirus Disease 2019 (COVID- 19) . ACE2 represents the point of entry for SARS-CoV and SARS-CoV-2 within cells [13] through the binding to the surface spike protein of the virus. The almost ubiquitous distribution of ACE2 makes a large number of organs and tissues potentially susceptible to SARS-CoV-2 infection, thus the systemic consequences of COVID19 are well documented, beyond the harmful impact on respiratory function. However, within this context, little information is available on the male reproductive system. The presence of ACE2 has been demonstrated in human seminal plasma [14] and testicular cells, including Leydig cells, Sertoli cells and spermatogonia [15] , yet the expression and localization of ACE2 have not yet been investigated in mature human spermatozoa.",
+            "cite_spans": [
+                {
+                    "start": 68,
+                    "end": 72,
+                    "text": "[11,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 73,
+                    "end": 76,
+                    "text": "12]",
+                    "ref_id": null
+                },
+                {
+                    "start": 463,
+                    "end": 466,
+                    "text": "19)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 545,
+                    "end": 549,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1024,
+                    "end": 1028,
+                    "text": "[14]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1107,
+                    "end": 1111,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1153,
+                    "end": 1157,
+                    "text": "ACE2",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the present study, we demonstrated for the first time the expression of full-length ACE2 and its isoform, short-ACE2, in human spermatozoa at the protein level. We performed western blot analysis of sperm cell lysates using antibodies to ACE2 able to recognize epitopes on different regions of the protein. Immunocytochemistry analysis coupled with confocal microscopy showed the specific location of the proteins on the sperm head and the flagellum. By flow cytometry analysis of viable motile sperm suspensions, we assessed the expression of ACE2 on sperm surface.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Both full-length ACE2 and short ACE2 protein isoforms were found in human sperm lysates after western blot analysis ( Figure 1 ). While there is a clear inter-individual variability, our results showed two specific bands, one of approximately 120 KDa, corresponding to the glycosylated full-length ACE2, and a second one of approximately 52 KDa, recently termed short-ACE2 [16] . As a positive control for western blotting, we used mouse testis, which were positive for both the full-length [5] and the short-ACE2 isoforms (Supplementary Figure S1 ). For immunoblotting analysis, we used two commercial antibodies recognizing different epitopes for the protein: a polyclonal rabbit anti-human (anti-ACE2-1) that recognizes the sequence comprising the amino acids (aas) 750-805 from the C-terminal domain, shared among the two isoforms, and a monoclonal rabbit anti-human antibody (anti-ACE2-2) that recognizes a segment of the zinc metallopeptidase domain corresponding to the aas 200-230 of the N-terminal domain present in the full-length isoform. A third antibody was used in this study, concretely for the flow cytometry experiments. Anti-ACE2-3 corresponds to a polyclonal goat anti-human (anti-ACE2-3) specific to the sequence of aas 18-740 recognizing mainly the full-length isoform. Figure 2 shows the three antibodies used for this study (anti-ACE2-1 and anti-ACE2-2 for western blot and immunocytochemistry, and anti-ACE2-3 for flow cytometry analysis) and their target sequences. While the full-length ACE2 isoform is composed by 805 amino acids, with a length of 92 KDa, the short isoform consists in 459 aas (corresponding to the aas 347-805 of the full isoform) and 52 KDa length (UniProtKB, accession number Q9BYF1; https://www.uniprot.org/uniprot/Q9BYF1; accessed on 4 July 2021). Thus, combining the three antibodies used separately on the same blots after stripping, we were able to validate the specificity of the antibodies and verify the results obtained. Full-length ACE2 is composed of 805 amino acids (aas), while short-ACE2 is 459 aas length, thus sharing the sequence between the aas 347-805 (including the C-terminal domain). Numbers in blue correspond to the aas present in each sequence, while numbers in grey correspond to the sequence of aas missing in the short-ACE2 isoform. Three different antibodies were used: anti-ACE2-1 (abcam, ab15348) that recognizes the sequence between the aas 750-805; anti-ACE2-2 (Novus, NBP2-67692), recognizing the aas 200-230 from the full-ACE2; and anti-ACE2-3 (AF933, R&D Systems) recognizing the aas 18-640, mainly present in the full-ACE2 isoform.",
+            "cite_spans": [
+                {
+                    "start": 373,
+                    "end": 377,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 491,
+                    "end": 494,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 118,
+                    "end": 126,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 538,
+                    "end": 547,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1291,
+                    "end": 1299,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "ACE2 and Short ACE2 Are Expressed in Human Spermatozoa"
+        },
+        {
+            "text": "The identification of the short ACE2 isoform has been recently published [16] . This isoform is expressed in human nasal and bronchial respiratory epithelia and upregulated in response to interferon (IFN) treatment or rhinovirus infection, but not after SARS-CoV-2 infection. The short ACE2 isoform was previously regarded as a cleavage product of full ACE2 [17] or a truncated form of the protein (delta ACE2 or dACE2 [18] , also termed MIRb-ACE2 [19] ). Further studies are warranted to decipher whether the short isoform expressed in mature spermatozoa is a cleavage product from the full-length ACE2 or whether it is originated during the spermatogenesis.",
+            "cite_spans": [
+                {
+                    "start": 73,
+                    "end": 77,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 358,
+                    "end": 362,
+                    "text": "[17]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 419,
+                    "end": 423,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 448,
+                    "end": 452,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "ACE2 and Short ACE2 Are Expressed in Human Spermatozoa"
+        },
+        {
+            "text": "ACE2 has been found in adult Leydig cells, where it might play a regulatory role in steroidogenesis [20] . The evidence presented here constitutes the first demonstration that mature human spermatozoa also express ACE2 at the protein level. Prior to this study, some research groups had reported the mRNA presence in germ cells [21] and in transcriptome sequencing data from human sperm cells [22] ; however, these findings did not confirm the expression of the ACE2 protein by mature spermatozoa, as these cells do not present a transcription machinery [23, 24] . This notion may have implications in view of the biological role of ACE2 as a gateway for SARS-CoV2 entry within the cell. Since the mature spermatozoon is transcriptionally silent and SARS-CoV-2 is an RNA virus, it is unlikely that the latter could affect sperm biology by replicating within the cell. Nevertheless, the effects related to sperm membrane modifications or the interaction with other receptors or proteins cannot be ruled out. Therefore, we believe that evaluating the ACE2 expression and other co-receptors on mature spermatozoa is the first step in the study of SARS-CoV-2 infection and related impact on the reproductive health; this aspect is, however, beyond the scope of the present study. In this regard, it should be emphasized that although spermatozoa are somehow protected within the testis by the blood-testis barriers, an interaction between the virus and the sperm cells could take place within the female genital tract prior to the fertilization event. In addition, as anticipated, ACE2 is not the only entry point for the virus into the cells. TMPRSS2 is co-expressed with ACE2 in several organs and tissues [25] [26] [27] [28] [29] [30] . In terms of virus response, it would be necessary to study their co-expression to determine the exact mechanism of action of ACE2. Regardless, the ACE2 expression by the spermatozoa highlights multiple questions related to the viral infection and its physiologic role. By examining the fluorescence patterns after incubation with the different anti-ACE2 antibodies, we found that full-length ACE2 is mainly located in the equatorial and postequatorial region of the sperm head, whereas the short isoform is preferentially expressed in the midpiece of the sperm flagellum ( Figure 3) . Our results showed a similar pattern between ACE2 and the protein termed testicular ACE (tACE), previously reported on ejaculated human spermatozoa [31, 32] . To identify this isoform (tACE), K\u00f6hn et al. (1998) used two different peptides of the ACE sequence [33] . We performed the sequence alignment between the two peptides used by K\u00f6hn et al. (1998) and the known sequences for the testis-specific ACE, full-ACE2 and short-ACE2 (https://www.uniprot.org/; accessed on 13 July 2021; identification number P12821-3 for testis-specific ACE, Q9BYF1 for full-ACE2, Q9BYF1-3 for short-ACE2) to determine the sequence identity. Interestingly, peptide 1 shared 23/24 aas with the testis-specific ACE and 8/24 aas with the full ACE2, while peptide 2 shared 10/16 aas with the three isoforms (testis-specific ACE, full-ACE2 and short-ACE2). On this basis, it is possible to assume that testis-specific ACE and ACE2 are colocalized in the same regions of the spermatozoon or that they correspond to the same protein. ",
+            "cite_spans": [
+                {
+                    "start": 100,
+                    "end": 104,
+                    "text": "[20]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 328,
+                    "end": 332,
+                    "text": "[21]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 393,
+                    "end": 397,
+                    "text": "[22]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 554,
+                    "end": 558,
+                    "text": "[23,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 559,
+                    "end": 562,
+                    "text": "24]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1704,
+                    "end": 1708,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1709,
+                    "end": 1713,
+                    "text": "[26]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1714,
+                    "end": 1718,
+                    "text": "[27]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1719,
+                    "end": 1723,
+                    "text": "[28]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1724,
+                    "end": 1728,
+                    "text": "[29]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1729,
+                    "end": 1733,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 2469,
+                    "end": 2473,
+                    "text": "[31,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 2474,
+                    "end": 2477,
+                    "text": "32]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 2513,
+                    "end": 2531,
+                    "text": "K\u00f6hn et al. (1998)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2580,
+                    "end": 2584,
+                    "text": "[33]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 2656,
+                    "end": 2674,
+                    "text": "K\u00f6hn et al. (1998)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 2309,
+                    "end": 2318,
+                    "text": "Figure 3)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "ACE2 and Short ACE2 Are Expressed in Human Spermatozoa"
+        },
+        {
+            "text": "As the results produced in immunocytochemistry on fixed and permeabilized cells do not reflect surface expression of the antigen, cytofluorimetric experiments were conducted on suspensions of viable motile spermatozoa to verify whether and to what extent the ACE2 protein was expressed on the sperm membrane. Since anti-ACE2-1 (Abcam, ab15348) and anti-ACE2-2 (Novus, NBP2-67692) antibodies are not recognized for use in cytofluorimetry, the primary polyclonal goat anti-ACE2-3 antibody from R&D Systems (AF933), previously validated and recommended for flow cytometry application, was used for this purpose. Anti-ACE2-3 is a specific antibody for the sequence of aas 18-740, recognizing mainly the full-length isoform (Figure 2) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 719,
+                    "end": 729,
+                    "text": "(Figure 2)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Full-Length ACE2 Is Expressed on the Surface of Viable Motile Spermatozoa"
+        },
+        {
+            "text": "In twelve experimental settings, semen samples displayed a wide between-subject variability both in the percentage of ACE2-positive spermatozoa (representing a minority of the whole sperm population, ranging from 6.20% to 34.35%) and in the density of protein surface expression, as indicated by the fluorescence peak channel values, ranging from 19 arbitrary units (AU) to 930 AU (Figure 4 ). It may be hypothesized that the wellknown inter-individual variability of seminal parameters [34] could also be reflected in this remarkable width of the expression range of ACE2 in human sperm. ",
+            "cite_spans": [
+                {
+                    "start": 487,
+                    "end": 491,
+                    "text": "[34]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 381,
+                    "end": 390,
+                    "text": "(Figure 4",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Full-Length ACE2 Is Expressed on the Surface of Viable Motile Spermatozoa"
+        },
+        {
+            "text": "Semen samples were collected by masturbation from 40 healthy normozoospermic non-remunerated volunteers, aged 24-36 years who were not infected with the SARS-CoV-2 and had not been vaccinated at the moment of the semen collection. All subjects signed an informed consent statement. None of the participants had a history of infertility or recognizable risk factors of male infertility. According to recommended procedures of the World Health Organization (WHO) [35] , all samples were produced into sterile containers and left for at least 30 min to liquefy before processing. Supplementary Table S1 shows mean values \u00b1 standard error (SE) of standard semen parameters of the 40 donors.",
+            "cite_spans": [
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[35]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 577,
+                    "end": 599,
+                    "text": "Supplementary Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Human Sample Collection"
+        },
+        {
+            "text": "Motile sperm suspensions were obtained by the swim-up procedure. Briefly, spermatozoa were washed twice (700\u00d7g for 7 min) in Biggers Whitten Whittingham (BWW) medium. After the second centrifugation, supernatants were removed by aspiration, leaving 0.3 mL on the pellet, and after a 40 min incubation, supernatants containing highly concentrated motile sperm were carefully aspirated. Sperm concentration was evaluated and the cells were washed twice with 100 \u00b5L of cold phosphate buffered saline (PBS). Samples were centrifuged at 4 \u2022 C for 10 min at top speed and sperm pellets were stored at \u221280 \u2022 C with 1 \u00b5L of protease inhibitor cocktail (Merck-Sigma Aldrich, Milan, Italy).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Human Sample Collection"
+        },
+        {
+            "text": "Unless otherwise stated, all the chemicals were purchased from Merck-Sigma Aldrich (Milan, Italy). Three anti-ACE2 antibodies recognizing different epitopes of the protein were used: anti-ACE2-1 rabbit polyclonal (Abcam, Cambridge, MA, USA, ab15348); anti-ACE2-2 rabbit monoclonal (Novus, Toronto, ON, Canada, NBP2-67692); and anti-ACE2-3 goat polyclonal (R&D Systems, McKinley Place, MN, USA, AF933).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Chemicals"
+        },
+        {
+            "text": "Sperm cells were lysed with a RIPA buffer supplemented with 1% halt TM protease and phosphatase inhibitor cocktails (ThermoFisher, St. Louis, MO, USA), sonicated for 15 s at 50% intensity and 4 \u2022 C and placed on ice for 30 min gently shaking and vortexing every 10 min. Samples were then centrifuged for 15 min at 15,000\u00d7 g and 4 \u2022 C and supernatant containing proteins were then heat-denatured at 100 \u2022 C for 5 min in reducing Laemmli sample buffer 4\u00d7 (BioRad, Philadelphia, PA, USA). Protein content was determined using a MicroBCA\u2122 Protein Assay Kit (ThermoFisher) and read at EnSpire Multimode Plate Reader (PerkinElmer, Waltham, MA, USA). Equal amounts of protein per lane (20 \u00b5g) were loaded on an SDS-PAGE 4-15% gradient gel (Mini-PROTEAN \u00ae TGX\u2122 Precast Protein Gels, BioRad) and blotted on a nitrocellulose membrane using the Trans-Blot \u00ae Turbo TM Transfer System (BioRad). Membranes were blocked in EveryBlot Blocking Buffer (BioRad) for 5 min at room temperature (RT) and then incubated overnight at 4 \u2022 C with primary antibodies to ACE2 (1 \u00b5g/mL for ab15348, Abcam and 1:1000 for Novus, NBP2-67692, followed by HRP-conjugated secondary antibodies to rabbit IgG (1:10,000, Santa Cruz Biotechnology, Santa Cruz, CA, USA). Bound antibodies were detected using SuperSignal\u2122 West Pico PLUS Chemiluminescent Substrate (ThermoFisher) with the image digitally captured using an Azure C400 (Chemiluminescent Western Blot Imaging System, Azure Biosystems, Dublin, CA, USA). After antibody detection, blots were stripped using a Restore\u2122 Western Blot Stripping Buffer (Thermo Fisher) for 30 min at room temperature and re-incubated following the described protocol. Total labelled protein amount detected by Ponceau S was used as loading control as previously reported (Supplementary Figure S2) [36] . Blots were cut prior to hybridization, never after. Multiple exposure images with full-length membranes and membrane edges were added to the Supplementary Figures S3 and S4. ",
+            "cite_spans": [
+                {
+                    "start": 1795,
+                    "end": 1799,
+                    "text": "[36]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1784,
+                    "end": 1794,
+                    "text": "Figure S2)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1943,
+                    "end": 1975,
+                    "text": "Supplementary Figures S3 and S4.",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Western Blot"
+        },
+        {
+            "text": "Spermatozoa were fixed and permeabilized with a solution containing 4% paraformaldehyde and 0.5% Tryton X-100 for 20 min at RT. Sperm cells were then washed three times with PBS, centrifuging for 5 min at 500\u00d7 g. The pellet was resuspended and a volume of 20 \u00b5L was added to glass slides, inside a 1cm diameter circles. Once the slides were dry, bovine serum albumin (BSA) 1% was added as a blocking agent for the sperm cells for 30 min at RT within a dry chamber. After washing, spermatozoa were incubated overnight at 4 \u2022 C with the primary antibody (Abcam ab15348 at 20 \u00b5g/mL and Novus NBP2-67692 0.5 \u00b5L in 50 \u00b5L). After washing three times, a secondary antibody was added as follows: anti-rabbit FITC conjugated for Abcam ab15348 and Novus SN0754, at a dilution 1:250 incubated for 1 h at RT. To stain the nuclei, 4 ,6-diamidino-2-phenylindole (DAPI) staining was added during the last 15 min of incubation with the secondary antibodies. Sperm cells were washed again and observed with confocal microscopy (Nikon AR1 laser confocal scanning microscope coupled to the NIS-Element Software, Florence, Italy).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunocytochemistry"
+        },
+        {
+            "text": "Viable and motile sperm suspensions obtained by swim-up procedure were incubated for 60 min at 37 \u2022 C with the primary goat anti-ACE2 antibody (R&D Systems, AF933) (0.25 \u00b5g/10 6 cells). A non-specific serum from a non-immunized goat, at the same concentration of the primary antibody, was used as a negative control. After washing three times with PBS, spermatozoa were incubated with rabbit anti-goat Cy3 conjugated (1:1000) for 60 min at 37 \u2022 C. After washing three times, samples were analyzed at Becton Dickin-son FACSCalibur (Rome, Italy). At least 2 \u00d7 10 4 events were acquired and analyzed in each sample using Cell Quest software (San Jose, CA, USA). The percentage of positive spermatozoa and the peak channel, expressed as AU, were analyzed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Flow Cytometry"
+        },
+        {
+            "text": "In conclusion, from the experiments discussed here, it has been demonstrated that full-length ACE2 and short ACE2 proteins are expressed by mature spermatozoa after ejaculation, strongly confirmed with the three-antibody strategy coupled with immunofluorescence and cytofluorimetry analysis. The demonstration of receptor protein expression represents a key premise for studying the possible impact of SARS-CoV-2 infection on sperm biology. Informed Consent Statement: Informed consent was obtained from all subjects involved in the study, including written informed consent obtained from the patient(s) to publish this paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "The data presented in this study are available within the text, in the Supplementary Materials. Further data can be provided upon request to the corresponding author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Availability Statement:"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "A Human Homolog of Angiotensin-converting Enzyme",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tipnis",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hooper",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hyde",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Karran",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Christie",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Turner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "J. Biol. Chem",
+            "volume": "275",
+            "issn": "",
+            "pages": "33238--33243",
+            "other_ids": {
+                "DOI": [
+                    "10.1074/jbc.M002615200"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A Novel Angiotensin-Converting Enzyme-Related Carboxypeptidase (ACE2) Converts Angiotensin I to Angiotensin 1-9",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Donoghue",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Hsieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Baronas",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Godbout",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gosselin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Stagliano",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Donovan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Woolf",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Robison",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jeyaseelan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Circ. Res",
+            "volume": "87",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/01.RES.87.5.e1"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Angiotensin-converting enzyme 2 protects from severe acute lung failure",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kuba",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Huan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sarao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wada",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Leong-Poi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nature",
+            "volume": "436",
+            "issn": "",
+            "pages": "112--116",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nature03712"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Tissue distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first step in understanding SARS pathogenesis",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hamming",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Timens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L C"
+                    ],
+                    "last": "Bulthuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lely",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Navis",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Van Goor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J. Pathol",
+            "volume": "203",
+            "issn": "",
+            "pages": "631--637",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/path.1570"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The Novel Angiotensin-Converting Enzyme (ACE) Homolog, ACE2, Is Selectively Expressed by Adult Leydig Cells of the Testis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Douglas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "O&apos;bryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hedger",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K L"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Yarski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lew",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Endocrinol",
+            "volume": "145",
+            "issn": "",
+            "pages": "4703--4711",
+            "other_ids": {
+                "DOI": [
+                    "10.1210/en.2004-0443"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Specific ACE2 expression in small intestinal enterocytes may cause gastrointestinal symptoms and injury after 2019-nCoV infection",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-B",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-R",
+                    "middle": [],
+                    "last": "Lyu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-M",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lyu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z.-M",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int. J. Infect. Dis",
+            "volume": "96",
+            "issn": "",
+            "pages": "19--24",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2020.04.027"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "ACE2, a new regulator of the renin-angiotensin system",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Burrell",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Johnston",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tikellis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Cooper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Trends Endocrinol. Metab",
+            "volume": "15",
+            "issn": "",
+            "pages": "166--169",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.tem.2004.03.001"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The tissue renin-angiotensin system and intracellular signalling",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Fleming",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kohlstedt",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Busse",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Curr. Opin. Nephrol. Hypertens",
+            "volume": "15",
+            "issn": "",
+            "pages": "8--13",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/01.mnh.0000196146.65330.ea"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Role of angiotensin-converting enzyme 2 (ACE2) in diabetic cardiovascular complications",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Parajuli",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Oudit",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Clin. Sci",
+            "volume": "126",
+            "issn": "",
+            "pages": "471--482",
+            "other_ids": {
+                "DOI": [
+                    "10.1042/CS20130344"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Angiotensin-converting enzyme 2 and renal disease",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Scholey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Curr. Opin. Nephrol. Hypertens",
+            "volume": "27",
+            "issn": "",
+            "pages": "35--41",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/MNH.0000000000000378"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The Possible Dual Role of the ACE2 Receptor in Asthma and Coronavirus (SARS-CoV2)",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C C C"
+                    ],
+                    "last": "Branco",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Sato",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Alberca",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Infection. Front. Cell. Infect. Microbiol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fcimb.2020.550571"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The dual impact of ACE2 in COVID-19 and ironical actions in geriatrics and pediatrics with possible therapeutic solutions",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shrivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zengin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Life Sci",
+            "volume": "257",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.lfs.2020.118075"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "ACE2: The Major Cell Entry Receptor for SARS-CoV-2. Lung",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Scialo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Daniele",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Amato",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pastore",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Matera",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cazzola",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Castaldo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bianco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "198",
+            "issn": "",
+            "pages": "867--877",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00408-020-00408-4"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "COVID-19 and male reproductive function: A prospective, longitudinal cohort study",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Maleki",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tartibian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Reproduction",
+            "volume": "161",
+            "issn": "",
+            "pages": "319--331",
+            "other_ids": {
+                "DOI": [
+                    "10.1530/REP-20-0382"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "scRNA-seq Profiling of Human Testes Reveals the Presence of the ACE2 Receptor, A Target for SARS-CoV-2 Infection in Spermatogonia",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Leydig and Sertoli Cells. Cells",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/cells9040920"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "A novel ACE2 isoform is expressed in human respiratory epithelia and is upregulated in response to interferons and RNA respiratory virus infection",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Blume",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Spalluto",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Legebeke",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Nazlamova",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Conforti",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-M",
+                    "middle": [],
+                    "last": "Perotin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Frank",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Butler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Crispin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nat. Genet",
+            "volume": "53",
+            "issn": "",
+            "pages": "205--214",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41588-020-00759-x"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Identification of critical determinants on ACE2 for SARS-CoV entry and development of a potent entry inhibitor",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Penn-Nicholson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Cho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Virology",
+            "volume": "350",
+            "issn": "",
+            "pages": "15--25",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virol.2006.01.029"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Interferons and viruses induce a novel truncated ACE2 isoform and not the full-length SARS-CoV-2 receptor",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Onabajo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Banday",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Stanifer",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Obajemu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Santer",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Florez-Vargas",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Piontkivska",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Vargas",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ring",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nat. Genet",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1283--1293",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41588-020-00731-9"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Tissue-specific and interferon-inducible expression of nonfunctional ACE2 through endogenous retroelement co-option",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Attig",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Bolland",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Major",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wrobel",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gamblin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wack",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kassiotis",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Nat. Genet",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1294--1302",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41588-020-00732-8"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Angiotensin-Converting Enzymes Play a Dominant Role in Fertility",
+            "authors": [
+                {
+                    "first": "P.-P",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q.-T",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Le",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-M",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Int. J. Mol. Sci",
+            "volume": "14",
+            "issn": "",
+            "pages": "21071--21086",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijms141021071"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "The ACE2 expression in Sertoli cells and germ cells may cause male reproductive disorder after SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aierken",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yue",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hua",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Cell. Mol. Med",
+            "volume": "24",
+            "issn": "",
+            "pages": "9472--9477",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jcmm.15541"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Could SARS-CoV-2 affect male fertility? Andrologia 2020, 52, e13712",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Vishvkarma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rajender",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/and.13712"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Is transcription in sperm stationary or dynamic?",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Reprod. Dev",
+            "volume": "63",
+            "issn": "",
+            "pages": "439--443",
+            "other_ids": {
+                "DOI": [
+                    "10.1262/jrd.2016-093"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Mature human spermatozoa do not transcribe novel RNA",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Grunewald",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Paasch",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-J",
+                    "middle": [],
+                    "last": "Glander",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Anderegg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Andrologia",
+            "volume": "37",
+            "issn": "",
+            "pages": "69--71",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1439-0272.2005.00656.x"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Classical and alternative receptors for SARS-CoV-2 therapeutic strategy",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Masre",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Jufri",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Ibrahim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Raub",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Rev. Med. Virol",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/rmv.2207"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Contributions of human ACE2 and TMPRSS2 in determining host-pathogen interaction of COVID-19",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Senapati",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Banerjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bhagavatula",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kushwaha",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "J. Genet",
+            "volume": "100",
+            "issn": "",
+            "pages": "1--16",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12041-021-01262-w"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Coronavirus Disease-19 Infection: Implications on Male Fertility and Reproduction",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Navarra",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Albani",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Castellano",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Arruzzolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Levi-Setti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fphys.2020.574761"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Renin Angiotensin System, COVID-19 and Male Fertility: Any Risk for Conceiving? Microorganisms",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pascolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zito",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zupin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Luppi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Giolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Martinelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "De Rocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Crovella",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ricci",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/microorganisms8101492"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "IFN-gamma alters the human sperm membrane permeability to Ca 2+",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Carrasquel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Camejo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Michelangeli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Ruiz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Syst. Biol. Reprod. Med",
+            "volume": "60",
+            "issn": "",
+            "pages": "21--27",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/19396368.2013.833658"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Impact of SARS-CoV-2 on Male Reproductive Health: A Review of the Literature on Male Reproductive Involvement in COVID-19",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fmed.2020.594364"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Testicular Isoform of Angiotensin I-Converting Enzyme (ACE, CD143) on the Surface of Human Spermatozoa: Revelation and Quantification Using Monoclonal Antibodies",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Nikolaeva",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Balyasnikova",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Alexinskaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Metzger",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Franke",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Albrecht",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Kulakov",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Sukhikh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Danilov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Am. J. Reprod. Immunol",
+            "volume": "55",
+            "issn": "",
+            "pages": "54--68",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1600-0897.2005.00326.x"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Ultrastructural localization of angiotensin-converting enzyme in ejaculated human spermatozoa",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kohn",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Dammshauser",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Neukamm",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Renneberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Siems",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Schill",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Aumuller",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Hum. Reprod",
+            "volume": "13",
+            "issn": "",
+            "pages": "604--610",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/humrep/13.3.604"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Effect of angiotensin converting enzyme (ACE) and angiotensins on human sperm functions",
+            "authors": [
+                {
+                    "first": "F.-M",
+                    "middle": [],
+                    "last": "K\u00f6hn",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "M\u00fcller",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Drescher",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Neukamm",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "El Mulla",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Henkel",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "H\u00e4gele",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hinsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Habenicht",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-B",
+                    "middle": [],
+                    "last": "Schill",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Andrologia",
+            "volume": "30",
+            "issn": "",
+            "pages": "207--215",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1439-0272.1998.tb01162.x"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Within-subject variation of seminal parameters in men with infertile marriages",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Francavilla",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Barbonetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Necozione",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Santucci",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cordeschi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Macerola",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Francavilla",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Int. J. Androl",
+            "volume": "30",
+            "issn": "",
+            "pages": "174--181",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1365-2605.2006.00727.x"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "World Health Organization",
+            "authors": [],
+            "year": 2010,
+            "venue": "WHO Laboratory Manual for the Examination and Processing of Human Semen",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Misleading Westerns: Common Quantification Mistakes in Western Blot Densitometry and Proposed Corrective Measures",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "A J"
+                    ],
+                    "last": "Butler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Paul",
+                    "suffix": ""
+                },
+                {
+                    "first": "E.-C",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Tolosa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BioMed Res. Int",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2019/5214821"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Western blot analysis of ACE2. The image illustrates (A) the glycosylated full-length ACE2 (120 KDa) and short-ACE2 isoforms (52 KDa) recognized with anti-ACE2-1 and (B) the glycosylated full-length ACE2 (120 KDa) detected by anti-ACE2-2. Antibodies were incubated on the same blot after membrane stripping and re-blotting. Blots were cut prior to hybridization. Each of the six lanes contains 20 \u00b5g of protein from semen of different donors. At least four independent experiments with different donors were performed. C+: protein from mouse testis.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Representative schema of the ACE2 and short-ACE2 sequences and anti-ACE2 antibodies.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Full-Length ACE2 Is Mainly Expressed in Equatorial and Post-Equatorial Regions of the Sperm Head, While Short ACE2 Is Preferentially Distributed in the Midpiece",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Immunocytochemistry analysis of ACE2 on ejaculated human sperm cells. Panel (A) shows the location of the C-terminal domain of ACE2 recognized by anti-ACE2-1 (Abcam, ab15348), shared between both isoforms; Panel (B) shows the fluorescence pattern after immunocytochemistry analysis with anti-ACE2-2 (Novus, NBP2-67692), recognizing the full-length ACE2 only. DAPI was used to stain the nuclei. Top: two-laser image (anti-ACE2 antibody + DAPI); middle: sperm cells stained only with DAPI; bottom: sperm cells illustrating only ACE2 fluorescence patterns (scale bar = 5 \u00b5m). Negative controls for immunocytochemistry assays are shown in Supplementary Figure S1.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Surface expression of ACE2 in viable motile human spermatozoa selected by the swim-up procedure as evaluated by flow cytometry. Typical histograms of fluorescence intensity (FL2-H) in spermatozoa incubated with (A) a non-specific serum from non-immunized goat (negative control) or (B,C) two representative sperm samples incubated with primary goat antibody against human ACE2 (anti-ACE2-3 polyclonal antibody, R&D Systems, AF933).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Materials: The following supporting information can be downloaded at: https: //www.mdpi.com/article/10.3390/ijms23073694/s1. Author Contributions: All authors contributed extensively to the work presented in this paper. Specifically, N.B. conceived the work; N.B., M.R.-S. and A.B. designed the experiments; B.B. supervised and funded the project; M.R.-S., A.T. and C.C. (Costanza Cimini) performed western blot experiments; M.R.-S., A.T., C.C. (Costanza Cimini) and L.V. performed immunocytochemistry analysis; C.C. (Chiara Castellini) and A.B. performed flow cytometry experiments; M.R.-S. and L.V. prepared the figures; all authors analyzed the work; M.R.-S. and N.B. wrote the draft; and all authors revised and contributed to the manuscript writing. All authors have read and agreed to the published version of the manuscript. Funding: This research received no external funding. Institutional Review Board Statement: The study was conducted in accordance with the Declaration of Helsinki and approved by the Intradivisional Ethics Committee of the Andrology Unit, Department of Clinical Medicine, Life, Health and Environmental Sciences, University of L'Aquila, Italy (code: 1/2021).",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Authors sincerely acknowledge all the volunteers who participated in this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments:"
+        },
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest:"
+        }
+    ]
+}

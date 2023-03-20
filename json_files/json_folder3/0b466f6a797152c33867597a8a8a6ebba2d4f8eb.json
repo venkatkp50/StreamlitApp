@@ -1,0 +1,2454 @@
+{
+    "paper_id": "0b466f6a797152c33867597a8a8a6ebba2d4f8eb",
+    "metadata": {
+        "title": "Journal Pre-proof Long-term pathways to deep decarbonization of the transport sector in the post- COVID world Long-term pathways to deep decarbonization of the transport sector in the post-COVID world Long-term pathways to deep decarbonization of the transport sector in the post-COVID world",
+        "authors": [
+            {
+                "first": "Runsen",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Hiroshima University",
+                    "location": {
+                        "addrLine": "1-5-1 Kagamiyama",
+                        "settlement": "Higashi-hiroshima 7398529",
+                        "country": "Japan"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Junyi",
+                "middle": [],
+                "last": "Zhang",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Hiroshima University",
+                    "location": {
+                        "addrLine": "1-5-1 Kagamiyama",
+                        "settlement": "Higashi-hiroshima 7398529",
+                        "country": "Japan"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The novel coronavirus disease 2019 (COVID-19) crisis has influenced economies and societies across the globe and will thoroughly reshape our world as it continues to unfold. The pandemic is likely to trigger permanent long-term impacts on the transport sector in the post-COVID world. While a post-COVID \"new normal\" will be likely to incur negative consequences, it may provide an opportunity to move toward a more sustainable transport sector. This paper is aimed at developing an urban economic model with an energy focus to depict the dynamics of travel demand, energy consumption, and emissions in the post-COVID world. A set of scenarios was created according to model assumptions regarding lifestyle changes and policy interventions accompanied by the expected post-COVID new normal, to explore long-term pathways toward a deep decarbonization of the transport sector. Scenario simulations demonstrated that working from home, online shopping, and a bike-friendly infrastructure will contribute to a reduction in energy consumption and CO 2 emissions, whereas a significant shift from bus to car transport and the decreasing use of car-sharing services will adversely affect CO 2 emission reductions. The arrival of the post-COVID world may contribute to an 11% reduction in CO 2 emissions by 2060, while the maximum reduction potential could be as high as 44%. Supporting policies and strategies for encouraging remote work and online shopping as well as for promoting safe public transport, active transport, and carpooling services are needed to strongly decarbonize the transport sector in the post-COVID world. Moreover, population distribution and urban structure may also be influenced by the arrival of the post-COVID new normal, which warrant further attention for urban planning. urban economic model J o u r n a l P r e -p r o o f Highlights \uf06c The framework of an urban economic model that accommodates detailed transport and energy technology representations is presented. \uf06c Several scenarios up to the year 2060 are analyzed to depict decarbonization pathways for the transport sector in the post-COVID world. \uf06c The arrival of the post-COVID new normal may contribute to reducing CO 2 emissions by a maximum of 44% by 2060. \uf06c The impacts of the oncoming new normal on urban structure deserve more attention. J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Reaching the well-below 2\u00b0C and 1.5\u00b0C objectives of the Paris Agreement requires that global CO 2 emissions fall to net zero around the middle of this century (Hof et al., 2017; Rogelj et al., 2011; Rogelj et al., 2015) . Because the transport sector represents a significant portion of global emissions, accounting for approximately a quarter of global energy-related greenhouse gas (GHG) emissions, developing strategies to work toward the deep decarbonization of the transport sector will be crucial for meeting the goals of the Paris Agreement (Creutzig et al., 2015; IEA, 2009 IEA, , 2015 . However, rapid urbanization, economic development, and growing private vehicle ownership are driving dramatic increases in passenger and freight transport activities, which will outweigh all mitigation measures and counteract the global efforts to decarbonize the transport sector (McCollum et al., 2018) . Moreover, the transport sector remains a major consumer of fossil fuels, although a clean energy transition, particularly via improvements of vehicle battery technology, seemingly permits an optimistic view for low-carbon transport. Due to the continued growth in transport demand, the rapid increase in private car use in emerging economies, and the persistent reliance on fossil fuels, the reduction of global GHG emissions from transport has proven more challenging than climate change mitigation efforts in other sectors (Chung and Zhou, 2013; Pietzcker et al., 2014) .",
+            "cite_spans": [
+                {
+                    "start": 159,
+                    "end": 177,
+                    "text": "(Hof et al., 2017;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 178,
+                    "end": 198,
+                    "text": "Rogelj et al., 2011;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 199,
+                    "end": 219,
+                    "text": "Rogelj et al., 2015)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 548,
+                    "end": 571,
+                    "text": "(Creutzig et al., 2015;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 572,
+                    "end": 581,
+                    "text": "IEA, 2009",
+                    "ref_id": null
+                },
+                {
+                    "start": 582,
+                    "end": 593,
+                    "text": "IEA, , 2015",
+                    "ref_id": null
+                },
+                {
+                    "start": 877,
+                    "end": 900,
+                    "text": "(McCollum et al., 2018)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1428,
+                    "end": 1450,
+                    "text": "(Chung and Zhou, 2013;",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1451,
+                    "end": 1474,
+                    "text": "Pietzcker et al., 2014)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The outbreak of the novel coronavirus disease 2019 has resulted in still-increasing numbers of infections and deaths worldwide . The emergence of COVID-19 has become the largest crisis and challenge throughout the world since World War II (1939) (1940) (1941) (1942) (1943) (1944) (1945) , and there is little doubt that COVID-19 has been altering the way of life for people across the globe, with many countries instituting travel bans and ordering residents to \"stay at home\" or \"shelter in place\". Social distancing and quarantine have become part of everyday life for the public, and J o u r n a l P r e -p r o o f governments advocate that people switch to \"new lifestyles\", such as remote working and telecommuting, to adapt to the extended fight against COVID-19 (Chinazzi et al., 2020; Hsiang et al., 2020; Kraemer et al., 2020) . Given these drastic changes, human society will be likely to have substantially adjusted to a post-COVID world and its \"new normal\", even if the virus disappears in the future (Carroll and Conboy, 2020) . The transport sector has been deeply affected by the COVID-19 pandemic, as the entire planet is connected by convenient transport systems and networks. Adjustment to the post-COVID new normal may create both unprecedented opportunities and challenges for the decarbonization of the transport sector. For example, remote working is widely expected to become a more permanent feature compared to pre-COVID times, and increasing time spent working from home will contribute to a reduction in fuel consumption and CO 2 emissions. However, it is also expected that a significant shift from public transit to private cars will take place, which may adversely affect CO 2 emission reductions. Because the post-COVID world is an inevitability, the key scientific question of our research asks: which opportunities could the post-COVID new normal offer for transport decarbonization and the transition to sustainability?",
+            "cite_spans": [
+                {
+                    "start": 239,
+                    "end": 245,
+                    "text": "(1939)",
+                    "ref_id": null
+                },
+                {
+                    "start": 246,
+                    "end": 252,
+                    "text": "(1940)",
+                    "ref_id": null
+                },
+                {
+                    "start": 253,
+                    "end": 259,
+                    "text": "(1941)",
+                    "ref_id": null
+                },
+                {
+                    "start": 260,
+                    "end": 266,
+                    "text": "(1942)",
+                    "ref_id": null
+                },
+                {
+                    "start": 267,
+                    "end": 273,
+                    "text": "(1943)",
+                    "ref_id": null
+                },
+                {
+                    "start": 274,
+                    "end": 280,
+                    "text": "(1944)",
+                    "ref_id": null
+                },
+                {
+                    "start": 281,
+                    "end": 287,
+                    "text": "(1945)",
+                    "ref_id": null
+                },
+                {
+                    "start": 761,
+                    "end": 793,
+                    "text": "COVID-19 (Chinazzi et al., 2020;",
+                    "ref_id": null
+                },
+                {
+                    "start": 794,
+                    "end": 814,
+                    "text": "Hsiang et al., 2020;",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 815,
+                    "end": 836,
+                    "text": "Kraemer et al., 2020)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1015,
+                    "end": 1041,
+                    "text": "(Carroll and Conboy, 2020)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The effects of COVID-19 on the transport sector and corresponding countermeasures have attracted increasing attention by transport planners and policymakers worldwide, as transport systems including air, rail, road, and water transportation have responded to the pandemic in various ways (Zhang, 2020) . Countrywide confinement measures such as quarantine and lockdown due to the pandemic have been changing urban mobility trends for various purposes, including retail and recreation, groceries and pharmacies, parks, transit stations, workplaces, and residential areas (Saha et al., 2020) . Moreover, numerous restrictions have been implemented in airline and marine transport systems, which could potentially lead to severe long-term impacts on global transport mobility (Abu-Rayash and Dincer, 2020; Ni\u017eeti\u0107, 2020) . Existing studies have collected data mainly from traffic counters and public transport intelligent transport systems to provide J o u r n a l P r e -p r o o f an initial diagnostic of daily mobility reduction and changes in modal structure and trip purposes (Aloi et al., 2020) . However, COVID-19 has been a sudden and unprecedented shock to the system, resulting in pervasive effects across global socio-technical systems.",
+            "cite_spans": [
+                {
+                    "start": 288,
+                    "end": 301,
+                    "text": "(Zhang, 2020)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 570,
+                    "end": 589,
+                    "text": "(Saha et al., 2020)",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 773,
+                    "end": 802,
+                    "text": "(Abu-Rayash and Dincer, 2020;",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 803,
+                    "end": 817,
+                    "text": "Ni\u017eeti\u0107, 2020)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1078,
+                    "end": 1097,
+                    "text": "(Aloi et al., 2020)",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Due to the recent advent of the pandemic, transport planners and policymakers have only just begun to assess the implications of the COVID-19 crisis. The COVID-19 pandemic is likely to trigger permanent long-term changes associated with the digital transformation of work and other activities, leading to a substantial reduction in mobility demand and energy consumption. (Kanda and Kivimaa, 2020) . However, the long-term implications of COVID-19 on the transport sector, with a specific energy focus, have received less attention. Meanwhile, although transport decarbonization and low-carbon transport policies have attracted considerable interest, due to the progress of transport energy modeling (Edelenbosch et al., 2017; Girod et al., 2012; Girod et al., 2013; Waisman et al., 2013; Zhang et al., 2018a; Zhang et al., 2018b) , the influence of the post-COVID new normal on energy use and emissions from transport has not yet been considered. Thus, this project aimed to launch an interdisciplinary research framework to integrate transport planning and energy studies against a background of the post-COVID new normal.",
+            "cite_spans": [
+                {
+                    "start": 372,
+                    "end": 397,
+                    "text": "(Kanda and Kivimaa, 2020)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 700,
+                    "end": 726,
+                    "text": "(Edelenbosch et al., 2017;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 727,
+                    "end": 746,
+                    "text": "Girod et al., 2012;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 747,
+                    "end": 766,
+                    "text": "Girod et al., 2013;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 767,
+                    "end": 788,
+                    "text": "Waisman et al., 2013;",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 789,
+                    "end": 809,
+                    "text": "Zhang et al., 2018a;",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 810,
+                    "end": 830,
+                    "text": "Zhang et al., 2018b)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To understand the role of the transport sector in achieving climate change targets in the context of a post-COVID world, the primary purpose of this paper was to provide models of transport demand, modal choices, energy use and emission profiles, with the objective of exploring long-term implications for decarbonizing the transport sector.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Because this study addresses a novel and emerging global trend due to the COVID-19 pandemic, its scientific significance lies in an integrated methodology for analyzing transport dynamics with an energy focus while considering the unprecedented challenges and opportunities stemming from the post-COVID new normal. To identify the pathways toward a deep decarbonization of the transport sector, our goal was to generate new insights in relation to the following two research questions: (1) How will J o u r n a l P r e -p r o o f the post-COVID new normal influence travel demand, energy use, and CO 2 emissions in the long-term? and (2) Which policies will deliver the best results for decarbonizing the transport sector?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The paper is structured as follows. Section 2 of this paper describes the structure of an urban economic model and the basic assumptions for several scenarios. Section 3 presents the results of scenario simulations, focusing on travel demand, energy mix, and emissions. Section 4 provides a discussion of the main findings. Section 5 concludes the paper and highlights the policy implications.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We employed an urban economic model in the tradition of an urban spatial computable general equilibrium (CGE) model that represents the interplay between land use and transport to project future transport demands at the city scale (Anas and Kim, 1996; Anas and Liu, 2007; Zhang et al., 2016; Zhang et al., 2017) . The urban economic model was extended to incorporate detailed energy technology representations, to capture transport dynamics with an energy focus and to project energy consumption and CO 2 emissions. The model handles the cross-sectoral tradeoffs and interactions between location choice and transport through a series of market equilibrium conditions under which the behaviors of households and firms are defined explicitly by utility or profit maximization. Subsequently, the distribution of populations, land use, transport demand, and energy consumption that attain demand-supply equilibria are determined endogenously.",
+            "cite_spans": [
+                {
+                    "start": 231,
+                    "end": 251,
+                    "text": "(Anas and Kim, 1996;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 252,
+                    "end": 271,
+                    "text": "Anas and Liu, 2007;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 272,
+                    "end": 291,
+                    "text": "Zhang et al., 2016;",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 292,
+                    "end": 311,
+                    "text": "Zhang et al., 2017)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "The model divides the city into i zones, where homogeneous land area is available for residences and firms. Households that reside in zone i and work in zone j determine J o u r n a l P r e -p r o o f their consumption of composite goods G ijk in zone k, where production takes place, as well as residential land area L ij , and leisure hours S ij so as to maximize their utility U ij under the budget constraints of income and time. The utility function of households residing in zone i and working in zone j can be formulated as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "subject to:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "where \u03c1 is the substitution parameter, and \u03c3 = 1/(1-\u03c1) is the elasticity of substitution. \u0394 ijk is the parameter for measuring the inherent attractiveness of the shopping places. \u03b1, \u03b2, and \u03b3 are preference coefficients, and we assume a constant return to scale utility function by setting \u03b1+\u03b2+\u03b3 = 1. On the left-hand side of the monetary budget constraint, \u2211G ijk (p k +\u03b8c ik ) denotes total consumption expenditures, including the price of goods in zone k, p k ; the share of in-store shopping \u03b8; and monetary costs for shopping trips from i to k, c ik . r i is the land rent in zone i, and r i L i is the total rent paid for residential land in zone i. c ij represents the daily monetary cost of commuting from i to j. d is the number of work days in 1 year. \u03be is the exogenous parameter for defining the share of working from the office in 1 year. d\u03bec ij denotes the total monetary commuting costs in 1 year. On the right-hand side, w j and K ij are the wage rate in zone j and working time in 1 year, respectively. I is the nonwage income of households.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "In addition to the monetary budget constraint, households are also subject to time constraints as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "where H is the total time available for work, travel, and leisure in 1 year. T ij is travel J o u r n a l P r e -p r o o f time. t ij and t ik are commuting and shopping times, respectively. Let \u03a9 ij = w j T+I-d\u03be(c ij +w j t ij ) be the full economic income, and the budget constraint can be rearranged as the total household consumption expenditures of full economic income in equation (5). Then, the demand for goods, residential land, and leisure time can be expressed as equations (6), (7), and (8).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "The indirect utility function is derived as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "Households compare all residence-job location sets {i, j} and choose the most preferred pair {i, j} that offers the highest utility. Let \u03a8 ij be the probability that households who reside in zone i and work in zone j, and location choices of households, are described probabilistically in the form of a discrete choice model:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "Firms in each zone i employ a constant return to scale to Cobb-Douglas technology with two inputs, land and labor, to produce zone-specific composite goods. The composite goods are sold in the zone in which they are produced. Firms producing in the same zone are identical and competitive in the input and output markets. The production function is expressed as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "where Y i is the zone-specific aggregate output, and M i and Q i are the aggregate labor and land inputs at zone i, respectively. \u03b7 i is the scale parameter. \u03b4 and \u03bc are the output elasticities with respect to labor and land, respectively, and \u03b4+\u03bc = 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "Given the production technology in equation (11), the conditional input demand functions of labor and land are derived based on profit maximization as equations (12) and (13). The zone-specific prices of goods p i are determined by the zero-profit condition, because free entry in each zone ensures that profit-maximizing firms make zero economic profit in the competitive market. Hence, the condition that price equals marginal (and average) cost yields the price of goods as equation (14).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "Two-way travel time and cost for all households in the city depend on the travel mode m and energy technology t used to travel from zone i to zone j. Assuming an exogenously",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "given mode-specific velocity v m and distance D ij from zone i to zone j, travel time t mode ijm from zone i to zone j with mode m can be expressed as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "Two-way monetary travel cost from zone i to zone j with mode m c mode ijm can be defined as a function of distance, energy intensity, technology share, fuel price, and load factor: ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "where \u03c0 ij,m is the probability that households choose travel mode m for a trip from zone i to zone j. The mode choice probability can be computed using a discrete choice model in multinomial logit form as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "The yearly origin-destination (OD) traffic volume between zone i to zone j is determined as the sum of commuting and shopping trips. Assuming N as the exogenous number of households, the OD traffic volume and fuel-specific energy consumption from i to j using mode m and technology t are given by the following equations:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": ", , , = , , , , /",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "The factor markets of land and labor as well as the market for the locally produced composite goods must clear simultaneously in each zone i to achieve the general equilibrium. This market clearance finds equilibrium prices for factors and goods such as rent, wage, and price and, based on these, the entire set of endogenous variables. The equilibrium in the land market in zone i is expressed in equation (22). The left-hand side is the sum of residential land demands of all households residing in zone i plus land demands of all firms in zone i. The right-hand side is the available land area A i in zone i.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "Equation (23) shows the equilibrium condition in the labor market. The left-hand side is the supply of labor by all households working in zone i, and the right-hand side is the labor demand by all firms producing in zone i. Market clearing in the local market for the composite goods in zone i requires the equilibrium condition in equation (24). The left-hand side is the quantity of composite goods purchased in zone i by households who reside and work in all zones in this city. The right-hand side is the composite goods produced in zone i.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "In the model, it is assumed that there are no specific landowners or traffic agencies, but an equal share of total monetary transport revenue and aggregate land rent is distributed to each household. Thus, nonwage income, I, paid to each household can be expressed as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "This model provides realistic estimations of location choices and travel demand in an J o u r n a l P r e -p r o o f urban economic framework. Furthermore, because the model treats various energy technologies differently, the energy consumption and emissions from the transport sector can be calculated to depict the long-term pathways toward transport decarbonization. In addition, the model allows consideration of factors that represent lifestyle changes, such as the share of working from home and online shopping, which offers the opportunity to examine the impacts of the post-COVID new normal on the transport sector and energy system.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model"
+        },
+        {
+            "text": "China has pledged to become carbon neutral before 2060, and this ambitious plan to reach carbon neutrality requires a set of actions across all sectors of the economy including the transport sector. Thus, we used the Chinese city of Changzhou as an example to investigate how the arrival of the post-COVID new normal will contribute to the achievement of the carbon neutral goal. As a prefecture-level city in southern Jiangsu Province, Changzhou is located in the highly developed Yangtze Delta region of China, extending from Shanghai to the northwest, and is considered one of the core cities in the Suzhou-Wuxi-Changzhou metropolitan circle. The prefecture-level city of Changzhou administers seven county-level divisions and, here, our study is focused on four urban districts: Tianning, Zhonglou, Xinbei, and Wujin. The research area is divided into 15 zones for urban economic modeling (Figure 1 ). We collected zone-specific data such as travel data, land-use data, and socioeconomic data, from personal trip surveys, a land-use database, and statistical yearbooks. The parameter estimation and calibration for the urban economic model were conducted in a previous study (Zhang et al., 2016; Zhang et al., 2017) . Here, we incorporate further more elaborate energy technology descriptions. The technology shares, energy intensities, and fuel-specific emission factors were obtained from the outputs of a technology bottom-up energy system model Hanaoka et al., 2015; Mittal et al., 2015; Xing et al., 2018) .",
+            "cite_spans": [
+                {
+                    "start": 1179,
+                    "end": 1199,
+                    "text": "(Zhang et al., 2016;",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1200,
+                    "end": 1219,
+                    "text": "Zhang et al., 2017)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1453,
+                    "end": 1474,
+                    "text": "Hanaoka et al., 2015;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1475,
+                    "end": 1495,
+                    "text": "Mittal et al., 2015;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1496,
+                    "end": 1514,
+                    "text": "Xing et al., 2018)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 893,
+                    "end": 902,
+                    "text": "(Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Study area and scenario settings"
+        },
+        {
+            "text": "A set of scenarios were structured to project the long-term (to 2060) trends of transport demand, modal choices, energy use and emission profiles in consideration of the arrival of the post-COVID new normal. These scenarios were defined under varying technological and behavioral assumptions of lifestyle changes, mobility transformations, and policy interventions. In the business-as-usual (BaU) scenario, it is assumed that no lifestyle changes or policy interventions take place. The working-from-home (WH) scenario allows employees to work remotely, for at least half of work-related activities, by 2060. The online-shopping (OS) scenario assumes that half of in-store shopping shifts to online shopping by 2060. In the bike-friendly design (BD) scenario, the implementation of well-designed bicycle infrastructure and bicycle-sharing systems in the city encourages more people to cycle. Here, the velocity of cycling is assumed to improve by 25% by 2060. In the bus service-reduction (BR) scenario, bus services are reduced due to lockdown and social distancing. It is assumed that households need to spend more time traveling when doing so by bus. The car-sharing service reduction (CS) J o u r n a l P r e -p r o o f scenario assumes that the demand for car-sharing services may decline due to lockdown and social distancing. The load factor of cars would decrease to 1.5 by 2060. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Figure 1. Study area."
+        },
+        {
+            "text": "As shown in Figure Similarly, more non-motorized trips under a bike-friendly design also lowered travel costs to some extent, leading to more households choosing suburban and peripheral areas for residences, as households tend to re-locate based on low-priced land rather than the travel cost and time savings incurred by re-locating to the high-priced city center. This would be especially true when the attraction of the latter is reduced by working from home and online shopping. In the CS scenario, the declining load factor of cars increased the travel cost of car usage, which decreased the modal share of cars but increased travel by bus, biking, and walking. The modal shift from car to other modes would reduce travel costs, and more households would re-locate to suburban and peripheral areas. In contrast, households that choose to travel by bus for commuting and shopping can no longer rely on bus service under the BR scenario. The shift from bus to car travel increased generalized travel costs, which resulted in more households locating to central areas to reduce expenses for commuting and shopping trips. The overall population redistribution and shifts under the five scenarios imply that changes in lifestyle and mobility patterns are capable of reorganizing urban structure. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 12,
+                    "end": 18,
+                    "text": "Figure",
+                    "ref_id": null
+                }
+            ],
+            "section": "Location choices and population distributions"
+        },
+        {
+            "text": "The future decarbonization pathways in the post-COVID world can be depicted by combinations of the six original scenarios. We combined all five scenarios, excluding the BaU scenario, to structure a \"post-COVID\" scenario representing the default pathway in the post-COVID world under the assumption that all lifestyle changes and mobility transformations would occur and policy interventions would be carried out.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Another combined \"low-carbon\" scenario was created to detect the maximum reduction potential; this scenario only considered the WH, OS, and BD scenarios, which have positive effects on emission reduction. Figure 6 illustrates that, compared to the BaU level, CO 2 emissions would be cut by 11% in 2060 with the onset of the post-COVID new normal, given that all lifestyle changes and mobility transformations are taken into account. The low-carbon scenario demonstrates that the maximum emission reduction potential can increase to 44% in 2060, in the case that bus and car-sharing services would not be reduced due to the pandemic. Figure 7 presents the spatial differentiation of the reduction potential of origin-destination emissions. In both of the combined scenarios, the most significant emission reduction potentials under the new normal were produced by trips originating and ending within central areas, indicating that the city center will be the major contributor to emission reduction in the post-COVID world. Here, we tested the sensitivity of the WH, OS, BD, BR, and CS scenarios by setting parameter values to \u00b110% of the base case in each scenario to assess the impacts of more or less stringent policies on emission profiles and reduction potentials. Figure 9 displays the CO 2 emission projections under these scenarios. In the scenarios, \u00b110%",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 205,
+                    "end": 213,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 633,
+                    "end": 641,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF9"
+                },
+                {
+                    "start": 1269,
+                    "end": 1277,
+                    "text": "Figure 9",
+                    "ref_id": "FIGREF12"
+                }
+            ],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "fluctuations in policy factors caused the CO 2 emission reduction potential to range from \uf02d6% to 5%. The greatest impact on CO 2 emissions is attributable to BR, followed by OS. Emission reductions were most sensitive to a shift from bus to car transportation, indicating that modal structure in the post-COVID world will play a key role in helping to reduce emissions. Thus, the sensitivity analysis supported the robustness of the model. There are two general ways to perform policy analysis and assessment: the ex-ante approach and the ex-post approach. Ex-ante analyses simulate the future impacts of alternative policies to answer what-if-type questions (e.g., What would be the future impacts of a policy change or shock?), whereas ex-post analyses rely on historical data to quantify the effects of past policies. Econometric models, which are mostly derived using the ex-post approach, have been widely applied to identify the impacts of the COVID-19 pandemic on the transport sector based on rigorous analyses of actual data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Although such models can measure the effects of enacted policies, they cannot predict the impacts of introducing new policies. Thus, ex-post analyses can only guide policy by explaining its impact where it has already been implemented. Another common criticism of econometric models is that they are not consistent with microeconomic theoretical foundations of profit maximization or cost minimization by producers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Although such an approach can provide information about the likely future impact of a policy change, it typically focuses only on a specific market, sector, or product, and neglects interactions among markets. Consequently, the effects of a policy shock are usually assumed only in a certain sector, ignoring spillover effects in other sectors.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "CGE model is an ex-ante simulation model based on the general equilibrium theory, which is described mathematically as a system of non-linear equations. The prominent advantage of the CGE approach is its solid microeconomic foundation. The behaviors of economic agents such as consumers and producers can be modeled explicitly through utility-and profit-maximizing assumptions. Based on a calibrated benchmark, experiments are carried out by shocking the initial equilibrium and observing the new equilibrium. Hence, CGE models constitute a flexible analytical tool with which to understand multiple effects of a policy intervention in an integrated manner that considers the complex cross-sectoral linkages, tradeoffs, feedback, and spillover effects J o u r n a l P r e -p r o o f among all sectors and economic agents. Differing from the ex-post approach, which uses historical data to evaluate the effects of past policies, the urban spatial CGE model developed in this study is an ex-ante simulation model that uses a general equilibrium model to analyze the potential costs and benefits of policies by projecting the future effects on energy use and emission profiles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "However, the CGE approach presents several weaknesses, thus limiting its applicability. Despite the limitations of this approach, CGE models have been widely applied as a standard tool for applied policy analysis in various fields, such as international trade policy, taxation policy, and energy and environmental policy. Thus, we extended this method to simulations of transport decarbonization scenarios that consider the potential impacts of COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Our simulation results propose a low-carbon roadmap and decarbonization pathways for the transport sector. The results suggest a trend toward more time spent working from home and shopping online, both of which will contribute to reductions in energy consumption and CO 2 emissions, as remote working and online shopping are widely J o u r n a l P r e -p r o o f expected to become a more permanent feature compared to pre-COVID times. In the long-term, a bike-friendly infrastructure is also expected to positively affect the energy transition and emission reductions. The achievement of CO 2 emission reductions arises from decreases in travel demand, modal shifts from car to less energy-intensive modes such as public transport and active transport, and vehicle technology improvements toward less carbon-intensive fuels such as natural gas, electricity, hydrogen, and biomass. However, it is also expected that a significant shift from public transit to private cars and decreasing usage of car-sharing services will occur, which would adversely affect CO 2 emission reductions. Thus, the post-COVID new normal depicts an uncertain picture of transport decarbonization, ranging between worst-case and best-case scenarios. Due to the tradeoff between positive and negative effects on emission reduction, it is inappropriate to draw an overly optimistic conclusion regarding transport decarbonization in the post-COVID world. However, our simulation findings should not be interpreted to understate the role of the post-COVID new normal as a potential contributor for achieving a low-carbon transition. Rather, we highlight the interplays between different scenarios to establish more inclusive and harmonized transport policies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "China's carbon neutral target by 2060 requires the deep decarbonization of road transport in cities. Our scenario simulations highlight the importance and potential of the arrival of the new normal in achieving low-carbon transport development and climate change mitigation. However, the maximum reduction potential in the low-carbon pathway, which assumes working from home, online shopping, and a bike-friendly design, is 44% by 2060. However, the zero-carbon goal cannot be realized only by travel demand reductions and modal shifts due to teleworking, online shopping, and a bike-friendly infrastructure. In this study, we only assume a moderate penetration from spatial agglomeration, such as the accumulation of human capital and knowledge spillovers between firms, will be reduced, as the effects of urban dispersion caused by centrifugal force may generate economic inefficiency and loss of economic growth.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Moreover, urban expansion to rural areas gives rise to the loss of cropland associated with land use and land cover change. Land-use conversion from agricultural to built-up areas owing to urban expansion substantially contributes to environmental degradation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Therefore, the impacts of a post-COVID new normal on urban structure and organization deserve more attention.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Some research limitations are associated with the scenario settings in this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Scenario descriptions are simplified to adapt to the framework of an urban economic J o u r n a l P r e -p r o o f model. For example, teleworking and online shopping were assumed to account for at least half of work-and shopping-related activities by 2060. However, online shopping preferences may differ across regions and cities, and the prevalence of working from home varies across economic sectors. The point is not to downplay the contribution of hypothetical scenarios in numerical modeling and simulations but, rather, to highlight the necessity of more realistic scenarios in the future based on government guidelines or other empirical studies. In addition, we only assumed moderate technology improvement for the technology mix but did not consider energy policies to structure energy technology scenarios and strategies required by a more sustainable and secure energy future. As a next step, we plan to create more ambitious energy scenarios, such as high penetration of electric vehicles or renewable energies, to investigate the combined effects of both lifestyle changes and energy technology improvements in the post-COVID world.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "Future work is required to improve the model structure. First, in the current model, the technology mix was not modeled as an endogenous variable but, rather, the share of energy technology and energy intensities were set exogenously to estimate travel cost and energy consumption. The exogenous variables were obtained from outputs of an energy system model that was developed at the national scale because of the lack of technology-related data at the urban scale. Although the current energy system model can provide information on technology shares in China, it cannot capture technology details in a specific city. Thus, it is necessary to develop an urban-scale bottom-up technology model that can be integrated with an urban economic model to detect how the transport sector and energy system will affect each other. Second, while online shopping can reduce emissions via passenger transport, it may increase freight travel to deliver parcels to end-consumers. In future work, the cross-sectoral tradeoffs and interactions between the passenger and freight transport sectors must be taken into account. (1) Lifestyle changes such as working from home and online shopping would play the most important roles in contributing to emission reduction. Policies to promote working from home, such as encouraging virtual meetings, teleconferencing, or flexible work hours, need to be implemented to ensure productivity while working remotely. The digital services and e-commerce market must be supported to promote online shopping for products or services.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "(2) Decreasing bus and car-sharing services due to lockdown and social distancing may counteract the positive effects of lifestyle changes on emission reductions. The tradeoffs between positive and negative consequences of the oncoming new normal need to be identified before exploring the impacts of the post-COVID world and proposing mitigation strategies. To avoid the negative effects of decreasing bus and car-sharing services, safe public transport systems and car-sharing services during the pandemic are required to achieve maximum emission reduction.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "J o u r n a l P r e -p r o o f",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "(3) China's carbon neutral goal by 2060 can hardly be achieved by simply requiring more work from home, online shopping, and active transport in the post-COVID world.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "However, energy technology improvements are essential for achieving a carbon neutral society by 2060. Stringent market penetration of new energy technologies in the road transport sector, such as electric vehicles, fuel-cell vehicles, and biofuel vehicles, can contribute to working towards a carbon-neutral energy future and a sustainable society.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "(4) Urban planning and land-use regulation should consider the impacts of the new normal on population distribution, land-use change and, consequently, urban structure.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "It is necessary to explore urban spatial optimization strategies and supporting measures for an environmentally resilient, economically prosperous, and sustainable city when moving toward a decarbonization of the transport sector in the post-COVID world.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "J o u r n a l P r e -p r o o f"
+        },
+        {
+            "text": "The authors declare no conflicts of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of Competing Interest"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Analysis of mobility trends during the COVID-19 coronavirus pandemic: Exploring the impacts on global aviation and travel in selected cities",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Abu-Rayash",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Dincer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Energy Research & Social Science",
+            "volume": "68",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Technological feasibility and costs of achieving a 50 % reduction of global GHG emissions by 2050: mid-and long-term perspectives",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Akashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Sustainability Science",
+            "volume": "7",
+            "issn": "2",
+            "pages": "139--156",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "GHG emission scenarios in Asia and the world: The key technologies for significant reduction",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Akashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hijioka",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Masui",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kainuma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Energ Econ",
+            "volume": "34",
+            "issn": "",
+            "pages": "346--358",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Effects of the COVID-19 Lockdown on Urban Mobility",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aloi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Alonso",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Benavente",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Cordera",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Ech\u00e1niz",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gonz\u00e1lez",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ladisa",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lezama-Romanelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "\u00c1",
+                    "middle": [],
+                    "last": "L\u00f3pez-Parra",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Mazzei",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Perrucci",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Prieto-Quintana",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rodr\u00edguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sa\u00f1udo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "General equilibrium models of polycentric urban land use with endogenous congestion and job agglomeration",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Anas",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J Urban Econ",
+            "volume": "40",
+            "issn": "2",
+            "pages": "232--256",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A regional economy, land use, and transportation model (relu-tran((c))): Formulation, algorithm design, and testing",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Anas",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Journal of Regional Science",
+            "volume": "47",
+            "issn": "3",
+            "pages": "415--455",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Normalising the \"new normal\": Changing tech-driven work practices under pandemic time pressure",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Carroll",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Conboy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Information Management",
+            "volume": "55",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The effect of travel restrictions on the spread of the",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chinazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ajelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gioannini",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Merler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pastore Y Piontti",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rossi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Viboud",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Halloran",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Longini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vespignani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "395--400",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "A study of energy efficiency of transport sector in China from",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "1066--1077",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Transport: A roadblock to climate change mitigation?",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Creutzig",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Jochem",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Edelenbosch",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mattauch",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Van Vuuren",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mccollum",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Minx",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Science",
+            "volume": "350",
+            "issn": "6263",
+            "pages": "911--912",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Decomposing passenger transport futures: Comparing results of global integrated assessment models",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Edelenbosch",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mccollum",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Van Vuuren",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bertram",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Carrara",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Daly",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fujimori",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kitous",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Broin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Karkatsoulis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "281--293",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Global travel within the 2 degrees C climate target",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Girod",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Van Vuuren",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Deetrnan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Energy Policy",
+            "volume": "",
+            "issn": "",
+            "pages": "152--166",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Climate impact of transportation A model comparison",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Girod",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Van Vuuren",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Grahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kitous",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kyle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Climatic Change",
+            "volume": "118",
+            "issn": "3-4",
+            "pages": "595--608",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "AIM/Enduse Model Manual",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Fujiwara",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Motoki",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Oshiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Hibino",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Masui",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Matsuoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Global and regional abatement costs of Nationally Determined Contributions (NDCs) and of enhanced action to levels well below 2 degrees C and 1.5 degrees C",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hof",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G J"
+                    ],
+                    "last": "Den Elzen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Admiraal",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roelfsema",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E H J"
+                    ],
+                    "last": "Gernaat",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Van Vuuren",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Environ Sci Policy",
+            "volume": "71",
+            "issn": "",
+            "pages": "30--40",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "The effect of large-scale anti-contagion policies on the COVID-19 pandemic",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hsiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Annan-Phan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bell",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Bolliger",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Druckenmiller",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hultgren",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Krasovich",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rolf",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Tseng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "584",
+            "issn": "7820",
+            "pages": "262--267",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Transport, Energy and CO2: Moving toward Sustainability",
+            "authors": [],
+            "year": 2009,
+            "venue": "IEA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "CO2 Emissions from Fuel Combustion Highlights",
+            "authors": [],
+            "year": 2015,
+            "venue": "IEA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "What opportunities could the COVID-19 outbreak offer for sustainability transitions research on electricity and mobility?",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Kanda",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kivimaa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Energy Research & Social Science",
+            "volume": "68",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The effect of human mobility and control measures on the COVID-19 epidemic in China",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "U G"
+                    ],
+                    "last": "Kraemer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gutierrez",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-H",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Klein",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pigott",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Du Plessis",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Faria",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Hanage",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Brownstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Layan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vespignani",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dye",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Pybus",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Scarpino",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "",
+            "issn": "6490",
+            "pages": "493--497",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Interaction of consumer preferences and climate policies in the global transition to low-carbon vehicles",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mccollum",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wilson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bevione",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Carrara",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Edelenbosch",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Emmerling",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Guivarch",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Karkatsoulis",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Keppo",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Krey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Energy",
+            "volume": "3",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Air pollution co-benefits of low carbon policies in road transport: a sub-national assessment for India",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mittal",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Shukla",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Masui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Environmental Research Letters",
+            "volume": "10",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Impact of coronavirus (COVID-19) pandemic on air transport mobility, energy, and environment: A case study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ni\u017eeti\u0107",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "International Journal of Energy Research",
+            "volume": "44",
+            "issn": "13",
+            "pages": "10953--10961",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Long-term transport energy demand and climate policy: Alternative visions on transport decarbonization in energy-economy models",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Pietzcker",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Longden",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kriegler",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Luderer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "64",
+            "issn": "",
+            "pages": "95--108",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Emission pathways consistent with a 2 degrees C global temperature limit",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rogelj",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Hare",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lowe",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Van Vuuren",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Riahi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Matthews",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Meinshausen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Nature Climate Change",
+            "volume": "1",
+            "issn": "8",
+            "pages": "413--418",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Energy system transformations for limiting end-of-century warming to below 1.5 degrees C'",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rogelj",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Luderer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Pietzcker",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kriegler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schaeffer",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Krey",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Riahi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nature Climate Change",
+            "volume": "5",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Lockdown for COVID-19 and its impact on community mobility in India: An analysis of the COVID-19 Community Mobility Reports",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Saha",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Barman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chouhan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Children and Youth Services Review",
+            "volume": "116",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "The transportation sector and low-carbon growth pathways: modelling urban, infrastructure, and spatial determinants of mobility",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Waisman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Guivarch",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lecocq",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Clim Policy",
+            "volume": "13",
+            "issn": "",
+            "pages": "106--129",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A new coronavirus associated with human respiratory disease in China",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-M",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z.-G",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z.-W",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-H",
+                    "middle": [],
+                    "last": "Tian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y. -Y",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-L",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F.-H",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q.-M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-J",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Holmes",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "7798",
+            "pages": "265--269",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Estimating energy service demand and CO2 emissions in the Chinese service sector at provincial level up to 2030",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Xing",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kanamori",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Masui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Resources, Conservation and Recycling",
+            "volume": "134",
+            "issn": "",
+            "pages": "347--360",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Transport policymaking that accounts for COVID-19 and future public health threats: A PASS approach",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Transport Policy",
+            "volume": "",
+            "issn": "",
+            "pages": "405--418",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Contribution of the transport sector to climate change mitigation: Insights from a global passenger transport model coupled with a computable general equilibrium model",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fujimori",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Dai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "76--88",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The contribution of transport policies to the mitigation potential and cost of 2\u00b0 C and 1.5\u00b0 C goals",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fujimori",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanaoka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Environmental Research Letters",
+            "volume": "13",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Land use, transport, and carbon emissions: A computable urban economic model for Changzhou",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Matsushima",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kobayashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Review of Urban & Regional Development Studies",
+            "volume": "28",
+            "issn": "3",
+            "pages": "162--181",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Computable urban economic model incorporated with economies of scale for urban agglomeration simulation",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Matsushima",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kobayashi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Ann. Reg. Sci",
+            "volume": "59",
+            "issn": "1",
+            "pages": "231--254",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "e m,t,f is the energy intensity of energy technology t and fuel type f under travel mode m. Here, various energy technologies such as gasoline and diesel vehicles, hybrid vehicles, plug-in hybrid vehicles, natural gas vehicles, fuel-cell vehicles, and battery electric vehicles are considered in the model. \u03c6 m,t is the share of energy technology t in travel mode m. p fuel m,t,f is the price of fuel f including gasoline, diesel, natural gas, hydrogen, electricity, and biomass. \u03c4 m is the load factor of travel mode m. The travel mode-specific cost and time can be transformed into individual expected travel time and cost, which enter the budget and time constraints of all households. The individual expected travel cost c ij and time t ij can be determined as follows:",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "presents the mode-specific travel demand under the six scenarios. In the BaU scenario without any lifestyle changes or policy interventions, travel demand increased from 6.4 Gpkm in 2015, to a peak at 11.0 Gpkm in 2050, and then slightly decreased to 10.8 Gpkm in 2060. The OS scenario most significantly reduced travel demand, with a 24% reduction in 2060, followed by 13% in the WH scenario. In contrast, the BR scenario increased travel demand by 14% in 2060. In the OS scenario, the peak of travel demand significantly decreased from 11.0 Gpkm in 2050 to 9.2 Gpkm in 2040. This result implies that online shopping can cause travel demand to peak sooner and at a lower level before the middle of the 21st century, ahead of the scheduled goal of 2060.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Travel demand by mode from 2015 to 2060 under six scenarios.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "presents the diverse energy mix for road transport, including gasoline, diesel, natural gas, hydrogen, electricity, and biomass. Without any lifestyle changes or policy interventions in the BaU scenario, energy consumption peaked at 122 Ktoe in 2038 and then decreased to 99 Ktoe in 2060. Liquid fossil fuels such as gasoline and diesel exhibited declining trends, while natural gas, hydrogen, and electricity use gradually increased due to the gradual incorporation of efficient technologies into the road transport sector. When comparing the BaU scenario to the other five scenarios, we observed that working from home, online shopping, and a bike-friendly design all reduced energy consumption, while the use of gasoline, hydrogen, and biomass grew sharply under the BR and CS scenarios. In particular, a strong increase in gasoline consumption was observed in the BR scenario, primarily due to the modal shift from bus to car travel.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Energy mix from 2015 to 2060 under six scenarios.The CO 2 emission trajectories and reduction potentials are displayed inFigure 4. The CO 2 emissions increased from 288 Kton in 2015, peaked at 320 Kton in 2030, and then gradually declined until 2060. Although the BaU scenario did not consider any lifestyle changes, lockdown, or social distancing, CO 2 emissions still tended to decrease from 2015 to 2060, because the Chinese population is expected to decrease after the mid-21 st century, and highly efficient technologies will more rapidly diffuse into the transport sector in the future. Comparisons of the six scenarios demonstrated that CO 2 emissions can be reduced by lifestyle changes and mobility transformations. Among all scenarios, online shopping has the highest reduction potential, as 23% of CO 2 emissions were reduced by 2060, followed by working from home (14%) and a bike-friendly design (10%). However, the modal shift from bus to car travel under the BR scenario increased CO 2 emissions by 37%, by 2060, compared to the BaU level. The decreasing load factor within cars under the CS scenario also caused CO 2 emissions to increase by 16% in 2060. The predicted emission trajectories and reduction potentials indicate that working from home, online shopping, and a bike-friendly infrastructure have positive effects on emission reductions, whereas reductions in bus travel and car-sharing incur negative effects. These results are consistent with changes in travel demand and energy",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Emission trajectories from 2015 to 2060 under six scenarios (a) and emission reduction potential in 2030 and 2060 (b).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "5, location choices and population distributions are affected by lifestyle changes and policy interventions assumed in five of the scenarios. The population would migrate from central to peripheral zones under the WH, OS, BD, and CS scenarios, whereas the bus-service reduction in the BR scenario generated more population agglomeration in central zones. The promotion of working from home and online shopping would reduce the tendency of households to locate themselves close to the central business district (CBD), which also serves as a hub for jobs and shopping, to save on travel costs and time for commuting and shopping trips. Instead, more households would choose suburban and peripheral locations where land is cheaper.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Changes in population distribution in the WH, OS, BD, BR, and CS scenarios compared to the BaU scenario.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Emission trajectories from 2015 to 2060 in the combined scenarios.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Spatial differentiation in the reduction potential of origin-destination emissions in the post-COVID scenario (a) and low-carbon scenario (b).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "displays the changes in population distribution in the two combined scenarios.The population tended to move from the city center to suburban and peripheral areas in both the post-COVID and low-carbon scenarios. In the post-COVID scenario, wherein the default pathway considers all changes in lifestyle and mobility, the population in central areas, particularly in zone 1, decreased by 14% compared to the BaU scenario, J o u r n a l P r e -p r o o f while suburban zone 11 exhibited the highest rates of population increase (6%). Such core-periphery patterns of population redistribution become prominent when only taking into account the WH, OS, and BD scenarios of the low-carbon combined scenario. The population would decrease by more than 20% in zone 1, whereas zone 14 had an 18% higher population size. As shown inFigure 5, the five original scenarios have both positive and negative effects on population concentration and urban agglomeration. For instance, the population distribution becomes dispersed as a result of working from home and online shopping, a bike-friendly design, and reductions in car-sharing services. Meanwhile, the reduction of public transport services would generate more population concentration in the CBD. However, the results of the combined scenarios indicate that the arrival of a post-COVID new normal may lead to dispersion effects on urban structure, and cities may be more dispersed when achieving maximum emission reduction potential in the post-COVID world.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Changes in population distribution in the combined scenarios. 3.5 Sensitivity analysis J o u r n a l P r e -p r o o f Driven by lifestyle changes and mobility transformations in the post-COVID world, CO 2 emissions from the transport sector are projected to fall sharply over the coming decades. Nevertheless, although it is widely assumed that the pandemic may trigger permanent socioeconomic changes, it is imprudent to draw conclusions on transport decarbonization without elucidating the uncertainties associated with future changes in lifestyle and mobility patterns by 2060. To clarify the uncertainty associated with transport decarbonization, we further examined whether the model was robust against varying policy factors in the presence of uncertainty in the scenarios. Sensitivity analysis is commonly used to assess uncertainty, as the effects of different values in a set of parameters on a dependent variable under specific conditions are analyzed. Sensitivity analysis adds credibility to the urban CGE model by testing the model across a wide range of scenarios.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "Decision-makers can use this model to understand how emission profiles would be altered under different policies to make optimal decisions. Sensitivity explored the potential impacts of lifestyle changes and policy interventions with the oncoming post-COVID new normal on travel demand, energy consumption, and CO 2 emissions. Model simulations were conducted by incorporating a detailed transport and energy technology representation into an urban economic model. The interplay between location choices, transport activities, and energy consumption can be described by the framework of an urban spatial CGE model. This paper facilitates a better understanding of the transport dynamics and its impacts on energy use at the city scale and allows us key insight into the deep decarbonization of the transport sector in the post-COVID world. Our model results offer policymakers a more refined overall picture of long-term implications as well as inspiration to leverage the opportunities offered by the COVID-19 crisis to move toward deep decarbonization of the transport sector. The general contribution of this paper is to build a cross-disciplinary research framework based on the multiple research areas of transportation, energy, and climate J o u r n a l P r e -p r o o f change mitigation to provide theoretical, methodological, and application developments.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "CGE model parameterization is crucial for determining the results of policy simulation and evaluation. CGE models are usually represented as large numerical models, with a substantial number of parameters and complex structures; therefore, calibration based on consistent data for a base year is the most common means of estimating parameter values, implying that CGE model performance depends heavily on the data quality of an arbitrarily chosen benchmark year. Moreover, CGE modeling and calibration only employ 1 year of data for long-term projections and generally cannot capture the richness of time-series data used in ex-post analyses. Thus, daily or monthly data on behavioral changes during the COVID-19 pandemic are not incorporated into CGE modeling because of differences in timescale and model scope. Therefore, future research should combine simulations based on CGE models and econometric estimates.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "of efficient energy technology according to the results of an energy system model based on China's Development Plan for the New Energy Automobile Industry, indicating that J o u r n a l P r e -p r o o f carbon neutrality by 2060 would hardly be achieved only by changes in lifestyle and mobility patterns. Even though the post-COVID new normal might facilitate the switch toward a sustainable and low-carbon transport sector, more ambitious technology advances in road transport, such as a more ambitious incorporation of electric vehicles and fuel-cell vehicles, are still required to meet the goal of carbon neutrality. Increasing populations in suburban and peripheral rural areas will be driven by the oncoming new normal, and such population redistribution may be accelerated when pursuing an objective of maximum emission reduction. The core-periphery relocation would facilitate urban expansion and economic development in suburban and rural areas, which may also help relieve traffic congestion and strong environmental pressure on overly high land prices and ease the imbalance between increasing land demand and general lack of available land resources in the CBD. The new normal may overcome the disadvantages of agglomeration caused by clustering of consumers, workers, companies, and services in urban centers, which may lead to diseconomies of scale. Meanwhile, the positive effects of agglomeration or clustering in urban central areas might be weakened by lifestyle changes such as teleworking and online shopping. The benefits incurred",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "economic model that accommodates detailed transport and energy technology representations offers a methodology appropriate for, and capable of, capturing the dynamics of transport demand, energy consumption, and emission profiles at the city scale. Compared to an individual transport model or an energy model, our integrated approach can provide elaborate economic and technological descriptions of the transport sector to structure scenarios for the post-COVID new normal. This methodology allows urban planners, transport planners, energy scientists and policymakers to collaborate and propose effective integrated policies and strategies promoting decarbonization of the transport sector with the arrival of the post-COVID world. The main policy implications of this research are outlined below.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Modal shifts were generated in the BD, BR, and CS scenarios. Compared to the BaU scenario, a bike-friendly design increased bike travel demand by 42%, while travel demand by car decreased by 29% in the CS scenario. Notably, the most significant shift from car travel to bus travel occurred under the BR scenario, with car travel demand increasing by 75% and bus travel demand decreasing by 81%. Additionally, the declining trend of travel demand would be reversed in the BR scenario, as travel demand continued to grow to 12.3 Gpkm by 2060.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "This work was supported by the Japan Society for the Promotion of Science KAKENHI (Grant Number 19K20507, 21K17926).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        }
+    ]
+}

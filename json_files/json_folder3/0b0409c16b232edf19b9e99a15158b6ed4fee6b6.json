@@ -1,0 +1,4428 @@
+{
+    "paper_id": "0b0409c16b232edf19b9e99a15158b6ed4fee6b6",
+    "metadata": {
+        "title": "Critical COVID-19 is associated with distinct leukocyte phenotypes and transcriptome patterns",
+        "authors": [
+            {
+                "first": "E",
+                "middle": [
+                    "E"
+                ],
+                "last": "Christensen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "M",
+                "middle": [
+                    "J"
+                ],
+                "last": "J\u00f8rgensen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "K",
+                "middle": [
+                    "G"
+                ],
+                "last": "Nore",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "T",
+                "middle": [
+                    "B"
+                ],
+                "last": "Dahl",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "K",
+                "middle": [],
+                "last": "Yang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "T",
+                "middle": [],
+                "last": "Ranheim",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "C",
+                "middle": [],
+                "last": "Huse",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "A",
+                "middle": [],
+                "last": "Lind",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "S",
+                "middle": [],
+                "last": "Nur",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "B",
+                "middle": [],
+                "last": "Stiksrud",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "S",
+                "middle": [],
+                "last": "Jenum",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "K",
+                "middle": [],
+                "last": "Tonby",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "J",
+                "middle": [
+                    "C"
+                ],
+                "last": "Holter",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "A",
+                "middle": [
+                    "R"
+                ],
+                "last": "Holten",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "B",
+                "middle": [],
+                "last": "Halvorsen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "A",
+                "middle": [
+                    "M"
+                ],
+                "last": "Dyrhol-Riise",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oslo",
+                    "location": {}
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Christensen EE, J\u00f8rgensen MJ, Nore KG, Dahl TB, Yang K, Ranheim T, et al. Critical COVID-19 is associated with distinct leukocyte phenotypes and transcriptome patterns. J Intern Med 2021; https://doi.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The outbreak of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has rapidly spread across the world and caused a global health emergency. Although patients usually present with mild disease, the condition may progress to pneumonia, ARDS and death [1, 2] . The clinical deterioration that often leads to hospitalization occurs typically one week after onset of symptoms and suggests that host immunity drives the propagation to severe coronavirus disease (COVID)-19 [3] .",
+            "cite_spans": [
+                {
+                    "start": 260,
+                    "end": 263,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 264,
+                    "end": 266,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 478,
+                    "end": 481,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The systemic cytokine profile in severe COVID-19 resembles cytokine release syndromes, such as macrophage activation syndrome [4] , with high plasma levels of pro-inflammatory cytokines [2, 5] . Notably, pro-inflammatory cytokine levels seem to be lower in SARS-CoV-2-than in sepsis-induced ARDS [6] . COVID-19 is also associated with lymphopenia, with a more pronounced depletion of CD8 T cells, and lymphocyte count is inversely correlated with severity [3, [7] [8] [9] , an association also demonstrated in sepsis [10] . The lymphopenia in COVID-19 may be more prolonged than in other viral infections [8] . Little is known about the cause of lymphopenia and whether T-cell responses are helpful or harmful in COVID-19 [8] . Interleukin 7 (IL-7) known to restore lymphocyte counts and repertoire in lymphopenia [8] may be a potential target for therapeutics in COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 126,
+                    "end": 129,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 186,
+                    "end": 189,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 190,
+                    "end": 192,
+                    "text": "5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 296,
+                    "end": 299,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 456,
+                    "end": 459,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 460,
+                    "end": 463,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 464,
+                    "end": 467,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 468,
+                    "end": 471,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 517,
+                    "end": 521,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 605,
+                    "end": 608,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 722,
+                    "end": 725,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 814,
+                    "end": 817,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Although studies report increased levels of T-cell activation, dysfunctional T cells expressing inhibitory molecules such as PD-1 and TIM-3 are also increased in patients with severe and critical COVID-19 [11] [12] [13] [14] . Interestingly, a recent publication shows that PD-1-expressing SARS-CoV-2specific CD8 T cells are in fact functional [15] . Thus, although most data indicate an activated yet exhausted and dysfunctional immune system in COVID-19 [13] , the function and characteristics of cell subsets involved in COVID-19 immunity remain unclear.",
+            "cite_spans": [
+                {
+                    "start": 205,
+                    "end": 209,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 210,
+                    "end": 214,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 215,
+                    "end": 219,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 220,
+                    "end": 224,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 344,
+                    "end": 348,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 456,
+                    "end": 460,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Monocytes are potential drivers of hyperinflammation and ARDS in COVID-19 [4, 16] . Alveolarresiding monocytes and macrophages may be infected by SARS-CoV-2 through angiotensinconverting enzyme (ACE-2)-dependent or independent pathways [16] [17] [18] [19] [20] . Grant et al. argue that the infection results in release of T-cell chemoattractants creating a positive feedback loop that drives alveolar inflammation, possible facilitating dissemination of SARS-CoV-2 in the lungs [18] . Whether ACE-2-expression in circulating monocytes is associated with COVID-19 severity remains unknown. Mononuclear phagocyte dysregulations associated with severe COVID-19 have recently been documented [21] . Further, a relative and absolute decrease in classical (CD14 ++ CD16 -) and non-classical (CD14 + CD16 ++ ) monocytes to the advantage of intermediate monocytes (CD14 ++ CD16 + ) has been reported in severe COVID-19 [21] [22] [23] [24] . Still, a conflicting study finds an increase in classical and non-classical monocytes [16] . Thus, the distribution and relevance of the various monocyte lineages and subsets in COVID-19 infection are not finally determined.",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 77,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 78,
+                    "end": 81,
+                    "text": "16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 236,
+                    "end": 240,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 241,
+                    "end": 245,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 246,
+                    "end": 250,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 251,
+                    "end": 255,
+                    "text": "[19]",
+                    "ref_id": null
+                },
+                {
+                    "start": 256,
+                    "end": 260,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 263,
+                    "end": 275,
+                    "text": "Grant et al.",
+                    "ref_id": null
+                },
+                {
+                    "start": 479,
+                    "end": 483,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 689,
+                    "end": 693,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 912,
+                    "end": 916,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 917,
+                    "end": 921,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 922,
+                    "end": 926,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 927,
+                    "end": 931,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1020,
+                    "end": 1024,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Understanding the mechanisms that drive detrimental pathophysiology is vital in order to find strategies for host-directed therapies in COVID-19 [25] . We therefore aimed to explore COVID-19 immunity by characterizing T-cell and monocyte subsets and their key markers of activation and exhaustion as well as transcriptome patterns of a broader variety of immune cells across the clinical disease spectrum in a Norwegian COVID-19 cohort compared with patients with SARS-CoV-2-negative bacterial sepsis and healthy subjects.",
+            "cite_spans": [
+                {
+                    "start": 145,
+                    "end": 149,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Patients aged \u2265 18 years with confirmed COVID-19 admitted to Oslo University Hospital, Norway, between 9 March and 12 June 2020 were included in a prospective observational study (Norwegian SARS-CoV-2 study; NCT04381819) [26] [27] [28] . Study participants not treated with experimental drugs, immunosuppressants or corticosteroids were included within four days (mean 1.6 days) of admission and followed with registration of clinical data and blood samples during hospitalization. SARS-CoV-2-negative patients with communityacquired bacterial sepsis were prospectively recruited from the medical intensive care unit (ICU) in the same time period. Gender-, age-and ethnicity-matched healthy controls without any known diseases were recruited from the general population. SARS-CoV-2 PCR tests were not performed; however, they had no symptoms or history of COVID-19 or detectable plasma SARS-CoV-2 antibodies. Peripheral blood was obtained from COVID-19 patients at inclusion, after one (6-9 days) and two (10-16 days) weeks and from sepsis patients at inclusion (\u22644 days after admission). Peripheral blood was drawn into BD CPT TM Cell Preparation Tube containing sodium heparin as anti-coagulant, and peripheral blood mononuclear cells (PBMC) were isolated according to the manufacturer\u00b4s instructions and stored at \u00c0150\u00b0C in freezing media containing 10% DMSO until analysis.",
+            "cite_spans": [
+                {
+                    "start": 221,
+                    "end": 225,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 226,
+                    "end": 230,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 231,
+                    "end": 235,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study design, setting and participants"
+        },
+        {
+            "text": "COVID-19 was diagnosed in oro-and nasopharyngeal swabs using the cobas \u00e2 SARS-CoV-2 nucleic acid test on a cobas 8800 system targeting the Eand ORF1 genes [29] . COVID-19 severity was classified based on adapted WHO criteria [30] : mild/moderate disease as PaO2/FiO2-ratio (P/F) \u226537 kPa (corresponding to SpO2 < 90% on room air); severe disease as P/F < 37 kPa; and critical disease as P/F < 10 kPa or in need of ICU treatment. For longitudinal analysis, patients were classified as (i) improved (D \u2265 +5 kPa), (ii) stable (D \u00c05 to +5 kPa P/F) or (iii) deteriorated (D \u2264 \u00c05 kPa) measured by change in P/F after one week. Sepsis was defined according to sepsis-3 criteria, as suspected infection and Sequential Organ Failure Assessment (SOFA) score of \u22652 points [31] .",
+            "cite_spans": [
+                {
+                    "start": 155,
+                    "end": 159,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 225,
+                    "end": 229,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 760,
+                    "end": 764,
+                    "text": "[31]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Diagnostic assessments and definitions"
+        },
+        {
+            "text": "Medical history including comorbidities, clinical data, routine blood haematological and biochemical markers and radiological findings were collected according to a modified version of the International Severe Acute Respiratory and Emerging Infection Consortium (ISARIC isaric.tghn.org)/World Health Organization (WHO) Clinical Characterization Protocol (CCP) version 3.1 and entered into a secure web-based REDCap database (Research Electronic Data Capture, Vanderbilt University, TN, hosted by University of Oxford, UK). Corresponding data for sepsis patients were recorded in a local database (MedInsight, Oslo, Norway).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data collection"
+        },
+        {
+            "text": "Prior to inclusion, informed consent was collected from all patients or patient's family members if the patient was not able to consent. The study was approved by the Regional Committee for Medical and Health Research Ethics in South-Eastern Norway (reference numbers 106624 and 2019/306).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Ethical considerations"
+        },
+        {
+            "text": "Thawed PBMCs rested for 2 h in a 37\u00b0C incubator with 5% CO 2 . Cells were split into two suspensions, stained with a monocyte panel (1 9 10 6 cells) or Tcell panel (1 9 10 6 cells) according to the manufacturer's instructions (BD Biosciences). Overview of the antibodies is displayed in Tables S1 and S2. The gating strategies for monocytes and T cells are shown in Figures S1-S3 . Briefly, the three monocytes subsets were classified as classical (CD14 ++ CD16 -), intermediate (CD14 ++ CD16 + ) or non-classical (CD14 + CD16 ++ ) monocytes [32] . Fluorescence minus one (FMO) control for CD142, PD-L1 and ACE-2 was included. T-cell maturity subsets were identified by their expression of CD4, CD8 and CD45RO and Tregs defined by CD3 + CD4 + CD25 + CD127 low . T-cell activation and/ or exhaustion were investigated by the expression of HLA-DR, PD-1 and IL-7Ra. Cell acquisition was performed on FACS Canto II (BD Biosciences). Instrument calibration was performed according to the manufacturer's instructions and compensation adjusted using antibody capture beads (Comp-Beads, BD Biosciences). Data analysis was performed using FlowJo (Tree Star Inc.), expressed as frequencies (%) or mean fluorescent intensity (MFI). mRNA analysis mRNA expression was analysed on PBMC pellets from a subset of the COVID-19 cohort: critical (n = 3), severe (n = 5), mild/moderate (n = 7) COVID-19 and healthy controls (n = 6). The cell pellet was immediately resuspended in RNAlater solution and extracted applying the Qiagen Allprep kit, according to the manufacturer's instructions (Qiagen, Hilden, Germany), treated with DNase (Qiagen) and stored at \u00c080\u00b0C until analysis. RNA concentrations and purity based on the 260/280 and the 260/230 ratio were assessed by spectrophotometer absorbance (NanoDrop ND-1000; Thermo Fisher Scientific Inc., Waltham, MA). RNA was sequenced with 2 9 150 bp flow cell on the Illumina-NovaSeq 6000 platform (OGC, Oxford, UK) at the Norwegian Sequencing Centre, Oslo, Norway. Contaminated adapters and reads with Phred quality scores below 30 in raw data were trimmed by fastp (version 0.20.1) [33] . Filtered reads were mapped to human transcript sequence (GRCh38.p13, Gencode release 34) [34] by Kallisto (version 0.46.1) with 200 bootstrap iterations [35] .",
+            "cite_spans": [
+                {
+                    "start": 542,
+                    "end": 546,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 2112,
+                    "end": 2116,
+                    "text": "[33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 2208,
+                    "end": 2212,
+                    "text": "[34]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 2272,
+                    "end": 2276,
+                    "text": "[35]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 366,
+                    "end": 379,
+                    "text": "Figures S1-S3",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Flow cytometry"
+        },
+        {
+            "text": "Non-parametric statistics were applied as follows: Mann-Whitney U-test for independent, non-paired groups, when comparing all COVID-19 cases with healthy controls and septic with critical COVID-19 patients. The Jonckheere-Terpstra trend test was used when comparing COVID-19 severity groups. Wilcoxon signed-rank test was used for paired longitudinal samples, whereas Mann-Whitney was used when comparing changes in expression from baseline to week 1 in the two respiratory function trajectory groups (P/F improved vs. P/F deteriorated/stable). Spearman correlation was applied where appropriate. A significance level of P < 0.05 was chosen. Due to the explorative nature of the study, the statistics calculated from the flow cytometry data were not corrected for multiple testing, as the findings in this study were considered as hypotheses generating rather than confirmatory. Statistical analysis was performed by SPSS statistical software (Macintosh version 26.0, IBM, Armonk, NY, USA).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "The significantly differentially expressed transcripts obtained from the RNA sequencing were obtained by Sleuth (version 0.30.0) using the Wald test [36] . Transcript-level information was summarized to gene level by tximport R package version 1.18 [37] , and the differentially expressed genes were obtained by DESeq2 R package version 1.30.1 [38] . Data are presented as natural-log scaled bvalue, which is analogous to the fold change. These data are corrected for inferential variance estimated from bootstraps. To plot the heatmap, the normalized estimated counts of significantly differentially expressed transcripts were obtained from bootstraps. They were further z-score-normalized before plotting. To estimate cell fractions with CIBERSORT, all the gene-level normalized estimated counts were submitted to the online platform (cibersort.stanford.edu). The built-in LM22 table was used as signature matrix [39] . For functional enrichment analysis, significantly differentially expressed transcripts (q \u2264 0.05) were uploaded to Metascape (metascape.org, database version 2020-09-16) [40] . Enriching was performed in Gene Ontology (biological process) [41, 42] , Hallmark [43] , Kyoto Encyclopedia of Genes and Genomes (KEGG), Reactome and PID pathways [44] . Terms and pathways with P \u2264 0.01, minimum count of 3, enrichment factor >1.5 were considered statistically significant.",
+            "cite_spans": [
+                {
+                    "start": 149,
+                    "end": 153,
+                    "text": "[36]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 249,
+                    "end": 253,
+                    "text": "[37]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 344,
+                    "end": 348,
+                    "text": "[38]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 915,
+                    "end": 919,
+                    "text": "[39]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1092,
+                    "end": 1096,
+                    "text": "[40]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1161,
+                    "end": 1165,
+                    "text": "[41,",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1166,
+                    "end": 1169,
+                    "text": "42]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1181,
+                    "end": 1185,
+                    "text": "[43]",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1262,
+                    "end": 1266,
+                    "text": "[44]",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "A total of 31 COVID-19 patients, five patients with bacterial sepsis and ten healthy controls were included in the study. Patient clinical and demographic characteristics are shown in Table 1 . One critically ill COVID-19 patient had a bacterial lower respiratory super-infection. In the sepsis cohort, 4 of 5 patients had bacterial infections confirmed by positive culture (three positive blood cultures, one abscess culture) and 1 of 5 showed radiological and clinical findings consistent with bacterial pneumonia. A total of 12 COVID-19 patients were sampled also after one week, hereof six with improved (DP/ F + 13, 10 to 16 kPa (median, range)), three with stable (DP/F \u00c03, \u00c04 to \u00c01 kPa) and three deteriorating respiratory function (DP/F \u00c015, \u00c023 to \u00c08 kPa). The latter two groups were merged in further analysis.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 184,
+                    "end": 191,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Clinical characteristics"
+        },
+        {
+            "text": "Absolute lymphocyte count decreased with increasing COVID-19 severity (P = 0.041), while absolute neutrophil count (P = 0.002), neutrophil: lymphocyte ratio (NLR) (P = 0.003), procalcitonin (PCT) (P = 0.003) and C-reactive protein (CRP) (P = 0.001) increased. Compared with patients with bacterial sepsis, critical COVID-19 patients had lower white blood cell (WBC) counts (P = 0.009) and monocyte counts (P = 0.004) while lymphocyte and neutrophil counts, NLR and CRP were comparable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Clinical characteristics"
+        },
+        {
+            "text": "We found no significant differences in the fractions of CD3, CD4 or CD8 T-cell subsets across COVID-19 severity groups ( Figure S4A ). Thus, we proceeded to explore T-cell markers of differentiation/survival (CD127/IL-7Ra), activation (HLA-DR and CD25) and exhaustion (PD-1). IL-7Ra expression was generally higher in COVID-19 patients compared with healthy controls (CD8 memory, P = 0.010; CD8 na\u20ac \u0131ve, P = 0.037; CD4 memory, P = 0.011; Fig. 1a ). An inverse association with COVID-19 severity was observed for IL-7Ra expression in these cell subsets, significant for na\u20ac \u0131ve CD4 and CD8 T cells (Fig. 1a) . IL-7Ra expression in na\u20ac \u0131ve CD4 T cells also correlated with P/F (r = 0.45, P = 0.021; Figure S5 ). Notably, both in sepsis patients and in critical COVID-19 patients, IL-7Ra expression was comparable to controls.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 121,
+                    "end": 131,
+                    "text": "Figure S4A",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 438,
+                    "end": 445,
+                    "text": "Fig. 1a",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 597,
+                    "end": 606,
+                    "text": "(Fig. 1a)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 697,
+                    "end": 706,
+                    "text": "Figure S5",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "T-cell IL-7Ra expression declines with increased COVID-19 severity"
+        },
+        {
+            "text": "Activation marker CD25 and exhaustion marker PD-1 expression higher in critical COVID-19 compared with bacterial sepsis T-cell expression of the activation marker HLA-DR was similar across COVID-19 severity groups and comparable to patients with bacterial sepsis (Figure S4B ). Nevertheless, HLA-DR expression in CD8 T cells was higher in COVID-19 patients irrespective of severity compared with healthy controls (memory, P < 0.001, and na\u20ac \u0131ve, P = 0.001) ( Figure S4B ). Likewise, there was no significant difference in CD25 and PD-1 expression across COVID-19 severity groups ( Figure S4C /D), but in contrast to HLA-DR these markers were increased in critical COVID-19 compared with bacterial sepsis. Furthermore, PD-1 expression and CD25 expression were higher in some T-cell subsets in COVID-19 patients compared with healthy controls ( Figure S4D ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 263,
+                    "end": 274,
+                    "text": "(Figure S4B",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 459,
+                    "end": 469,
+                    "text": "Figure S4B",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 581,
+                    "end": 591,
+                    "text": "Figure S4C",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 843,
+                    "end": 853,
+                    "text": "Figure S4D",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "T-cell IL-7Ra expression declines with increased COVID-19 severity"
+        },
+        {
+            "text": "Non-classical monocytes decline in critical COVID-19 correlating to respiratory failure Total monocyte frequencies were similar across COVID-19 severity groups, but trends of increased fractions of classical monocytes and decreased fractions of non-classical monocytes were observed with increased COVID-19 severity (Fig. 1b and c) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 316,
+                    "end": 331,
+                    "text": "(Fig. 1b and c)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "T-cell IL-7Ra expression declines with increased COVID-19 severity"
+        },
+        {
+            "text": "Immune characteristics in COVID-19 / E.E. Christensen et al. The percentage of non-classical monocytes correlated with P/F, whereas classical monocytes were negatively correlated with P/F (P = 0.001) (Figure S5 ). Septic patients had higher fractions of total monocytes, non-classical and intermediate monocytes but lower fraction of classical monocytes than critical COVID-19 patients (Fig. 1b and c) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 210,
+                    "text": "(Figure S5",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 386,
+                    "end": 401,
+                    "text": "(Fig. 1b and c)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "T-cell IL-7Ra expression declines with increased COVID-19 severity"
+        },
+        {
+            "text": "We analysed markers of function (monocytic (m) HLA-DR, CD142, ACE-2), differentiation (CD163) and suppressive activity (PD-L1) in total monocytes (Fig. 1d) . We observed a trend of decreased mHLA-DR expression with COVID-19 severity supported by a negative correlation with P/F (P = 0.004) (Figure S5 ). In contrast, there were no differences in ACE-2 expression across COVID-19 severity groups, but COVID-19 patients independent of severity group had significantly higher levels of ACE-2 compared with healthy controls (P = 0.034) (Fig. 1d) . Of note, ACE-2 expression was not associated with age ( Figure S5 ) or treatment with an angiotensin blocker or ACE-2 inhibitor (P = 0.982, Mann-Whitney). Both mHLA-DR expression and ACE-2 expression in critical COVID-19 were comparable to levels in patients with sepsis (Fig. 1d) . CD163 expression was comparable across COVID-19 severity groups, but lower in critical COVID-19 patients than sepsis patients (Fig. 1d) . Further, we observed an increase in both PD-L1 and TF (CD142) expression with increased COVID-19 severity (Fig. 1d) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 146,
+                    "end": 155,
+                    "text": "(Fig. 1d)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 290,
+                    "end": 300,
+                    "text": "(Figure S5",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 532,
+                    "end": 541,
+                    "text": "(Fig. 1d)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 600,
+                    "end": 609,
+                    "text": "Figure S5",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 815,
+                    "end": 824,
+                    "text": "(Fig. 1d)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 953,
+                    "end": 962,
+                    "text": "(Fig. 1d)",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1071,
+                    "end": 1080,
+                    "text": "(Fig. 1d)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Monocyte markers of activation and suppression change with COVID-19 severity"
+        },
+        {
+            "text": "Treg PD-1 and mHLA-DR expression correlate with plasma inflammation markers",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Monocyte markers of activation and suppression change with COVID-19 severity"
+        },
+        {
+            "text": "Ideally, COVID-19 severity should be identified by biomarkers analysed in routine blood samples. The relationships between the immune cell subsets, clinical routine blood markers, age and COVID-19 severity measured as P/F were investigated (Figs 2 and S5). The association between immune cell subsets and relevant clinical routine blood markers of COVID-19 such as lymphocyte count, PCT, CRP, ferritin and lactate dehydrogenase (LDH) is displayed in Fig. 2 . PD-1 expression in Tregs correlated positively with all these markers except lymphocyte count, whereas mHLA-DR showed an inverse correlation to CRP, ferritin and LDH. Finally, PD-L1 expression on monocytes was correlated with CRP and the fraction of classical monocytes was negatively correlated with lymphocyte count (Figs 2 and  S5 ). IL-7Ra expression (in na\u20ac \u0131ve CD8 T cells) was only correlated with D-dimer ( Figure S5 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 450,
+                    "end": 456,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 777,
+                    "end": 792,
+                    "text": "(Figs 2 and  S5",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 874,
+                    "end": 883,
+                    "text": "Figure S5",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Monocyte markers of activation and suppression change with COVID-19 severity"
+        },
+        {
+            "text": "To investigate longitudinal dynamics in T cell and monocyte immunity in COVID-19, we assessed the same cell subsets and markers in 12 patients whose respiratory function (P/F) improved (6/12) or deteriorated/remained stable (6/12) after one week of hospitalization. Expression of IL-7Ra (CD127) tended to decline after one week in most T-cell subsets in both P/F trajectory groups, significantly in memory CD8 T cells (Fig. 3a) . In contrast, T-cell expression of CD25, HLA-DR and PD-L1 did not change significantly during followup ( Figure S6B ). The patterns were heterogeneous, but the fraction of intermediate monocytes increased at week 1 while an increase in nonclassical monocytes compared with baseline was observed first at week 2 (Fig. 3b) . Overall, expression of mHLA-DR, ACE-2, CD163 and PD-L-1 on total monocytes did not significantly change during follow-up, while CD142 expression increased in monocytes for most of the patients after one week, independent of clinical progression (Fig. 3c) . Interestingly, monocyte expression of PD-L1 decreased at week 1 in patients whose P/F improved compared with those whose P/F deteriorated or maintained stable (P = 0.015, Mann-Whitney).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 418,
+                    "end": 427,
+                    "text": "(Fig. 3a)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 534,
+                    "end": 544,
+                    "text": "Figure S6B",
+                    "ref_id": "FIGREF11"
+                },
+                {
+                    "start": 740,
+                    "end": 749,
+                    "text": "(Fig. 3b)",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 997,
+                    "end": 1006,
+                    "text": "(Fig. 3c)",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Monocyte PD-L1 expression decrease upon respiratory improvement in COVID-19"
+        },
+        {
+            "text": "Next, to gain in-depth insight into the distribution of immune cells and engagement of pathways in COVID-19, we performed RNA sequencing on PBMC in a subgroup of mild/moderate (n = 7), severe (n = 5) and critical (n = 3) COVID-19 patients and healthy controls (n = 6) (Figs 4, 5, S7 and S8). When comparing mild/moderate to critical COVID-19, we found 411 transcripts that were differentially expressed, of which 42 had higher whereas 369 had lower expression in critical COVID-19 patients (Fig. 4a) . The overlapping differentially expressed transcripts between mild/moderate vs critical and severe vs critical Fig. 4b . To assess the biological differences between mild/moderate and critical patients, we performed gene enrichment analysis. The three most differentially regulated pathways were 'immune response-activating signal transduction' (GO0002757), 'leucocyte activation involved in immune response' (GO0002366) and 'mRNA processing' (GO0006397) (Figs 4c and S8B and D) . In the GO pathway 'immune response-activating signal transduction', only seven transcripts that were differentially expressed were higher in the critical compared with the mild/moderate COVID-19 group, including pro-inflammatory calprotectin (S100A8/9). There were lower levels of transcripts associated with regulatory functions (NFkB inhibitor zeta), apoptosis inhibitor genes such as BIRC and cell signalling (MAPK, NFkB, CREBBP, RAP1A) in critical compared with mild/moderate COVID-19 patients (Fig. 4d and e) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 490,
+                    "end": 499,
+                    "text": "(Fig. 4a)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 612,
+                    "end": 619,
+                    "text": "Fig. 4b",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 956,
+                    "end": 979,
+                    "text": "(Figs 4c and S8B and D)",
+                    "ref_id": "FIGREF5"
+                },
+                {
+                    "start": 1480,
+                    "end": 1495,
+                    "text": "(Fig. 4d and e)",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Differentially regulated transcriptomes in critical COVID-19"
+        },
+        {
+            "text": "Using CIBERSORT analysis, we next evaluated the different cell populations based on gene expression pattern ( Fig. 5a and b) . The most striking differences were the estimated B-cell portions in the subset of COVID-19 samples (Fig. 5a) . There was no difference in na\u20ac \u0131ve B cells, but the analysis estimated an increase in plasma B cells with increased severity (Fig. 5b) . Further, in the enrichment analysis, the 'B cell activation' (GO0042113) pathway was statistically different in mild/moderate compared with critically ill patients (Fig. 5b) . A considerable number of transcripts related to Bcell function were lower in critically ill patients ( Fig. 5c and d) , including three transcripts (one a nonsense-mediated decay) coding for IL-7Ra, suggesting a strongly reduced expression.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 110,
+                    "end": 124,
+                    "text": "Fig. 5a and b)",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 226,
+                    "end": 235,
+                    "text": "(Fig. 5a)",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 363,
+                    "end": 372,
+                    "text": "(Fig. 5b)",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 539,
+                    "end": 548,
+                    "text": "(Fig. 5b)",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 654,
+                    "end": 668,
+                    "text": "Fig. 5c and d)",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Plasma B-cell levels and transcripts of function disturbances in critical COVID-19"
+        },
+        {
+            "text": "We present cellular and gene analyses of immune profiles of cells from the innate and adaptive immune system from a cohort of patients with various severity of COVID-19 and compared with septic patients. Our data show phenotypic alterations, which may indicate a dysfunctional adaptive and innate immune response in patients with severe and critical COVID-19. IL-7Ra expression decreased with COVID-19 severity correlating to respiratory function. T-cell exhaustion marker PD-1 was higher in critical COVID-19 than in septic patients with bacterial infections. In monocytes, the expression of PD-L1 and ACE-2 and the fraction of pro-inflammatory classical monocytes increased, while mHLA-DR expression and the fraction of anti-inflammatory non-classical monocytes decreased with COVID-19 severity. Transcriptomic analyses revealed changes in pathways of both innate and adaptive immune responses. Pro-inflammatory calprotectin and plasma B cells were increased while transcripts related to B-cell function were reduced in critical COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "We found a substantial number of differentially expressed transcripts in mild/moderate versus critical COVID-19, indicating a possible shift in transcripts during disease progression. Surprisingly, there was a low amount of differentially expressed transcripts comparing mild/moderate to severe disease. In contrast, a large number of differentially expressed transcripts were found in mild vs severe COVID-19 in a recent study [45] . However, stratification of the clinical groups will affect the results and the severe COVID-19 group in the report from Aschenbrenner et al., corresponds to our critical COVID-19 group and highlights the need for a common stratification of COVID-19 severity as well as further in-depth studies on the transcriptome. Interestingly, Calprotectin (S100A8/9), a potent alarmin and driver of innate immune response [46] , was significantly higher in critical patients. Calprotectin has recently been suggested as a biomarker for COVID-19 severity [24] . The findings of increased [47, 48] . While plasma B cells may produce neutralizing antibodies, they were also associated with severe disease and mortality [49] . Studies of B-cell function and as a source of long-term antibody production for protection are needed to determine their role in acute COVID-19. Further, critical patients in general displayed lower levels of transcripts involved in regulation, apoptosis and cell signalling compared with mild/moderate disease.",
+            "cite_spans": [
+                {
+                    "start": 428,
+                    "end": 432,
+                    "text": "[45]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 845,
+                    "end": 849,
+                    "text": "[46]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 977,
+                    "end": 981,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1010,
+                    "end": 1014,
+                    "text": "[47,",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1015,
+                    "end": 1018,
+                    "text": "48]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1139,
+                    "end": 1143,
+                    "text": "[49]",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "To gain deeper insight into the immune responses, we have characterized several immune cells representative of both innate and adaptive immune responses. Our study showed that IL-7Ra expression was significantly reduced with increased COVID-19 severity, correlated with respiratory function measured as P/F and was comparable to levels found in septic patients. Further, transcripts of ILR7 were lower in critical COVID-19. This may represent a dysfunctional immune response in septic patients suggestive of immune suppression [50] . Further, low levels of IL-7Ra in people living with HIV lead to decreased T-cell survival and proliferation [51] . We have previously shown that the plasma levels of soluble IL-7 are increased in COVID-19, but with no difference between the clinical severity groups [5] . Thus, we argue that cellular IL-7Ra, rather than soluble IL-7 levels, is predictive of COVID-19 severity and as infection progresses T cells develop a unique exhausted phenotype characterized by loss of IL-7Ra. IL-7 therapy, shown to restore lymphocyte count and repertoire diversity in sepsis, could serve as a possible host-directed therapy for advanced COVID-19 [52] . Three ongoing randomized controlled clinical trials are exploring IL-7 therapy for COVID-19 (clinicaltrials.org) and our data support further investigation of IL-7 as therapy.",
+            "cite_spans": [
+                {
+                    "start": 527,
+                    "end": 531,
+                    "text": "[50]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 642,
+                    "end": 646,
+                    "text": "[51]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 800,
+                    "end": 803,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1171,
+                    "end": 1175,
+                    "text": "[52]",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "While immunosuppression caused by cell exhaustion reflected in higher expression of PD-1 and Tim-3 has been shown to be associated with reduced viral clearance [12, 23, 53] , a recent report shows that PD-1 expressing SARS-CoV-2-specific CD8 T cells seem to be functional [15] . We demonstrate an increased expression of PD-1 on T cells in COVID-19, but evenly distributed across the COVID-19 severity groups, also questioning the degree of T-cell exhaustion in critical COVID-19 [26] . However, PD-L1 on monocytes increased with COVID-19 severity, and in deteriorating patients during the first week of follow-up, whereas in patients whose P/F improved there was a decrease in the expression of PD-L1. T-cell depletion and exhaustion have been reported to underlay severe disease in SARS-CoV-infected mice [54] and possibly mediated through the PD-1/PD-L1 pathway [55] . Our findings may indicate that the continued increase in PD-L1 may come as a result of increased disease severity and contribute to T-cell suppression via the PD-1/PD-L1 signalling axis also reported by others [56] ; however, the precise role of the PD-1/PD-L1 pathway and characteristics of T cells in COVID-19 pathology should be explored in future studies.",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 164,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 165,
+                    "end": 168,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 169,
+                    "end": 172,
+                    "text": "53]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 272,
+                    "end": 276,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 480,
+                    "end": 484,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 807,
+                    "end": 811,
+                    "text": "[54]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 865,
+                    "end": 869,
+                    "text": "[55]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 1082,
+                    "end": 1086,
+                    "text": "[56]",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Changes in monocyte function and phenotype may be related to severity of COVID-19, since excessive monocyte/macrophage activation has been associated with hyperinflammation propagating disease severity in a subset of patients [2, [57] [58] [59] . We found that the frequencies of classical monocytes, an important contributor to the secretion of pro-inflammatory cytokines, were increased in patients with severe disease and inversely correlated with P/F and lymphocyte count and thus may contribute to hyperinflammation and increased lung pathology [60] [61] [62] . In contrast, antiinflammatory non-classical monocytes, known to patrol the vasculature [63] , were reduced with increased COVID-19 severity and correlated with P/F, suggesting a role in severe inflammatory lung damage [22, 24, 56, 62, 64] . Further, this subgroup seems to increase in later stages of disease, in accordance with Schulte-Schrepping et al [56] . However, causality would need to be further explored in studies of pulmonary tissue samples. Compared with COVID-19, the distribution of monocyte subset differs clearly from that seen in septic patients suggesting a viral-specific phenotype.",
+            "cite_spans": [
+                {
+                    "start": 226,
+                    "end": 229,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 230,
+                    "end": 234,
+                    "text": "[57]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 235,
+                    "end": 239,
+                    "text": "[58]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 240,
+                    "end": 244,
+                    "text": "[59]",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 550,
+                    "end": 554,
+                    "text": "[60]",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 555,
+                    "end": 559,
+                    "text": "[61]",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 560,
+                    "end": 564,
+                    "text": "[62]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 654,
+                    "end": 658,
+                    "text": "[63]",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 785,
+                    "end": 789,
+                    "text": "[22,",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 790,
+                    "end": 793,
+                    "text": "24,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 794,
+                    "end": 797,
+                    "text": "56,",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 798,
+                    "end": 801,
+                    "text": "62,",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 802,
+                    "end": 805,
+                    "text": "64]",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 921,
+                    "end": 925,
+                    "text": "[56]",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Downregulation of mHLA-DR is recognized as a marker for monocyte dysfunction in severe disease in general [3, 24] and for immunosuppression in sepsis [65] . We observed a decrease in mHLA-DR expression with decreasing respiratory function, indicating less antigen-presenting activity in more severe COVID-19. Although volatile, mHLA-DR expression overall persisted over time in COVID-19 as previously shown [56] . Moreover, our data showing comparable levels in critical COVID-19 and sepsis are in contrast to another study reporting higher expression of mHLA-DR in COVID-19 patients admitted to the ICU than in sepsis [65] . SARS-CoV-2 may enter the cells via ACE-2 expressed on alveolar monocytes and macrophages to gain intracellular access [16, 18, 19] and this may contribute to morbidity in COVID-19 [18, 66, 67] . We report higher levels of ACE-2 expression on circulating monocytes in COVID-19 patients compared with healthy individuals, suggesting that these cells may be susceptible for SARS-CoV-2 infection. The underlying mechanisms, however, need further investigation [17] .",
+            "cite_spans": [
+                {
+                    "start": 106,
+                    "end": 109,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 110,
+                    "end": 113,
+                    "text": "24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 150,
+                    "end": 154,
+                    "text": "[65]",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 407,
+                    "end": 411,
+                    "text": "[56]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 619,
+                    "end": 623,
+                    "text": "[65]",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 744,
+                    "end": 748,
+                    "text": "[16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 749,
+                    "end": 752,
+                    "text": "18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 753,
+                    "end": 756,
+                    "text": "19]",
+                    "ref_id": null
+                },
+                {
+                    "start": 806,
+                    "end": 810,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 811,
+                    "end": 814,
+                    "text": "66,",
+                    "ref_id": "BIBREF68"
+                },
+                {
+                    "start": 815,
+                    "end": 818,
+                    "text": "67]",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 1082,
+                    "end": 1086,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "There are several limitations in our study. Our cohort is small, especially the groups with critical COVID-19 and sepsis and RNA sequencing are performed on few patients. Likewise, only a fraction of the cohort was followed due to logistical constraints and discharge from the hospital. Methodologically, our flow cytometry analyses were limited to T cells and monocytes and phenotyping of Tregs and T-cell subsets were crude without the use of markers such as FOXP3 or detailed maturity markers. Further, p-values were not corrected for multiple testing on data from the flow cytometry analyses and should be interpreted thereafter. If applying a conservative Bonferroni adjustment for the number of tests (37) , then only the correlations between LD and Tregs PD-1 and Ferritin and mHLA-DR remain significant. Still, our exploratory study presents several interesting findings that could lay grounds for further functional in vitro studies of larger cohorts addressing in-depth cell properties to determine cell subset functionality in COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 707,
+                    "end": 711,
+                    "text": "(37)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In our exploratory study of untreated COVID-19 infection, we found that critical disease is characterized by activated and exhausted T cells with reduced IL-7Ra expression and monocytes with decreased fractions of mHLA-DR and the antiinflammatory non-classical subset, whereas the fraction of the pro-inflammatory classical monocytes and expression of PD-L1, ACE-2 and CD142 were increased. Further, in critical COVID-19, pathways of both adaptive and innate immune responses are activated on a transcriptional level with increased transcripts of pro-inflammatory mediators and increased numbers of plasma B cells that may have altered functionality. Our findings indicate an altered innate and adaptive immune phenotype in critical COVID-19, contributing to the increasing knowledge on COVID-19 pathogenesis. Nevertheless, further in-depth studies of regulatory and functional mechanisms are required to identify targets for therapeutic intervention.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "Additional Supporting Information may be found in the online version of this article: Table S1 . Monocyte antibody panel. Table S2 . T cell antibody panel. Figure S1 . T cell gating strategy. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 86,
+                    "end": 94,
+                    "text": "Table S1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 122,
+                    "end": 130,
+                    "text": "Table S2",
+                    "ref_id": null
+                },
+                {
+                    "start": 156,
+                    "end": 165,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Supporting Information"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical characteristics of coronavirus disease 2019 (COVID-19) in China: A systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Fitzpatrick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Infect",
+            "volume": "80",
+            "issn": "",
+            "pages": "656--65",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Complex immune dysregulation in COVID-19 patients with severe respiratory failure",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Giamarellos-Bourboulis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Netea",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Rovina",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Akinosoglou",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Antoniadou",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Antonakos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Host Microbe",
+            "volume": "27",
+            "issn": "",
+            "pages": "992--1000",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Pathological inflammation in patients with COVID-19: a key role for monocytes and macrophages",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Merad",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Martin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Rev Immunol",
+            "volume": "20",
+            "issn": "",
+            "pages": "355--62",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Increased interleukin-6 and macrophage chemoattractant protein-1 are associated with Respiratory Failure In COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "J\u00f8rgensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Holter",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Christensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Schjalm",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tonby",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pischke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sci Rep",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Cytokine levels in critically Ill patients with COVID-19 and other conditions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kox",
+                    "suffix": ""
+                },
+                {
+                    "first": "Njb",
+                    "middle": [],
+                    "last": "Waalders",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kooistra",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gerretsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pickkers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "324",
+            "issn": "",
+            "pages": "1565--1572",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Lymphopenia during the COVID-19 infection: What it shows and what can be learned",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tavakolpour",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Rakhshandehroo",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rashidian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunol Lett",
+            "volume": "225",
+            "issn": "",
+            "pages": "31--33",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "T cell responses in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "John",
+                    "middle": [],
+                    "last": "Wherry",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Rev Immunol",
+            "volume": "20",
+            "issn": "",
+            "pages": "529--565",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Deep immune profiling of COVID-19 patients reveals distinct immunotypes with therapeutic implications",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Mathew",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Giles",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Baxter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "369",
+            "issn": "",
+            "pages": "1203--1215",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Persistent lymphopenia after diagnosis of sepsis predicts mortality",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Drewry",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Samra",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Skrupky",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Fuller",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Compton",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hotchkiss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Shock",
+            "volume": "42",
+            "issn": "",
+            "pages": "383--91",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Elevated exhaustion levels and reduced functional diversity of T cells in peripheral blood may predict severe progression in COVID-19 patients",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X-C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yang",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "X-P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Mol Immunol",
+            "volume": "17",
+            "issn": "",
+            "pages": "541--544",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Reduction and functional exhaustion of T cells in patients with coronavirus disease 2019 (COVID-19)",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Diao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ning",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front Immunol",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Marked T cell activation, senescence, exhaustion and skewing towards TH17 in patients with COVID-19 pneumonia",
+            "authors": [
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Biasi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Meschiari",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gibellini",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bellinazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Borella",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fidanza",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Commun",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Robust T cell immunity in convalescent individuals with asymptomatic or mild COVID-19",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sekine",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Perez-Potti",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Rivera-Ballesteros",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Str Alin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gorin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Olsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "183",
+            "issn": "",
+            "pages": "158--68",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "PD-1-Expressing SARS-CoV-2-Specific CD8(+) T cells are not exhausted, but functional in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rha",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Jeong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ko",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "I-H",
+                    "middle": [],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunity",
+            "volume": "54",
+            "issn": "",
+            "pages": "44--52",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Frontline Science: COVID-19 infection induces readily detectable morphologic and inflammation-related phenotypic changes in peripheral blood monocytes",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "J Leukoc Biol",
+            "volume": "109",
+            "issn": "",
+            "pages": "13--22",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Monocyte activation in systemic Covid-19 infection: Assay and rationale",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Martinez",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Combes",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Orsenigo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gordon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "EBioMedicine",
+            "volume": "59",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Circuits between infected macrophages and T cells in SARS-CoV-2 pneumonia",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Grant",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morales-Nebreda",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Markov",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Swaminathan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Querrey",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Guzman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nature",
+            "volume": "590",
+            "issn": "",
+            "pages": "635--676",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Contribution of monocytes and macrophages to the local tissue inflammation and cytokine storm in COVID-19: Lessons from SARS and MERS, and potential therapeutic interventions",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jafarzadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chauhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Saha",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jafarzadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nemati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Life Sci",
+            "volume": "257",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Comparative replication and immune activation profiles of SARS-CoV-2 and SARS-CoV in human lungs: an ex vivo study with implications for the pathogenesis of COVID-19",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "T-T",
+                    "middle": [],
+                    "last": "Yuen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Infect Dis",
+            "volume": "71",
+            "issn": "",
+            "pages": "1400--1409",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Major alterations in the mononuclear phagocyte landscape associated with COVID-19 severity",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kvedaraite",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hertwig",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Sinha",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ponzetta",
+                    "suffix": ""
+                },
+                {
+                    "first": "Hed",
+                    "middle": [],
+                    "last": "Myrberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Lourda",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "118",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "COVID-19 severity associates with pulmonary redistribution of CD1c+ DCs and inflammatory transitional and nonclassical monocytes",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "S Anchez-Cerrillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Landete",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Aldave",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Alonso",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Azofra",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marcos-Jim",
+                    "middle": [],
+                    "last": "Enez",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Invest",
+            "volume": "130",
+            "issn": "",
+            "pages": "6290--300",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Pathogenic T-cells and inflammatory monocytes incite inflammatory storms in severe COVID-19 patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "National Sci Rev",
+            "volume": "7",
+            "issn": "",
+            "pages": "998--1002",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Elevated calprotectin and abnormal myeloid cell subsets discriminate severe from mild COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Silvin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Chapuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dunsmore",
+                    "suffix": ""
+                },
+                {
+                    "first": "A-G",
+                    "middle": [],
+                    "last": "Goubet",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dubuisson",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Derosa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "182",
+            "issn": "",
+            "pages": "1401--1419",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Immunosuppression for hyperinflammation in COVID-19: a double-edged sword?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Ritchie",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singanayagam",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Elevated plasma sTIM-3 levels in severe Covid-19 patients",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ueland",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Heggelund",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lind",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Holten",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tonby",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Michelsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Allergy Clin Immunol",
+            "volume": "147",
+            "issn": "",
+            "pages": "92--100",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Systemic complement activation is associated with respiratory failure in COVID-19 hospitalized patients",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Holter",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pischke",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Boer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lind",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jenum",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Holten",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "117",
+            "issn": "",
+            "pages": "25018--25043",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Elevated markers of gut leakage and inflammasome activation in COVID-19 patients with cardiac involvement",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hoel",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Heggelund",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Reikvam",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Stiksrud",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ueland",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Michelsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Intern Med",
+            "volume": "289",
+            "issn": "",
+            "pages": "523--554",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Comparison of SARS-CoV-2 detection from combined nasopharyngeal/oropharyngeal swab samples by a laboratory-developed real-time RT-PCR test and the Roche SARS-CoV-2 assay on a cobas 8800 instrument",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Boutin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Grandjean-Lapierre",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gagnon",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Labb E A-C",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Charest",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Clin Virol",
+            "volume": "132",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "World Health Organization. Clinical Management of COVID-19",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "The third international consensus definitions for sepsis and septic shock (Sepsis-3)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Singer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Deutschman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Seymour",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shankar-Hari",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Annane",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bauer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "JAMA",
+            "volume": "315",
+            "issn": "",
+            "pages": "801--811",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Toward a refined definition of monocyte subsets",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ziegler-Heitbrock",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Hofer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Front Immunol",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "fastp: an ultra-fast all-in-one FASTQ preprocessor",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Bioinformatics",
+            "volume": "34",
+            "issn": "",
+            "pages": "884--890",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "14 \u00aa 2021 The Authors",
+            "authors": [
+                {
+                    "first": "/",
+                    "middle": [
+                        "E E"
+                    ],
+                    "last": "Christensen",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "COVID-19",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "GENCODE reference annotation for the human and mouse genomes",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Frankish",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Diekhans",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ferreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Jungreis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Loveland",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nucleic Acids Res",
+            "volume": "47",
+            "issn": "",
+            "pages": "766--773",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Near-optimal probabilistic RNA-seq quantification",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bray",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Pimentel",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Melsted",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pachter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Nat Biotechnol",
+            "volume": "34",
+            "issn": "",
+            "pages": "525--532",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Differential analysis of RNA-seq incorporating quantification uncertainty",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Pimentel",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bray",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Puente",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Melsted",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pachter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nat Methods",
+            "volume": "14",
+            "issn": "",
+            "pages": "687--90",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Soneson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Love",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Robinson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "F1000Research",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Love",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Huber",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Anders",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Determining cell type abundance and expression from bulk tissues with digital cytometry",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Newman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Steen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gentles",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chaudhuri",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Scherer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nat Biotechnol",
+            "volume": "37",
+            "issn": "",
+            "pages": "773--82",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Metascape provides a biologist-oriented resource for the analysis of systems-level datasets",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pache",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Khodabakhshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Tanaseichuk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Nat Commun",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ashburner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ball",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Blake",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Botstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Butler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cherry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Nat Genet",
+            "volume": "25",
+            "issn": "",
+            "pages": "25--34",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "The Gene Ontology Consortium. The Gene Ontology Resource: 20 years and still GOing strong",
+            "authors": [],
+            "year": 2019,
+            "venue": "Nucleic Acids Res",
+            "volume": "47",
+            "issn": "",
+            "pages": "330--338",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "The Molecular Signatures Database (MSigDB) hallmark gene set collection",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liberzon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Birger",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Thorvaldsd Ottir",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ghandi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Mesirov",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tamayo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Cell Syst",
+            "volume": "1",
+            "issn": "",
+            "pages": "417--442",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "NDEx, the network data exchange",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pratt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Welker",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rivas",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Pillich",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Rynkov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Cell Syst",
+            "volume": "1",
+            "issn": "",
+            "pages": "302--307",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Disease severityspecific neutrophil signatures in blood transcriptomes stratify COVID-19 patients",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Aschenbrenner",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mouktaroudi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kr\u20ac Amer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Oestreich",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Antonakos",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Nuesch-Germano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Genome Med",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "S100A8/A9: From basic science to clinical application",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pruenster",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Vogl",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Roth",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sperandio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Pharmacol Ther",
+            "volume": "167",
+            "issn": "",
+            "pages": "120--151",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Longitudinal multi-omics analyses identify responses of megakaryocytes, erythroid cells, and plasmablasts as hallmarks of severe COVID-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Bernardes",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Tran",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bahmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Best",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Blase",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Immunity",
+            "volume": "53",
+            "issn": "",
+            "pages": "1296--314",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "The cellular immune response to COVID-19 deciphered by single cell multi-omics across three UK centres",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Stephenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Reynolds",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Botting",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Calero-Nieto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Morgan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tuong",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Extrafollicular B cell responses correlate with neutralizing antibodies and morbidity in COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Woodruff",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Ramonell",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Cashman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Saini",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Haddad",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Immunol",
+            "volume": "21",
+            "issn": "",
+            "pages": "1506--1522",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Monitoring the adaptive immune system in septic shock patients: ready for prime time?",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Asehnoune",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Roquilly",
+                    "suffix": ""
+                },
+                {
+                    "first": "&apos;",
+                    "middle": [],
+                    "last": "Vourc",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Crit Care Med",
+            "volume": "46",
+            "issn": "",
+            "pages": "1867--1876",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Loss of IL-7Ralpha is associated with CD4 T-cell depletion, high interleukin-7 levels and CD28 down-regulation in HIV infected patients",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rethi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Fluur",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Atlas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Krzyzowska",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mowafi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gr\u20ac Utzmeier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Aids",
+            "volume": "19",
+            "issn": "",
+            "pages": "2077--86",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Should we stimulate or suppress immune responses in COVID-19? Cytokine and anti-cytokine interventions",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jamilloux",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Henry",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Belot",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Viel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fauter",
+                    "suffix": ""
+                },
+                {
+                    "first": "El",
+                    "middle": [],
+                    "last": "Jammal",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Autoimmun Rev",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Why tocilizumab could be an effective treatment for severe COVID-19?",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Transl Med",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Evasion by stealth: inefficient immune activation underlies poor T cell response and severe disease in SARS-CoV-infected mice",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Van Rooijen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Perlman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "PLoS Pathog",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "The diverse function of PD-1/PD-L pathway beyond cancer",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Immunol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Severe COVID-19 is marked by a dysregulated myeloid cell compartment",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schulte-Schrepping",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Reusch",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Paclik",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ba\u00dfler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schlickeiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "182",
+            "issn": "",
+            "pages": "1419--1459",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "COVID-19: consider cytokine storm syndromes and immunosuppression",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mehta",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Mcauley",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Sanchez",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tattersall",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Manson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1033--1037",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Cytokine release syndrome in severe COVID-19: interleukin-6 receptor antagonist tocilizumab may be the key to reduce mortality",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Antimicrob Agents",
+            "volume": "55",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Associations between immune-suppressive and stimulating drugs and novel COVID-19-a systematic review of current evidence",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Moss",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "George",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Santaolalla",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cope",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Papa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ecancermedicalscience",
+            "volume": "14",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "A single-cell atlas of the peripheral immune response in patients with severe COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wilk",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rustagi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Roque",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mart",
+                    "middle": [],
+                    "last": "Inez-Col On",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mckechnie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "26",
+            "issn": "",
+            "pages": "1070--1076",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Single-cell landscape of bronchoalveolar immune cells in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Med",
+            "volume": "26",
+            "issn": "",
+            "pages": "842--846",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Immunophenotyping of COVID-19 and influenza highlights the role of type I interferons in development of severe COVID",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Jeong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Developmental and functional heterogeneity of monocytes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Guilliams",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mildner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yona",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Immunity",
+            "volume": "49",
+            "issn": "",
+            "pages": "595--613",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Decrease of non-classical and intermediate monocyte subsets in severe acute SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gatti",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Radrizzani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vigan O P, Mazzone",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Brando",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cytometry A",
+            "volume": "97",
+            "issn": "",
+            "pages": "887--90",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "COVID-19 patients exhibit less pronounced immune suppression compared with bacterial septic shock patients",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kox",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Frenzel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schouten",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Van De Veerdonk",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Koenen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pickkers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit Care",
+            "volume": "24",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "SARS-CoV-2 RNA in plasma is associated with ICU admission and mortality in patients hospitalized with COVID-19",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Prebensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Myhre",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jonassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rangberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Blomfeldt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Svensson",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Clin Infect Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cid/ciaa1338"
+                ]
+            }
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Autopsy findings and venous thromboembolism in patients with COVID-19: a prospective cohort study",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wichmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sperhake",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "L\u20ac Utgehetmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Steurer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Edler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Heinemann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Ann Intern Med",
+            "volume": "173",
+            "issn": "",
+            "pages": "268--77",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF1": {
+            "text": "CD127/IL-7Ra expression in T-cell subsets and monocyte subsets and markers. (a) The expression (mean fluorescence intensity, MFI) of CD127/IL-7Ra in memory (CD45RO+) and na\u20ac \u0131ve (CD45RO-) CD8 and CD4 T cells and Tregs in mild/moderate (n = 13), severe (n = 7) and critical (n = 6) COVID-19, sepsis (n = 5) and healthy controls (n = 10) at baseline. (b) The frequency of total monocytes and (c) monocyte subsets and (d) the monocyte expression (MFI) of mHLA-DR, ACE-2, CD142, CD163 and PD-L1 in total monocytes in mild/moderate (n = 14), severe (n = 9) and critical (n = 6) COVID-19, sepsis (n = 5) and healthy controls (n = 10) at baseline. Arrow indicates significance calculated with Jonckheere-Terpstra trend test across COVID-19 severity groups, and straight line indicates Mann-Whitney U-test between sepsis and critical COVID-19. * indicates significance comparing all COVID-19 patients with healthy controls using Mann-Whitney U-test. P-values were considered significant when <0.05. Violin plots displaying median with quartiles. Grey area indicates the 95% CI of healthy controls.Immune characteristics in COVID-19 / E.E. Christensen et al. \u00aa 2021 The Authors. Journal of Internal Medicine published by John Wiley & Sons Ltd on behalf of Association for Publication of The Journal of Internal Medicine 7 Journal of Internal Medicine COVID-19 patients are displayed in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Baseline correlations between clinical blood markers and immune cell subsets. Correlations of five selected clinical routine blood inflammatory markers (x-axis) relevant in COVID-19 (absolute lymphocyte count, procalcitonin, C-reactive protein, ferritin, lactate dehydrogenase) with the two immune cell subsets (y-axis) demonstrating the strongest significant correlations (highest R value). Correlations were examined using Spearman's rank correlation coefficient. Pink dot indicates mild/moderate (n = 14), red square severe (n = 9) and purple triangle critical (n = 6) COVID-19.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Dynamic changes in T cells and monocyte subsets during hospitalization in COVID-19. (a) CD127/IL-7Ra expression (mean fluorescence intensity; MFI) in T-cell subsets, (b) monocyte subsets (%) and (c) expression (MFI) of monocyte markers (mHLA-DR, ACE-2, CD163, PD-L1 and CD142) in COVID-19 patients whose respiratory function (P/F) improved (n = 6, black line) or deteriorated/ remained stable (n = 6, red line) from baseline to week 1. Dot indicates mild/moderate (n = 1), square severe (n = 5) and triangle critical (n = 6) COVID-19 severity; line represents mean value from each patient group. Significance calculated with Wilcoxon signed-rank test including all patients from baseline to week 1 for all patients. No statistics were performed including data at week 2.Immune characteristics in COVID-19 / E.E. Christensen et al. \u00aa 2021 The Authors. Journal of Internal Medicine published by John Wiley & Sons Ltd on behalf of Association for Publication of The Journal of Internal Medicine 9",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "cells with potentially reduced B-cell function in critical COVID-19 indicate an important role for B cells in this disease. Recent reports support the findings of increased plasma B cells in critical COVID-19",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Comparison of the transcriptome in COVID-19 severity groups. (a) Number of significantly (q < 0.05, Wald test) differentially expressed transcripts and genes comparing mild/moderate (n = 7), severe (n = 5) vs critical (n = 3) disease and healthy controls (n = 6). (b) Volcano plot displaying transcripts comparing mild/moderate and critical COVID-19 patients. Each dot represents one transcript; coloured dots significantly differentially expressed transcripts. The blue dots represent overlapping differentially expressed transcripts between mild/moderate vs critical and severe vs critical COVID-19, identified with their associated gene name. The y-axis corresponds to the mean expression value of log 10 (q-value), and the horizontal axis (x-axis) displays the b-value, which is analogous to fold change. (c) The 30 most enriched pathways (KEGG, Hallmark, Reactome and PID) and Gene Ontology (GO) terms from analysis within the 411 differentially expressed transcripts comparing mild/moderate and critical disease. Dot size reflects number of differentially expressed transcripts, and colour indicates P-value (increasing from blue to red). X-axis represents gene ratio, the fraction of differentially expressed transcripts in each pathway or GO term.(d) Heatmap displaying clustering of transcripts involved in the most enriched GO term from the enrichment analysis: 'Immune response activating signal transduction'. (e) Comparing the magnitude of the significantly differentially expressed transcripts in the most enriched GO term across mild/moderate and critical severity groups. B-value is analogous to fold change, and the red line indicates an approximate fold change of 2, while the blue line indicates an approximate fold change of 10. Immune characteristics in COVID-19 / E.E. Christensen et al. \u00aa 2021 The Authors. Journal of Internal Medicine published by John Wiley & Sons Ltd on behalf of Association for Publication of The Journal of Internal Medicine 11",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "-cell transcriptomics in COVID-19. (a) CIBERSORT analysis imputing different cell subsets present in PBMC from COVID-19 patients, mild/moderate (n = 7), severe (n = 5), critical (n = 3) and healthy controls (n = 5). (b) Quantification of the estimated levels of na\u20ac \u0131ve and plasma B cells in mild, severe and critical COVID-19 and healthy controls. Arrow indicates significance calculated with Jonckheere-Terpstra trend test across COVID-19 severity groups. (c) Heatmap displaying clustering of transcripts involved in the GO term 'B cell activation'. (d) Comparing the magnitude of the significantly differentially expressed transcripts in the GO term B-cell activation across mild/moderate and critical severity groups. Bvalue is analogous to fold change, and the red line indicates an approximate fold change of 2, while the blue line indicates an approximate fold change of 10. Differentially expressed transcripts with q \u2264 0.05 in the Wald test were considered significant.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Monocyte gating strategy.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Gating strategy of monocytes showed with FMO controls.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "T cell subsets and activation and exhaustion markers in COVID-19, sepsis and healthy controls.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Correlations between clinical parameters and exploratory immune markers in COVID-19 (n = 31).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "Longitudinal measurements of T cell subsets.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "Comparison of the transcriptome in COVID-19.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "All differentially expressed transcripts and the second and third most enriched Gene Ontology terms comparing mild/moderate and critical COVID-19 patients.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Clinical characteristics of study participants",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Continued )",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank the staff at the laboratory and clinical ward of the Departments of Infectious Diseases and Medical microbiology at Oslo University Hospital, Ullev al Hospital, for support, including the patient follow-up, blood sampling and biobank processing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        }
+    ]
+}
