@@ -1,0 +1,1532 @@
+{
+    "paper_id": "0b071c46669c5ffdaa0042e88274aefaf9cd673d",
+    "metadata": {
+        "title": "\"Who can help me?\": Knowledge Infused Matching of Support Seekers and Support Providers during COVID-19 on Reddit",
+        "authors": [
+            {
+                "first": "Manas",
+                "middle": [],
+                "last": "Gaur",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of South Carolina",
+                    "location": {
+                        "country": "USA"
+                    }
+                },
+                "email": "mgaur@email.sc.edu"
+            },
+            {
+                "first": "Kaushik",
+                "middle": [],
+                "last": "Roy",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of South Carolina",
+                    "location": {
+                        "country": "USA"
+                    }
+                },
+                "email": "kaushikr@email.sc.edu"
+            },
+            {
+                "first": "Aditya",
+                "middle": [],
+                "last": "Sharma",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of South Carolina",
+                    "location": {
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Biplav",
+                "middle": [],
+                "last": "Srivastava",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of South Carolina",
+                    "location": {
+                        "country": "USA"
+                    }
+                },
+                "email": "biplav.s@sc.edu"
+            },
+            {
+                "first": "Amit",
+                "middle": [],
+                "last": "Sheth",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of South Carolina",
+                    "location": {
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "During the ongoing COVID-19 crisis, subreddits on Reddit, such as r/Coronavirus saw a rapid growth in user's requests for help (support seekers -SSs) including individuals with varying professions and experiences with diverse perspectives on care (support providers -SPs). Currently, knowledgeable human moderators match an SS with a user with relevant experience, i.e, an SP on these subreddits. This unscalable process defers timely care. We present a medical knowledge-infused approach to efficient matching of SS and SPs validated by experts for the users affected by anxiety and depression, in the context of with COVID-19. After matching, each SP to an SS labeled as either supportive, informative, or similar (sharing experiences) using the principles of natural language inference. Evaluation by 21 domain experts indicates the efficacy of incorporated knowledge and shows the efficacy the matching system.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Within two months of the novel coronavirus pandemic, Reddit' subreddit r/Coronavirus' subscribers jumped from 2,000 to a staggering \u223c2 Million with \"Reddit potentially being the internet's best support group\" 1 [1] . Subreddits r/Coronavirus and r/covid19 support are a significant source of information for those coping with Anxiety. Reddit mirrors people's thoughts and actions, invaluable in crafting responsive plans. Presently, these subreddits have 64 moderators with diverse backgrounds: (a) academics in genomic science, infectious diseases, virology, and tuberculosis, (b) healthcare workers including nurses, general practitioners, internal medicine specialists, and mental health specialists, and (c) public health personnel and epidemiologists (see Figure  1 ). The enormous set of users in these communities has overwhelmed moderators. Worse, users drift in from other mental health subreddits (r/Depression, r/Anxiety, r/Opiates, r/SuicideWatch) to r/Coronavirus seeking support for their deteriorating mental health conditions due to COVID-19 [2] . Broadly, the conversations on r/Coronavirus surround major events such as {business closure, school closure, lockdown, shelter-in-place, hospitalization} (also non-pharmaceutical interventions (NPIs)), and activities of daily living. We use mental health lexicons from the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) [3] , depression using 1 http://bit.ly/reddit support Fig. 1 : Illustration of a scenario in which users suffering from Anxiety and Depression (SSs) seek help. The moderators endeavor to connect them to the users with the relevant experience (SPs) to address the SS's needs. The moderators may themselves provide advice.",
+            "cite_spans": [
+                {
+                    "start": 211,
+                    "end": 214,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1058,
+                    "end": 1061,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1399,
+                    "end": 1402,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 761,
+                    "end": 770,
+                    "text": "Figure  1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1453,
+                    "end": 1459,
+                    "text": "Fig. 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Patient Health Questionnaire-9 (PHQ-9) [4] , anxiety [5] , and information on NPIs to measure the impact of COVID-19 on Reddit users' mental health.",
+            "cite_spans": [
+                {
+                    "start": 39,
+                    "end": 42,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 53,
+                    "end": 56,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "Users and moderators started the r/covid19 support community to provide emotional support specific to COVID-19. The community received significant traction during February to March 2020, with user counts reaching 20K. One nurse moderator, referred concerned users on the r/Coronavirus subreddit to r/covid19 support for support on Anxiety and Depression that is virus-related 2 . However, the task of associating a support seeker (SS) with a potential support provider (SP) within these dynamic communities dwarfs the limited number of moderators. Can fine-grained knowledge about users improve matching of SS and SPs on r/Coronavirus and r/covid19 support subreddits? We used data from r/Coronavirus and r/covid19 support communities during the first wave of the COVID-19 -when people started experiencing symptoms of mental illness. To detect topics and issues that reference Anxiety and Depression, we used PHQ-9 3 , anxiety 4 , and DSM-5 5 lexicons. These medical knowledge resources support contextual embeddings of SS's posts. We summarize our key contributions as follows: 1) Dataset: We include the characteristics of support seekers and providers, along with the situation. On the crawled 5.3 Million posts and comments from COVID-19-related subreddits, we used psycholinguistic [6] and pandemic-related knowledge on events to create a working dataset for matching SSs with SPs. We also leverage a general gold-standard Reddit dataset on supportive and support-seeking behaviors (See Section III). 2) Method: Automated matching of SS with SPs is challenging because their content generates dissimilar embedding. Health-specific markers of SS differ from SP. Hence, we adapt a model that emphasizes contrastive pairing and allows knowledge-infusion. We use a convolutional siamese network model to match SS and SPs. 3) Quantitative evaluation: Reddit conversations for an SS and SP match resemble Natural Language Inference (NLI) outcomes of entailment, contradiction and neutral. Hence, we evaluate the matches using the NLI paradigm by labeling the SPs as similar(entailment), supportive(contradiction), and informative(neutral) to an SS problem. 4) Qualitative Evaluation: We evaluated the best performing method qualitatively with a cohort of 21 Domain Experts (DEs).To the best of our knowledge, this is the first study that leverages diverse domain-specific knowledge to match online support seekers and providers. In the pandemic context, this ability assists the strategic distribution of limited resources.",
+            "cite_spans": [
+                {
+                    "start": 1288,
+                    "end": 1291,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "The stigma surrounding mental health encourages patients to seek peer-support anonymously on community-based platforms, such as Reddit or Talk life [7] . Powell et al's 12item general population survey demonstrated that individuals with mental illness seek social support through sensitive selfdisclosure [8] . Andalibi et al. categorized user behaviors into well-established classes: supportive and unsupportive [9] . O'Leary et al. suggested the importance of user expectations, roles, risk, and clinical knowledge for meeting care demands online [10] with peer support. Gillani et al., showed that a simple reframing of irrational thoughts through support provider perspectives could bring positive cognitive change to those suffering from mental stress [11] . However, prior research did not employ contextualization and abstraction of social media content, a requirement for capturing healthspecific markers of an SS user and match with an SP, who can provide relevant help [12] . We build and improve upon related research [13] , [14] on SS and SP role identification by forming dynamic support groups using psycholinguistic and clinical knowledge braided with deep learning.",
+            "cite_spans": [
+                {
+                    "start": 148,
+                    "end": 151,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 305,
+                    "end": 308,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 413,
+                    "end": 416,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 549,
+                    "end": 553,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 757,
+                    "end": 761,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 979,
+                    "end": 983,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1029,
+                    "end": 1033,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1036,
+                    "end": 1040,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "II. RELATED WORK"
+        },
+        {
+            "text": "We collected nearly 5.3 Million posts and comments from nearly 450K users in r/Coronavirus subreddit and 48K posts/comments from 6.9K users in r/covid19 support subreddit (see Table I I: Reddit statistics for posts and users. The time difference between r/Coronavirus and r/covid19 support subreddits is due to the delayed opening of r/covid19 support for helpseeking users in the r/Coronavirus subreddit.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 176,
+                    "end": 183,
+                    "text": "Table I",
+                    "ref_id": null
+                }
+            ],
+            "section": "III. EXPLORATORY DATA ANALYSIS"
+        },
+        {
+            "text": "The DEs involved in this study noted that (1) Typical comments and posts in r/covid19 support subreddit are either supportive/helpful, and (2) There is a fair distribution of problemfocused and informative comments/posts in r/Coronavirus subreddit, but rarely a supportive post/comment. Thus, we merged the post/comments from r/Coronavirus and r/covid19 support subreddits. From this large-scale data, we constructed a subset of users with their posts/comments specific to mental health (Anxiety and Depression) and events in COVID-19 (e.g., business closure, school closure). Figure 2 shows the entire exploratory data analysis pipeline Event-based Filtering: School closure, business closure, lockdown, shelter-in-place, and hospitalization, and general COVID-19 conversation during COVID-19 likely had a global psychological impact (see Table II ). We filtered posts and comments in the raw data through soft matches with COVID-19-related events using embedding with a cosine similarity threshold over 0.8. Subsequently we filtered posts and comments for concerns regarding Anxiety and Depression through SS or SP behavior. Identify Users with Anxiety and/or Depression: We used an anxiety lexicon and a negation detection method to tag complex posts or comments in the dataset correctly. The lexicon captured varied expressions of anxiety, such as anxiety, anxiousness, anxious, agita, agitation, prozac, sweating, and panic attacks. For instance, the following post: \"Then others that insisted that what I have is depression even though manic episodes aren't characteristic of depression. I dread having to retread all this again because the clinic where I get my mental health addressed is closing down due to loss in business caused by the pandemic\" was tagged as \"Business Closure with Anxiety\" as italicized phrases appear in the semantic lexicon. Negation detection identified \"aren't,\" as the negation, making this sentence as \"not depression,\" and tagging it as \"anxiety.\" Table II notes that hospitalization and lockdown events caused relatively higher anxiety levels in individuals compared to business closure, school closure, and shelter-inplace. For example, posts like \"Need help. Have a friend who lives alone who is now suicidal from the isolation and anxiety, and already had depression. I've asked her to come to my house for the shelter in place, but she doesn't want to\" were tagged as \"Shelter-in-place with Depression and Anxiety.\"",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 577,
+                    "end": 585,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 840,
+                    "end": 848,
+                    "text": "Table II",
+                    "ref_id": null
+                },
+                {
+                    "start": 1985,
+                    "end": 1993,
+                    "text": "Table II",
+                    "ref_id": null
+                }
+            ],
+            "section": "III. EXPLORATORY DATA ANALYSIS"
+        },
+        {
+            "text": "Feature Extraction: We discuss two types of features that characterize SSs and SPs: a) Psycholinguistic features: Given tagged users with the most relevant mental health condition (anxiety or depression), we extracted lexical features describing concerns surrounding cognitive, emotional (positive emotions, negative emotions, affect, anger, sad), biological (sexual, body, ingest, health), Focus Future, and social processes (Social, Family, Friend). LIWC 6 (linguistic Inquiry and Word Count) provides a comprehensive categorized dictionary of words that people use words in their daily lives. This provides rich information about their beliefs, fears, thinking patterns, social relationships, and personalities in crisis [6] . b) COVID-19 features: Modals (epistemic and dynamic), Instrumental Activities of Daily Livings ( Inst ADLs), Basic ADLs, and Equipment are additional features in conversations specific to COVID-19. Instrumental ADLs include \"moving within the community,\" \"preparing meals,\" \"using telephone for communication,\" \"cleaning and maintaining the house,\" \"taking prescribed medication,\" and \"managing money\". Basic ADLs comprise \"personal hygiene,\" \"toilet hygiene,\" \"functional mobility (e.g., getting in and out of bed), and selffeeding. LabMT, a Mechanical Turk emotion assessment tool, provided a real-valued score for emotional features 7 .",
+            "cite_spans": [
+                {
+                    "start": 724,
+                    "end": 727,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "III. EXPLORATORY DATA ANALYSIS"
+        },
+        {
+            "text": "General Findings: We note the following (see Table II ). Users who expressed depression were affected by the disruption in social processes, epistemic modality (described as pandemic uncertainty with words like may or might and dynamic modality (described as possible or necessary conditions expressed by words like can or will in a sentence) (see Table  II ). COVID-19 has impacted ADLs. The effect is greater for users with depression compared to users with anxiety. Depressed individuals used words that reflected concerns on their post-COVID-19 futures, which we capture by mapping them to term under Focus Future category in LIWC 8 . The association of such words was higher in depressed individuals compared to users with anxiety. Questions or concerns such as adjustment with traumatic events, how to recover from anorexia, having difficulty in thinking, and poor expression of thoughts scored higher on the cognitive process category for users with depression than with anxiety. The frequent usage of phrases similar to \"disruption in sleep\", \"low body vitals\", and \"sexual words\" suggested an impact on the biological processes category during COVID-19. This appeared equally prominent in users with depression and anxiety. Further, conversations mentioning isolation, social distancing, and loneliness mainly came from users with depression compared to those with anxiety. Emotional processes of both users with depression and anxiety were equally affected, showing significantly high scores in anger, frustration, and sadness. Situations like \"unable to get prescribed drugs\" lead to more anxiety concerns than depression concerns. We performed statistical significance testing with Bonferroni-correction (p-value<0.05), showing that features in table II) are discriminative for anxiety-depression.",
+            "cite_spans": [
+                {
+                    "start": 635,
+                    "end": 636,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 45,
+                    "end": 53,
+                    "text": "Table II",
+                    "ref_id": null
+                },
+                {
+                    "start": 348,
+                    "end": 357,
+                    "text": "Table  II",
+                    "ref_id": null
+                }
+            ],
+            "section": "III. EXPLORATORY DATA ANALYSIS"
+        },
+        {
+            "text": "SS and SP classification: To classify users as either SS or SP, we used a labeled dataset from a recent study on the assessment of suicide risk. The reported Krippendorff agreement was 0.79, sufficient to be a gold standard 9 [4] , [15] . Over the annotated dataset, we experimented with various pipelines, generating contextualized embedding followed by a classifier to predict SP or not SP. For generating embeddings of the posts/comments, we used: ELMo [16] , Universal Sentence Encoder (USE), and GPT2 Embeddings [17] and for classification, we used: Logistic Regression (LR), and Support Vector Machines. GPT2+LR is the best performing classifier for this dataset. We chose these representation learning models as they are State-of-the-Art and can generate context-aware embeddings. Furthermore, we do not use BERT as it requires input chunking due to its max token length of 512 [18] . We used the GPT2+LR model to generate probabilities of a user being SS in our dataset. We do not label SPs as we know the ground truth SPs annotated by DEs to be 108. We labeled approximately 9.5K (6.8K Anxiety and 2.7K Depression, Table I) ",
+            "cite_spans": [
+                {
+                    "start": 226,
+                    "end": 229,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 232,
+                    "end": 236,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 456,
+                    "end": 460,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 517,
+                    "end": 521,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 885,
+                    "end": 889,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1124,
+                    "end": 1132,
+                    "text": "Table I)",
+                    "ref_id": null
+                }
+            ],
+            "section": "III. EXPLORATORY DATA ANALYSIS"
+        },
+        {
+            "text": "In the proposed approach, Knowledge-infused Match (KI-Match), we train a Convolutional Siamese Network Model with contrastive loss to predict matches, computed using the knowledge features and the GPT-2 encoding of the posts, using low dimensional representations of the users for details on the architecture please see [19] CoSim(SS, SP ) \u2212 CoSim(SS, SP ) + \u03b1 \u2264 0",
+            "cite_spans": [
+                {
+                    "start": 320,
+                    "end": 324,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "IV. KNOWLEDGE INFUSED MATCH PREDICTION"
+        },
+        {
+            "text": "Where SS is the support seeker post, SP is a relevant Support Provider, and SP is a non-relevant support provider. CoSim is the cosine similarity between the two data points, and \u03b1 is the margin. Specifically, we pass a concatenated vector of the GPT-2 encoded post vector and the features extracted, namely the pyscholinguistic features (Psy), and COVID-19 features into the siamese network blocks to construct low dimensional representations. Each Siamese Network block is a Convolutional Neural Network, and the supervision signal is binary, i.e. Label 1 denotes a good match and 0 a bad one.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "IV. KNOWLEDGE INFUSED MATCH PREDICTION"
+        },
+        {
+            "text": "Quantitative Evaluation: After hyper-parameter tuning, we compared the best performing Siamese Network models using precision, average recall, and f1-score (See Table III ). GPT-2 clustering without KI [20] is above the different configurations of knowledge models. KI methods with different forms of knowledge in the form of psycholinguistic features, COVID-19 features, and probability of support provider/seeker improves the accuracy of match prediction.",
+            "cite_spans": [
+                {
+                    "start": 202,
+                    "end": 206,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 161,
+                    "end": 170,
+                    "text": "Table III",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "V. RESULTS AND ANALYSIS"
+        },
+        {
+            "text": "Qualitative Evaluation: Previous work improved the learned representations of neural network models using NLI methods. Instead, we use NLI in labeling the SPs matched to an SS. In general, NLI compares a premise statement with a hypothesis statement [21] - [24] . NLI outputs labels on the hypothesis as, entailment -entailed from the premise, contradiction -contradicting the premise and neutral -neutral to the premise. We consider the premise as the SS post and the hypothesis as the SP post. Supportive posts from SP users should contradict the SS posts, Similar SP users will be entailed from the SS posts, and Informative SP users will be neutral to the SS's post. Using this labeling scheme and a pre-trained and fine-tuned RoBERTa transformer model, we determined the NLI labels for SPs (see Table IV ). Further, a cohort-based assessment of matched SS and SPs (also labeled) from 21 domain experts showed 75% relevance agreement (they consider 3 out of 4 recommended SP users as relevant to an SS user) with the KI-Match prediction model. Each expert was asked: (1) How many Users can provide support/help/information of use to the Problem User. (2) What is your confidence in the response? on a random set of 21 SSs expressing anxiety, 21 SSs expressing depression and each having 4 recommended SPs per SS. As Table  V shows, Faculty, Ph.D. students and undergraduates (UG) gave a confidence score of 7 out of 10, whereas medical professionals gave a confidence score of 8/10 in predicted Problems Responses I am not sleeping much anymore. Anxiety is pretty high for the stability of the world and the future of trust. Probably need to take up drinking or something... matches. Thus, some variance remains in the shallow infusion of knowledge occurring through psycholinguistic and language-oriented features.",
+            "cite_spans": [
+                {
+                    "start": 250,
+                    "end": 254,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 800,
+                    "end": 808,
+                    "text": "Table IV",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 1320,
+                    "end": 1328,
+                    "text": "Table  V",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "V. RESULTS AND ANALYSIS"
+        },
+        {
+            "text": "Limitations of this research include: (1) The comparison of the quantitative aspects of SS-SP matching to NLI definitions is analogous to common sense understanding. However, surveying members who occupy such roles on Reddit would allow us to compare with user perception. (2) Infusing clinical and psycho-social knowledge could be improved through attentionbased methods. (3) Mental health-specific questionnaires and expert-QAs could be used to match SS with SPs with explanations. These require behavioral therapists' supervision.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "VI. CONCLUSIONS AND FUTURE DIRECTIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Natural language processing reveals vulnerable mental health support groups and heightened health anxiety on reddit during covid-19: Observational study",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Low",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rumker",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Talkar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Torous",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cecchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Ghosh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of medical Internet research",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Covid-19 and mental health/substance use disorders on reddit: A longitudinal study",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alambo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Padhee",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Banerjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Thirunarayan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2011.10518"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "let me tell you about your mental health!\" contextualized classification of reddit posts to dsm-5 for webbased intervention",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kursuncu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alambo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sheth",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Daniulaityte",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Thirunarayan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pathak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc. of ACM CIKM",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Characterization of time-variant and time-invariant assessment of suicidality on reddit using c-ssrs",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Aribandi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alambo",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kursuncu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Thirunarayan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Beich",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pathak",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sheth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2104.04140"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Expressions of anxiety in political texts",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rheault",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proc. of EMNLP Workshop on NLP and CSS",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Linguistic inquiry and word count: Liwc",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Pennebaker",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Francis",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Booth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Mahway",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Moments of change: Analyzing peer-based cognitive support in online mental health forums",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Pruksachatkun",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Pendse",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proc. of CHI",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Internet information-seeking in mental health: population survey",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Powell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "The British Journal of Psychiatry",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Sensitive self-disclosures, responses, and social support on instagram: the case of# depression",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Andalibi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ozturk",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Forte",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proc. of ACM CSCW",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Design opportunities for mental health peer support technologies",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "O&apos;leary",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bhattacharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Munson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Wobbrock",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Pratt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proc. ACM CSCW",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Me, my echo chamber, and i: introspection on social media polarization",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gillani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Saveski",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vosoughi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Roy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc. World Wide Web Conference",
+            "volume": "",
+            "issn": "",
+            "pages": "823--831",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Semantics of the black-box: Can knowledge graphs help make deep learning systems more interpretable and explainable?",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Faldu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sheth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "IEEE Internet Computing",
+            "volume": "25",
+            "issn": "1",
+            "pages": "51--59",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Identifying seekers and suppliers in social media communities to support crisis coordination",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Purohit",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hampton",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bhatt",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Shalin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sheth",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Flach",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Seekers, providers, welcomers, and storytellers: Modeling social roles in online health communities",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Kraut",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mayfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Jurafsky",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proc. of CHI",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Knowledge-aware assessment of severity of suicide risk for early intervention",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alambo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sain",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kursuncu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Thirunarayan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kavuluru",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sheth",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Welton",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pathak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proc. of The Web Conference",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Deep contextualized word representations",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Peters",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Neumann",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Iyyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Clark",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zettlemoyer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1802.05365"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Universal sentence encoder for english",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Cer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hua",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Limtiaco",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "John",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Constant",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Guajardo-Cespedes",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc. of EMNLP",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Devlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "M.-W",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Toutanova",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1810.04805"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Textcsn: a semisupervised approach for text clustering using pairwise constraints and convolutional siamese network",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Vilhagra",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Fernandes",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Nogueira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc. of ACM SAC",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Automatic text summarization of covid-19 medical research articles using bert and gpt-2",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kieuvongngam",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Niu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2006.01997"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Learning an unreferenced metric for online dialogue evaluation",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sinha",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Parthasarathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lowe",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Hamilton",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pineau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:2005.00583"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Collecting diverse natural language inference problems for sentence representation evaluation",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Poliak",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Haldar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rudinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Pavlick",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Van Durme",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1804.08207"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Supervised learning of universal sentence representations from natural language inference data",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Conneau",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kiela",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Schwenk",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Barrault",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bordes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "arXiv": [
+                    "arXiv:1705.02364"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Evaluating semantic accuracy of data-to-text generation with natural language inference",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Du\u0161ek",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kasner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proc. of INLG",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Feature extraction pipeline distilling noisy Reddit posts by significant COVID-19-events, and clinical terms on anxiety and depression; subsequently we generate language, sentiment, emotion, ADLs, and psycholinguistic feature vectors along with content to representation SS and SPs",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "users as SS and found that the SS:SP ratio of \u223c 10K:100 reflects the true distribution on Reddit.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "IV: Examples of SS problems and SP responses categorized as Supportive, Similar or Informative by the NLI model: RoBERTa. It can be seen, how Supportive posts contradict the view in the SS's post (\"My point is anxiety is worse than death, Do not let your mind slip\"), Similar posts are entailed in the SS's post (\"I hear you, I am on the same boat)\", and Informative posts are neutral, specifying guidelines and coping mechanisms.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": ").",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "An Ablation study with KI with three possible configurations: Psy: Psycholinguistic Knowledge, P SS,SP = Pr(X={SS,SP}). With Psycholinguistic knowledge, the recall on SPs increases. However, SS recall rises with the addition of COVID-19 knowledge. Combining the two improves performance overall. Ablation study improvements are bold-faced.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": ": Giving up is in your control. Exercise can be lots of different things and a way to help anxiety.Informative: Anxiety is quite inducing. A good time to learn relaxation techniques Similar: I hear you. Myself and other friends with kids are going through similar anxiety right now [...] Married with a supportive husband but my serious health issues including depression and PTSD has made me feel as if I am losing everything [...] Supportive:Tough position [...] kind of relate [...] don't think marriage is dying [...] advice would be to meditate, prioritize, and act patiently. Be positive [...] Similar: My MDD is affecting my married life. I am an outdoor enthusiast and so is my husband. My health concerns keep pulling him down [...] wanted him to let me go.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Mean #SPs selected by experts from 4 recommendations per SS having anxiety problems (C1). Their confidence (on scale 1 to 10) in selection is reported in C2. Likewise for Depression, mean #SPs selected by experts from 4 recommendations per SS and their confidence is reported in C3 and C4 respectively. MPs: Medical Professionals.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We acknowledge partial support from National Institutes of Health (NIH) award: MH105384-01A1: \"Modeling Social Behavior for Health-care Utilization in Depression\". Any opinions, conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the NIH.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGEMENT"
+        }
+    ]
+}

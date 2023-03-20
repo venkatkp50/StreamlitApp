@@ -1,0 +1,1456 @@
+{
+    "paper_id": "0b69bd1d2d0e3e2de81b9d2269d66359ab3b4ac2",
+    "metadata": {
+        "title": "Structural basis for backtracking by the SARS-CoV-2 replication-transcription complex 2 3",
+        "authors": [
+            {
+                "first": "Brandon",
+                "middle": [],
+                "last": "Malone",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Molecular Biophysics",
+                    "institution": "The Rockefeller University",
+                    "location": {
+                        "postCode": "10 10065",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "James",
+                "middle": [],
+                "last": "Chen",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Molecular Biophysics",
+                    "institution": "The Rockefeller University",
+                    "location": {
+                        "postCode": "10 10065",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Qi",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Eliza",
+                "middle": [],
+                "last": "Llewellyn",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Molecular Biophysics",
+                    "institution": "The Rockefeller University",
+                    "location": {
+                        "postCode": "10 10065",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Young",
+                "middle": [
+                    "Joo"
+                ],
+                "last": "Choi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Molecular Biophysics",
+                    "institution": "The Rockefeller University",
+                    "location": {
+                        "postCode": "10 10065",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Paul",
+                "middle": [],
+                "last": "Dominic",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "B",
+                "middle": [],
+                "last": "Olinares",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Mass Spectrometry and Gaseous Ion Chemistry",
+                    "institution": "",
+                    "location": {
+                        "country": "The Rockefeller"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Xinyun",
+                "middle": [],
+                "last": "Cao",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Wisconsin-Madison",
+                    "location": {
+                        "postCode": "15, 53706",
+                        "settlement": "Madison",
+                        "region": "WI",
+                        "country": "USA. 16"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Carolina",
+                "middle": [],
+                "last": "Hernandez",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "The National Resource for Automated Molecular Microscopy, Simons Electron",
+                    "institution": "",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Edward",
+                "middle": [
+                    "T"
+                ],
+                "last": "Eng",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "The National Resource for Automated Molecular Microscopy, Simons Electron",
+                    "institution": "",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Brian",
+                "middle": [
+                    "T"
+                ],
+                "last": "Chait",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Mass Spectrometry and Gaseous Ion Chemistry",
+                    "institution": "",
+                    "location": {
+                        "country": "The Rockefeller"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "David",
+                "middle": [
+                    "E"
+                ],
+                "last": "Shaw",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Columbia University",
+                    "location": {
+                        "addrLine": "20",
+                        "postCode": "10032",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA. 21"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Robert",
+                "middle": [],
+                "last": "Landick",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Wisconsin-Madison",
+                    "location": {
+                        "postCode": "15, 53706",
+                        "settlement": "Madison",
+                        "region": "WI",
+                        "country": "USA. 16"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Seth",
+                "middle": [
+                    "A"
+                ],
+                "last": "Darst",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Molecular Biophysics",
+                    "institution": "The Rockefeller University",
+                    "location": {
+                        "postCode": "10 10065",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Elizabeth",
+                "middle": [
+                    "A"
+                ],
+                "last": "Campbell",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Laboratory of Molecular Biophysics",
+                    "institution": "The Rockefeller University",
+                    "location": {
+                        "postCode": "10 10065",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": "campbee@rockefeller.edu"
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "of the BTC, the particles from both classes were combined and locally refined 159 inside a mask applied around the holo-RdRp and RNA (excluding the nsp13 160 subunits), leading to the BTC5(local) combined map (3.2 \u00c5; Fig. 1C ; SI Appendix, 161 Fig. S2 and S3, Table S1 ). 162",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 217,
+                    "end": 224,
+                    "text": "Fig. 1C",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 244,
+                    "end": 251,
+                    "text": "Fig. S2",
+                    "ref_id": "FIGREF14"
+                },
+                {
+                    "start": 260,
+                    "end": 268,
+                    "text": "Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "The cryo-EM maps ( Fig. 1C and 2) revealed two significant differences with 163 the nsp13-RTC structures (14): 1) The single-stranded downstream template-164 RNA (t-RNA) engaged with nsp13.1 was resolved ( Fig. 2A) , and 2) a single-165 In the nsp13-RTCs, the RTC-scaffold (Fig. 1A) is bound in a post-200 translocated state (14); the 3' p-RNA A is base-paired to the t-RNA U at the -1 201 site near the catalytic nsp12-D760 (Fig. 5A) . The next t-RNA base (A at +1) is 202 positioned to receive the incoming nucleoside-triphosphate (NTP) substrate, but 203 . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 19,
+                    "end": 26,
+                    "text": "Fig. 1C",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 206,
+                    "end": 214,
+                    "text": "Fig. 2A)",
+                    "ref_id": "FIGREF14"
+                },
+                {
+                    "start": 273,
+                    "end": 282,
+                    "text": "(Fig. 1A)",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 425,
+                    "end": 434,
+                    "text": "(Fig. 5A)",
+                    "ref_id": "FIGREF16"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint the site for the incoming NTP substrate is empty (Fig. 5A ). By contrast, the BTC 204 structures were translocated by one base pair compared to the RTCs; the base 205 pair corresponding to the A-U Watson-Crick base pair at the 3'-end of the p-RNA 206 (located in the -1 site of the RTCs) was in the -2 position of the BTCs (Fig. 1A, 4,  207 and 5B). The -1 position of the BTC was occupied by the first C-A mismatch; the 208 p-RNA -1C made a non-Watson-Crick hydrogen bond with the opposing t-RNA A 209 ( Fig. 4 and 5B) . The next three mismatched p-RNA nucleotides (+1C, +2C, +3C) 210 trailed into the NTP entry tunnel ( Fig. 4 and 5B) . The 3'-nucleotide of the BTC5-211 scaffold p-RNA (+4C; Fig. 1A ) was solvent-exposed at the outward-facing end of 212 the NTP-entry tunnel, lacked density and was therefore not modelled (Fig. 2B) . 213",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 190,
+                    "end": 198,
+                    "text": "(Fig. 5A",
+                    "ref_id": "FIGREF16"
+                },
+                {
+                    "start": 464,
+                    "end": 481,
+                    "text": "(Fig. 1A, 4,  207",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 646,
+                    "end": 660,
+                    "text": "Fig. 4 and 5B)",
+                    "ref_id": "FIGREF16"
+                },
+                {
+                    "start": 763,
+                    "end": 777,
+                    "text": "Fig. 4 and 5B)",
+                    "ref_id": "FIGREF16"
+                },
+                {
+                    "start": 835,
+                    "end": 842,
+                    "text": "Fig. 1A",
+                    "ref_id": "FIGREF13"
+                },
+                {
+                    "start": 966,
+                    "end": 975,
+                    "text": "(Fig. 2B)",
+                    "ref_id": "FIGREF14"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "The trajectory of the backtracked nucleotides at positions +1/+2 was sharply bent 214 due to spatial constraints of motif F residues (Fig. 4A) . 215 216 Nsp13 stimulates backtracking. The SARS-CoV-2 wild-type holo-RdRp 217 required the nsp13 helicase to bind the BTC-scaffolds efficiently (Fig. 1B) . 218",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 133,
+                    "end": 142,
+                    "text": "(Fig. 4A)",
+                    "ref_id": null
+                },
+                {
+                    "start": 289,
+                    "end": 298,
+                    "text": "(Fig. 1B)",
+                    "ref_id": "FIGREF13"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "However, we observed that the holo-RdRp containing nsp12 with a single amino 219 acid substitution (D760A) did not require nsp13 to bind the BTC-scaffolds (SI (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint BTC structures suggest that in the absence of a Mg 2+ ion, D760 presents an 227 electrostatic barrier to the phosphate backbone of the backtracked RNA (Fig.  228 5B), explaining the requirement for the helicase to surmount this barrier and why 229 removal of D760 stabilizes binding to the BTC-scaffolds. 230",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 292,
+                    "end": 302,
+                    "text": "(Fig.  228",
+                    "ref_id": "FIGREF14"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "To generate the SARS-CoV-2 BTCs for structural studies, we used the 231 BTC5-scaffold with five mismatched C's at the p-RNA 3'-end (Fig. 1A) . To study 232 the formation of SARS-CoV-2 BTCs from an RTC-scaffold (fully Watson-Crick 233 base paired p-RNA 3'-end), we analyzed UV-induced crosslinking from 4-thio-U 234 RNA crosslinking under all conditions, with the maximal crosslinking occurring 249 . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made RdRps suggest that misincorporation slows the overall elongation rate and may 258 induce backtracking (41-43). We used molecular dynamics simulations to 259 explore the fate of a mismatched nucleotide incorporated at the p-RNA 3'-end. 260",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 131,
+                    "end": 140,
+                    "text": "(Fig. 1A)",
+                    "ref_id": "FIGREF13"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "Starting with the nsp132-BTC5 structure, the -1C was mutated to U, and the +2 to 261 CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Our results establish that the SARS-CoV-2 RTC backtracks, that backtracking is 274 facilitated by the nsp13 helicase, and that the resulting single-stranded 3'-275 segment of the p-RNA extrudes out the RdRp NTP-entry tunnel in a manner 276 analogous to the evolutionarily unrelated cellular DdRps (Fig. 3) . Thus, a 277 secondary tunnel to accommodate backtracked RNA, facilitating fidelity and 278 possibly other functions (Fig. 6) , appears to be a crucial feature of transcriptase 279 enzymes that evolved independently. 280",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 297,
+                    "end": 305,
+                    "text": "(Fig. 3)",
+                    "ref_id": null
+                },
+                {
+                    "start": 424,
+                    "end": 432,
+                    "text": "(Fig. 6)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion 273"
+        },
+        {
+            "text": "Backtracking of \uf0466 and poliovirus RdRps has been reported based on 281 analysis of single-molecule observations (41-43). The nsp13 helicase facilitates 282 efficient backtracking of the SARS-CoV-2 RTC (SI Appendix; Fig. S5 ). We note 283 that in bacteria, the UvrD helicase has been shown to induce DdRp backtracking, 284",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 215,
+                    "end": 222,
+                    "text": "Fig. S5",
+                    "ref_id": "FIGREF16"
+                }
+            ],
+            "section": "Discussion 273"
+        },
+        {
+            "text": "suggesting that a role for helicases in backtracking may be widespread (44). 285",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion 273"
+        },
+        {
+            "text": "Our results are consistent with the view that a matched nucleotide at the pre-286 nucleotide at the p-RNA 3'-end spends more than half the time frayed from the t-293",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion 273"
+        },
+        {
+            "text": "RNA and towards or in the NTP-entry tunnel (Fig. 5C ), a configuration that is 294 likely recalcitrant to translocation and subsequent elongation. The favorable 295 . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 43,
+                    "end": 51,
+                    "text": "(Fig. 5C",
+                    "ref_id": "FIGREF16"
+                }
+            ],
+            "section": "Discussion 273"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint environment of the NTP-entry tunnel ( Fig. 3 and 4 ) may further encourage 296 backtracking. The resulting inhibition of translocation may enable the tight 297 engagement of the nsp13.1 helicase with the downstream single-stranded t-RNA 298 ( Fig. 2A) , allowing the 5'->3' translocation activity of the helicase to more robustly 299 backtrack the complex (SI Appendix; Fig. S5 ). (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 179,
+                    "end": 191,
+                    "text": "Fig. 3 and 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 384,
+                    "end": 392,
+                    "text": "Fig. 2A)",
+                    "ref_id": "FIGREF14"
+                },
+                {
+                    "start": 511,
+                    "end": 518,
+                    "text": "Fig. S5",
+                    "ref_id": "FIGREF16"
+                }
+            ],
+            "section": "Discussion 273"
+        },
+        {
+            "text": "Detailed descriptions of SARS-CoV-2 nsp12, 7, 8, and 13 protein purification, 332 assembly of the RTC complexes, Native EMSAs, native mass-spectrometry, 333 cross-linking, specimen preparation for cryo-EM, cryo-EM data acquisition and 334 processing, model building and refinement, and molecular dynamics simulations 335 are provided in the SI Appendix. . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and Methods 331"
+        },
+        {
+            "text": "America 111, E3900-9 (2014). Helicase. Plos One 7, e36521 (2012). 390 . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made (Table S1 ). The models and density are colored according to the key. 494 495 . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 480,
+                    "end": 489,
+                    "text": "(Table S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made (1). The models were manually fit into the cryo-EM density maps using Chimera 771 (12) and rigid-body and real-space refined using Phenix real_space_refine (13). 772",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        },
+        {
+            "text": "For real-space refinement, rigid body refinement was followed by all-atom and B-773 factor refinement with Ramachandran and secondary structure restraints. Models 774 were inspected and modified in Coot (14). . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made residues discussed in the text are highlighted (red outlines). Sequence logos(28) for 927 motif F and motif E are shown, with residues that interact with the backtracked RNA 928 highlighted (colored dots above; see Figure 4 ). The sequence logos were generated 929 from an alignment of 97 RdRp sequences from \uf061-, \uf062-, \uf067-, and \uf064-CoVs (Data S1). (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 923,
+                    "end": 931,
+                    "text": "Figure 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint A. Protein-RNA crosslinking analysis: The 5'-[ 32 P]-labelled RTC(4-thio-U)-scaffold and 939 the indicated proteins were incubated along with 2 mM ATP (present in every lane), 940 exposed to UV as indicated, then analyzed by SDS polyacrylamide gel electrophoresis 941 and autoradiography. The positions of nsp8, nsp12, and nsp13 bands are indicated. 942",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        },
+        {
+            "text": "Lanes 1 and 5, containing nsp13 only, are identical controls indicating uniform UV 943 exposure across the samples. Holo-RdRp(*) denotes the nsp12-D760A substitution that 944",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        },
+        {
+            "text": "facilitates backtracking (see Figure S1A ). The two panels show the same SDS . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made . CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 30,
+                    "end": 40,
+                    "text": "Figure S1A",
+                    "ref_id": "FIGREF13"
+                }
+            ],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Proceedings of the National Academy of Sciences of the United States of 360"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Data File S1. Sequence alignment (Clustal format) of \uf061-and \uf062-CoV nsp12 sequences",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Structural basis for helicase-polymerase coupling in the SARS-CoV-2 996 replication-transcription complex",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "182",
+            "issn": "",
+            "pages": "1560--1573",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "High-Throughput Deconvolution of Native Mass Spectra",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Reid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Am Soc 1000 Mass Spectrom",
+            "volume": "30",
+            "issn": "",
+            "pages": "118--127",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Bayesian deconvolution of mass and ion mobility spectra: from 1002 binary interactions to polydisperse ensembles",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Marty",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Analytical chemistry",
+            "volume": "87",
+            "issn": "",
+            "pages": "4370--4376",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Collaboration gets the most out of software",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Morin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Automated molecular microscopy: the new Leginon system",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Suloway",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Journal of structural biology",
+            "volume": "151",
+            "issn": "",
+            "pages": "41--60",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "MotionCor2: anisotropic correction of beam-induced motion for 1008 improved cryo-electron microscopy",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nature methods",
+            "volume": "14",
+            "issn": "",
+            "pages": "331--332",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "cryoSPARC: algorithms for 1010 rapid unsupervised cryo-EM structure determination",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Punjani",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Rubinstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Fleet",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Brubaker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nat Methods",
+            "volume": "14",
+            "issn": "",
+            "pages": "290--296",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "RELION: implementation of a Bayesian approach to cryo-EM 1012 structure determination",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H W"
+                    ],
+                    "last": "Scheres",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of structural biology",
+            "volume": "180",
+            "issn": "",
+            "pages": "519--530",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 14",
+            "authors": [
+                {
+                    "first": "Cc-By-Nc-Nd ; J",
+                    "middle": [],
+                    "last": "Zivanov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2021.03.13.435256"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "One number does not fit all: mapping 1016 local variations in resolution in cryo-EM reconstructions",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cardone",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Heymann",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Steven",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of structural biology",
+            "volume": "184",
+            "issn": "",
+            "pages": "226--236",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "UCSF Chimera--a visualization system for exploratory 1019 research and analysis",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Pettersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of computational chemistry",
+            "volume": "25",
+            "issn": "",
+            "pages": "1605--1612",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "PHENIX: a comprehensive Python-based system for 1021 macromolecular structure solution",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Adams",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Acta Crystallographica Section D Biological 1022 Crystallography",
+            "volume": "66",
+            "issn": "",
+            "pages": "213--221",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Coot: model-building tools for molecular graphics",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Emsley",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Cowtan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Crystallographica Section D Biological Crystallography",
+            "volume": "60",
+            "issn": "",
+            "pages": "2126--2132",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Development of a Force Field 1026 for the Simulation of Single-Chain Proteins and Protein-Protein Complexes",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Piana",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Robustelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Shaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Chem 1027 Theory Comput",
+            "volume": "16",
+            "issn": "",
+            "pages": "2494--2507",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Improving the Accuracy of Protein Side Chain and 1029 Backbone Parameters from ff99SB",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Maier",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J Chem Theory Comput",
+            "volume": "14",
+            "issn": "",
+            "pages": "3696--3713",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "RNA force field with accuracy 1031 comparable to state-of-the-art protein force fields",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Piana",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Dirks",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Shaw",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proc National Acad Sci",
+            "volume": "115",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Water Dispersion Interactions 1034 Strongly Influence Simulated Structural Properties of Disordered Protein States",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Piana",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Donchev",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Robustelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Shaw",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J Phys",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Scalable Algorithms for Molecular Dynamics Simulations on 1037 Commodity Clusters",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bowers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Conf Sc'06",
+            "volume": "",
+            "issn": "",
+            "pages": "43--43",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Anton 2: Raising the Bar for Performance and Programmability in 1039 a Special-Purpose Molecular Dynamics Supercomputer",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Shaw",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Sc14 Int Conf High Perform 1040",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Constant pressure molecular dynamics 1042 algorithms",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Martyna",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tobias",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Klein",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "J Chem Phys",
+            "volume": "101",
+            "issn": "",
+            "pages": "4177--4189",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Computationally efficient molecular dynamics integrators with 1044 improved sampling accuracy",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Predescu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Mol Phys",
+            "volume": "110",
+            "issn": "",
+            "pages": "967--983",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Reversible multiple time scale molecular 1046 dynamics",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tuckerman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Berne",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Martyna",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "J Chem Phys",
+            "volume": "97",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "The u -series: A separable decomposition for electrostatics 1048 computation with improved accuracy",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Predescu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Chem Phys",
+            "volume": "152",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Addressing preferred specimen orientation in single-particle cryo-1050 EM through tilting",
+            "authors": [
+                {
+                    "first": ".",
+                    "middle": [
+                        "Y Z"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nature methods",
+            "volume": "14",
+            "issn": "",
+            "pages": "793--796",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "MolProbity: all-atom structure validation for macromolecular 1052 crystallography",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Acta Crystallographica Section D Biological Crystallography",
+            "volume": "66",
+            "issn": "",
+            "pages": "12--21",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Common and unique features of viral RNA-dependent 1055 polymerases",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "J W"
+                    ],
+                    "last": "Velthuis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Cell Mol Life Sci Cmls",
+            "volume": "71",
+            "issn": "",
+            "pages": "4403--4423",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Sequence logos: a new way to display consensus 1057 sequences",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Stephens",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Nucleic Acids Research",
+            "volume": "18",
+            "issn": "",
+            "pages": "6097--6100",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Structural Basis of Transcription: RNA Polymerase 1059 Backtracking and Its Reactivation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Abdelkareem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Mol Cell",
+            "volume": "75",
+            "issn": "",
+            "pages": "298--309",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Structural basis of transcription: backtracked RNA polymerase II at 1061 3.4 angstrom resolution",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Science",
+            "volume": "324",
+            "issn": "",
+            "pages": "1203--1206",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Improvements to the APBS biomolecular solvation software suite",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Jurrus",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "stranded p-RNA 3'-segment was extruded into the RdRp NTP-entry tunnel (Fig. 166 2B). 167 168 Nsp13 binds the downstream single-stranded t-RNA. In the nsp131-BTC5 and 169 nsp132-BTC5 cryo-EM maps, the single-stranded 5'-segment of the t-RNA was 170 engaged with nsp13.1. This region of the cryo-EM density was well-resolved (Fig. 171 2A), allowing identification of the t-RNA segment engaged within the helicase as 172 +14 to +8 (numbering defined in Figure 1A), 5' CCCAUGU 3' . The five-nucleotide 173 segment connecting the t-RNA between the helicase and the RdRp (+7 to +3) 174 was disordered and not modeled. 175 176 The SARS-CoV-2 RdRp NTP-entry tunnel accommodates the backtracked 177 BTC is analogous to DdRp BTCs [Fig. 3; (14)]. The DdRp bridge helix [BH; (35)] 181 separates the DdRp active site cleft into a channel for the downstream template 182 DNA (over the top of the BH; Fig. 3B) and the NTP-entry tunnel (underneath the 183 BH; Fig. 3B). Similarly, the viral RdRp motif F [SI Appendix, Fig. S4A; (32)] 184serves as the strand separating structural element for the backtracked RNA(Fig. 185",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "3A). The downstream t-RNA passes over the top of motif F, while the 186 backtracked RNA extrudes out the NTP-entry tunnel underneath motif F (Fig. 187 3A). 188 The RdRp NTP-entry tunnel provides a steric and electrostatic environment 189 conducive to channeling the backtracked RNA out of the active site without 190 specific polar protein-RNA interactions that could hinder the RNA movement (Fig. 191 3C and 4). Comparing the electrostatic surface potential of the NTP-entry tunnels 192 of the SARS-CoV-2 RdRp with eukaryotic and bacterial DdRps reveals a similar 193 overall electrostatic surface environment that may facilitate backtracked RNA 194 entry (Fig. 3C; SI Appendix, Fig. S4B), including a 'track' of conserved positively-195 charged Arg and Lys residues of motif F (SARS-CoV-2 nsp12 K545, K551, R553, 196 and R555; Fig. 4; SI Appendix, Fig. S4A). Conserved residues of RdRp motifs C 197 and E complete the active-site/NTP-entry tunnel environment surrounding the 198 backtracked RNA (Fig. 4; SI Appendix, Fig. S4A). 199",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "220 Appendix; Fig. S1A, lane 4). Nsp12-D760 is a conserved residue of the RdRp 221 motif C that chelates a crucial Mg 2+ ion in catalytic complexes [SI Appendix; Fig. 222 S4A; (32)], but in RdRp structures lacking substrate (including the BTC 223 structures), the Mg 2+ ions are absent (14, 36, 37). The catalytic Asp residues of 224 the DdRps typically chelate the Mg 2+ ion even in the absence of substrate (31, 225 38), and this Mg 2+ is retained in DdRp backtracked structures (27-30). Our RdRp 226",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "incorporated penultimate to the p-RNA 3'-end [RTC(4-thio-U)-scaffold; Si 235 Appendix, Fig. S5A; (39)]. Crosslinking was absolutely dependent on the 236 presence of 4-thio-U in the RNA, establishing specificity (SI Appendix; Fig. S5B). 237 RTCs assembled with wild-type nsp12 and the RTC(4-thio-U)-scaffold gave little 238 to no protein-RNA crosslinking upon UV exposure (SI Appendix; Fig. S5A, lane 239 2). These conditions favor a post-translocated RTC (14, 36, 37) with the 4-thio-U 240 sequestered in the RNA-RNA hybrid and thus not available for protein-RNA 241 crosslinking. Crosslinking of the p-RNA to nsp12 was substantially increased by 242 the addition of nsp13 (with 2 mM ATP, which is present in all the lanes; 243 SI Appendix; Fig. S5A, lane 3). Under these conditions, we propose that the 244 translocation activity of nsp13 backtracked a fraction of the complexes, freeing 245the 4-thio-U from the RNA-RNA hybrid for crosslinking to nsp12. Replacing wild-246 type nsp12 with nsp12-D760A (nsp12*; SI Appendix,Fig. S5A, lanes 6-8), which 247 is more prone to backtracking (SI Appendix;Fig. S1A), increased the protein-248",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "+4 C's were removed. The resulting pre-translocated p-RNA had a matched -1U 262 and a mismatched +1C (-1U+1C; Fig. 5C). In three 5 \uf06ds simulations we observed 263 the 3'-mismatched +1C alternating between two positions, either remaining in the 264 vicinity of the active site (RMSD < 3.5 \u00c5) or fraying away from the p-RNA:t-RNA 265 hybrid towards or into the NTP-entry tunnel (RMSD > 3.5 \u00c5; Fig. 5C). Based on 266 analysis of the aggregated -1U+1C simulations, the mismatched +1C spent 267 about 40% of the time near the active site and about 60% of the time frayed 268 towards or in the NTP-entry tunnel. In control simulations with a fully matched p-269 RNA 3'-end (-1U+1U), the matched +1U at the p-RNA 3'-end did not fray and 270 spent 100% of the time in the active site pocket (SI Appendix; Fig. S6). 271 272 .",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "translocated p-RNA 3'-end remains base paired to the t-RNA (Fig. 5; SI 287 Appendix, Fig. S6), facilitating translocation and subsequent NTP addition and 288 thus rapid elongation (at a maximum elongation rate of ~170 nt/s, a translocation 289 event would occur approximately every 6 msec, on average, explaining why 290 translocation was not observed in our 5 \uf06ds simulations; Fig. 5; SI Appendix, Fig. 291",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "S6). However, upon misincorporation, the pre-translocated, mismatched 292",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "300 Our findings have implications for the processes of subgenomic transcription 301 and proofreading in SARS-CoV-2 [Fig. 6; (14)]. Generation of mRNAs for the 302 viral structural proteins begins with transcription initiation at the 3'-poly(A) tail of 303 the (+)-strand RNA genome. The process, called sub-genomic transcription, 304 ultimately generates a nested set of transcripts that are both 5'-and 3'-co-305 terminal with the viral genome and involves a remarkable template-switch from 306 the 3'-portion of the genome to the 5'-leader (7, 34). The template-switching 307 event is thought to involve base-pairing between the 3'-end of the nascent 308 transcript and a complementary sequence (the Transcription Regulatory 309 Sequence, or TRS) near the (+)-strand 5'-leader (45). Backtracking could extrude 310 the 3'-end of the nascent transcript out the NTP-entry tunnel, making it available 311 for base pairing to the 5'-TRS (Fig. 6). Our results establishing that the SARS-312 CoV-2 RTC can backtrack validates a key prediction of this model for the 313 mechanism of template-switching during sub-genomic transcription (14). 314 Nucleotide analogs that function by being incorporated into product RNA by 315 viral RdRps are important antiviral therapeutics (46). Notably, their incorporation 316 may induce backtracking by the RdRp (43). Rdv, a nucleotide analog, is the only 317 FDA-approved drug for COVID-19 treatment (5). Our results support a model in 318 misincorporation or incorporation of nucleotide analogs can pause 319the RdRp, allowing nsp13 to engage with the downstream single-stranded t-RNA 320 to induce backtracking (14). The resulting exposure of the p-RNA 3'-end out the 321 NTP-entry tunnel(Fig. 3A and 6) could provide access for the SARS-CoV-2 322 proofreading machinery [nsp10/14; (9, 12)] to degrade the p-RNA 3'-end, thus 323 removing the misincorporation or analog. This proofreading activity, which is 324 unique to the nidovirus order to which CoVs belong (10), is a major determinant 325 for the resistance of CoVs against many nucleotide analog inhibitors (13). Thus, 326understanding RdRp backtracking and its potential role in CoV proofreading can 327 facilitate the development of therapeutics.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "thank M. Ebrahim, J. Sotiris, and H. Ng at The Rockefeller University Evelyn 339 Gruss Lipper Cryo-electron Microscopy Resource Center for help with cryo-EM. 340 Some of the work reported here was conducted at the Simons Electron 341 Microscopy Center (SEMC) and the National Resource for Automated Molecular 342 Microscopy (NRAMM) and National Center for CryoEM Access and Training 343 (NCCAT) located at the NYSBC, supported by grants from the NIH National 344 Institute of General Medical Sciences (P41 GM103310), NYSTAR, the Simons 345 Foundation (SF349247), the NIH Common Fund Transformative High Resolution 346 Cryo-Electron Microscopy program (U24 GM129539) and NY State Assembly 347 Majority. This work was supported by the Pels Family Center for Biochemistry 348 and Structural Biology (The Rockefeller University), and NIH grants P41 349 GM109824 and P41 GM103314 to B.T.C, R35 GM118130 to S.A.D, and 350 R01 GM114450 to E.A.C. 351 352 References 353 1. F. Wu, et al., A new coronavirus associated with human respiratory disease in 354China. Nature 579, 265-269 (2020).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "355 2. P. Zhou, et al., A pneumonia outbreak associated with a new coronavirus of 356 probable bat origin. Nature 579, 270-273 (2020).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "357 3. L. Subissi, et al., One severe acute respiratory syndrome coronavirus protein 358 complex integrates processive RNA polymerase and exonuclease activities.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "361 4. R. N. Kirchdoerfer, A. B. Ward, Structure of the SARS-CoV nsp12 polymerase 362 bound to nsp7 and nsp8 co-factors. Nature Communications 10, 2342-9 (2019). 363 5. U. S. F. and D. Administration, Remdesivir-EUA-Letter-Of-Authorization.pdf. 364 undefined (2020). 365 6. E. J. Snijder, E. Decroly, J. Ziebuhr, The Nonstructural Proteins Directing 366 Coronavirus RNA Synthesis and Processing. Adv Virus Res 96, 59-126 (2016). 367 7. I. Sola, F. Almaz\u00e1n, S. Z\u00fa\u00f1iga, L. Enjuanes, Continuous and Discontinuous 368 RNA Synthesis in Coronaviruses. Ann Rev Virol 2, 265-288 (2015). 369 8. K. C. Lehmann, E. J. Snijder, C. C. Posthuma, A. E. Gorbalenya, What we 370 know but do not understand about nidovirus helicases. Virus Res 202, 12-32 371 (2015). 372 9. E. Minskaia, et al., Discovery of an RNA virus 3'->5' exoribonuclease that is 373 critically involved in coronavirus RNA synthesis. Proc National Acad Sci 103, 374 5108-5113 (2006). 375 10. A. E. Gorbalenya, L. Enjuanes, J. Ziebuhr, E. J. Snijder, Nidovirales: Evolving 376 the largest RNA virus genome. Virus Res 117, 17-37 (2006). 377 11. R. Zhang, et al., The nsp1, nsp13, and M proteins contribute to the 378 hepatotropism of murine coronavirus JHM.WU. J Virol 89, 3598-609 (2015). 379 12. M. R. Denison, R. L. Graham, E. F. Donaldson, L. D. Eckerle, R. S. Baric, 380 Coronaviruses: An RNA proofreading machine regulates replication fidelity and 381 diversity. Rna Biol 8, 270-279 (2011). 382 13. E. C. Smith, H. Blanc, M. C. Surdel, M. Vignuzzi, M. R. Denison, 383 Coronaviruses lacking exoribonuclease activity are susceptible to lethal 384 mutagenesis: evidence for proofreading and potential therapeutics. Plos Pathog 385 9, e1003565 (2013). 386 14. J. Chen, et al., Structural basis for helicase-polymerase coupling in the 387 SARS-CoV-2 replication-transcription complex. Cell 182, 1560-1573.e13 (2020). 388 15. A. O. Adedeji, et al., Mechanism of Nucleic Acid Unwinding by SARS-CoV 389",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "SARS-CoV-2 backtrack complex. 487 A. RNA scaffolds: (top) replication-transcription complex (RTC) scaffold (14); 488 (bottom) backtrack complex scaffolds (BTC3 and BTC5). 489 B. A native gel electrophoretic mobility shift assay reveals that holo-RdRp 490 requires nsp13(ADP-AlF3) to bind the BTC scaffolds efficiently. 491 C. Cryo-EM structures of SARS-CoV-2 BTCs. Shown is the transparent cryo-EM 492 density [local-resolution filtered; (47)] with the refined models superimposed 493",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "Cryo-EM density maps. 497 A. (left) Overall view of nsp131-BTC5. The boxed region is magnified on the right. 498 (right) Magnified view of the t-RNA segment (+14-5'-CCCAUGU-3'-+8) enclosed 499 in the nsp13.1 helicase subunit. The cryo-EM density map (from the nsp132-BTC 500 structure) for the RNA is shown (blue mesh). 501 B. (left) Overall view of the BTC structure. The boxed region is magnified on the 502 right. 503 (right) Magnified view of the region around the RdRp active site, showing the t-504 RNA (cyan) and p-RNA (red) with the backtracked RNA segment. The cryo-EM 505 density map for the RNA [from BTC5(local)] is shown (blue mesh). 506 C. BTC5(local) cryo-EM density maps around nsp12 conserved motifs F, C, and 507 E. Selected residues are labeled.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "SARS-CoV-2 RdRp and DdRp BTCs. 513 A, B. SARS-CoV-2 RdRp (A) and DdRp (B) BTCs. 514 (top) Proteins are shown as transparent molecular surfaces, nucleic acids as 515 atomic spheres. The boxed regions are magnified on the bottom. 516 (bottom) Magnified, cross-sectional view. Proteins are shown as molecular 517 surfaces, nucleic acids in stick format with transparent molecular surface. 518 A. The SARS-CoV-2 BTC5(local). Nsp8a and nsp12 are shown (nsp7 and nsp8b 519 are removed for clarity). Nsp12 motif F is shown as a magenta backbone ribbon 520 (top). Backtracked RNA (+1C to +3C of the BTC5-scaffold; Figure 1A) extrude out 521 the NTP-entry tunnel. 522 B. A DdRp (Saccharomyces cerevisiae Pol II) BTC [PDB ID: 3PO2; (29)]. The 523 bridge helix is shown as a magenta backbone ribbon. The backtracked RNA 524 extrudes out the NTP-entry tunnel/secondary channel/funnel. 525 C. Views from the outside into the NTP-entry tunnels of the SARS-CoV-2 (left) 526 and an S. cerevisiae DdRp [PDB ID: 3GTP; (27) BTC. Protein surfaces are 527 colored by the electrostatic surface potential [calculated using APBS; (48)]. 528 Backtracked RNA is shown as atomic spheres with yellow carbon atoms. Protein-RNA interactions in the BTC. 533 A. (top) Overall view of BTC5(local). Proteins are shown as transparent molecular 534 surfaces, nucleic acids as atomic spheres. Nsp8a and nsp12 are shown (nsp7 535 and nsp8b are removed for clarity). Nsp12 motifs C, E, and F are shown as 536 backbone ribbons (colored according to the key on the bottom. The boxed region 537 is magnified below. 538 (bottom) RNA is shown from -2 to +3. Proteins are shown as transparent 539 molecular surfaces. RdRp motifs C, E, and F are shown as transparent backbone 540 ribbons (colored according to the key) with side chains of residues that approach 541 the backtracked RNA (\u2264 4.5 \u00c5) shown. 542 B. Schematic illustrating the same protein-RNA interactions as (A). Drawn using 543 Nucplot (49).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": "Comparison of active-site proximal RNA in the RTC and BTC 546 structures, and from simulations of a mismatched nucleotide at the p-RNA 547 3'-end. 548 A-B, Comparison of the active-site proximal RNA in the RTC [A; PDB ID: 6XEZ; 549 (14)], BTC5(local) (B), and from selected snapshots of molecular dynamics 550 simulations of a -1U+1C complex (C). The schematics denote the nucleotides 551 shown in the context of the RTC-(A) and BTC5-scaffolds (B; full scaffold 552 sequences shown in Figure 1A) or generated from the BTC5-scaffold for the 553 simulations (C). Carbon atoms of the t-RNA are colored cyan, p-RNA are colored 554 salmon except in the case of mismatched C's at the 3'-end, which are colored 555 dark red. Watson-Crick base pairing hydrogen-bonds are denoted as dark gray 556 dashed lines, other hydrogen-bonds as red dashed lines. Nsp12 motif C is shown 557 as a yellow-orange backbone ribbon, and the side-chain of D760 is shown as 558 atomic spheres. 559 A. The RTC is in a post-translocated state, with the A-U base pair at the p-RNA 560 3'-end in the -1 position (14). 561 B. The BTC5(local) RNA is translocated compared to the RTC; the base pair 562 corresponding to A-U at the 3'-end of the RTC RNA in the -1 position is in the -2 563 position of the BTC RNA. A C-A mismatch occupies the BTC -1 site. The +1, +2 564 and +3 mismatched C's trail into the RdRp NTP-entry tunnel (denoted by black 565 squiggly lines). The +4C (present in the BTC5-scaffold; Figure 1A) is exposed to 566 solvent, disordered and not modelled. Molecular dynamics simulations of the nsp132-BTC\u22121U+1C complex. The 568 complex was simulated with 3 replicates. RMSD values plotted as a function of 569 time represent the heavy-atom RMSD of the +1C of the p-RNA compared with 570 the starting configuration (see Methods). The RMSD histograms (plotted on the 571 right) are an aggregate of all three replicates. Two structures taken from one of 572 the simulations are shown, one showing the +1C of the p-RNA in the active site 573 (t = 0 \u03bcs) and the other showing the +1C frayed into the NTP-",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "Role of backtracking in proofreading and template-switching during 579 sub-genomic transcription. 580 Schematic illustrating the proposed model for backtracking of the SARS-CoV-2 581 RTC and its potential role in proofreading and template-switching during sub-582 genomic transcription. The structural models are shown as cartoons (holo-RdRp, 583 light blue; nsp13 helicase, orange shades; RNA strands, colored tubes as 584 indicated). 585 (top) In the RTC, the elongating RdRp moves from left-to-right. The RdRp active 586 site holds the p-RNA 3'-end. The NTP-entry tunnel provides access from solution 587 to the RdRp active site. The downstream (5') single-stranded t-RNA is not 588 engaged with nsp13. 589 (bottom) In the BTC, nsp13 translocates on the downstream (5') single-stranded 590 t-RNA, pushing the RdRp backwards (right-to-left) on the RNA. This causes the 591 p-RNA to reverse-thread through the complex, with the resulting single-stranded 5923'-fragment extruding out the NTP-entry tunnel. The exposure of the p-RNA 3'-593 end could facilitate proofreading (9, 10, 12, 50) and also template-switching 594 during sub-genomic transcription (biology software was accessed through the SBGrid consortium (1). Addgene plasmid 159107) was transformed into Escherichia coli (Eco) 604 BL21-CodonPlus cells (Agilent). Cells were grown, followed by the addition of 605 isopropyl \u03b2-d-1-thiogalactopyranoside (IPTG) to induce protein expression 606 overnight. Cells were collected by centrifugation, resuspended and lysed in a 607 continuous-flow French press (Avestin). The lysate was cleared by centrifugation, 608loaded onto a HiTrap Heparin HP column (Cytiva), and then eluted using a salt 609 gradient. The fractions containing nsp12 were pooled and loaded onto a HisTrap 610 HP column (Cytiva), washed, and eluted. Eluted nsp12 was dialyzed overnight in 611 the presence of His6-Ulp1 SUMO protease. Cleaved nsp12 was passed through 612 a HisTrap HP column (Cytiva). Flow-through was collected, concentrated by 613 centrifugal filtration (Amicon), and loaded on a Superdex 200 Hiload 16/600 614 (Cytiva) for size-exclusion chromatography. Glycerol was added to the purified 615 nsp12, aliquoted, flash frozen with liquid N2, and stored at -80\u00b0C. 616 SARS-CoV-2 nsp7/8. SARS-CoV-2 nsp7/8 was expressed and purified as 617 described (1). The pCDFDuet-1 plasmid expressing SARS-CoV-2 His6-ppx-618 nsp7/8 (ppx is a Prescission Protease cleavage site; Addgene plasmid 159092) 619 was transformed into Eco BL21(DE3). Cells were grown and protein expression 620 was induced overnight by the addition of IPTG. Cells were collected by 621 centrifugation, resuspended, and lysed in a continuous-flow French press 622 (Avestin). The lysate was cleared by centrifugation, then loaded onto a HisTrap 623 HP column (Cytiva), washed, and eluted. Eluted nsp7/8 was dialyzed overnight in 624 the presence of His6-Prescission Protease to cleave the His6-tag. Cleaved nsp7/8 625 was passed through a HisTrap HP column (Cytiva). Flow-through was collected, 626 concentrated by centrifugal filtration (Amicon), and loaded onto a Superdex 75 627 Hiload 16/600 (Cytiva). Glycerol was added to the purified nsp7/8, aliquoted, 628 flash frozen with liquid N2, and stored at -80\u00b0C. Addgene plasmid 159390) was transformed into Eco Rosetta(DE3) (Novagen). 632 Cells were grown, followed by the addition of IPTG to induce protein expression 633 overnight. Cells were collected by centrifugation, resuspended, and lysed in a 634 continuous-flow French press (Avestin). The lysate was cleared by centrifugation, 635 then loaded onto a HisTrap HP column (Cytiva), washed, and eluted. Eluted 636 nsp13 was dialyzed overnight in the presence of His6-Prescission Protease to 637 cleave His6-tag. Cleaved nsp13 was passed through a HisTrap HP column 638 (Cytiva). Flow-through was collected, concentrated by centrifugal filtration 639 (Amicon), and loaded onto a Superdex 200 Hiload 16/600 (Cytiva). Glycerol was 640 added to the purified nsp13, aliquoted, flash frozen with liquid N2, and stored at -641 80\u00b0C. 642 643 Native electrophoretic mobility shift assays. Nsp12 or nsp12-D760A were 644 incubated with 3-fold molar excess of nsp7/8 in transcription buffer (120 mM K-645 acetate, 20 mM HEPES pH 8, 10 mM MgCl2, 2 mM DTT) to assemble holo-RdRp 646 (2 \u03bcM final). The resulting complex was incubated with 1 \u03bcM of annealed RNA 647 scaffold (Horizon Discovery) for 5 minutes at 30\u00b0C. Nsp13 and pre-mixed ADP 648 and AlF3 (Sigma-Aldrich) were added to a final concentration of 2 \u03bcM and 2 mM, 649 respectively, and incubated for an additional 5 minutes at 30\u00b0C. Reactions were 650 analyzed by native gel electrophoresis on a 4.5% polyacrylamide native gel 651 (37.5:1 acrylamide:bis-acrylamide) in 1X TBE (89 mM Tris, 89 mM boric acid, 652 1 mM EDTA) at 4\u00b0C. The gel was stained with Gel-Red (Biotium). 653 654 Native mass spectrometry (nMS) analysis. The reconstituted sample 655 containing 4 \u00b5M RTC and 8 \u00b5M nsp13 incubated with 2 mM ADP-AlF3 was 656 buffer-exchanged into 150 mM ammonium acetate, 0.01% Tween-20, pH 7.5 657 using a Zeba microspin desalting column with a 40 kDa MWCO (ThermoFisher 658 Scientific). For nMS analysis, a 2-3 \u00b5L aliquot of the buffer-exchanged sample 659 into a gold-coated quartz capillary tip that was prepared in-house and 660 then electrosprayed into an Exactive Plus with extended mass range (EMR) 661 instrument (Thermo Fisher Scientific) with a static direct infusion nanospray 662 source (2). The MS parameters used: spray voltage, 1.2 kV; capillary 663 temperature, 150 \u00b0C; in-source dissociation, 0 V; S-lens RF level, 200; resolving 664 power, 17,500 at m/z of 200; AGC target, 1 x 10 6 ; maximum injection time, 665 200 ms; number of microscans, 5; injection flatapole, 6 V; interflatapole, 4 V; bent 666 flatapole, 4 V; high energy collision dissociation (HCD), 200 V; ultrahigh vacuum 667 pressure, 7.2 \u00d7 10 \u221210 mbar; total number of scans, at least 100. Mass calibration 668 in positive EMR mode was performed using cesium iodide. For data processing, 669 the acquired MS spectra were visualized using Thermo Xcalibur Qual Browser 670 (v. 4.2.47). MS spectra deconvolution was performed either manually or using 671 the software UniDec v. 4.2.0 (3, 4). The following parameters were used for the 672 UniDec processing: m/z range, 7,000 -10,000 Th; background subtraction, 673 subtract curved at 100; smooth charge state distribution, enabled; peak shape 674 function, Gaussian; Beta Softmax distribution parameter, 20. 675 The expected masses for the component proteins based on previous nMS 676 experiments (1) include nsp7: 9,137 Da; nsp8 (N-terminal Met lost): 21,881 Da; 677 nsp13 (post-protease cleavage, has three Zn 2+ ions coordinated with 678 9 deprotonated cysteine residues): 67,464 Da, and nsp12 (has two Zn 2+ ions 679 coordinated with 6 deprotonated cysteine residues): 106,785 Da. The mass of 680 the assembled RNA duplex scaffold is 30,512 Da. 681 Experimental masses were reported as the average mass \u00b1 standard 682 deviation (S.D.) across all the calculated mass values within the observed charge 683 state series. Mass accuracies were calculated as the % difference between the 684 measured and expected masses relative to the expected mass. The observed 685 mass accuracies ranged from 0.016 -0.035%. 686 687 Preparation of SARS-CoV-2 nsp13-BTC5 for Cryo-EM. Purified nsp12 and 688 nsp7/8 were mixed in a 1:3 molar ratio and incubated at 22 o C for 15 minutes. ratio. Purified nsp13 was concentrated by centrifugal filtration 693 (Amicon) and buffer exchanged into cryo-EM buffer using Zeba desalting 694 columns. Buffer exchanged nsp13 was mixed with ADP and AlF3 and then added 695 to nsp7/8/12/RNA scaffold at a molar ratio of 1:1 with a final concentration of 696 2 mM ADP-AlF3. Complex was incubated for 5 minutes at 30 o C and further 697 concentrated by centrifugal filtration (Amicon). 698 699 Cryo-EM grid preparation. Prior to grid freezing, 3-([3-700 cholamidopropyl]dimethylammonio)-2-hydroxy-1-propanesulfonate (CHAPSO, 701 Anatrace) was added to the sample (8 mM final), resulting in a final complex 702 concentration of 10 \u00b5M. The final buffer condition for the cryo-EM sample was 703 20 mM HEPES pH 8.0, 150 mM K-acetate, 10 mM MgCl2, 1 mM DTT, 704 2 mM ADP-AlF3, 8 mM CHAPSO. C-flat holey carbon grids (CF-1.2/1.3-4Au, 705 Electron Microscopy Sciences) were glow-discharged for 20 s prior to the 706 application of 3.5 \u03bcL of sample. Using a Vitrobot Mark IV (ThermoFisher 707 Scientific), grids were blotted and plunge-frozen into liquid ethane with 90% 708 chamber humidity at 4\u00b0C. 709 710 Cryo-EM data acquisition and processing. Structural biology software was 711 accessed through the SBGrid consortium (5). Grids were imaged using a 300 kV 712 Titan Krios (ThermoFisher Scientific) equipped with a K3 camera (Gatan) and a 713 BioQuantum imaging filter (Gatan). Images were recorded using Leginon (6) with 714 a pixel size of 1.065 \u00c5/px (micrograph dimensions of 5,760 x 4,092 px) over a 715 nominal defocus range of -0.8 \u03bcm to -2.5 \u03bcm and 30 eV slit width. Movies were 716 recorded in \"counting mode\" (native K3 camera binning 2) with ~30 e-/px/s in 717 dose-fractionation mode with subframes of 50 ms over a 2.5 s exposure (50 718 frames) to give a total dose of ~66 e-/\u00c5. Dose-fractionated movies were gain-from the dose-weighted images with box size of 256 px using 723 cryoSPARC Blob Picker and Particle Extraction. The entire dataset consisted of 724 10,685 motion-corrected images with 4,961,691 particles. Particles were sorted 725 using cryoSPARC 2D classification (N=100), resulting in 2,412,034 curated 726 particles. Initial models (Ref 1: decoy 1, Ref 2: complex, Ref 3: decoy 2; 727 SI Appendix; Fig. S2) were generated using cryoSPARC ab initio Reconstruction 728 on a subset of 85,398 particles. Particles were further curated using Ref 1-3 as 729 3D templates for cryoSPARC Heterogeneous Refinement (N=6), resulting in the 730 following: class1 (Ref 1), 258,097 particles; class2 (Ref 1), 263,966 particles; 731 class3 (Ref 2), 668,743 particles; class4 (Ref 2), 665,480 particles; class5 (Ref 732 3), 280,933 particles; class6 (Ref 3), 274,815 particles. Particles from class3 and 733 class4 were combined and further curated with another round of Heterogeneous 734 Refinement (N=6), resulting in the following: class1 (Ref 1), 67,639 particles; 735 class2 (Ref 1), 61,097 particles; class3 (Ref 2), 553,368 particles; class4 (Ref 2), 736 554,581 particles; class5 (Ref 3), 42,114 particles; class6 (Ref 3), 55,424 737 particles. Curated particles from class3 and class4 were combined, re-extracted 738 with a box size of 320 px, and further classified using Ref 2 as a 3D template for 739 cryoSPARC Heterogeneous Refinement (N=4). Classes from this round of 740 Heterogeneous Refinement (N=4) were as follows: class1 (Ref 2), 871,163 741 particles; class2 (Ref 2), 77,769 particles; class3 (Ref 2), 61,489 particles; class4 742 (Ref 2), 64,026 particles. Particles from class1 and class2 were combined and 743 further sorted using Heterogeneous Refinement (N=4) using class maps as 744 templates, resulting in the following: class1, 134,536 particles; class2, 270,170 745 particles; class3, 294,162 particles; class4, 172,295 particles. Classification 746 revealed two unique classes: nsp131-BTC (class1 and class2) and nsp132-BTC 747 (class3 and class4). Particles within each class were further processed using 748 RELION 3.1-beta Bayesian Polishing(9, 10). Polished particles were refined 749 using cryoSPARC Non-uniform Refinement, resulting in structures with the 750 the resolution of the RNA in the BTC, particles from both classes 753 were combined in a cryoSPARC Non-uniform Refinement and density 754 corresponding to nsp13 was subtracted. Subtracted particles were further refined 755 with cryoSPARC Local Refinement using a mask encompassing the BTC and a 756 fulcrum point defined on the backtracked RNA. This map, BTC5(local), contained 757 871,163 particles with a nominal resolution of 3.23 \u00c5. 758 To improve the density of nsp13.2 in the nsp132-BTC map, particles were 759 subtracted using a mask defined around nsp13.2, leaving residual signal for only 760 nsp13.2. Subtracted particles were classified (N=4) in RELION 3.1 beta using a 761 mask around nsp13.2, resulting in the following classes: class1, 71,607 particles; 762 class2, 163,540 particles; class3, 176,461 particles; class4, 54,849 particles. 763 Subtracted particles in class1 and class2 were combined and reverted back to 764 the original particles, followed by refinement using cryoSPARC Non-uniform 765 Refinement. The resulting map of nsp132-BTC contains 235,147 particles with 766 nominal resolution of 3.59 \u00c5. Local resolution calculations were generated using 767 blocres and blocfilt from the Bsoft package (11). 768 769 Model building and refinement. Initial models were derived from PDB: 6XEZ 770",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "thiouridine crosslinking. Nsp12 or nsp12-D760A were incubated with 3-fold 777 molar excess of nsp7/8 to assemble holo-RdRp (2 \u03bcM final) in transcription 778 buffer. The resulting holo-RdRp was added to a modified RNA scaffold 779 Perkin-Elmer). The holo-RdRp/RNA complex was left to 782 incubate for 5 minutes at 30\u00b0C in the dark. Nsp13 and ATP were added to a final 783 concentration of 2 uM and 2 mM, respectively, and incubated for five minutes at 784 30\u00b0C in the dark. The reaction mixture was transferred to a Parafilm covered 785 aluminum block at 4\u00b0C and irradiated with a 365-nm handheld UV lamp. 786Reactions were quenched with LDS sample loading buffer (ThermoFisher 787Scientific) and analyzed by gel electrophoresis on a NuPAGE 4-12% Bis-Tris gel 788 (ThermoFisher) at 150 Volts for 1 hour and visualized by autoradioagraphy. 789 790 Molecular dynamics simulations 791 General simulation setup and parameterization. Proteins, ADP, and ions were 792 parameterized with the DES-Amber SF1.0 force field (15). RNAs were 793 parameterized with the Amber ff14 RNA force field (16) with modified 794 electrostatic, van der Waals, and torsional parameters to more accurately 795 reproduce the energetics of nucleobase stacking (17). The systems were 796 solvated with water parameterized with the TIP4P-D water model (18) and 797 neutralized with 150 mM NaCl buffer. The systems each contained ~887,000 798 atoms in a 190\u00d7190\u00d7190 \u00c5 cubic box. 799 Systems were first equilibrated on GPU Desmond using a mixed NVT/NPT 800 schedule (19), followed by a 1 \u00b5s relaxation simulation on Anton, a special-801 purpose machine for molecular dynamics simulations (20). All production 802 simulations were performed on Anton and initiated from the last frame of the 803 relaxation simulation. Production simulations were performed in the NPT 804 ensemble at 310 K using the Martyna-Tobias-Klein barostat (21). The simulation 805 time step was 2.5 fs, and a modified r-RESPA integrator (22, 23) was used in 806 which long-range electrostatic interactions were evaluated every three time 807 steps. Electrostatic forces were calculated using the u-series method (24). A 9-\u00c5 808 cutoff was applied for the van der Waals calculations. preparation. The nsp132-BTC-1U+1C and the nsp132-BTC-1U+1U complexes 810 were prepared from the cryo-EM structure of the nsp132-BTC5. AlF3 and 811 CHAPSO were removed. Cytosines at the +2 and +3 positions of the p-RNA 812 were removed, and the cytosine at \u22121 was mutated to uracil. The resulting p-813 RNA had a matched \u22121U and a mismatched +1C in nsp132-BTC\u22121U+1C, and a 814 matched \u22121U and +1U in nsp132-BTC\u22121U+1U. Missing loops and termini in 815 proteins were capped with ACE/NME capping groups. The two complexes were 816 prepared for simulation using the Protein Preparation Wizard in Schr\u00f6dinger 817 Maestro. After a 1 \u00b5s relaxation simulation of the nsp132-BTC\u22121U+1C complex, the 818 \u22121U of the p-RNA formed a Watson-Crick base pair with the \u22121A in the t-RNA, 819 and the +1C of p-RNA formed a non-Watson-Crick C-A hydrogen bond with the 820 +1A of the t-RNA in the active site. After a 1 \u00b5s relaxation simulation of the 821 nsp132-BTC\u22121U+1U complex, the \u22121U and +1U of the p-RNA formed Watson-Crick 822 base pairs with the \u22121A and +1A of the t-RNA respectively. 823 Simulation analysis. All simulations were visually inspected using the in-house 824 visualization software Firefly. The average root-mean-square deviation (RMSD) 825 was calculated for +1C (or +1U) of the p-RNA between the last frame of the 1 \u00b5s 826 relaxation simulation and instantaneous structures from the trajectories, aligned 827 on the entire nps12 module. 828 829 Quantification and statistical analysis. The nMS spectra were visualized using 830 Thermo Xcalibur Qual Browser (versions 3.0.63 and 4.2.27), deconvolved using 831 UniDec versions 3.2 and 4.1 (3, 4) and plotted using the m/z software 832 (Proteometrics LLC, New York, NY). Experimental masses (SI Appendix; 833 Fig. S1B and C) were reported as the average mass \u00b1 standard deviation across 834 all the calculated mass values obtained within the observed charge state 835 distribution. 836 The local resolution of the cryo-EM maps (SI Appendix; Fig. S3B-D) was 837 estimated using blocres (11) with the following parameters: box size 15, sampling 838 1.1, and cutoff 0.5. Directional 3D FSC (SI Appendix; Fig. S3H-J) were calculated 839",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF19": {
+            "text": "Native gel electrophoresis mobility shift assay and nMS analysis of the 868 BTC. 869 A. A native gel electrophoretic mobility shift assay reveals that wt-holo-RdRp requires 870 nsp13(ADP-AlF3) to bind the BTC5-scaffold efficiently (compare lanes 1, 2, and 6) but 871 holo-RdRp with nsp12-D760A does not require nsp13 (lane 4). 872 B. The nMS spectrum and the deconvolved mass spectrum showing assembly of stable 873nsp13-BTC6 complexes. The peak for the nsp132-BTC6 assembly is present at about 874 ~9% intensity relative to the predominant peak from nsp131-BTC6. 875 C. Mass assignments of the deconvolved peaks from the nMS analysis.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF20": {
+            "text": "Cryo-EM processing pipeline.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF21": {
+            "text": "Cryo-EM analysis. 891 A. Gold-standard FSC plots for nsp131-BTC5, nsp132-BTC5, and BTC5(local), calculated 892 by comparing two independently determined half-maps from cryoSPARC (8). The 893 dotted line represents the 0.143 FSC cutoff. 894 B-D. Cryo-EM reconstructions filtered by local resolution(11). The view on the right is a 895 cross-section. 896 921 Fig. S4. Sequence conservation of nsp12 homologs and NTP-entry tunnel 922 environment. 923 A. Sequence alignment of nsp12 homologs from six pathogenic and model CoV family 924 members, covering RdRp motifs (27) (motifs F, C, D, and E denoted at the top of the 925 sequence alignment) architecturally important for the NTP-entry tunnel. Selected 926",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF22": {
+            "text": "Views from the outside into the NTP-entry tunnels of the SARS-CoV-2 BTC (left), an 931 E. coli DdRp BTC [PDB ID: 6RI9; (29)] and an S. cerevisiae DdRp BTC [PDB ID: 3GTP; 932 (30)]. Protein surfaces are colored by the electrostatic surface potential [calculated 933 using APBS; (31)]. Backtracked RNA is shown as atomic spheres with yellow carbon 934 atoms. . S5. 4-thio-U crosslinking analysis.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF23": {
+            "text": "945 polyacrylamide gel (left panel, Coomassie stained; right panel, visualized by 946 autoradiography). 947 B. Protein-RNA crosslinks are specific. Lanes 1, 2; Analysis using the 5'-[ 32 P]-RTC(4-948 thio-U)-scaffold (RNA-scaffold 'a' shown on the bottom). Crosslinking to nsp12 serves 949 as a positive control for the crosslinking reaction. Lanes 3-6; Analysis using RNA-950 scaffold 'b' (RTC-scaffold with 5'-[ 32 P]-labelled p-RNA). Lanes 7-10: Analysis using 951 RNA-scaffold 'c' (RTC-scaffold with 5'-[ 32 P]-labelled t-RNA). The complete absence of 952 protein-RNA crosslinks in lanes 3-10 indicates that the observed protein-RNA crosslinks 953arise from the 4-thio-U site-specifically incorporated in the p-RNA of the RTC(4-thio-",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF24": {
+            "text": "Molecular dynamics simulations of nsp132-BTC1U+1C vs. 960 nsp132-BTC-1U+1U. 961 Molecular dynamics simulations of the nsp132-BTC\u22121U+1C (top) and nsp132-BTC-1U+1U 962 (bottom) complexes. The schematics illustrate the active-site proximal nucleotides in 963 each modeled complex. Each complex was simulated with 3 replicates. RMSD values 964 plotted as a function of time represent the heavy-atom RMSD of the +1 nucleotide of the 965 p-RNA (+1C for nsp132-BTC-1U+1C or matched +1U for nsp132-BTC-1U+1U) compared with 966 the starting configuration (see Methods). The RMSD histograms (plotted on the right) 967 are aggregates of all 3 replicates. 968 (top) Nsp132-BTC-1U+1C. As shown in Figure 5C, the mismatched p-RNA +1C spends 969 about 60% of the time frayed from the t-RNA +1A and near or in the NTP-entry tunnel 970 (RMSD \u2265 ~3.5 \u00c5). 971 (bottom) Nsp132-BTC-1U+1U. With the p-RNA +1U matched with the t-RNA +1A for 972 Watson-Crick base pairing, the p-RNA +1U does not fray and spends all of its time in 973 the vicinity of the RdRp active site and base paired with the t-RNA.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "under the conditions expected to favor backtracking the most (SI Appendix; Fig. 250 S5A, lane 7). These results affirm the view that nsp13 facilitates backtracking of 251 the SARS-CoV-2 RdRp. 252 253 A mismatched nucleotide at the p-RNA 3'-end spontaneously frays and 254 enters into the RdRp NTP-entry tunnel. The SARS-CoV-2 RTC is a highly 255 processive and rapid replicase/transciptase, capable of replicating an ~1 kb RNA 256 template at an average rate of ~170 nt/s (40). However, studies of other viral 257",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "16. E. M. Bautista, K. S. Faaberg, D. Mickelson, E. D. McGruder, Functional 17. K. A. Ivanov, J. Ziebuhr, Human Coronavirus 229E Nonstructural Protein 13: 21. A. SEYBERT, A. HEGYI, S. G. SIDDELL, J. ZIEBUHR, The human 407 coronavirus 229E superfamily 1 helicase has RNA and DNA duplex-unwinding 408 activities with 5\u2032-to-3\u2032 polarity. Rna 6, 1056-1068 (2000). 409 22. J. A. Tanner, et al., The Severe Acute Respiratory Syndrome (SARS) 23. N. Komissarova, M. Kashlev, RNA Polymerase Switches between Inactivated 413and Activated States By Translocating Back and Forth along the DNA and the",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "28. S. Sekine, Y. Murayama, V. Svetlov, E. Nudler, S. Yokoyama, The ratcheted 29. A. C. M. Cheung, P. Cramer, Structural basis of RNA polymerase II 429 backtracking, arrest and reactivation. Nature 471, 249-253 (2012). 430 30. M. Abdelkareem, et al., Structural Basis of Transcription: RNA Polymerase 431 Backtracking and Its Reactivation. Mol Cell 75, 298-309.e4 (2019). 432 31. G. Zhang, et al., Crystal structure of Thermus aquaticus core RNA 433 polymerase at 3.3 A resolution. Cell 98, 811-824 (1999). 434 32. A. J. W. te Velthuis, Common and unique features of viral RNA-dependent 435 polymerases. Cell Mol Life Sci Cmls 71, 4403-20 (2014). 436 33. M. L. Agostini, et al., Coronavirus Susceptibility to the Antiviral Remdesivir 437 (GS-5734) Is Mediated by the Viral Polymerase and the Proofreading 438 Exoribonuclease. Mbio 9, e00221-18 (2018). 439 34. S. G. Sawicki, D. L. Sawicki, Advances in Experimental Medicine and 440 Biology. Adv Exp Med Biol 440, 215-219 (1998). 441 35. W. J. Lane, S. A. Darst, Molecular Evolution of Multisubunit RNA 442 Polymerases: Structural Analysis. 36. Q. Wang, et al., Structural Basis for RNA Replication by the SARS-CoV-2 445 Polymerase. Cell (2020) https:/doi.org/10.1016/j.cell.2020.05.034. 446 37. H. S. Hillen, et al., Structure of replicating SARS-CoV-2 polymerase. Nature, 38. P. Cramer, et al., Architecture of RNA polymerase II and implications for the 449 transcription mechanism. Science 288, 640-649 (2000). 450 39. E. J. Sontheimer, Site-specific RNA crosslinking with 4-thiouridine. Mol Biol 40. M. Seifert, et al., Signatures and mechanisms of efficacious therapeutic 453 ribonucleotides against SARS-CoV-2 revealed by analysis of its replicase using 454 magnetic tweezers. Biorxiv, 2020.08.06.240325 (2020). 455 41. D. Dulin, et al., Backtracking behavior in viral RNA-dependent RNA 456 polymerase provides the basis for a second initiation site. Nucleic Acids Res 43, (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint 42. D. Dulin, et al., Elongation-Competent Pauses Govern the Fidelity of a Viral 459 RNA-Dependent RNA Polymerase. Cell Reports 10, 983-992 (2015). 460 43. D. Dulin, et al., Signatures of Nucleotide Analog Incorporation by an RNA-461 Dependent RNA Polymerase Revealed Using High-Throughput Magnetic 462 Tweezers. Cell Reports 21, 1063-1076 (2017). 463 44. V. Epshtein, et al., UvrD facilitates DNA repair by pulling RNA polymerase 464 backwards. Nature 505, 372-377 (2014). 465 45. A. O. Pasternak, E. van den Born, W. J. M. Spaan, E. J. Snijder, Sequence 466 requirements for RNA strand transfer during nidovirus discontinuous subgenomic 467 RNA synthesis. Embo J 20, 7220-7228 (2001). 468 46. E. D. Clercq, G. Li, Approved Antiviral Drugs over the Past 50 Years. Clin 47. G. Cardone, J. B. Heymann, A. C. Steven, One number does not fit all: 471 mapping local variations in resolution in cryo-EM reconstructions. Journal of 472 structural biology 184, 226-236 (2013). 473 48. E. Jurrus, et al., Improvements to the APBS biomolecular solvation software 474 suite. Protein Sci 27, 112-128 (2018). 475 49. N. M. Luscombe, R. A. Laskowski, J. M. Thornton, NUCPLOT: A Program to 476 Generate Schematic Diagrams of Protein-Nucleic Acid Interactions. Nucleic 477 Acids Res 25, 4940-4945 (1997). 478 50. E. C. Smith, N. R. Sexton, M. R. Denison, Thinking Outside the Triangle: 479 Replication Fidelity of the Largest RNA Viruses. Ann Rev Virol 1, 111-132(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is madeThe copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprintTable S1. Cryo-EM data collection, refinement, and validation statistics. 861 (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is madeThe copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF9": {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF10": {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is madeThe copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF11": {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF12": {
+            "text": "The copyright holder for this preprint this version posted March 14, 2021. ; https://doi.org/10.1101/2021.03.13.435256 doi: bioRxiv preprint",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

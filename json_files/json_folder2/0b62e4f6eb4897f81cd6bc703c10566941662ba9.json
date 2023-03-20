@@ -1,0 +1,2759 @@
+{
+    "paper_id": "0b62e4f6eb4897f81cd6bc703c10566941662ba9",
+    "metadata": {
+        "title": "A within-host model of SARS-CoV-2 infection",
+        "authors": [
+            {
+                "first": "Jonathan",
+                "middle": [],
+                "last": "Carruthers",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "UK Health Security Agency",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Jingsi",
+                "middle": [],
+                "last": "Xu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Manchester",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Finnie",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "UK Health Security Agency",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Ian",
+                "middle": [],
+                "last": "Hall",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Manchester",
+                    "location": {}
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Within-host models have been used to successfully describe the dynamics of multiple viral infections, however, the dynamics of SARS-CoV-2 virus infection remain poorly understood. A greater understanding of how the virus interacts with the host can contribute to more realistic epidemiological models and help evaluate the effect of antiviral therapies and vaccines. Here, we present a within-host model to describe SARS-CoV-2 viral dynamics in the upper respiratory tract of individuals enrolled in the UK COVID-19 Human Challenge Study. Using this model, we investigate the viral dynamics and provide timescales of infection that independently verify key epidemiological parameters important in the management of an epidemic. In particular, we estimate that an infected individual is first capable of transmitting the virus after approximately 2.1 days, remains infectious for a further 8.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The SARS-CoV-2 virus has led to a global pandemic, causing millions of infections worldwide. Mathematical modelling has been used throughout the pandemic to predict numbers of cases, hospitalisations and deaths, as well as the impact of non-pharmaceutical interventions [1, 2, 3] . In these epidemiological models, the rate at which susceptible individuals become infected can be thought of as the product of a contact rate and a transmission probability. The contact rate is simply interpreted as the number of contacts an individual makes per unit time, with insights provided from social contact studies [4, 5] . The probability of transmission, however, is not as well-defined and depends on many factors such as the environment in which the contact takes place, the duration of the contact and the infectiousness of the individual. Intuitively, an individual is most infectious when viral loads in their respiratory tract peak [6, 7] , therefore understanding how viral loads change over time is crucial to understanding infectiousness. Within-host models can be used to describe how interactions between virus particles, host cells and the immune system affect the viral load over time, with the link to infectiousness then provided by either dose-response relationships or the assumption that the transmission probability is an increasing function of viral load [8, 9] .",
+            "cite_spans": [
+                {
+                    "start": 270,
+                    "end": 273,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 274,
+                    "end": 276,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 277,
+                    "end": 279,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 607,
+                    "end": 610,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 611,
+                    "end": 613,
+                    "text": "5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 932,
+                    "end": 935,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 936,
+                    "end": 938,
+                    "text": "7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1369,
+                    "end": 1372,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1373,
+                    "end": 1375,
+                    "text": "9]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Existing within-host models of SARS-CoV-2 have predominantly focused on describing the dynamics of the virus in the upper respiratory tract (URT), the primary site of infection, where data are readily available from nasopharyngeal swabs [10, 11, 12] . In some cases, these models are extended to include compartments such as the lower respiratory tract (LRT), however, observing LRT infection is difficult and is unlikely to play a 1 role in person-to-person transmission [13] . Often, swab data are presented in the form of polymerase chain reaction (PCR) cycle threshold values (Ct values) that are converted into RNA copies by means of a standard curve. However, since a PCR test captures all genetic material, it quantifies the total viral RNA and not the amount of viable virus that is capable of infecting cells [14] . This therefore makes it difficult for models parameterised using such data to predict the duration that an individual remains infectious; a previous study has shown that live virus cannot be isolated from respiratory samples 8-9 days after symptom onset notwithstanding persistently high viral RNA loads [15] . Despite this, some models have directly estimated the infectiousness of an individual from predictions of total viral load [16, 17] , whilst others have first linked total and infectious viral loads using the probability that a sample is culture positive [18] .",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 241,
+                    "text": "[10,",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 242,
+                    "end": 245,
+                    "text": "11,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 246,
+                    "end": 249,
+                    "text": "12]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 472,
+                    "end": 476,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 818,
+                    "end": 822,
+                    "text": "[14]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1129,
+                    "end": 1133,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1259,
+                    "end": 1263,
+                    "text": "[16,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1264,
+                    "end": 1267,
+                    "text": "17]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1391,
+                    "end": 1395,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A second limitation of earlier within-host models is that swab samples were understandably only collected once an individual first displayed symptoms, so the exact date of infection is unknown. The majority of models account for this by assuming a fixed incubation period of between 3 and 7 days, however, since symptom onset approximately coincides with peak viral loads, the models can only reliably predict the decay in viral loads and not the initial growth [19] . Human challenge studies allow us to study the processes of infection and immunity from their inception and therefore provide a complete overview of the disease course [20] . Screening of participants can also ensure that samples are representative of primary infection, whilst a quarantine setting allows data to be obtained with a level of detail not achievable in a real-life setting [21] .",
+            "cite_spans": [
+                {
+                    "start": 462,
+                    "end": 466,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 636,
+                    "end": 640,
+                    "text": "[20]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 855,
+                    "end": 859,
+                    "text": "[21]",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper, we develop a mathematical model to describe the dynamics of wild-type SARS-CoV-2 infection in the URT. We make use of infectious and total virus time courses from participants of a human challenge study, thereby addressing the above limitations of existing models. Bayesian inference methods are applied to estimate model parameters and the within-host basic reproduction number. The mathematical model is then used to predict timescales of infection, such as the duration that an infected individual remains infectious and PCR positive.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The viral dynamics in the mid-turbinates of human challenge study participants are described using a target-cell limited model that has successfully been used to describe the dynamics of other viral infections, and makes use of measurements of both infectious and total viral loads [22, 23, 24] . In this model, target cells (T ) become infected with infectious virus (V inf ) at rate \u03b2 and enter a non-productive eclipse phase (E) for 1/k days, after which they enter a productively infectious phase lasting for a further 1/\u03b4 days. Whilst cells are in the infectious phase, they produce infectious virus at rate p inf which in turn loses infectivity at rate c inf . Viral RNA is produced by an infectious cell at rate p tot and lose viability with rate c tot . To represent an adaptive immune response, we note that effector cell responses (C), such as those of CD8 + T cells, go through an antigen-dependent activation stage, followed by a virus-independent expansion phase. The growth rate of the effector cell population is therefore initially dependent on the total viral load (V tot ), but once this becomes large enough, exponential growth of the effector cell population follows [25] . Effector cells help to resolve infection through the mass action killing of infected cells with rate k C and survive for an average of 1/\u03b4 C days. The model is described by the system of ordinary differential equations:",
+            "cite_spans": [
+                {
+                    "start": 282,
+                    "end": 286,
+                    "text": "[22,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 287,
+                    "end": 290,
+                    "text": "23,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 291,
+                    "end": 294,
+                    "text": "24]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1187,
+                    "end": 1191,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model structure"
+        },
+        {
+            "text": "where s determines the viral load at which effector cell growth becomes virus independent and r is the maximal growth rate of effector cells [25] .",
+            "cite_spans": [
+                {
+                    "start": 141,
+                    "end": 145,
+                    "text": "[25]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model structure"
+        },
+        {
+            "text": "An Approximate Bayesian Computation Sequential Monte Carlo (ABC-SMC) algorithm is used to infer model parameters from the human challenge data [26, 27] . This method is an extension of the original ABC algorithm and uses a sequence of decreasing tolerances to obtain intermediate distributions that ultimately converge on the target posterior distribution. Parameter sets are sampled from the intermediate distribution of the previous generation and perturbed using a multivariate normal kernel, the covariance matrix of which is selected here to be the optimal local covariance matrix introduced in [28] . Choosing a suitable sequence of tolerances is important since tolerances that decrease too slowly will result in slower convergence, whilst a sequence that decreases too quickly will lead to lower acceptance rates. To avoid manually setting the tolerances beforehand, an adaptive approach is implemented where the tolerance for the current generation is equal to the 0.25 quantile of the distances from the previous generation [26] . For the first generation, the tolerance is equal to the N th smallest distance from 5N iterations of an ABC rejection sampling algorithm, where N = 5 \u00d7 10 3 is the desired sample size [29] .",
+            "cite_spans": [
+                {
+                    "start": 143,
+                    "end": 147,
+                    "text": "[26,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 148,
+                    "end": 151,
+                    "text": "27]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 600,
+                    "end": 604,
+                    "text": "[28]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1034,
+                    "end": 1038,
+                    "text": "[26]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1225,
+                    "end": 1229,
+                    "text": "[29]",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Parameter inference and model selection"
+        },
+        {
+            "text": "Solutions of the mathematical model (MM) for infectious virus and total virus are compared to the measurements of viral load from the human challenge (HC) nasal samples using the following distance metric:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter inference and model selection"
+        },
+        {
+            "text": "where T is the set of times at which samples were taken. At times when the model solution falls below the limit of quantification (6 \u00d7 10 2 RNA copies/mL and 5 PFU/mL), the solution is instead set equal to this limit. In doing so, no penalty is incurred when solutions drop far below the limit of quantification.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter inference and model selection"
+        },
+        {
+            "text": "3 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter inference and model selection"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022. Given that the human challenge study collected samples from the first 14 days of infection, there is unlikely to be a significant decline in the adaptive immune response, therefore \u03b4 C = 0. For the length of the eclipse phase, in vitro studies have showed that virus is released from infected cells 8 hours after infection, suggesting that it is suitable to fix k = 3 day \u22121 [30] . The viral load at which effector cell growth becomes independent of virus also remains constant at s = 10 4 RNA copies/mL. For the remaining parameters, prior distributions are chosen as follows:",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 74,
+                    "text": "April 22, 2022.",
+                    "ref_id": null
+                },
+                {
+                    "start": 450,
+                    "end": 454,
+                    "text": "[30]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Previous studies have noted that only the product of T (0) and the viral production rate is identifiable from measurements of viral load [30] . Since it is more common to estimate viral production rates, the initial number of target and effector cells is set to T (0) = 10 6 cells/mL and C(0) = 1 cell/mL respectively, whilst all other cell populations are initially zero. Local sensitivity analysis indicated that V tot (0) did not have a large impact on the viral load, likely because V tot is not directly involved in the infection of target cells, and is therefore fixed at V tot (0) = 10 2 RNA copies/mL. Participants of the human challenge study received a challenge dose of 10 TCID 50 via intranasal drops, which approximately corresponds to 275 PFU/mL. However, it is unknown whether this level of virus reaches cells in the mid-turbinate. For this reason, the initial condition",
+            "cite_spans": [
+                {
+                    "start": 137,
+                    "end": 141,
+                    "text": "[30]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": ". The inference has been repeated using different prior distributions for V inf (0), but this did not result in significantly different approximate posterior distributions for the remaining model parameters (see Figure S1 ). The ABC-SMC algorithm is used to infer parameters for each individual separately and therefore produces 16 separate approximate posterior distributions. To obtain a single distribution that is representative of all participants, a mixture distribution is constructed. Suppose that f (\u03b8) is the probability density function for the true posterior distribution, where \u03b8 is the vector of model parameters. The density function for the mixture distribution is then given by:",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 212,
+                    "end": 221,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "where P = 16 is the number of individuals that developed infection and w i are the weights for each individual. Here, w i = 1/P for all i since there is no evidence to suggest that any single participant is preferred over the others. Approximate samples from the mixture distribution can be obtained by first sampling an individual and then sampling from the corresponding approximate posterior sample.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "To compare the mathematical model in M1 to an equivalent model without an immune response, an ABC-SMC model selection algorithm is used [27] . Model M2 is defined using the same system as M1 but removes the final ODE describing the effector cell population and therefore also ignores the clearance of infected cells by effector cells. The model selection algorithm follows the same procedure as the ABC-SMC algorithm for parameter inference but introduces a step prior to sampling candidate parameter sets where a candidate model is sampled. At the end of each generation, the Bayes factor for 4 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [
+                {
+                    "start": 136,
+                    "end": 140,
+                    "text": "[27]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022 ",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 73,
+                    "text": "April 22, 2022",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "where the prior probabilities for model M1 and M2 are assumed to be equal. For each participant, the sequence of tolerances used in the model selection algorithm is the same as that obtained from the inference using model M1. A Bayes factor greater than 3 indicates positive evidence, whilst a value greater than 20 indicates strong evidence in favour of model M1 [27] .",
+            "cite_spans": [
+                {
+                    "start": 364,
+                    "end": 368,
+                    "text": "[27]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Measurements of viral load were obtained from the human challenge study described in [31] . In this study, 36 healthy, young participants were inoculated intranasally with a wild-type SARS-CoV-2 virus following a screening process that ruled out previous SARS-CoV-2 infection and recent respiratory infections. Two of these participants seroconverted between screening and inoculation and were removed from the study. Of the 34 individuals that continued in the study, 18 developed an infection. Six of these individuals were treated with remdesivir once two consecutive nose or throat swabs showed quantifiable SARS-CoV-2 detection by PCR, however, their viral loads were comparable to those of untreated participants and therefore no distinction was made between the treated and untreated participants in previous analyses [31] . Here, we continue to analyse the treated and untreated participants as a single cohort. Due to concentrations of viral RNA in the mid-turbinate remaining below the limit of quantification until day 6 and day 8, a further two participants are excluded since the model is not able to explain such long delays before viral growth. Although both nasal and throat swabs were collected, only measurements from the nasal swabs are used to parameterise our model. The Bayesian inference provides us with a quantitative description of the in-host dynamics of SARS-CoV-2 virus. Model predictions for the infectious and total viral loads for 16 participants of the human challenge study are provided in Figure 1 . From the posterior mixture distribution (Figure 2 ), we estimate that during the early stages of infection, productively infected cells are lost at an average rate of 1.17 day \u22121 . By day 14, once an adaptive immune response is more established, this rate increases to 16.12 day \u22121 . Individual infected cells produce infectious virus at rate 3.74 PFU/ml day \u22121 which is considerably lower than the production of viral RNA at rate 2.57 \u00d7 10 3 RNA copies/mL day \u22121 . The within-host basic reproduction number represents the number of secondary cellular infections a single infected cells causes in a population of fully susceptible cells, and is given here by R 0 = \u03b2T (0)p inf /\u03b4c inf . Using the mixture distribution to derive an estimate of the within-host basic reproduction number gives R 0 = 11. Note that this estimate will likely decrease as the infection progresses due to the shortened lifespan of productively infected cells.",
+            "cite_spans": [
+                {
+                    "start": 85,
+                    "end": 89,
+                    "text": "[31]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 825,
+                    "end": 829,
+                    "text": "[31]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1524,
+                    "end": 1532,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1575,
+                    "end": 1584,
+                    "text": "(Figure 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "For many participants, the mathematical model predicts that infectious and total viral loads follow an initial exponential growth phase followed by an exponential decay phase. Since this behaviour can be captured by a model that excludes immune responses, a 5 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022. ; Figure S2 ). For the remaining nine participants, there was not sufficient evidence to suggest that either model was preferable over the other. As a result of this, we believe that the inclusion of an adaptive immune response is appropriate.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 77,
+                    "end": 86,
+                    "text": "Figure S2",
+                    "ref_id": null
+                }
+            ],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Predictions from the mathematical model can also be used to estimate timescales of infection. Here, we define the time that an individual first tests positive by a PCR test as the time at which total virus (V tot ) first exceeds the limit of quantification. Similarly, the first time a sample is culture positive is assumed to be equivalent to the first time the level of infectious virus (V inf ) exceeds the limit of quantification, and can be thought of as the earliest time an individual is capable of transmitting the virus. The duration that an individual remains PCR (culture) positive is then defined as the number of days the 6 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022. ;",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Approximate posterior distributions for model parameters inferred using an ABC-SMC algorithm from midturbinate viral loads of human challenge study participants. total (infectious) viral load continuously exceeds the limit of quantification. Estimates of these timescales are provided in Figure 3 , along with an estimate of the incubation period, defined as the time to reach peak RNA copies/mL. Individuals are first PCR positive 1.1 days (interquartile range: 0.8-1.7 days) after infection and become infectious after 2.1 days (1.7-3 days). The incubation period lasts for 5.7 days (4.6-7.8 days) and is therefore consistent with the idea of pre-symptomatic transmission. Individuals remain infectious for 8.3 days (7.5-9.6 days) but would continue to test positive using a PCR test for 12.4 days (10.6-14.3 days). Some individuals remain PCR positive for up to 27 days following infection.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 288,
+                    "end": 296,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Figure 2: Inferred parameter distributions for human SARS-CoV-2 infection:"
+        },
+        {
+            "text": "Whilst human challenge studies have many advantages, the strict screening process results in a relatively homogeneous population and so predictions from our model may not be representative of a more general population. For this reason, model predictions are validated against the Assessment of Transmission and Contagiousness of COVID-19 in Contacts (ATACCC) study, a longitudinal cohort study of community contacts of SARS-CoV-2 cases [32] . Whilst this study spanned multiple waves to capture the viral dynamics of unvaccinated and vaccinated individuals infected with different variants of SARS-CoV-2, we only consider those individuals who are unvaccinated and infected with a pre-alpha variant, since these will be the most similar to participants of the human challenge study.",
+            "cite_spans": [
+                {
+                    "start": 436,
+                    "end": 440,
+                    "text": "[32]",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Figure 2: Inferred parameter distributions for human SARS-CoV-2 infection:"
+        },
+        {
+            "text": "To determine if our mathematical model can describe the viral dynamics of ATACCC participants, a brute force approach is used that initially involves sampling 10 4 parameter sets from the mixture distribution provided in Figure 2 , in order to evaluate the model. Since participants are first contacted following symptom onset of the index case, the exact date of infection is unknown. Therefore, delays of up to 10 days between infection and enrolment are introduced to the model solutions in increments of 0.1 days. Solutions for log 10 (V tot ) are then compared to log-RNA copies/mL from URT samples using the Euclidean distance, where only pairs of parameter sets and delays that yield the lowest 1% of distances are retained. These retained values are used to create the predictions in Figure   7 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 221,
+                    "end": 229,
+                    "text": "Figure 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 792,
+                    "end": 802,
+                    "text": "Figure   7",
+                    "ref_id": null
+                }
+            ],
+            "section": "Figure 2: Inferred parameter distributions for human SARS-CoV-2 infection:"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022. 4. For the majority of ATACCC participants, the model and its existing parameterisation is able to explain the data well, suggesting that results derived from the human challenge study may be applicable to a general population. Furthermore, the median delay between infection and enrolment is 5.4 days which is plausible given that in most individuals we only observe the decay in the viral load and this decay begins around the time of symptom onset.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "In this paper, we have used viral load measurements from a human challenge study to parameterise a mathematical model of SARS-CoV-2 infection. Whilst existing models have distinguished between infectious and non-infectious virus, to the best of our knowledge this is the first modelling study that makes use of infectious virus titres during parameter inference. Our estimate of the within-host basic reproduction number (R 0 =11) is similar to estimates from previous modelling studies (8.5-14. 2), as is our estimate of 0.85 days for the lifespan of productively infected cells during the early stages of infection (0.53-1.66 days) [11, 17, 33] .",
+            "cite_spans": [
+                {
+                    "start": 487,
+                    "end": 495,
+                    "text": "(8.5-14.",
+                    "ref_id": null
+                },
+                {
+                    "start": 634,
+                    "end": 638,
+                    "text": "[11,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 639,
+                    "end": 642,
+                    "text": "17,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 643,
+                    "end": 646,
+                    "text": "33]",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A review of existing studies determined that the median duration of wild-type SARS-CoV-2 virus detection in the URT is 14.5 days following symptom onset [19] . Whilst this estimate falls within the range of our PCR-positive distribution, it is based off studies from early on in the pandemic with small sample sizes and is therefore unlikely to be robust.",
+            "cite_spans": [
+                {
+                    "start": 153,
+                    "end": 157,
+                    "text": "[19]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "8"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022. ; A more comparable study involved measuring the viral RNA trajectories of basketball players and estimated that acute infection lasted for 11.2 days in asymptomatic cases and 14.3 days in symptomatic cases, both of which are consistent with our predictions [34] . One limitation of our current analysis is that in some participants, RNA copies/mL remained high after the end of the 14-day study period. As a result, there is greater uncertainty in our predictions after this time which leads to greater uncertainty in the tail of the PCR positive distribution. In order to obtain accurate estimates for the duration of infection, regular sampling must be extended past 14 days.",
+            "cite_spans": [
+                {
+                    "start": 333,
+                    "end": 337,
+                    "text": "[34]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Previous estimates of an individual's infectiousness have been based on the ability to successfully culture virus samples, however, such studies identify the presence of replicative competent virus and do not quantify the viral load [14] . Infectious virus may therefore be detectable but not at sufficient levels for someone to be infectious. As a result, estimates of the infectious period based on these studies are generally longer than that predicted here [14, 35] . A recent within-host model defines the infectious period to be the time when an individual's transmission probability exceeds 10% of its maximum value, obtaining estimates ranging between 1.9 days and 7.9 days that lie towards the lower end of our predicted distribution [18] . Ultimately, the duration of the infectious period depends 9 . CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.",
+            "cite_spans": [
+                {
+                    "start": 233,
+                    "end": 237,
+                    "text": "[14]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[14,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 466,
+                    "end": 469,
+                    "text": "35]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 743,
+                    "end": 747,
+                    "text": "[18]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022. ;  on how infectiousness is defined. Approaches based on viral load are preferable because they can be used to represent infectiousness on a continuous scale (such as a probability), whereas culture positivity only provides a binary outcome. Furthermore, viral load curves for infectious virus are beneficial as they provide a measure of the amount of virus capable of causing infection. Therefore, whilst our assumption that an individual is infectious if their infectious viral load exceeds 5 PFU/mL may be too simple, the predictions of infectious virus obtained here can be used alongside existing dose-response methods to provide more accurate estimates of infectiousness [8, 36] .",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 76,
+                    "text": "April 22, 2022. ;",
+                    "ref_id": null
+                },
+                {
+                    "start": 77,
+                    "end": 77,
+                    "text": "",
+                    "ref_id": null
+                },
+                {
+                    "start": 752,
+                    "end": 755,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 756,
+                    "end": 759,
+                    "text": "36]",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "Future work can use infectiousness curves as a link between within-host and population dynamics to develop more realistic multi-scale models of SARS-CoV-2 [9, 37] . With further information regarding T-cell responses and antibody levels following vaccination, such multi-scale models could be extended to consider the impact of waning immunity on susceptibility and transmission [38] . The results presented here are specific to wild-type SARS-CoV-2 virus, however, there is wide interest in variants of the virus since these have been associated with increased transmission and can rapidly spread throughout a population. One advantage of mechanistic models is that the parameters have simple interpretations, therefore, when the Delta variant reportedly showed a 10-fold increase in spike-mediated entry compared to a wild-type strain, this can be explicitly accounted for in the cellular infection rate [39] . The viral dynamics framework described here has also been extended to account for the genetic drift of viruses caused by mutations that occur during replication [40] . Applying this to SARS-CoV-2 virus may help understand the potential for new variants to arise within-host, with a recent report suggesting that the spike protein evolves to resist antibodies in immunocompromised individuals that have persistent infections [41] . Altogether, within-host models offer important insights into the interaction between SARS-CoV-2 virus and the host, however, it is the subsequent applications of these models that are most relevant for informing policy and decision making.",
+            "cite_spans": [
+                {
+                    "start": 155,
+                    "end": 158,
+                    "text": "[9,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 159,
+                    "end": 162,
+                    "text": "37]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 379,
+                    "end": 383,
+                    "text": "[38]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 906,
+                    "end": 910,
+                    "text": "[39]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1074,
+                    "end": 1078,
+                    "text": "[40]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1337,
+                    "end": 1341,
+                    "text": "[41]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "(which was not certified by peer review)"
+        },
+        {
+            "text": "This work was undertaken as part of the PROTECT COVID-19 National Core Studies, Theme 2, funded by HM Treasury.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": ". CC-BY 4.0 International license It is made available under a is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. (which was not certified by peer review)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "The copyright holder for this preprint this version posted April 22, 2022 ",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 73,
+                    "text": "April 22, 2022",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Funding"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Effects of nonpharmaceutical interventions on COVID-19 cases, deaths, and demand for hospital services in the UK: a modelling study. The Lancet Public Health",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Davies",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kucharski",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Eggo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gimma",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Edmunds",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "5",
+            "issn": "",
+            "pages": "375--385",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2468-2667(20)30133-X"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Real-time nowcasting and forecasting of COVID-19 dynamics in England: the first wave. Philosophical Transactions of the",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Birrell",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Blake",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Van Leeuwen",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Gent",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Angelis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Royal Society B",
+            "volume": "376",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1098/rstb.2020.0279"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Modelling the COVID-19 epidemic and implementation of population-wide interventions in Italy",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Giordano",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Blanchini",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bruno",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Colaneri",
+                    "suffix": ""
+                },
+                {
+                    "first": "Di",
+                    "middle": [],
+                    "last": "Filippo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Di",
+                    "middle": [],
+                    "last": "Matteo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Colaneri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature Medicine",
+            "volume": "26",
+            "issn": "6",
+            "pages": "855--860",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41591-020-0883-7"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Social contacts and mixing patterns relevant to the spread of infectious diseases",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mossong",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jit",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Beutels",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Auranen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "PLoS Medicine",
+            "volume": "5",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pmed.0050074"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Quantifying the impact of physical distance measures on the transmission of COVID-19 in the UK",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Jarvis",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Van Zandvoort",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gimma",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Prem",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Klepac",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Edmunds",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMC Medicine",
+            "volume": "18",
+            "issn": "1",
+            "pages": "1--10",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12916-020-01597-8"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Crossing the scale from within-host infection dynamics to between-host transmission fitness: a discussion of current assumptions and knowledge",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Handel",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rohani",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+            "volume": "370",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1098/rstb.2014.0302"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Transmission of COVID-19 in 282 clusters in Catalonia, Spain: a cohort study. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marks",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Millat-Martinez",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ouchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Roberts",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alemany",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Corbacho-Monn\u00e9",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "21",
+            "issn": "",
+            "pages": "30985--30988",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099(20"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Viral kinetics and exhaled droplet size affect indoor transmission dynamics of influenza infection",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Chio",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Jou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Indoor Air",
+            "volume": "19",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A multi-scale analysis of influenza A virus fitness trade-offs due to temperature-dependent virus persistence",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Handel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Stallknecht",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rohani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "PLoS Computational Biology",
+            "volume": "9",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pcbi.1002989"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Modelling upper respiratory viral load dynamics of SARS-CoV-2. BMC medicine",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Challenger",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Foo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Awc",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marjaneh",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Liew",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Thwaites",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Okell",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cunnington",
+                    "suffix": ""
+                }
+            ],
+            "year": 2022,
+            "venue": "",
+            "volume": "20",
+            "issn": "",
+            "pages": "1--20",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12916-021-02220-0"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Timing of antiviral treatment initiation is critical to reduce SARS-CoV-2 viral load",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gon\u00e7alves",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bertrand",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ke",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Comets",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "De Lamballerie",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Malvy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pizzorno",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "CPT: Pharmacometrics & Systems Pharmacology",
+            "volume": "9",
+            "issn": "9",
+            "pages": "509--514",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/psp4.12543"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "In-host mathematical modelling of COVID-19 in humans",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hernandez-Vargas",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Velasco-Hernandez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Annual Reviews in Control",
+            "volume": "50",
+            "issn": "",
+            "pages": "448--456",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.arcontrol.2020.09.006"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Droplet fate in indoor environments, or can we prevent the spread of infection? Indoor Air",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Morawska",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Proceedings of the 10th International Conference on Indoor Air Quality and Climate",
+            "volume": "16",
+            "issn": "",
+            "pages": "335--347",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1600-0668.2006.00432.x"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The duration of infectiousness of individuals infected with SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Spillane",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Comber",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Cardwell",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Harrington",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Connell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Infection",
+            "volume": "81",
+            "issn": "6",
+            "pages": "847--856",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.10.009"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "SARS-CoV-2, SARS-CoV, and MERS-CoV viral load dynamics, duration of viral shedding, and infectiousness: a systematic review and meta-analysis. The Lancet Microbe",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cevik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tate",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Lloyd",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Maraolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Schafers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "2",
+            "issn": "",
+            "pages": "13--22",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S2666-5247(20)30172-5"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Viral load and contact heterogeneity predict SARS-CoV-2 transmission and super-spreading events",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Goyal",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Reeves",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Cardozo-Ojeda",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Schiffer",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mayer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "ELife",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7554/eLife.63537"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Kinetics of SARS-CoV-2 infection in the human upper and lower respiratory tracts and their relationship with infectiousness",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ke",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zitzmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ribeiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Perelson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "MedRXiv",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.09.25.20201772"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "In vivo kinetics of SARS-CoV-2 infection and its relationship with a persons infectiousness. Proceedings of the National Academy of Sciences",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ke",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zitzmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ribeiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Perelson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "118",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2111477118"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "SARS-CoV-2 detection, viral load and infectivity over the course of an infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Jordan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Clyne",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rohde",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Drummond",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Infection",
+            "volume": "81",
+            "issn": "3",
+            "pages": "357--371",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jinf.2020.06.067"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "World Health Organization. Key criteria for the ethical acceptability of COVID-19 human challenge studies",
+            "authors": [],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Design, recruitment, and microbiological considerations in human challenge studies. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Darton",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Blohmke",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Moorthy",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Altmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Hayden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "15",
+            "issn": "",
+            "pages": "68--75",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Quantification of Ebola virus replication kinetics in vitro",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Carruthers",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Smither",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Virology Team",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Weller",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Williamson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "PLoS Computational Biology",
+            "volume": "16",
+            "issn": "11",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pcbi.1008375"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Quantification system for the viral dynamics of a highly pathogenic simian/human immunodeficiency virus based on an in vitroexperiment and a mathematical model",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Iwami",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Holder",
+                    "suffix": ""
+                },
+                {
+                    "first": "Caa",
+                    "middle": [],
+                    "last": "Beauchemin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Morita",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Tada",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sato",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Igarashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Miura",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Retrovirology",
+            "volume": "9",
+            "issn": "1",
+            "pages": "1--12",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/PREACCEPT-8502330256154242"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Quantifying mechanistic traits of influenza viral dynamics using in vitro data",
+            "authors": [
+                {
+                    "first": "Awc",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zhou",
+                    "middle": [],
+                    "last": "Jie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Caa",
+                    "middle": [],
+                    "last": "Beauchemin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Russell",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Barclay",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Riley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Epidemics",
+            "volume": "33",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.epidem.2020.100406"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Modeling inoculum dose dependent patterns of acute virus infections",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Handel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Theoretical Biology",
+            "volume": "347",
+            "issn": "",
+            "pages": "63--73",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Approximate Bayesian Computation for infectious disease modelling",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Minter",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Retkute",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Epidemics",
+            "volume": "29",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.epidem.2019.100368"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Toni",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Welch",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Strelkowa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ipsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mph",
+                    "middle": [],
+                    "last": "Stumpf",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Journal of the Royal Society Interface",
+            "volume": "6",
+            "issn": "31",
+            "pages": "187--202",
+            "other_ids": {
+                "DOI": [
+                    "10.1098/rsif.2008.0172"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "On optimality of kernels for approximate Bayesian computation using sequential Monte Carlo. Statistical applications in genetics and molecular biology",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Filippi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Barnes",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cornebise",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mph",
+                    "middle": [],
+                    "last": "Stumpf",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "12",
+            "issn": "",
+            "pages": "87--107",
+            "other_ids": {
+                "DOI": [
+                    "10.1515/sagmb-2012-0069"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Adaptive approximate Bayesian computation tolerance selection",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Simola",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cisewski-Kehe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Gutman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Corander",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Bayesian analysis",
+            "volume": "16",
+            "issn": "2",
+            "pages": "397--423",
+            "other_ids": {
+                "DOI": [
+                    "10.1214/20-BA1211"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "SARS-CoV-2 viral dynamics in non-human primates",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gon\u00e7alves",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Maisonnasse",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Donati",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Albert",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Behillil",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Contreras",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "PLoS Computational Biology",
+            "volume": "17",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pcbi.1008785"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Safety, tolerability and viral kinetics during SARS CoV-2 human challenge",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Killingley",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mann",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kalinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Boyers",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Goonawardane",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Lindsell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.21203/rs.3.rs-1121993/v1"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Community transmission and viral load kinetics of the SARS-CoV-2 delta (B. 1.617. 2) variant in vaccinated and unvaccinated individuals in the UK: a prospective, longitudinal, cohort study. The Lancet Infectious Diseases",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singanayagam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hakki",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dunning",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Madon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Crone",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Koycheva",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Derqui-Fernandez",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Barnett",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Whitfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Varro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "22",
+            "issn": "",
+            "pages": "648--652",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S1473-3099"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Quantifying the relationship between SARS-CoV-2 viral load and infectiousness",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Marc",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kerioui",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Blanquart",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bertrand",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Mitj\u00e0",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Corbacho-Monn\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Marks",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guedj",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Elife",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7554/eLife.69302"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Viral dynamics of acute SARS-CoV-2 infection and applications to diagnostic and public health strategies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kissler",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Fauver",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mack",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Olesen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tai",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Shiue",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "PLoS Biology",
+            "volume": "19",
+            "issn": "7",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pbio.3001333"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Duration of infectiousness and correlation with RT-PCR cycle threshold values in cases of COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singanayagam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Charlett",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lopez",
+                    "middle": [],
+                    "last": "Bernal",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Saliba",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Ellis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ladhani",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zambon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gopal",
+                    "middle": [],
+                    "last": "Robin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eurosurveillance",
+            "volume": "25",
+            "issn": "32",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2807/1560-7917.ES.2020.25.32"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Dose-Response Modeling: Extrapolating From Experimental Data to Real-World Populations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pratt",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Bennett",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gillard",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Leach",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hall",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Risk Analysis",
+            "volume": "41",
+            "issn": "1",
+            "pages": "67--78",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/risa.13597"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Quantification of the tradeoff between test sensitivity and test frequency in a COVID-19 epidemic-a multi-scale modeling approach",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Forde",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ciupe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Viruses",
+            "volume": "13",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/viruses13030457"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Exploring the impact of inoculum dose on host immunity and morbidity to inform modelbased vaccine design",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Handel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Mckay",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pawelek",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zarnitsyna",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Antia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "PLoS Computational Biology",
+            "volume": "14",
+            "issn": "10",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pcbi.1006505"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Structural basis for SARS-CoV-2 Delta variant recognition of ACE2 receptor and broadly neutralizing antibodies",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2022,
+            "venue": "Nature Communications",
+            "volume": "13",
+            "issn": "1",
+            "pages": "1--12",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41467-022-28528-w"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Immune response and within-host viral evolution: Immune response can accelerate evolution",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Korobeinikov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Theoretical Biology",
+            "volume": "456",
+            "issn": "",
+            "pages": "74--83",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jtbi.2018.08.003"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "SARS-CoV-2 evolution in an immunocompromised host reveals shared neutralization escape mechanisms",
+            "authors": [],
+            "year": 2021,
+            "venue": "Cell",
+            "volume": "184",
+            "issn": "10",
+            "pages": "2605--2617",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Posterior predictions: Predicted viral dynamics of infectious virus (blue) and total virus (green) for participants of the human challenge study, constructed using approximate posterior samples from the ABC-SMC. Solid lines represent pointwise median predictions and shaded regions indicate 95% credible regions. Horizontal dashed lines indicate the limit of quantification. model selection algorithm was used to determine if the inclusion of effector cells was necessary (see Methods). For six individuals, there was very strong evidence in favour of the model with the immune response, whilst for a further individual there was positive evidence (see",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Timescales of infection: Estimates for the time of first positive test and the duration an individual remains positive. The timescales are derived from model predictions of both total (green) and infectious (blue) virus.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "ATACCC validation: Predicted URT viral loads for participants in the ATACCC study. Predictions are constructed using samples from the mixture distribution presented inFigure 2and allowing for a delay between infection and enrolment of up to 10 days. Solid lines represent pointwise median predictions and shaded regions indicate 95% credible regions. Horizontal dashed lines indicate the limit of detection.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "model M1 in favour of model M2 is calculated as follows:",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": ". ; https://doi.org/10.1101/2022.04.22.22274137 doi: medRxiv preprint",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

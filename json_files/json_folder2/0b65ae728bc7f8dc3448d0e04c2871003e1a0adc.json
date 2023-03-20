@@ -1,0 +1,2097 @@
+{
+    "paper_id": "0b65ae728bc7f8dc3448d0e04c2871003e1a0adc",
+    "metadata": {
+        "title": "0123456789) 1 3 Maternal and Child Health Journal",
+        "authors": [
+            {
+                "first": "M\u00f3nica",
+                "middle": [
+                    "L"
+                ],
+                "last": "Caudillo",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [],
+                "last": "Constanza Hurtado-Acuna",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [
+                    "S"
+                ],
+                "last": "Rendall",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [
+                    "Michel"
+                ],
+                "last": "Boudreaux",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Objectives Although multi-component policy interventions can be important tools to increase access to contraception, we know little about how they may change contraceptive use among postpartum women. We estimate the association of the Delaware Contraceptive Access Now (DelCAN) initiative with use of postpartum Long-Acting Reversible Contraception (LARC). DelCAN included Medicaid payment reform for immediate postpartum LARC use, provider training and technical assistance in LARC provision, and a public awareness campaign. Methods We used a difference-in-differences design and data from the 2012 to 2017 pregnancy risk assessment monitoring system to compare changes in postpartum LARC use in Delaware versus 15 comparison states, and differences in such changes by women's Medicaid enrollment. Results Relative to the comparison states, postpartum LARC use in Delaware increased by 5.26 percentage points (95% CI 2.90-7.61, P < 0.001) during the 2015-2017 DelCAN implementation period. This increase was the largest among Medicaidcovered women, and grew over the first three implementation years. By the third year of the DelCAN initiative (2017), the relative increase in postpartum LARC use for Medicaid women exceeded that for non-Medicaid women by 7.24 percentage points (95% CI 0.12-14.37, P = 0.046).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The DelCAN initiative was associated with increased LARC use among postpartum women in Delaware. During the first 3 years of the initiative, LARC use increased progressively and to a greater extent among Medicaidenrolled women. Comprehensive initiatives that combine Medicaid payment reforms, provider training, free contraceptive services, and public awareness efforts may reduce unmet demand for highly effective contraceptives in the postpartum months.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Postpartum patients who wish to delay or prevent a subsequent pregnancy face unique difficulties to attain their reproductive goals, and have substantial unmet demand for highly effective contraception (Potter et al., 2014) . Among other barriers, these patients often encounter bundled labor-and-delivery payments that do not separately reimburse for immediate postpartum (IPP) services and lack of widespread provider expertise with the most effective reversible contraceptives (Lacy et al., 2020; Okoroh et al., 2018; Potter et al., 2014) . To address this problem, multiple states have implemented a policy change that facilitated Medicaid reimbursement of long-acting reversible contraceptives (LARCs) placed immediately postpartum (IPP), during the same hospital admission for delivery. In South Carolina, which implemented such payment reform in 2012, LARC insertions increased by 5.6 percentage points among Medicaid-enrolled women, and the probability of preterm births and low birth weight decreased after the policy change (Steenland et al., 2022) . However, experiences with IPP payment reform have been mixed, with states like Wisconsin seeing a change of less than 0.2 percentage points in postpartum LARC use (Kramer et al., 2021) . Furthermore, implementation of such reforms across healthcare facilities within participating states has been uneven (Okoroh et al., 2018; Steenland et al., 2021) .",
+            "cite_spans": [
+                {
+                    "start": 202,
+                    "end": 223,
+                    "text": "(Potter et al., 2014)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 480,
+                    "end": 499,
+                    "text": "(Lacy et al., 2020;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 500,
+                    "end": 520,
+                    "text": "Okoroh et al., 2018;",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 521,
+                    "end": 541,
+                    "text": "Potter et al., 2014)",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1034,
+                    "end": 1058,
+                    "text": "(Steenland et al., 2022)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1224,
+                    "end": 1245,
+                    "text": "(Kramer et al., 2021)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1365,
+                    "end": 1386,
+                    "text": "(Okoroh et al., 2018;",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1387,
+                    "end": 1410,
+                    "text": "Steenland et al., 2021)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Given the wide variation in experiences with IPP payment reforms, it is key to identify circumstances under which these interventions can be successful. Previous studies have underscored the importance of providing training for healthcare providers and technical assistance to support the implementation of payment reforms (Fuerst et al., 2021; Lacy et al., 2020; Okoroh et al., 2018) . And state-wide comprehensive family planning interventions encompassing information campaigns, no-cost contraceptive services, and/or provider training have been found to reduce barriers to contraceptive access among women of reproductive age (Biggs et al., 2015; Birgisson et al., 2015; Boudreaux et al., 2020; Lindo & Packham, 2017; Ricketts et al., 2014; Secura et al., 2014) . Nonetheless, we know little about how such a comprehensive initiative may change contraceptive use among postpartum women.",
+            "cite_spans": [
+                {
+                    "start": 323,
+                    "end": 344,
+                    "text": "(Fuerst et al., 2021;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 345,
+                    "end": 363,
+                    "text": "Lacy et al., 2020;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 364,
+                    "end": 384,
+                    "text": "Okoroh et al., 2018)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 630,
+                    "end": 650,
+                    "text": "(Biggs et al., 2015;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 651,
+                    "end": 674,
+                    "text": "Birgisson et al., 2015;",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 675,
+                    "end": 698,
+                    "text": "Boudreaux et al., 2020;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 699,
+                    "end": 721,
+                    "text": "Lindo & Packham, 2017;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 722,
+                    "end": 744,
+                    "text": "Ricketts et al., 2014;",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 745,
+                    "end": 765,
+                    "text": "Secura et al., 2014)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This study contributes to the discussion on what works to reduce barriers to contraceptive access among postpartum women by assessing changes in their LARC use in Delaware relative to 15 comparison states after the implementation of the Delaware Contraceptive Access Now (DelCAN) initiative. DelCAN encompassed Medicaid payment reform to separately reimburse for IPP LARC devices, provision of free LARCs in outpatient clinics, provider training and technical assistance, and a public awareness campaign, all oriented towards increasing access to all contraceptive methods in general, and to LARCs in particular.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The Delaware Contraceptive Access Now (DelCAN) initiative was launched in 2015 by Upstream USA and the state of Delaware, with the goal of ensuring same-day access to all contraceptive methods, and to LARCs in particular, regardless of a patient's ability to pay. DelCAN ran from 2015 through early 2020 and encompassed several components focused on postpartum patients . In particular, Medicaid payment policy was altered to allow hospitals to obtain reimbursement for IPP LARC devices. Similar payment mandates were not issued for the privately insured. Hospitals obtained clinical and business operations training which was meant to address the billing and coding challenges that have been encountered in other states implementing IPP payment reform (Fuerst et al., 2021; Lacy et al., 2020) . The largest delivery hospital in the state, responsible for approximately 50% of deliveries, had a strong champion provider and began offering IPP LARC services in 2015, while other hospitals joined on a rolling basis between 2016 and 2018.",
+            "cite_spans": [
+                {
+                    "start": 753,
+                    "end": 774,
+                    "text": "(Fuerst et al., 2021;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 775,
+                    "end": 793,
+                    "text": "Lacy et al., 2020)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intervention"
+        },
+        {
+            "text": "In addition to hospital-based reforms, DelCAN also included outpatient reforms that may have increased access to contraceptives for postpartum patients. From February 2016 to March 2020, Upstream USA provided LARC training for medical providers and technical assistance to support staff in publicly funded Title X clinics, and in the largest private outpatient clinics in Delaware. Starting in 2015 and continuing through 2019, the Delaware Division of Public Health funded the acquisition of LARC devices, which enabled Title X clinics to provide these methods at no cost to women of any income level, therefore eliminating the sliding scale co-insurance fee that was previously in place for women above the poverty line. Finally, the public awareness campaign \"Be Your Own Baby\" was fielded from May 2017 to October 2018 to help patients find healthcare providers who could provide free or low cost same-day contraceptives.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intervention"
+        },
+        {
+            "text": "To evaluate changes in postpartum LARC use after Del-CAN, our analytical design offers three innovations relative to studies assessing similar outcomes after a payment policy change (Liberty et al., 2020; Smith et al., 2021; Steenland et al., 2021) . First, we use survey-based, state-representative measurement that assesses LARC use among all postpartum women, not just LARC insertion rates among those enrolled in Medicaid. Second, we use comparison states to account for national trends in LARC use. Third, we assess heterogeneity in LARC use change by Medicaid enrollment. We offer details on each of these points below.",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 204,
+                    "text": "(Liberty et al., 2020;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 205,
+                    "end": 224,
+                    "text": "Smith et al., 2021;",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 225,
+                    "end": 248,
+                    "text": "Steenland et al., 2021)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intervention"
+        },
+        {
+            "text": "We used data from the 2012 to 2017 Pregnancy Risk Assessment Monitoring System (PRAMS). The PRAMS is an annual, state-level probability survey representative of women who gave birth in each participating state and year. The PRAMS methodology and protocol have received approval from the Institutional Review Boards (IRB) of the Centers for Disease Control and Prevention and of participating states (Shulman et al., 2018) . The University of Maryland IRB determined our analyses to be exempt from review. Our analysis was entirely based on survey and administrative data and did not use clinical study or patient data. Throughout the paper, we will sometimes refer to the DelCAN intervention as the \"treatment\" to adhere to the conventional language used in the difference-in-differences literature (Wing et al., 2018) .",
+            "cite_spans": [
+                {
+                    "start": 399,
+                    "end": 421,
+                    "text": "(Shulman et al., 2018)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 799,
+                    "end": 818,
+                    "text": "(Wing et al., 2018)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Sources"
+        },
+        {
+            "text": "Our study period includes 3 years in the pre-treatment period (2012) (2013) (2014) , and 3 years in the treatment period (2015) (2016) (2017) . We included the 15 comparison states for which PRAMS data was available for all years in the study period: Alaska, Illinois, Massachusetts, Maryland, Maine, Missouri, New Jersey, New Mexico, Oklahoma, Pennsylvania, Utah, Washington, Wisconsin, West Virginia, and Wyoming. Colorado and South Carolina were excluded because they also implemented interventions to promote LARC use during the observed years (Liberty et al., 2020; Ricketts et al., 2014) . We restricted our analytical sample to the 105,795 women who completed the survey between 2 and 9 months postpartum, who were neither pregnant nor trying to get pregnant at the time of the survey, and who were sexually active. We further excluded a weighted 7% who had missing values in any of the individual variables used in our models, for a final analytical sample of 93,285 women, with 4815 being from Delaware and 88,470 being from the 15 comparison states. The observation numbers reported above and in tables correspond to unweighted frequencies.",
+            "cite_spans": [
+                {
+                    "start": 62,
+                    "end": 68,
+                    "text": "(2012)",
+                    "ref_id": null
+                },
+                {
+                    "start": 69,
+                    "end": 75,
+                    "text": "(2013)",
+                    "ref_id": null
+                },
+                {
+                    "start": 76,
+                    "end": 82,
+                    "text": "(2014)",
+                    "ref_id": null
+                },
+                {
+                    "start": 121,
+                    "end": 127,
+                    "text": "(2015)",
+                    "ref_id": null
+                },
+                {
+                    "start": 128,
+                    "end": 134,
+                    "text": "(2016)",
+                    "ref_id": null
+                },
+                {
+                    "start": 135,
+                    "end": 141,
+                    "text": "(2017)",
+                    "ref_id": null
+                },
+                {
+                    "start": 548,
+                    "end": 570,
+                    "text": "(Liberty et al., 2020;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 571,
+                    "end": 593,
+                    "text": "Ricketts et al., 2014)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Sources"
+        },
+        {
+            "text": "All PRAMS respondents were asked \"Are you or your husband or partner doing anything now to keep from getting pregnant?,\" and if they answered affirmatively, they were asked \"What kind of birth control are you or your husband or partner using now to keep from getting pregnant?\" Our outcome of interest is a binary variable (1 = yes, 0 = no) that identifies women who were using an implant or an IUD when they were surveyed. Respondents who were using any other contraceptive method, or no method at all, where coded in the reference category. Intervention status was measured by a binary variable that was equal to 1 if the respondent lived in Delaware, and 0 if she lived in any of the 15 comparison states.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Sources"
+        },
+        {
+            "text": "The PRAMS asked women \"During the month before you got pregnant with your new baby, what kind of health insurance did you have?\" and \"During your most recent pregnancy, what kind of health insurance did you have for your prenatal care?\" Using the responses to these questions, we classified women as enrolled in Medicaid before or during pregnancy versus not enrolled. Women who become eligible for Medicaid during pregnancy have coverage for at least 60 days postpartum (Ranji et al., 2019) . Those who were eligible for Medicaid coverage based on their prepregnancy income are likely to continue to be covered in the postpartum months.",
+            "cite_spans": [
+                {
+                    "start": 471,
+                    "end": 491,
+                    "text": "(Ranji et al., 2019)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Sources"
+        },
+        {
+            "text": "Individual-level control variables from the PRAMS data included in our analysis were women's age, race and ethnicity, and marital status, and characteristics of the recent birth, including pregnancy intention, birth order, birth weight, whether the birth was vaginal, and the infant's age in months. State-level characteristics were added from other sources. We merged state-year data on the number of Federal Qualified Health Centers and rural health clinics per 100,000 women aged 15-50, obtained from the Health Resources & Services Administration (HRSA, 2020). We linked aggregate measures of sociodemographic conditions of women aged 15-50 for each state and year, obtained from the American Community Survey (Ruggles et al., 2019) . These measures included the percentages of women living in poverty and with health insurance coverage. Finally, we merged Medicaid income eligibility thresholds for parents and pregnant women per state-year, obtained from the Kaiser Family Foundation (KFF, 2020). Medicaid eligibility rules helped to account for potential confounding from the Affordable Care Act's Medicaid expansion.",
+            "cite_spans": [
+                {
+                    "start": 714,
+                    "end": 736,
+                    "text": "(Ruggles et al., 2019)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Sources"
+        },
+        {
+            "text": "We used difference-in-differences linear probability models (Wing et al., 2018) to estimate the associations of DelCAN with postpartum LARC use. The models compared changes in postpartum LARC use in Delaware, from before DelCAN to the first 3 years of DelCAN, to changes over the same period in the comparison states. The underlying assumption of the approach was that changes in the comparison group represent what would have happened in Delaware had Del-CAN not been implemented. Because DelCAN was designed to influence LARC use through different mechanisms among women who were covered by Medicaid and women who were not, we estimated these models first for all women and then separately by Medicaid-coverage status.",
+            "cite_spans": [
+                {
+                    "start": 60,
+                    "end": 79,
+                    "text": "(Wing et al., 2018)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "All models included state and year fixed-effects, to which we added individual-and state-level time-varying controls. State fixed-effects account for sources of unobserved heterogeneity that may vary across states, but not over time, such as attitudes, cultural traits, or geographic characteristics. In contrast, year fixed effects capture unobserved confounders that vary over time, but are common to all states, such as macroeconomic trends.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Because only Medicaid-covered women were impacted by the IPP payment reform, and because those with and without Medicaid may have been affected by the outpatient components differently, we investigated if associations varied by Medicaid status. To do so, we pooled Medicaid and non-Medicaid women and included a triple interaction of Delaware, Medicaid status, and post-period indicators. This model also included individual controls, and Medicaid by state, Medicaid by year, and state by year interactions. We did not include state-level time-varying controls in these pooled models. In exploratory analyses, we estimated variations of these models in which we excluded state by year interactions and included state, year, and individual and state controls, all interacted by Medicaid, and obtained similar results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "We present results for two versions of each of the models described above. One in which time-relative to the intervention was measured as a binary pre-DelCAN to within-Del-CAN (\"pre-post\") variable, and one in which each year after the onset of DelCAN was allowed to have its own effect. The later of these approaches evaluated whether the effect of DelCAN was growing over time, coincident with increments in program components implemented over the 3 years .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Difference-in-differences models rely on the assumption that the trends in the comparison states accurately represent what would have occurred in Delaware had DelCAN not been implemented. Although this assumption cannot be directly tested, we follow the conventional approach (Ryan et al., 2015) and assess its plausibility by presenting a comparison of unadjusted trends in postpartum LARC use before and after the intervention started. All analyses were conducted in Stata 15. All our models adjusted for the complex survey design of PRAMS, using the Stata commands indicated in the survey documentation.",
+            "cite_spans": [
+                {
+                    "start": 276,
+                    "end": 295,
+                    "text": "(Ryan et al., 2015)",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Relative to women in the comparison states, in the baseline period women in Delaware were less educated, more likely to be enrolled in Medicaid before or during pregnancy, more likely to be Black, and less likely to be Hispanic (Table 1) . Births to women in Delaware were also more likely to be unwanted or mistimed. See Online Appendix 2 for descriptive statistics of state-year variables.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 228,
+                    "end": 237,
+                    "text": "(Table 1)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Baseline Characteristics and Trends in LARC Use"
+        },
+        {
+            "text": "Unadjusted trends show that postpartum LARC use increased for both Medicaid and non-Medicaid women for 2012-2017 in Delaware relative to the comparison states ( Fig. 1) . Increases in Delaware appear to be especially large for Medicaid-insured women, increasing from 16% in the pre-period to 27% in 2017. The trends in the probabilities of using LARCs postpartum during the study period appear parallel between treatment (Delaware) and control states prior to DelCAN (years 2012 DelCAN (years -2014 . Statistical tests of the equality of pre-treatment unadjusted trends supported this observation: interactions between a linear pre-treatment time variable and Delaware versus comparison states were statistically non-significant for all, Medicaid, and non-Medicaid women (see Online Appendix 3).",
+            "cite_spans": [
+                {
+                    "start": 460,
+                    "end": 478,
+                    "text": "DelCAN (years 2012",
+                    "ref_id": null
+                },
+                {
+                    "start": 479,
+                    "end": 498,
+                    "text": "DelCAN (years -2014",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 161,
+                    "end": 168,
+                    "text": "Fig. 1)",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Baseline Characteristics and Trends in LARC Use"
+        },
+        {
+            "text": "Results from our main models suggest that LARC use among postpartum women increased after DelCAN started, particularly among Medicaid-covered patients. In the adjusted difference-in-differences models using a binary pre-post treatment measure (Table 2) , we found that after DelCAN came into effect the probability of postpartum LARC use increased by 5.26 percentage points among women in Delaware (95% CI 2.90-7.61) compared to women in control states. Postpartum LARC use increased in Delaware relative to the comparison states by 7.33 percentage points (95% CI 3.47-11.19) among Medicaid-covered women, and by 3.54 percentage points (95% CI 0.55-6.52) among those not covered by Medicaid. The difference in the changes in probability of LARC use between Medicaid-and non-Medicaidcovered women in the pooled model was 5.15 percentage points (95% CI 0.46-9.84).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 243,
+                    "end": 252,
+                    "text": "(Table 2)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Difference-in-Differences Estimates"
+        },
+        {
+            "text": "Models disaggregating post-treatment years suggest that after DelCAN started, the positive associations with the probability of postpartum LARC use in Delaware grew over time for all women and were driven by the Medicaidenrolled (Table 3) ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 229,
+                    "end": 238,
+                    "text": "(Table 3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Difference-in-Differences Estimates"
+        },
+        {
+            "text": "We replicated the models discussed above using two alternative comparison groups. First, one that excluded states Table 1 Sociodemographic characteristics of postpartum women a in intervention and comparison states before DelCAN, 2012 DelCAN, -2014 Data are % (95% CI) unless otherwise specified. Reported Ns are unweighted. Chi square tests were used to assess differences between Delaware and comparison states. Comparison states were AK, IL, MA, MD, ME, MO, NJ, NM, OK, PA, UT, WA, WI, WV, and WY Source: 2012-2014 Pregnancy Risk Assessment Monitoring System (PRAMS) a The analytical sample is restricted to postpartum women who were not pregnant or trying to get pregnant, and who were sexually active at the time of the survey *P < 0.05, ** P < 0.01, *** P < 0.001 Low birth weight 7.8 (7.7, 7.9) 6.7 (6.5, 6.9) *** 9.9 (9.7, 10.2) 7.8 (7.5, 8.1) *** 5.8 (5.7, 5.9) 5.9 (5.7, 6.2) Time since index birth *** *** *** 3 or 2 months 60.0 (58.0, 62.0) 35. The contrast in difference-in-differences estimates comes from a regression that included the individual controls listed above, and Medicaid by state, Medicaid by year, and state by year interactions Source: Authors' analyses of data from the 2012 to 2017 PRAMS * P < 0.05, ** P < 0.01, *** P < 0.001",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 234,
+                    "text": "DelCAN, 2012",
+                    "ref_id": null
+                },
+                {
+                    "start": 235,
+                    "end": 248,
+                    "text": "DelCAN, -2014",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 114,
+                    "end": 121,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Sensitivity Tests"
+        },
+        {
+            "text": "Difference-in-differences estimate (95% CI) implemented a reform intended to increase LARC use before 2017 (Online Appendix 5). As an additional sensitivity test, we restricted the Medicaid group to women who were enrolled before pregnancy, to exclude those who may have self-selected into Medicaid to obtain LARC under DelCAN (Online Appendix 6). Results from all these exercises are very similar to those in our original models. As noted in the methods section, our primary statistical inference strategy was based on official PRAMS guidance which uses Taylor-series linearization to account for the complex sample design. However, difference-in-differences models are prone to serial autocorrelation at the level of the policy. Common strategies to account for this problem, including clustering, do not perform well in cases with only one treated unit in the treatment group and few clusters overall (Buchmueller et al., 2011; Ferman & Pinto, 2019) . To address this concern, we conducted two sensitivity tests for the estimated p-values of our coefficients of interest. First, we used a bootstrap procedure to produce a set of p-values that properly accounts of autocorrelation with only one treated cluster (Ferman & Pinto, 2019 ) (Online Appendix 7). Second, we used permutation tests (Abadie et al., 2010; MacKinnon & Webb, 2020 ) (Online Appendix 8). In both sets of exercises, we found statistical inferences that were consistent with findings in our main analyses, which strengthens the evidence that our results are statistically meaningful. Difference-in-differences estimates were adjusted for women's age, race/ethnicity, and marital status, and characteristics of the index birth, including pregnancy intention, birth order, birth weight, whether it was a vaginal birth, and the infant's age in months. State-year controls included percentages of women living in poverty, and with health insurance coverage, clinics per 100,000 women aged 15-50, and Medicaid income thresholds for parents and pregnant women. Models included state and year fixed effects ",
+            "cite_spans": [
+                {
+                    "start": 904,
+                    "end": 930,
+                    "text": "(Buchmueller et al., 2011;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 931,
+                    "end": 952,
+                    "text": "Ferman & Pinto, 2019)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1213,
+                    "end": 1234,
+                    "text": "(Ferman & Pinto, 2019",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1292,
+                    "end": 1313,
+                    "text": "(Abadie et al., 2010;",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1314,
+                    "end": 1336,
+                    "text": "MacKinnon & Webb, 2020",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "% Using LARCs"
+        },
+        {
+            "text": "The Delaware Contraceptive Access Now initiative combined multiple intervention components to address barriers to contraceptive access faced by postpartum women in Delaware. We find that DelCAN was associated with an increase in LARC use among postpartum women in the first 3 years of implementation. This result was robust to several sensitivity tests, and to alternative statistical inference strategies. The association between DelCAN and postpartum LARC use appears to be larger for Medicaid-covered women, consistent with their having received IPP LARC payment changes, an additional program component that was not available for non-Medicaid-enrolled women. However, the differential increments in LARC use by Medicaid status may also reflect heterogenous responses to the outpatient components that were designed to reach all reproductive age women in Delaware. Associations between DelCAN and postpartum LARC use also appear to have grown across the first 3 years of the DelCAN, which is consistent with the increase in the number of hospitals in Delaware providing IPP services and increased outpatient clinic capacity to perform LARC insertions over time . Our results suggest that when combined with strong state government support, provider training, and technical assistance, initiatives that combine inpatient and outpatient components such as DelCAN may effectively expand access to highly effective contraception for postpartum women. The impact of DelCAN on postpartum LARC use may be at least comparable to that of successful similar initiatives. By the third year of DelCAN implementation, postpartum LARC use increased by 10.5 percentage points among Medicaidenrolled women. This is equivalent to twice the increase in IPP LARC insertion among adult women 5 years after South Carolina's IPP payment reform (Steenland et al., 2019) . Differences in the magnitude of associations may be explained by the contribution of additional program components such as the media campaign, technical assistance, and provider training in DelCAN. Another potential explanation is that our study's measurement allowed for both IPP and outpatient postpartum LARC insertions.",
+            "cite_spans": [
+                {
+                    "start": 1825,
+                    "end": 1849,
+                    "text": "(Steenland et al., 2019)",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our findings are particularly timely for policy makers and healthcare professionals given that as many as 43 states and the District of Columbia have reformed Medicaid payment for IPP LARC services in 2020 (ACOG, 2020), up from only 15 states out of 40 surveyed in 2014/2015 (Moniz et al., 2015) . Furthermore, our results underscore the importance of postpartum Medicaid coverage, which the Medicaid and CHIP Payment and Access Commission recently recommended to extend to 12 months (Clark & Burak, 2021) . Such recommendation was partially incorporated in the COVID-19 relief bill passed on March 11th 2021 (Associated Press, 2021) .",
+            "cite_spans": [
+                {
+                    "start": 275,
+                    "end": 295,
+                    "text": "(Moniz et al., 2015)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 484,
+                    "end": 505,
+                    "text": "(Clark & Burak, 2021)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 609,
+                    "end": 633,
+                    "text": "(Associated Press, 2021)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Further insight about the role of public health interventions in reproductive autonomy can be gained from evaluating changes in use of alternative contraceptive methods. For instance, family planning initiatives may promote reproductive autonomy by allowing women to substitute sterilization with a LARC, a contraceptive strategy that offers similar effectiveness, while also being able to be reversed to adjust to their future fertility goals (Steenland et al., 2021) . However, future research should assess the extent to which DelCAN expanded fully informed and free access to all types of contraceptive methods among postpartum women (Senderowicz, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 444,
+                    "end": 468,
+                    "text": "(Steenland et al., 2021)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 638,
+                    "end": 657,
+                    "text": "(Senderowicz, 2020)",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Previous studies have documented biases in the healthcare system towards disproportionately limiting the fertility of disadvantaged patients (Manzer & Bell, 2021) . Therefore, further research is also needed to ascertain if the increase in LARC use that we observed was produced by interactions centered around patient's preferences (Dehlendorf et al., 2015) , and if they were accompanied by unrestricted and timely access to LARC removal (Higgins et al., 2016) . As family planning initiatives like Del-CAN continue to be designed, implemented, and evaluated, especial attention should be paid to respecting and advancing the reproductive autonomy of racial-ethnic and socioeconomic groups that have historically suffered from restrictions to their fertility (Gomez et al., 2014) .",
+            "cite_spans": [
+                {
+                    "start": 141,
+                    "end": 162,
+                    "text": "(Manzer & Bell, 2021)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 333,
+                    "end": 358,
+                    "text": "(Dehlendorf et al., 2015)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 440,
+                    "end": 462,
+                    "text": "(Higgins et al., 2016)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 761,
+                    "end": 781,
+                    "text": "(Gomez et al., 2014)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our research strategy incorporates several strengths and innovations relative to previous studies, including the estimation of changes in LARC use for all women, not only for those who were enrolled in Medicaid; assessing heterogeneous effects by Medicaid coverage; and using a comparison group of states to account for national trends in LARC use. A limitation of our study is that our data do not allow us to distinguish between LARC insertions that occurred during the delivery stay, and those that occurred at a later, followup postpartum visit. Instead, our estimates offer a measure of the total prevalence of statewide LARC use during the postpartum months, which accounts for both inpatient and outpatient insertions and early removals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Based on our findings, multi-component state-wide initiatives like DelCAN may be viewed as a promising strategy to reduce unmet demand for highly effective contraception among postpartum women in other states. Researchers, clinicians, and policy makers should continue to examine and improve the design and implementation of comprehensive family planning initiatives and develop their full potential to advance reproductive autonomy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The online version contains supplementary material available at https:// doi. org/ 10. 1007/ s10995-022-03433-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Author Contributions MLC and CH conducted data cleaning, management, and analysis. All authors contributed to the research design and writing of the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Funding We thank participants of the 2021 Population Association of America Annual Conference for their comments. This work was supported by infrastructural support from the Eunice Kennedy Shriver National Institute of Child Health and Human Development, population research infrastructure Grant P2C-HD041041, and a research grant from an anonymous private philanthropic foundation. Neither organization had any involvement in the analysis and interpretation of the data, nor on the decision to submit the article for publication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Researchers can apply to the CDC for access to the 2012-2017 Pregnancy Risk Assessment Monitoring System (PRAMS).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Availability"
+        },
+        {
+            "text": "Code Availability Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Availability"
+        },
+        {
+            "text": "The authors have not disclosed any competing interests.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interest"
+        },
+        {
+            "text": "Ethical Approval The University of Maryland IRB determined our analyses to be exempt from review. The exemption letter is available upon request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for Publication Not applicable."
+        },
+        {
+            "text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visithttp:// creat iveco mmons. org/ licen ses/ by/4. 0/",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for Publication Not applicable."
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Synthetic control methods for comparative case studies: Estimating the effect of California's tobacco control program",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Abadie",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Diamond",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hainmueller",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of the American Statistical Association",
+            "volume": "105",
+            "issn": "490",
+            "pages": "493--505",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The American College of obstetricians and gynecologists",
+            "authors": [
+                {
+                    "first": "Acog",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "COVID-19 relief bill may help states cut maternal deaths",
+            "authors": [],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Did increasing use of highly effective contraception contribute to declining abortions in Iowa?",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Biggs",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Rocca",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Brindis",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hirsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Grossman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Contraception",
+            "volume": "91",
+            "issn": "2",
+            "pages": "167--173",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Preventing unintended pregnancy: The contraceptive CHOICE project in review",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Birgisson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Secura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Madden",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Peipert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Journal of Women's Health",
+            "volume": "24",
+            "issn": "5",
+            "pages": "349--353",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Changes to contraceptive method use at title X clinics following Delaware contraceptive access now",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Boudreaux",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Roby",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rendall",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "American Journal of Public Health",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.2105/AJPH.2020.305666"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "The effect of an employer health insurance mandate on health insurance coverage and the demand for labor: Evidence from Hawaii",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Buchmueller",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dinardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Valletta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "American Economic Journal: Economic Policy",
+            "volume": "3",
+            "issn": "4",
+            "pages": "25--51",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Summary of Delaware contraceptive access now (DelCAN) Initiative",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Rendall",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Boudreaux",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Roby",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "MACPAC recommends one year of postpatum Medicaid coverage at 100% match",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Clark",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Burak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Performance measures for contraceptive care: What are we actually trying to measure?",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dehlendorf",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bellanca",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Policar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Contraception",
+            "volume": "91",
+            "issn": "6",
+            "pages": "433--437",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Inference in differences-in-differences with few treated groups and heteroskedasticity",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Ferman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pinto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Review of Economics and Statistics",
+            "volume": "101",
+            "issn": "3",
+            "pages": "452--467",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Long-acting reversible contraception in medicaid: Where do we go from here? Women's Health Issues",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Fuerst",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "George",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Moore",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "31",
+            "issn": "",
+            "pages": "310--313",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Women or LARC first? Reproductive autonomy and the promotion of long-acting reversible contraceptive methods",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gomez",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fuentes",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Allina",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Perspectives on Sexual and Reproductive Health",
+            "volume": "46",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Provider bias in long-acting reversible contraception (LARC) promotion and removal: Perceptions of young adult women",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Higgins",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kramer",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ryder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "American Journal of Public Health",
+            "volume": "106",
+            "issn": "11",
+            "pages": "1932--1937",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Health resources & services administration",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hrsa",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Kaiser family foundation. Medicaid/CHIP eligibility limits",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Kff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Provision of immediate postpartum long-acting reversible contraceptives before and after Wisconsin medicaid's payment change. Women's Health Issues",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kramer",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Gangnon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Burns",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.whi.2021.02.009"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Statewide quality improvement initiative to implement immediate postpartum long-acting reversible contraception",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lacy",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Baird",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Barker",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zite",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "American Journal of Obstetrics and Gynecology",
+            "volume": "222",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Coverage of immediate postpartum long-acting reversible contraception has improved birth intervals for at-risk populations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Liberty",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yee",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Darney",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lopez-Defede",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Rodriguez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "American Journal of Obstetrics and Gynecology",
+            "volume": "222",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "How much can expanding access to long-acting reversible contraceptives reduce teen birth rates?",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lindo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Packham",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "American Economic Journal: Economic Policy",
+            "volume": "9",
+            "issn": "3",
+            "pages": "348--376",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Randomization inference for difference-in-differences with few treated clusters",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mackinnon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Webb",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Econometrics",
+            "volume": "218",
+            "issn": "2",
+            "pages": "435--450",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "We're a little biased\": Medicine and the management of bias through the case of contraception",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Manzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Bell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Journal of Health and Social Behavior",
+            "volume": "62",
+            "issn": "2",
+            "pages": "120--135",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Characterization of Medicaid policy for immediate postpartum contraception",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Moniz",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Dalton",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Forman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Iott",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Landgraf",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Contraception",
+            "volume": "92",
+            "issn": "6",
+            "pages": "523--531",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Policy change is not enough: Engaging provider champions on immediate postpartum contraception",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Okoroh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kane",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Gee",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kieltyka",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Frederiksen",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Baca",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Rankin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Goodman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Kroelinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Barfield",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "American Journal of Obstetrics and Gynecology",
+            "volume": "218",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Unmet demand for highly effective postpartum contraception in Texas",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Potter",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hopkins",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Aiken",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hubert",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Stevenson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Grossman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Contraception",
+            "volume": "90",
+            "issn": "5",
+            "pages": "488--495",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Expanding postpartum Medicaid coverage. Henry J Kaiser Family Foundation",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Ranji",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ivette",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Salganicoff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Game change in Colorado: Widespread use of long-acting reversible contraceptives and rapid decline in births among young, low-income women",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ricketts",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Klingler",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schwalberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Perspectives on Sexual and Reproductive Health",
+            "volume": "46",
+            "issn": "3",
+            "pages": "125--132",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "IPUMS USA: Version 9",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ruggles",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Flood",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Goeken",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Grover",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Meyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pacas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sobek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.18128/D010.V9.0"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Why we shouldn't be indifferent to specification in difference-in-differences analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Burgess",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Dimick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Health Services Research",
+            "volume": "50",
+            "issn": "4",
+            "pages": "1211--1235",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Provision of no-cost, long-acting contraception and teenage pregnancy",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Secura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Madden",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Mcnicholas",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mullersman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Buckel",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Peipert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "New England Journal of Medicine",
+            "volume": "371",
+            "issn": "14",
+            "pages": "1316--1323",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Contraceptive autonomy: Conceptions and measurement of a novel family planning indicator",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Senderowicz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Studies in Family Planning",
+            "volume": "51",
+            "issn": "",
+            "pages": "161--176",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The pregnancy risk assessment monitoring system (PRAMS): Overview of design and methodology",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Shulman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Angelo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Harrison",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Warner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "American Journal of Public Health",
+            "volume": "108",
+            "issn": "10",
+            "pages": "1305--1313",
+            "other_ids": {
+                "DOI": [
+                    "10.2105/AJPH.2018.304563"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Analysis of postpartum uptake of long-acting reversible contraceptives before and after implementation of Medicaid reimbursement policy. Maternal and Child Health Journal",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mccool-Myers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kottke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10995-021-03180-w"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Association between South Carolina Medicaid's change in payment for immediate postpartum long-acting reversible contraception and birth intervals",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Steenland",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pace",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sinaiko",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "JAMA",
+            "volume": "322",
+            "issn": "1",
+            "pages": "76--78",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Medicaid payments for immediate postpartum long-acting reversible contraception: evidence from south Carolina: study examines south Carolina's Medicaid program payments for the immediate postpartum placement of long-acting reversible contraception for women giving birth from",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Steenland",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pace",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sinaiko",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "",
+            "volume": "40",
+            "issn": "",
+            "pages": "334--342",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Association of medicaid reimbursement for immediate postpartum long-acting reversible contraception with infant birth outcomes",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Steenland",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pace",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2022,
+            "venue": "JAMA Pediatrics",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamapediatrics.2021.5688"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Designing difference in difference studies: Best practices for public health policy research",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wing",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Simon",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bello-Gomez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Annual Review of Public Health",
+            "volume": "39",
+            "issn": "",
+            "pages": "453--469",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": ". For all postpartum women in Delaware, the increments in the probability of LARC use went from 4.67 percentage points in 2015 (95% CI 1.34-8.01), to 4.35 percentage points in 2016 (95% CI 0.94-7.75), and 7.21 percentage points in 2017 (95% CI 3.67-10.75). For Medicaid-enrolled women, the changes in postpartum LARC use went from increases of 5.58 and 6.77 percentage points in 2015 and 2016 to 10.5 percentage points (95% CI 4.75-16.27) in 2017, compared to Medicaid-covered women in comparison states. The increase in postpartum LARC use for Medicaid-covered women in 2017, the third year of the program, was statistically-significantly greater than that for women not covered by Medicaid by 7.24 percentage points (95% CI 0.12-14.37).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Trends in the probability of using LARCs postpartum by Medicaid-coverage status, 2012-2017. Comparison states in sample were AK, IL, MA, MD, ME, MO, NJ, NM, OK, PA, UT, WA, WI, WV, and WY. The analytical sample is restricted to postpartum women who were not pregnant or trying to get pregnant, and who were sexu-ally active at the time of the survey. Vertical bar indicates the start of the Delaware Contraceptive Access Now (DelCAN) initiative in 2015. Source: Authors' analyses of data from the 2012 to 2017 Pregnancy Risk Assessment Monitoring System (PRAMS) Table 2 Difference-in-differences estimates for postpartum use of LARCs after DelCAN, and contrasts by Medicaid coverage status, 2012-2017 The analytical sample is restricted to postpartum women who were not pregnant or trying to get pregnant, and who were sexually active at the time of the survey DelCAN Delaware contraception access now Estimates are expressed in %. 95% CIs are in parentheses. Reported N's are unweighted Pre-DelCAN, 2012-2014; Post-DelCAN, 2015-2017 Comparison states in sample were AK, IL, MA, MD, ME, MO, NJ, NM, OK, PA, UT, WA, WI, WV, and WY Difference-in-Differences = (Delaware post-DelCAN \u2212 Delaware pre-DelCAN ) \u2212 (Comparison post-DelCAN \u2212 Comparison pre-DelCAN )Difference-in-differences estimates were adjusted for women's age, race/ethnicity, and marital status, and characteristics of the index birth, including pregnancy intention, birth order, birth weight, whether it was a vaginal birth, and the infant's age in months. State-year controls included percentages of women living in poverty, and with health insurance coverage, clinics per 100,000 women aged 15-50, and Medicaid income thresholds for parents and pregnant women. Models included state and year fixed effectsMedicaid-no Medicaid contrast in difference-in-differences = ((Delaware post-DelCAN \u2212 Delaware pre-DelCAN ) \u2212 (Comparison post-DelCAN \u2212 Comparison pre-DelCAN )) Medicaid \u2212 ((Delaware post-DelCAN \u2212 Delaware pre-DelCAN ) \u2212 (Comparison post-DelCAN \u2212 Comparison pre-DelCAN )) NoMedicaid",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "expressed in %. 95% CIs are in parentheses. Reported N's are unweighted The analytical sample is restricted to postpartum women who were not pregnant or trying to get pregnant, and who were sexually active at the time of the survey DelCAN Delaware contraception access now Pre-DelCAN, 2012-2014; Post-DelCAN, 2015-2017 Comparison states in sample were AK, IL, MA, MD, ME, MO, NJ, NM, OK, PA, UT, WA, WI, WV, and WY Difference-in-Differences = (Delaware post-DelCAN \u2212 Delaware pre-DelCAN ) \u2212 (Comparison post-DelCAN \u2212 Comparison pre-DelCAN )",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "difference-in-differences = ((Delaware post-DelCAN \u2212 Delaware pre-DelCAN ) \u2212 (Comparison post-DelCAN \u2212 Comparison pre-DelCAN )) Medicaid \u2212 ((Delaware post-DelCAN \u2212 Delaware pre-DelCAN ) \u2212 (Comparison post-DelCAN \u2212 Comparison pre-DelCAN )) NoMedicaidThe contrast in difference-in-differences estimates come from a regression that included the individual controls listed above, and Medicaid by state, Medicaid by year, and state by year interactions Source: Authors' analyses of data from the 2012 to 2017 PRAMS *P < 0.05, ** P < 0.01, *** P < 0.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -1,0 +1,4648 @@
+{
+    "paper_id": "0b72c41d32581ba4a0089fd907f9e5d098829926",
+    "metadata": {
+        "title": "Stop of proton-pump inhibitor treatment in patients with liver cirrhosis (STOPPIT): study protocol for a prospective, multicentre, controlled, randomized, double-blind trial",
+        "authors": [
+            {
+                "first": "Malte",
+                "middle": [
+                    "H"
+                ],
+                "last": "Wehmeyer",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Horvatits",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Anika",
+                "middle": [],
+                "last": "Buchholz",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Linda",
+                "middle": [],
+                "last": "Krause",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Sarah",
+                "middle": [],
+                "last": "Walter",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Antonia",
+                "middle": [],
+                "last": "Zapf",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Ansgar",
+                "middle": [
+                    "W"
+                ],
+                "last": "Lohse",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "\u2020",
+                "middle": [],
+                "last": "",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            },
+            {
+                "first": "Johannes",
+                "middle": [],
+                "last": "Kluwe",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "STOPPIT-trial group",
+                    "location": {}
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Proton-pump inhibitors (PPI) are liberally prescribed in patients with liver cirrhosis. Observational studies link PPI therapy in cirrhotic patients with an increased risk for infectious complications, hepatic encephalopathy and an increased risk for hospitalization and mortality. However, patients with liver cirrhosis are also considered to be at risk for peptic ulcer bleeding. The STOPPIT trial evaluates if discontinuation of a pre-existing PPI treatment delays a composite endpoint of re-hospitalization and/or death in patients (recently) hospitalized with liver cirrhosis compared to patients on continued PPI medication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The STOPPIT-trial is a prospective, multicentre, randomized, double-blinded, placebo-controlled, parallelgroup trial. In total, 476 patients with complicated liver cirrhosis who already receive long-term PPI therapy without evidence-based indication are 1:1 randomized to receive either esomeprazole 20 mg (control group) or placebo (intervention group) for 360 days. Patients with an indication for PPI therapy (such as a recent diagnosis of peptic ulcers, severe reflux esophagitis, severe hemorrhagic gastritis, recent endoscopic therapy for oesophageal varices) are excluded. The primary composite endpoint is the time-to re-hospitalization and/or death. Secondary endpoints include rates of re-hospitalization, mortality, occurrence of infections, hepatic decompensation and acute-on-chronic liver failure. The safety endpoint is defined as manifestation of an evidence-based indication for PPI re-therapy. The impact of PPI continuation or discontinuation on the intestinal microbiota will be studied. The recruitment will take place at 18 study sites throughout Germany. Recruitment has started in April 2021. Discussion: The STOPPIT trial is the first clinical trial to study the effects of PPI withdrawal on relevant outcome variables in patients with complicated liver cirrhosis. If the hypothesis that PPI withdrawal improves clinical outcomes of cirrhosis patients is confirmed, this would argue for a strong restriction of the currently liberal prescription practice of PPIs in this population. If, on the other hand, the trial demonstrates an increased risk of gastrointestinal bleeding events in patients after PPI withdrawal, this could create a rationale for a more liberal, prophylactic PPI treatment in patients with liver cirrhosis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Note: the numbers in curly brackets in this protocol refer to SPIRIT checklist item numbers. The order of the items has been modified to group similar items (see http://www.equator-network.org/reporting-guidelines/ spirit-2013-statement-defining-standard-protocol-itemsfor-clinical-trials/).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Stop of proton-pump inhibitor treatment in patients with liver cirrhosisa double-blind, placebo controlled trial (STOPPIT)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Trial registration {2a and 2b} EU clinical trials register EudraCT",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The trial protocol and patient information forms were reviewed for legal issues by sponsor representatives. Sponsor representatives provided advice with regard to trial management, riskbased monitoring and data Administrative information (Continued) protection. The sponsor had no influence on study design, as well as collection, management, analysis and interpretation of data, writing of the report or publication of the results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Proton-pump inhibitors (PPI) are liberally and widely prescribed in patients with liver cirrhosis without a clear evidence-based indication [1] [2] [3] [4] [5] [6] [7] [8] [9] . Observational and retrospective studies suggest that PPI use in cirrhosis patients may be a risk factor for infections [10] [11] [12] [13] [14] , especially spontaneous bacterial peritonitis (SBP) [8-10, 15, 16] . Increased SBP rates in cirrhotic patients may be explained through PPI-associated microbiotic shifts leading to small intestinal bacterial overgrowth and bacterial translocation [17] [18] [19] [20] . PPI therapy was also suggested as a possible risk factor for pneumonia [10, 21, 22] and Clostridium difficile infections in cirrhotic patients [23] . However, other observational studies found no evidence for an association of PPI use and the risk of development of pneumonia [24] , SBP [25] [26] [27] or infections in general [27] . Moreover, an association between episodes of (overt) hepatic encephalopathy and PPI use has been reported [6, 7, 9, 28, 29] . Infections and hepatic encephalopathy may often cause hospitalizations of cirrhotic patients. PPI use at discharge and PPI-mediated microbiotic shifts have also been associated to early rehospitalization [20, 30, 31] . Also, PPI use has been reported to be an independent predictor for mortality in cirrhotic patients [5, 6, 10, 32, 33] and in a large North-American veteran cohort, as well as in patients with malignant diseases [34] [35] [36] . Again, other studies found no association between PPI use and mortality of cirrhotic patients [4, 27] .",
+            "cite_spans": [
+                {
+                    "start": 140,
+                    "end": 143,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 144,
+                    "end": 147,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 148,
+                    "end": 151,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 152,
+                    "end": 155,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 156,
+                    "end": 159,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 160,
+                    "end": 163,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 164,
+                    "end": 167,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 168,
+                    "end": 171,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 172,
+                    "end": 175,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 297,
+                    "end": 301,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 302,
+                    "end": 306,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 307,
+                    "end": 311,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 312,
+                    "end": 316,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 317,
+                    "end": 321,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 375,
+                    "end": 389,
+                    "text": "[8-10, 15, 16]",
+                    "ref_id": null
+                },
+                {
+                    "start": 570,
+                    "end": 574,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 575,
+                    "end": 579,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 580,
+                    "end": 584,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 585,
+                    "end": 589,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 663,
+                    "end": 667,
+                    "text": "[10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 668,
+                    "end": 671,
+                    "text": "21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 672,
+                    "end": 675,
+                    "text": "22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 735,
+                    "end": 739,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 868,
+                    "end": 872,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 879,
+                    "end": 883,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 884,
+                    "end": 888,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 889,
+                    "end": 893,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 919,
+                    "end": 923,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1032,
+                    "end": 1035,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1036,
+                    "end": 1038,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1039,
+                    "end": 1041,
+                    "text": "9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1042,
+                    "end": 1045,
+                    "text": "28,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1046,
+                    "end": 1049,
+                    "text": "29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1256,
+                    "end": 1260,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1261,
+                    "end": 1264,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1265,
+                    "end": 1268,
+                    "text": "31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1370,
+                    "end": 1373,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1374,
+                    "end": 1376,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1377,
+                    "end": 1380,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1381,
+                    "end": 1384,
+                    "text": "32,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1385,
+                    "end": 1388,
+                    "text": "33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1482,
+                    "end": 1486,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1487,
+                    "end": 1491,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1492,
+                    "end": 1496,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1593,
+                    "end": 1596,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1597,
+                    "end": 1600,
+                    "text": "27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background and rationale {6a}"
+        },
+        {
+            "text": "Thus, current evidence, even if not unambiguous, suggests an unfavourable risk profile of PPI in patients with liver cirrhosis. However, this patient population is considered to be at a high risk of gastrointestinal haemorrhage from peptic ulcers [37] [38] [39] [40] . Importantly, peptic ulcer bleeding in patients with liver cirrhosis is associated with an increased mortality as compared to patients without cirrhosis [41] [42] [43] , and mortality rates of cirrhotic patients with peptic ulcer bleeding are comparable to cirrhotic patients with bleeding from oesophageal varices [44] . Therefore, generous PPI use may also have a yet unproven preventive effect against upper gastrointestinal bleeding events. Short term use of PPIs for up to 10 days may reduce ulcer size after endoscopic variceal band ligation [45, 46] , but there is no evidence for protective effects of PPI therapy against portal hypertension-related bleeding in cirrhotic patients who did not receive endoscopic ligation therapy [47] .",
+            "cite_spans": [
+                {
+                    "start": 247,
+                    "end": 251,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 252,
+                    "end": 256,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 262,
+                    "end": 266,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 421,
+                    "end": 425,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 426,
+                    "end": 430,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 431,
+                    "end": 435,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 583,
+                    "end": 587,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 816,
+                    "end": 820,
+                    "text": "[45,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 821,
+                    "end": 824,
+                    "text": "46]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1005,
+                    "end": 1009,
+                    "text": "[47]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Background and rationale {6a}"
+        },
+        {
+            "text": "The primary objective of the trial is to determine the time to first unplanned re-hospitalization or death (composite endpoint) in patients with liver cirrhosis who discontinue long-term PPI therapy (intervention group) as compared to patients who continue PPI therapy (control group) over a period of 12 months (360 days). Secondary objectives include an assessment and comparison of the following endpoints in the two groups:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Objectives {7}"
+        },
+        {
+            "text": "-Time to death and mortality (overall and liverrelated), -Time to and rate of unplanned re-hospitalization, -Overall infection rates and infections rates differentiated by the site of infection, -Rate of acute hepatic decompensation and acute-onchronic liver failure (ACLF), -Rate and source of upper and lower gastrointestinal bleeding events.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Objectives {7}"
+        },
+        {
+            "text": "Furthermore, the changes in the intestinal microbiota in both groups and their impact on the primary endpoint will be assessed. The potential pharmacoeconomic impact of PPI discontinuation in patients with liver cirrhosis will be studied, too.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Objectives {7}"
+        },
+        {
+            "text": "The STOPPIT trial is an investigator-initiated, prospective, multicentre, randomized, placebo-controlled, doubleblind, parallel-group trial. It is designed to demonstrate superiority of PPI discontinuation over PPI continuation in patients with liver cirrhosis. Figure 1 illustrates the trial design. In total, 476 patients will be randomized (1:1) to discontinue PPI therapy and receive placebo or to continue PPI therapy with esomeprazole 20 mg/day over a period of 360 days.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 262,
+                    "end": 270,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Trial design {8}"
+        },
+        {
+            "text": "The clinical trial takes place in 18 university hospitals throughout Germany. The list of participating sites can be obtained on ClinicalTrials.gov (NCT04448028) and in the German Clinical Trials Registry (DRKS00021290). Each site has a high level of experience in the treatment of patients with liver cirrhosis and in conducting trials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study setting {9}"
+        },
+        {
+            "text": "Hospitalized, or recently hospitalized, patients with liver cirrhosis with a pre-existing long-term PPI therapy will be screened. Patients with an evidence-based indication for PPI therapy, for example, recent diagnosis of severe reflux esophagitis (LA grade C or D) or peptic ulcers are excluded (for details see Table 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 314,
+                    "end": 321,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Eligibility criteria {10}"
+        },
+        {
+            "text": "The principal investigator or a trained and designated physician has to obtain written informed consent from the patient prior to any study-related procedures. Patients will first have ample time to read the patient information. An investigator will provide the patients with information on the study. After the patient had ample time for consideration and formulation of questions (which could also mean that the patients first discuss the decision with friends or family members), and if all questions are answered the patient will be asked to personally sign the informed consent form. A copy or a second original of the signed informed consent form must be given to the patients for their records.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Who will take informed consent {26a}"
+        },
+        {
+            "text": "Study participants have the option to consent on the collection of additional biobanking samples. Importantly, if the study participant does not provide informed consent for biobanking, the patient can still participate in the main study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Additional consent provisions for collection and use of participant data and biological specimens {26b}"
+        },
+        {
+            "text": "Patients in the intervention group discontinue a preexisting long-term PPI therapy and replace it with placebo, while the pre-existing PPI treatment in the control group is replaced with esomeprazole 20 mg/day. Esomeprazole 20 mg was chosen as the comparator, because it is the only PPI which is assumed as \"safe\" for patients with advanced cirrhosis according to the available data on pharmacokinetics [48] . Moreover, 20 mg esomeprazole is equivalent to a PPI standard dose [49] and therefore adequately reflects the \"common use\" of PPI medication in clinical routine.",
+            "cite_spans": [
+                {
+                    "start": 403,
+                    "end": 407,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 476,
+                    "end": 480,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Explanation for the choice of comparators {6b}"
+        },
+        {
+            "text": "All patients discontinue their previous PPI therapy during the baseline visit to start study medication on day 1 of the trial: Patients randomized to the intervention group receive placebo (P-Tablette wei\u00df 7 mm Lichtenstein, Winthrop Arzneimittel GmbH, Frankfurt am Main, Germany) and patients randomized to the control group receive esomeprazole 20 mg/day (Nexium mups, Gr\u00fcnenthal GmbH, Aachen, Germany) over a period of 360 days. To prevent patients from gastric acid rebound symptoms caused by sudden PPI withdrawal, study participants will undergo a dose tapering phase over a period of 14 days in which they take the study medication from drug dispensers (\"trial starter drug dispenser\"; intervention group: placebo on days 1, 3, 5, 7, 9, 10, 12, and 13 and esomeprazole on days 2, 4, 6, 8, 11, and 14; control group: esomeprazole 20 mg days 1 to 14) . After that, the patient will take the trial medication from \"study medication packages\" each containing 100 capsules placebo or esomeprazole 20 mg, respectively. Patients are provided with the \"trial starter drug dispenser\" and one \"study medication package\" during the baseline visit (visit 1). Furthermore, they receive a \"study medication package\" at visit 3 (day 90), 4 (day 180) and 5 (day 270).",
+            "cite_spans": [
+                {
+                    "start": 852,
+                    "end": 855,
+                    "text": "14)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intervention description {11a}"
+        },
+        {
+            "text": "Patients who reach the safety endpoint (\"evidence-based indication for re-therapy with PPI\"; Table 2 ) will discontinue study medication. However, in case of clinically suspected peptic ulcer disease or signs of upper gastrointestinal haemorrhage rescue PPI treatment is permitted for up to 72 h or until an oesophago-gastroduodenoscopy (EGD) is performed. If the EGD does not reveal a safety endpoint, rescue PPI therapy will be stopped and the patient continues study medication. Table 1 Strategies to improve adherence to interventions {11c}",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 93,
+                    "end": 100,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 482,
+                    "end": 489,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Criteria for discontinuation or modifying allocated interventions {11b}"
+        },
+        {
+            "text": "Drug accountability measures and patient diaries are implemented to improve protocol adherence. To avoid protocol violations due to dyspeptic and/or reflux symptoms after sudden discontinuation of PPI in the intervention group, patients undergo PPI dose tapering. Dyspepsia or symptomatic gastroesophageal reflux disease may be treated with sucralfat. Study participants are reminded to take study medication from the \"study medication package\" from day 15 on during a telephone interview on day 14.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Criteria for discontinuation or modifying allocated interventions {11b}"
+        },
+        {
+            "text": "Open-label PPIs, h2-receptor antagonists and nelfinavir are prohibited during this trial (exception: rescue PPI therapy for up to 72 h in patients with suspected upper gastrointestinal bleeding events or peptic ulcers). Nonsteroidal anti-inflammatory drugs (other than acetylsalicylic acid up to 100 mg/day) for more than 7 days during a period of 28 days are not permitted. Treatment with sucralfat for dyspepsia or symptomatic reflux disease is permitted.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Relevant concomitant care permitted or prohibited during the trial {11d}"
+        },
+        {
+            "text": "After completion of the trial, participants will be treated according to the current guidelines in the respective trial centres. All study participants are provided with an insurance to cover trial-related medical issues.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Provisions for post-trial care {30}"
+        },
+        {
+            "text": "The primary composite endpoint is the time to unplanned re-hospitalizations or death during the trial period. However, expected re-hospitalization for mere paracentesis (without other complication of cirrhosis) during a period of 30 days after discharge is not regarded as an \"unplanned re-hospitalization\". If the local investigator and the clinical trial management come to a conflicting assessment whether a re-hospitalization was \"planned\" or \"unplanned\", a blinded endpoint committee Table 1 In-and exclusion criteria. Patients can be included in the trial, if they fulfil all the inclusion and none of the exclusion criteria",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 489,
+                    "end": 496,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Outcomes {12}"
+        },
+        {
+            "text": "Male and female patients, at least 18 years old. Diagnosis of reflux esophagitis LA grade C or D by EGD < 2 months prior to the screening visit without PPI therapy for at least 8 weeks prior to the screening visit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Patients with liver cirrhosis. The diagnosis of liver cirrhosis may be based on (i) histology or (ii) a combination of clinical, laboratory and radiological criteria.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Peptic ulcers diagnosed by EGD < 28 days prior to the screening visit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Hospitalization or recent hospitalization (0 to 42 days prior to the baseline visit) with complications of liver cirrhosis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "History of endoscopic therapy for oesophageal varices < 14 days prior to the screening visit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Treatment with PPI for at least 28 days prior to screening. Life-expectancy < 1 year (at the discretion of the investigator) due to extrahepatic malignancies, metastasized HCC, or other severe extrahepatic diseases (HCC without extrahepatic metastases or reduced life-expectancy < 1 year due to cirrhosis are not regarded as exclusion criteria).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Treatment with a PPI single standard dose/day or less for at least 7 days prior to screening.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Regular intake of NSAID on a daily basis (except for ASA 100 mg/day orally)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Females/males who agree to comply with the applicable contraceptive requirements.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "One or more of the following measurements at the time of screening or documented up to 48 h before:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "\u2022 Temperature > 38.5\u00b0C",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "\u2022 Systolic blood pressure < 90 mmHg and heart rate > 100 bpm \u2022 Catecholamine treatment > 0.1 \u03bcg/kg/min (terlipressin is allowed)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Non-pregnant, non-lactating females. Hypersensitivity or intolerance to esomeprazole, substituted benzimidazoles or other excipients of the IMP.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Ability to understand the patient information and to personally sign and date the informed consent to participate in the study, before completing any study-related procedures.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Ongoing therapy with nelfinavir.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "The patient is co-operative and available for the entire study. Participation in a clinical trial or use of an IMP within 30 days or five times the half-live of the IMP-whichever is longer-prior to receiving the first dose within this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Provided written informed consent. Positive urine pregnancy test at screening or positive serum pregnancy test before the first treatment or is breast feeding.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Patient is not willing to use adequate contraceptive precautions during the study and up for 5 days after the last scheduled dose of IMP.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "EGD oesophago-gastro-duodenoscopy, PPI proton-pump inhibitors, HCC hepatocellular carcinoma, NSAID non-steroidal anti-inflammatory drugs, ASA acetylsalicylic acid, IMP investigational medicinal product (consisting of three independent hepatologists) will resolve this disagreement. Secondary endpoints are described in Table 2 . Importantly, patients who reach the primary endpoint \"re-hospitalization\" will continue all study procedures and will further receive the study medication. Therefore, secondary endpoints will be studied after a study participant has reached the primary endpoint. Patients who reach the safety endpoint (evidence-based retherapy with PPI; see Table 2 ) are censored at the respective time-point.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 319,
+                    "end": 326,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 671,
+                    "end": 678,
+                    "text": "Table 2",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Inclusion criteria Exclusion criteria"
+        },
+        {
+            "text": "Recruitment is planned to be completed within three years. With a trial duration 360 days per patient, time of first-patient-in to last-patient-out is four years. Figure 1 provides an overview of the trial design. After completion of the informed consent process, the screening visit will take place. Randomization will take place 0 to 14 days after screening during the baseline visit (visit 1, day 0). The study is split into two parts: \"dose tapering phase\" (days 1-14; tapering of the PPI dose in a blinded fashion, see above) and \"main study phase\" (days . Study visits and telephone interviews take place at the time-points indicated in Table 3 . Study procedures during the respective visits and telephone interviews are summarized in Table 4 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 163,
+                    "end": 171,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 643,
+                    "end": 650,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 742,
+                    "end": 749,
+                    "text": "Table 4",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Participant timeline {13}"
+        },
+        {
+            "text": "The sample size is based on the composite primary endpoint time to death from any cause or time to unplanned re-hospitalization from any cause. Based on previous studies on mortality in cirrhosis patients who receive PPI [5, 6, 10, 32, 33] and an assumed 50% risk for re-hospitalization 3 months after discharge in decompensated cirrhotic patients [20, 30, 50] , it is expected that the control group will have a probability of 65% to reach the primary endpoint after 6 months. The risk to reach the primary endpoint in the PPI withdrawal group is assumed to be 50% after 6 months, due to a reduction of mortality [4-6, 8, 10, 11] and a decreased risk for infectious complications [8] [9] [10] [12] [13] [14] [15] [16] , which results in a lower risk for re-hospitalization [20] . This corresponds to a HR of 0.66 of the intervention group compared to the control group. The sample size calculation is performed on the assumed event rates of 50% in the intervention group (PPI withdrawal) and 65% for the control group after 6 months with a two-sided significance level \u03b1 of 5% and a power of 80%, which requires a total number of 184 events to be observed. With a follow-up period of exactly 360 days per patient and an estimated 20% random loss to follow-up or non-compliance it can safely be assumed that a sufficient number of events will have been observed by the end of the trial if a total of 475 patients are available for analysis (based on the logrank test; PASS 16.0.3). Therefore, 476 patients will be randomized.",
+            "cite_spans": [
+                {
+                    "start": 221,
+                    "end": 224,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 225,
+                    "end": 227,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 228,
+                    "end": 231,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 232,
+                    "end": 235,
+                    "text": "32,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 236,
+                    "end": 239,
+                    "text": "33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 348,
+                    "end": 352,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 353,
+                    "end": 356,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 357,
+                    "end": 360,
+                    "text": "50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 614,
+                    "end": 630,
+                    "text": "[4-6, 8, 10, 11]",
+                    "ref_id": null
+                },
+                {
+                    "start": 681,
+                    "end": 684,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 685,
+                    "end": 688,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 689,
+                    "end": 693,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 694,
+                    "end": 698,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 699,
+                    "end": 703,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 704,
+                    "end": 708,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 709,
+                    "end": 713,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 714,
+                    "end": 718,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 774,
+                    "end": 778,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Sample size {14}"
+        },
+        {
+            "text": "Patients will be recruited at the trial centres during or after hospitalization. Global and local recruitment rates will be monitored by the clinical project management and the data safety and monitoring board (DSMB). Trial sites are obliged to recruit a number of patients according to their respective pre-study prognosis. In case trial sites do not fulfil these obligations in a specified time, countermeasures can be taken (e.g., direct communication with the investigator, addendum to the protocol).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Recruitment {15}"
+        },
+        {
+            "text": "Randomization will be carried out locally. A block randomization procedure with variable block length will be applied stratified for the study centres and severity of liver cirrhosis (MELD score \u226413 or > 13). Blinding of therapy for the patients and the investigators will be ensured by identical encapsulation of placebo and esomeprazole 20 mg that makes both indistinguishable, and by the use of identical medication packages. Unique randomization codes labelled on the medication packages ensure the specific allocation of the study medication to the study participant. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Sequence generation {16a}"
+        },
+        {
+            "text": "Each centre has two randomization lists (MELD \u226413 and > 13). The lists include only the randomization numbers and do not reveal the study medication.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Concealment mechanism {16b}"
+        },
+        {
+            "text": "Only the Pharmacy of the University Medical Center Hamburg-Eppendorf performing the randomization procedure, and neither the investigators nor the study participants, will be aware of the allocation sequence or the block size used. Randomization numbers are allocated to patients sequentially by local study staff.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implementation {16c}"
+        },
+        {
+            "text": "Who will be blinded {17a}",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Assignment of interventions: blinding"
+        },
+        {
+            "text": "Investigators, study participants, (clinical) trial management, data management, pharmacovigilance officers and data analysts are blinded. Only the central pharmacy and the data safety monitoring board (DSMB) members are unblinded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Assignment of interventions: blinding"
+        },
+        {
+            "text": "Access to emergency envelopes is regulated at all trial sites. Details on the unblinding procedures are found in the investigator site files.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedure for unblinding if needed {17b}"
+        },
+        {
+            "text": "Plans for assessment and collection of outcomes {18a}",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data collection and management"
+        },
+        {
+            "text": "Clinical outcome, baseline and other trial data will be collected during the visits and telephone interviews (Table 4) at the time points detailed in Table 3 . Site staff will transfer trial data from the source documents into the electronic case report form (eCRF) and check eCRF entries for completeness. Corrections to source data or eCRF data will be dated and signed. Reasons for changes must be provided. Source data verification will take place during on-site monitoring. To initiate discrepancy resolution the monitor will send queries to the site staff.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 109,
+                    "end": 118,
+                    "text": "(Table 4)",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 150,
+                    "end": 157,
+                    "text": "Table 3",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Data collection and management"
+        },
+        {
+            "text": "If possible, complete follow-up data should be obtained from all patients. Investigators motivate trial participants to attend all study visits. Patients who discontinue the investigational product will attend all subsequent study visits, in which endpoint data will be collected. The primary efficacy analysis will follow intention-to-treat principles.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Plans to promote participant retention and complete follow-up {18b}"
+        },
+        {
+            "text": "Data management will check predefined eCRF entries as defined in the data validation plan. Quality control and Distribution and/or return of study medication and patients diaries X X data validation procedures such as programmed automatic edit and consistency checks ensure data validity and accuracy immediately at the point of entry into the clinical database. The database application is an access restricted, demands electronic signatures, maintains an electronic audit trail and provides appropriate backup functionalities.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data management {19}"
+        },
+        {
+            "text": "Data obtained during the trial will be treated pursuant to the Federal Data Protection Law. Subjects will be identified solely by their individual randomization number. Trial data stored on a computer will be stored in accordance with local data protection law and will be handled in the strictest confidence. The appropriate regulations of local data legislation will be fulfilled in its entirety.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Confidentiality {27}"
+        },
+        {
+            "text": "Blood and urine samples will be collected for biobanking and further analysis in the future. Patients may choose not to provide these optional biobanking samples.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Plans for collection, laboratory evaluation and storage of biological specimens for genetic or molecular analysis in this trial/future use {33}"
+        },
+        {
+            "text": "The primary efficacy endpoint analysis will be performed according to the intention-to-treat (ITT) principle based on the full analysis set (FAS). The effects of continuation or discontinuation of PPI therapy with respect to the primary endpoint will be estimated and tested by Cox regression. The regression model will include treatment arm and categorized the severity of cirrhosis (MELD \u2264 13 vs. > 13) as fixed effects and the study centre as a random effect. As an estimated effect size, the hazard ratio (HR) between the two treatment arms will be given with the corresponding 95% confidence interval. The onesided test of the superiority of discontinuation of PPI over the continuation of PPI at significance level 2.5% will be based on the corresponding asymptotic twosided 95% confidence interval from the Cox regression model. The null hypothesis is rejected if the upper limit of the confidence interval is below 1.0. The analysis of the treatment effect with respect to the individual components of the composite endpoint and to secondary endpoints will be performed analogously with the (cause-specific) Cox model. Time to event outcomes will be visualized by Kaplan-Meier curves stratified by treatment group. Adverse event data will be summarized by the treatment group.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical methods for primary and secondary outcomes {20a}"
+        },
+        {
+            "text": "After half of the required events, an interim analysis is planned with the opportunity to stop for futility if the pvalue of the treatment group is > 0.5. Since this interim analysis does not inflate the type-one error \u03b1 correction for multiplicity is not necessary.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interim analyses {21b}"
+        },
+        {
+            "text": "Methods for additional analysis (e.g. subgroup analyses) {20b}",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interim analyses {21b}"
+        },
+        {
+            "text": "The composite primary endpoint will additionally be analysed descriptively by applying a multi-state model with states of unplanned re-hospitalization and death. Both analyses of the composite primary endpoint will be repeated in the per-protocol (PP) set. Analyses of the primary and secondary endpoint in the following subgroups are planned: According to the Child-Pugh stage; according to the aetiology of cirrhosis; untreated or treated aetiology of cirrhosis (e.g. treated vs. untreated viral hepatitis); patients with a history of TIPS implantation. Further subgroups may be defined in ad-hoc analyses.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interim analyses {21b}"
+        },
+        {
+            "text": "In the primary analysis, dropout will be dealt with as independent right censoring. In case of substantial dropout, this assumption will be investigated in sensitivity analyses, e.g. shared random effects models. Missing data in baseline variables will be handled by multiple imputation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods in analysis to handle protocol non-adherence and any statistical methods to handle missing data {20c}"
+        },
+        {
+            "text": "Plans to give access to the full protocol, participant leveldata and statistical code {31c}",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods in analysis to handle protocol non-adherence and any statistical methods to handle missing data {20c}"
+        },
+        {
+            "text": "Access to the full protocol and statistical code is possible on reasonable request after approval by the executive committee. Anonymized participant-level data are available after the publication of the primary results on reasonable request after approval by the executive committee. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods in analysis to handle protocol non-adherence and any statistical methods to handle missing data {20c}"
+        },
+        {
+            "text": "A Data Safety Monitoring Board (DSMB) is constituted to protect the safety of study participants. It consists of three members (two hepatologists and one statistician) and will be scheduled at least every 6 months. It assesses the progress, safety data, and critical efficacy endpoints of the trial, as well as external factors (e.g. scientific results) which might affect participant safety or ethical status. The DSMB will receive blinded data and unblinded data (to be reviewed in a closed session). Based on the observed benefits or adverse effects, the DSMB will make recommendations to the sponsor concerning continuation, termination or modification of the trial. The sponsor has established a charter document explaining the working procedures for the DSMB.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Composition of the data monitoring committee, its role and reporting structure {21a}"
+        },
+        {
+            "text": "An adverse event (AE) is defined as any untoward medical occurrence in a study participant, which does not necessarily have a causal relationship with the study treatment. AEs will be ascertained by the investigators during visits and telephone interviews using non-leading questions, noted as spontaneously reported by the patients to the medical staff or observed during any measurements during the trial. All AEs will be reviewed, confirmed, and classified by an investigator. All subjects who present AEs will be monitored by the responsible investigator to determine their outcome (also in patients who were withdrawn from the trial). AEs are classified as \"serious\" or \"non-serious\", all AEs are graded (mild, moderate, severe) and the relationship between the study drug and outcome is documented. The action taken with the study drug and countermeasures have to be recorded for each AE. Serious adverse events (SAE) are defined as AEs resulting in death, are life-threatening, require hospitalization or prolongation of existing hospitalization, result in persistent or significant disability/incapacity, are a congenital anomaly/ birth defect or are otherwise medically relevant. All SAEs must be reported by the investigator to the pharmacovigilance department within 24 h after the SAE becomes known. All SAEs will be subject to a second assessment by a designated person independent from the reporting investigator. SAEs that are potentially attributed to the study drug are classified as serious adverse reactions (SAR). For each SAR, \"expectedness\" has to be assessed. All suspected unexpected SAR (SUSAR) are subject to expedited reporting to the responsible ethics committees, the competent authorities and to all participating investigators. Pregnancies of participants during the trial have to be reported the same way as SAEs (but are not regarded as a SAE).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Adverse events reporting and harms {22}"
+        },
+        {
+            "text": "The project management group (including clinical trial management, non-clinical trial management, pharmacovigilance officers, database officers and clinical research associates) meets monthly to assess recruitment, protocol deviations and SAEs. Furthermore, the clinical trial management team meets on a weekly basis to discuss patient recruitment and SAEs. Furthermore, riskbased quality management meetings (RBQM) are scheduled twice a year to possibly adjust monitoring strategies. All sites are regularly monitored by a clinical research associate. Details with regard to the meetings of the Data Safety Monitoring Board (DMSB) are provided above {item 21a}.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Frequency and plans for auditing trial conduct {23}"
+        },
+        {
+            "text": "Standard phases of the study may be subject to audits by an independent party authorised by the Sponsor. Results of these audits as well as any objections will be reported directly to the Sponsor. Audits will be planned on demand.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Frequency and plans for auditing trial conduct {23}"
+        },
+        {
+            "text": "Plans for communicating important protocol amendments to relevant parties (e.g. trial participants, ethical committees) {25}",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Frequency and plans for auditing trial conduct {23}"
+        },
+        {
+            "text": "Modifications of the protocol must be authorised by the sponsor and the coordinating investigator. Deviations and changes to the study protocol will be classified as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Frequency and plans for auditing trial conduct {23}"
+        },
+        {
+            "text": "Note-to-File: Clarifications which are not considered changes of the protocol. Study protocol amendment: Substantial changes of the protocol, which need approval from the ethics committees and competent authority. These changes may also induce revision of the informed consent form. Patients undergoing trial assessment procedures at the time of implementation of the change have to be given the amended version and have to be asked for consent to continue on the trial.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Frequency and plans for auditing trial conduct {23}"
+        },
+        {
+            "text": "Study results will be presented at international meetings and submitted to a high impact, peer-reviewed scientific journal (open access) 3 months after the end of data analysis. The reporting will follow the recommendations of the CONSORT group for the reporting of randomized clinical trials. Authorship eligibility guidelines for publications are defined in the full protocol. Furthermore, final results will be provided to clinicaltrials.gov and the EudraCT database.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dissemination plans {31a}"
+        },
+        {
+            "text": "Prophylactic long-term PPI treatment without evidencebased indication is frequently regarded as \"common use\" in daily clinical routine in patients with liver cirrhosis [1] [2] [3] [4] [5] [6] [7] [8] [9] . Increasing evidence from observational studies suggests possible harmful effects of chronic PPI treatment in cirrhotic patients. However, the negative impact of chronic PPI treatment on infection rates [8] [9] [10] [11] [12] [13] [14] [15] [16] [21] [22] [23] , rates of hepatic decompensation [6, 7, 9, 28, 29] , hospitalization rates [20, 30, 31] and mortality of cirrhotic patients [5, 6, 10, 32, 33] remains controversial due to conflicting data [4, [24] [25] [26] [27] . Therefore, it remains unclear if PPI use is causative for patient mortality or merely associated with comorbidities which themselves lead to a higher mortality in patients [51, 52] . On the other hand, patients with liver cirrhosis are at an increased risk of variceal and nonvariceal gastrointestinal bleedings [37] [38] [39] [40] [41] [42] [43] [44] and PPI could have preventive effects.",
+            "cite_spans": [
+                {
+                    "start": 168,
+                    "end": 171,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 172,
+                    "end": 175,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 176,
+                    "end": 179,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 180,
+                    "end": 183,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 184,
+                    "end": 187,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 188,
+                    "end": 191,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 192,
+                    "end": 195,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 196,
+                    "end": 199,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 200,
+                    "end": 203,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 408,
+                    "end": 411,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 412,
+                    "end": 415,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 416,
+                    "end": 420,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 421,
+                    "end": 425,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 426,
+                    "end": 430,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 431,
+                    "end": 435,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 436,
+                    "end": 440,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 441,
+                    "end": 445,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 446,
+                    "end": 450,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 451,
+                    "end": 455,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 456,
+                    "end": 460,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 500,
+                    "end": 503,
+                    "text": "[6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 504,
+                    "end": 506,
+                    "text": "7,",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 507,
+                    "end": 509,
+                    "text": "9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 510,
+                    "end": 513,
+                    "text": "28,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 514,
+                    "end": 517,
+                    "text": "29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 542,
+                    "end": 546,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 547,
+                    "end": 550,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 551,
+                    "end": 554,
+                    "text": "31]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 591,
+                    "end": 594,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 595,
+                    "end": 597,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 598,
+                    "end": 601,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 602,
+                    "end": 605,
+                    "text": "32,",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 606,
+                    "end": 609,
+                    "text": "33]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 656,
+                    "end": 659,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 660,
+                    "end": 664,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 665,
+                    "end": 669,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 670,
+                    "end": 674,
+                    "text": "[26]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 675,
+                    "end": 679,
+                    "text": "[27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 854,
+                    "end": 858,
+                    "text": "[51,",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 859,
+                    "end": 862,
+                    "text": "52]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 994,
+                    "end": 998,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 999,
+                    "end": 1003,
+                    "text": "[38]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1004,
+                    "end": 1008,
+                    "text": "[39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1009,
+                    "end": 1013,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 1014,
+                    "end": 1018,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 1019,
+                    "end": 1023,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1024,
+                    "end": 1028,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 1029,
+                    "end": 1033,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The primary aim of this study is to prove superiority of PPI discontinuation over continuation in (recently) hospitalized liver cirrhosis patients without evidencebased indication for PPI use with regard to the composite primary endpoint \"death and/or unplanned rehospitalization\". As the above-mentioned complications regularly lead to a hospitalization of cirrhotic patients and a hospitalization itself is considered a risk factor for mortality in patients with liver cirrhosis [50] , rehospitalization is an adequate surrogate for patientrelevant complications of liver cirrhosis. By aggregation of unplanned re-hospitalization and mortality to a composite endpoint, we avoid underestimation of clinically significant events resulting in pre-clinical mortality. However, this implies a risk that mortality will be underrepresented in the primary results, as most fatal outcomes are expected to occur after re-hospitalization. Thus, incidence of secondary endpoints including mortality will be studied after re-hospitalization. We will not regard expected re-hospitalization due to ascites (without SBP or other complications) during a period of 30 days after discharge as a primary end-point criterion, as patients with refractory ascites are often expected to be re-hospitalized for paracentesis.",
+            "cite_spans": [
+                {
+                    "start": 481,
+                    "end": 485,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Importantly, sudden PPI withdrawal in the intervention group may lead to clinically relevant overproduction of gastric acid with a recurrence of dyspeptic symptoms [53] [54] [55] , which could lead to an increased risk for protocol violations (like the intake of PPIs or other acidsuppressive drugs). Therefore, PPI discontinuation will be achieved after dose tapering as previous data suggest a clinical benefit of dose tapering instead of abrupt withdrawal of PPI therapy [55] .",
+            "cite_spans": [
+                {
+                    "start": 164,
+                    "end": 168,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 169,
+                    "end": 173,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 174,
+                    "end": 178,
+                    "text": "[55]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 474,
+                    "end": 478,
+                    "text": "[55]",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In-and exclusion criteria are designed to ensure that the study population represents all patients with complicated liver cirrhosis in whom PPI discontinuation is feasible and may have positive effects on patients' outcome: Especially hospitalized patients with complications of liver cirrhosis are at risk for rehospitalization [20, 30, 56] and hospitalization itself is associated with increased mortality in this population [50] . Furthermore, the incidence of an infection (which is regarded a complication of cirrhosis in our protocol) is often a deteriorating event in the course of cirrhotic disease leading to ACLF [57] . As the study aims to evaluate the discontinuation of widely practiced \"prophylactic\" long-term PPI prescription without strong indication, a PPI therapy has to be documented for \u2265 28 days prior to screening. However, only patients taking a single PPI standard dose per day or less for at least 7 days are included in the trial, as patients receiving higher doses of PPI might be at an increased risk to suffer from gastric acid rebound symptoms [53] [54] [55] despite our PPI dose tapering protocol.",
+            "cite_spans": [
+                {
+                    "start": 329,
+                    "end": 333,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 334,
+                    "end": 337,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 338,
+                    "end": 341,
+                    "text": "56]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 427,
+                    "end": 431,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 623,
+                    "end": 627,
+                    "text": "[57]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 1075,
+                    "end": 1079,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1080,
+                    "end": 1084,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1085,
+                    "end": 1089,
+                    "text": "[55]",
+                    "ref_id": "BIBREF54"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The exclusion criteria represent evidence-based indications for PPI therapy also in cirrhosis patients according to the German guidelines [58] [59] [60] . In these patients, discontinuation of PPI therapy might be harmful. Patients who underwent endoscopic therapy for oesophageal varices < 14 days prior to screening are also excluded, as PPI therapy may reduce the size of banding-ulcers after variceal band ligation [45, 46] . Patients with a lifeexpectancy below 1 year due to extrahepatic diseases or malignancies are excluded to avoid confounding of the primary efficacy endpoint, as these patients have a high risk to reach the primary endpoint independently from cirrhosis or the trial intervention. Also, patients who are regarded clinically unstable are excluded from the trial.",
+            "cite_spans": [
+                {
+                    "start": 138,
+                    "end": 142,
+                    "text": "[58]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 143,
+                    "end": 147,
+                    "text": "[59]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 148,
+                    "end": 152,
+                    "text": "[60]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 419,
+                    "end": 423,
+                    "text": "[45,",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 424,
+                    "end": 427,
+                    "text": "46]",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In conclusion, the STOPPIT trial represents the first prospective, randomized, placebo-controlled trial which aims to confirm the expected benefit of a discontinuation of long-term PPI therapy in cirrhotic patients. If the primary hypothesis (superiority of PPI discontinuation over continuation of PPI therapy) is confirmed, the trial will have significant impact on the recommended drug management of patients with liver cirrhosis. Reduced PPI prescription rates could lead to lower rates of cirrhosis-related complications and may have a positive impact on (re-)hospitalization rates and mortality. Furthermore, PPI discontinuation would possibly lower the \"pill burden\", lower the risk of drug-drug interactions in cirrhotic patients, and may therefore have a positive socioeconomic impact.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The information presented in this article are based on the STOPPIT-Study protocol version 2.0 (September 30, 2020). Recruitment has started in April 2021 (first patient in) and is expected to be completed by March 2024 (last patient in). Authors' contributions {31b} MHW is responsible for the clinical project management, wrote the manuscript and contributed to study design and wrote the study protocol, TH is responsible to the clinical project management, critically revised the manuscript and contributed to study design and writing of the study protocol; AB critically revised the manuscript and is responsible for the data analysis; LK critically revised the manuscript and is responsible for the data analysis; AZ critically revised the manuscript, is responsible for the statistical analysis of the data and contributed to study design; SW critically revised the manuscript and is responsible for the non-clinical project management; JK is the deputy of AWL, critically revised the manuscript, designed the study and contributed to writing of the study protocol; AWL is the coordinating principle investigator, conceived of the study, critically revised the manuscript and designed the trial. The authors read and approved the final manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Trial status"
+        },
+        {
+            "text": "Open Access funding enabled and organized by Projekt DEAL. The trial is funded by the German Federal Ministry of Education and Research (Bundesministerium f\u00fcr Bildung und Forschung, BMBF; FKZ 01KG2004). The German Federal Ministry of Education and Research did not influence study design, and will not have any influence on collection, analysis or interpretation of data. The BMBF was not involved in writing of this manuscript. However, during the reviewing process scientific proposals from an expert panel were included in the study design.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding {4}"
+        },
+        {
+            "text": "Members of the executive committee will have access to the final trial dataset. Access to the final trial dataset (anonymized) after the publication of the primary results is possible on reasonable request. As described in the full protocol, investigators are not allowed to publish single-centre results or results from substudies before the publication of the primary results.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials {29}"
+        },
+        {
+            "text": "Ethics approval and consent to participate {24} The trial was approved by the responsible ethics committee (Ethikkommission der \u00c4rztekammer Hamburg; 2020-1-10298-AMG-ff). The trial was approved by the responsible competent authority (Bundesinstitut f\u00fcr Arzneimittel und Medizinprodukte; No. 4044336). Written, informed consent to participate will be obtained from all participants.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations"
+        },
+        {
+            "text": "The informed consent form (in German language) is available on request from the corresponding author.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication {32}"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Natural history and prognostic indicators of survival in cirrhosis: a systematic review of 118 studies",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "D&apos;amico",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Garcia-Tsao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pagliaro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Hepatol",
+            "volume": "44",
+            "issn": "1",
+            "pages": "217--248",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jhep.2005.10.013"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Reported side effects and complications of long-term proton pump inhibitor use: dissecting the evidence",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Oldfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Clin Gastroenterol Hepatol",
+            "volume": "11",
+            "issn": "5",
+            "pages": "458--64",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cgh.2012.11.031"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Proton pump inhibitors in patients with liver cirrhosis -a survey among hepatologists in Germany",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Horvatits",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Drolz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wehmeyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Steib",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Trebicka",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lohse",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Z Gastroenterol",
+            "volume": "57",
+            "issn": "6",
+            "pages": "729--762",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/a-0832-2694"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "The impact of proton pump inhibitor therapy on patients with liver disease",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cole",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pennycook",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hayes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Aliment Pharmacol Ther",
+            "volume": "44",
+            "issn": "11-12",
+            "pages": "1213--1236",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apt.13827"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Proton pump inhibitor treatment is associated with the severity of liver disease and increased mortality in patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dultz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Piiper",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zeuzem",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kronenberger",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Waidmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Aliment Pharmacol Ther",
+            "volume": "41",
+            "issn": "5",
+            "pages": "459--66",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apt.13061"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Proton pump inhibitors are associated with minimal and overt hepatic encephalopathy and increased mortality in patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nardelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gioia",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ridola",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Farcomeni",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Merli",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Riggio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hepatology",
+            "volume": "70",
+            "issn": "2",
+            "pages": "640--649",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.30304"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Treatment with proton pump inhibitors increases the risk for development of hepatic encephalopathy after implantation of transjugular intrahepatic portosystemic shunt (TIPS). United",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sturm",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bettinger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Giesler",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Boettler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Schmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Buettner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "European Gastroenterol J",
+            "volume": "6",
+            "issn": "9",
+            "pages": "1380--90",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/2050640618795928"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Association of proton pump inhibitor therapy with spontaneous bacterial peritonitis in cirrhotic patients with ascites",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zadvornova",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Heumann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Am J Gastroenterol",
+            "volume": "104",
+            "issn": "5",
+            "pages": "1130--1134",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/ajg.2009.80"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Proton pump inhibitors as a risk factor for hepatic encephalopathy and spontaneous bacterial peritonitis in patients with cirrhosis with ascites",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dam",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Vilstrup",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Watson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Jepsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Hepatology",
+            "volume": "64",
+            "issn": "4",
+            "pages": "1265--72",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.28737"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Effect of proton pump inhibitors on the risk and prognosis of infections in patients with cirrhosis and ascites",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Dam",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Vilstrup",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Andersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Bossen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Watson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Jepsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Liver Int",
+            "volume": "39",
+            "issn": "3",
+            "pages": "514--535",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/liv.14012"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "The chronic use of beta-blockers and proton pump inhibitors may affect the rate of bacterial infections in cirrhosis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Merli",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lucidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Di",
+                    "middle": [],
+                    "last": "Gregorio",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Liver Int",
+            "volume": "35",
+            "issn": "2",
+            "pages": "362--371",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/liv.12593"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Proton pump inhibitors are associated with a high rate of serious infections in veterans with decompensated liver cirrhosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ratliff",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Heumann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Aliment Pharmacol Ther",
+            "volume": "36",
+            "issn": "9",
+            "pages": "866--74",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apt.12045"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Long-term use of antibiotics and proton pump inhibitors predict development of infections in patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "O&apos;leary",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Reddy",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin Gastroenterol Hepatol",
+            "volume": "13",
+            "issn": "4",
+            "pages": "753--762",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cgh.2014.07.060"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Subsequent bacterial infections in patients with cirrhosis and the role of proton-pump inhibitors",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sargenti",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kalaitzakis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Clin Gastroenterol Hepatol",
+            "volume": "13",
+            "issn": "11",
+            "pages": "2026--2033",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cgh.2014.12.015"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Proton pump inhibitor use significantly increases the risk of spontaneous bacterial peritonitis in 1965 patients with cirrhosis and ascites: a propensity score matched cohort analysis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Min",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Min",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Gwak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Paik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Aliment Pharmacol Ther",
+            "volume": "40",
+            "issn": "6",
+            "pages": "695--704",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apt.12875"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Acidsuppressive therapy is associated with spontaneous bacterial peritonitis in cirrhotic patients: a meta-analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Deshpande",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Pasupuleti",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Thota",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pant",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mapara",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hassan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J Gastroenterol Hepatol",
+            "volume": "28",
+            "issn": "2",
+            "pages": "235--277",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jgh.12065"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Proton pump inhibitor use and the risk of small intestinal bacterial overgrowth: a metaanalysis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lo",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Clin Gastroenterol Hepatol",
+            "volume": "11",
+            "issn": "5",
+            "pages": "483--90",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cgh.2012.12.011"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Systems biology analysis of omeprazole therapy in cirrhosis demonstrates significant shifts in gut microbiota composition and function",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cox",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bertrapally",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Am J Physiol Gastrointest Liver Physiol",
+            "volume": "307",
+            "issn": "10",
+            "pages": "951--958",
+            "other_ids": {
+                "DOI": [
+                    "10.1152/ajpgi.00268.2014"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Influence of proton pump inhibitors on microbiota in chronic liver disease patients",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yamamoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ishigami",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Honda",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Takeyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ito",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ishizu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hepatol Int",
+            "volume": "13",
+            "issn": "2",
+            "pages": "234--278",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12072-019-09932-9"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Proton pump inhibitor initiation and withdrawal affects gut microbiota and readmission risk in cirrhosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Acharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fagan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "White",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Gavis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Heuman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Am J Gastroenterol",
+            "volume": "113",
+            "issn": "8",
+            "pages": "1177--86",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41395-018-0085-9"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Risk of community-acquired pneumonia and use of gastric acidsuppressive drugs",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Laheij",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sturkenboom",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hassing",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dieleman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Stricker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Jansen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "JAMA",
+            "volume": "292",
+            "issn": "16",
+            "pages": "1955--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.292.16.1955"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Risk of community-acquired pneumonia with outpatient proton-pump inhibitor therapy: a systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lambert",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Paik",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ugarte-Gil",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Drummond",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Crowell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "PLoS One",
+            "volume": "10",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0128004"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Risk factors for Clostridium difficile infection in cirrhotic patients",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hepatobiliary Pancreat Dis Int",
+            "volume": "18",
+            "issn": "3",
+            "pages": "237--278",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.hbpd.2019.04.003"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Use of proton pump inhibitors and H2 blockers and risk of pneumonia in older adults: a population-based case-control study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dublin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Walker",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Nelson",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Weiss",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jackson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Pharmacoepidemiol Drug Saf",
+            "volume": "19",
+            "issn": "8",
+            "pages": "792--802",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/pds.1978"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Proton pump inhibitor therapy does not increase the incidence of spontaneous bacterial peritonitis in cirrhosis: a multicenter prospective study",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Terg",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Casciato",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Garbe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cartier",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Stieben",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mendizabal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Hepatol",
+            "volume": "62",
+            "issn": "5",
+            "pages": "1056--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jhep.2014.11.036"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Proton pump inhibitors do not increase the risk for recurrent spontaneous bacterial peritonitis in patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Min",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Min",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Rhee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Gastroenterol Hepatol",
+            "volume": "32",
+            "issn": "5",
+            "pages": "1064--70",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jgh.13637"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Proton pump inhibitor intake neither predisposes to spontaneous bacterial peritonitis or other infections nor increases mortality in patients with cirrhosis and ascites",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mandorfer",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bota",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Schwabl",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bucsics",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Pfisterer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Summereder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "PLoS One",
+            "volume": "9",
+            "issn": "11",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1371/journal.pone.0110503"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Proton pump inhibitor use is associated with an increased frequency of new or worsening hepatic encephalopathy after transjugular intrahepatic portosystemic shunt creation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Konanur",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ziegler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pabon-Ramos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Vasc Interv Radiol",
+            "volume": "30",
+            "issn": "2",
+            "pages": "163--172",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jvir.2018.10.015"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Proton pump inhibitors increase risk for hepatic encephalopathy in patients with cirrhosis in a population study",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Gastroenterology",
+            "volume": "152",
+            "issn": "1",
+            "pages": "134--175",
+            "other_ids": {
+                "DOI": [
+                    "10.1053/j.gastro.2016.09.007"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "The 3-month readmission rate remains unacceptably high in a large North American cohort of patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Reddy",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tandon",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kamath",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Garcia-Tsao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Hepatology",
+            "volume": "64",
+            "issn": "1",
+            "pages": "200--208",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.28414"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Fungal dysbiosis in cirrhosis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Bajaj",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kheradman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fagan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Heuman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "White",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Gut",
+            "volume": "67",
+            "issn": "6",
+            "pages": "1146--54",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/gutjnl-2016-313170"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Mortality associated with proton pump inhibitors in cirrhotic patients with spontaneous bacterial peritonitis",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kwon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Koh",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Jung",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Gastroenterol Hepatol",
+            "volume": "29",
+            "issn": "4",
+            "pages": "775--81",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jgh.12426"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Effect of proton pump inhibitors in hospitalization on mortality of patients with hepatic encephalopathy and cirrhosis but no active gastrointestinal bleeding",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tseng",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Clin Res Hepatol Gastroenterol",
+            "volume": "42",
+            "issn": "4",
+            "pages": "353--362",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.clinre.2017.11.011"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Risk of death among users of proton pump inhibitors: a longitudinal observational cohort study of United States veterans",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bowe",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Al-Aly",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "BMJ open",
+            "volume": "7",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmjopen-2016-015735"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Estimates of all cause mortality and cause specific mortality associated with proton pump inhibitors among US veterans: cohort study",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bowe",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xian",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Al-Aly",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMJ",
+            "volume": "365",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.l1580"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Proton pump inhibitor use and cancer mortality",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tvingsholm",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Dehlendorff",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Osterlind",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Cancer",
+            "volume": "143",
+            "issn": "6",
+            "pages": "1315--1341",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ijc.31529"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Long-term risk of recurrent peptic ulcer bleeding in patients with liver cirrhosis: a 10-year nationwide cohort study",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hsu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Hepatology",
+            "volume": "56",
+            "issn": "2",
+            "pages": "698--705",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.25684"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Cirrhotic patients at increased risk of peptic ulcer bleeding: a nationwide population-based cohort study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Leu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Aliment Pharmacol Ther",
+            "volume": "36",
+            "issn": "6",
+            "pages": "542--50",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1365-2036.2012.05225.x"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Peptic ulceration in patients with chronic liver disease",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kirk",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Dooley",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hunt",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Dig Dis Sci",
+            "volume": "25",
+            "issn": "10",
+            "pages": "756--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/BF01345294"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Mortality rate and risk factors for gastrointestinal bleeding in elderly patients",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Lenti",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pasina",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Cococcia",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cortesi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Miceli",
+                    "suffix": ""
+                },
+                {
+                    "first": "Caccia",
+                    "middle": [],
+                    "last": "Dominioni",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur J Intern Med",
+            "volume": "61",
+            "issn": "",
+            "pages": "54--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejim.2018.11.003"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Chronic live disease and 90-day mortality in 21359 patients following peptic ulcer bleeding -a nationwide cohort study",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Holland-Bill",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Christiansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gammelager",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Mortensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pedersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "S\u00f8rensen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Aliment Pharmacol Ther",
+            "volume": "41",
+            "issn": "6",
+            "pages": "564--72",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apt.13073"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Effect of comorbidity on mortality in patients with peptic ulcer bleeding: systematic review and meta-analysis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Leontiadis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Molloy-Bland",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Moayyedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Howden",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Am J Gastroenterol",
+            "volume": "108",
+            "issn": "3",
+            "pages": "331--376",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/ajg.2012.451"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Predictive factors of mortality from nonvariceal upper gastrointestinal hemorrhage: a multicenter study",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Marmo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Koch",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cipolletta",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Capurso",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pera",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bianco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Am J Gastroenterol",
+            "volume": "103",
+            "issn": "7",
+            "pages": "1639--1686",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1572-0241.2008.01865.x"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Survival of patients with cirrhosis and acute peptic ulcer bleeding compared with variceal bleeding using current first-line therapies",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ardevol",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ibanez-Sanz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Profitos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Hepatology",
+            "volume": "67",
+            "issn": "4",
+            "pages": "1458--71",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.29370"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Pantoprazole reduces the size of postbanding ulcers after variceal band ligation: a randomized, controlled trial",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Shaheen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Stuart",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Schmitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Mitchell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Fried",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zacks",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Hepatology",
+            "volume": "41",
+            "issn": "3",
+            "pages": "588--94",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.20593"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Use of proton pump inhibitors in the management of gastroesophageal varices: a systematic review",
+            "authors": [
+                {
+                    "first": "Eag",
+                    "middle": [],
+                    "last": "Lo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wilby",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mhh",
+                    "middle": [],
+                    "last": "Ensom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Ann Pharmacother",
+            "volume": "49",
+            "issn": "2",
+            "pages": "207--226",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/1060028014559244"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "PPIs are not associated with a lower incidence of portal hypertension-related bleeding in cirrhosis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Garcia-Saenz-De-Sicilia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Sanchez-Avila",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chavez-Tapia",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lopez-Arce",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Garcia-Osogobio",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ruiz-Cordero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "World J Gastroenterol",
+            "volume": "16",
+            "issn": "46",
+            "pages": "5869--73",
+            "other_ids": {
+                "DOI": [
+                    "10.3748/wjg.v16.i46.5869"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Safe use of proton pump inhibitors in patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Weersink",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bouma",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Burger",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jph",
+                    "middle": [],
+                    "last": "Drenth",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Harkes-Idzinga",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ngm",
+                    "middle": [],
+                    "last": "Hunfeld",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Clin Pharmacol",
+            "volume": "84",
+            "issn": "8",
+            "pages": "1806--1826",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/bcp.13615"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Side effects of long-term proton pump inhibitor use: a review",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Haastrup",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sondergaard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Basic Clin Pharmacol Toxicol",
+            "volume": "123",
+            "issn": "2",
+            "pages": "114--135",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/bcpt.13023"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Early hospital readmissions and mortality in patients with decompensated cirrhosis enrolled in a large national health insurance administrative database",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Scaglione",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Metcalfe",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kliethermes",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Vasilyev",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Tsang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Caines",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Clin Gastroenterol",
+            "volume": "51",
+            "issn": "9",
+            "pages": "839--883",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/MCG.0000000000000826"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Letter to the editor: Proton pump inhibitors in cirrhosis: a marker of morbid conditions or a cause of mortality",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Moon",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Hayashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Barritt",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hepatology",
+            "volume": "70",
+            "issn": "2",
+            "pages": "761--763",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.30642"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Letter to the editor: proton pump inhibitors are associated with minimal and overt hepatic encephalopathy and increased mortality in patients with cirrhosis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Tsai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hepatology",
+            "volume": "70",
+            "issn": "2",
+            "pages": "760--761",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/hep.30641"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Rebound acid hypersecretion from a physiological, pathophysiological and clinical viewpoint",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Waldum",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Qvigstad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Fossmark",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kleveland",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Sandvik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Scand J Gastroenterol",
+            "volume": "45",
+            "issn": "4",
+            "pages": "389--94",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/00365520903477348"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Systematic review: symptoms of rebound acid hypersecretion following pump inhibitor treatment",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lodrup",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Reimer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bytzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Scand J Gastroenterol",
+            "volume": "48",
+            "issn": "5",
+            "pages": "515--537",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/00365521.2012.746395"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Stategies for discontinuation of proton pump inhibitors: a systematic review",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Haastrup",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Paulsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Begtrup",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Jarbol",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Fam Pract",
+            "volume": "31",
+            "issn": "6",
+            "pages": "625--655",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/fampra/cmu050"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Hospital readmissions among patients with decompensated cirrhosis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Volk",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bazick",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Rakoski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lok",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Am J Gastroenterol",
+            "volume": "107",
+            "issn": "2",
+            "pages": "247--52",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/ajg.2011.314"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Acute-onchronic liver failure is a distinct syndrome that develops in patients with acute decompensation of cirrhosis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Moreau",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Jalan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gines",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pavesi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Angeli",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cordoba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Gastroenterology",
+            "volume": "144",
+            "issn": "7",
+            "pages": "1426--1463",
+            "other_ids": {
+                "DOI": [
+                    "10.1053/j.gastro.2013.02.042"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "S2k-guideline helicobacter pylori and gastroduodenal ulcer disease",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Fischbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Malfertheiner",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lynen",
+                    "middle": [],
+                    "last": "Jansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Z Gastroenterol",
+            "volume": "55",
+            "issn": "",
+            "pages": "167--206",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0042-119653"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "S2k guideline: gastroenterological reflux disease guided by the German society of gastroenterology: AWMF register no. 021-013",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Koop",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Fuchs",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Labenz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Lynen",
+                    "middle": [],
+                    "last": "Jansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Messmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Miehlke",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Z Gastroenterol",
+            "volume": "52",
+            "issn": "11",
+            "pages": "1299--346",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0034-1385202"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "S2k guideline gastrointestinal bleeding -guideline of the German society of Gastroenterology DGVS",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "G\u00f6tz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anders",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Biecker",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bojarski",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Braun",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Brechmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Z Gastroenterol",
+            "volume": "55",
+            "issn": "9",
+            "pages": "883--936",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0043-116856"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Flow chart of the STOPPIT trial. Please note, only key inclusion and exclusion criteria are depicted into this flow chart. Full in-and exclusion criteria are to be found in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Abbreviations ACLF: Acute-on-chronic liver failure; AE: Adverse event; DSMB: Data safety monitoring board; eCRF: Electronic case report form; EGD: Oesophagogastro-duodenoscopy; FAS: Full analysis set; HR: Hazard ratio; MELD: Model for end-stage liver disease; PP: Per-protocol; PPI: Proton-pump inhibitors; SAE: Serious adverse event; SAR: Serious adverse reaction; SBP: Spontaneous bacterial peritonitis; SUSAR: Suspected unexpected serious adverse reaction; TIPS: Tranjugular intrahepatic portosystemic shunt cine Rostock), Christoph Berg (University Hospital T\u00fcbingen), Alexander Zipprich (Jena University Hospital), Frank Lammert (Hannover Medical School)",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Primary, secondary and safety endpoints of the trial SBP spontaneous bacterial peritonitis, SARS-CoV-2 severe acute respiratory syndrome coronavirus 2, ACLF acute-on-chronic liver failure, PPI proton-pump inhibitors, EGD oesophago-gastro-duodenoscopy",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Visits and time points",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Study procedures",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Anneke Werk and Canan Kurnaz for their administrative assistance ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The authors declare that there have no competing interests. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests {28}"
+        }
+    ]
+}

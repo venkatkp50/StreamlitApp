@@ -1,0 +1,1404 @@
+{
+    "paper_id": "0b84c0d481e791a714f81a2bda3c34e28b050c3a",
+    "metadata": {
+        "title": "Impaired Breakdown of Bradykinin and Its Metabolites as a Possible Cause for Pulmonary Edema in COVID-19 Infection",
+        "authors": [
+            {
+                "first": "Steven",
+                "middle": [],
+                "last": "De Maat",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Utrecht University",
+                    "location": {
+                        "settlement": "Utrecht",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Quirijn",
+                "middle": [],
+                "last": "De Mast",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Radboud University Medical Center",
+                    "location": {
+                        "settlement": "Nijmegen",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "A",
+                "middle": [
+                    "H Jan"
+                ],
+                "last": "Danser",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Erasmus MC",
+                    "location": {
+                        "settlement": "Rotterdam",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Frank",
+                "middle": [
+                    "L"
+                ],
+                "last": "Van De Veerdonk",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Radboud University Medical Center",
+                    "location": {
+                        "settlement": "Nijmegen",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Coen",
+                "middle": [],
+                "last": "Maas",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Utrecht University",
+                    "location": {
+                        "settlement": "Utrecht",
+                        "country": "The Netherlands"
+                    }
+                },
+                "email": "cmaas4@umcutrecht.nl."
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "A growing body of clinical evidence shows that vascular leakage leads to pulmonary edema in coronavirus disease 2019 (COVID- 19) patients. Coronaviruses including severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) use membrane ectopeptidases to invade cells, most notably dipeptidyl peptidase 4 (DPP4; https://www.uniprot.org/uniprot/ P27487), aminopeptidase N (APN; https://www.uniprot.org/ uniprot/P15144), and angiotensin-converting enzyme 2 (ACE2; https://www.uniprot.org/uniprot/Q9BYF1). 1 It is important to distinguish this latter protein from ACE, which is the main target for conventional blood pressure lowering drugs: ACE inhibitors do not inhibit ACE2. 2 As a result of virus entry, these membrane ectopeptidases are internalized and their activity becomes downregulated. The common denominator between these membrane ectopeptidases is their enzyme specificity: they degrade peptide hormones, for instance, angiotensin II. For SARS-CoV-2 (as well as SARS-CoV), ACE2 is the predominant target for cellular uptake in vivo. 3 It is present on lung alveolar epithelial cells, enterocytes of the small intestine, endothelial cells, and arterial smooth muscle cells. 4 In an acid aspiration lung injury mouse model, ACE2 knockout (KO) worsened the resulting edema. 5 This was accompanied by increased angiotensin II levels 6 and was prevented by angiotensin II receptor KO, leading to the conclusion that the lack of ACE2-mediated angiotensin II degradation was responsible for the observed increase pulmonary vascular permeability. The same observations were made when downregulating ACE2 with the spike protein of the SARS CoV prior to acid aspiration. 6 Yet, the authors did not measure renin in these studies. This is crucial since normally angiotensin II rises result in rapid renin suppression, 7 thereby normalizing its levels. Moreover, ACE2 is just one of many angiotensin-degrading enzymes (angiotensinases). In full accordance with this concept, Gurley et al did not find increased angiotensin II levels after ACE2 KO. 8 Hence, whether the ACE2 KO dependent permeability changes are entirely due to ACE2-mediated angiotensin II degradation remains uncertain. ACE2 has multiple other substrates. Among these are the kinins, which are also degraded by DPP4. 9 We and others believe that this deserves attention, as it offers an alternative view, and forms a basis on which novel therapeutic opportunities might be proposed. 10",
+            "cite_spans": [
+                {
+                    "start": 125,
+                    "end": 128,
+                    "text": "19)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 503,
+                    "end": 504,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 675,
+                    "end": 676,
+                    "text": "2",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1043,
+                    "end": 1044,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1183,
+                    "end": 1184,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1339,
+                    "end": 1340,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1671,
+                    "end": 1672,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 2046,
+                    "end": 2047,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 2283,
+                    "end": 2284,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The KNG1 gene encodes both high molecular weight kininogen (HK; 110 kDa) and low molecular weight kininogen (LK; 68 kDa). These two proteins are a result of tissue-specific alternative splicing of the same gene. HK cleavage by plasma kallikrein (\u25baFig. 1) releases bradykinin (nine amino acids; RPPGFSPFR), whereas LK cleavage by tissue kallikreins releases lysyl-bradykinin (10 amino acids; KRPPGFSPFR). Both kinins are recognized by the kinin B2 receptor (B2R), which is constitutively present (among others) on the vascular endothelium. Kinin B2 receptor activation triggers vascular leakage and is critical to the development of hereditary angioedema (HAE), a rare congenital tissue swelling disorder. 11 Enzymatic shortening of bradykinin or lysyl-bradykinin by carboxypeptidase M in tissue or carboxypeptidase N in plasma changes its properties dramatically (\u25baFig. 1). The resulting products (des-Arg 9 -bradykinin or des-Arg 9 -lysyl-bradykinin, respectively) now react with the kinin B1 receptor (B1R), which is expressed by a variety of cell types including leukocytes and endothelial cells at sites of inflammation. Inflammatory cytokines stimulate B1R expression and presentation. 12 Interestingly, there is evidence for a cytokine storm in COVID-19 infection, which sets the stage for increased B1R involvement. 13",
+            "cite_spans": [
+                {
+                    "start": 1191,
+                    "end": 1193,
+                    "text": "12",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Kinin Production"
+        },
+        {
+            "text": "Under physiological conditions, bradykinin or lysylbradykinin has a short half-life in plasma (27 AE 10 seconds). 14,15 Most bradykinin is directly degraded ($ 90%; \u25baFig. 1); this keeps the effects of bradykinin localized and prevents systemic vascular leakage and hypotension. Inactivation of bradykinin in plasma relies mainly on degradation by ACE (44 AE 12 nmol\u00c1minute \u00c01 \u00c1mL \u00c01 into bradykinin- [1] [2] [3] [4] [5] [6] [7] or bradykinin- [1] [2] [3] [4] [5] ) and aminopeptidase P (22 AE 9 nmol\u00b7minute \u00c01 \u00b7mL \u00c01 into bradykinin- [2] [3] [4] [5] [6] [7] [8] [9] ). DPP4 further degrades the metabolites of aminopeptidase P (27.7 AE 11.5 nmol\u00b7minute \u00c01 \u00b7mL \u00c01 into bradykinin- [4] [5] [6] [7] [8] [9] ). 16 As such, therapeutic inhibition of ACE increases the half-life of bradykinin in plasma. 17 Interestingly, a well-known side effect of ACE inhibitor therapy is a characteristic dry cough, which resembles the coughing that is observed in COVID-19 patients. Less frequently, bradykinin-driven angioedema is also associated with this therapy. Similarly, thrombolysisassociated angioedema is worsened by ACE inhibitor use but can be treated by tempering bradykinin production through C1 esterase inhibitor infusion or B2R antagonists. [18] [19] [20] This shows that plasmin-dependent bradykinin production is regulated by ACE activity. 21 It is possible that a similar mechanism, linking the fibrinolytic system and the plasma contact system, drives bradykinin production in COVID-19 and enhances pathology. 21 Although most bradykinin is directly degraded (\u25baFig. 1), around 11% of bradykinin is converted (62 AE 10 nmol\u00c1minute \u00c01 \u00c1mL \u00c01 ) into des-Arg 9 -bradykinin by carboxypeptidase M or N. In comparison with bradykinin, the half-life of des-Arg 9 -bradykinin is at least 10-fold higher (643 AE 436 seconds). 15 Compared with ACE, which prefers to cleave bradykinin, ACE2 strongly prefers to cleave des-Arg 9bradykinin (K m 290 \u00b5M, K cat 62 s \u00c01 ) and to a lesser extent lysyl-des-Arg 9 -bradykinin (K m 130 \u00b5M, K cat 26 s \u00c01 ). 9 Importantly, endotoxin inhalation in a mouse model caused a strong transient reduction in pulmonary ACE2 activity. 22 This exacerbated lung inflammation through B1R activation by des-Arg 9 -bradykinin. These insights strongly suggest that the loss of ACE2 activity during SARS-CoV-2 infections leads to an extended half-life of des-Arg 9 -bradykinin or lysyl-des-Arg 9 -bradykinin and subsequent edema formation in the lungs of COVID-19 patients. In other words, what has been claimed for angiotensin II (a longer half-life after ACE2 loss) identically applies to (lysyl-)des-Arg 9 -bradykinin.",
+            "cite_spans": [
+                {
+                    "start": 400,
+                    "end": 403,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 404,
+                    "end": 407,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 408,
+                    "end": 411,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 412,
+                    "end": 415,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 416,
+                    "end": 419,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 420,
+                    "end": 423,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 424,
+                    "end": 427,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 443,
+                    "end": 446,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 447,
+                    "end": 450,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 451,
+                    "end": 454,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 455,
+                    "end": 458,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 459,
+                    "end": 462,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 534,
+                    "end": 537,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 538,
+                    "end": 541,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 542,
+                    "end": 545,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 546,
+                    "end": 549,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 550,
+                    "end": 553,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 554,
+                    "end": 557,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 558,
+                    "end": 561,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 562,
+                    "end": 565,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 680,
+                    "end": 683,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 684,
+                    "end": 687,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 688,
+                    "end": 691,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 692,
+                    "end": 695,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 696,
+                    "end": 699,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 700,
+                    "end": 703,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 707,
+                    "end": 709,
+                    "text": "16",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 798,
+                    "end": 800,
+                    "text": "17",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1240,
+                    "end": 1244,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1245,
+                    "end": 1249,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1250,
+                    "end": 1254,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1341,
+                    "end": 1343,
+                    "text": "21",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1513,
+                    "end": 1515,
+                    "text": "21",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1819,
+                    "end": 1821,
+                    "text": "15",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 2156,
+                    "end": 2158,
+                    "text": "22",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Kinin Degradation"
+        },
+        {
+            "text": "The mechanistic similarities between pulmonary edema in COVID-19 and HAE have led us and others to believe that therapeutic intervention strategies that block the activity or formation of (des-Arg 9 -)bradykinin may have value in the management of pulmonary edema that is seen in COVID-19 infections. 23, 24 For HAE, several therapeutic options are available, including the B2R-blocking small molecule icatibant and longer-acting agents such as lanadelumab, which inhibit plasma kallikrein. 25, 26 Obviously, we need further evidence to support these strategies for COVID-19.",
+            "cite_spans": [
+                {
+                    "start": 301,
+                    "end": 304,
+                    "text": "23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 305,
+                    "end": 307,
+                    "text": "24",
+                    "ref_id": null
+                },
+                {
+                    "start": 491,
+                    "end": 494,
+                    "text": "25,",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 495,
+                    "end": 497,
+                    "text": "26",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Outlook on Therapeutic Strategies"
+        },
+        {
+            "text": "A key assumption is that COVID-19 infection indeed causes a functional ACE2 deficiency in the lung, resulting in an extended half-life of des-Arg 9 -bradykinin or lysyl-des-arg 9bradykinin. As ACE2 is also present in blood plasma, it should be possible to determine not only its antigen levels but also its influence on the ex vivo lifetime of des-Arg 9 -bradykinin in the plasma of COVID-19 patients. 27 A second critical assumption is that des-Arg 9 -bradykinin rather than lysyl-des-Arg 9bradykinin is the critical mediator of B1R activation and subsequent pulmonary edema. If it is the former, it is likely generated through activation of the plasma contact system (and bradykinin fuels des-Arg 9 -bradykinin production). If it is the latter, it is generated by tissue kallikrein(s) and untargetable by existing HAE therapies. One biochemical study shows a substrate preference for ACE2 for des-Arg 9 -bradykinin over lysyl-des-Arg 9 -bradykinin, suggesting that ACE2 deficiency would preferentially impact the lifetime of this plasmaderived kinin. 9 Besides confirming these studies in the context of COVID-19, it would be valuable to investigate the status of the plasma contact system in plasma and potentially in lung fluid of COVID-19 patients. 9 This combined information accompanied by an exploratory clinical investigation of existing HAE therapies is essential to uncover the contribution of kinins to COVID-19 pathology.",
+            "cite_spans": [
+                {
+                    "start": 402,
+                    "end": 404,
+                    "text": "27",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1053,
+                    "end": 1054,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1254,
+                    "end": 1255,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Outlook on Therapeutic Strategies"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Membrane ectopeptidases targeted by human coronaviruses",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bosch",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Smits",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Haagmans",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Curr Opin Virol",
+            "volume": "6",
+            "issn": "",
+            "pages": "55--60",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A human homolog of angiotensin-converting enzyme. Cloning and functional expression as a captopril-insensitive carboxypeptidase",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tipnis",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hooper",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hyde",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Karran",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Christie",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Turner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "J Biol Chem",
+            "volume": "275",
+            "issn": "43",
+            "pages": "33238--33243",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "7798",
+            "pages": "270--273",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Tissue distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first step in understanding SARS pathogenesis",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hamming",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Timens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bulthuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lely",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Navis",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Van Goor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J Pathol",
+            "volume": "203",
+            "issn": "02",
+            "pages": "631--637",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Angiotensin-converting enzyme 2 protects from severe acute lung failure",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kuba",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nature",
+            "volume": "436",
+            "issn": "7047",
+            "pages": "112--116",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A crucial role of angiotensin converting enzyme 2 (ACE2) in SARS coronavirus-induced lung injury",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kuba",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nat Med",
+            "volume": "11",
+            "issn": "08",
+            "pages": "875--879",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Novel therapeutic approaches targeting the renin-angiotensin system and associated peptides in hypertension and heart failure",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Arendse",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ahj",
+                    "middle": [],
+                    "last": "Danser",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Poglitsch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Pharmacol Rev",
+            "volume": "71",
+            "issn": "04",
+            "pages": "539--570",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Altered blood pressure responses and normal cardiac phenotype in ACE2-null mice",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gurley",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Allred",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Le",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Clin Invest",
+            "volume": "116",
+            "issn": "08",
+            "pages": "2218--2225",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Hydrolysis of biological peptides by human angiotensin-converting enzyme-related carboxypeptidase",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Vickers",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Hales",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kaushik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Biol Chem",
+            "volume": "277",
+            "issn": "17",
+            "pages": "14838--14843",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Kallikreinkinin blockade in patients with COVID-19 to prevent acute respiratory distress syndrome",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Van De Veerdonk",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Netea",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van Deuren",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Hereditary angioedema: the plasma contact system out of control",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "De Maat",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zlm",
+                    "middle": [],
+                    "last": "Hofman",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Maas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Thromb Haemost",
+            "volume": "16",
+            "issn": "09",
+            "pages": "1674--1685",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Regulation of kinin-induced contraction and DNA synthesis by inflammatory cytokines in the smooth muscle of the rabbit aorta",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Levesque",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Larriv\u00e9e",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bachvarov",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Rioux",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Drapeau",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Marceau",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "Br J Pharmacol",
+            "volume": "116",
+            "issn": "01",
+            "pages": "1673--1679",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "COVID-19: immunopathology and its implications for therapy",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat Rev Immunol",
+            "volume": "20",
+            "issn": "05",
+            "pages": "269--270",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Bradykinin and cardiovascular system: estimation of half-life",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Saameli",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Eskes",
+                    "suffix": ""
+                }
+            ],
+            "year": 1962,
+            "venue": "Am J Physiol",
+            "volume": "203",
+            "issn": "",
+            "pages": "261--265",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Bradykinin and des-Arg(9)-bradykinin metabolic pathways and kinetics of activation of human plasma",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cyr",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lepage",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Blais",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Jr",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Am J Physiol Heart Circ Physiol",
+            "volume": "281",
+            "issn": "01",
+            "pages": "275--283",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Dipeptidyl peptidase IV in angiotensin-converting enzyme inhibitor associated angioedema",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Byrd",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Touzin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sile",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Hypertension",
+            "volume": "51",
+            "issn": "01",
+            "pages": "141--147",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Determinants of angiotensin-converting enzyme inhibitor (ACEI) intolerance and angioedema in the UK Clinical Practice Research Datalink",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Mahmoudpour",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Baranova",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Souverein",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Asselbergs",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "De Boer",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ah; Prediction-Adr",
+                    "middle": [],
+                    "last": "Maitland-Van Der Zee",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Consortium",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Br J Clin Pharmacol",
+            "volume": "82",
+            "issn": "06",
+            "pages": "1647--1659",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Incidence, predictors and clinical characteristics of orolingual angio-oedema complicating thrombolysis with tissue plasminogen activator for ischaemic stroke",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hurford",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rezvani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kreimei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Neurol Neurosurg Psychiatry",
+            "volume": "86",
+            "issn": "05",
+            "pages": "520--523",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "A novel approach to the treatment of orolingual angioedema after tissue plasminogen activator administration",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pahs",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Droege",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kneale",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pancioli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Ann Emerg Med",
+            "volume": "68",
+            "issn": "03",
+            "pages": "345--348",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Icatibant as a potential treatment of life-threatening alteplase-induced angioedema",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Cheong",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Dodd",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kleinig",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Stroke Cerebrovasc Dis",
+            "volume": "27",
+            "issn": "02",
+            "pages": "36--37",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Plasminflammation-an emerging pathway to bradykinin production",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Maas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Immunol",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Attenuation of pulmonary ACE2 activity impairs inactivation of des-Arg 9 bradykinin/BKB1R axis and facilitates LPS-induced neutrophil infiltration",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Sodhi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wohlford-Lenane",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yamaguchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Am J Physiol Lung Cell Mol Physiol",
+            "volume": "314",
+            "issn": "01",
+            "pages": "17--31",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Chest CT manifestations of new coronavirus disease 2019 (COVID-19): a pictorial review",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B ;",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Van De Veerdonk",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Netea",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van Deuren",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Kinins and cytokines in COVID",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "Doi:10.1007/s00330-020-06801-024"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Icatibant, a new bradykininreceptor antagonist, in hereditary angioedema",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cicardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Banerji",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bracho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "N Engl J Med",
+            "volume": "363",
+            "issn": "06",
+            "pages": "532--541",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Inhibiting plasma kallikrein for hereditary angioedema prophylaxis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Banerji",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Busse",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shennak",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "N Engl J Med",
+            "volume": "376",
+            "issn": "08",
+            "pages": "717--728",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Elevated plasma angiotensin converting enzyme 2 activity is an independent predictor of major adverse cardiac events in patients with obstructive coronary artery disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ramchand",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Srivastava",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Farouque",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Burrell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "e0198144 Seminars in Thrombosis & Hemostasis",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Pathways of kinin production and degradation. The tablet and virus symbols indicate the blocking effects of ACE-inhibitor therapy and SARS-CoV infections, respectively. ACE, angiotensin-converting enzyme; ACE2, angiotensin-converting enzyme 2; APP, aminopeptidase P; DPP4, dipetidyl peptidase 4; HK, high molecular weight kininogen; LK, low molecular weight kininogen; NEP, neprilysin; SARS-CoV, severe acute respiratory syndrome coronavirus.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "None.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of Interest"
+        }
+    ]
+}

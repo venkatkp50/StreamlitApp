@@ -1,0 +1,529 @@
+{
+    "paper_id": "0b62df188ebbb5191288fab443aa04ae6b6937da",
+    "metadata": {
+        "title": "Anagrammatic quotients of free groups",
+        "authors": [
+            {
+                "first": "Eric",
+                "middle": [],
+                "last": "Stubley",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We determine the structure of the quotient of the free group on 26 generators by English language anagrams. This group admits a surprisingly simple presentation as a quotient of the free group by 301 of the possible 325 commutators of pairs of generators; all of the 24 missing commutators involve at least one of the letters j, q, x, z. We describe the algorithm which can be used to determine this group given any dictionary, and provide examples from the SOWPODS scrabble dictionary witnessing the 301 commutators found.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "In this article we study the structure of the group A = a, b, c, . . . , z | w 1 = w 2 for all pairs w i which are English language anagrams . This work was inspired by the classic article [4] by Mestre-Schoof-Washington-Zagier determining the structure of the homophonic group H. The group H has a similar definition to A except anagrams are replaced by homophones. The main result of [4] is that H is trivial (in both English and French!); moreover it can reasonably be said that H is independent of the dictionary chosen, in that the words witnessing the triviality of each generator should belong to anything calling itself an English language dictionary. A similar study of homophonic groups for German, Korean, and Turkish was carried out in [2] .",
+            "cite_spans": [
+                {
+                    "start": 189,
+                    "end": 192,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 386,
+                    "end": 389,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 748,
+                    "end": 751,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The group A is not trivial, and is not independent of the dictionary chosen. In the particular case of the SOWPODS scrabble dictionary [5] , we prove the following.",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 138,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Theorem 1.1. The group A with respect to the SOWPODS scrabble dictionary is the quotient of the free group on the 26 generators a, b, . . . , z, subject to the relations [\u03b1, \u03b2] = 1 for each pair of generators except the following 24:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "\u2022 the 6 commutators of each pair of j, q, x, z,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "\u2022 the 5 commutators of j with f, k, l, w, y,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "\u2022 the 6 commutators of q with b, f, g, k, w, y,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "\u2022 the 3 commutators of x with f, k, v,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "\u2022 the 4 commutators of z with f, k, v, w.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Notably the relations needed are no more complicated than commutators of the generating letters. This means that A (with this dictionary) is a right-angled Artin group! Some commutator relation are directly witnessed by anagram pairs. For example the anagram relation able = bale is nothing other than the commutator relation [a, b] = 1. However, not all of the commutator relations in A that appear in theorem 1.1 are directly obtainable from anagrams in this way. In section 2 we describe how some anagram relations can be simplified in the presence of commutators, in order that more commutators may be exhibited as coming from anagram relations. Section 3 describes the algorithm used to search the dictionary for commutators. For the specific case of the SOWPODS scrabble dictionary we discuss our findings in section 4. As it turns out the author has a surprising personal connection to the history of the study of the group A, which is recounted in section 5. Appendix A collects anagram pairs in the SOWPODS dictionary which exhibit the commutators in A(SOWPODS).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "To avoid confusion, we reserve the use of lower case roman characters a, b, c, . . . , z in mathematical statements for the generators of our anagrammatic groups. We will use greek characters (\u03b1, \u03b2, . . .), upper case roman characters (A, B, . . .), or roman characters with subscripts (a 1 , b 2 , . . . ) for variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "We will work throughout this article with the free group F 26 with generators a, b, . . . , z.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "Definition 2.1. If we are given a word W = a 1 . . . a n \u2208 F 26 and \u03c3 \u2208 S n , we define W \u03c3 to be the word W \u03c3 = a \u03c3(1) . . . a \u03c3(n) .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "For two words W, W \u2032 \u2208 F 26 we say that W and W \u2032 are anagrams of one another if W \u2032 = W \u03c3 for some permutation \u03c3. where W i \u2208 D and W 1 , W 2 are anagrams of one another. We say that the relation",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": ". We define the anagram group A(D) for the dictionary D to be the quotient A(D) = F 26 /R(D).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "The following lemma shows that the \"smallest\" we can expect A(D) to be is Z 26 . This is perhaps clear if we think about the fact that two words are anagrams if and only if they are written with the same multiset of letters, which is precisely what Z 26 counts. Nonetheless we provide an explicit proof by computations with commutators to get used to thinking about commutators in an anagrammatic context. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "Suppose that \u03c3 is the permutation with W \u2032 = W \u03c3 . If we write \u03c3 = k i=1 \u03c4 i as a product of transpositions, we see that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "From this it suffices to show that W W \u22121 \u03c4 is in the commutator subgroup of F 26 for any transposition \u03c4 . Write",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "Then we have that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "Since the commutator subgroup is normal, this computation shows that W W \u22121 \u03c4 is in [F 26 , F 26 ]. So by our previous logic we see that any anagram relation",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "The next lemma shows how we can reduce the relations in R(D) to a simpler form. The principle is to use commutators of generators that we know to be in R(D) in order to remove letters from a given anagram relation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "for all letters \u03b2 appearing in the W i and we denote by\u0174 the word W with all instances of the character \u03b1 removed, we have that the relation\u0174 1 =\u0174 2 is in R(D).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "Proof. If we have that [\u03b1, \u03b2] \u2208 R(D) for each character used in the W i , then [\u03b1, S] \u2208 R(D) for any string S made using those letters (and similarly for any commutator of \u03b1 \u00b11 , S \u00b11 ). In particular if we write W 1 = S 1 \u03b1S 2 , then we see that",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "Repeat this construction to move all instances of \u03b1 to the start of W 1 , and similarly move all instances of \u03b1 \u22121 to the end of W \u22121 2 . We'll be left with the relation \u03b1 k\u0174",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": ", noting that since W 1 and W 2 are anagrams \u03b1 will appear the same number k times in each. Since R(D) is normal, we thus have that the relation\u0174 1 =\u0174 2 is in R(D), and moreover\u0174 1 and\u0174 2 are anagrams although they may not be words in the dictionary D.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "The following consequence of lemma 2.4 describes how new relations can be generated once commutators have been found.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": ", and that after some applications of lemma 2.4 these relations become\u0174 1 ",
+            "cite_spans": [
+                {
+                    "start": 72,
+                    "end": 73,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Algebraic preliminaries"
+        },
+        {
+            "text": "We describe the strategy that we use in our quest to simplify the presentation of A(D). The basic idea is to iteratively look for commutator relations from our anagrams and then use those relations to reduce and combine our set of anagram relations as in lemma 2.4 and corollary 2.5 in the hope of finding more commutators.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Definition 3.1. We say an pair of words W 1 , W 2 is an admissible pair if they are anagrams of each other and they are of the form",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "for strings s 1 , s 2 and letters \u03b1, \u03b2. Note that if W 1 , W 2 are an admissible pair, the relation",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "is a conjugate of the commutator [\u03b1, \u03b2].",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Step 1: this step is consists of setting up the main data structure we work with. For each set of anagrams in D having the same image \u03b3 in Z 26 (we refer to this image as the \"letter count\" of a word), create a complete graph with vertices the words with that letter count. We think of the edge connecting words W 1 and W 2 as the relation W 1 = W 2 . We call these graphs the \"anagraphs\" (a portmanteau of anagram and graph, not to be confused with [1] ).",
+            "cite_spans": [
+                {
+                    "start": 450,
+                    "end": 453,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Step 2: search through all the anagraphs we have for any admissible pairs and add them to a running list of known commutators.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Step 3: using the admissible pairs found in the previous step, we reduce and combine our anagraphs using lemma 2.4 and corollary 2.5. Each anagraph G \u03b3 corresponds to a word count \u03b3 in Z 26 . If a letter appears in \u03b3 and our list of admissible pairs tells us that that letter commutes with all others in \u03b3, then we remove that letter from \u03b3 and from all the vertices of G \u03b3 . We let \u03b3 \u2032 be and G \u03b3 \u2032 be the letter count and graph obtained by performing this reduction for each letter of \u03b3. This may have the effect of combining two or more anagraphs as in corollary 2.5, since letter counts \u03b3 1 = \u03b3 2 may reduce such that \u03b3 \u2032 1 = \u03b3 \u2032 2 . When this happens we identify the anagraphs G \u03b3 \u2032 1 and G \u03b3 \u2032 2 , identifying those vertices which have reduced to the same string as in corollary 2.5. In general the reduced anagraphs may end up with several connected components; we always add in edges to ensure that each connected component is complete, which is simply ensuring the transitivity of equality for the group relations as encoded in the anagraphs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Step 4: return to step 2 and repeat until no new admissible pairs are found and no more reduction of anagraphs occurs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Step 5: manually treat the remaining relations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "Note that this procedure is not guaranteed to produce useful results; for example with a particularly small dictionary it could be the case that no commutators are found in the second step. With reasonable English language dictionaries fewer than 10 repetitions of the commutator finding and reduction steps are needed, and the resulting list of a few hundred words can easily be dispatched as most provide no new information.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "A Sagemath [6] program written to carry out steps 1 through 4 of this strategy is available through the author's website and GitHub page.",
+            "cite_spans": [
+                {
+                    "start": 11,
+                    "end": 14,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Strategy"
+        },
+        {
+            "text": "We now describe the anagram group A(D) in the specific case that D is the SOWPODS scrabble word list [5] . To show that N \u2286 R(SOWPODS) we must exhibit anagram pairs from the SOWPODS dictionary which realize each of the 301 = 325 \u2212 24 commutators which generate N . The algorithmic steps of the strategy outlined in section 3 realizes 271 of the 325 possible commutators of generators. All commutators not found contain at least one of the letters j, q, x, z. The missing commutators are:",
+            "cite_spans": [
+                {
+                    "start": 101,
+                    "end": 104,
+                    "text": "[5]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Dictionary specific results"
+        },
+        {
+            "text": "\u2022 the 24 exceptional commutators in the theorem statement, \u2022 all commutators involving the letter q.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dictionary specific results"
+        },
+        {
+            "text": "There are 220 remaining letter counts which are left after the algorithm of section 3 terminates. Of these none contain the character x, and only two contain the character z. Those containing z (quartziest = quartzites and quartzose = quatorzes) yield no new information, as they are implied by the known commutators: at this point we know that e, i, s, t commute with one another which implies the first relation, and we know that e, o, r, s, t, z commute which implies the second relation. The remaining 218 letter counts each contain either j or q, and none contains both. Many of these provide no new relation, for example quickest = quickset is already implied by our knowledge that e, s, t commute. Using the 271 commutators we have already established, the other 30 commutators which are not listed as the 24 exceptional ones in the theorem statement are found among the remaining anagram groupings, bringing the total list of commutators found to 301 = 325 \u2212 24. See appendix A for anagram pairs which realize each of these 301 commutators.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dictionary specific results"
+        },
+        {
+            "text": "To show that N \u2287 R(SOWPODS) we must show that every anagram pair from the SOWPODS dictionary is implied by the relations in N . Our algorithm verifies this for most of the anagrams in the dictionary, as any anagram which reduces to the trivial word after iterations of the second and third steps of the algorithm is implied by the relations in N . For the remaining 220 letter counts left after the algorithm terminates, one verifies manually that all are implied by the commutators in N .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dictionary specific results"
+        },
+        {
+            "text": "Remark 4.2. Notably the relations in R(D) are generated only by commutators of generators and not any more involved relations, making A(SOWPODS) a right-angled Artin group. Remark 4.3. One consequence of the fact that N \u2287 R(SOWPODS) is that if [\u03b1, \u03b2] is one of the 24 exceptional commutators which do not appear in N , then all SOWPODS anagrams containing both the characters \u03b1 and \u03b2 have the same pattern of \u03b1 and \u03b2 appearing. So for example there is no anagram pair W 1 , W 2 in the SOWPODS dictionary where W 1 contains a j and then an x, while W 2 contains an x and then a j. So in a sense A(SOWPODS) is maximally abelian, in that any commutator which could possibly arise from anagrams in the SOWPODS dictionary does arise.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Dictionary specific results"
+        },
+        {
+            "text": "This work was undertaken by the author while he was a graduate student at the University of Chicago, primarily in the spring of 2017. As it turns out, there is a long and storied history of grad students at the University of Chicago studying anagrammatic groups, stretching back at least to the 1970s. While following up on references from the article [4] , the author stumbled across [3] . The article [3] is an account of several whimsical math problems studied by a group of grad students at the University of Chicago in the 1970s. Apparently there was at that time a tradition of grad students attempting to determine the structure of the group A by hand, with generations of student work being logged in a large paper chart posted on the fourth floor of the mathematics building. Without computer assistance, several letters had been shown to be in the center of the group, and anagrams exhibiting many of the possible commutator pairs had been filled in on the chart.",
+            "cite_spans": [
+                {
+                    "start": 352,
+                    "end": 355,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 385,
+                    "end": 388,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 403,
+                    "end": 406,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "History of the anagram problem"
+        },
+        {
+            "text": "The author only learned of this surprising connection in the spring of 2020, at which point the COVID-19 pandemic was in full force. The author has confirmed that the paper chart mentioned in [3] was still in existence until at the least the early 1990s. Unfortunately, the closure of the department due to the COVID-19 pandemic and the author's subsequent graduation from the University of Chicago prevented a thorough archaeological exploration of Eckhart Hall to determine if the paper chart has since been lost.",
+            "cite_spans": [
+                {
+                    "start": 192,
+                    "end": 195,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "History of the anagram problem"
+        },
+        {
+            "text": "The author wishes to thank the UChicago crossword crew for encouraging this project, the UChicago pizza seminar for providing a forum where this research was first presented, and the Canada/USA Mathcamp 2020 class \"Grammatical group generation\" for trying to actually learn some math from this project.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "Our algorithm takes 5 iterations to terminate on the SOWPODS dictionary. See table 1 for an overview of how many commutators are found at each step of the algorithm. For each of the 301 commutator relations in our presentation of A(SOWPODS), table 2 provides an anagram pair realizing that commutator, sorted by which iteration of the strategy they are found at and then lexicographically by (\u03b1, \u03b2). Note that commutators from previous rounds are used in extracting a commutator from an anagram pair in round 2 and onwards. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 77,
+                    "end": 84,
+                    "text": "table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "A SOWPODS anagram pairs realizing commutators"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Anagraphs",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Anagrams",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "2021--2031",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Homophonic quotients of linguistic free groups: German, Korean, and Turkish",
+            "authors": [
+                {
+                    "first": "Herbert",
+                    "middle": [],
+                    "last": "Gangl",
+                    "suffix": ""
+                },
+                {
+                    "first": "Gizem",
+                    "middle": [],
+                    "last": "Karaali",
+                    "suffix": ""
+                },
+                {
+                    "first": "Woohyung",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "In: Involve",
+            "volume": "12",
+            "issn": "",
+            "pages": "1944--4176",
+            "other_ids": {
+                "DOI": [
+                    "10.2140/involve.2019.12.463"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Notes: The Jimmy's Book\"",
+            "authors": [
+                {
+                    "first": "Steven",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Landsburg",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "In: Amer. Math. Monthly",
+            "volume": "93",
+            "issn": "",
+            "pages": "636--638",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/2322324"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Quotients homophones des groupes libres",
+            "authors": [
+                {
+                    "first": "Jean-Fran\u00e7ois",
+                    "middle": [],
+                    "last": "Mestre",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Experiment. Math",
+            "volume": "2",
+            "issn": "3",
+            "pages": "1058--6458",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The Sage Developers. SageMath, the Sage Mathematics Software System",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Given a dictionary D which consists of words in the generators a, b, . . . , z we define to be R(D) the normal subgroup generated by all elements W 1 W \u22121 2",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "For any dictionary D, the abelianization map F 26 \u2192 Z 26 factors through A(D). Proof. To show that A(D) is intermediate between F 26 and Z 26 , it suffices to show that R(D) \u2286 [F 26 , F 26 ]. Since the commutator subgroup is normal, it suffices to show that any anagram relation",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "The group A(SOWPODS) has presentation a, b, . . . , z | all commutators of a pair of generators except the 24 listed below where the missing commutators are: \u2022 the 6 commutators of each pair of j, q, x, z \u2022 the 5 commutators of j with f, k, l, w, y \u2022 the 6 commutators of q with b, f, g, k, w, y \u2022 the 3 commutators of x with f, k, v \u2022 the 4 commutators of z with f, k, v, wProof. Let N be the normal closure of the set of commutators described in the theorem statement. We want to show that N = R(SOWPODS).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "all commutators involving the letter j except [j, a], [j, c], and [j, r],",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Table 1: Progress of algorithm on SOWPODS dictionary",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Anagrams pairs (w 1 , w 2 ) exhibiting the 301 commutator relations [\u03b1, \u03b2] in our presentation of the anagram group.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

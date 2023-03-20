@@ -1,0 +1,2415 @@
+{
+    "paper_id": "0b65b4bd74d88a2e407c76551f232d37f1543fd7",
+    "metadata": {
+        "title": "RAAS Blockade and COVID-19: Mechanistic Modeling of Mas and AT1 Receptor Occupancy as Indicators of Pro-Inflammatory and Anti- Inflammatory Balance Study Highlights WHAT IS THE CURRENT KNOWLEDGE ON THE TOPIC?",
+        "authors": [
+            {
+                "first": "",
+                "middle": [],
+                "last": "Clinical Pharmacology &amp; Therapeutics |",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Volume",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "ACE inhibitors (ACEis) and angiotensin receptor blockers (ARBs) are standard-of-care treatments for hypertension and diabetes, common comorbidities among hospitalized patients with coronavirus disease 2019 . Their use in the setting of COVID-19 has been heavily debated due to potential interactions with ACE2, an enzyme that links the pro-inflammatory and anti-inflammatory arms of the renin angiotensin system, but also the entryway by which severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2) invades cells. ACE2 expression is altered by age, hypertension, diabetes, and the virus itself. This study integrated available information about the renin angiotensin aldosterone system (RAAS) and effects of SARS-CoV-2 and its comorbidities on ACE2 into a mechanistic mathematical model and aimed to quantitatively predict effects of ACEi/ARBs on the RAAS pro-inflammatory/ anti-inflammatory balance. RAAS blockade prior to SARS-CoV-2 infection is predicted to increase the mas-AT1 receptor occupancy ratio up to 20-fold, indicating that in patients already taking an ACEi/ARB before infection, the anti-inflammatory arm is already elevated while the pro-inflammatory arm is suppressed. Predicted proinflammatory shifts in the mas-AT1 ratio due to ACE2 downregulation by SARS-CoV-2 were small relative to antiinflammatory shifts induced by ACEi/ARB. Predicted effects of changes in ACE2 expression with comorbidities of diabetes, hypertension, or aging on mas-AT1 occupancy ratio were also relatively small. Last, predicted changes in the angiotensin (Ang(1-7)) production rate with ACEi/ARB therapy, comorbidities, or infection were all small relative to exogenous Ang(1-7) infusion rates shown experimentally to protect against acute lung injury, suggesting that any changes in the ACE2-Ang(1-7)-mas arm may not be large enough to play a major role in COVID-19 pathophysiology.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Hypertension and diabetes are common comorbidities among hospitalized patients with coronavirus disease 2019 (COVID-19). 1 ACE inhibitors (ACEis) and angiotensin receptor blockers (ARBs) are standard of care treatment for these comorbidities, because they reduce cardiovascular events, kidney injury, and other vascular complications of these diseases. 2,3 There has been a good deal of",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "debate around the use of these drugs in patients with COVID-19. On one hand, it has been speculated that these therapies may increase susceptibility or severity of COVID-19, but conversely, it has also been speculated that they may protect against excess inflammation following COVID-19 infection. 4 The limited clinical data currently available do not seem to support evidence of harm. [5] [6] [7] The American College of Cardiology, Heart Failure Association of America, and American Heart Association have issued a joint statement urging continued use of ACEis or ARBs as standard of care, while also urging additional research into any potential interactions with COVID-19 infection. 8 However, the speculation and uncertainty among patients and healthcare providers regarding the most commonly used antihypertensive drug classes in the United States could have significant public health consequences. 9 The debate around protective or harmful mechanisms of ACEis/ARBs arise from speculation about their interactions with ACE2, the membrane-bound protein by which the severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2) virus invades the body. 10 ACE2 plays a normal physiological role as an enzyme in the renin angiotensin aldosterone system (RAAS; Figure 1a ). The classic arm of the RAAS, in which angiotensin I (AngI) is converted to AngII by ACE and then binds to the AT1 receptor, promotes vasoconstriction, sodium retention, and inflammation. AngII binding to the AT2 receptor appears to counter some of these effects. 11 A second arm opposes the effects of AT1. In this arm, AngI and AngII are converted to Ang(1-7) by neprilysin and ACE2, respectively. Ang (1) (2) (3) (4) (5) (6) (7) suppresses inflammation by binding to the mas receptor (a G-protein coupled receptor of Ang(1-7) associated with anti-inflammatory effects of the RAAS). 12 It has been hypothesized that ACEis/ARBs could increase risk or severity of COVID-19 by increasing ACE2 expression and thus providing more routes for viral entry. 13 However, ACE2 has not been established as a rate-limiting step for viral entry. In addition, a recent review of experimental studies found little consistency among studies reporting changes in ACE2 expression with ACEi/ ARB treatment. 14 Some studies found increased ACE2 expression/ activity with ACEi or ARB treatment, whereas a plurality showed little to no effect, and a few even showed decreased expression.",
+            "cite_spans": [
+                {
+                    "start": 387,
+                    "end": 390,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 391,
+                    "end": 394,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 395,
+                    "end": 398,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1263,
+                    "end": 1272,
+                    "text": "Figure 1a",
+                    "ref_id": null
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "On the other hand, it has also been hypothesized that ACEis/ ARBs could mitigate the severity of COVID-19 by suppressing inflammation. Although much is unknown about the pathophysiology of COVID-19, the degree of severity appears to depend on the strength of the host's inflammatory response triggered by the infection. 15 Suppression of the classic AngI-AngII-AT1 pathway may shift the balance toward the anti-inflammatory Ang(1-7)-mas arm of the RAAS. Infusion of Ang(1-7) has been shown to reduce acute lung injury and inflammation in animal models of acute respiratory distress syndrome, 16 whereas downregulation of pulmonary ACE2 is associated with increased lung injury severity. [17] [18] [19] Part of the challenge in understanding the effect of ACEis and ARBs on the inflammatory balance in COVID-19 is that ACE2 expression is altered by other factors. Hypertension, diabetes, and aging have all been shown to alter ACE2 expression. [20] [21] [22] [23] The SARS-CoV-2 virus itself also induces ACE2 shedding and downregulation after cellular entry, and ACE2 expression is also downregulated by the SARS-CoV-2 virus itself, which may play a role in the excessive inflammatory response in some patients. 24 SARS viruses have a higher affinity to ACE2 and shed ACE2 with higher efficiency than other coronaviruses, and the structure of SARS-CoV-2 suggests that it binds with higher affinity than other SARS viruses. 25 This may contribute to both its increased transmissibility and then subsequently to increased disease severity. Figure 1 The renin-angiotensin system and (a) Schematic representation of renin-angiotensin system (RAAS) mathematical model. Equations for each rate reaction are given in Table S2 . The RAAS system illustrated in schematically in a can be represented mathematically as a set of processes summarized in (b), and the reaction rates A-G are given in Table S2 . Each enzyme reaction in this system is assumed to follow Michaelis-Menten kinetics (Eq. 1) with a Michaelis constant K m defined by Eq. 2. [Colour figure can be viewed at wileyonlinelibrary.com]",
+            "cite_spans": [
+                {
+                    "start": 687,
+                    "end": 691,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 692,
+                    "end": 696,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 697,
+                    "end": 701,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 943,
+                    "end": 947,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 948,
+                    "end": 952,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 953,
+                    "end": 957,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 958,
+                    "end": 962,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1538,
+                    "end": 1546,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 1710,
+                    "end": 1718,
+                    "text": "Table S2",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 1886,
+                    "end": 1894,
+                    "text": "Table S2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "The speculated suppression of the inflammation with ACEis and ARBs in COVID-19 is based on qualitative directional effects on the RAAS components, and the integrative consequences of infection, aging, chronic disease, aging, and therapies on the effectors of this system (AT1, AT2, and mas binding) have not been quantified. The goals of this study were (i) to use a mechanistic mathematical model of the RAAS to quantify the interplay among RAAS therapies, SARS-CoV-2 infection, and chronic diseases or aging on the balance between the inflammatory (AT1) and anti-inflammatory (mas) arms of the RAAS, and (ii) identify and evaluate the key uncertainties and knowledge gaps in our ability to quantify these effects.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "The RAAS illustrated schematically in Figure 1a can be represented mathematically as a set of processes summarized in Figure 1b , and the reaction rates A-G are given in Supplementary Table S2 . Each enzyme reaction in this system is assumed to follow Michaelis-Menten kinetics (Eq. 1) with a Michaelis rate constant K m defined by Eq. 2:",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 38,
+                    "end": 47,
+                    "text": "Figure 1a",
+                    "ref_id": null
+                },
+                {
+                    "start": 118,
+                    "end": 127,
+                    "text": "Figure 1b",
+                    "ref_id": null
+                },
+                {
+                    "start": 170,
+                    "end": 192,
+                    "text": "Supplementary Table S2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Model definition"
+        },
+        {
+            "text": "where [E] and [S] represent enzyme and substrate concentrations respectively, [ES] represents concentration of the enzyme-substrate complex, and [P] is the product formed.",
+            "cite_spans": [
+                {
+                    "start": 78,
+                    "end": 82,
+                    "text": "[ES]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Model definition"
+        },
+        {
+            "text": "The enzyme activity V, or rate of product formation, is given by:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model definition"
+        },
+        {
+            "text": "where K cat is the catalytic rate constant. The catalytic efficiency is defined as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model definition"
+        },
+        {
+            "text": "For conversion of angiotensinogen (AGT) to AngI by renin, AGT is normally available in excess, and renin is the rate-limiting components. Thus, the rate of formation of AngI is given by plasma renin activity (PRA) and for simplicity, AGT is not considered in the model. For all other enzyme-substrate pairs in Figure 1 , K m , K cat , and Eff substrate,enzyme have been measured in ref. 26 (Table 1) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 310,
+                    "end": 318,
+                    "text": "Figure 1",
+                    "ref_id": null
+                },
+                {
+                    "start": 390,
+                    "end": 399,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Model definition"
+        },
+        {
+            "text": "For all enzyme-substrate pairs, K m is on the order of micromoles, whereas normal substrate concentrations [S] is on the order of picomoles ( ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model definition"
+        },
+        {
+            "text": "As a simplification, the pathway from AngI to Ang(1-9) to Ang(1-7) was not included in this model. This is justified because the catalytic efficiency for AngI-ACE2 is an order of magnitude lower than AngI-ACE and AngI-NEP, and the catalytic efficiency of Ang(1-9)-ACE is also an order of magnitude lower than AngI-NEP or AngII-ACE2. 26, 27 Therefore, very little Ang(1-7) is expected to formed from the AngI-Ang(1-9) arm of the pathway, relative to the AngI-NEP and AngII-ACE2 pathways. Any AngI conversion to Ang(1-9) is lumped in with other routes of AngI degradation.",
+            "cite_spans": [
+                {
+                    "start": 333,
+                    "end": 336,
+                    "text": "26,",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "Rate equations for each peptide are then given by Eqs. 6-8:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "Fractional receptor occupancy for AT1, AT2, and mas are given by:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "where K d is the dissociation constant for each receptor-ligand pair, given in Table 1 . This form assumes that clearance of AngII and Ang(1-7) by binding to receptors is small, and is encapsulated in the degradation terms F and G, respectively. As described previously, 28, 29 plasma renin concentration (PRC) is given by:",
+            "cite_spans": [
+                {
+                    "start": 271,
+                    "end": 274,
+                    "text": "28,",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 79,
+                    "end": 86,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "Where SEC renin and h renin are the renin secretion rate and half-life, respectively. Binding of Ang II to the AT1 receptor produces a highly nonlinear feedback on renin secretion, given by:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "Where f AT10 is the equilibrium fractional AT1 receptor occupancy, and b ,renin is a fitting constant. PRA can be related to PRC by the conversion factor 0.06 (ng/mL/hour)/(pg/mL).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ARTICLE"
+        },
+        {
+            "text": "A subset of model parameters is known with some degree of certainty from clinical or experimental measurements ( Table 1) . Concentration ranges for renin, AngI, AngII, and Ang(1-7) in humans have been measured clinically. Catalytic efficiencies for each enzyme substrate pair as well as receptor binding affinities have been measured experimentally. 26 The half-life of renin is known, and nominal renin secretion rate SEC renin,0 can thus be determined from Eq. 12.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 113,
+                    "end": 121,
+                    "text": "Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Parameter estimation and model constraints"
+        },
+        {
+            "text": "This leaves another subset of six unknown: [ACE], [ACE2], and [NEP], K AngI , K AngII , and K Ang17 . Some studies have measured ACE and ACE2 concentrations, but with widely varying results. Expression varies across tissues, so obtaining a value that represents total ACE and ACE2 expression is difficult. Neprilysin and ACE2 are membrane-bound proteins, and circulating levels may only reflect ectodomain shedding of these enzymes, not tissue levels. 30, 31 Plasma levels are not easily measurable and may not reflect tissue levels. However, if the relative ratio of ACE to NEP and ACE to ACE2 expression are known, then, as shown later, then these remaining model parameters can be determined from equilibrium conditions.",
+            "cite_spans": [
+                {
+                    "start": 452,
+                    "end": 455,
+                    "text": "30,",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Parameter estimation and model constraints"
+        },
+        {
+            "text": "Determining ACE-NEP and ACE-ACE2 ratios Enzyme levels vary across tissues, across disease states, and across species. 32, 33 Nevertheless, we aimed to estimate a reasonable starting value for these ratios by fitting the model to experimental measurements by Yamamoto and colleagues. 34 In their experiments, vehicle, an ACEi, a neprilysin inhibitor, or both an ACEi and neprilysin inhibitor were administered to 16-week-old male Wistar-Kyoto and spontaneously hypertensive rats. Twenty minutes later, a 2 nmol bolus injection of radiolabeled AngI was administered, and concentration of radiolabeled AngI, AngII, and Ang(1-7) every 15-30 seconds over the next 3 minutes. Only data from Wistar-Kyoto rats were used in this analysis. To simulate this study, all peptide concentrations were initially set to zero. Because only radiolabeled peptides were measured, neither renin production or renin activity were reflected in the available data, and thus PRA was set to zero. ACE inhibition and NEP inhibition were modeled as a constant fractional reduction in their respective enzyme concentration. The study protocol was simulated, and enzyme concentrations ([ACE], [ACE2], and [NEP]), peptide degradation rate constants (K AngI , K AngII , K Ang17 ), and ACEi and NEPi fractional inhibition were estimated by fitting the digitized data using a least squares method.",
+            "cite_spans": [
+                {
+                    "start": 118,
+                    "end": 121,
+                    "text": "32,",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Parameter estimation and model constraints"
+        },
+        {
+            "text": "Because the experimental study was conducted in rats, it may not be reasonable to assume that the absolute concentrations and rate constants translate to humans. However, we assume that the estimated ratio of [ACE] to [ACE2] and [ACE] to [NEP] may translate, and these ratios were used in all further simulations.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter estimation and model constraints"
+        },
+        {
+            "text": "Based on the estimated ACE to ACE2 and ACE to NEP ratios, remaining parameters were determined from steady-state conditions when steady-state concentrations of renin, AngI, AngII, and Ang(1-7) are known, as described in the Supplementary Material.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter estimation and model constraints"
+        },
+        {
+            "text": "To further qualify the model, we evaluated its ability to reproduce observed changes in plasma AngI, AngII, and Ang(1-7) concentrations in response to an ACEi in a previously published human clinical trial. 35 In this double-blind, placebo-controlled crossover study, 17 healthy men were treated with enalapril or placebo for 2 weeks. During the first week, they were given a low-sodium diet, and during the second week they were given a high sodium diet. Plasma AngI, AngII, and Ang(1-7) were measured at the end of each week.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model evaluation"
+        },
+        {
+            "text": "To simulate this study, baseline concentrations of AngI, AngII, and Ang(1-7) were set to the average of the reported values during the placebo high salt and low salt periods. Catalytic efficiencies were specified according to ref. 26 and the ratio of ACE to NEP and ACE to ACE2 were initially set to the values estimated by fitting ref. 34 as described above. Parameters governing renin secretion and AT1 feedback on renin were specified as previously described. 28 The study protocol was then simulated. To represent the effects of different Na + intakes, the rate of renin secretion (SEC renin0 ) was adjusted to give the observed differences in AngI between the high and low salt groups during the placebo period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model evaluation"
+        },
+        {
+            "text": "As shown in Supplementary Figure S3 , the simulation predicted the increase in AngI and Ang(1-7) and decrease AngII following ACEi well.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 26,
+                    "end": 35,
+                    "text": "Figure S3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Model evaluation"
+        },
+        {
+            "text": "This provides validation that the model reasonably describes the behavior of the RAAS in humans.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Model evaluation"
+        },
+        {
+            "text": "Effect of changes in ACE2 receptor expression on mas, AT1, and their ratio, before and after ACEi or ARB therapy. A literature review was conducted to understand the range of changes in ACE2 expression due to aging, diabetes, or hypertension that have been observed experimentally or clinically. Based on this review, a range of ACE2 concentrations from 0 to 2.5 times normal was determined to be a reasonable operating range. Changes in mas and AT fractional occupancy, as well as their ratios, were simulated over this range of ACE2 values, before and after addition of an ACEi or an ARB. We have previously estimated that ACE inhibition with common ACEis is 90-95%. For ARBs, inhibition of AT1 ranged from 88 to 97%, depending on the drug and dose. 28 In this study, a value of 93% inhibition was used for both.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Simulations"
+        },
+        {
+            "text": "Response to SARS-CoV-2 infection. SARS-CoV-2 infection was simulated as a 95% decrease in ACE2, representing a \"worst-case\" scenario for ACE2 downregulation. Because all enzymes of the RAAS have some natural variability and may be affected by disease states, the effects of SARS-CoV-2 infection was simulated in 200 \"virtual subjects\" created by sampling ACE2, ACE, NEP, and renin secretion from a log-normal distribution with means given in Table 1 . The parameter distributions and resulting distribution in RAAS peptides are characterized in Figure S1 and S2.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 442,
+                    "end": 449,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 545,
+                    "end": 554,
+                    "text": "Figure S1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Simulations"
+        },
+        {
+            "text": "A sensitivity analysis using a Latin Hypercube Sampling technique was conducted to determine the parameters most influential in predicting change in AT1, AT2, and mas receptor occupancies with varying ACE2 levels and with RAAS therapy. 36 Latin Hypercube Sampling is a method that generates values for a set of parameters, each with a specified distribution. Most input parameters were informed by literature data (see Table 2 ), but parameters whose distributions were not specified were either defined so that 90% of sampled values fell between the range of minimum and maximum values found in literature, or the coefficient of variation was equal to 0.25. Two hundred fifty parameter sets were generated to represent 250 virtual patients. Because the relationship between some inputs and outputs are nonmonotonic ARTICLE or nonlinear, partial rank correlation coefficients were calculated at steady-state to quantify how variation in the input parameters contributes to changes in receptors' occupancies. Parameters with the highest sensitivity were investigated further to understand how that parameter's uncertainty influenced the predicted changes in mas-AT1 receptor occupancy ratio.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 419,
+                    "end": 426,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Sensitivity analysis"
+        },
+        {
+            "text": "Supplementary Figure S4 shows the optimized model fit to Yamamoto et al. 34 All parameters were able to be estimated with precision (see Supplementary Table S1 ). The concentration of ACE was estimated to be an order of magnitude larger than the concentrations of NEP and ACE2, with ACE-NEP and ACE-ACE2 ratios of 9 and 32, respectively. These ratios were used in all further simulations. Also of note, K AngI was estimated to be orders of magnitude less than Eff ACE-AngI [ACE] or Eff NEP-AngII [NEP] (0.001 vs. 397 and 150, respectively). This indicates that nearly all AngI was converted through ACE or NEP, and the reaction rate E in Figure 1b and Eq. 6 is negligible. Therefore, E was considered zero for the rest of this analysis. As shown in Supplementary Figure S4 , the simulation predicted well the increase in AngI and Ang(1-7) and decrease in AngII following ACE inhibition observed in ref. 35 . This provides validation that the model reasonably describes the RAAS in humans.",
+            "cite_spans": [
+                {
+                    "start": 473,
+                    "end": 478,
+                    "text": "[ACE]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 14,
+                    "end": 23,
+                    "text": "Figure S4",
+                    "ref_id": null
+                },
+                {
+                    "start": 137,
+                    "end": 159,
+                    "text": "Supplementary Table S1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 638,
+                    "end": 647,
+                    "text": "Figure 1b",
+                    "ref_id": null
+                },
+                {
+                    "start": 763,
+                    "end": 772,
+                    "text": "Figure S4",
+                    "ref_id": null
+                }
+            ],
+            "section": "RESULTS AND DISCUSSION Model fitting and validation"
+        },
+        {
+            "text": "Table 2 summarizes studies that have reported changes in ACE2 protein expression, activity, or mRNA in diabetes, hypertension, with age, or after SARS-CoV-2 infection. Unfortunately, no studies of ACE2 changes in human lung tissue were found. In diabetes, small increases in human serum ACE2 were reported. However, it is unclear how changes in serum ACE2 relate to changes in functional membrane-bound ACE2. In diabetes, studies in human kidneys and in rodent lungs, kidneys, and cardiac tissue all showed either a decrease or no change in ACE2 mRNA. However, reported changes in ACE2 protein and activity varied widely, from a 60% decrease to a 2.5-fold increase. Fewer studies were found investigating ACE2 in hypertension. One study found a 20% increase in human serum ACE2 activity, whereas another found a 40-65% decrease in kidney ACE2 protein and mRNA. With aging, two studies found that ACE2 increased during teen years. The only study including adult humans found no difference between young and old adults. Two rodent studies found that ACE2 decreased 67-78% and 50-75% in the lungs and aorta, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "Taken together, these studies do suggest that ACE2 expression can change with disease and aging, decreasing as much as 80% and increasing as much as 2.5-fold. However, the existence and direction of this change is not consistent across studies. Thus, rather than modeling a specific effect of diabetes, hypertension, or aging on ACE2, we sought to understand the effect of a range of changes in ACE2 on the balance between mas and AT1 receptor occupancy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "Two studies have demonstrated that ACE2 is downregulated by earlier SARS coronaviruses, although studies have not yet been published for SARS-CoV-2. Kuba et al. 24 found that ACE2 was decreased to levels similar to ACE2 knockouts in Western blot infected mice lungs, whereas Glowacka et al. 37 found that ACE2 shedding was increased 5 times, indicating that membrane ACE2 availability was decreased. Based on these findings, SARS-CoV-2 infection was simulated as a 95% decrease in ACE2 expression.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "Relationship between ACE2 concentration and mas-AT1 balance, with and without ACEi/ARB therapy Figure 2 (green curves) shows the effects of upregulation or downregulation of ACE2 expression. At normal ACE2 levels, AT1 and AT2 receptor occupancy are predicted to be nearly twice mas receptor occupancy (9% vs. 5%). A 2.5-fold increase in ACE2 increases the mas/AT1 ratio 66%, while decreasing ACE2 expression down to zero decreases the mas/AT1 ratio 46%. These changes are driven primarily by changes in mas occupancy, with weaker changes in AT1. AT2 occupancy decreases 14% as ACE2 varies from 0 to 2.5 times normal.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 95,
+                    "end": 103,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "Relative to the receptor occupancy changes with ACE2 described above, inhibition of ACE has a much larger effect on mas, AT1, and AT2 receptor occupancy (Figure 2 , blue curves). At normal ACE2 levels, ACEi increases mas receptor occupancy from 5% to 18%, while decreasing both AT1 and AT2 receptor occupancy from 9% to 3%. This results in a much larger 7-fold change in the mas-AT1 receptor binding ratio, compared with the effect of changing ACE2. In the presence of an ACEi, a 2.5-fold increase in ACE2 increases the mas-AT1 ratio to 132% of the ACEi-normal ACE2 level, and 6.4 times the no-treatment-normal-ACE2 level.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 153,
+                    "end": 162,
+                    "text": "(Figure 2",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "ARB therapy is also predicted to have a much larger effect on mas, AT1, and AT2 receptor occupancy than changes with ACE2 concentration (Figure 2, red curves) . At normal ACE2 levels, ARB therapy increases mas receptor occupancy from 5% to 17%, while decreasing AT1 from 9% to 2%, resulting in a 14fold increase in mas-AT1 receptor binding ratio, compared with the effect of change ACE2. At normal ACE2 levels, ARB therapy did not increase mas receptor occupancy quite as much as ACEi, but did increase AT2 receptor occupancy much more than ACEi.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 136,
+                    "end": 158,
+                    "text": "(Figure 2, red curves)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "In the presence of an ARB, the effects of changes in ACE2 on mas receptor occupancy are even more dramatic than with ACEi. Still, an increase or decrease in ACE2 concentration does further increase or decrease the mas-AT1 ratio. In the presence of an ARB, a 2.5-fold increase in ACE2 concentration from normal levels increases the mas-AT1-ratio 54%.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "The primary conclusion of this analysis is that ACEi/ARB therapy has a much more dramatic effect on shifting the balance of the RAAS from the pro-inflammatory AT1 to the anti-inflammatory mas arm, relative to any physiologically relevant changes in ACE2 expression.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Literature review of effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2"
+        },
+        {
+            "text": "We next sought to evaluate the sensitivity of this conclusion to assumptions of model parameter values. Figure 3 illustrates the sensitivity of the key model outputs (i.e., changes in AT1, AT2, and mas receptor occupancy), to each model parameter. Figure 3a considers the sensitivity when ACE2 expression is changed in the absence of treatment, whereas Figure 3b ,c consider the sensitivity when ACEi or ARB treatment are added ARTICLE at normal ACE2 levels. For all three cases, initial Ang(1-7) and AngII concentrations emerged sensitive parameters. However, these parameters are fairly well-constrained by available clinical and experimental data. Unsurprisingly, all responses to therapy were sensitive to the drug's fractional target inhibition. We have shown previously that while fractional inhibitions with ARBs and ACEi may vary slightly across drug and dose, they are generally well-constrained to be within the range of 90-98%. 28, 29 The change in AT2 and mas receptor occupancy with an ARB was also sensitive to b renin , the strength of negative feedback of AT1 on PRA, which we have also found to be well-constrained between 0.6 and 0.9 (Gebremichael et al. 31 2019; Hallow et al. 33 2014). Among parameters with more limited information available for constraining them, K d, mas (the binding affinity of Ang(1-7) for the mas receptor) was important for all three cases, while Eff ACE2,AngII (catalytic efficiency of ACE2 for converting AngII to Ang(1-7) was sensitive for changes in AT1 and AT2 with ACE2, but not with ACEi or ARB therapy.",
+            "cite_spans": [
+                {
+                    "start": 939,
+                    "end": 942,
+                    "text": "28,",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 104,
+                    "end": 112,
+                    "text": "Figure 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 248,
+                    "end": 257,
+                    "text": "Figure 3a",
+                    "ref_id": null
+                },
+                {
+                    "start": 353,
+                    "end": 362,
+                    "text": "Figure 3b",
+                    "ref_id": null
+                }
+            ],
+            "section": "Parameter sensitivity"
+        },
+        {
+            "text": "To further examine the impact of each of the parameters identified as sensitive, we repeated the earlier simulations of changes in mas-AT1 occupancy, but this time using extreme values of the sensitive parameter (0.05 -5X). Supplementary Figure S5 shows the effect of uncertainty in K d,mas , chosen for illustration because its value is informed by very limited experimental data (one in vitro study, Santos et al. 2003) . Although the magnitude of this parameter does have some influence on the magnitude of predicted changes in mas-AT1-ratio, the effects are not sufficient to alter the conclusions of this study. In other words, even if the value we used is several-fold different from the true value, our conclusions would not differ. Thus, the sensitivity analysis provides confidence that the predictions and conclusions of this study robust to uncertainty in parameter values.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 238,
+                    "end": 247,
+                    "text": "Figure S5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Parameter sensitivity"
+        },
+        {
+            "text": "Effects of ACE2 downregulation by SARS. As shown in Figure 4 , the predicted effects of 95% ACE2 downregulation induced by SARS on AT1, mas, and the mas-AT1 ratio are small relative to the effects of ACEi and ARB therapy. Both ACEis and ARBs increase mas while decreasing AT1, thus dramatically increasing the ratio of two. although ACE and ARBs are predicted to have similar effects on the mas-AT1 ratio, ACEis are predicted to increase mas to a greater extent, whereas ARBs are predicted to suppress AT1 further. Figure S6 explores the effect of variability in four RAAS enzymes (ACE, ACE2, NEP, and renin) on the mas-AT1-ratio. Mas-AT1 ratio is positively correlated with ACE, negatively correlated with NEP, and is not correlated ACE2 or renin. ACE and NEP are correlated with appear to affect the baseline mas-AT1 ratio (prior to infection) much more than ACE2 or renin. This is true both before and after treatment with ARBs and ACEis. There is no obvious effect of enzyme This suggests that changes in ACE2 expression due to comorbidities, like diabetes, hypertension, or aging, may be less important than the effects of these comorbidities on other enzymes in the RAAS, particularly ACE and NEP. As described early, we estimated that ACE expression is 10 and 30 times higher than NEP and ACE2 expression. ACE expression has been shown to change with disease. 20, 38 Thus, even though ACE2 is the enzyme involved in SARS-CoV-2 infection of the cell, ACE expression levels may be more important in determining the relative pro-inflammatory or anti-inflammatory balance of a subject prior to infection.",
+            "cite_spans": [
+                {
+                    "start": 1367,
+                    "end": 1370,
+                    "text": "20,",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 52,
+                    "end": 60,
+                    "text": "Figure 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 515,
+                    "end": 524,
+                    "text": "Figure S6",
+                    "ref_id": null
+                }
+            ],
+            "section": "Parameter sensitivity"
+        },
+        {
+            "text": "A secondary important observation is that although ARBs and ACEis produce similar changes in mas occupancy, ARBs increase AT2 occupancy while ACEis decrease it. These drug-induced changes in AT2 occupancy are also large relative to the effect of ACE2 changes. Because AT2 is associated with reduced inflammation, it is possible the ARBs may further protect from inflammation relative to ACEis. However, there are limited data available to inform the clinical relevance of changes in AT2 occupancy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Parameter sensitivity"
+        },
+        {
+            "text": "Although we can predict the change in mas receptor occupancy, directly relating the magnitude of change to the potential for protection or exacerbation of lung injury is more challenging. However, Ang(1-7) infusion studies have shown a dose-dependent protective effect against experimental lung injury. 16, 39, 40 Thus, benchmarking predicted rates of Ang(1-7) formation against the rates of Ang(1-7) infusion in these studies may provide a quantitative indication of whether the simulated changes are likely to be large enough to impact lung inflammation and injury.",
+            "cite_spans": [
+                {
+                    "start": 303,
+                    "end": 306,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 307,
+                    "end": 310,
+                    "text": "39,",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Implications of changes in the mas-AT1 balance for acute lung injury in COVID-19"
+        },
+        {
+            "text": "Changes in mas receptor occupancy occur due to changes in the rate of Ang(1-7) formation from AngI and AngII, either due a change in enzyme expression (i.e., by SARS-CoV-2) or in the rate of formation of the enzyme substrates, AngI and AngII (i.e., by ACEis and ARBs). Figure 5 shows the simulated Ang(1-7) production rates, before and after infection, with and without ACEi or ARB therapy, relative to the Ang(1-7) infusion rates used in experimental studies. Although the Ang(1-7) production rate was increased by therapy and decreased by the virus, in all cases, the changes were much smaller than the rates necessary to produce benefits in experimental lung injury, and were similar to a rate which was found by Zambelli et al. to produce no benefits. 16 This suggests that although ACEis or ARBs may shift the balance toward the anti-inflammatory arm of the RAAS, this effect may not be sufficient to produce a therapeutic effect. This may explain why several observational studies have found no difference in outcomes between subjects with COVID-19 who are or are not on RAAS therapies. 41 Figure 5 Simulated changes in Ang(1-7) production rate (bars) with ACEi or ARB treatment, and with infection-induced ACE2 downregulation, are small relative to rates of Ang(1-7) infusion rates found to elicit protection from lung injury in experimental models (dashed lines 16, 39, 40 ACEi/ARBs have been proposed to potentially increase ACE2. However, this is not supported by a recent systematic review of published studies, which showed varying and inconsistent effects of ACEis/ARBs on ACE2 expression. 14 In addition, a recent metaanalysis of cohort and case-control studies found no difference in severe or lethal COVID-19 between untreated subjects and those receiving an ACEi inhibitor or an ARB. 41 Taken together with these reviews and analyses, this study provides further support for the continuation of ACEi/ARB treatment in patients for whom they are indicated.",
+            "cite_spans": [
+                {
+                    "start": 1370,
+                    "end": 1373,
+                    "text": "16,",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1374,
+                    "end": 1377,
+                    "text": "39,",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 269,
+                    "end": 277,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 1096,
+                    "end": 1104,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Implications of changes in the mas-AT1 balance for acute lung injury in COVID-19"
+        },
+        {
+            "text": "Still, interactions among ACEis/ARBs, ACE2, and SAR-CoV-2 are complex, and may be dependent on factors that may vary across individuals, including the ACE/ACE2 ratio, viral load, and the body's immune response, among others. In addition, higher levels of circulating/soluble ACE2 levels may neutralize some SARS-CoV-2 virus, which could reduce availability to bind to membranebound ACE2. Thus, these potential interactions deserve further investigation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Implications of changes in the mas-AT1 balance for acute lung injury in COVID-19"
+        },
+        {
+            "text": "One objective of this study was to evaluate the key uncertainties and knowledge gaps in quantifying the effects of ACEis/ARBs in COVID-19. Some parameters, such as plasma renin activity, AngI, AngII, and Ang(1-7) have well-defined clinical ranges. Renin halflife has been measured in multiple studies, whereas the values for enzyme catalytic efficiencies and receptor binding affinities were based on single in vitro studies. Expression of ACE, ACE2, and neprilysin vary across tissue and cell types, and across species, and thus are much more difficult to quantify. Thus, it was necessary to determine these enzyme concentrations using mathematical constraints and estimating their ratios by fitting experimental data for peptides that are more easily measurable. Thus, there is the highest degree of certainty in values for AngI, AngII, Ang(1-7), and PRA, whereas uncertainty is greatest for the ACE-ACE2 and ACE-NEP ratios. Although there is uncertainty around these enzyme ratios, sensitivity analysis showed that predictions of changes in AT1, AT2, and mas receptor occupancy are robust to inaccuracies in parameter values. Thus, the conclusions of this analysis are unlikely to be impacted if the values used for these ratios are not accurate.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key uncertainties, knowledge gaps, and limitations"
+        },
+        {
+            "text": "In addition to parameter uncertainty, several limitations should be considered. Model parameters were constrained based on plasma levels of RAAS peptides, and local tissue differences and tissue RAAS were not considered. Our simulations are able to predict changes in mas-AT1 ratio, but does not have the capability to predict the impact of changes in this ratio on COVID-19 pathophysiology. A generic ARB and ACEi were modeled, and we did not consider differences within drug classes or with different doses. Interindividual variability in RAAS parameters was not considered. Last, the AngI-Ang(1-9) was not explicitly modeled, but is lumped in other forms of AngI degradation. This is justifiable because very little Ang(1-7) is expected to be formed from Ang (1) (2) (3) (4) (5) (6) (7) (8) (9) .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key uncertainties, knowledge gaps, and limitations"
+        },
+        {
+            "text": "The model did not account for potential negative cooperativity between the two binding sites of ACE. Negative cooperativity between these binding sites would mean that ACE reactions follow hill rather than Michaelis-Menten kinetics. Adding a Hill coefficient with a value of 0.5 (negative cooperativity) had a small numeric effect (< 12%) on predicted receptor occupancies, but did not impact the conclusions of the study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Key uncertainties, knowledge gaps, and limitations"
+        },
+        {
+            "text": "This analysis did not address the potential impact of therapyinduced changes in AT1 and AT2 receptor expression. Limited available data show weak and inconsistent effects of ACEis on AT1 expression, but consistently show that ARBs reduce AT1 expression. 42, 43 For AT2, data for defining both the binding affinity as well as therapy-induced changes in expression and the clinical consequences of changes in AT2 activity and expression are even more limited.",
+            "cite_spans": [
+                {
+                    "start": 254,
+                    "end": 257,
+                    "text": "42,",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Key uncertainties, knowledge gaps, and limitations"
+        },
+        {
+            "text": "Given the ongoing debate surrounding the use of ACEis and ARBs in the setting of COVID-19, this study aimed to integrate available information about the RAAS, effects of SARS-CoV-2 infection, and its comorbidities on the RAAS to provide quantitative predictions of the effects of ACEis and ARBs on the proinflammatory/anti-inflammatory balance of the RAAS. There are several key conclusions from this analysis. First, our simulations indicate that ACEi/ARB treatment prior to SARS-CoV-2 infection increases the ratio of mas to AT1 receptor occupancy many fold. Thus, in patients already taking an ACEi/ARB before infection, the anti-inflammatory arm of the RAAS would already be much more dominant. Second, effects of changes in ACE2 expression with comorbidities of diabetes, hypertension, or aging on the mas-AT1 receptor ratio are relatively small, compared with the effects of ACEis/ARBs. Changes in ACE expression are predicted to be more important than ACE2 in determining the baseline inflammatory/pro-inflammatory balance of the RAAS. Third, pro-inflammatory shifts in the mas-AT1 ratio due to ACE2 downregulation by SARS-CoV-2 infection are predicted to be small relative to anti-inflammatory shifts induced by ACEi/ARB. Last, predicted changes in the Ang(1-7) production rate with ACEi/ ARB therapy, comorbidities, or infection were all small relative to the exogenous Ang(1-7) infusion rates shown experimentally to protect against acute lung injury, suggests that changes in the ACE2-Ang(1-7)-mas arm may not be large enough to play a major role in COVID-19 pathophysiology.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "Supplementary information accompanies this paper on the Clinical Pharmacology & Therapeutics website (www.cpt-journal.com).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "SUPPORTING INFORMATION"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Hypertension management in diabetes",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Passarella",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kiseleva",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Valeeva",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Gosmanov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "update. Diabetes Spectr",
+            "volume": "31",
+            "issn": "",
+            "pages": "218--224",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults: Executive Summary: a report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Whelton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Circulation",
+            "volume": "138",
+            "issn": "",
+            "pages": "426--483",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Coronavirus disease 2019 (COVID-19) and cardiovascular disease: a viewpoint on the potential influence of angiotensin-converting enzyme inhibitors/ angiotensin receptor blockers on onset and severity of severe acute respiratory syndrome coronavirus 2 infection",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Am. Heart Assoc",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Use of renin-angiotensin-aldosterone system inhibitors and risk of COVID-19 requiring admission to hospital: a case-population study",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "De Abajo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1705--1714",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Association between reninangiotensin-aldosterone system inhibitors and COVID-19 infection in South Korea",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Son",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Hypertension",
+            "volume": "76",
+            "issn": "",
+            "pages": "742--749",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Renin-angiotensin-aldosterone system inhibitors and risk of death in patients hospitalised with COVID-19: a retrospective Italian cohort study of 43,000 patients",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Trifir\u00f2",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Drug Saf",
+            "volume": "43",
+            "issn": "",
+            "pages": "1297--1308",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Joint HFSA/ACC/AHA statement addresses concerns Re: using RAAS antagonists in COVID-19",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bozkurt",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kovacs",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Harrington",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Cardiac Fail",
+            "volume": "26",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Trends in antihypertensive medication monotherapy and combination use among US adults, National Health and Nutrition Examination Survey",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Derington",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Hypertension",
+            "volume": "75",
+            "issn": "",
+            "pages": "973--981",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The pivotal link between ACE2 deficiency and SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Verdecchia",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cavallini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Spanevello",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Angeli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur. J. Intern. Med",
+            "volume": "76",
+            "issn": "",
+            "pages": "14--20",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Angiotensin II and inflammation: the effect of angiotensin-converting enzyme inhibition and angiotensin II receptor blockade",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Dandona",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Dhindsa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ghanim",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Chaudhuri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J. Hum. Hypertens",
+            "volume": "21",
+            "issn": "",
+            "pages": "20--27",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "angiotensin-(1-7) and Mas receptor axis in inflammation and fibrosis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sim\u00f5es E Silva",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Silveira",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ferreira",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Teixeira",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Br. J. Pharmacol",
+            "volume": "169",
+            "issn": "",
+            "pages": "477--492",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Are patients with hypertension and diabetes mellitus at increased risk for COVID-19 infection?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Karakiulakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roth",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet Resp. Med",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Risks of ACE inhibitor and ARB usage in COVID-19: evaluating the evidence",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sriram",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Insel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin. Pharmacol. Ther",
+            "volume": "108",
+            "issn": "",
+            "pages": "236--241",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "The trinity of COVID-19: immunity, inflammation and intervention",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Tay",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Poh",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "R\u00e9nia",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Macary",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Rev. Immunol",
+            "volume": "20",
+            "issn": "",
+            "pages": "363--374",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Angiotensin-(1-7) improves oxygenation, while reducing cellular infiltrate and fibrosis in experimental acute respiratory distress syndrome",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zambelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Intens. Care Med. Exp",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The discovery of angiotensinconverting enzyme 2 and its role in acute lung injury in mice",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kuba",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Penninger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Exp. Physiol",
+            "volume": "93",
+            "issn": "",
+            "pages": "543--548",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Angiotensin-converting enzyme 2 protects from severe acute lung failure",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Imai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nature",
+            "volume": "436",
+            "issn": "",
+            "pages": "112--116",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "ACE and ACE2 in inflammation: a tale of two enzymes",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Gaddam",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chambers",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bhatia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Inflamm. Allergy Drug Targets",
+            "volume": "13",
+            "issn": "",
+            "pages": "224--234",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "ACE and ACE2 activity in diabetic mice",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wysocki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Diabetes",
+            "volume": "55",
+            "issn": "",
+            "pages": "2132--2139",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Circulating angiotensin-converting enzyme 2 activity in patients with chronic kidney disease without previous history of cardiovascular disease",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Anguiano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Nephrol. Dial. Transplant",
+            "volume": "30",
+            "issn": "",
+            "pages": "1176--1185",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Age-and genderrelated difference of ACE2 expression in rat lung",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Life Sci",
+            "volume": "78",
+            "issn": "",
+            "pages": "2166--2171",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Age-associated changes in the vascular reninangiotensin system in mice",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Oxid. Med. Cell Longev",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "A crucial role of angiotensin converting enzyme 2 (ACE2) in SARS coronavirus-induced lung injury",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kuba",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Nat. Med",
+            "volume": "11",
+            "issn": "",
+            "pages": "875--879",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wrapp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "367",
+            "issn": "",
+            "pages": "1260--1263",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Evaluation of angiotensin-converting enzyme (ACE), its homologue ACE2 and neprilysin in angiotensin peptide metabolism",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Rice",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Grant",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Turner",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hooper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Biochem. J",
+            "volume": "383",
+            "issn": "",
+            "pages": "45--51",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Hydrolysis of biological peptides by human angiotensin-converting enzyme-related carboxypeptidase",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Vickers",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J. Biol. Chem",
+            "volume": "277",
+            "issn": "",
+            "pages": "14838--14843",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Benchmarking renin suppression and blood pressure reduction of direct renin inhibitor imarikiren through quantitative systems pharmacology modeling",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gebremichael",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Lahu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vakilynejad",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hallow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Pharmacokinet. Pharmacodyn",
+            "volume": "46",
+            "issn": "",
+            "pages": "15--25",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A model-based approach to investigating the pathophysiological mechanisms of hypertension and response to antihypertensive therapies: extending the Guyton model",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hallow",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Am. J. Physiol. Regul. Integr. Comp. Physiol",
+            "volume": "306",
+            "issn": "",
+            "pages": "647--662",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "A test in context: neprilysin: function, inhibition, and biomarker",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bayes-Genis",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Barallat",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Richards",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J. Am. Coll. Cardiol",
+            "volume": "68",
+            "issn": "",
+            "pages": "639--653",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Tissue distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first step in understanding SARS pathogenesis",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hamming",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Timens",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bulthuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lely",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Navis",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Van Goor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J. Pathol",
+            "volume": "203",
+            "issn": "",
+            "pages": "631--637",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Characterization of ACE and ACE2 expression within different organs of the NOD mouse",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Roca-Ho",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Riera",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Palau",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pascual",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Soler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Int. J. Mol. Sci",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Differential regulation of circulating and renal ACE2 and ACE in hypertensive mRen2.Lewis rats with early-onset diabetes",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Yamaleyeva",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gilliam-Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Almeida",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Brosnihan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lindsey",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chappell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Am. J. Physiol. Renal Physiol",
+            "volume": "302",
+            "issn": "",
+            "pages": "1374--1384",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "In vivo metabolism of angiotensin I by neutral endopeptidase (EC 3.4.24.11) in spontaneously hypertensive rats",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yamamoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chappell",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Brosnihan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ferrario",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Hypertension",
+            "volume": "19",
+            "issn": "",
+            "pages": "692--696",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Sodium status and angiotensin-converting enzyme inhibition: effects on plasma angiotensin-(1-7) in healthy man",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kocks",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lely",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Boomsma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "De Jong",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Navis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J. Hypertens",
+            "volume": "23",
+            "issn": "",
+            "pages": "597--602",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Comparison of three methods for selecting values of input variables in the analysis of output from a computer code",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mckay",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Beckman",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Conover",
+                    "suffix": ""
+                }
+            ],
+            "year": 1979,
+            "venue": "Technometrics",
+            "volume": "21",
+            "issn": "",
+            "pages": "239--245",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Differential downregulation of ACE2 by the spike proteins of severe acute respiratory syndrome coronavirus and human coronavirus NL63",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Glowacka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Virol",
+            "volume": "84",
+            "issn": "",
+            "pages": "1198--1205",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Improved islet morphology after blockade of the renin-angiotensin system in the ZDF rat",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Tikellis",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wookey",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Candido",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Andrikopoulos",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Cooper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Diabetes",
+            "volume": "53",
+            "issn": "",
+            "pages": "989--997",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Angiotensin-(1-7) protects from experimental acute lung injury",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Klein",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Crit. Care Med",
+            "volume": "41",
+            "issn": "",
+            "pages": "334--343",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Therapeutic time window for angiotensin-(1-7) in acute lung injury",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sup\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Kohse",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gembardt",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kuebler",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Walther",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Br. J. Pharmacol",
+            "volume": "173",
+            "issn": "",
+            "pages": "1618--1628",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Treatment with ACE inhibitors or ARBs and risk of severe/lethal COVID-19: a meta-analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Flacco",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Heart",
+            "volume": "106",
+            "issn": "",
+            "pages": "1519--1524",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Tissue-specific regulation of type 1 angiotensin II receptor mRNA levels in the rat",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Sechi",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Hypertension",
+            "volume": "28",
+            "issn": "",
+            "pages": "403--408",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Downregulation of cardiac AT1-receptor expression and angiotensin II concentrations after long-term blockade of the renin-angiotensin system in cardiomyopathic hamsters",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Bastien",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Servant",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gutkowska",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Meloche",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lambert",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "J. Cardiovasc. Pharmacol",
+            "volume": "34",
+            "issn": "",
+            "pages": "402--406",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Engineered mutation of some important amino acids in angiotensin II type 1 (AT1) receptor increases the binding affinity of AT1-receptor antagonists",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bhuiyan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hossain",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ishiguro",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nakamura",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nagatomo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Pharmacol. Sci",
+            "volume": "113",
+            "issn": "",
+            "pages": "57--65",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Angiotensin-(1-7) is an endogenous ligand for the G protein-coupled receptor Mas",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A S"
+                    ],
+                    "last": "Santos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "100",
+            "issn": "",
+            "pages": "8258--8263",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Circulating ACE2 activity is increased in patients with type 1 diabetes and vascular complications",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Soro-Paavonen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J. Hypertens",
+            "volume": "30",
+            "issn": "",
+            "pages": "375--383",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Decreased glomerular and tubular expression of ACE2 in patients with type 2 diabetes and kidney disease",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Reich",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Oudit",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Penninger",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Scholey",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Herzenberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Kidney Int",
+            "volume": "74",
+            "issn": "",
+            "pages": "1610--1616",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Tissue gene expression of renin-angiotensin system in human type 2 diabetic nephropathy",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Konoshita",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Diabetes Care",
+            "volume": "29",
+            "issn": "",
+            "pages": "848--852",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Renal ACE2 expression in human kidney disease",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lely",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hamming",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Van Goor",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Navis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J. Pathol",
+            "volume": "204",
+            "issn": "",
+            "pages": "587--593",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Increased ACE 2 and decreased ACE protein in renal tubules from diabetic mice: a renoprotective combination",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wysocki",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Naaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Salabat",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lapointe",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Batlle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Hypertension",
+            "volume": "43",
+            "issn": "",
+            "pages": "1120--1125",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Angiotensin-converting enzyme 2 is an essential regulator of heart function",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Crackower",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Nature",
+            "volume": "417",
+            "issn": "",
+            "pages": "822--828",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Age and sex differences in soluble ACE2 may give insights for COVID-19",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sw\u00e4rd",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Edsfeldt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Reepalu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jehpsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Rosengren",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Karlsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Critical Care",
+            "volume": "24",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Nasal gene expression of angiotensin-converting enzyme 2 in children and adults",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bunyavanich",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Do",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vicencio",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "JAMA",
+            "volume": "323",
+            "issn": "",
+            "pages": "2427--2429",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Simulated effects of changes in ACE2 concentration, with and without ARB or ACEi treatment on (a) mas-AT1 receptor occupancy ratio, (b) mas receptor occupancy, (c) AT1 receptor occupancy, and (d) AT2 receptor occupancy. Gray dashed line is the \"normal\" ACE2 level. All values are standardized by their value at normal ACE2 in the absence of ARB/ACEi therapy. ACEi, ACE inhibitor; ARB, angiotensin receptor blocker. [Colour figure can be viewed at wileyonlinelibrary.com] ARTICLE Supplementary",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Parameter sensitivity of changes in receptor occupancy with (a) a change in ACE2 with no therapy, (b) initiation of ACE inhibition, and (c) initiation of ARB inhibition. Brightest colors indicate highest correlation between parameter and receptor occupancy. [Colour figure can be viewed at wileyonlinelibrary.com] Simulated effect of ACE2 downregulation by severe acute respiratory syndrome-coronavirus 2 (SARS-CoV-2) infection on (a) mas occupancy, (b) AT1 occupancy, and (c) mas-AT1 ratio, in a population of virtual patients with variable ACE, ACE2, NEP, and renin expression.Points represent simulations outside the interquartile range. Viral downregulation of ACE2 is predicted to decrease mas and increase AT1 binding, but the magnitude of the effect is small relative to the opposing effects of background therapy with ACEis and ARBs, which elevate mas and decrease AT1 occupancy. ACEis, ACE inhibitors; ARBs, angiotensin receptor blockers; COVID-19, coronavirus disease 2019.expressions on the magnitude of change in mas-AT1 ratio with infection.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": ". Because K m >> [S], then according to Eq. 2, [E] must be much greater than [ES], so that [E] is approximately equal to the total enzyme concentration [E] t . This also means that even if substrate concentrations change several fold, [E] will remain approximately constant. Therefore, enzyme activities for each enzyme substrate pair (Eq.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Literature-reported effects of diabetes, hypertension, aging, and SARS-CoV-2 infection on ACE2",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "). ACEi, ACE inhibitor; Ang, angiotensin; ARB, angiotensin receptor blocker; COVID-19, coronavirus disease 2019.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors gratefully acknowledge the contributions of Arthur Lo, Anna Georgieva, Gabriel Helmlinger, and Jeni Beh in the development of the RAAS model. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        },
+        {
+            "text": "The authors declared no competing interests for this work. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONFLICT OF INTEREST"
+        }
+    ]
+}

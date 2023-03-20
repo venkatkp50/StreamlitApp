@@ -1,0 +1,2682 @@
+{
+    "paper_id": "0b62dc7b9195e56511642833cc3902b39ff16559",
+    "metadata": {
+        "title": "To appear in: Vaccine",
+        "authors": [
+            {
+                "first": "Thomas",
+                "middle": [],
+                "last": "Mcandrew",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Lehigh University",
+                    "location": {
+                        "settlement": "Bethlehem",
+                        "region": "Pennsylvania",
+                        "country": "United States of America"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Juan",
+                "middle": [],
+                "last": "Cambeiro",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Tamay",
+                "middle": [],
+                "last": "Besiroglu",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Safe, efficacious vaccines were developed to reduce the transmission of SARS-CoV-2 during the COVID-19 pandemic. But in the middle of 2020, vaccine effectiveness, safety, and the timeline for when a vaccine would be approved and distributed to the public was uncertain. To support public health decision making, we solicited trained forecasters and experts in vaccinology and infectious disease to provide monthly probabilistic predictions from July to September of 2020 of the efficacy, safety, timing, and delivery of a COVID-19 vaccine. We found, that despite sparse historical data, a linear pool-a combination of human judgment probabilistic predictions-can quantify the uncertainty in clinical significance and timing of a potential vaccine. The linear pool underestimated how fast a therapy would show a survival benefit and the high efficacy of approved COVID-19 vaccines. However, the linear pool did make an accurate prediction for when a vaccine would be approved by the FDA. Compared to individual forecasters, the linear pool was consistently above the median of the most accurate forecasts. A linear pool is a fast and versatile method to build probabilistic predictions of a developing vaccine that is robust to poor individual predictions. Though experts and trained forecasters did underestimate the speed of development and the high efficacy of a SARS-CoV-2 vaccine, linear pool predictions can improve situational awareness for public health officials and for the public make clearer the risks, rewards, and timing of a vaccine. * mcandrew@lehigh.edu Aggregating human judgment probabilistic predictions of the safety, efficacy, 1 and timing of a COVID-19 vaccine 2 3 Safe, efficacious vaccines were developed to reduce the transmission of SARS-CoV-2 during the 4 COVID-19 pandemic. But in the middle of 2020, vaccine effectiveness, safety, and the timeline for 5 when a vaccine would be approved and distributed to the public was uncertain. To support public 6 health decision making, we solicited trained forecasters and experts in vaccinology and infectious 7 disease to provide monthly probabilistic predictions from July to September of 2020 of the efficacy, 8 safety, timing, and delivery of a COVID-19 vaccine. We found, that despite sparse historical data, 9 a linear pool-a combination of human judgment probabilistic predictions-can quantify the uncer-10 tainty in clinical significance and timing of a potential vaccine. The linear pool underestimated how 11 fast a therapy would show a survival benefit and the high efficacy of approved COVID-19 vaccines. 12 However, the linear pool did make an accurate prediction for when a vaccine would be approved 13 by the FDA. Compared to individual forecasters, the linear pool was consistently above the median 14 of the most accurate forecasts. A linear pool is a fast and versatile method to build probabilistic 15 predictions of a developing vaccine that is robust to poor individual predictions. Though experts 16 and trained forecasters did underestimate the speed of development and the high efficacy of a SARS-17 CoV-2 vaccine, linear pool predictions can improve situational awareness for public health officials 18 and for the public make clearer the risks, rewards, and timing of a vaccine.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "19 2",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "(Dated: February 9, 2022) Safe, efficacious vaccines were developed to reduce the transmission of SARS-CoV-2 during the COVID-19 pandemic. But in the middle of 2020, vaccine effectiveness, safety, and the timeline for when a vaccine would be approved and distributed to the public was uncertain. To support public health decision making, we solicited trained forecasters and experts in vaccinology and infectious disease to provide monthly probabilistic predictions from July to September of 2020 of the efficacy, safety, timing, and delivery of a COVID-19 vaccine. We found, that despite sparse historical data, a linear pool-a combination of human judgment probabilistic predictions-can quantify the uncertainty in clinical significance and timing of a potential vaccine. The linear pool underestimated how fast a therapy would show a survival benefit and the high efficacy of approved COVID-19 vaccines. However, the linear pool did make an accurate prediction for when a vaccine would be approved by the FDA. Compared to individual forecasters, the linear pool was consistently above the median of the most accurate forecasts. A linear pool is a fast and versatile method to build probabilistic predictions of a developing vaccine that is robust to poor individual predictions. Though experts and trained forecasters did underestimate the speed of development and the high efficacy of a SARS-CoV-2 vaccine, linear pool predictions can improve situational awareness for public health officials and for the public make clearer the risks, rewards, and timing of a vaccine.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "health officials, and has the potential to contribute to decisions related to vaccine research and development. 62 For the public, predictions of the efficacy and safety of a vaccine may lessen vaccine hesitancy [72] [73] [74] [75] . 63 For public health officials, predictions of the time to approval and time to manufacture a vaccine serve as 64 valuable input in supply chain management, including logistics planning, inventory management, material 65 requirements planning [76] [77] [78] . For those in vaccine research and development, probabilistic predictions may 66 help determine which vaccine platforms and pathways should be pursued before others [79] [80] [81] [82] . 67 To the best of our knowledge, this work is the first to generate ensemble probabilistic predictions from 68 expert and generalist forecasters on COVID-19 vaccine development and share these with the public and 69 public health decision-makers from June 2020 through September 2020, before the first approved COVID- Subject matter experts (SMEs) and trained forecasters (definition below) participated in four surveys from 76 June 15th, 2020 to August 30th, 2020. SMEs and forecasters were asked to predict aspects of safety, efficacy, 77 and delivery of a COVID-19 vaccine (see [35] to view all four summary reports, questions asked of forecasters 78 and collected prediction data used in this work. In addition, names and affiliations of forecasters who chose 79 to volunteer this information is provided at the end of each summary report.). 80 Subject matter experts and trained forecasters were solicited by sending personal emails (see Supp. S7 for a 81 template email sent to subject matter experts). Solicitation started on June 3, 2020 and ended on July 8, 82 2020. 83 The first two weeks of each month (the 1st to the 14th) were used to develop questions that could address 84 changing information about a COVID-19 vaccine. 85 Forecasters received a set of questions on the 15th of each month and from the 15th to the 25th could submit 86 predictions using the Metaculus platform [83] . Forecasters made a first prediction and, as many times as 87 they wished, could revise their original prediction between the 15th and 25th. To reduce anchoring bias [84] , 88 between the 15th and the 20th forecasters made predictions without knowledge of other forecaster's predictive 89 densities. From the 20th to the 25th a community predictive density-an equally weighted combination of 90 predictive densities from subject matter experts and trained forecasters-was available to forecasters. 92 We defined a subject matter expert as someone with training in the fields of molecular and cellular biology, 93 microbiology, virology, biochemistry, and infectious diseases, and who has several years of experience in vac-94 cine, antiviral, and/or biological research related to infectious agents and kept up-to-date with vaccine and 95 antiviral research specifically focused on SARS-CoV-2/ COVID-19. Subject matter experts were trained in 96 biological sciences but were not required to have had prior experience making accurate, calibrated proba-97 bilistic predictions. Subject matter experts were recruited by asking for volunteers who were members of II.4. Forecasting platform 135 Forecasters submitted predictive densities by accessing the Metaculus platform (Metaculus), an online fore-136 casting platform that allows users to submit predictive densities and comments related to a proposed question. 137 When using the platform, a forecaster can submit an initial prediction for a question and choose to revise 138 their original prediction as many times as they wish. Metaculus stores individual predictions and comments 139 for each question and when the ground truth for a question is available the platform scores individual predic-140 tions and keeps a history of each forecaster's average score across all questions for which they have submitted 141 predictions. The Metaculus platform allows participants to visualize their proposed predictive density both 142 as probability density and cumulative density functions.",
+            "cite_spans": [
+                {
+                    "start": 112,
+                    "end": 114,
+                    "text": "62",
+                    "ref_id": null
+                },
+                {
+                    "start": 212,
+                    "end": 216,
+                    "text": "[72]",
+                    "ref_id": null
+                },
+                {
+                    "start": 217,
+                    "end": 221,
+                    "text": "[73]",
+                    "ref_id": null
+                },
+                {
+                    "start": 222,
+                    "end": 226,
+                    "text": "[74]",
+                    "ref_id": null
+                },
+                {
+                    "start": 227,
+                    "end": 231,
+                    "text": "[75]",
+                    "ref_id": null
+                },
+                {
+                    "start": 234,
+                    "end": 236,
+                    "text": "63",
+                    "ref_id": null
+                },
+                {
+                    "start": 477,
+                    "end": 481,
+                    "text": "[76]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 482,
+                    "end": 486,
+                    "text": "[77]",
+                    "ref_id": null
+                },
+                {
+                    "start": 487,
+                    "end": 491,
+                    "text": "[78]",
+                    "ref_id": null
+                },
+                {
+                    "start": 571,
+                    "end": 573,
+                    "text": "66",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 658,
+                    "end": 662,
+                    "text": "[79]",
+                    "ref_id": null
+                },
+                {
+                    "start": 663,
+                    "end": 667,
+                    "text": "[80]",
+                    "ref_id": null
+                },
+                {
+                    "start": 668,
+                    "end": 672,
+                    "text": "[81]",
+                    "ref_id": null
+                },
+                {
+                    "start": 673,
+                    "end": 677,
+                    "text": "[82]",
+                    "ref_id": null
+                },
+                {
+                    "start": 680,
+                    "end": 682,
+                    "text": "67",
+                    "ref_id": null
+                },
+                {
+                    "start": 1105,
+                    "end": 1107,
+                    "text": "76",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1218,
+                    "end": 1220,
+                    "text": "77",
+                    "ref_id": null
+                },
+                {
+                    "start": 1261,
+                    "end": 1265,
+                    "text": "[35]",
+                    "ref_id": null
+                },
+                {
+                    "start": 1331,
+                    "end": 1333,
+                    "text": "78",
+                    "ref_id": null
+                },
+                {
+                    "start": 1444,
+                    "end": 1446,
+                    "text": "79",
+                    "ref_id": null
+                },
+                {
+                    "start": 1526,
+                    "end": 1528,
+                    "text": "80",
+                    "ref_id": null
+                },
+                {
+                    "start": 1756,
+                    "end": 1758,
+                    "text": "83",
+                    "ref_id": null
+                },
+                {
+                    "start": 1865,
+                    "end": 1867,
+                    "text": "84",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 1915,
+                    "end": 1917,
+                    "text": "85",
+                    "ref_id": null
+                },
+                {
+                    "start": 2071,
+                    "end": 2075,
+                    "text": "[83]",
+                    "ref_id": null
+                },
+                {
+                    "start": 2136,
+                    "end": 2138,
+                    "text": "87",
+                    "ref_id": null
+                },
+                {
+                    "start": 2243,
+                    "end": 2247,
+                    "text": "[84]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 2250,
+                    "end": 2252,
+                    "text": "88",
+                    "ref_id": null
+                },
+                {
+                    "start": 2469,
+                    "end": 2471,
+                    "text": "90",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 2575,
+                    "end": 2577,
+                    "text": "92",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 2687,
+                    "end": 2689,
+                    "text": "93",
+                    "ref_id": null
+                },
+                {
+                    "start": 3263,
+                    "end": 3266,
+                    "text": "135",
+                    "ref_id": null
+                },
+                {
+                    "start": 3489,
+                    "end": 3492,
+                    "text": "137",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "I. INTRODUCTION"
+        },
+        {
+            "text": "A private subdomain was created on Metaculus that allowed only subject matter experts and select trained 144 forecasters to submit predictions and comments on these COVID-19 vaccine questions. Forecasters were 145 encouraged, but not required, to answer all questions. When a user accesses Metaculus they are presented 146 with a list of questions for which they can submit probabilistic predictions. For each question, the forecaster 147 was presented background information about the specific question, including resources judged by the authors 148 to be relevant and informative. This information was meant to be a starting point for forecasters to begin 149 building a prediction and forecasters were not constrained to use only the background information provided.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "143"
+        },
+        {
+            "text": "Each question also contained a detailed statement of the resolution criteria-the criteria that describes, as 151 precisely as possible, how the ground-truth would be determined.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "150"
+        },
+        {
+            "text": "The online interface that was used by forecasters and subject matter experts presented in order: textual 153 background information, the question asked of the forecaster, and how the truth will be determined for the 154 question. When available, the forecaster can observe the current and past community median, 25th and 155 75th quantile predictions. Below the textual information forecasters were given a tool to form a predictive 156 density as a weighted mixture of up to five logistic distributions (See Suppl. Fig. S6 as an example interface 157 for forecasters and the following link to interact with a specific instance of the platform https://covid.me 158 taculus.com/questions/4822/when-will-a-sars-cov-2-vaccine-candidate-be-approved-for-use-159 in-the-united-states-or-european-union/). The logistic distribution resembles a normal distribution 160 but has heavier tails. 161 Forecasters were notified that new questions were available on the forecasting platform by email. The 162 email contained summary information about the questions presented to forecasters and a line list of each 163 question. Questions were formatted as hyperlinks that directed forecasters to the forecasting platform 164 and corresponding question that they clicked. Forecasters were given the dates when predictions could be 165 submitted and dates for when the real-time and past community predictions could be observed. The email 166 also reiterated for forecasters where they can find reports on past questions asked and that questions and 167 feedback could be sent to the authors (an example email is presented in Supp. S8).",
+            "cite_spans": [
+                {
+                    "start": 884,
+                    "end": 887,
+                    "text": "161",
+                    "ref_id": null
+                },
+                {
+                    "start": 1206,
+                    "end": 1209,
+                    "text": "164",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 516,
+                    "end": 523,
+                    "text": "Fig. S6",
+                    "ref_id": null
+                }
+            ],
+            "section": "152"
+        },
+        {
+            "text": "Subject matter experts were not required to attend any formal training on how to form probabilistic pre-169 dictions or best practices in forecasting. However, the research team provided both an interactive tutorial 170 (https://covid.metaculus.com/tutorials/Tutorial/) and a video tutorial( https://drive.google.c 171 om/file/d/1sYLif02wimQRi4alufU58YW6 a3ekuFP/view) to introduce the forecasting platform to subject 172 matter experts and familiarize them with probabilistic prediction.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "168"
+        },
+        {
+            "text": "Experts and trained forecasters submit a probabilistic density as a convex combination of up to five logistic distributions. Specifically, the ensemble probabilistic prediction f m for the m th forecaster is given by:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "II.5. Individual predictions"
+        },
+        {
+            "text": "When generating a prediction, participants specify at minimum one logistic distribution by moving a slider 175 that corresponds to \u00b5 and compressing or expanding the same slider that corresponds to \u03c3. If a participant 176 decides to add a second (or 3 rd , 4 th , and 5 th ) logistic distribution they can click \"add a component\" for a 177 second slider allowing the participant to \"shift and scale\" this additional logistic distribution. Two \"weight\" 178 sliders also appear under each \"shift and scale\" slider that allows the participant to control the weights 179 (\u03b1 1 , \u03b1 2 , \u00b7 \u00b7 \u00b7 , \u03b1 5 ) of each individual logistic distribution. i.e. \u03c0 m = 1 M , as we had little a-priori reason to assign differential weights to participants.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "II.5. Individual predictions"
+        },
+        {
+            "text": "We chose to score forecasts using the logarithmic (log) score [89, 90] . The log score assigns the logarithm of the density value corresponding to the eventual true value (t) of a target of interest.",
+            "cite_spans": [
+                {
+                    "start": 62,
+                    "end": 66,
+                    "text": "[89,",
+                    "ref_id": null
+                },
+                {
+                    "start": 67,
+                    "end": 70,
+                    "text": "90]",
+                    "ref_id": "BIBREF63"
+                }
+            ],
+            "ref_spans": [],
+            "section": "198"
+        },
+        {
+            "text": "log score(",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "198"
+        },
+        {
+            "text": "where f is the predictive density submitted by an individual forecaster or linear pool. Log scores take values 199 from negative to positive infinity. The worst possible log score a forecaster can receive is negative infinity 200 (earned when the density value assigned to the actual outcome value is zero), the log score is greater than 201 the value zero when the density assigned to the truth is greater than one, and the best possible score is 202 positive infinity (earned when the density assigned to the actual outcome approaches positive infinity).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "198"
+        },
+        {
+            "text": "The log score is a proper scoring rule. If we assume a data generating process that follows a distribution 204 F , then a proper scoring rule is optimized when a forecaster submits the true density-the density F -over 205 potential values of a target, disincentivizing a forecaster from submitting a predictive density that does not 206 accurately represent their true uncertainty over potential outcomes [42, 91] .",
+            "cite_spans": [
+                {
+                    "start": 405,
+                    "end": 409,
+                    "text": "[42,",
+                    "ref_id": null
+                },
+                {
+                    "start": 410,
+                    "end": 413,
+                    "text": "91]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "203"
+        },
+        {
+            "text": "Logarithmic scores were also transformed to scaled ranks (see S8.2 of the supplement). Given a set of N log 208 scores, the scaled rank assigns a value of 1/N to the smallest log score, a value of 2/N to the second smallest 209 log score, and so on, assigning a value of 1 to the highest log score. 210 We refer to the log score generated by individual forecaster i who made a prediction about question q as 211 L i,q in the following section. ",
+            "cite_spans": [
+                {
+                    "start": 299,
+                    "end": 302,
+                    "text": "210",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "207"
+        },
+        {
+            "text": "The model is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "218"
+        },
+        {
+            "text": "where E is a binary variable that identifies whether a forecaster was an expert (E = 1) or not (E = 0), C is 219 a binary variable that indicates whether a forecaster was a linear pool (C = 1) or not (C = 0). and \u03b2 q is a 220 normally distributed, random intercept, with standard deviation \u03c3 q that accounts for the tendency for log 221 scores to be clustered within each question.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "218"
+        },
+        {
+            "text": "All statistical hypothesis tests are two-sided and a pvalue less than 0.05 is considered statistically significant. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "222"
+        },
+        {
+            "text": "The reported efficacy for a vaccine that uses a non-replicating viral platform was 66.9% and for a vaccine 281 that uses a DNA/RNA platform was 95% [31, 33]. The linear pool mode prediction of efficacy made in July, 282 2020 was 60% for a vaccine produced using a non-replicating viral platform and 65% for a vaccine produced 283 using a DNA/RNA platform. The probability assigned to an efficacy below 50% was 0.35 for a non-rep 284 platform and 0.30 for a DNA/RNA platform. Though there is no reported efficacy for a vaccine using an 285 inactivated virus and protein sub-unit platform, the linear pool mode prediction was 75% for a inactivated, 286 and 77% for a protein sub-unit platform (Fig. 1C. ). The probability assigned to an efficacy below 50% was The linear pool median prediction for when a COVID-19 therapy would show a survival benefit was later than 296 the truth. Though there is no ground truth on survival benefits by vaccine platform, linear pool predictions 297 for safety did differ by platform. 298 We asked trained forecasters and experts six questions, one in June, two in July, one in August, and two in The linear pool median prediction for when a SARS-CoV-2 vaccine would be approved in the EU or the US 320 was later than the truth, and the median prediction of approval time in the US became more accurate as 321 the time shrunk between when the prediction was made and when the ground truth was available.",
+            "cite_spans": [
+                {
+                    "start": 647,
+                    "end": 650,
+                    "text": "286",
+                    "ref_id": null
+                },
+                {
+                    "start": 1017,
+                    "end": 1020,
+                    "text": "298",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 691,
+                    "end": 700,
+                    "text": "(Fig. 1C.",
+                    "ref_id": "FIGREF13"
+                }
+            ],
+            "section": "280"
+        },
+        {
+            "text": "We asked trained forecasters and experts six questions, one in June, one in July, two in August, and two in 323 September related to the timing of approval of a COVID-19 vaccine (Fig. 3) The linear pool median prediction of when an approved vaccine would be administered to 100K people was 343 later than the truth. 344 We asked trained forecasters and experts three questions, one in June and two in August related to speed 345 to produce and administer a vaccine after approval (Fig. 4) , and received 53 predictions (17 predictions per 346 question on average)",
+            "cite_spans": [
+                {
+                    "start": 316,
+                    "end": 319,
+                    "text": "344",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 178,
+                    "end": 186,
+                    "text": "(Fig. 3)",
+                    "ref_id": "FIGREF8"
+                },
+                {
+                    "start": 480,
+                    "end": 488,
+                    "text": "(Fig. 4)",
+                    "ref_id": "FIGREF9"
+                }
+            ],
+            "section": "322"
+        },
+        {
+            "text": "The date that the first SARS-CoV-2 vaccine to be approved and administered to more than 100K people (Table I) . show a survival benefit. Forecasts from the crowd, though they provided information, were also often broad.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 100,
+                    "end": 109,
+                    "text": "(Table I)",
+                    "ref_id": null
+                }
+            ],
+            "section": "347"
+        },
+        {
+            "text": "80% confidence intervals for questions that asked the crowd to assign probabilities over dates spanned years. and decision makers, care must be taken to assess environmental changes that could bias human judgment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "399"
+        },
+        {
+            "text": "Linear pool prediction scores were not statistically different than individual prediction scores. A linear pool 434 was never the highest scoring prediction, however a linear pool was also never the lowest scoring prediction.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "433"
+        },
+        {
+            "text": "This work cannot show that statistical aggregation in a noisy environment, like the COVID-19 vaccine 436 landscape, is more accurate than individual predictions, but there is evidence that statistical aggregation 437 may guard against inaccurate individual predictions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "435"
+        },
+        {
+            "text": "In this work we are limited by the small number of questions we could ask forecasters, the number of questions 439 that could be compared to the truth, and difficulties associated with human judgment.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "438"
+        },
+        {
+            "text": "Compared to computational models, forecasters must spend a significant amount of time and energy to answer 441 questions which limits the number of questions we can ask. Each question included background information 442 that forecasters could use as a starting point for a more detailed analysis and to ease the cognitive burden 443 of prediction. However, adding background information could cause biases such as anchoring.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "440"
+        },
+        {
+            "text": "The cognitive burden on forecasters can also be observed in the small percent of textual comments made 445 by forecasters. Forecasters were able to submit comments along with quantitative predictions, but a small prediction. An ongoing challenge in human judgment forecasting is to solicit a prediction, data used to make 449 the prediction, and a rationale. I: Table of coefficients, 95% confidence intervals, and pvalues for a mixed effects model with log score as the dependent variable, three fixed categorical factors to identify log scores from trained forecasters (the reference category), subject matter experts, or linear pool models, and a random intercept by question. There were 234 log scores (observations) from fifteen separate questions that were used to fit this model. The marginal R 2 for this model, or the variance explained by the three fixed categorical variables, is 0.005 and the conditional R 2 , the variance explained by the fixed effects and the random intercept for each question, is 0.43. Trained forecasters have the highest average log score followed by linear pool models and subject matter experts. However, there is not enough evidence to conclude that these differences are statistically significant ) Linear pool predictive percentiles made in June and in July, 2020 for the date when SARS-CoV-2 vaccine will be approved for use in the US or European Union (EU). (B.) Linear pool predictive percentiles for the date a SARS-CoV-2 vaccine will be approved for use in the US or EU through a standard approval process (blue) or an emergency use authorization (red), and (C.) linear pool predictive percentiles for the date a SARS-CoV-2 vaccine will be approved for use specifically in the US through a standard approval process (blue) or an emergency use authorization (red). The linear pool median predictions made in June and July for when a SARS-CoV-2 candidate would be approved in the US or EU were many months later than the truth (May, 2020 and April, 2020 vs Dec., 2020). Linear pool median predictions of the date of emergency and standard approval of a SARS-CoV-2 vaccine in the US or EU were less accurate than predictions of approval dates for the US only. Environmental cues, time between when the forecast was made and the truth, or how the question was asked, may have impacted predictive accuracy. Dear <Expert>,",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 359,
+                    "end": 370,
+                    "text": "I: Table of",
+                    "ref_id": null
+                }
+            ],
+            "section": "444"
+        },
+        {
+            "text": "We read your work on <insert work> with great interest, and invite you to join a collaborative group of select experts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "We are building expert consensus predictions about the development of SARS-CoV-2 vaccines and COVID-19 therapeutics each month with a small group of researchers involved in the study of novel therapeutics/vaccines. Experts are surveyed about their predictions about the future development of SARS-CoV-2 vaccines and COVID-19 therapeutics and the results are bei aggregated into a consensus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "We feel your skill set defines you as an expert in this field. Would you participate, alongside other experts, in our survey project to forecast the development of SARS-CoV-2 vaccines and COVID-19 therapeutics?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "Your anonymized predictions will contribute to an expert consensus made available to the public, and sent to the CDC to provide support for public health decision making. Our main goal is to provide public health officials probabilistic predictions from experts on the research and development of vaccines and therapeutics. We have made the results from our first survey available here.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "Our past work, in collaboration with Thomas McAndrew at the University of Massachusetts at Amherst, focused on forecasting the early trajectory of COVID-19 in the United States. Forecasts and predictions generated by 41 experts in the modeling of infectious disease were featured in outlets such as Science, FiveThirtyEight, and The Economist, and were also sent to the CDC to support the US COVID-19 response.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "If you are available to participate in at least one survey, please respond to this email, preferably by <MMDD>. We expect to administer the next monthly survey on <MMDD>. We would be thrilled to welcome you-if only just for one round. An expert consensus can produce forecasts on a diverse range of vaccine and therapeutic solutions that computational and statistical methods cannot, and we feel your expertise will make impactful and meaningful contributions. Please reach out to us with any questions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "Sincerely,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "FIG. S7: A template email used to solicit forecasting participation from subject matter experts in molecular and cellular biology, microbiology, virology, biochemistry, and infectious disease who have had several years of experience studying vaccine, antiviral, or biological related to infectious agents.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "The fourth COVID-19 Countermeasures session has just opened! This month's survey focuses on the differences between a SARS-CoV-2 vaccine approved in the US via a normal approval process and an emergency approval process, as well as on the recent contradictory statements in the US between the White House, FDA, and CDC on vaccine timelines and mask wearing. Finally, for the first time we are asking experts and trained forecasters to provide us with purely text-based responses (Q6 and Q7) -a unique aspect to this work that computational models cannot provide.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "The goal of these set of predictions is to support public health decision making, provide best estimates that allow the public to make informed decisions, and address current controversies between the White House, FDA, and CDC.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "Here are all of the questions:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "As always, if you have any questions or feedback feel free to reply to this email. Thank you for your participation. Those of you who have participated in previous sessions can find our first three reports here. How many SARS-CoV-2 vaccine candidates will be in human trials as of 1 August 2020? 26 When will a SARS-CoV-2 vaccine candidate be approved for use in the United States or European Union?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "444"
+        },
+        {
+            "text": "Dec. 21, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Regards"
+        },
+        {
+            "text": "When will a SARS-CoV-2 vaccine candidate demonstrate >70% efficacy?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Regards"
+        },
+        {
+            "text": "Dec. 10, 2020 When will a COVID-19 therapeutic or therapeutics cocktail show a statistically significant survival benefit for the treatment group in a n>200 RCT?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Regards"
+        },
+        {
+            "text": "July 17th, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Regards"
+        },
+        {
+            "text": "What will be the efficacy of the first US-or EU-approved SARS-CoV-2 vaccine based on a non-replicating viral vector platform?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Regards"
+        },
+        {
+            "text": "What will be the efficacy of the first US-or EU-approved SARS-CoV-2 vaccine based on a DNA or RNA platform? 95% When will a SARS-CoV-2 vaccine candidate be approved for use in the United States or European Union?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "Dec. 21, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "When will a SARS-CoV-2 vaccine candidate be approved for use in the US or EU through a normal approval process?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "Dec. 21, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "When will a SARS-CoV-2 vaccine candidate be approved for use in the US or EU through an emergency approval process?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "Dec. 10th, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "What will be the efficacy of the first US-or EU-approved SARS-CoV-2 vaccine candidate approved through a normal approval process? 95% What will be the efficacy of the first US-or EU-approved SARS-CoV-2 vaccine candidate approved through an emergency approval process?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "66.9%"
+        },
+        {
+            "text": "When will a SARS-CoV-2 vaccine candidate be approved for use in the US through a normal approval process?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "95%"
+        },
+        {
+            "text": "Aug. 23, 2021",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "95%"
+        },
+        {
+            "text": "When will a SARS-CoV-2 vaccine candidate be approved for use in the US through an emergency approval process?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "95%"
+        },
+        {
+            "text": "Dec. 10th, 2020",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "95%"
+        },
+        {
+            "text": "What will be the efficacy ratio of the first SARS-CoV-2 vaccine candidate approved on an emergency basis (numerator) compared to the first approved through a normal process (denominator)?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "95%"
+        },
+        {
+            "text": "1.0 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "95%"
+        },
+        {
+            "text": "FIG. S9: Log scores for individual trained forecasters (red circles) and a linear pool of trained forecasters (red diamond), individual subject matter experts (blue circles) and an expert linear pool (blue diamond), and a linear pool of both trained forecasters and experts related (black X) for questions related to the efficacy and timing of approval of a vaccine. Individuals, and so linear pools, received higher average log scores for questions related to whether a vaccine would demonstrate an efficacy above 70% and the efficacy of a vaccine that uses a non-replicating platform when compared to questions related to the efficacy of the first vaccine approved. Individuals and linear pools received log scores for questions related to the timing of approval of a vaccine that were similar to questions related to vaccine efficacy. None of the linear pool predictions receive the highest log score for any one question, however the trained forecaster plus expert linear pool also never receives the lowest log score. Aggregating trained forecasters and subject matter experts has the potential to guard against an individual forecast with poor accuracy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "S32"
+        },
+        {
+            "text": "FIG. S10: Log scores for individual trained forecasters (red circles) and a linear pool of trained forecasters (red diamond), individual subject matter experts (blue circles) and an expert linear pool (blue diamond), and a linear pool of both trained forecasters and experts related (black X) for questions related to safety, the number of vaccine candidates, and the estimate efficacy of a vaccine approved under emergency authorization divided by a vaccine approved under a standard process. Linear pool predictions again never attain the highest nor the lowest log scores among any other forecaster.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "S33"
+        },
+        {
+            "text": "FIG. S11: The log score across all questions for individuals and the same three linear pool predictions. Though linear pool predictions were able to guard against poor performing individual predictions, there was little difference in predictive performance between a linear pool of trained forecasters, linear pool of experts, or both. figure S12 and figure S13 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 336,
+                    "end": 361,
+                    "text": "figure S12 and figure S13",
+                    "ref_id": "FIGREF8"
+                }
+            ],
+            "section": "S34"
+        },
+        {
+            "text": "FIG. S12: Scaled ranks for individual trained forecasters (red circles), subject matter experts (blue circles), and three linear pool distributions: (i) a linear pool of trained forecasters (red diamond), of subject matter experts (blue square), and the linear pool of both trained forecasters and experts (black X) for 5 questions related to efficacy and 7 questions related to the timing of vaccine approval with ground truth.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "769"
+        },
+        {
+            "text": "FIG. S13: Scaled ranks for individual trained forecasters (red circles), subject matter experts (blue circles), and three linear pool distributions: (i) a linear pool of trained forecasters (red diamond), of subject matter experts (blue square), and the linear pool of both trained forecasters and experts (black X) for questions related to the safety of a vaccine, number of vaccine candidates, and the difference in efficacy between a vaccine approved under an emergency process versus standard process with ground truth.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "S36"
+        },
+        {
+            "text": "\u2612 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of interests"
+        },
+        {
+            "text": "\u2610 The authors declare the following financial interests/personal relationships which may be considered as potential competing interests:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declaration of interests"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Probabilistic forecasting. Annual Review of Statistics and Its Appli-592 cation",
+            "authors": [
+                {
+                    "first": "Tilmann",
+                    "middle": [],
+                    "last": "Gneiting",
+                    "suffix": ""
+                },
+                {
+                    "first": "Matthias",
+                    "middle": [],
+                    "last": "Katzfuss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "1",
+            "issn": "",
+            "pages": "125--151",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "A general framework for forecast verification",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Allan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robert L",
+                    "middle": [],
+                    "last": "Murphy",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Winkler",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Monthly weather review",
+            "volume": "594",
+            "issn": "7",
+            "pages": "1330--1338",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Combining expert opinions",
+            "authors": [
+                {
+                    "first": "Roger",
+                    "middle": [],
+                    "last": "Cooke",
+                    "suffix": ""
+                }
+            ],
+            "year": 1991,
+            "venue": "Experts in Uncertainty",
+            "volume": "596",
+            "issn": "",
+            "pages": "171--175",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Combining forecasts: A review and annotated bibliography",
+            "authors": [
+                {
+                    "first": "Robert",
+                    "middle": [],
+                    "last": "Clemen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "International Journal of Forecasting",
+            "volume": "598",
+            "issn": "",
+            "pages": "559--583",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A collaborative multiyear, multimodel assess-601 ment of seasonal influenza forecasting in the united states",
+            "authors": [
+                {
+                    "first": "Evan",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Osthus",
+                    "suffix": ""
+                },
+                {
+                    "first": "Abhinav",
+                    "middle": [],
+                    "last": "Ray",
+                    "suffix": ""
+                },
+                {
+                    "first": "Teresa",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Tushar",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Yamana",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings of the National Academy of Sciences",
+            "volume": "602",
+            "issn": "",
+            "pages": "3146--3154",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Adaptively stacking ensembles for influenza forecasting",
+            "authors": [
+                {
+                    "first": "Thomas",
+                    "middle": [],
+                    "last": "Mcandrew",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Nicholas",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Reich",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Statistics in",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Expert Judgement in Risk and Decision Analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anca",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hanea",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Aggregating predictions 607 from experts: A review of statistical methods, experiments, and applications",
+            "authors": [
+                {
+                    "first": "Thomas",
+                    "middle": [],
+                    "last": "Mcandrew",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nutcha",
+                    "middle": [],
+                    "last": "Wattanachit",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Graham",
+                    "suffix": ""
+                },
+                {
+                    "first": "Nicholas G",
+                    "middle": [],
+                    "last": "Gibson",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Reich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Interdisciplinary Reviews: 608 Computational Statistics",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Probability 610 forecasts and their combination: A research perspective",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Robert",
+                    "suffix": ""
+                },
+                {
+                    "first": "Yael",
+                    "middle": [],
+                    "last": "Winkler",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kenneth C Lichtendahl",
+                    "middle": [],
+                    "last": "Grushka-Cockayne",
+                    "suffix": ""
+                },
+                {
+                    "first": "Victor",
+                    "middle": [],
+                    "last": "Jr",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Richmond R Jose",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Decision Analysis",
+            "volume": "16",
+            "issn": "4",
+            "pages": "239--260",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Psychological strategies for winning a geopolitical forecasting 613 tournament",
+            "authors": [
+                {
+                    "first": "Don",
+                    "middle": [],
+                    "last": "Moore",
+                    "suffix": ""
+                },
+                {
+                    "first": "Pavel",
+                    "middle": [],
+                    "last": "Atanasov",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Samuel",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Swift",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Psychological science",
+            "volume": "25",
+            "issn": "5",
+            "pages": "1106--1115",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Improving forecasting performance by exploiting 615 expert knowledge: Evidence from guangzhou port",
+            "authors": [
+                {
+                    "first": "Anqiang",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Han",
+                    "middle": [],
+                    "last": "Qiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shouyang",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "John",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "International Journal of Information Technology & Decision",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Predictive assessment of fish health and fish kills in the neuse river estuary using elicited expert 618 judgment",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Mark",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Borsuk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Human and Ecological Risk Assessment",
+            "volume": "10",
+            "issn": "2",
+            "pages": "415--434",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Use of probabilistic expert judgment in uncertainty analysis of carcinogenic potency. Regulatory Toxicology and 621",
+            "authors": [],
+            "year": 1994,
+            "venue": "Pharmacology",
+            "volume": "20",
+            "issn": "1",
+            "pages": "15--36",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Estimating the strength of expert judgement: the case of us mortality forecasts",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Juha",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Alho",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Journal of 623 Forecasting",
+            "volume": "11",
+            "issn": "2",
+            "pages": "157--167",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Char-625 acterization of precipitation through copulas and expert judgement for risk assessment of infrastructure",
+            "authors": [
+                {
+                    "first": "Oswaldo",
+                    "middle": [],
+                    "last": "Morales-N\u00e1poles",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dominik",
+                    "middle": [],
+                    "last": "Paprotny",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Dani\u00ebl Worm, Linda Abspoel-Bukman, and Wim Courage",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Analysis of expert judgment in a hail forecasting experiment. Weather and forecasting",
+            "authors": [],
+            "year": 1989,
+            "venue": "",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Health risk assessment for nanoparticles: A case for using expert judgment",
+            "authors": [],
+            "year": 2007,
+            "venue": "Journal of Nanoparticle Research",
+            "volume": "631",
+            "issn": "1",
+            "pages": "137--156",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "The value of performance weights 633 and discussion in aggregated expert judgments",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anca",
+                    "suffix": ""
+                },
+                {
+                    "first": "Marissa",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hanea",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mcbride",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mark",
+                    "suffix": ""
+                },
+                {
+                    "first": "Bonnie",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Burgman",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Wintle",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Risk Analysis",
+            "volume": "38",
+            "issn": "9",
+            "pages": "1781--1794",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Combining statistical and judgmental forecasts via a web-based 635 tourism demand forecasting system",
+            "authors": [
+                {
+                    "first": "Haiyan",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Bastian",
+                    "suffix": ""
+                },
+                {
+                    "first": "Vera S",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "International Journal of Forecasting",
+            "volume": "29",
+            "issn": "2",
+            "pages": "295--310",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Probabilistic risk analysis in subsurface hydrology",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Daniel",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tartakovsky",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Geophysical research letters",
+            "volume": "34",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Structured expert elicitation about listeria monocytogenes cross-contamination in the environment of retail deli 640 operations in the united states",
+            "authors": [],
+            "year": 2012,
+            "venue": "Risk Analysis: An International Journal",
+            "volume": "32",
+            "issn": "7",
+            "pages": "1139--1156",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A struc-642 tured expert judgment study for a model of campylobacter transmission during broiler-chicken processing",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hj Van Der Fels-Klerx",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roger",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Cooke",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Maarten",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Nauta",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Louis",
+                    "suffix": ""
+                },
+                {
+                    "first": "Arie",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Goossens",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Havelaar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Analysis: An International Journal",
+            "volume": "643",
+            "issn": "1",
+            "pages": "109--124",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "A 645 human judgment approach to epidemiological forecasting",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Farrow",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Logan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sangwon",
+                    "middle": [],
+                    "last": "Brooks",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hyun",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Tibshirani",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Donald",
+                    "suffix": ""
+                },
+                {
+                    "first": "Roni",
+                    "middle": [],
+                    "last": "Burke",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Rosenfeld",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS computational biology",
+            "volume": "13",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Ensemble forecast of human west nile 647 virus cases and mosquito infection rates",
+            "authors": [
+                {
+                    "first": "Eliza",
+                    "middle": [],
+                    "last": "Nicholas B Defelice",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Little",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Scott",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jeffrey",
+                    "middle": [],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Shaman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nature Communications",
+            "volume": "8",
+            "issn": "1",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Malaria early warnings based on seasonal climate forecasts from multi-model 650 ensembles",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Dela",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Morse",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Palmer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Nature",
+            "volume": "439",
+            "issn": "7076",
+            "pages": "576--579",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "World health organization estimates of the 653 relative contributions of food to the burden of disease due to selected foodborne hazards: a structured expert 654 elicitation",
+            "authors": [
+                {
+                    "first": "Paul",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Gibb",
+                    "suffix": ""
+                },
+                {
+                    "first": "Martyn",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Torgerson",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fred",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kirk",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Angulo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "PloS one",
+            "volume": "11",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Evaluation of a 656 performance-based expert elicitation: Who global attribution of foodborne diseases",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Willy",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Aspinall",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Roger",
+                    "suffix": ""
+                },
+                {
+                    "first": "Arie",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cooke",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sandra",
+                    "middle": [],
+                    "last": "Havelaar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tine",
+                    "middle": [],
+                    "last": "Hoffmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Hald",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "PLoS One",
+            "volume": "11",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Attribution of global foodborne disease to specific foods: 660 Findings from a world health organization structured expert elicitation",
+            "authors": [
+                {
+                    "first": "Herman",
+                    "middle": [],
+                    "last": "Angulo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Martyn",
+                    "middle": [],
+                    "last": "Gibb",
+                    "suffix": ""
+                },
+                {
+                    "first": "Robin",
+                    "middle": [],
+                    "last": "Kirk",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Lake",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "PLoS One",
+            "volume": "12",
+            "issn": "9",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Attribution of illnesses transmitted by food 663 and water to comprehensive transmission pathways using structured expert judgment, united states. Emerging 664 infectious diseases",
+            "authors": [
+                {
+                    "first": "Kathleen",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Patricia M Griffin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Sarah",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Fullerton",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Collier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "27",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Ecological theory to enhance infectious disease control and public health policy. Frontiers in Ecology and the 667 Environment",
+            "authors": [],
+            "year": 2005,
+            "venue": "",
+            "volume": "3",
+            "issn": "",
+            "pages": "29--37",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Health behavior theory for public health: 669 Principles, foundations, and applications",
+            "authors": [
+                {
+                    "first": "Laura",
+                    "middle": [
+                        "Francisca"
+                    ],
+                    "last": "Ralph J Diclemente",
+                    "suffix": ""
+                },
+                {
+                    "first": "Richard A",
+                    "middle": [],
+                    "last": "Salazar",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Crosby",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Contact structure, 671 mobility, environmental impact and behaviour: the importance of social forces to infectious disease dynamics 672 and disease ecology",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ronan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Emily",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Arthur",
+                    "suffix": ""
+                },
+                {
+                    "first": "Henrik",
+                    "middle": [],
+                    "last": "Gurley",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Salje",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Laura",
+                    "suffix": ""
+                },
+                {
+                    "first": "James H Jones",
+                    "middle": [],
+                    "last": "Bloomfield",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+            "volume": "372",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Covid-19 vaccine intentions in the united states, a social-ecological framework. Vaccine",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Vaccinating the uk against covid-19",
+            "authors": [
+                {
+                    "first": "Azeem",
+                    "middle": [],
+                    "last": "Majeed",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mariam",
+                    "middle": [],
+                    "last": "Molokhia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "A study of forecasting practices in supply chain man-678 agement",
+            "authors": [
+                {
+                    "first": "Md Mamun",
+                    "middle": [],
+                    "last": "Abu Raihan Bhuiyan Albarune",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Habib",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "International Journal of Supply Chain Management",
+            "volume": "4",
+            "issn": "2",
+            "pages": "55--61",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Supply chain 680 forecasting: Theory, practice, their gap and the future",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Aris",
+                    "suffix": ""
+                },
+                {
+                    "first": "Zied",
+                    "middle": [],
+                    "last": "Syntetos",
+                    "suffix": ""
+                },
+                {
+                    "first": "John",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Babai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Stephan",
+                    "middle": [],
+                    "last": "Boylan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Konstantinos",
+                    "middle": [],
+                    "last": "Kolassa",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Nikolopoulos",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "European Journal of Operational Research",
+            "volume": "252",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Real options based analysis of optimal pharma-683 ceutical research and development portfolios",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Michael",
+                    "suffix": ""
+                },
+                {
+                    "first": "Anshuman",
+                    "middle": [],
+                    "last": "Rogers",
+                    "suffix": ""
+                },
+                {
+                    "first": "Costas D",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Maranas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Industrial & engineering chemistry research",
+            "volume": "41",
+            "issn": "25",
+            "pages": "6607--6620",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Uncertain mean-variance and mean-semivariance models 686 for optimal project selection and scheduling. Knowledge-Based Systems",
+            "authors": [
+                {
+                    "first": "Xiaoxia",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tianyi",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shamsiya",
+                    "middle": [],
+                    "last": "Kudratova",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "93",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "A robust r&d 688 project portfolio optimization model for pharmaceutical contract research organizations",
+            "authors": [
+                {
+                    "first": "Farhad",
+                    "middle": [],
+                    "last": "Hassanzadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Mohammad",
+                    "middle": [],
+                    "last": "Modarres",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kwasi",
+                    "middle": [],
+                    "last": "Hamid R Nemati",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Amoako-Gyampah",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "International Journal 689 of Production Economics",
+            "volume": "158",
+            "issn": "",
+            "pages": "18--27",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "A comprehensive framework for project 691 selection problem under uncertainty and real-world constraints",
+            "authors": [
+                {
+                    "first": "Majid",
+                    "middle": [],
+                    "last": "Shakhsi-Niaei",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ali",
+                    "middle": [],
+                    "last": "Torabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Seyed Hossein",
+                    "middle": [],
+                    "last": "Iranmanesh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Computers & Industrial Engineering",
+            "volume": "61",
+            "issn": "1",
+            "pages": "226--692",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Judgment under uncertainty: Heuristics and biases. science",
+            "authors": [
+                {
+                    "first": "Amos",
+                    "middle": [],
+                    "last": "Tversky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Daniel",
+                    "middle": [],
+                    "last": "Kahneman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "",
+            "volume": "695",
+            "issn": "",
+            "pages": "1124--1131",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Identifying and cultivating superforecasters as a method of improving 698 probabilistic predictions",
+            "authors": [
+                {
+                    "first": "Yuan",
+                    "middle": [],
+                    "last": "Baker",
+                    "suffix": ""
+                },
+                {
+                    "first": "Michael",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Horowitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Perspectives on Psychological Science",
+            "volume": "10",
+            "issn": "3",
+            "pages": "267--281",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Superforecasting: The art and science of prediction. Random House",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Philip",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dan",
+                    "middle": [],
+                    "last": "Tetlock",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Gardner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "The psychology of intelligence analysis: Drivers of prediction 702 accuracy in world politics",
+            "authors": [
+                {
+                    "first": "Michael",
+                    "middle": [],
+                    "last": "Horowitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ed",
+                    "middle": [],
+                    "last": "Merkle",
+                    "suffix": ""
+                },
+                {
+                    "first": "Philip",
+                    "middle": [],
+                    "last": "Tetlock",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Journal of experimental psychology: applied",
+            "volume": "21",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Allocating the weights in the linear opinion pool",
+            "authors": [
+                {
+                    "first": "Christian",
+                    "middle": [],
+                    "last": "Genest",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kevin",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mcconway",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Journal of Fore-704 casting",
+            "volume": "9",
+            "issn": "1",
+            "pages": "53--73",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Rational decisions",
+            "authors": [
+                {
+                    "first": "Irving John",
+                    "middle": [],
+                    "last": "Good",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Breakthroughs in statistics",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Combining dynamical and statistical ensembles",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mark",
+                    "suffix": ""
+                },
+                {
+                    "first": "Leonard A",
+                    "middle": [],
+                    "last": "Roulston",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Tellus A: Dynamic 707 Meteorology and Oceanography",
+            "volume": "55",
+            "issn": "",
+            "pages": "16--30",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Probabilistic forecasts, calibration and sharpness",
+            "authors": [
+                {
+                    "first": "Tilmann",
+                    "middle": [],
+                    "last": "Gneiting",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fadoua",
+                    "middle": [],
+                    "last": "Balabdaoui",
+                    "suffix": ""
+                },
+                {
+                    "first": "Adrian",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Raftery",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)",
+            "volume": "709",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "The good judgment project: A large 711 scale test of different methods of combining expert predictions",
+            "authors": [
+                {
+                    "first": "Lyle",
+                    "middle": [],
+                    "last": "Ungar",
+                    "suffix": ""
+                },
+                {
+                    "first": "Barbara",
+                    "middle": [],
+                    "last": "Mellers",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ville",
+                    "middle": [],
+                    "last": "Satop\u00e4\u00e4",
+                    "suffix": ""
+                },
+                {
+                    "first": "Philip",
+                    "middle": [],
+                    "last": "Tetlock",
+                    "suffix": ""
+                },
+                {
+                    "first": "Jon",
+                    "middle": [],
+                    "last": "Baron",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "2012 AAAI Fall Symposium Series",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Safety and efficacy of the chadox1 714 ncov-19 vaccine (azd1222) against sars-cov-2: an interim analysis of four randomised controlled trials in brazil, 715 south africa, and the uk",
+            "authors": [
+                {
+                    "first": "Brian",
+                    "middle": [],
+                    "last": "Angus",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Vicky",
+                    "suffix": ""
+                },
+                {
+                    "first": "Shaun",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Baillie",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Barnabas",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Qasim",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Bhorat",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "The Lancet",
+            "volume": "397",
+            "issn": "",
+            "pages": "99--111",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Dexamethasone in hospitalized patients with covid-19",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "The Recovery Collaborative",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Group",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England 717 Journal of Medicine",
+            "volume": "384",
+            "issn": "8",
+            "pages": "693--704",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Ema recommends first covid-19 vaccine for authorisation in the eu",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Fda approves first covid-19 vaccine",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "Covid-19 vaccine doses administered",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Estimation of clinical trial success rates and related parameters",
+            "authors": [
+                {
+                    "first": "Chi",
+                    "middle": [
+                        "Heem"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Kien",
+                    "middle": [
+                        "Wei"
+                    ],
+                    "last": "Siah",
+                    "suffix": ""
+                },
+                {
+                    "first": "Andrew",
+                    "middle": [],
+                    "last": "Lo",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "When will a SARS-CoV-2 vaccine candidate be approved for use in the US through a normal approval process? 2. When will a SARS-CoV-2 vaccine candidate be approved for use in the US through an emergency approval process? 3. What will be the efficacy ratio of the first SARS-CoV-2 vaccine candidate approved on an emergency basis",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "SAEs) being attributed within one year to the first SARS-CoV-2 vaccine approved in the US through a normal approval process? 5. What is the probability of at least ten serious adverse events (SAEs) being attributed within one year to the first SARS-CoV-2 vaccine approved in the US through an emergency approval process? 6. What will be the most common adverse event, serious or not serious, of the first US-approved SARS-CoV-2 vaccine? 7. How long after the approval of a SARS-CoV-2 vaccine of at least 50% efficacy would you continue to recommend the general public wear masks? What percentage of the US population would have to be vaccinated for your view to change? We very much encourage you to share your reasoning and analyses in the comments with other experts",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "From now until 25 September, the community prediction will be hidden. Subsequently from 25 September until 30",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF77": {
+            "ref_id": "b77",
+            "title": "When will a SARS-CoV-2 vaccine candidate be approved for use in the US or EU through a normal approval process? When will a SARS-CoV-2 vaccine candidate be approved for use in the US or EU through an emergency approval process? What will be the efficacy of the first US-or EU-approved SARS-CoV-2 vaccine candidate approved through a normal approval process? What will be the efficacy of the first US-or EU-approved SARS-CoV-2 vaccine candidate approved through an emergency approval process? How many weeks after approval will the first 100 million doses of the first US-or EU-approved SARS-CoV-2 vaccine candidate based on a DNA or RNA platform be manufactured? How soon after approval will the first 100 million doses of the first US-or EU-approved SARS-CoV-2 vaccine candidate based on a non-replicating viral vector platform be manufactured? When will an orally administered SARS-CoV-2 antiviral show a statistically significant survival benefit for the treatment group in an n>200 RCT? What will be the SARS-CoV-2 infectivity of children relative to adults when schools are open?",
+            "authors": [],
+            "year": 2020,
+            "venue": "All questions will close on 30 September at 11:59 PM EST. We will subsequently collect the survey results and compile a report to be sent to the Centers for Disease Control and Prevention (CDC). In addition, the report and aggregate de-identified raw data will be made available to the public at the following site in October. Question Survey 1",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "The accuracy of a linear pool of trained forecasters plus experts was in between the accuracy of a linear 729 pool generated from trained forecasters and the accuracy of a linear pool generated from experts except 730 for a single question where a subset of individual experts' accuracy was very poor (Fig. S9 and Fig",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF79": {
+            "ref_id": "b79",
+            "title": "Across all fifteen questions where the truth could be determined, the log scores for a linear pool of trained 732 forecasters plus experts had a smaller interquartile range when compared to individual forecasters, though 733 median scores were similar between individuals and all three linear pool distributions",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "735 and for individual subject matter experts was 1",
+            "authors": [],
+            "year": null,
+            "venue": "The standard deviation of the log 736 score was 1.75 for trained forecasters and 1.87 for experts",
+            "volume": "80",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "The linear pool of trained forecasters and 740 experts generated a higher average log score than both the linear pool of trained forecasters and experts 741 for 1/6 questions",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "80",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "The 746 average log score for an expert linear pool was higher compared to a linear pool of trained forecasters when 747 asked for the date a vaccine will be approved in the US/EU, the date a vaccine will be approved through 748 an emergency authorization",
+            "authors": [],
+            "year": null,
+            "venue": "/5 efficacy questions (Fig. S9 top) and had a lower average log score when asked to predict the number 745 of SARS-CoV-2 vaccine candidates that will be in human trials by Aug 1st, 2020 (Fig. S10 middle)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF83": {
+            "ref_id": "b83",
+            "title": "The 25 th and 75 th percentiles for log scores",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF84": {
+            "ref_id": "b84",
+            "title": "matter experts (Table I) however these results did not meet statistical significance. Ninety five percent 755 confidence intervals around the difference in log scores between subject matter experts and trained forecasters, 756 and between linear pool models and trained forecasters were large. We do not have enough data on forecast 757 accuracy to conclude statistical significance at a type I error of 5%",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "754",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "7019 vaccine. This work contributes to how subject-matter experts and trained, generalist forecasters can 71 support public health decision making by providing probabilistic predictions of the vaccine landscape during",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "can assign probabilities over a domain of pre-specified possible outcomes. The domain (D) is 181 typically a closed interval of the real number line where the lower (L) and upper bounds (U ) of the interval 182 are chosen to contain all possible outcomes (D = [L, U ]). In some cases an additional outcome allows 183 forecasters to assign probability to an open-ended outcome falling outside the upper or lower bound of the 184 domain (D = \u2113 \u222a [L, U ] \u222a \u03c5). For example, for the question \"When will a COVID-19 vaccine show an efficacy 185 of greater than or equal to 70%?\" a forecaster could assign a probability density from Aug, 2020 to April, 186 2023 and to the outcome \"later than April, 2023\". 187 An ensemble prediction of up to five logistic distributions submitted by an individual forecaster is stored 188 by the forecasting platform as an array of 200 density values evaluated at 200 equally spaced points from 189 the minimum to maximum allowable values (i.e. 200 equally spaced values in [L, U ]). For questions with no 190 upper or lower bound, densities are still stored over the interval [L, U ] with the understanding that because 191 the interval [L, U ] does not cover all possible events the probability over [L, U ] is less than one. 192 II.6. Linear pooling 193 A linear pool predictive density is a convex combination [88]) of probabilistic predictions from individuals f (x) = M m=1 \u03c0 m f m (x) where M is the number of forecasters who contributed a predictive distribution and f m is the m th forecaster's 194 predictive density with an associated linear pool weight \u03c0 m . The sum of weights for all M forecasters must 195 sum to one ( M m=1 \u03c0 m = 1). For all linear pools we chose to assign equal weights to each forecaster",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Statistical inference and testing 213 A mixed effects regression model was fit to log scores from experts, trained forecasters, and linear pool 214 models (considered a forecaster) for all questions with ground truth data (i.e. a dataset with one observation 215 for every individual forecaster who submitted a prediction on a question where the truth was determined) 216 for a total of 189 observations from individual forecasters and an additional 15 observations for each linear 217 pool (See supplemental table S4 for a summary of the number of observations for experts and non-experts).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "during, and after a question is available for forecasting, participants can post comments. Comments 225 are used to clarify question text, for a forecaster to explain their rationale behind a forecast, and for signaling226    other forecasters about a potentially important data source (forecasters can notify one another by adding 227 an \"@\" to a specific forecaster's username). Though methods like the Delphi procedure focus on minimizing 228 direct communication between forecasters, past work has also found communication and working as a team229    can improve forecast results[52,92] .230Forecasters can also interact with one another through a community distribution generated by Metaculus231 which was revealed for each question on the 25th of each month, approximately half way through the total 232 time left to make predictions. The community distribution was updated after the 25th as individuals made 233 new predictions or if an individual revised their previous prediction. 234 II.10. Data, Code, and Report availability 235 Data and code used in this project can be found on an actively maintained GitHub repository at https: 236 //github.com/computationalUncertaintyLab/vaccinceAndTherapeuticsCrowd. In addition to technical 237 information, this repository includes summary reports that were generated and include: a summary page of 238 predictions provided by experts and trained forecasters, detailed linear pool probability density functions, a 239 record of the questions that were asked, and a table listing of subject matter experts and trained forecasters 240 who volunteered identifying information. Data on ground truth used to compute log scores for fifteen 241 questions can be found in supplemental table S3. 242 Summary reports were sent to members of the CDC to aid in public health decision making. However, we 243 did not rigorously collect feedback about the impact of these reports. 244 III. RESULTS 245 III.1. Participation and response rate of the crowd 246 Four monthly surveys were conducted in June, July, August, and September of 2020. A total of 10 individual 247 experts and 11 trained forecasters participated in at least one of the four surveys. On average 6 experts 248 participated (made at least one prediction for one question) per survey and an average of 8 trained forecasters 249 participated per survey. The median number of hours after the survey was open until the first prediction by 250 an expert was 12 hours and by a trained forecaster was 9 hours, and the last prediction made by an expert 251 was on average 6 hours and for a trained forecaster 2 hours before survey close. 252 Experts and trained forecasters (the crowd) were asked on average 6.5 questions and made on average 132.5 253 unique and revised predictions per survey. In June we asked 6 questions and received 154 total (unique and 254 revised) predictions (26 predictions per question), in July we asked 7 questions and received 148 predictions 255 (21 predictions per question), in August we asked 8 questions and received 153 predictions (19 predictions per 256 question), and in September we asked 5 questions and received 75 predictions (15 predictions per question).257 Comments were made on 21 out of 26 questions (80.7%) with an average of 2.2 comments per question across all four surveys and a maximum number of comments of 8 on the question asked in June \"When will 259 a SARS-CoV-2 vaccine candidate demonstrate \u2265 70% efficacy?\". 260 The truth was determined for 15 out of 26 questions asked of the crowd. Supplemental table S3 lists the 261 questions where truth was determined and the true value used to score the crowd. 262 III.2. Efficacy 263 Linear pool median predictions of when a SARS-CoV-2 vaccine would show an efficacy above 70% were later 264 than the truth, and linear pool predictions of the reported efficacy of a vaccine were smaller than the truth, 265 independent of whether the question asked about specific methods of vaccine delivery or about different 266 approval processes. 267 We asked trained forecasters and experts eight questions, two in June, four in July, and two in August, 268 related to the efficacy of a COVID-19 vaccine (Fig. 1) and received 160 predictions (20 predictions per 269 question on average). 270 The first vaccine to show an efficacy greater than or equal to 70% was the Pfizer-BioNTech vaccine, reporting 271 an efficacy of 95% on Dec. 10, 2020 [31]. The linear pool predicted an efficacy this high would not occur 272 until after 2020, assigning a 0.85 probability to Jan. 2021 or later for when a COVID-19 vaccine would show 273 an efficacy of greater than or equal to 70%. The linear pool median prediction made in June, 2020 for when 274 a vaccine would show an efficacy above 70% was Aug. 13, 2021, the mode was July 1, 2021, and the 90% 275 confidence interval (CI) was [Oct., 2020, May, 2023](Fig. 1A.).276The most recently reported efficacy of the ChAdOx1 vaccine was 61.2%[93]. The linear pool median 277 prediction made in June, 2020 for the efficacy of the ChAdOx1 vaccine was 55.2% (80CI: [7.5%, 83.6%]) 278 with a probability of 0.27 assigned to values between 60% and 80% and a probability of 0.13 assigned to an 279 efficacy below 10%(Fig. 1B.).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "for an inactivated platform and 0.19 for a protein sub-unit platform.288The reported efficacy of a vaccine approved under emergency authorization, and under a standard FDA 289 approval process was 95%. The linear pool median prediction made in August, 2020 of the efficacy of a 290 vaccine approved under a standard regulatory process was 67%; 80CI: [49%, 84%] and under an emergency 291 use authorization (such as Operation Warp Speed) was 50%; 80CI: [26%, 76%](Fig. 1D.). An efficacy of 292 less than or equal to 50% was assigned by the linear pool a probability of 0.16 for a vaccine approved under 293 a standard regulatory process and 0.51 for a vaccine approved under an emergency use authorization.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "September related to the safety of a COVID-19 vaccine(Fig. 2)and received 131 predictions (21 predictions 300 per question on average)301    Dexamethasone-an anti-inflammatory treatment-was shown to have a significant benefit to survival on302 July 17th, 2020 [94]. The linear pool median prediction, made on June 30th, for when a COVID therapy 303 will show a significant difference in survival was March, 2021 (80CI: [Sept., 2020, Dec., 2022]) and the mode 304 prediction was Oct., 2020 (Fig. 2A.) A probability of 0.35 was assigned to a vaccine showing a survival 305 benefit from June 15th, 2020 to Dec. 31, 2020, a probability of 0.42 was assigned between the dates Jan. 1, 306 2021 and Dec. 31, 2021, and a probability of 0.23 after 2021. July 17th, 2020 was the 6 th percentile of the 307 linear pool predictive distribution. 308 At the time of this report, there is not yet reported ground truth values of when a survival benefit was 309 shown for a vaccine using an monoclonal antibody platform, antiviral platform, or an orally administered 310 therapy. The linear pool predictive density for when a monoclonal antibody platform would show a significant 311 survival benefit had the smallest interquartile range (IQR: [Dec. 29, 2020, Oct. 15, 2021] ), second smallest 312 IQR was for an antiviral platform (IQR: [Dec. 14, 2020, Sept. 16, 2021]), and largest IQR was for an orally 313 administered therapy (IQR: [July, 2021, Jan., 2023]) (Fig 2B.). For the monoclonal antibody and antiviral 314 platform, a 0.28 and 0.30 probability (respectively) was assigned to a survival benefit reported before Jan., 315 2021. The median prediction for when a monoclonal antibody platform would show a significant survival 316 benefit was April, 2021, for an antiviral platform was April, 2021, and for an orally administered therapy 317 was Jan., 2022. 318 III.4. Time to approval 319",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Jan. 19, 2021 [97]. The linear pool median prediction made in July, 2020 of when an approved vaccine 349 in the US or EU would be administered to more than 100,000 people was Sept. 2021 (80CI: [Jan., 2021, 350 Oct., 2022]). The linear pool assigned a 0.10 probability to 100K doses of a vaccine administered by the end 351 of 2020 and a 0.66 probability to 100K doses administered by the end of 2021 (Fig. 4A.). 352 At the time of this report there is not yet ground truth on the number of weeks from approval to 100M doses 353 of the first US or EU approved vaccine. In Aug, 2020 the median prediction for the number of weeks after 354 approval to produce 100M doses of a vaccine that uses a DNA/RNA platform was 18 (80CI: [5, 51]) and 355 using a viral vector platform was 34 (80CI: [10, 72]) (Fig. 4). The linear pool assigned a 0.27 probability to 10 356 weeks to manufacture 100M doses of a vaccine using a DNA/RNA platform compared to a 0.10 probability 357 assigned to 10 weeks to produce 100M doses of a vaccine using a viral platform (Fig. 4B.). 358 III.6. Logarithmic scores of individuals and the linear pool 359 The median logarithmic scores across all fifteen questions with ground truth for three linear pool distribu-360 tions: a linear pool of trained forecasters, linear pool of experts, and linear pool of both trained forecasters 361 and experts compared to the median logarithmic scores for individual forecasters was similar. Median log 362 scores were similar between linear pool predictions and individual predictions when stratifying by questions 363that asked about safety, efficacy, timing of approval, and the rate of production(Fig. 5). A mixed effects 364 model was fit and there was not a statistically significant difference between mean log scores of individuals,365 a linear pool of trained forecasters, linear pool of experts, or combined linear pool of trained forecasters and 366 experts",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Interested readers can find a more detailed analysis of logarithmic scores in the supplement section S8.1 and 368 an analysis of scaled ranks in the supplement section S8.2.369 IV. DISCUSSION 370 Between July and September 2020, a linear pool of trained forecasters and experts in infectious disease and 371 vaccinology provided predictions that: (i) quantified uncertainty about the efficacy, safety, and timing of 372 approval of SARS-CoV-2 vaccines at a time when the vaccine landscape and relevant political considerations 373 were in flux; (ii) were made when there was sparse data on past development of pharmaceutical interventions 374 in response to a pandemic, and (iii) were fast and to the best of our knowledge were made before any 375 other human judgment or computational efforts to predict COVID-19 vaccine characteristics and timing. 376 Aggregated predictions of this small team of trained forecasters and subject-matter experts emphasizes how 377 timely and quantitative insights on key open questions of a rapidly changing emergency situation can be 378 provided via a quick, low-cost, and flexible process of forecast elicitation and aggregation. 379 We have the following five key takeaways from conducting this elicitation for others who plan to conduct a 380 similar project that involves expert solicitation and linear pool building in a fast-paced environment: 381 1. Linking questions that participants predict to information needed by public health decision makers 382 is of utmost importance. When possible, questions should be reviewed by public health officials and 383 others who may use these predictions to inform their decisions. 384 2. A forecasting platform is an important tool that simplifies submitting predictions. A platform should 385 allow the user to make predictions in the same way across questions and make it easy to revise predic-386 tions as the user's information about the question grows.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Eliciting quantitative predictions is less burdensome on participants when compared to eliciting qual-388 itative data such as information participants used to inform their predictions. Future work should 389 focus on motivating participants to offer both quantitative predictions, their predictive distribution 390 over a target, and qualitative information, such as reasons that motivated their prediction, which we 391 feel could lead to more informed decision making.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "More work is needed before conclusions can be drawn about the accuracy of generalist versus subject 393 matter expert forecasts when predicting the outcomes of future pharmaceutical interventions. 394 5. The accuracy of a linear pool versus individuals is not conclusive, and future work should focus on a 395 large scale comparison between individual and linear pool predictions. 396 Expert and trained forecaster probabilistic predictions underestimated the speed of approval and high efficacy 397 of SARS-CoV-2 vaccines, and a linear pool prediction underestimated the date a COVID-19 treatment would 398",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "When asked to predict vaccine efficacy the linear pool assigned significant probability to values as low as 401 40% and up to 100%.402    The uncertainty in the linear pool distribution underlines the diverse signals the crowd received from the 403 environment, opposing views between different members of the crowd, the deployment of a novel mRNA 404 vaccine, and difficulty translating past experience in vaccine research to novel vaccine development during a 405 pandemic.406In line with ground truth, the linear pool assigned high probabilities to efficacy values above 70% for the407 Oxford/AstraZeneca vaccine and to vaccines based on four different vaccine technology platforms [98]. With 408 that said, the linear pool median predictions made in August 2020 of the efficacy of a vaccine approved under emergency authorization was 50%, greatly underestimating the 95% efficacy of the Pfizer/BioNTech 410 vaccine [31]. In addition to underestimating the efficacy of the first authorized vaccine, linear pool predictions 411 for all questions related to efficacy assigned positive probabilities to values below the 50% threshold for 412 approval stated by the FDA. 413 Similar to predictions of efficacy, linear pool forecasts underestimated the speed of vaccine development. 414 The Pfizer/BioNTech vaccine was approved Dec. 10th and on July 17th 2020 Dexamethasone-an anti-415 inflammatory treatment-was shown to have a significant benefit to survival [94]. The linear pool in July 416 2020 assigned a small probability to a vaccine being approved before or on Dec. 10th, 2020, and the linear 417 pool median prediction made in June 2020 for when a COVID-19 therapy would show a survival benefit was 418 approximately eight months later than the true date. Predictions that underestimated the speed of vaccine 419 approval could be because forecasters relied too heavily on previous development timelines. 420 An often-overlooked advantage of human judgment forecasting is the ability of a forecaster to transform 421 text data from the environment, such as news articles and scientific literature, into a prediction and output 422 textual data to (i) backup their predictions and (ii) communicate to other forecasters potentially important 423 information. For example, forecasters suggested political considerations may influence the timing of the 424 vaccine authorization/approval process in the U.S. with one forecaster pointing out on June 16th that 425 \"pressure on the FDA to approve something will be enormous, and will start building once there are even 426 preliminary phase 3 results.\" After our August survey closed and before the September survey opened, 427 President Trump announced a vaccine might be approved before the 2020 election. We suggest political 428 considerations could have influenced forecasts, shifting the median prediction for when a SARS-CoV-2 vaccine 429 will be approved in the US under emergency authorization from Feb, 2021 to Jan, 2021 and the median 430 prediction under a standard approval process from July, 2021 to Oct., 2021. Though an advantage of human 431 forecasters is their ability to generate commentary that may present new information to other forecasters 432",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "percentage (12%, 63 comments divided by 530 predictions) of forecasters accompanied their predictions 447 with text that explained the data they relied on and the rationale/model used to generate a probabilistic 448",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF12": {
+            "text": "Only 58 percent (15/26) of the questions resolved (i.e. had ground truth data available). A subset of 451 questions will resolve over time but many questions may never resolve because the criteria to determine the 452 truth was too strict.453   The number of unresolved questions highlights that those who pose the questions are as important as those 454 who submits predictions. To generate questions, the coauthors drew upon information from recent scientific 455 literature, reports by the World Health Organization and the Centers for Disease Control and Prevention.456A more rigorous approach to generating questions could include criteria for determining the expected time 457 until a question has ground truth and asking public health officials to either contribute questions or vote on 458 questions they would like to have answered. Those who author questions must make their own prediction 459 about whether they expect to obtain ground truth. For example, we expected vaccines to be approved by 460 both emergency and standard approval pathways within a short period of time, but this was not the case.461Because emergency authorization was granted to vaccines first with a large volume of vaccines administered 462 and distributed before standard approval, any question that was related to a vaccine approved through a 463 standard pathway was unresolved. This work suggests that question building may require a careful balance 464 between addressing relevant public health concerns while at the same time asking questions that will have 465 ground truth.466    We want to emphasize that further experimental work is needed to determine the correct pool of forecasters467 from which to solicit probabilistic predictions, the proper way to formulate questions, and a comparison of 468 techniques to aggregate predictions. To address which pool of forecasters to solicit predictions, we plan to 469 present subject matter experts and trained forecasters the trajectories of two potentially related random 470 variables for which we know the ground truth and solicit predictions. Comparisons can be made between 471 subject matter experts and trained forecasters overall, by varying the difficulty of the predictive task: (i) 472 reducing the correlation between these two random variables or (ii) increasing the variability in one or both 473 random variables, or by varying the degree to which one random variable is linearly related or non-linearly 474 related to the other. This work weighted equally predictive distributions from subject matter experts and 475 trained forecasters, and further work is needed that explores assigning weights to forecasters based on past 476 predictive performance and characteristics of one's forecast that may suggest improved or weakened accuracy. 477 Human judgement forecasting of progress towards a vaccine can be viewed as a tool to support primary 478 preventative measures against an infectious agent. Probabilistic forecasts can target multiple audiences 479 to support the public when making complex decisions about their health under uncertainty and support 480 both short term and long-term health promotion practices implemented by public health officials. Because 481 vaccination is a low frequency, voluntary event, forecasts did not aim to modify the public's sense of control 482 or desire to engage in inoculation. Instead, forecasts were made easily accessible online and aimed to help 483 ready individuals at all risk levels for vaccination and understand the impact of their decisions on their own 484 and on other's health. Predictions from a linear pool of the efficacy, safety, and timing of a vaccine may 485 have been accurate enough to improve situational awareness for public health officials. 486 V. ACKNOWLEDGMENTS 487 We wish to acknowledge the trained forecasters and experts who dedicated their time and energy to support 488 public health decision making.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF13": {
+            "text": "(A.) A linear pool predictive density made in June, 2020 of the date when a COVID-19 vaccine will demonstrate an efficacy of 70% or greater. The linear pool assigned a 0.12 probability to a vaccine showing a 70% or greater efficacy by Dec. 10, 2020, the date the Pfizer and BioNTech vaccine was approved. (B.) A linear pool predictive density made in June, 2020 of the efficacy reported from the trial testing the ChAdOx1 vaccine (C.) A linear pool predictive density made in July, 2020, of the efficacy of a vaccine based on four different platforms (D.) A linear pool predictive density made in August, 2020 of the efficacy of a vaccine at approval under a standard regulatory process and emergency use authorization. Under each predictive density is the corresponding 10th, 25th, 50th (median), 75th, and 90th quantile. The true values, if available, are represented as a filled circle. A linear pool of experts and trained forecasters made probabilistic predictions that compared vaccine efficacy between different regulatory mechanisms and between different vaccine delivery methods, gave a time-frame for when an efficacious vaccine will be approved, and made a testable prediction of the efficacy of a specific trial of interest.FIG. 2: (A.) A linear pool predictive density made in June, 2020 over dates for when a COVID-19 therapy will show a significant survival benefit in a randomized clinical trial enrolling more than 200 patients. (B.) Linear pool predictive densities made in Aug., 2020 over dates when a SARS-CoV-2 vaccine will show a significant survival benefit in a randomized control trial enrolling more than 200 patients across three different viral platforms. Below each density is the 10 th , 25 th , 50 th (median), 75 th , and 90 th percentile. True values, if available, are represented as a filled circle. The linear pool was uncertain when a vaccine would show a survival benefit, assigning 80% confidence intervals that spanned close to two years for when a COVID-19 therapy would show a benefit. FIG. 3: (A.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF14": {
+            "text": "(A.) A linear pool cumulative predictive density of trained forecasters and experts over dates for when an approved SARS-CoV-2 vaccine in the US or European Union will be administered to more than 100,000 people. (B.) Linear pool cumulative predictive densities of the number of weeks after approval needed to manufacture 100,000,000 doses of a vaccine using a DNA/RNA platform (purple dashed line) and a vaccine using a viral vector platform (red solid line).FIG. 5: Logarithmic scores stratified by questions related to safety, efficacy, the timing of vaccine approval, and production and delivery for individual forecasters and three linear pool distributions: a linear pool of experts, linear pool of trained forecasters, and linear pool of both experts and trained forecasters. The median scores between individuals and linear pool predictions are similar. The interquartile range of scores for the linear pool predictions is, for each question category, inside the interquartile range of scores for individual forecasters. Linear pool distributions did not have statistically different scores compared to individual forecasters, though linear pool scores had smaller variability.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF15": {
+            "text": "Angel N Desai and Payal Patel. Stopping the spread of covid-19. Jama, 323(15):1516-1516, 2020. Renyi Zhang, Yixin Li, Annie L Zhang, Yuan Wang, and Mario J Molina. Identifying airborne transmission as 493 the dominant route for the spread of covid-19. Proceedings of the National Academy of Sciences, Ian F Miller, Alexander D Becker, Bryan T Grenfell, and C Jessica E Metcalf. Disease and healthcare burden 496 of covid-19 in the united states. Nature Medicine, 26(8):1212-1217, 2020. Marissa G Baker, Trevor K Peckham, and Noah S Seixas. Estimating the burden of united states workers exposed 498 to infection or disease: a key factor in containing risk of covid-19 infection. PloS one, 15(4):e0232452, 2020. Mohamed Hassany, Wael Abdel-Razek, Noha Asem, Mohamed AbdAllah, and Hala Zaid. Estimation of covid-19 500 burden in egypt. The Lancet Infectious Diseases, 20(8):896-897, 2020. Oecd economic outlook, interim report, march 2021. https://www.oecd-ilibrary.org/economics/oecd-econo 502 mic-outlook/volume-2020/issue-2 34bfd999-en. Nikolaos G Papadopoulos, Adnan Custovic, Antoine Deschildre, Alexander G Mathioudakis, Wanda 504 Phipatanakul, Gary Wong, Paraskevi Xepapadaki, Ioana Agache, Leonard Bacharier, Matteo Bonini, et al. 505 Impact of covid-19 on pediatric asthma: practice adjustments and disease burden. The Journal of Allergy and 506 Clinical Immunology: In Practice, Nicholas G Davies, Petra Klepac, Yang Liu, Kiesha Prem, Mark Jit, and Rosalind M Eggo. Age-dependent 510 effects in the transmission and control of covid-19 epidemics. Nature medicine, 26(8):1205-1211, 2020. 511 [10] Andrew Atkeson. What will be the economic impact of covid-19 in the us? rough estimates of disease scenarios. 512 Technical report, National Bureau of Economic Research, 2020. 513 [11] Felipe Ornell, Jaqueline B Schuch, Anne O Sordi, and Felix Henrique Paim Kessler. \"pandemic fear\" and 514 covid-19: mental health burden and strategies. Brazilian Journal of Psychiatry, 42(3):232-235, 2020. 515 [12] Cato T Laurencin and Aneesah McClinton. The covid-19 pandemic: a call to action to identify and address 516 racial and ethnic disparities. Journal of racial and ethnic health disparities, 7(3):398-402, 2020. 517 [13] Amirhossein Hessami, Amir Shamshirian, Keyvan Heydari, Fatemeh Pourali, Reza Alizadeh-Navaei, Mahmood 518 Moosazadeh, Saeed Abrotan, Layla Shojaei, Sogol Sedighi, Danial Shamshirian, et al. Cardiovascular diseases 519 burden in covid-19: Systematic review and meta-analysis. The American journal of emergency medicine, 2020. 520 [14] Adrian Diaz, Benjamin A Sarac, Anna R Schoenbrunner, Jeffrey E Janis, and Timothy M Pawlik. Elective 521 surgery in the time of covid-19. The American Journal of Surgery, 2020.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF16": {
+            "text": ". S6: The Metaculus prediction interface which presents background information, the question, and resolution criteria to the forecaster. Forecasters can use a mixture of five logistic distributions to form their prediction, and optionally leave comments.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF17": {
+            "text": "FIG. S8: An example email sent to subject matter experts and trained forecasters signaling new questions were available to forecast. Forecasters were given a summary of the questions and line list of each question. Questions contained hyperlinks that, when clicked, directed the forecaster to the forecasting platform and the corresponding question. Forecasters were told up until what time predictions could be submitted and the dates when the linear pool prediction would could be observed. The email ended by reiterating forecasters could direct questions and feedback to the authors.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF18": {
+            "text": "showed trained forecasters made more accurate predictions about vaccine efficacy, the number 761 of potential vaccine candidates, and the difference in efficacies between a vaccine approved through an 762 emergency process versus standard process while subject matter experts outperformed trained forecasters 763 on questions about the timing of approval and safety of a vaccine(Fig. S12 and Fig. S13). Linear pool 764 predictions were never the least accurate nor the most accurate forecasts for all questions.765 A linear pool of trained forecasters plus subject matter experts scored above the 50 th percentile for 9/15 766 questions while a trained forecaster linear pool scored above the 50 th percentile on 10/15 questions with 767 ground truth and an expert only linear pool scored above the 50 th percentile on 5/15 questions with ground 768 truth (See supplemental",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "and received 120 predictions A vaccine candidate was approved for use in the US or European Union on Dec. 21, 2020 [95]. The linear pool median prediction made on June 30, 2020 for when a SARS-CoV-2 vaccine will be approved-either under a standard regulatory process or an emergency use authorization-in either the US or the European Union was May, 2021 (80CI: [Nov., 2020, Aug., 2022]) and the median prediction, made one month later, on July 31, 2020 was April, 2021 (80CI: [Oct., 2020, July, 2022]) (Fig. 3A.). A vaccine candidate was approved for use in the US or European Union under an emergency authorization on Dec. 10, 2020 [31] and under a standard approval process on Dec. 21, 2020 [95]. The linear pool median prediction made in August, 2020 of when a SARS-CoV-2 vaccine would be approved in the US or EU and under an emergency use authorization was Feb., 2021 (80CI: [Sept., 2020, Sept., 2022]) (Fig. 3B. red). Under a standard regulatory process the linear pool median prediction made in August, 2020 of when 335 a SARS-CoV-2 vaccine would be approved was July, 2021 (80CI: [Dec.,2020, Oct., 2022]) (Fig. 3B. blue). A vaccine candidate was approved for use specifically in the US under an emergency authorization on Dec. 10, 2020 [31] and under a standard approval process on Aug. 23, 2021 [96]. The linear pool prediction madein September, 2020 of when a SARS-CoV-2 vaccine would be approved specifically in the US was Jan., 2021 (80CI: [Oct., 2020, Nov., 2021])(Fig. 3C. red), and under a standard approval process the median prediction",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "15] Clare Bambra, Ryan Riordan, John Ford, and Fiona Matthews. The covid-19 pandemic and health inequalities. Fernando P Polack, Stephen J Thomas, Nicholas Kitchin, Judith Absalon, Alejandra Gurtman, Stephen Lockhart, John L Perez, Gonzalo P\u00e9rez Marc, Edson D Moreira, Cristiano Zerbini, et al. Safety and efficacy of the Lindsey R Baden, Hana M El Sahly, Brandon Essink, Karen Kotloff, Sharon Frey, Rick Novak, David Diemert, Stephen A Spector, Nadine Rouphael, C Buddy Creech, et al. Efficacy and safety of the mrna-1273 sars-cov-2 //www.nsf.gov/awardsearch/showAward?AWD ID=2030015.[42] Tilmann Gneiting and Adrian E Raftery. Strictly proper scoring rules, prediction, and estimation. Journal of",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "List of all questions stratified by survey.QuestionTrue value When will the first SARS-CoV-2 vaccine to be approved in the US or EU be administered to >100K people? Jan. 19, 2021",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "A list of all fifteen questions to date to have ground truth data available. Total predictions with ground truth data Number of forecasters",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "A summary of the number of predictions with ground truth data stratified by expert, non-expert, and linear pool model.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

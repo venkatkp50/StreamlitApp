@@ -1,0 +1,3835 @@
+{
+    "paper_id": "0b60bf4e257f1be538dcacc5ef25b366df66a715",
+    "metadata": {
+        "title": "Priority setting in the Brazilian emergency medical service: a multi-criteria decision analysis (MCDA)",
+        "authors": [
+            {
+                "first": "Talita",
+                "middle": [
+                    "D C"
+                ],
+                "last": "Fraz\u00e3o",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ana",
+                "middle": [
+                    "F A Dos"
+                ],
+                "last": "Santos",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Deyse",
+                "middle": [
+                    "G G"
+                ],
+                "last": "Camilo",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jo\u00e3o",
+                "middle": [],
+                "last": "Flor\u00eancio Da Costa J\u00fanior",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ricardo",
+                "middle": [
+                    "P"
+                ],
+                "last": "De Souza",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Despite the proven value of multicriteria decision analysis in the health field, there is a lack of studies focused on prioritising victims in the Emergency Medical Service, EMS. With this, and knowing that the decision maker needs a direction on which choice may be the most appropriate, based on different and often conflicting criteria. The current work developed a new model for prioritizing victims of SAMU/192, based on the multicriteria decision methodology, taking into account the scarcity of resources.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Methods: An expert panel and a discussion group were formed, which defined the limits of the problem, and identified the evaluation criteria for choosing a victim, amongst four alternatives illustrated from hypothetical scenarios of emergency situations-clinical and traumatic diseases of absolute priority. For prioritization, an additive mathematical method was used that aggregates criteria in a flexible and interactive version, FITradeoff.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The structuring of the problem led the researchers to identify twenty-five evaluation criteria, amongst which ten were essential to guide decisions. As a result, in the simulation of prioritization of four requesting victims in view of the availability of only one ambulance, the proposed model supported the decision by suggesting the prioritization of one of the victims.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "This work contributed to the prioritization of victims using multicriteria decision support methodology. Selecting and weighing the criteria in this study indicated that the protocols that guide regulatory physicians do not consider all the criteria for prioritizing victims in an environment of scarcity of resources. Finally, the proposed model can support crucial decision based on a rational and transparent decision-making process that can be applied in other EMS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "decision-makers to address this issue more directly than in the past [16] .",
+            "cite_spans": [
+                {
+                    "start": 69,
+                    "end": 73,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Despite the proven value of MCDA's support in the health field, no models were found that used a multicriteria method to assist in prioritizing victims' decisions at Emergency Medical Services, EMS. This is one of the most important health services, as it plays a vital role in saving people's lives and reducing the rate of mortality and morbidity [17] .",
+            "cite_spans": [
+                {
+                    "start": 349,
+                    "end": 353,
+                    "text": "[17]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Despite the fact that the importance and sensitivity of decision-making in the field of EMS has been recognized by Operations Research scientists, emergency medical planners and health professionals who have studied strategic, tactical and operational problems for EMS since the 1960s [18] , only monitoring, forecasting and location problems have been widely discussed [19] [20] [21] [22] [23] . Carvalho et al. [24] presents two generic approaches to optimize dispatch; and Belanger et al. [25] relocation decisions and thereby maximize the preparation of the system and a recursive simulation-optimization framework; however, it does not take into account fundamental criteria for the ambulance dispatch decision, such as those related to the victim's severity and conditions, leaving a gap in the literature.",
+            "cite_spans": [
+                {
+                    "start": 285,
+                    "end": 289,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 370,
+                    "end": 374,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 375,
+                    "end": 379,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 380,
+                    "end": 384,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 385,
+                    "end": 389,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 390,
+                    "end": 394,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 413,
+                    "end": 417,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 492,
+                    "end": 496,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In Brazil, the solution for these problems is still a manual task, with responsibility for the dispatch decision attributed to the regulating physicians of the Mobile Emergency Care Service, SAMU/192, which is the mobile prehospital component of the Emergency Care System and Brazilian emergencies, in municipalities and regions throughout the national territory. The model proposed by the present work supports the decision to prioritize victims of SAMU/192 regulating doctors, and focuses on the so-called level 1 (red code of absolute priority), since they have the highest number of occurrences. Thus, throughout the text we will use SAMU/192 as a term equivalent to the Brazilian EMS.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The SAMU/192 strategy for sending ambulances follows protocols that are formulated based on criteria related to the victim's severity level. Based on this information, generally, the victim who is closest to the available ambulance is treated. However, in an environment in which the demand exceeds the capacity of the available resources, a greatest number of attributes related to the alternatives ought to be evaluated; given that from a system overview, this decision can lead to a better area coverage, considering not only the immediate situation, but also possible future emergencies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "For instance, on considering two calls, in a scenario of scarcity of resources, in which the victims suffer from epileptic attacks [26, 27] ; after assessing the victim's health status, the regulatory physician (RP) classifies the call as Level 1, red code and authorizes the ambulance to be dispatched. However, only one ambulance is available to assist the victims. Given this scenario, when the regulatory protocols are not sufficient for the decision to prioritize victims, how to make the decision? What are the steps to be followed? Which victim to prioritize? When the protocol advises the ambulance to be sent and the doctor does not have the resources to care for the victims, what criteria would be used to assist this decision? The prioritization of victims must be carried out, making use of guiding criteria (protocols -dealing with criteria related to the victim's health status) and criteria that influence the decision-making process (criteria related to the health system; support tools; victims' details and external factors).",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 135,
+                    "text": "[26,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 136,
+                    "end": 139,
+                    "text": "27]",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In such cases, which involve different criteria, the use of the multicriteria model developed will bring greater clarity, transparency and rationality, maximizing the benefit and minimizing the risk in the SAMU/192 environment. Hence, the current study presented the dispatch problem as a decision to prioritize victims and developed a new model for prioritizing victims of SAMU/192, in an environment of scarcity of resources based on multicriteria decision support methodology. The analysis and structuring of the problem revealed important criteria in the field of EMS. Mathematical modeling, with FITradeoff, suggested the best alternative amongst those analysed. It is believed that the proposed model could improve the efficiency of victim prioritization in the context of SAMU/192.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "A multicriteria decision problem occurs when the Decision Maker, DM, an individual over whom power and responsibility over the decision are attributed, is faced with a situation with at least two alternatives for action, so that choice between the courses of action available is driven by the desire to meet multiple objectives, conflicting with each other [28] [29] [30] .",
+            "cite_spans": [
+                {
+                    "start": 357,
+                    "end": 361,
+                    "text": "[28]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 362,
+                    "end": 366,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 367,
+                    "end": 371,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria decision"
+        },
+        {
+            "text": "Before selecting and implementing any MCDA method, the limits of the problem to be addressed should be defined, given that the better the problem is defined, the more accurate the analysis result will be [31, 32] . This can be achieved by reviewing the literature on decisionmaking criteria, conducting qualitative research, and consulting experts [3] .",
+            "cite_spans": [
+                {
+                    "start": 204,
+                    "end": 208,
+                    "text": "[31,",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 209,
+                    "end": 212,
+                    "text": "32]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 348,
+                    "end": 351,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria decision"
+        },
+        {
+            "text": "As long as the problem was pre-defined, the objectives and criteria to assist in decision making were identified, and the decision maker's rationality established, a multicriteria assessment method can be chosen to meet the conditions and needs to address the problem [29, 33] .",
+            "cite_spans": [
+                {
+                    "start": 268,
+                    "end": 272,
+                    "text": "[29,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 273,
+                    "end": 276,
+                    "text": "33]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria decision"
+        },
+        {
+            "text": "An additive model for aggregation uses a single synthesis criterion MCDA method, which presents as the main characteristic the aggregation of multiple criteria in a single synthesis [29] , thus being situated in the context of compensatory rationality. In such model, uncertainty is considered in obtaining the vector of consequences x for each alternative a.",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 186,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria model of deterministic additive aggregation"
+        },
+        {
+            "text": "For the problem of choice, which defines the class of problems in which the objective is to support the decision through the choice of a subset of the action space, the solution of the additive model consists in the selection of the alternative that presents the highest global value v(a) [30] . As the contribution of the additive model to the single criteria methods of synthesis lies in the process of aggregating the criteria, in these methods the evaluation of the alternatives is carried out through the value function defined on the consequences, considering that each alternative is associated with a consequence vector x [29] .",
+            "cite_spans": [
+                {
+                    "start": 289,
+                    "end": 293,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 630,
+                    "end": 634,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria model of deterministic additive aggregation"
+        },
+        {
+            "text": "The greatest difficulty faced by the multicriteria decision support methodology lies in the evaluation and modelling of preferences [30] . However, preferences can be modelled by rules and logical relations [34] [35] [36] .",
+            "cite_spans": [
+                {
+                    "start": 132,
+                    "end": 136,
+                    "text": "[30]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 207,
+                    "end": 211,
+                    "text": "[34]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 212,
+                    "end": 216,
+                    "text": "[35]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 217,
+                    "end": 221,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria model of deterministic additive aggregation"
+        },
+        {
+            "text": "With the knowledge about the preferences of the decision maker, a problem can be solved based on the additive model, being necessary two types of evaluation: the intracriteria and the intercriteria. The intracriteria evaluation aims to evaluate each alternative i for each criterion j, which leads to the value function v j (a i ) , the construction of the value function for each element is based on the evaluation of the consequences to be obtained. In the Intercriteria evaluation with the information v j (a i ) , the information that considers the combination of the different criteria is sought, and to find it, it is necessary to choose a method of aggregating criteria [29] . When the criteria are represented by different units, it is necessary to normalize these values, so that they are redefined on a scale from 0 to 1. Prior to the final recommendation, sensitivity analyses can be carried out to investigate whether the preliminary conclusions are robust or whether they are sensitive to changes in aspects of the model [32] .",
+            "cite_spans": [
+                {
+                    "start": 677,
+                    "end": 681,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1034,
+                    "end": 1038,
+                    "text": "[32]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Multicriteria model of deterministic additive aggregation"
+        },
+        {
+            "text": "Almeida et al. [37] proposed the Flexible and Interactive Tradeoff, FITradeoff method to address the problem of eliciting scale constants, which will occasionally be referenced also by criteria weights. In FITradeoff the scaling of the scale constants is based on the tradeoff procedure in which the values tradeoff are to be achieved, which is defined by the moment when the decision maker is indifferent to two consequences and you can be willing to exchange them [29, 37] . This procedure is adopted in the Tradeoff method [38, 39] , which makes FITradeoff to be considered an extension of this.",
+            "cite_spans": [
+                {
+                    "start": 15,
+                    "end": 19,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 466,
+                    "end": 470,
+                    "text": "[29,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 471,
+                    "end": 474,
+                    "text": "37]",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 526,
+                    "end": 530,
+                    "text": "[38,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 531,
+                    "end": 534,
+                    "text": "39]",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "FITradeoff"
+        },
+        {
+            "text": "In compensatory methods, the DM considers the compensations by criterion when comparing the alternative consequences [38, 39] . Operationalization through the Decision Support System (DSS), includes the following steps: 1. Intracriteria assessment; 2. Classification of criteria weights; 2.1. Attempt to solve the problem using the set of weights available; 3. The DM's preferences are evaluated to arrive at the results [37] .",
+            "cite_spans": [
+                {
+                    "start": 117,
+                    "end": 121,
+                    "text": "[38,",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 122,
+                    "end": 125,
+                    "text": "39]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 421,
+                    "end": 425,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "FITradeoff"
+        },
+        {
+            "text": "The first part allows the weight space to be defined. Subsequently, the second part is started, it is possible to see the difference between the procedure and the traditional model, the DM is not required to define an exact value of (x i l ) , which denotes the result of the i criterion for which indifference is obtained between consequences, whereas the traditional method requires this procedure.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "FITradeoff"
+        },
+        {
+            "text": "If the solution is not found, then the third stage begins, that is, that of assessing the preferences of the DM that can be divided into four stages: 3.1. Define values to test the weight distribution; 3.2. Asking the DM to indicate their preferences; 3.3. LPP computing; and 3.4. Finalization. Upon completion, these four steps constitute the main stage of FITradeoff. Thus, the objective is to find an alternative, based on the vector of the alternatives, which has the maximum value according to the weight of the criteria space [40] . Therefore, LPP is performed until an ideal alternative is found. If it does not occur, the dominated alternatives are eliminated and the process is started again, starting from step 3.1. Now, only the alternatives identified as potentially optimal are considered in the subsequent steps, otherwise the process is finalized [37] . In the finalization step, the weight ranges supporting the solution are computed and produced in a report with the final recommendation.",
+            "cite_spans": [
+                {
+                    "start": 532,
+                    "end": 536,
+                    "text": "[40]",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 862,
+                    "end": 866,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "FITradeoff"
+        },
+        {
+            "text": "The current research is based on the specialized knowledge of representatives of the nine states of the Northeast Region of Brazil, which is composed of nine states: Alagoas, Bahia, Cear\u00e1, Maranh\u00e3o, Para\u00edba, Pernambuco, Piau\u00ed, Rio Grande do Norte and Sergipe. An expert panel was formed by fourteen medical regulators who contributed to the structuring of the decision problem through semi-structured questionnaires. Carrying out the structuring phase with a varied group of stakeholders, makes the process more robust, as it provides a common view of the problem and allows the integration of different perspectives [41] .",
+            "cite_spans": [
+                {
+                    "start": 617,
+                    "end": 621,
+                    "text": "[41]",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study location and decision-making actors"
+        },
+        {
+            "text": "The observations and discussion meetings took place at SAMU/Natal in Rio Grande do Norte, RN, with a discussion group formed by the General Director, the Medical Coordinator, the Regulation Coordinator and one of the most experienced on-call chiefs at the regulation centre. Everyone could express their preferences in relation to the cases presented. The decision maker appointed was the General Director of SAMU/Natal-RN, who is also a regulatory physician. An analyst mediated the decisionmaking process, thus making unnecessary to use techniques to reach a consensual position amongst the group members. Other stakeholders were selected based on simultaneous participation throughout the study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Study location and decision-making actors"
+        },
+        {
+            "text": "Throughout the development of the multicriteria decision model, the entire path from the call to the victim's transport to a health unit was completely mapped, as no information important to the decision, which occurs in real time, could be disregarded.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Regulatory physicians' general decision aspects"
+        },
+        {
+            "text": "Assistance to victims begins with the telephone call, when guidance is provided on the first actions. The call is answered by medical regulation assistant technicians \"MRAT\" who identify the emergency and collect the first information about the victims and their location [42] . After the reception and identification of the calls, requests are judged by the Regulatory Physician, RP, who classifies the level of urgency of each call, defining the necessary resource for their adequate attendance, which can involve from a simple medical advice to the activation of a Radio Operator, RO, who will activate the nearest or most appropriate ambulance, depending on the severity of the situation. After the on-site assessment, the patient will be transported safely to the health services. As shown in Fig. 1 .",
+            "cite_spans": [
+                {
+                    "start": 272,
+                    "end": 276,
+                    "text": "[42]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 798,
+                    "end": 804,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Regulatory physicians' general decision aspects"
+        },
+        {
+            "text": "SAMU functioning is presented on Fig. 1 . The current research follows three main phases: the decision problem is structured and, after selecting the MCDA method, preference modelling is carried out.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 33,
+                    "end": 39,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Regulatory physicians' general decision aspects"
+        },
+        {
+            "text": "Two meetings were held at the SAMU/192 Natal Regulation Centre within a six months interval \"April to October 2018\" with a discussion group. As a result, the delimitation of the decision problem began, definition of the panel of experts and the alternatives were established as: (1) four victims, and (2) four cases (two clinical and two traumas) were selected, classified as Level 1 , red code. The choice of topics was based on the SAMU/192 service history. When analysing a sample of historical data from 2015 to 2018, chosen for convenience, the results revealed the clinical and trauma cases as the most representative specialties, as together they account for 84.77 % of the total number of diagnoses. The cases were prepared based on the literature and on the experience of the regulating physicians at the Natal-RN Regulation Centre [43] .",
+            "cite_spans": [
+                {
+                    "start": 841,
+                    "end": 845,
+                    "text": "[43]",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Structuring the decision problem Problem, objective and alternatives of the MCDA model"
+        },
+        {
+            "text": "To identify the evaluation criteria, a mainly qualitative approach was chosen as being more appropriate to the exploratory nature of the study and to address the research question, maximizing credibility, reliability and the findings confirmation. The qualitative research instruments that were employed in this phase included observations, document review, open and semi-structured interviews. The combination of such instruments enabled the most complete and multifaceted examination [44] .",
+            "cite_spans": [
+                {
+                    "start": 486,
+                    "end": 490,
+                    "text": "[44]",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "Observations and open interviews The non-participant field observation of the daily work practices of the professionals at the SAMU/Natal-RN regulation centre had a greater focus on Regulatory Physicians, RPs. The objective of this initial stage of data collection was to gain an understanding of the organizational context and the decision making of the RPs in practice.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "The observation involved conducting open interviews with a number of key Regulatory Central employees (n = 30) to provide an overview of the organization and service delivery (between December 2018 and June 2019). Such individuals included coordinators and medical regulators, whose functions alternated between operational and leadership management. Although the character of the observations was non-participant, the open interviews aimed to capture internal and external perspectives on regulation and systemic influences [45] . Throughout the open interviews it was collected: (1) key demographic information; (2) relevant documentation dealing with policies and procedures; and (3) the empirical experience of the of EMSs victims' prioritization decision. The data collected in the observations and open interviews were part of the necessary framework for the elaboration of the semi-structured interview, allowing the identification of twenty-one decision criteria that were categorized in five dimensions: (1) health system; (2) healthcare tools; (3) victims' profile; (4) victim's health status; and (5) external factors.",
+            "cite_spans": [
+                {
+                    "start": 525,
+                    "end": 529,
+                    "text": "[45]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "Document review The protocols for basic and advanced life support used in the context of the organizational environment were examined [46, 47] together with the pre-established criteria by the support system of the central regulation, the latter being used for the investigation of the presumed severity, during the call. With the analysis of such documents, four of the six criteria related to the victim's health were extracted. At the end of this stage, amongst the data collected, there were twenty-five decision criteria for the problem of prioritizing victims, subdivided into five dimensions. These data were presented to the discussion group, in a meeting, in which it was agreed that such criteria would undergo a review and a second validation.",
+            "cite_spans": [
+                {
+                    "start": 134,
+                    "end": 138,
+                    "text": "[46,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 139,
+                    "end": 142,
+                    "text": "47]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "Semi-structured interviews The final step in selecting the criteria involved conducting semi-structured interviews with SAMU representatives from the nine states in the Northeast Region in Brazil. An online questionnaire was developed based on the data collected in the observation process, in the open interviews and in the document review (see Additional file 1). A total of fourteen medical specialists participated; amongst them eleven were in leadership positions and had between five to ten years of experience in emergency medical regulation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "Regarding the questionnaire, the presentation of the questions was preceded by the central problem presentation to the participants: a scenario in which doctors receive three calls with the same characteristics, three victims who complain of pain, and to answer them they have only one ambulance is available. There was also the observation that cases should be treated as an urgent priority. After this introduction, doctors were presented with two questions, one that presented the criteria and another discursive question. The first questions stated: What do you need to know to make the decision? What can influence this decision, knowing the protocol advises the dispatch, even though resources are scarce? Mark all the options you need to make this decision, check as many as needed. The second questions asked: At the time of the decision, based on your experience and skills, could any other criterion or dimension not present in the protocols or in this questionnaire be added?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "For the multicriteria method selection, the basic preference situations were observed, mainly to support the decision maker's preference modelling, as well as the rationality considered by him to the context under study [36] . The decision support system (DSS) that accompanies FITradeoff was also an important aspect for the selection, as it was built under a concept of flexible elicitation that requires less cognitive effort from the decision-maker because it requires reduced information, without the need for indifference adjustments between its consequences. Thus, it becomes easier for the decision maker to make comparisons of results based on strict preferences and not on indifference [37] .",
+            "cite_spans": [
+                {
+                    "start": 220,
+                    "end": 224,
+                    "text": "[36]",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 696,
+                    "end": 700,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "MCDA method selection"
+        },
+        {
+            "text": "Once the criteria list was defined as well as their corresponding scale constants, the intracriteria evaluation was performed, obtaining the functions of value v i (x i ) for each criterion i which, in turn, enabled the construction of the decision matrix. Afterwards, the data from the previous stage were analysed in a discussion group meeting; the decision maker's preference was considered linear for all criteria [48] . For the standardization procedure applied in this work, the scale is from 0 to 1, in which 0 and 1 represent, respectively, the minimum and maximum values of the performances in the criterion [37] . The intercriteria evaluation was carried out using the FITradeoff multicriteria method, in the FITradeoff software for the additive model of choice with sensitivity analysis, (FU-T1EEMO-CT1).",
+            "cite_spans": [
+                {
+                    "start": 418,
+                    "end": 422,
+                    "text": "[48]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 617,
+                    "end": 621,
+                    "text": "[37]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "Sensitivity analyses were also performed with all the criteria in order to examine the robustness of the selection and to identify possible weight sensitive criteria. The percentage values for variation of the criteria were \u221220 % and +20%. The consequence value of each alternative j of the problem for the criterion i assumed a value Sj, i such that pj, i * (0, 8) \u2264 Sj, i \u2264 pj, i * (1, 2) , where pj, i corresponds to its nominal value (value of the original consequence matrix). To maintain the original limits of the consequence space, the SAD verifies the minimum value of the consequence space generated in the Sensitivity Analysis cycle and assigns the minimum nominal value to it. The same is done for the maximum nominal value.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 384,
+                    "end": 390,
+                    "text": "(1, 2)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "Based on the objective of prioritizing victims, the main issue is the choice of which victim to attend first. To this end, the alternatives presented were illustrated based on four occurrence scenarios that brought physicians the main points of pre-hospital care in emergency situations and clinical and traumatic emergencies, these classified as emergencies of absolute priority. The Table 1 presents description of the alternatives presented to the professionals.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 385,
+                    "end": 392,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Structuring the decision problem Problem, objective and the MCDA model alternatives"
+        },
+        {
+            "text": "The description of the alternatives presented can be seen in Table 1 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 61,
+                    "end": 68,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Structuring the decision problem Problem, objective and the MCDA model alternatives"
+        },
+        {
+            "text": "After the observation period, open interviews and document review, it was concluded that the information investigated by the regulating physicians with the potential to influence at the time of the call may be of the following different types:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "1. Criteria related to the Health System: access to the doctor, access to the bed, and support from security agencies; 2. Criteria related to Support Tools: location of the ambulance, access to the assistance system, access to support material; Decision criteria evaluated by the group of experts, of the semi-structured interviews, is presented in Fig. 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 349,
+                    "end": 355,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "The results of the semi-structured interviews sent to the panel of experts are presented in Fig. 2 , in which it can be observed that the three main ones are related to the victim's health status, followed by access criteria and the victim's location. Willingness, refusal, sex, health insurance and access to the bed, in most cases, are not priority information for specialists. The other criteria can be considered important in a decision to prioritize victims as the doctors have shown interest. The answers presented in the second question indicate that the experts agreed with the classes of criteria presented and did not add any other to the list.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 92,
+                    "end": 98,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Rating criteria"
+        },
+        {
+            "text": "For the cases under evaluation, the discussion group agreed that the list would be complete if it contemplated the ten criteria described in the Tables 2 and 3.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Selected criteria"
+        },
+        {
+            "text": "The final list of criteria related to the victim's health is shown in Table 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 70,
+                    "end": 77,
+                    "text": "Table 2",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Selected criteria"
+        },
+        {
+            "text": "Access to the service system and support material was considered to be available and would not influence the decision. Regarding the time of the requests, it was Social commotion It would be the discontent or outrage resulting from the victim's situation. If the people close to the victim who are awaiting service insistently return the call to the regulatory center, requesting immediate service. If the victim is exposed to any weather conditions that are more intense They are on a verbal scale, ranging from 1 to 4. Where 1 means none and 4 means high (none, low, medium, high). A higher value is preferable to a lower value. (Maximization) pre-established that the calls were registered in the same time interval. Finally, with regard to willingness and refusal (to be attended), it was considered that both the family and the victim wanted care. The location of the ambulance, the intake of alcohol or drugs, the support of security agencies, access to the bed and the sex of the victim were not considered for the evaluation of the four applicants as the discussion group would not find these to be relevant criteria for the cases. The final list of criteria related to the victim and external factors is shown in Table 3 .",
+            "cite_spans": [
+                {
+                    "start": 631,
+                    "end": 645,
+                    "text": "(Maximization)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1222,
+                    "end": 1229,
+                    "text": "Table 3",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Selected criteria"
+        },
+        {
+            "text": "The other criteria were included in the model and to facilitate and streamline the decision-making process, those with similarities were grouped: the estimation of access to the victim's location took into account the difficulties of access created by both roads and vehicles (road traffic congestion + difficulty to reach address), the social commotion analysed information about popular indignation and the climatic conditions to which the victims were exposed and, finally, regarding the criterion of access to the doctor, the MR evaluated if the victim had any condition that would allow him to have access to the doctor safely (health plan + proper means of transportation). Amongst the ten selected criteria, eight are on a verbal scale ranging from 1 to 4.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Selected criteria"
+        },
+        {
+            "text": "The objective, criteria and alternatives of the proposed model are presented in Fig. 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 86,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Selected criteria"
+        },
+        {
+            "text": "The Fig. 3 presents the summary of the results found so far: the objective of the decision model, the ten criteria and the alternatives.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 4,
+                    "end": 10,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Selected criteria"
+        },
+        {
+            "text": "It was observed that the input information is aligned with the analysed method as the DSS operates with numerical inputs. Furthermore, the decision-maker presented compensatory rationality, in which it is admitted that there may be an absolute compensation between the different evaluations, given that the reality of the structured decision problem, a good performance in 'airways and oxygenation' can easily counterbalance a poor performance in 'victim's history' . This rationality profile is in line with that for the application of FITradeoff.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "MCDA method selected"
+        },
+        {
+            "text": "As the decision maker was able to make comparisons between pairs of consequences with strict preference and indifference relations, the preference structure (P,I) was sufficiently adequate for modelling the decision maker's preferences. As the approach of the single synthesis criteria methods does not accept that there may be good reasons to justify the incomparability between two alternatives, under this circumstance, it was admitted that the alternatives can be compared with each other, therefore, there is no presence of incomparability.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "MCDA method selected"
+        },
+        {
+            "text": "The Table 4 evaluated each alternative i for each criterion j, which led to a function of value v j (a i ) , corresponding to the intracriteria evaluation. The Table shows the format of the input data for the chosen multicriteria method. It was added information to the data on the classification of the criteria (whether continuous or discrete), the type of function that each criterion will assume. In the case of discrete criteria, it was necessary to inform the number of scale levels to be considered.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 4,
+                    "end": 11,
+                    "text": "Table 4",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "The decision matrix is shown in Table 4 . After structuring the problem considering an additive model, the data in the Table 4 were utilized and entered into the DSS. Subsequently, the FITradeoff steps were operationalized. After sorting the criteria (see Fig. 4 ), flexible elicitation started, and two questions to the decision maker were enough for a single solution to be found for the weight space. Figure 5 shows the two pairs of consequences presented to the decision maker, who in the first question preferred scenario A and in the second, B.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 32,
+                    "end": 39,
+                    "text": "Table 4",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 119,
+                    "end": 126,
+                    "text": "Table 4",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 256,
+                    "end": 262,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 404,
+                    "end": 412,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "The ordering of the criteria is shown in Fig. 4 . The pairs of consequences and the chosen scenarios are shown in Fig. 5 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 41,
+                    "end": 47,
+                    "text": "Fig. 4",
+                    "ref_id": null
+                },
+                {
+                    "start": 114,
+                    "end": 120,
+                    "text": "Fig. 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "The recommendation was to prioritize Victim 2. Figure 6 illustrates the departure of the DSS, presenting the space of viable weights for which Victim 2 is pointed out. The breadth of the value range demonstrates the robustness of the result in view of the variety of weights associated with the main criteria, in decreasing order, for which Victim 2 would still be pointed out.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 47,
+                    "end": 55,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "Weight ranges are shown in Fig. 6 . The weight range for each criterion is: Airways and oxygenation (0.75-0.1); State of consciousness (0.5-0.084); Pulse (0.333-0); Traumatization (0.25-0); Victim's health history (0.2-0); Access to the doctor (0.17-0); Access to the victim's location (0.14-0); Social commotion (0.13-0); Location (0.11-0); and Age (0.1-0). These weight ranges result from LPP models, considering maximum and minimum weights, subject to restrictions for the development alternatives.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 27,
+                    "end": 33,
+                    "text": "Fig. 6",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "The alternatives found during the performance of the sensitivity analysis are shown in Fig. 7 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 87,
+                    "end": 93,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "The Fig. 7 illustrates a graph with the alternatives that were present in the subset of potentially optimal alternatives during each cycle of Sensitivity Analysis. Among these alternatives, those that were also present in the original subset appear in blue. Those that were present in the subset in some sensitivity analysis cycle, but were not in the nominal subset, are shown in purple. It is also observed the impact of changes in the selected alternative, which suggests that Victim 2 remains consistently the most attractive alternative, whatever the assumed ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 4,
+                    "end": 10,
+                    "text": "Fig. 7",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Modelling preferences"
+        },
+        {
+            "text": "The present work has developed a multicriteria decision model to support the decision of the regulatory physicians, considering an environment of resources scarcity, whilst MCDA was not yet utilized to assist this type of decision. As a result of the analyses of the specialist doctors and discussion group, different dimensions of criteria were created, guiding criteria, as well as, those that influence the prioritization of victims were analysed and considered. This knowledge from regulatory protocols, and from the experience of specialists, can support the decisions of regulatory physicians who are still newcomers. The conclusions of Perona et al. [49] corroborate with our findings, as he stated that there is a difference in the processes of thinking and storing information between specialists and novices. It was also observed that the structuring of the problem facilitated the decision makers' learning and understanding about the problem faced, about their own priorities, values and objectives of other parties. The exploration of this context was able to guide them in the identification of a course of action, and made it possible to learn about the twenty-five evaluation criteria. However, for prioritization in the four cases presented, only ten would be necessary, which were criteria related to the victim's health status, the victim's details and external factors. These criteria do not invalidate the others, as they may be necessary in different contexts, for prioritization, for instance in a psychiatric case, the criterion \"support from security agencies\" will be part of the decision.",
+            "cite_spans": [
+                {
+                    "start": 657,
+                    "end": 661,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "After structuring the decision problem, the specialists analysed four cases. In this phase, the results indicated that the decision maker would be able to identify relations of preference and indifference between the pairs of consequences. In this decision making situation, it was found that the alternatives can be compared with each other, therefore, there is no presence of incomparability. The modelling of preferences performed with the multicriteria FITradeoff method, pointed at victim 2 as the best choice, a result that was supported by experts and decision makers. Thus, the flexible and interactive Tradeoff process proved to be effective for prioritizing victims in this context. This result attested that the model was well structured and that the method was adequate to the [29] explains that a decision model corresponds to a simplified formal representation of the problem faced, supported by a multicriteria method. Mathematically, the sensitivity analysis showed that Victim 2 has consistently remained the most attractive alternative, whatever the assumed value.",
+            "cite_spans": [
+                {
+                    "start": 789,
+                    "end": 793,
+                    "text": "[29]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "No studies were found using the MCDA to support decisions in this specific area involving the participation of medical specialists. The recent findings in the literature on decision-making in EMS focus on the following points? (1) managing ethical aspects of advance directives in emergency care services; (2) decision support for patient admission; (3) presentation of a structure that provides healthcare professionals with a just-in-time basis; and (4) exploration of the main challenges and barriers that affect clinical decision-making [49] [50] [51] [52] . In summary, these studies determine paramedics' decisionmaking styles, and also question how decision-making is carried out in this context [53] [54] [55] [56] [57] .",
+            "cite_spans": [
+                {
+                    "start": 541,
+                    "end": 545,
+                    "text": "[49]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 546,
+                    "end": 550,
+                    "text": "[50]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 551,
+                    "end": 555,
+                    "text": "[51]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 556,
+                    "end": 560,
+                    "text": "[52]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 703,
+                    "end": 707,
+                    "text": "[53]",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 708,
+                    "end": 712,
+                    "text": "[54]",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 713,
+                    "end": 717,
+                    "text": "[55]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 718,
+                    "end": 722,
+                    "text": "[56]",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 723,
+                    "end": 727,
+                    "text": "[57]",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Other quantitative studies question the idle dispatch policy and propose a multi-verse optimizer algorithm for repositioning ambulances in emergency medical services systems, for which states are defined based only on the locations of idle ambulances waiting at stations, and the occupied ambulance locations were approximated based on customer arrival rates [58, 59] . Furthermore, it could be mentioned other relevant works that seek solutions to localization problems [21] [22] [23] 25] .",
+            "cite_spans": [
+                {
+                    "start": 359,
+                    "end": 363,
+                    "text": "[58,",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 364,
+                    "end": 367,
+                    "text": "59]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 471,
+                    "end": 475,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 476,
+                    "end": 480,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 481,
+                    "end": 485,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 486,
+                    "end": 489,
+                    "text": "25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "These works focus on a single criterion and/or the methodology used is not adequate to take into account several criteria simultaneously when supporting the decision maker. Their analyses enrich the literature, however, the decision maker needs not only the analysis, but also, a direction on which choice may be the most appropriate, based on different and often conflicting criteria.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The present study has some limitations; for instance, the methodology is validated through only four cases analysis (two clinicians and two trauma victims). As a result, some criteria are left out of the model. New cases must be studied to validate the list of criteria and/or add new ones, necessary for similar or different cases.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Several performance dimensions can be considered when estimating victim prioritization criteria. These criteria may include the location of the ambulance, access to the doctor, the age and state of consciousness of the victim, as well as whether the case is characterized by social commotion. However, in the current study, it was not possible to determine a universal set of victim assessment criteria for a single model because each case has specific performance criteria.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "It was also observed that the majority of the evaluation criteria are common to all cases, although they are adapted to the special characteristics of different priorities (for instance, the meaning of access to the doctor may differ if the criterion refers to the health system and not the victim). This common set of criteria allows the development of a uniform evaluation structure as well as additional comparative analyses. However, there are some criteria that differ according to each case. For instance, the support attribute of security agencies would be a priority in cases of psychiatric emergency.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The model, if more evident, can then be used in planning, training and even online devices for decision making in this area. Here, the positive character of the methodology used is emphasized due to the possibility of revising the previous steps before making the recommendation to the decision maker.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Therefore, the flexibility of the MCDA process and the importance of the stage of structuring the problem are highlighted, considering its impact on the successor stages and its critical character regarding the application of the chosen method. In many cases, the efficacy of the multicriteria approach is due precisely to the discussions and a greater degree of understanding of the problem; given that the problem structuring phase has presented to all those involved, criteria unknown to the decision regulation protocols, albeit important for the regulating physicians.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Thus, it is evident that there is a vast field of research exploration for Multicriteria Decision Analysis in prioritizing victims of pre-hospital emergency care, improving the sector. Thus, future research is recommended to explore the efficiency of the model in different scenarios.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This work contributed significantly to the rational, transparent and impartial practice of prioritizing victims of SAMU/192, using the multicriteria methodology to support the decision making process. After the formalization of the model, reproducibility and validation seem to be possible, which are two important parameters when dealing with the challenge of regulating physicians' decisions.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Selecting the criteria in the current study led to the realization that the protocols that guide regulatory physicians do not take into account all the criteria for prioritizing victims in an environment of resource scarcity. The structuring of the problem made it possible to learn about twenty-five evaluation criteria. The prioritization of victims must be carried out, using criteria that guide (protocols) and criteria that influence the decision-making process. For mathematical modelling, the flexible and interactive tradeoff process proved effective for prioritizing victims.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Lastly, the current authors sustain, based on the evidence collected, that the developed model has the",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Assessing the value of healthcare interventions using multi-criteria decision analysis. A review of the literature",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Marsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lanitis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Neasham",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Orfanos",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Caro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Pharmacoeconomics",
+            "volume": "32",
+            "issn": "",
+            "pages": "345--65",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40273-014-0135-0"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Multiple criteria decision analysis for health care decision making-an introduction: report 1 of the ISPOR MCDA emerging good practices task force",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Thokala",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Devlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Marsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Baltussen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Boysen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kalo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Longrenn",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mussen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Peacock",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Watkins",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ijzerman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Value Health",
+            "volume": "19",
+            "issn": "1",
+            "pages": "1--13",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jval.2015.12.003"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Multicriteria decision analysis (MCDA) in health care: a systematic review of the main characteristics and methodological steps",
+            "authors": [
+                {
+                    "first": "Tdc",
+                    "middle": [],
+                    "last": "Fraz\u00e3o",
+                    "suffix": ""
+                },
+                {
+                    "first": "Dgg",
+                    "middle": [],
+                    "last": "Camilo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Els",
+                    "middle": [],
+                    "last": "Cabral",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Souza",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BMC Med Inform Decis Mak",
+            "volume": "1",
+            "issn": "",
+            "pages": "1--16",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12911-018-0663-1"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Multi-criteria decision analysis software in healthcare priority setting: a systematic review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Moreno-Calder\u00f3n",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Thokala",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40273-019-00863-9"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Making good decisions in healthcare with multi-criteria decision analysis: the use, current research and future development of MCDA. Appl Health Econ Health Policy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "M\u00fchlbacher",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kaczynski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "14",
+            "issn": "",
+            "pages": "29--40",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40258-015-0203-4"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Guidance toward the implementation of multicriteria decision analysis framework in developing countries",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Inotai",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hidayat",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Nurgozhin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Huy",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kiet",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Campbell",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "N\u00e9meth",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Maniadakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Brixner",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Wijaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Kal\u00f3",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Expert Rev Pharmacoecon Outcomes Res",
+            "volume": "18",
+            "issn": "6",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/14737167.2018.1508345"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "A novel VIKOR method with an application to multiple criteria decision analysis for hospital-based post-acute care within a highly complex uncertain environment",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Neural Comput Appl",
+            "volume": "31",
+            "issn": "",
+            "pages": "3969--99",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00521-017-3326-8"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Multi-criteria analysis in the health area: selection of the most appropriate triage system for the emergency care units in natal",
+            "authors": [
+                {
+                    "first": "Dgg",
+                    "middle": [],
+                    "last": "Camilo",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "De Souza",
+                    "suffix": ""
+                },
+                {
+                    "first": "Tdc",
+                    "middle": [],
+                    "last": "Fraz\u00e3o",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMC Med Inform Decis Mak",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12911-020-1054-y"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Convalescent-plasma-transfusion intelligent framework for rescuing COVID-19 patients across centralised/decentralised telemedicine hospitals based on AHP-group TOPSIS and matching component",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Al-Obaidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Larbani",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hadi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Appl Intell (Icci)",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10489-020-02169-2"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Detection-based prioritisation: framework of multi-laboratory characteristics for asymptomatic covid-19 carriers based on integrated entropy-topsis methods",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hamid",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Artif Intell Med",
+            "volume": "111",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.artmed.2020.101983"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Sentiment analysis and its applications in fighting COVID-19 and infectious diseases: a systematic review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Alamoodi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Malik",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Almahdi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chyad",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Tareq",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hameed",
+                    "suffix": ""
+                },
+                {
+                    "first": "Alaa",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Expert Syst Appl",
+            "volume": "167",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.eswa.2020.114155"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Helping doctors hasten covid-19 treatment: towards a rescue framework for the transfusion of best convalescent plasma to the most critical patients based on biological requirements via ml and novel MCDM methods",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Al-Obaidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Salih",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Qays",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dawood",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Abdulkareem",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aleesa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Alamoodi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chyad",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Zulkifli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Comput Methods Progr Biomed",
+            "volume": "196",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cmpb.2020.105617"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Multi-biological laboratory examination framework for the prioritization of patients with COVID-19 based on integrated AHP and group VIKOR methods",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Al-Obaidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hamid",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Alamoodi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hashim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Inf Technol Decis Mak",
+            "volume": "19",
+            "issn": "05",
+            "pages": "1247--69",
+            "other_ids": {
+                "DOI": [
+                    "10.1142/S0219622020500285"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Systematic review of artificial intelligence techniques in the detection and classification of COVID-19 medical images in terms of evaluation and benchmarking: taxonomy analysis, challenges, future solutions and methodological aspects",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Abdulkareem",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al-Qaysi",
+                    "middle": [],
+                    "last": "Zt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Alamoodi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aleesa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chyad",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Alesa",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kem",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lakulu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ibrahim",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rashid",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Infect Public Health",
+            "volume": "13",
+            "issn": "10",
+            "pages": "1381--96",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jiph.2020.06.028"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Role of biological data mining and machine learning techniques in detecting and diagnosing the novel coronavirus (COVID-19): a systematic review",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hamid",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Alwan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Al-Qays",
+                    "middle": [],
+                    "last": "Zt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Zaidan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aos",
+                    "middle": [],
+                    "last": "Albahri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Alamoodi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Khlaf",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Almahdi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Thabet",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Mohammed",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Alsalem",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Al-Obaidi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Madhloom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J Med Syst",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10916-020-01582-x"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Priority setting in health care: learning from international experience",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ham",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Health Policy",
+            "volume": "42",
+            "issn": "1",
+            "pages": "54--61",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0168-8510(97)00054-7"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Emergency medical services and beyond: Addressing new challenges through a wide literature review",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Aringhieri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bruni",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Khodaparasti",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Van Essen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Comput Oper Res",
+            "volume": "78",
+            "issn": "",
+            "pages": "349--68",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cor.2016.09.016"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Emergency medical services and beyond: addressing new challenges through a wide literature review",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Aringhieri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Bruni",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Khodaparasti",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Van Essen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Comput Oper Res",
+            "volume": "78",
+            "issn": "",
+            "pages": "349--68",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cor.2016.09.016"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Logistics for emergency medical service systems",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Reuter-Oppermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Van Den Berg",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Vile",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Health Syst",
+            "volume": "6",
+            "issn": "",
+            "pages": "187--208",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Recent optimization models and trends in location, relocation, and dispatching of emergency medical vehicles",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "B\u00e9langer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ruiz",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Soriano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur J Oper Res",
+            "volume": "272",
+            "issn": "1",
+            "pages": "1--23",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejor.2018.02.055"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Decision support for EMS policy making using data analytics and real-time alerts",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Reuter-Oppermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Richards",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Proceedings-2019 IEEE world congress on services",
+            "volume": "",
+            "issn": "",
+            "pages": "266--271",
+            "other_ids": {
+                "DOI": [
+                    "10.1109/SERVICES.2019.00079"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Using optimization to provide decision support for strategic emergency medical service planning-three case studies",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Andersson",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Granberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Christiansen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Aartun",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Leknes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Int J Med Inform",
+            "volume": "133",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijmedinf.2019.103975"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Integrating the ambulance dispatching and relocation problems to maximize system's preparedness",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Carvalho",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Captivo",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Marques",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur J Oper Res",
+            "volume": "283",
+            "issn": "3",
+            "pages": "1064--80",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejor.2019.11.056"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "A recursive simulation-optimization framework for the ambulance location and dispatching problem",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Belanger",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Lanzarone",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Nicoletta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ruiz",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Soriano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur J Oper Res",
+            "volume": "286",
+            "issn": "2",
+            "pages": "713--738",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejor.2020.03.041"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "A novel quick seizure detection and localization through brain data mining on ECoG dataset",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Siddiqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Islam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kabir",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Neural Comput Appl",
+            "volume": "31",
+            "issn": "9",
+            "pages": "5595--608",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00521-018-3381-9"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Machine learning based novel cost-sensitive seizure detection classifier for imbalanced EEG data sets",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Siddiqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Morales-Menendez",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hussain",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Khatoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Int J Interact Des Manuf",
+            "volume": "14",
+            "issn": "4",
+            "pages": "1491--509",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12008-020-00715-3"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Decisions with multiple objectives: preferences and value tradeoffs",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Keeney",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Raiffa",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Processo de decis\u00e3o nas organiza\u00e7\u00f5es: construindo modelos de decis\u00e3o multicrit\u00e9rio. S\u00e3o Pulo: Atlas",
+            "authors": [
+                {
+                    "first": "Adt",
+                    "middle": [],
+                    "last": "Almeida",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Multicriteria Methodology for Decision Aiding",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Roy",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "How to use multi-criteria decision analysis methods for reimbursement decision-making in healthcare: a step-by-step guide",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Diaby",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Goeree",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Expert Rev Pharmacoecon Outcomes Res",
+            "volume": "14",
+            "issn": "1",
+            "pages": "81--99",
+            "other_ids": {
+                "DOI": [
+                    "10.1586/14737167.2014.859525"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Multiple criteria decision: an integrated approach",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Belton",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Stewart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Multi-criteria clinical decision support",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dolan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Patient Patient Centered Outcomes Res",
+            "volume": "3",
+            "issn": "",
+            "pages": "229--277",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Methodologie multicritere D aide a la decision economica. Columbia: University of South Carolina Press",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Roy",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "179--201",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "An essay into a philosophy of MCDM: a way of thinking or another algorithm",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zeleny",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Comput Oper Res",
+            "volume": "7",
+            "issn": "19",
+            "pages": "563--569",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Tentative guidelines to help choosing an appropriate MCDA method",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Guitouni",
+                    "suffix": ""
+                },
+                {
+                    "first": "J-M",
+                    "middle": [],
+                    "last": "Martel",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Eur J Oper Res",
+            "volume": "109",
+            "issn": "2",
+            "pages": "73--76",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0377-2217(98)00073-3"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "A new method for elicitation of criteria weights in additive models: flexible and interactive tradeoff",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Almeida",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Almeida",
+                    "suffix": ""
+                },
+                {
+                    "first": "Apcs",
+                    "middle": [],
+                    "last": "Costa",
+                    "suffix": ""
+                },
+                {
+                    "first": "De",
+                    "middle": [],
+                    "last": "Almeida-Filho",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Eur J Oper Res",
+            "volume": "250",
+            "issn": "1",
+            "pages": "179--91",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejor.2015.08.058"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Value-focused thinking: a path to creative decision making",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Keeney",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Decisions with multiple objectives",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Keeney",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Raiffa",
+                    "suffix": ""
+                }
+            ],
+            "year": 1976,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "A model for selecting a strategic information system using the FITradeoff",
+            "authors": [
+                {
+                    "first": "Aph",
+                    "middle": [],
+                    "last": "Gusm\u00e3o",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Medeiros",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Multi-stakeholder decision aid for improved prioritization of the public health impact of climate sensitive infectious diseases",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Hongoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Michel",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gosselin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Samoura",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ravel",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Campagna",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Ciss\u00e1",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Waaub",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Int J Environ Res Public Health",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijerph13040419"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Servi\u00e7o de Atendimento M\u00f3vel de Urg\u00eancia",
+            "authors": [
+                {
+                    "first": "Brasil",
+                    "middle": [],
+                    "last": "Mds",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Manual De Atendimento Pr\u00e9-hospitalar",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Reis",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Martins",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Arruda",
+                    "suffix": ""
+                },
+                {
+                    "first": "Aom",
+                    "middle": [],
+                    "last": "Linhares",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "EDITORA SANAR",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Multiple triangulation and collaborative research using qualitative methods to explore decision making in prehospital emergency care",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "O&apos;hara",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hirst",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Weyman",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Turner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mason",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Quinn",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shewan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Siriwardena",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "BMC Med Res Methodol",
+            "volume": "17",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12874-017-0290-z"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Ethnography principles in practice",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hammersley",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Atkinson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Protocolos de Suporte Avan\u00e7ado de Vida",
+            "authors": [
+                {
+                    "first": "Brasil",
+                    "middle": [],
+                    "last": "Mds",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Protocolos de Suporte B\u00e1sico de Vida",
+            "authors": [
+                {
+                    "first": "Brasil",
+                    "middle": [],
+                    "last": "Mds",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "SMARTS and SMARTER: Improved simple methods for multiattribute utility measurement. Org Behav Human Decis Process",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Edwards",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Barron",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "",
+            "volume": "60",
+            "issn": "",
+            "pages": "306--331",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Paramedic judgement, decision-making and cognitive processing: a review of the literature",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Perona",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rahman",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Meara",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Aust J Paramed",
+            "volume": "16",
+            "issn": "",
+            "pages": "1--12",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Falc\u00f3-Pegueroles A. Managing ethical aspects of advance directives in emergency care services",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Poveda-Moral",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Rodr\u00edguez-Mart\u00edn",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Codern-Bov\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Jos\u00e9-Mar\u00eda",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "S\u00e1nchez-Valero",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Pomares-Quintana",
+                    "suffix": ""
+                },
+                {
+                    "first": "Vicente-Garc\u00eda",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Nurs Ethics",
+            "volume": "28",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0969733020952112"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Decision support for patient admission in case of suspicion of COVID-19: for use in the Bavarian ambulance service. Notfall Rettungsmedizin",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Thies",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Urban",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kraus",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kohlmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Niedermirtl",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pr\u00fcckner",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10049-021-00855-3"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Major challenges and barriers in clinical decision-making as perceived by emergency medical services personnel: a qualitative content analysis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bijani",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Abedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Karimi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Tehranineshat",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "BMC Emerg Med",
+            "volume": "21",
+            "issn": "1",
+            "pages": "1--12",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12873-021-00408-4"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Paramedic decision-making-how is it done?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Halliwell",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J Paramed Pract",
+            "volume": "42012",
+            "issn": "6",
+            "pages": "343--51",
+            "other_ids": {
+                "DOI": [
+                    "10.12968/jpar.2012.4.6.343"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "A survey to determine decision-making styles of working paramedics and student paramedics",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bienkowski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Travers",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Calder",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Walker",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tavares",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Croskerry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Can J Emerg Med",
+            "volume": "18",
+            "issn": "3",
+            "pages": "213--235",
+            "other_ids": {
+                "DOI": [
+                    "10.1017/cem.2015.95"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Prehospital trauma triage decision-making: a model of what happens between the 9-1-1 call and the hospital",
+            "authors": [
+                {
+                    "first": "Cmc",
+                    "middle": [],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Cushman",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Lerner",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Fisher",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Seplaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Veazie",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Wasserman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dozier",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Shah",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Prehospital resuscitation decision making: a model of ambulance personnel experiences, preparation and support",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Slark",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gott",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Emerg Med Aust",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1742-6723.13715"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "La urgencia bajo la lupa: una revisi\u00f3n de la producci\u00f3n cient\u00edfica sobre servicios de emergencia en hospitales desde la etnograf\u00eda. Cadernos Sa\u00fade P\u00fablica",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sy",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Moglia",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Aragunde",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Derossi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1590/0102-311x00026120"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Dynamic ambulance dispatching: is the closest-idle policy always optimal? Health Care Manag Sci",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Jagtenberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bhulai",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Van Der Mei",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "20",
+            "issn": "",
+            "pages": "517--548",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10729-016-9368-0"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "A multi-verse optimizer algorithm for ambulance repositioning in emergency medical service systems",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Golabian",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Arkat",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Tavakkoli-Moghaddam",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Faroughi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "J Ambient Intell Hum Comput",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12652-021-02918-2"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The operation of SAMU/192",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Decision criteria assessed by the expert group Fraz\u00e3o et al. BMC Med Inform Decis Mak (2021) 21:151",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Objective, criteria and alternatives of the proposed model",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Ordering of the criteria Fraz\u00e3o et al. BMC Med Inform Decis Mak (2021) 21:Pairs of consequences and the chosen scenarios value. These results demonstrate the robustness of the recommendation provided.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Weight ranges",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Alternatives found during the execution of the sensitivity analysis problem specificities. Almeida et al.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Description of the alternatives",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Final list of criteria related to the victim's health Criteria related to the victim's health Airways and oxygenation The victim breathes normally, does not breathe or has a loud or altered breathing. This has a direct impact on the victim's health They're on a verbal scale, ranging from one to four. Where 1 stands",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Final list of criteria related to the victim and external factors",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Decision Matrix",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "potential to support the SAMU/192's regulatory physician to direct resources to victims who need support the most, and can be used in other pre-hospital emergency care units. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "The online version contains supplementary material available at https:// doi. org/ 10. 1186/ s12911-021-01503-z.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Supplementary Information"
+        },
+        {
+            "text": "Authors' contributions TDCF and RPS conceived the study. TDCF, RPS and AFAS wrote and edited the manuscript. TDCF and RPS participated in data collection and analysis. TDCF and RPS participated in interpretation of results. TDCF, JFCJ and DGGC participated in the review and translation of the text. All authors read and approved the final manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Additional file 1. Victims Prioritization -Semi-structured interviews."
+        },
+        {
+            "text": "The datasets used and/or analysed during the current study are available from the corresponding author on reasonable request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "The authors declare that they have no competing interests.Received: 14 September 2020 Accepted: 22 April 2021",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

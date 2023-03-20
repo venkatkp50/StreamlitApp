@@ -1,0 +1,3590 @@
+{
+    "paper_id": "0b86e2c60dd7abf2b98eae6d1bdcc09abcce2ee3",
+    "metadata": {
+        "title": "a section of the journal Frontiers in Psychology Unlocking the Contradictory Outcomes of Presenteeism Through a Temporal Model: Effort Exertion as a Mediator",
+        "authors": [
+            {
+                "first": "Jan",
+                "middle": [],
+                "last": "Dettmers",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Achim",
+                "middle": [],
+                "last": "Elfering",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Chun-Yi",
+                "middle": [],
+                "last": "Chou",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Feng Chia University",
+                    "location": {
+                        "settlement": "Taichung",
+                        "country": "Taiwan"
+                    }
+                },
+                "email": "cychou@fcu.edu.tw"
+            },
+            {
+                "first": "Merce",
+                "middle": [],
+                "last": "Mach",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Barcelona",
+                    "location": {
+                        "settlement": "Barcelona",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The effects of presenteeism, that is, working while ill or exhausted, are unclear, as previous research has yielded contradictory results. The aim of this study was thus two-fold: clarify the differential effects of short versus long-term presenteeism and corroborate the mediating effect of effort exertion on the relationship between presenteeism and workrelated outcomes. We adopt a three-wave panel design and measure all the variables at three different points (initially, after one week and after one year) to understand the effects of presenteeism over time. Our sample consists of 361 Chinese employees working in diverse industries in Taiwan. We analyze the panel data using structural equation modeling and bootstrapping. Our results reveal that presenteeism is positively associated with increased effort, work engagement, and job performance after one week. By contrast, presenteeism is negatively associated with job performance and work engagement though positively associated with emotional exhaustion after one-year. Our research contributes to clarify paradoxical results regarding presenteeism's consequences, as well as corroborating that effort exertion mediates the relationship between presenteeism and work outcomes. We also identify practical implications for organizations managing employees working remotely, a more common reality with the outbreak of the COVID-19 pandemic, the ensuing lockdowns and digitalization which has started to become the norm for a significant proportion of working sectors. Finally, we suggest recommendations for future research on presenteeism.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Presenteeism, defined as working while ill (Johns, 2010) , has a wide range of consequences for people and organizations; however, research regarding presenteeism in various disciplines has yielded inconsistent results (Ruhle et al., 2020) . Longitudinal research conducted over one year has revealed a strong, negative relationship between presenteeism and personal well-being (Skagen and Collins, 2016) as well as job performance (Leijten et al., 2014) . However, a systematic review of cross-sectional presenteeism studies revealed negligible or nonsignificant relationships between presenteeism and performance ratings (Lohaus and Habermann, 2019 Research over shorter intervals has also revealed positive relationships between presenteeism and job performance (3-month interval; Lu et al., 2013) and mental health (2-month interval; Lu et al., 2014) . These inconclusive results in presenteeism research call for further exploration on the consequences of presenteeism over time (Skagen and Collins, 2016) . Furthermore, a theory that could potentially explain the uneven findings when considering short or long-term presenteeism research is missing. In recent theoretical contributions, presenteeism is viewed as a neutral act, without positive or negative valence (Ruhle et al., 2020) . Therefore, this research aims to shed light on these contradictory results by applying the cognitive activation theory of stress (CATS; Ursin and Eriksen, 2004) and the conservation of resources theory (COR; Hobfoll and Wells, 1998) and by reviewing empirical evidence regarding presenteeism behavior over two time spans (one week and one year). We thus aim to achieve a more nuanced understanding of \"bad presenteeism\" (Lu et al., 2013; Cooper and Lu, 2016) .",
+            "cite_spans": [
+                {
+                    "start": 43,
+                    "end": 56,
+                    "text": "(Johns, 2010)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 219,
+                    "end": 239,
+                    "text": "(Ruhle et al., 2020)",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 378,
+                    "end": 404,
+                    "text": "(Skagen and Collins, 2016)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 432,
+                    "end": 454,
+                    "text": "(Leijten et al., 2014)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 623,
+                    "end": 650,
+                    "text": "(Lohaus and Habermann, 2019",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 784,
+                    "end": 800,
+                    "text": "Lu et al., 2013)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 838,
+                    "end": 854,
+                    "text": "Lu et al., 2014)",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 984,
+                    "end": 1010,
+                    "text": "(Skagen and Collins, 2016)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 1271,
+                    "end": 1291,
+                    "text": "(Ruhle et al., 2020)",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 1430,
+                    "end": 1454,
+                    "text": "Ursin and Eriksen, 2004)",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 1502,
+                    "end": 1526,
+                    "text": "Hobfoll and Wells, 1998)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1714,
+                    "end": 1731,
+                    "text": "(Lu et al., 2013;",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1732,
+                    "end": 1752,
+                    "text": "Cooper and Lu, 2016)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Research regarding the effects of presenteeism has primarily focused on predicting work-related outcomes, such as job performance and emotional exhaustion (Skagen and Collins, 2016) . These outcomes are thought to be influenced by \"effort exertion. \" Hockey (1993) highlighted the concept of effort exertion which other research has applied to link work behaviors to related outcomes (Brown and Leigh, 1996; Hockey, 1997) . Overall, there are few studies in the organizational behavior field regarding effort exertion mechanisms (Yeo and Neal, 2004) . The effects of the effort exerted at work and the time over which such effort is exerted are often overlooked when describing personal and organizational outcomes. Therefore, drawing on CATS and COR theories, we predict that effort exertion at work is a key underlying psychological mechanism to understand whether presenteeism leads to two distinct circumstances, namely, increased or decreased performance over different time spans. Figure 1 depicts our conceptual research model. This research makes three valuable contributions to the presenteeism field. First, based on the CATS and the COR theories and our multiple follow-up research design, we shed light on the conflicting results regarding presenteeism and we hypothesize and test a temporal presenteeism model with short and long-term effects (one week and one year) on personal well-being and organizational effectiveness. Second, by incorporating the effort exertion construct as a key mediator, we establish a process model of presenteeism -effort exertionhealth/behavioral outcomes to increase our understanding of how the neutral act of presenteeism is translated into future outcomes over various timespans. Finally, presenteeism behavior, although widely scrutinized in Western literature, is considered a key virtue in the Confucian cultural context (Chinese Culture Connection, 1987) , emphasizing values such as hard work, diligence, and perseverance (Bond, 1988) . The Chinese work culture is thus an ideal context to examine the generalizability of Western presenteeism research and to further explore the psychological mechanisms that explain the paradoxical short and long-term outcomes of presenteeism.",
+            "cite_spans": [
+                {
+                    "start": 155,
+                    "end": 181,
+                    "text": "(Skagen and Collins, 2016)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 251,
+                    "end": 264,
+                    "text": "Hockey (1993)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 384,
+                    "end": 407,
+                    "text": "(Brown and Leigh, 1996;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 408,
+                    "end": 421,
+                    "text": "Hockey, 1997)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 529,
+                    "end": 549,
+                    "text": "(Yeo and Neal, 2004)",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 1871,
+                    "end": 1905,
+                    "text": "(Chinese Culture Connection, 1987)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1974,
+                    "end": 1986,
+                    "text": "(Bond, 1988)",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 987,
+                    "end": 995,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "INTRODUCTION"
+        },
+        {
+            "text": "Inspired by a recent review across disciplines (Ruhle et al., 2020) that cautioned against overgeneralizing the negative effects of presenteeism behavior, we considered presenteeism to be an act without positive or negative valence. We thus avoided obscuring the possible positive effects of this behavior. Although presenteeism has long been conceived as a counterproductive work behavior (Aronsson and Gustafsson, 2005 ) that reduces employee well-being and organizational effectiveness over the long term, for example, 1.5 years (Demerouti et al., 2009 ) and 2 years (Conway et al., 2014; Gustafsson and Marklund, 2014) , recent research has suggested that the negative effects of presenteeism in terms of productivity loss and on personal and organizational outcomes have been overstated (Johns, 2012; Cooper and Lu, 2019; Ruhle et al., 2020) . For example, Lu et al. (2014) found no lasting effects of presenteeism on mental health, physical health, or burnout over a two-month interval. Another study adopted a three-month interval and found no evidence of long-lasting or damaging effects on productivity or job performance (Lu et al., 2013) . Due to these inconclusive findings, recent research has suggested that presenteeism can also be considered an adaptive coping strategy for individuals and may increase short-term job performance without damaging personal health (Karanika-Murray and . We propose that the length of time that workers adopt presenteeism behavior should be considered to examine its effects on personal well-being and organizational effectiveness. This approach is consistent with Skagen and Collins' suggestion (2016) that future research on presenteeism should consider timeframes to understand the long-term consequences of presenteeism. Thus, to help explain the different outcomes of presenteeism over different time spans, we apply CATS theory (Ursin and Eriksen, 2004) .",
+            "cite_spans": [
+                {
+                    "start": 47,
+                    "end": 67,
+                    "text": "(Ruhle et al., 2020)",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 390,
+                    "end": 420,
+                    "text": "(Aronsson and Gustafsson, 2005",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 532,
+                    "end": 555,
+                    "text": "(Demerouti et al., 2009",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 570,
+                    "end": 591,
+                    "text": "(Conway et al., 2014;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 592,
+                    "end": 622,
+                    "text": "Gustafsson and Marklund, 2014)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 792,
+                    "end": 805,
+                    "text": "(Johns, 2012;",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 806,
+                    "end": 826,
+                    "text": "Cooper and Lu, 2019;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 827,
+                    "end": 846,
+                    "text": "Ruhle et al., 2020)",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 862,
+                    "end": 878,
+                    "text": "Lu et al. (2014)",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1131,
+                    "end": 1148,
+                    "text": "(Lu et al., 2013)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1612,
+                    "end": 1649,
+                    "text": "Skagen and Collins' suggestion (2016)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1881,
+                    "end": 1906,
+                    "text": "(Ursin and Eriksen, 2004)",
+                    "ref_id": "BIBREF62"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "CATS (Ursin and Eriksen, 2004 ) is a general and comprehensive theory of stress that is attuned with contemporary stress theories such as the job demand-control model (Karasek, 1979) and the effort-reward imbalance model (Peter and Siegrist, 1997) . CATS explains the effects of the expectation of stress in determining personal and organizational outcomes; these expectations are demand-control (resource) expectancy and effort-reward expectancy. CATS also incorporates a time perspective and explains the effects of stressors over different time intervals by including the time expectancy of a stressor. In fact, the basic assumptions of CATS theory (Ursin and Eriksen, 2004) are that stressors are normal and healthy stimuli and that the stress response is necessary. Corroborating work by Hockey (1993 Hockey ( , 1997 , which highlights the importance of considering the biological context of behaviors in explaining human behavior, CATS theory maintains that, if an individual expects a stressor will be resolved within a short time, the stress response is simply an increase in stimulation without any detrimental health effects. However, if stressors persist for longer than the expected time, stress can contribute to negative health outcomes.",
+            "cite_spans": [
+                {
+                    "start": 5,
+                    "end": 29,
+                    "text": "(Ursin and Eriksen, 2004",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 167,
+                    "end": 182,
+                    "text": "(Karasek, 1979)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 221,
+                    "end": 247,
+                    "text": "(Peter and Siegrist, 1997)",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 652,
+                    "end": 677,
+                    "text": "(Ursin and Eriksen, 2004)",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 793,
+                    "end": 805,
+                    "text": "Hockey (1993",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 806,
+                    "end": 821,
+                    "text": "Hockey ( , 1997",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "In line with the CATS framework, we propose that individuals going to work in suboptimal physical conditions within a limited and predictable timespan (e.g., short-term to meet a project deadline) will allocate more energetic resources such as effort to meet goals and that this may not have any negative effects on those individuals; in addition, such additional effort will facilitate the attainment of performance goals (Hockey, 1997) . Thus, we propose that, over a one-week interval (denoted as Time 2 [T2]), presenteeism behavior has positive crosslagged effects on job performance and work engagement but does not increase emotional exhaustion (Hypothesis 1, H1).",
+            "cite_spans": [
+                {
+                    "start": 423,
+                    "end": 437,
+                    "text": "(Hockey, 1997)",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "However, considering the time expectation component of CATS theory, routinely carrying out excessive work with no clear end date is likely to have negative effects because sustained stimulation due to continual overwork causes sensitization and extensive activation of the psychobiological system, leading to negative health outcomes. Also, recruiting the energetic resources to meet chronic work demands has psychological and physiological costs (Hockey, 1997) . This reasoning is also corroborated by COR theory (Hobfoll, 2001) , suggesting that stress will result from a loss or threat of losing resources or due to an imbalance between invested resources and expected returns (Halbesleben, 2006) , especially in long-term scenarios (Hobfoll et al., 2018) .",
+            "cite_spans": [
+                {
+                    "start": 447,
+                    "end": 461,
+                    "text": "(Hockey, 1997)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 514,
+                    "end": 529,
+                    "text": "(Hobfoll, 2001)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 680,
+                    "end": 699,
+                    "text": "(Halbesleben, 2006)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 736,
+                    "end": 758,
+                    "text": "(Hobfoll et al., 2018)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "When individuals experience ongoing losses or expect substantial resource losses, they suffer from resource depletion, which ultimately leads to exhaustion or dysfunctional behavior (Hobfoll et al., 2018) . We considered stress over time by examining three intervals: T1, the initial assessment; T2, one week after T1; and T3, one year after T1. Accordingly, we propose the following cross-lagged hypotheses:",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 204,
+                    "text": "(Hobfoll et al., 2018)",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "H1: Presenteeism at T1 has positive cross-lagged effects on a) job performance and b) work engagement at T2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "H2: Presenteeism at T1 has a) negative cross-lagged effects on job performance, b) work engagement at T3, and c) positive cross-lagged effects on emotional exhaustion at T3.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contrasting Outcomes of Short and Long-Term Presenteeism"
+        },
+        {
+            "text": "Research regarding the consequences of presenteeism has primarily concentrated on assessing the predictive strength of presenteeism measures for outcomes (see the systematic review by Skagen and Collins, 2016, or the meta-analysis by Lohaus and Habermann, 2019) . Nevertheless, previous studies have ignored the underlying mediating mechanisms that translate presenteeism into outcomes and thus connect behaviors with their effects. Failing to do so prevents studying the consequences of going to work while feeling unwell, something which has yielded inconsistent findings regarding the outcomes of presenteeism behavior (e.g., positive well-being and performance; Lohaus et al., 2020) and negative well-being and productivity (Warren et al., 2011) . Understanding presenteeism's underlying psychological mechanisms is warranted for both extant literature and practical implications.",
+            "cite_spans": [
+                {
+                    "start": 184,
+                    "end": 209,
+                    "text": "Skagen and Collins, 2016,",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 234,
+                    "end": 261,
+                    "text": "Lohaus and Habermann, 2019)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 666,
+                    "end": 686,
+                    "text": "Lohaus et al., 2020)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 728,
+                    "end": 749,
+                    "text": "(Warren et al., 2011)",
+                    "ref_id": "BIBREF63"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "Effort has been recognized as an important mechanism in translating inputs into outputs in the organizational setting, especially under high work stress circumstances (Hockey, 1997) . Effort exertion is the direction, intensity, and persistence of the effort a person applies to execute a chosen behavior (De Cooman et al., 2009) . Researchers have thus far conceived displaying presenteeism behavior as comparable to exerting intensive effort. Specifically, working through illness instead of taking sick leave has been seen as the amount of effort expended in work-related tasks (Miraglia and Johns, 2016) . However, overt behaviors like presenteeism may require or encourage employees to dedicate extra effort to work, though they are distinct concepts. Although presenteeism can result in dedicated effort, people with a suboptimal physiological condition may be psychologically absent and thus exert limited effort while working. Unlike the observable act of presenteeism, effort exertion is not immediately visible (Kanfer, 1990) . Therefore, presenteeism and effort exertion are distinct concepts and must be refined in order to explain presenteeism's conflicting outcomes.",
+            "cite_spans": [
+                {
+                    "start": 167,
+                    "end": 181,
+                    "text": "(Hockey, 1997)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 305,
+                    "end": 329,
+                    "text": "(De Cooman et al., 2009)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 581,
+                    "end": 607,
+                    "text": "(Miraglia and Johns, 2016)",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1021,
+                    "end": 1035,
+                    "text": "(Kanfer, 1990)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "By contrast, the limited cross-sectional research dedicated to effort exertion in the work setting has yielded consistent conclusions. Results have demonstrated that effort exertion is an underlying mechanism for translating work motivation into job performance and satisfaction (Dysvik and Kuvaas, 2013) . Therefore, greater effort exertion leads to increased job performance (Brown and Peterson, 1994; Brown and Leigh, 1996) . Although effort exertion is a key mechanism, empirical research is scarce, and existing theory does not clearly describe the links between individuals, work characteristics, and outcomes (Yeo and Neal, 2004) . Accordingly, we apply the CATS and COR frameworks to examine the mediating effects of effort exertion on the relationship between overt presenteeism behavior and short-and long-term work-related outcomes.",
+            "cite_spans": [
+                {
+                    "start": 279,
+                    "end": 304,
+                    "text": "(Dysvik and Kuvaas, 2013)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 377,
+                    "end": 403,
+                    "text": "(Brown and Peterson, 1994;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 404,
+                    "end": 426,
+                    "text": "Brown and Leigh, 1996)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 616,
+                    "end": 636,
+                    "text": "(Yeo and Neal, 2004)",
+                    "ref_id": "BIBREF67"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "To maintain the desirable performance, individuals will mobilize the resources they can apply to perform their professional tasks (Hockey, 1997) . In the case of this study, employees who go to work while feeling ill will navigate more effort to compensate for their suboptimal situation and achieve the expected performance. Building on CATS principles, we contend that individuals who go to work while feeling ill for a short and expected period of time (e.g., a few days) to achieve their work goals will allocate their energetic resources to push themselves and exert sufficient effort to complete the necessary tasks (Hockey, 1997) . Over these short intervals, intensified effort can result in achieving a performance goal without negative health effects, although it produces emotional stimulation (Ursin and Eriksen, 2004) . Based on CATS theory (Ursin and Eriksen, 2004) , we predict that, in the short-term, presenteeism is indicative of individual effort and thus facilitates performance and engagement without causing exhaustion (H3).",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 144,
+                    "text": "(Hockey, 1997)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 622,
+                    "end": 636,
+                    "text": "(Hockey, 1997)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 805,
+                    "end": 830,
+                    "text": "(Ursin and Eriksen, 2004)",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 854,
+                    "end": 879,
+                    "text": "(Ursin and Eriksen, 2004)",
+                    "ref_id": "BIBREF62"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "Considering the long-term effects of presenteeism and based on COR theory (Hobfoll, 2001) , we contend that continuous effort exertion to meet work demands in a resource-loss situation diminishes personal resources and, in turn, leads to poor personal and organizational outcomes (Hobfoll et al., 2018) . COR theory postulates that individuals confronted with resourcedepleting circumstances adopt behaviors to preserve their remaining resources. Research has consistently shown that resource-depleting scenarios (such as working long hours or working through illness) cause further losses such as poor long-term performance and engagement (Lu and Chou, 2020) . Employees who are chronically subject to these resource-depleting circumstances, although they exert effort and allocate their limited resources to their work, still prioritize retaining their personal resources to compensate for their suboptimal situations. However, applying limited energy resources for constant overwork while feeling ill or exhausted not only negatively affects physiological and psychological functions but also personal well-being (Skagen and Collins, 2016) . Accordingly, people with diminished resources experience high levels of emotional exhaustion (McGregor et al., 2016) and are likely to have difficulties in continuing to exert additional efforts at work, stay engaged, and maintain high levels of performance (H4). Consequently, we propose the following hypotheses:",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 89,
+                    "text": "(Hobfoll, 2001)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 280,
+                    "end": 302,
+                    "text": "(Hobfoll et al., 2018)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 640,
+                    "end": 659,
+                    "text": "(Lu and Chou, 2020)",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1116,
+                    "end": 1142,
+                    "text": "(Skagen and Collins, 2016)",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 1238,
+                    "end": 1261,
+                    "text": "(McGregor et al., 2016)",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "H3: Presenteeism at T1 has positive cross-lagged effects on a) job performance and b) engagement at T2 via effort exertion at T1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "H4: Presenteeism at T1 has a) negative cross-lagged effects on job performance, b) work engagement at T3 via effort exertion at T1, and c) positive cross-lagged effects on emotional exhaustion at T3.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Effort Exertion as a Mediating Mechanism for the Outcomes of Presenteeism"
+        },
+        {
+            "text": "We first examined previous research to decide on the appropriate intervals to contrast the short-lived versus long-lasting effect of adopting presenteeism behaviors (e.g., Lu et al., 2014 , for the short-term; and Leijten et al., 2014 , for the long-term). We employed a three-wave panel study design in which we measured all the variables three times: initially (T1), at one week (T2), and after one year (T3).",
+            "cite_spans": [
+                {
+                    "start": 172,
+                    "end": 187,
+                    "text": "Lu et al., 2014",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 214,
+                    "end": 234,
+                    "text": "Leijten et al., 2014",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Procedure and Participants"
+        },
+        {
+            "text": "We used a snowball sampling approach to recruit participants across different industries, occupations, organizations, and locations in Taiwan. We began the data collection process in January 2020 and finalized in January 2021. We asked students enrolled in the executive MBA at two large universities in Taiwan, students who usually have professional experience and hold managerial positions in their organizations, to help advertise the study and invite participants to take part via Line, a freeware app for instant communication widely used in Taiwan. To facilitate the recruiting process, we provided students with a recruitment ad which articulated the study purpose. Eligible study participants were individuals with fulltime jobs. In the ad, we encouraged participation by offering a monetary incentive; we ensured that participants who completed the three survey waves would receive a compensation of NT $150 (approximately US $5). Students then posted the ad in a number of chat groups in Line. They also asked their peers to help further spread the ad. Interested participants contacted the corresponding author via Line by scanning a QR code in the ad, later receiving an informed consent form. In the latter, we again assured them that their participation was voluntary and that their responses would be confidential. We re-approached participants again in one week, as well as 12 months after their initial participation. We sent follow-up reminders to participants who did not complete the survey within 2 days after receiving it.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedure and Participants"
+        },
+        {
+            "text": "Moreover, to ensure data quality, we used participants' Line IDs to match the three-wave surveys and avoid repetitions. Participants used the virtual confidential IDs they created for themselves without disclosing their real names to the researchers, thus guaranteeing the participants' anonymity. We also used an attention check strategy (i.e., \"For this item, please select 6 and move on to the next item\") to detect and exclude inattentive respondents. After removing mismatched three-wave surveys and careless data, the final sample size was 361, resulting in an overall response rate of 52.24%. The 361 participants filled out three-wave survey questions with no missing data. At T1, the survey was completed by 691 individuals; of these, 578 persons completed the survey again at Time 2 (T2; retention rate of 83.65%). At Time 3 (T3), 361 of these 578 individuals who completed Frontiers in Psychology | www.frontiersin.org 5 November 2021 | Volume 12 | Article 740411 the questionnaire at T1 and T2 completed the final questionnaire.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedure and Participants"
+        },
+        {
+            "text": "The 361 participants worked in 9 industry sectors according to the Global Industry Classification Standard (GICS: industrial (3.6%), consumer discretionary (19.6%), consumer staples (2.8%), health care (12.8%), financial (31.3%), information technology (3.9%), communication service (11.1%), utilities (7.8%), and real estate (9.6%). In addition, two-thirds of all participants (66.3%) were female. Participants had an average age of 36.91 years (SD = 8.89), within the 25-67-year range; their average job tenure was 7.25 years (SD = 6.57); and 81.40% held a bachelor's degree. Only 28.80% of participants held a managerial position, and just over half of the sample (54.2%) were married.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedure and Participants"
+        },
+        {
+            "text": "We investigated the possibility of selection bias between dropout and final samples by systematically examining differences between participants in the panel sample and the dropouts regarding their demographic data as well as mean scores on the study variables. Our analyses revealed no significant differences for any category. We thus concluded that no significant selection bias had occurred due to panel loss.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Procedure and Participants"
+        },
+        {
+            "text": "We assessed presenteeism by using a two-item scale developed by Lu et al. (2013; e.g ., \"Although you felt sick, you still forced yourself to go to work\"). Respondents indicated their agreement with each statement using a 4-point scale (1 = never, 2 = one to two times, 3 = three to four times, 4 = more than five times), with higher scores representing more frequent presenteeism. Factor loadings were 0.88-0.91 at T1, 0.91-0.92 at T2, and 0.90-0.92 at T3. Spearman-Brown formula was applied to calculate the reliability of the two-item measurement (Eisinga et al., 2013) , the values for the scale were 0.90 (T1), 0.90 (T2), and 0.91 (T3).",
+            "cite_spans": [
+                {
+                    "start": 64,
+                    "end": 80,
+                    "text": "Lu et al. (2013;",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 81,
+                    "end": 84,
+                    "text": "e.g",
+                    "ref_id": null
+                },
+                {
+                    "start": 550,
+                    "end": 572,
+                    "text": "(Eisinga et al., 2013)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measures Presenteeism"
+        },
+        {
+            "text": "We adopted a ten-item scale developed and validated by De Cooman et al. (2009) to measure three effort exertion factors (persistence, direction, and intensity). Sample items included: \"I always work equally hard at my job\"; \"I do my best to do what is expected of me\"; and \"I always exert equally hard during the execution of my job. \" We used a 7-point Likert scale, ranging from 1 (fully disagree) to 7 (fully agree). We considered effort exertion to be a second-order latent factor in which the items measuring persistence, direction, and intensity were loaded onto their underlying constructs, and these three constructs loaded on the higher-order factor. Fit statistics supported the use of this second-order factor model of effort exertion (root mean square error of approximation (RMSEA) = 0.07; comparative fit index (CFI) = 0.97; and incremental fit index (IFI) = 0.97). Factor loadings were 0.90-0.95 at T1, 0.91-0.94 at T2, and 0.90-0.94 at T3. Cronbach's \u03b1 values for the scale were 0.92 (T1), 0.90 (T2), and 0.89 (T3).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Effort Exertion"
+        },
+        {
+            "text": "We used a nine-item emotional exhaustion scale based on the Maslach Burnout Inventory (MBI; Maslach et al., 1997) . One sample item utilized was \"I feel used up at the end of the workday. \" We applied a 7-point scale, ranging from 0 (never experience this feeling) to 6 (experience similar feelings every day). Factor loadings were 0.92-0.94 at T1, 0.91-0.93 at T2, and 0.90-0.93 at T3. Cronbach's \u03b1 values for the scale were 0.93 (T1), 0.92 (T2), and 0.91(T3).",
+            "cite_spans": [
+                {
+                    "start": 92,
+                    "end": 113,
+                    "text": "Maslach et al., 1997)",
+                    "ref_id": "BIBREF49"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Emotional Exhaustion"
+        },
+        {
+            "text": "We used the nine-item Utrecht Work Engagement Scale (UWES-9; Schaufeli et al., 2006) to measure work engagement. Sample items included: \"At work, I feel like I am bursting with energy\"; \"I am enthusiastic about my job\"; and \"I am immersed in my work. \" Scholars have pointed out that the UWES-9 scale is based on a one-dimensional construct but that it encompasses three different but highly correlated concepts and that the corresponding scores indicate overall work engagement (Schaufeli et al., 2006; Bakker and Leiter, 2010) . We used a 7-point rating scale, ranging from 1 (never) to 7 (always). ",
+            "cite_spans": [
+                {
+                    "start": 61,
+                    "end": 84,
+                    "text": "Schaufeli et al., 2006)",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 479,
+                    "end": 503,
+                    "text": "(Schaufeli et al., 2006;",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 504,
+                    "end": 528,
+                    "text": "Bakker and Leiter, 2010)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Work Engagement"
+        },
+        {
+            "text": "We applied a four-item scale developed by Ashford et al. (1989) to assess job performance. Items included: \"My supervisor is satisfied with my performance\" and \"I am effective at my job. \" We used a 5-point Likert scale, ranging from 1 (disagree very much) to 5 (agree very much). Cronbach's \u03b1 values for the scale were 0.87 (T1), 0.89 (T2), and 0.89 (T3).",
+            "cite_spans": [
+                {
+                    "start": 42,
+                    "end": 63,
+                    "text": "Ashford et al. (1989)",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Job Performance"
+        },
+        {
+            "text": "We controlled for gender (coded male = 0, female = 1), age, marital status (coded as married = 1, not married = 0), education level (converted to years of formal education), job tenure (in years), and managerial job position (coded as 1 = managers, 0 = employees).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Controls"
+        },
+        {
+            "text": "To test our research hypotheses, we applied structural equation modelling (SEM) techniques (AMOS 22) to examine the direct cross-lagged effects of presenteeism on outcomes over the short (H1) and long terms (H2), as well as testing the mediating role of effort exertion in the presenteeism-outcome relationship over different time spans as proposed in H3 (short-term with a 1-week interval) and H4 (long-term with a 1-year interval). Furthermore, to corroborate the indirect effects of H3 and H4, we also applied bootstrapping methods.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data Analysis Strategy"
+        },
+        {
+            "text": "We first conducted a series of confirmatory factor analyses (CFA) to examine the validity of our measures. Our results indicated that the hypothesized 15-factor measurement model (i.e., presenteeism and effort exertion, as well as emotional exhaustion, job performance, and work engagement, etc.) fit the data well: \u03c7 2 (df = 733) = 2826.89, p < 0.001, CFI = 0.92, Frontiers in Psychology | www.frontiersin.org 6 November 2021 | Volume 12 | Article 740411 RMSEA = 0.06, and SRMR = 0.05. All scale items loaded on their intended factors significantly (p < 0.001). Factor loadings for each item are provided in the Appendix. We then compared the 15-factor model with 105 alternative 14-factor models, where any two of the 15 factors were combined. These results demonstrated that the 15-factor model fit the data significantly better than any other of the 14-factor models (\u0394\u03c7 2 [\u0394df = 14] ranged from 139.66 to 1339.96, p < 0.001). Furthermore, they suggested that the measure used in our study captured distinct constructs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Confirmatory Factor Analysis"
+        },
+        {
+            "text": "To evaluate the extent to which our findings were influenced by common method variance, we followed the procedure recommended by Podsakoff et al. (2003) and widely employed (Ahuja et al., 2007) . Following their approach, we estimated three models: (1) Model 1: a null measurement model, (2) Model 2: multifactor measurement model with the proposed latent constructs, and (3) Model 3: measurement model with an additional method factor. If a common method effect existed, Model 3 would fit the data significantly better than Model 2. Then we would need to determine the amount of variance in the model contributed by the single method factor. To do that, we computed the average variance extracted (AVE) for the latent constructs against the method factor. It has been argued that, to rule out the presence of pervasive method variance, the variance explained by the method factor should be less than 25% of the total variance (Williams et al., 1989) . The results demonstrated that: Model 1 [\u03c7 2 = 3328, p < 0.001, \u03c7 2 /df = 27.09, Tucker-Lewis index, TLI = 0.56, CFI = 0.42, RMSEA = 0.17]; Model 2 [\u03c7 2 = 1112, p < 0.001, \u03c7 2 /df = 2.39, TLI = 0.91, CFI = 0.91, RMSEA = 0.05]; Model 3 [\u03c7 2 = 2269.11, p < 0.01, \u03c7 2 /df = 21.03, TLI = 0.51, CFI = 0.61, RMSEA = 0.15]. The loadings from model 3 were then used to compute the AVE for each latent construct, including the method factor.",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 152,
+                    "text": "Podsakoff et al. (2003)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 173,
+                    "end": 193,
+                    "text": "(Ahuja et al., 2007)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 927,
+                    "end": 950,
+                    "text": "(Williams et al., 1989)",
+                    "ref_id": "BIBREF65"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measurement Model and Common Method Variance"
+        },
+        {
+            "text": "The Model 2 provided a good fit to the data, with RMSEA scores below 0.06, whereas TLI and CFI were above 0.90 (Bentler and Bonnet, 1980) . The loadings from model 3 were then used to compute the AVE for each latent construct, including the method factor the method factor accounted for only 14% of the total variance, less than the 25% cut-off recommended by Williams et al. (1989) . Thus, we concluded that common method variance did not significantly contaminate the results.",
+            "cite_spans": [
+                {
+                    "start": 111,
+                    "end": 137,
+                    "text": "(Bentler and Bonnet, 1980)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 360,
+                    "end": 382,
+                    "text": "Williams et al. (1989)",
+                    "ref_id": "BIBREF65"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measurement Model and Common Method Variance"
+        },
+        {
+            "text": "As a supplementary analysis, we also computed alternative models to investigate the causal relations between presenteeism and outcomes. Though we hypothesized that the causal effects of T1 presenteeism on T2 and T3 outcomes were theoretically based, reversed relationships between the constructs are plausible (Lesener et al., 2019) . However, the research model, which is composed of M1 and the causal relationships of T1 presenteeism on exhaustion, work engagement, and job performance at T2 &T3 outperformed the stability, reversed causality, and reciprocal models also tested.",
+            "cite_spans": [
+                {
+                    "start": 310,
+                    "end": 332,
+                    "text": "(Lesener et al., 2019)",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Measurement Model and Common Method Variance"
+        },
+        {
+            "text": "Examining factorial invariance in this three-wave panel study is important because it helps provide evidence for the imperative assumption that the fundamental meaning of the latent variables is consistent across measurement points. We thus examined invariance by modeling constrained models and comparing all the models to more restricted models. According to our results, the research dimensions were ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Longitudinal Factorial Invariance"
+        },
+        {
+            "text": "We report the mean, standard deviations, and correlations among all study variables in Table 1 . Most of the relationships between the variables were significant and took the expected directions. Specifically, presenteeism behavior positively correlated with job performance and work engagement at T1 and T2. However, the patterns were diametrically different between T1 and T3. Namely, presenteeism negatively correlated to job performance (\u22120.18, p < 0.05) and work engagement (\u22120.19, p < 0.05) at T3, but positively correlated to emotional exhaustion at T3 (0.29, p < 0.001).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 87,
+                    "end": 94,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "Descriptive Analysis"
+        },
+        {
+            "text": "To test the hypothesized direct and indirect effects, we constructed two SEM models corresponding to the different time spans. Thus, every model included presenteeism at T1, effort exertion at T1, and three endogenous variables (job performance, work engagement, and emotional exhaustion) at one week (T2) and one year (T3), respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Hypotheses Testing"
+        },
+        {
+            "text": "Hypotheses 1 and 2 examine the short and long-term effects that presenteeism has on outcomes at work. Specifically, hypothesis 1 predicted that displaying presenteeism is conducive to job performance (H1a) and work engagement (H1b), without damaging personal health over a short timeframe.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cross-Lagged Direct Effects of Presenteeism on Outcomes"
+        },
+        {
+            "text": "As reported in Table 2 , after controlling for the baseline level of outcomes, the results supported the direct short-term effects of presenteeism on outcomes by corroborating that displaying presenteeism has a positive cross-lagged effect on job performance (\u03b2 = 0.13**, p < 0.01) and work engagement (\u03b2 = 0.16**, p < 0.01). Therefore, H1a and H1b are supported.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 15,
+                    "end": 22,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Cross-Lagged Direct Effects of Presenteeism on Outcomes"
+        },
+        {
+            "text": "Although not hypothesized, we also examined the direct effects of presenteeism behavior on emotional exhaustion after a 1-week interval (T2). Our findings do not show any significant positive cross-lagged effects of presenteeism on short-term emotional exhaustion (\u03b2 = 0.05, ns.).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cross-Lagged Direct Effects of Presenteeism on Outcomes"
+        },
+        {
+            "text": "Hypothesis 2 predicted the negative direct effects of presenteeism on job performance (H2a), work engagement (H2b), and the positive direct effect on emotional exhaustion (H2c) over the long-term (T3). As can be seen in Table 2 , after controlling for the baseline level of outcomes, our results supported the direct long-term effects of presenteeism on outcomes by corroborating the negative cross-lagged effects on job performance (\u03b2 = \u22120.24***, p < 0.001), and work engagement (\u03b2 = \u22120.26***, p < 0.001), as well as a positive cross-lagged effect on emotional exhaustion (\u03b2 = 0.36***, p < 0 0.001) at the 12-month interval (T3), thus corroborating hypotheses H2a, H2b, and H2c.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 220,
+                    "end": 227,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "Cross-Lagged Direct Effects of Presenteeism on Outcomes"
+        },
+        {
+            "text": "Hypothesis 3 anticipated the mediation effects of effort exertion on the relation between presenteeism and outcomes, namely, displaying presenteeism behavior over the short-term would have positive effects on job performance (H3a) and engagement (H3b) via effort exertion. The results in Table 2 indicate that presenteeism has positive cross-lagged relationships with job performance and work engagement via effort exertion over a 1-week interval (at T2). Specifically, the indirect effect of presenteeism at T1 on job performance at T2 through effort exertion at T1 was positive (\u03b2 = 0.09, p < 0.05). Therefore, effort exertion mediates the relationship between presenteeism and job performance at T2, supporting H3a. Likewise, the indirect effect of presenteeism at T1 on work engagement at T2 through effort exertion at T1 was positive (\u03b2 = 0.10, p < 0.05). Thus, effort exertion mediates the relationship between presenteeism and work engagement at T2, supporting H3b. Furthermore, we carried out bootstrap analyses of the mediating effects which further confirmed these results by showing the mediating effect of effort exertion between presenteeism on job performance at T2 (estimate = 0.07, SE = 0.01, 95% Boot CI = [0.012; 0.019]) and work engagement at T2 (estimate = 0.08; SE = 0.02; 95% Boot CI = [0.023, 0.039]), as evidenced by a 95% bias-corrected bootstrap confidence interval that did not include zero. Therefore, the H3a and H3b were supported.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 288,
+                    "end": 295,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "The Mediating Effect of Effort Exertion Between Presenteeism and Outcomes"
+        },
+        {
+            "text": "Hypothesis 4 predicted that exhibiting presenteeism behavior over the long-term would hinder job performance (H4a) and work engagement (H4b), while provoking greater emotional exhaustion (H4c) via effort exertion. Our results in Table 2 indicate that presenteeism has negative cross-lagged relationships with job performance and work engagement as well as positive cross-lagged relationship with emotional exhaustion via effort exertion over a 1-year interval (T3). Specifically, the indirect effect of presenteeism at T1 on job performance at T3 through effort exertion at T1 was negative (\u03b2 = \u22120.17, p < 0.01). Therefore, effort exertion mediates the relationship between presenteeism at T1 and job performance at T3, supporting H4a.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 229,
+                    "end": 236,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "The Mediating Effect of Effort Exertion Between Presenteeism and Outcomes"
+        },
+        {
+            "text": "Likewise, the indirect effect of presenteeism at T1 on work engagement at T3 through effort exertion at T1 was negative (\u03b2 = \u22120.23, p < 0.001). Thus, effort exertion mediates the relationship between presenteeism at T1 and work engagement at T3, supporting H4b. Similarly, the indirect effect of presenteeism at T1 on emotional exhaustion at T3 through effort exertion at T1 was positive (\u03b2 = 0.16, p < 0.01) in the long run (T3). In sum, effort exertion at T1 mediated the relationship between presenteeism at T1 and emotional exhaustion at T3, supporting H4c.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Mediating Effect of Effort Exertion Between Presenteeism and Outcomes"
+        },
+        {
+            "text": "Moreover, our bootstrap analyses of the mediating effects further confirmed these results by showing the mediating effect of effort exertion between presenteeism on job performance (estimate = \u22120.08, SE = 0.01, 95% Boot CI = [\u22120.014; \u22120.009]) and work engagement (estimate = \u22120.09, SE = 0.02, 95% Boot CI = [\u22120.012; \u22120.008]), as well as emotional exhaustion (estimate = 0.12, SE = 0.01, 95% Boot CI = [0.001; 0.017]) at the 12-month interval (T3). Therefore, the H4a, H4b, and H4c were supported.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Mediating Effect of Effort Exertion Between Presenteeism and Outcomes"
+        },
+        {
+            "text": "Overall, our findings support all the proposed hypotheses and raise important issues concerning the management of 2 | Medwiation effects of effort exertion between presenteeism behaviors and outcomes over a 1-month interval (T2) and a 12-month interval (T3). presenteeism. Furthermore, our proposed process-based model of presenteeism highlights and captures the differential effect of presenteeism behaviors across different time spans.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The Mediating Effect of Effort Exertion Between Presenteeism and Outcomes"
+        },
+        {
+            "text": "Our study answers the call to provide empirical evidence regarding the differential effects of timeframes on employee presenteeism patterns (Lohaus and Habermann, 2019) . This pioneering research helps understand the psychological mechanisms influencing presenteeism over distinct timeframes (one week and one year), each leading to different personal and work outcomes, whether positive or negative. The aim of this study was two-fold: shed light on the inconsistent results of previous presenteeism studies by investigating its short and long-term effects and understand the psychological mechanisms transforming neutral presenteeism behavior into positive or negative outcomes. In accordance with recent cross-discipline reviews (Ruhle et al., 2020) , we consider effort exertion to be the underlying mechanism for presenteeism's effects. We test a process-based model, namely, the presenteeism-effort exertion-outcomes linkage, to analyze the relationship between overt presenteeism behavior and distinct outcomes. Our findings strongly corroborate this model, which differentiates short and long-term presenteeism (H1 and H2) and captures the process-based model of presenteeism (H3 and H4).",
+            "cite_spans": [
+                {
+                    "start": 140,
+                    "end": 168,
+                    "text": "(Lohaus and Habermann, 2019)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 732,
+                    "end": 752,
+                    "text": "(Ruhle et al., 2020)",
+                    "ref_id": "BIBREF57"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "These results provide strong evidence of the distinctive outputs of short versus long-term presenteeism. Indeed, working while feeling unwell for a short period of time is conducive to job performance (H1a) and work engagement (H1b), without negatively affecting personal well-being. However, recurrent presenteeism and overwork lead to decreased job performance (H2a), work engagement (H2b), and well-being (H2c) after a year. Furthermore, these relationships are mediated by effort exertion. Specifically, we found presenteeism to be positively related to job performance and work engagement through effort exertion over a one-week interval (H3a and H3b). However, the same scenario generated distinct patterns over time. Through effort exertion, presenteeism was negatively related to job performance and work engagement, though positively related to emotional exhaustion over a one-year interval (H4a-c). These effects were attributed to effort exertion, the psychological mechanism underlying observable presenteeism behavior.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "By differentiating between overt presenteeism behavior and real effort exerted through presenteeism, our multi-timeframe study reconciles the contradictory consequences of presenteeism behaviors found in previous research. Some scholars have described presenteeism as exerting effort at work despite exhaustion or illness, indicating high engagement with a task and, therefore, beneficial over the short-term (Biron and Saksvik, 2009; God\u00f8y, 2016; Karanika-Murray and Biron, 2020) . However, presenteeism can represent a silent cost for organizations over longer periods of time (e.g., Demerouti et al., 2009; Gustafsson and Marklund, 2014; Lu and Chou, 2020) . The reason for this remarkable change has not been explained in prior research.",
+            "cite_spans": [
+                {
+                    "start": 409,
+                    "end": 434,
+                    "text": "(Biron and Saksvik, 2009;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 435,
+                    "end": 447,
+                    "text": "God\u00f8y, 2016;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 448,
+                    "end": 480,
+                    "text": "Karanika-Murray and Biron, 2020)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 586,
+                    "end": 609,
+                    "text": "Demerouti et al., 2009;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 610,
+                    "end": 640,
+                    "text": "Gustafsson and Marklund, 2014;",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 641,
+                    "end": 659,
+                    "text": "Lu and Chou, 2020)",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "By considering effort exertion, we connect stress theory with resource theory to address this research gap. In accordance with previous studies that identified effort exertion as an invisible mechanism regulating individual efforts and work performance (e.g., Brown and Peterson, 1994; Brown and Leigh, 1996; Cook et al., 2000) , our findings measuring presenteeism over different timeframes clarify how individuals allocate their limited effort capacity to work activities and how this allocation leads to different outcomes. Overall, by incorporating time into a processbased model, our framework offers a more nuanced treatment of presenteeism.",
+            "cite_spans": [
+                {
+                    "start": 260,
+                    "end": 285,
+                    "text": "Brown and Peterson, 1994;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 286,
+                    "end": 308,
+                    "text": "Brown and Leigh, 1996;",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 309,
+                    "end": 327,
+                    "text": "Cook et al., 2000)",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "From a theoretical perspective, our study has important implications for the presenteeism research field. Different theories have been adopted to explain the inconsistent presenteeism outcomes for different time periods, though an overarching theory to elucidate the consequences of presenteeism has been lacking. For example, job demand-resource theory (Bakker and Demerouti, 2007) is commonly applied in longitudinal research to explain the negative consequences of presenteeism on job performance and well-being (e.g., Baker-McClearn et al., 2010; Deery et al., 2014; McGregor et al., 2016) . By contrast, crosssectional studies have adopted self -determination theory (Deci and Ryan, 2000) to explain the relationship between presenteeism and positive work-related outcomes (e.g., Cooper and Lu, 2019; Karanika-Murray and Biron, 2020) . Thus, we provide a comprehensive conceptual model to explain the paradoxical outcomes of presenteeism behavior.",
+            "cite_spans": [
+                {
+                    "start": 354,
+                    "end": 382,
+                    "text": "(Bakker and Demerouti, 2007)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 522,
+                    "end": 550,
+                    "text": "Baker-McClearn et al., 2010;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 551,
+                    "end": 570,
+                    "text": "Deery et al., 2014;",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 571,
+                    "end": 593,
+                    "text": "McGregor et al., 2016)",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 672,
+                    "end": 693,
+                    "text": "(Deci and Ryan, 2000)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 785,
+                    "end": 805,
+                    "text": "Cooper and Lu, 2019;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 806,
+                    "end": 838,
+                    "text": "Karanika-Murray and Biron, 2020)",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theoretical Contribution"
+        },
+        {
+            "text": "By considering the temporal effects of the stressor and by using the CATS and COR frameworks, we attempt to harmonize these findings. Thus, our results reveal how the presenteeismeffort exertion-outcomes linkage performs over different time spans. Being able to use a single model to explain prior contradictory presenteeism results will benefit the presenteeism field with a more systematic research design and robust findings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Theoretical Contribution"
+        },
+        {
+            "text": "Our proposed process-based model of presenteeism parallels the effort-recovery model (E-R model; (Meijman and Mulder, 2013) , which suggests that effort activates \"load reactions\" leading to physiological and psychological reactions. These reactions are normal responses among people coping with demands over a short timeframe; however, without sufficient recovery time, load reactions have detrimental effects on job performance (Williams et al., 2006; ten Brummelhuis and Bakker, 2012) and health (Hall et al., 2010) . Both CATS and E-R theories consider work demands as neutral stimuli within an expected duration. They highlight time relevance by suggesting that prolonged overwork and the resulting effort to meet the demands of work can harm well-being and performance.",
+            "cite_spans": [
+                {
+                    "start": 97,
+                    "end": 123,
+                    "text": "(Meijman and Mulder, 2013)",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 430,
+                    "end": 453,
+                    "text": "(Williams et al., 2006;",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 454,
+                    "end": 487,
+                    "text": "ten Brummelhuis and Bakker, 2012)",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 499,
+                    "end": 518,
+                    "text": "(Hall et al., 2010)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theoretical Contribution"
+        },
+        {
+            "text": "Our study extends this research by demonstrating a mechanism through which presenteeism leads to short-term positive work-related outcomes but to impaired well-being and performance over the long-term. Our findings corroborate recovery literature. Research applying the E-R model has found promising effects of different forms of recovery on future work-related outcomes such as job performance and Frontiers in Psychology | www.frontiersin.org 10 November 2021 | Volume 12 | Article 740411 well-being (Sonnentag and Fritz, 2015) . Some scholars have documented the beneficial effects of taking time off during non-work time (e.g., not thinking about work after regular working hours) on future personal well-being and organizational outcomes. For example, Lu and Chou (2020) found that psychological detachment during off-job time can act as a buffer in decreasing the lasting negative effects of heavy workloads on work engagement as well as job performance. In addition, in a five-wave follow-up study, Meier and Cho (2019) found that switching-off psychologically after work can decrease the negative impact of work stressors on family relationships, in particular, the relationship with partners. Therefore, future research could include recovery in presenteeism research to clarify the role of rest time in coping with demanding work environments.",
+            "cite_spans": [
+                {
+                    "start": 502,
+                    "end": 529,
+                    "text": "(Sonnentag and Fritz, 2015)",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 757,
+                    "end": 775,
+                    "text": "Lu and Chou (2020)",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1006,
+                    "end": 1026,
+                    "text": "Meier and Cho (2019)",
+                    "ref_id": "BIBREF51"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Theoretical Contribution"
+        },
+        {
+            "text": "The results of our study also have implications for both organizational strategies and managerial practice. As we have corroborated, attending work while unwell has a catalytic effect on effort exertion, engagement, and performance, as well as on increased productivity for an organization though only in the short-term. These results may be more salient due to the Chinese cultural background of our sample. Lu and Chou (2017) have applied social cognitive theory (Bandura, 1997) to explain Chinese self-efficacy in displaying presenteeism behavior. The internalized Confucian cultural norms regarding both hard work and diligence as well as the social relatedness and interpersonal harmony of Chinese employees may function as push-and-pull factors for personal decisions regarding time commitments at work. However, such behavior harms employee performance and well-being over time. Therefore, organizations must attempt to decrease these practices to prevent the \"accumulative consequences on downstream health\" (Johns, 2010, p. 533 ).",
+            "cite_spans": [
+                {
+                    "start": 409,
+                    "end": 427,
+                    "text": "Lu and Chou (2017)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 465,
+                    "end": 480,
+                    "text": "(Bandura, 1997)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1016,
+                    "end": 1036,
+                    "text": "(Johns, 2010, p. 533",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Managerial Implications"
+        },
+        {
+            "text": "Organizations and managers should clarify and ensure that taking sick leave when necessary is allowed and duly adjust task allocation or find replacements to reduce pressure on employees to adopt presenteeism behaviors. The appropriate use of sick leave and recovery as a health-promoting strategy is well-documented in recovery research (Bakker and Demerouti, 2017) . Moreover, organizations should create work environments in which attractive incentives or other extrinsic reinforcements (e.g., praise) are provided in order to increase employee perceptions of fairness and organizational support (Olafsen et al., 2015) . Both psychological states improve employee wellbeing (Eisenberger et al., 1999) .",
+            "cite_spans": [
+                {
+                    "start": 338,
+                    "end": 366,
+                    "text": "(Bakker and Demerouti, 2017)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 599,
+                    "end": 621,
+                    "text": "(Olafsen et al., 2015)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 677,
+                    "end": 703,
+                    "text": "(Eisenberger et al., 1999)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Managerial Implications"
+        },
+        {
+            "text": "Furthermore, a central idea of our study is that, in order to obtain long-term sustainability, organizations should tend to employees' health and review corporate health management policies to ensure that, wherever possible, they do not penalize staff who take sick leave for legitimated reasons. This viewpoint provides implications for organizations and individuals given current trends regarding the adoption of digital practices and the increased virtualization of work, processes which the COVID-19 pandemic has accelerated. Thereby, employees may also continue to work during illness or return to work too soon, as they do not want to let down their managers and colleagues because they believe that their fellow employees do not consider them sufficiently unwell to take time off (Hayes et al., 2020) . Research regarding the impacts of presenteeism by employees with infectious conditions has found that people frequently continue to work while experiencing contagious flu-like symptoms, raising particularly serious public health concerns given the current pandemic (Webster et al., 2019) . Therefore, organizational practices should consider that those who have contracted a fairly \"mild\" case of COVID-19 might return to work while experiencing symptoms such as chronic fatigue and cognitive difficulties several months later; this, in turn, could damage individual well-being, vigor, and organizational effectiveness over the long-term.",
+            "cite_spans": [
+                {
+                    "start": 787,
+                    "end": 807,
+                    "text": "(Hayes et al., 2020)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1075,
+                    "end": 1097,
+                    "text": "(Webster et al., 2019)",
+                    "ref_id": "BIBREF64"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Managerial Implications"
+        },
+        {
+            "text": "Our study has some limitations, though each also represents an opportunity for future research. First, we used self-reported measures, which may suffer from common method variance bias (Podsakoff et al., 2003) . To minimize this, we adopted a longitudinal research design to separate the explanatory variables (presenteeism and effort exertion) over time from dependent variables (job performance, work engagement, and well-being). In addition, we conducted a post hoc analysis using Harman's single-factor test (Podsakoff et al., 2003) to detect any possible effects. However, future research could adopt a supervisoremployee dyadic study design to cross-validate our findings, including job performance ratings by supervisors.",
+            "cite_spans": [
+                {
+                    "start": 185,
+                    "end": 209,
+                    "text": "(Podsakoff et al., 2003)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 512,
+                    "end": 536,
+                    "text": "(Podsakoff et al., 2003)",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Limitations and Directions for Future Research"
+        },
+        {
+            "text": "We also extended existing studies on presenteeism to a non-Western society; however, the generalization of our findings may be limited by the convenience sample we recruited in Taiwan. Future studies should recruit larger and more representative samples to allow for the generalizability of our research findings in both Western and Eastern contexts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Limitations and Directions for Future Research"
+        },
+        {
+            "text": "Additionally, there is evidence that the type of health conditions predispose a person to work while ill (Gosselin et al., 2013) ; therefore, future research could include employees' specific health status as a control variable. Similarly, we did not control the firm-level contextual characteristics, which may result in omitted variable bias. However, we did control for some organizational factors such as organizational pressure to work and job replacement policies (not reported in the tables as they were nonsignificant). Future research could also pursue studies in different industries and countries to capture crosscultural values and additional contextual characteristics.",
+            "cite_spans": [
+                {
+                    "start": 105,
+                    "end": 128,
+                    "text": "(Gosselin et al., 2013)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Limitations and Directions for Future Research"
+        },
+        {
+            "text": "This study contributes to shed light on the presenteeism behaviors which have a differential effect based on the scope considered (short versus long-term). By reconciling inconsistent findings regarding the outcomes of presenteeism behavior thanks to Frontiers in Psychology | www.frontiersin.org 11 November 2021 | Volume 12 | Article 740411 our study's robust design, our research thus offers a more neutral perspective for the prevailing negativist view of presenteeism behavior. This study extends the organizational presenteeism research domain by clarifying the relationships between presenteeism and its outcomes, as well as corroborating that effort exertion mediates the relationship between presenteeism and work-related outcomes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSION"
+        },
+        {
+            "text": "The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY STATEMENT"
+        },
+        {
+            "text": "C-YC: conceptualization, funding acquisition, formal analysis, and resources. C-YC and MM: methodology, writing-original draft preparation, and writing -review. MM: editing and finalize. All authors have read and agreed to the published version of the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        },
+        {
+            "text": "This research was funded by a grant from the Ministry of Science and Technology, Taiwan, MOST 109-2410-H-035-048.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "FUNDING"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "IT road warriors: balancing work-family conflict, job autonomy, and work overload to mitigate turnover intentions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ahuja",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chudoba",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kacmar",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Mcknight",
+                    "suffix": ""
+                },
+                {
+                    "first": "George",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "MIS Q",
+            "volume": "31",
+            "issn": "",
+            "pages": "1--17",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/25148778"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Sickness presenteeism: prevalence, attendance-pressure factors, and an outline of a model for research",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Aronsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gustafsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J. Occup. Environ. Med",
+            "volume": "47",
+            "issn": "",
+            "pages": "958--966",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/01.jom.0000177219.75677.17"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Content, cause, and consequences of job insecurity: A theory-based measure and substantive test",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ashford",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bobko",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "Acad. Manag. J",
+            "volume": "32",
+            "issn": "",
+            "pages": "803--829",
+            "other_ids": {
+                "DOI": [
+                    "10.5465/256569"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Absence management and presenteeism: The pressures on employees to attend work and the impact of attendance on performance",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Baker-Mcclearn",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Greasley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dale",
+                    "suffix": ""
+                },
+                {
+                    "first": "Griffith",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Hum. Resour. Manag. J",
+            "volume": "20",
+            "issn": "",
+            "pages": "311--328",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1748-8583.2009.00118.x"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The job demands-resources model: state of the art",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Demerouti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J. Manage. Psychol",
+            "volume": "22",
+            "issn": "",
+            "pages": "309--328",
+            "other_ids": {
+                "DOI": [
+                    "10.1108/02683940710733115"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Job demands-resources theory: taking stock and looking forward",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Demerouti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "22",
+            "issn": "",
+            "pages": "273--285",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/ocp0000056"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Where to go from here: integration and future research on work engagement",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Leiter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Work Engagement: A Handbook of Essential Theory and Research",
+            "volume": "",
+            "issn": "",
+            "pages": "181--196",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The anatomy of stages of change",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bandura",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Am. J. Health Promot",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.4278/0890-1171-12.1.8"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Significance test and goodness of fit in the analysis of covariance structures",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bentler",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Bonnet",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "Psychol. Bull",
+            "volume": "88",
+            "issn": "",
+            "pages": "588--606",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0033-2909/80/8803-0588S00.75"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Sickness presenteeism and attendance pressure factors: implications for practice",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Biron",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Saksvik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Handbook of Organizational and Work Psychology",
+            "volume": "",
+            "issn": "",
+            "pages": "77--96",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Finding universal dimensions of individual variation in multicultural studies of values: The Rokeach and Chinese value surveys",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Bond",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "J. Pers. Soc. Psychol",
+            "volume": "55",
+            "issn": "",
+            "pages": "1009--1015",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0022-3514.55.6.1009"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "A new look at psychological climate and its relationship to job involvement, effort, and performance",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Leigh",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J. Appl. Psychol",
+            "volume": "81",
+            "issn": "",
+            "pages": "358--368",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0021-9010.81.4.358"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The effect of effort on sales performance and job satisfaction",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Peterson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1994,
+            "venue": "J. Marketing",
+            "volume": "58",
+            "issn": "",
+            "pages": "70--80",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/002224299405800206"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Chinese values and the search for culturefree dimensions of culture",
+            "authors": [],
+            "year": 1987,
+            "venue": "Chinese Culture Connection",
+            "volume": "18",
+            "issn": "",
+            "pages": "143--164",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0022002187018002002"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Is sickness presenteeism a risk factor for depression? A Danish 2-year follow-up study",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Conway",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hogh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Rugulies",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hansen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J. Occup. Environ. Med",
+            "volume": "56",
+            "issn": "",
+            "pages": "595--603",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/JOM.0000000000000177"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Personality and self-rated work performance",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cook",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Taylor",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Bedford",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Eur. J. Psychol. Assess",
+            "volume": "16",
+            "issn": "",
+            "pages": "202--208",
+            "other_ids": {
+                "DOI": [
+                    "10.1027/1015-5759.16.3.202"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Presenteeism as a global phenomenon: unraveling the psychosocial mechanisms from the perspective of social cognitive theory",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cooper",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Cross. Cult. Strateg. M",
+            "volume": "23",
+            "issn": "",
+            "pages": "216--231",
+            "other_ids": {
+                "DOI": [
+                    "10.1108/CCSM-09-2015-0106"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Excessive availability for work: good or bad? Charting underlying motivations and searching for game-changers",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cooper",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hum. Resour. Manag. Rev",
+            "volume": "29",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.hrmr.2019.01.003"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Development and validation of the work effort scale",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "De Cooman",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "De Gieter",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Pepermans",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Jegers",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Van Acker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Eur. J. Psychol. Assess",
+            "volume": "25",
+            "issn": "",
+            "pages": "266--273",
+            "other_ids": {
+                "DOI": [
+                    "10.1027/1015-5759.25.4.266"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The \"what\" and \"why\" of goal pursuits: human needs and the self-determination of behavior",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Deci",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ryan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Psychol. Inq",
+            "volume": "11",
+            "issn": "",
+            "pages": "227--268",
+            "other_ids": {
+                "DOI": [
+                    "10.1207/S15327965PLI1104_01"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "A moderated mediation analysis of job demands, presenteeism, and absenteeism",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Deery",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Zatzick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J. Occup. Organ. Psychol",
+            "volume": "87",
+            "issn": "",
+            "pages": "352--369",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/joop.12051"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Present but sick: A three-wave study on job demands, presenteeism and burnout",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Demerouti",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Le Blanc",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Schaufeli",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hox",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Career Dev. Int",
+            "volume": "14",
+            "issn": "",
+            "pages": "50--68",
+            "other_ids": {
+                "DOI": [
+                    "10.1108/13620430910933574"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Intrinsic and extrinsic motivation as predictors of work effort: The moderating role of achievement goals",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dysvik",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kuvaas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Br. J. Soc. Psychol",
+            "volume": "52",
+            "issn": "",
+            "pages": "412--430",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.2044-8309.2011.02090.x"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Does pay for performance increase or decrease perceived self-determination and intrinsic motivation?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Eisenberger",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rhoades",
+                    "suffix": ""
+                },
+                {
+                    "first": "Cameron",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "J. Pers. Soc. Psychol",
+            "volume": "77",
+            "issn": "",
+            "pages": "1026--1040",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0022-3514.77.5.1026"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "The reliability of a twoitem scale: Pearson, Cronbach, or spearman-Brown?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Eisinga",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Te Grotenhuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Pelzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Int. J. Public Health",
+            "volume": "58",
+            "issn": "",
+            "pages": "637--642",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00038-012-0416-3"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Profiting from presenteeism? Effects of an enforced activation policy on firm profits",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "God\u00f8y",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Labour Econ",
+            "volume": "43",
+            "issn": "",
+            "pages": "122--128",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.labeco.2016.06.012"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Presenteeism and absenteeism: differentiated understanding of related phenomena",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Gosselin",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lemyre",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Corneil",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "18",
+            "issn": "",
+            "pages": "75--86",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/a0030932"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Associations between health and combinations of sickness presence and absence",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gustafsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Marklund",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Occ. Med",
+            "volume": "64",
+            "issn": "",
+            "pages": "49--55",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/occmed/kqt141"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Sources of social support and burnout: A metaanalytic test of the conservation of resources model",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R B"
+                    ],
+                    "last": "Halbesleben",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J. Appl. Psychol",
+            "volume": "91",
+            "issn": "",
+            "pages": "1134--1145",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0021-9010.91.5.1134"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Job demands, work-family conflict, and emotional exhaustion in police officers: A longitudinal test of competing theories",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Dollard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Tuckey",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Winefield",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Occup. Organ. Psychol",
+            "volume": "83",
+            "issn": "",
+            "pages": "237--250",
+            "other_ids": {
+                "DOI": [
+                    "10.1348/096317908X401723"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "I'm not working from home, i'm living at work: perceived stress and work-related burnout before and during covid-19",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hayes",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Priestley",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ishmakhametov",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Ray",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Conservation of resources: A rejoinder to the commentaries",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hobfoll",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Appl. Psychol.-Int. Rev",
+            "volume": "50",
+            "issn": "",
+            "pages": "419--421",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/1464-0597.00064"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Conservation of resources in the organizational context: The reality of resources and their Frontiers in Psychology | www",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hobfoll",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Halbesleben",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-P",
+                    "middle": [],
+                    "last": "Neveu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Westman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "frontiersin.org",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Conservation of resources, stress, and aging",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hobfoll",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Wells",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Handbook of Aging and Mental",
+            "volume": "",
+            "issn": "",
+            "pages": "121--134",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Cognitive-energetical control mechanisms in the management of work demands and psychological health, \" in Attention: Selection, Awareness, and Control: A Tribute to Donald Broadbent",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "R J"
+                    ],
+                    "last": "Hockey",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "328--345",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Compensatory control in the regulation of human performance under stress and high workload: A cognitive-energetical framework",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "R J"
+                    ],
+                    "last": "Hockey",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Biol. Psychol",
+            "volume": "45",
+            "issn": "",
+            "pages": "73--93",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0301-0511(96)05223-4"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Presenteeism in the workplace: A review and research agenda",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Johns",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Organ. Behav",
+            "volume": "31",
+            "issn": "",
+            "pages": "519--542",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/job.630"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Presenteeism: A short history and a cautionary tale",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Johns",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Contemporary Occupational Health Psychology: Global Perspectives on Research and Practice 2nd Edn",
+            "volume": "",
+            "issn": "",
+            "pages": "204--220",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/9781119942849.ch12"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Motivation and individual differences in learning: An integration of developmental, differential and cognitive perspectives",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kanfer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "; -A Karanika-Murray",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Biron",
+                    "suffix": ""
+                }
+            ],
+            "year": 1990,
+            "venue": "Learn. Individ. Differ",
+            "volume": "2",
+            "issn": "",
+            "pages": "242--261",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0018726719827081"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Job demands, job decision latitude, and mental strain: implications for job redesign",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Karasek",
+                    "suffix": ""
+                }
+            ],
+            "year": 1979,
+            "venue": "Adm. Sci. Q",
+            "volume": "24",
+            "issn": "",
+            "pages": "285--308",
+            "other_ids": {
+                "DOI": [
+                    "10.2307/2392498"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "The influence of chronic health problems on work ability and productivity at work: A longitudinal study among older employees",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Leijten",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Van Den Heuvel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Ybema",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Der Beek",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J W"
+                    ],
+                    "last": "Robroek",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Burdorf",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Scand. J. Work Environ. Health",
+            "volume": "40",
+            "issn": "",
+            "pages": "473--482",
+            "other_ids": {
+                "DOI": [
+                    "10.5271/sjweh.3444"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "The job demands-resources model: A meta-analytic review of longitudinal studies",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lesener",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gusy",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wolter",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Work Stress",
+            "volume": "33",
+            "issn": "",
+            "pages": "76--103",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/02678373.2018.1529065"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Presenteeism: A review and research directions",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lohaus",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Habermann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Hum. Resour. Manag. Rev",
+            "volume": "29",
+            "issn": "",
+            "pages": "43--58",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.hrmr.2018.02.010"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Working while ill is not always bad-positive effects of Presenteeism",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lohaus",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Habermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "El Kertoubi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "R\u00f6ser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Front. Psychol",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fpsyg.2020.620918"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Long working hours and presenteeism in Asia: A cultural psychological analysis",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-Y",
+                    "middle": [],
+                    "last": "Chou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "The Routledge Companion to Wellbeing at Work",
+            "volume": "",
+            "issn": "",
+            "pages": "135--149",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Protecting job performance and well-being in the demanding work context: The moderating effect of psychological detachment for Chinese employees",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-Y",
+                    "middle": [],
+                    "last": "Chou",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Appl. Psychol. Int. Rev",
+            "volume": "69",
+            "issn": "",
+            "pages": "1199--1214",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apps.12216"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Unhealthy and present: motives and consequences of the act of presenteeism among Taiwanese employees",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cooper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "18",
+            "issn": "",
+            "pages": "406--416",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/a0034331"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Presenteeism and health over time among Chinese employees: The moderating role of selfefficacy",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-Q",
+                    "middle": [],
+                    "last": "Peng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Cooper",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Work Stress",
+            "volume": "58",
+            "issn": "",
+            "pages": "35--45",
+            "other_ids": {
+                "DOI": [
+                    "10.2486/indhealth.2018-0201"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Maslach burnout inventory: third edition, \" in Evaluating Stress: A Book of Resources",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Maslach",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Leiter",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "191--218",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "A job demandsresources approach to presenteeism",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mcgregor",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Magee",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Caputi",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Iverson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Career Dev. Int",
+            "volume": "21",
+            "issn": "",
+            "pages": "402--418",
+            "other_ids": {
+                "DOI": [
+                    "10.1108/CDI-01-2016-0002"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Work stressors and partner social undermining: comparing negative affect and psychological detachment as mechanisms",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Meier",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Cho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "24",
+            "issn": "",
+            "pages": "359--372",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/ocp0000120"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Psychological aspects of workload, \" in A Handbook of Work and Organizational Psychology",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Meijman",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Mulder",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "15--44",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Going to work ill: A meta-analysis of the correlates of presenteeism and a dual-path model",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Miraglia",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Johns",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "21",
+            "issn": "",
+            "pages": "261--283",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/ocp0000015"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Show them the money? The role of pay, managerial need support, and justice in a selfdetermination theory model of intrinsic work motivation",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Olafsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Halvari",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Forest",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Deci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Scand. J. Psychol",
+            "volume": "56",
+            "issn": "",
+            "pages": "447--457",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/sjop.12211"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Chronic work stress, sickness absence, and hypertension in middle managers: general or specific sociological explanations?",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Peter",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Siegrist",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "Soc. Sci. Med",
+            "volume": "45",
+            "issn": "97",
+            "pages": "39--46",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0277-9536(97)00039-7"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Common method biases in behavioral research: A critical review of the literature and recommended remedies",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Podsakoff",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Mackenzie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Podsakoff",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J. Appl. Psychol",
+            "volume": "88",
+            "issn": "",
+            "pages": "879--903",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0021-9010.88.5.879"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "To work, or not to work, that is the question'-recent trends and avenues for research on presenteeism",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ruhle",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Breitsohl",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Aboagye",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Baba",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Biron",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Correia Leal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur. J. Work. Organ. Psychol",
+            "volume": "29",
+            "issn": "",
+            "pages": "344--363",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/1359432X.2019.1704734"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "The measurement of work engagement with a short questionnaire: A cross-national study",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Schaufeli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bakker",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Salanova",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Educ. Psychol. Meas",
+            "volume": "66",
+            "issn": "",
+            "pages": "701--716",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0013164405282471"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "The consequences of sickness presenteeism on health and wellbeing over time: A systematic review",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Skagen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Collins",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Soc. Sci. Med",
+            "volume": "161",
+            "issn": "",
+            "pages": "169--177",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.socscimed.2016.06.005"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Recovery from job stress: The stressordetachment model as an integrative framework",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sonnentag",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fritz",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Organ. Behav",
+            "volume": "36",
+            "issn": "",
+            "pages": "72--103",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/job.1924"
+                ]
+            }
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Staying engaged during the week: The effect of off-job activities on next day work engagement",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ten Brummelhuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bakker",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "17",
+            "issn": "",
+            "pages": "445--455",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/a0029213"
+                ]
+            }
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "The cognitive activation theory of stress",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ursin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Eriksen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Psychoneuroendocrinology",
+            "volume": "29",
+            "issn": "",
+            "pages": "567--592",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0306-4530(03)00091-X"
+                ]
+            }
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Cost burden of the presenteeism health outcome: diverse workforce of nurses and pharmacists",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Warren",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "White-Means",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Wicks",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Gourley",
+                    "suffix": ""
+                },
+                {
+                    "first": "Rice",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J. Occup. Environ. Med",
+            "volume": "53",
+            "issn": "",
+            "pages": "90--99",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/JOM.0b013e3182028d38"
+                ]
+            }
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "A systematic review of infectious illness presenteeism: prevalence, reasons and risk factors",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Webster",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Karimullina",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Amlot",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rubin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "BMC Public Health",
+            "volume": "19",
+            "issn": "",
+            "pages": "799--713",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12889-019-7138-x"
+                ]
+            }
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Lack of method variance in self-reported affect and perceptions of work: reality or artefact?",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Cote",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Buckley",
+                    "suffix": ""
+                }
+            ],
+            "year": 1989,
+            "venue": "J. Appl. Psychol",
+            "volume": "74",
+            "issn": "",
+            "pages": "462--468",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0021-9010.74.3.462"
+                ]
+            }
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Examining the relationship between work-family spillover and sleep quality",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Williams",
+                    "suffix": ""
+                },
+                {
+                    "first": "R.-L",
+                    "middle": [],
+                    "last": "Franche",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ibrahim",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mustard",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Layton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J. Occup. Health Psychol",
+            "volume": "11",
+            "issn": "",
+            "pages": "27--37",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/1076-8998.11.1.27"
+                ]
+            }
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "A multilevel analysis of effort, practice, and performance: effects; of ability, conscientiousness, and goal orientation",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Yeo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Neal",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J. Appl. Psychol",
+            "volume": "89",
+            "issn": "",
+            "pages": "231--247",
+            "other_ids": {
+                "DOI": [
+                    "10.1037/0021-9010.89.2.231"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Conceptual research model. Frontiers in Psychology | www.frontiersin.org 3 November 2021 | Volume 12 | Article 740411",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Factor loadings were 0.89-0.93 at T1, 0.90-0.93 at T2, and 0.90-0.92 at T3. Cronbach's \u03b1 values for the scale were 0.89 (T1), 0.91 (T2), and 0.90 (T3).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "invariant across time by showing intercept invariance [\u0394\u03c7 2 (58) = 42.66, p = 0.59], loading invariance [\u0394\u03c7 2 (46) = 36.77, p = 0.67], configural invariance [\u0394\u03c7 2 (25) = 26.88, p = 0.36], and residual invariance [\u0394\u03c7 2 (88) = 100.24, p = 0.11].",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Frontiers in Psychology | www.frontiersin.org 7 November 2021 | Volume 12 | Article 740411 TABLE 1 | Mean, standard deviations, and correlations among focal research constructs (N = 361).",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": ").",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of Interest:"
+        }
+    ]
+}

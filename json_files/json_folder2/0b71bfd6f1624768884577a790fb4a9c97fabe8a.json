@@ -1,0 +1,3924 @@
+{
+    "paper_id": "0b71bfd6f1624768884577a790fb4a9c97fabe8a",
+    "metadata": {
+        "title": "Unraveling spatial patterns of COVID-19 in Italy: Global forces and local economic drivers",
+        "authors": [
+            {
+                "first": "Eleonora",
+                "middle": [],
+                "last": "Cutrini",
+                "suffix": "",
+                "affiliation": {},
+                "email": "eleonora.cutrini@unimc.it"
+            },
+            {
+                "first": "Luca",
+                "middle": [],
+                "last": "Salvati",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This article investigates the spatial patterns of coronavirus disease 2019 infection in Italy and its determinants from March 9 to June 15, 2020, a time interval covering the so-called first wave of COVID pandemics in Europe.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The results, based on negative binomial regressions and linear spatial models, confirm the importance of multiple factors that positively correlate with the number of recorded cases. Economic forces, including urban agglomeration, industrial districts, concentration of large companies (both before and after the beginning of the 'lockdown') and a north-south gradient, are the most significant predictors of the strength of COVID-19 infection. These effects are statistically more robust in the spatial models than in the aspatial ones. We interpretate our results in the light of pitfalls related to data reliability, and we discuss policy implications and possible avenues for future research.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "emerged in Italy in January 2020, less than 1 month after the outbreak in China, and almost contemporarily to the diffusion in the Asian countries close to China, such as Japan, South Korea, and Iran. The Italian government soon adopted strategies based on the isolation and tracing of cases and their contacts, along with drastic social distancing measures, including the quarantine of whole cities and regions, the closure of schools and workplaces, and the cancellations of mass gatherings. After the quarantine imposed in some of the most infected municipalities in the north of the country -Codogno, in the province of Lodi (Lombardy), and V\u00f2 Euganeo, 1 in the province of Padua (Veneto)a full quarantine strategy was established by the national government on March 11, 2020, with the objective to counter the spreading of the virus and lower the pressure on the public health system.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Subsequently, the restrictions on mobility have been gradually relieved starting from May 4, 2020. Since then, production and construction activities have reopened under new safety regulations (e.g., spaced workstation, temperature controls, masks). In addition to retail stores, restaurants, cafes, and hairdressers reopened on May 18 (the initial planned reopening was June 1) and sports facilities reopened on May 25, followed by cinemas and theaters on June 15. Regional governments have been allowed to both anticipate or postpone the reopening. People could travel within their own region of residence (Nomenclature of Territorial Units for Statistics [NUTS] level 2).",
+            "cite_spans": [
+                {
+                    "start": 658,
+                    "end": 664,
+                    "text": "[NUTS]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Restrictions on mobility between regions were lifted on June 3, when also international borders reopened without restrictions to and from other European Union (EU) countries.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "One of the topical issues dominating the scientific debate is how economic systems and societi will have to reorganize themselves to better cope with similar situations that could become increasingly frequent (Bailey et al., 2020) . In addition to preparedness (e.g., through strengthening health systems), which requires long-term investment, it is equally important to understand how to improve territorial resilience to pandemic shocks in the short run. Research into COVID-19 in Italy suggests that its spatial spreading has been far from uniform; hence, academic interest is now devoted to understanding the 'conditioning factors' that may explain the spatial variation of COVID-19 cases and related mortality. Among these factors, there is growing consensus that a wide range of factorsdemographic, economic, and environmentalmay explain the intrinsic variation of detected COVID-19 cases over space. The spreading of the virus can be affected by place-specific factors and the degree of connectiveness of local economies to wider global networks, for example, mimicking a transmission through jump modes. This article aims to contribute to this lively debate by investigating the determinants of contagion in Italy during the first wave of the pandemic. Our analysis confirms that there is a positive and significant correlation between COVID-19 diffusion and a set of socioeconomic variables related to population age structure, urbanization, climate, presence of large firms, and spatial clustering of manufacturing activities.",
+            "cite_spans": [
+                {
+                    "start": 209,
+                    "end": 230,
+                    "text": "(Bailey et al., 2020)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Our results have important policy implications. First, our results can help the definition of containment measures that consider the high spatial heterogeneity. In this respect, it would be appropriate to differentiate mitigation policies not only between developed and most affected northern regions and comparatively less developed and less affected southern regions, but also at a lower spatial scale. Second, the significant economic determinants associated with COVID-19 contagion at the province level suggest that the management of economic activities can be the object of policies to enhance the preparedness for future occurrence of pandemics and shocks through an appropriate organization of work both within large establishments and along local production networks of suppliers and subcontractors that are the typical organization of firms operating in industrial districts.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The paper is organized as follows. Section 2 outlines the rationale of the work, then summarizes the most relevant literature for the issue at hand, and finally provides an overview of the COVID-19 spreading in Italy during the first wave of the pandemic. Section 3 describes the data and presents the methodological approach. The empirical results, based on different multivariate cross-section models, are discussed in Section 4. Conclusions are drawn, and limitations and directions for future research provided, in Section 5.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The analysis of causes and mechanisms underlying COVID-19 contagion was carried out from a multidisciplinary perspective, considering environmental, demographic, and sociocultural factors at the local level, the spatial organization of economic activities at regional scale, and broader factors, such as the degree of integration of local economies on a global scale. For example, focusing on a sample of 119 regional economies in nine EU countries, Kapitsinis (2020) provides early evidence on a variety of underlying factors affecting the spreading of COVID-19. Air quality, demographics, global interconnectedness, urbanization trends, and historic trends in health expenditure as well as the policies implemented to mitigate the pandemic were found to have influenced the regionally uneven mortality rate of Italy was the second country severely affected by the spread of the virus, after the causative agent, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was first detected in the human population in Wuhan City, Hubei Province (China) around the beginning of December 2019. In this regard, the Italian case is particularly interesting due to the highly concentrated and spatially persistent patterns of the early diffusion of the virus (Figure 1 ), at least compared with neighboring countries (for an account of the high spatial concentration of excess mortality across EU regions, see Guibourg, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 450,
+                    "end": 467,
+                    "text": "Kapitsinis (2020)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 1409,
+                    "end": 1424,
+                    "text": "Guibourg, 2020)",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1258,
+                    "end": 1267,
+                    "text": "(Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "At the beginning of March, the first diffusion of the epidemic was rather fast and spatially concentrated in the north of the country (Figure 1a ,b). After the nation-wide quarantine, heterogeneity in the spatial distribution of COVID-19 cases remained almost unchanged. A simple visual inspection of spatiotemporal pattern of across Italian provinces ( Figure 1 ) hints at the effectiveness of lockdown measures in counteracting the contagion, a result already pointed out by studies in the related literature. Bertuzzo et al. (2020) , for instance, have confirmed that the virus transmission was substantially reduced during the lockdown. Cross-country panel analysis confirms that lockdown has been effective in reducing the R 0 index, that is, the number of people infected by each infected person, and that its efficacy has continued to hold 20 days after the introduction of the policy (Alfano & Ercolano, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 512,
+                    "end": 534,
+                    "text": "Bertuzzo et al. (2020)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 892,
+                    "end": 917,
+                    "text": "(Alfano & Ercolano, 2020)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 134,
+                    "end": 144,
+                    "text": "(Figure 1a",
+                    "ref_id": null
+                },
+                {
+                    "start": 354,
+                    "end": 362,
+                    "text": "Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "It is worth noting that, in Italy, during the 2020 lockdown, some economic sectors continued their activities to some degree, while other activities were fully blocked by the containment measures. Table 1 reports the estimated percentage of local units drawn from a SVIMEZ report and estimates based on official statistics (Italian National Institute of Statistics, ISTAT) data. On the one hand, it is evident that some essential servicessuch as public utilities, education, healthcare, and transportcontinued functioning even during the lockdown, most of them thanks to extensive use of teleworking. On the other hand, several nonessential service sectors have had to stop their activities completely. The provisioning of essential goods and services inevitably determines a risk of contagion for those workers who are involved. In the case of manufacturing, six out of ten local units have closed down. In the cases of construction and trade, the percentages are higher, 70% and 86%, respectively. Since in industrial activities the fraction of teleworkable employment is low, local economies highly specialized in industrial activities may have been subject to some degree of propagation of the disease even during the lockdown because of the size of industry employment. For this reason, our hypothesis is that different local economic structure may have played a moderating effect on the reduction of COVID-19 cases after March 11, 2020; therefore, we included an index of relative industrial specialization as a control variable.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 197,
+                    "end": 204,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "The epidemic basically spread over two geographical scales of diffusion, one being more local and the other remaining intrinsically global and reticular (the so-called jump mode) (Bourdin et al., 2020) . The literature that focuses on the first wave of the pandemic in Italy provided evidence on a set of different local factors that positively influenced the extent of contagion, such as demographic structure, urban agglomeration, air pollution, temperature, spatial distribution of transport infrastructure, particularly airports, and economic structure in terms of both specialization and firms' size. Early epidemiological studies on hospitalized patients suggest that older people have a higher probability of being severely affected by the virus (e.g., Chen et al., 2020; Xu et al., 2020) . The empirical evidence produced so far confirms that, at least in the first wave of the epidemic in Italy, the virus has spread rapidly in more densely populated areas, and in areas where the incidence of older population was higher (Bourdin et al., 2020; Musolino & Rizzi, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 179,
+                    "end": 201,
+                    "text": "(Bourdin et al., 2020)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 760,
+                    "end": 778,
+                    "text": "Chen et al., 2020;",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 779,
+                    "end": 795,
+                    "text": "Xu et al., 2020)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 1031,
+                    "end": 1053,
+                    "text": "(Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1054,
+                    "end": 1077,
+                    "text": "Musolino & Rizzi, 2020)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "Studies that focus on the local economic determinants suggested that the economically stronger areas of the country were affected the most by the COVID-19 contagion (Ascani et al., 2020) , where the population density is greater, in urban areas or in industrial areas better integrated in the global value chains (Bourdin et al., 2020;  Musolino & Rizzi, 2020). Antonietti et al., 2020 investigate the determinants of COVID-19 diffusion in a cross-F I G U R E 1 Geography of early COVID-19 spread in Italy. Notes: Number of COVID-19 cases across Italian provinces at different points in time: (a) March 9, (b) March 31, (c) April 30, (d) June 15. Source: Ministry of Health section study on 142 countries, focusing on economic wealth and air quality. Overall, they confirm that the level of wealth measured in terms of per capita gross domestic product (GDP) and manufacturing specialization correlates strongly with the absolute number (or density) of COVID-19 reported cases. They also show that the level of air quality, in terms of particulate (PM 2.5) concentrations, does not significantly contribute to explaining the diffusion of COVID-19 and the related mortality after accounting for socioeconomic factors, especially per capita GDP, although the positive relationship between infections and PM 2.5 holds if the analysis is restricted to high-income countries. A large number of empirical studies found a positive and statistically significant association between air pollution and adverse COVID-19 outcomes, such as the number of positive cases, deaths, and excess mortality rates (see, among others, Becchetti et al., 2020; Conticini et al., 2020; Ogen, 2020; Setti et al., 2020; Wu et al., 2020; and Becchetti et al., 2021 for a systematic survey).",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 186,
+                    "text": "(Ascani et al., 2020)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 313,
+                    "end": 335,
+                    "text": "(Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 336,
+                    "end": 336,
+                    "text": "",
+                    "ref_id": null
+                },
+                {
+                    "start": 1612,
+                    "end": 1635,
+                    "text": "Becchetti et al., 2020;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1636,
+                    "end": 1659,
+                    "text": "Conticini et al., 2020;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1660,
+                    "end": 1671,
+                    "text": "Ogen, 2020;",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1672,
+                    "end": 1691,
+                    "text": "Setti et al., 2020;",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1692,
+                    "end": 1708,
+                    "text": "Wu et al., 2020;",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1709,
+                    "end": 1735,
+                    "text": "and Becchetti et al., 2021",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "Among territorial factors related to climate regimes, it is supposed that the effect of weather on virus transmission is probably linked to the ability of the virus to survive in external environments. Nevertheless, the role of temperature and other weather conditions is still controversial. For example, Palialol et al., 2020 suggest that warm climate can diminish the virus transmission, but they find that the effect of temperature is stronger in cold climates. They show that the number of COVID-19 cases is negatively correlated with temperature and humidity, but not with precipitation. This is in line with recent observations of faster spread of the virus in cold and dry environments (Antonietti et al., 2020; Araujo & Naimi, 2020; Confalonieri et al., 2020; Wang et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 306,
+                    "end": 327,
+                    "text": "Palialol et al., 2020",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 694,
+                    "end": 719,
+                    "text": "(Antonietti et al., 2020;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 720,
+                    "end": 741,
+                    "text": "Araujo & Naimi, 2020;",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 742,
+                    "end": 768,
+                    "text": "Confalonieri et al., 2020;",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 769,
+                    "end": 787,
+                    "text": "Wang et al., 2020)",
+                    "ref_id": "BIBREF52"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "As for the role of jump modes of epidemic transmission, previous studies have highlighted that air flows facilitate long-distance contagion during the SARS epidemic in 2003 (Bowen & Laroe, 2006) . For the specific case of COVID-19, Li et al. (2020) show that the greater numbers of undocumented infections over known cases before travel restrictions were implemented help to explain the lightning-fast spread of the virus around the world.",
+            "cite_spans": [
+                {
+                    "start": 173,
+                    "end": 194,
+                    "text": "(Bowen & Laroe, 2006)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 232,
+                    "end": 248,
+                    "text": "Li et al. (2020)",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "Likewise, Bourdin et al. (2020) in their analysis on Italy show that the coefficient associated with airline connections, proxied by an airport's number of passengers, is positive even though it is not particularly significant.",
+            "cite_spans": [
+                {
+                    "start": 10,
+                    "end": 31,
+                    "text": "Bourdin et al. (2020)",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "Asymptomatic transmission proved to be also important for the early global spreading (Rothe et al., 2020) . Therefore, human mobility is crucial among the realistic factors to be considered in understanding the spatiotemporal patterns of international diffusion of infectious diseases (Balcan et al., 2009 (Balcan et al., , 2010 ; however, different views were proposed. For instance, even if international travel restrictions did help to slow contagion until mid-February, according to the results provided by Chinazzi et al. (2020) , early detection, hand washing, self-isolation, and household quarantine are likely to be more effective than travel restrictions at mitigating the pandemic.",
+            "cite_spans": [
+                {
+                    "start": 85,
+                    "end": 105,
+                    "text": "(Rothe et al., 2020)",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 285,
+                    "end": 305,
+                    "text": "(Balcan et al., 2009",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 306,
+                    "end": 328,
+                    "text": "(Balcan et al., , 2010",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 511,
+                    "end": 533,
+                    "text": "Chinazzi et al. (2020)",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| RATIONALE OF THE WORK AND RELEVANT LITERATURE REVIEW"
+        },
+        {
+            "text": "The following analysis is aimed at assessing the role played by selected demo-economic and territorial factors in the early diffusion of the disease in Italy (February-June 2020). We collected data from the Italian Ministry of Health regarding the daily number of confirmed COVID-19 infections in the 110 Italian provinces (NUTS-3 level) starting from February 24, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "Even if data on COVID-19 cases are available at the municipality level, we opted for NUTS 3 for three main reasons. First, information on economic factors and other possible determinants are available at the NUTS-3 level, and this geographical granularity is suitable to account for the heterogeneity in local economic structures. Second, NUTS-3 level in Italy allows a cross-section analysis to be conducted with a set of observations large enough to obtain reliable estimates. Third, this relatively high geographical granularity makes it possible to avoid the risk of a scale aggregation bias that may affect analyses based on country-level data, NUTS-2 or NUTS-1 level data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "Our dependent variable is the COVID-19 total cases detected in province p from February 24 until day t (COVID 19 _p, t).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "With reference to the dependent variable, data skewness makes the use of simplified, ordinary least squares (OLS) regression models quite inappropriate. Since the dependent variable is based on counts, we first estimate a negative binomial regression model that is considered more appropriate than the Poisson model in cases of overdispersion of the dependent variable. 2 To evaluate the relationship between structural characteristics of the local economies and the spread of the virus, we estimated the following negative binomial regression model at different points in time (March 9, March 31, April 30, and June 15):",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "where \u03b2 0 represents the vectors of point estimates associated with the structural characteristics. X p includes the explanatory variables of the cross-section regression model. Then, we ran post-estimation tests on the regression residuals. These tests led us to reject, in the majority of specifications, the null hypothesis of absence of spatial autocorrelation in the residuals at the 10% or 5% significance level. This is in line with previous evidence that COVID cases and mortality across Italian provinces are subject to spatial correlation (Bourdin et al., 2020; Ghosh & Cartone, 2020) . Hence, we use different linear spatial dependence models (spatial autoregressive model [SAR] , spatial error model [SEM] , spatial Durbin model [SDM] ) for more robustness. We follow Elhorst (2014) and refer to a full model with all types of interactions effects. A general nesting spatial model can be defined as follows:",
+            "cite_spans": [
+                {
+                    "start": 549,
+                    "end": 571,
+                    "text": "(Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 572,
+                    "end": 594,
+                    "text": "Ghosh & Cartone, 2020)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 684,
+                    "end": 689,
+                    "text": "[SAR]",
+                    "ref_id": null
+                },
+                {
+                    "start": 712,
+                    "end": 717,
+                    "text": "[SEM]",
+                    "ref_id": null
+                },
+                {
+                    "start": 741,
+                    "end": 746,
+                    "text": "[SDM]",
+                    "ref_id": null
+                },
+                {
+                    "start": 780,
+                    "end": 794,
+                    "text": "Elhorst (2014)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "where:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "\u2022 y is a (R \u00c2 1) vector of the dependent variable",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "\u2022 Wy is the spatially lagged dependent variable y to account for spatial dependence in the COVID-19 cases, with W defined as (R \u00c2 R) spatial weight matrix",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "\u2022 \u03b2 is (k \u00c2 1) vector of unknown parameters associated with exogenous explanatory variables",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| METHODOLOGY"
+        },
+        {
+            "text": "\u2022 \u03b5 is a (R \u00c2 1) vector whose elements follow \u03b5$iid(0,\u03c3 2 I n )",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "The interaction effects are:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "\u2022 \u03c1Wy: endogenous interaction effect The spatial lag model (SAR) allows for spatial correlation in the COVID-19 cases (\u03c1 \u2260 0), while the spatial error model (SEM) allows for spatial correlation in the error term (\u03bb \u2260 0). The spatial lag/error model (SAC) is more appropriate when spatial correlation is present both in the dependent variable and in the error term",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "The spatial Durbin model (SDM) includes a spatial lagging of the dependent variable (\u03c1 \u2260 0) in addition to a spatial lagging of all the independent variables (\u03b8 \u2260 0). The spatial lagging of the dependent variable is included to capture effects as described for the spatial lag model. The spatial lagging of the explanatory variables is added so that the characteristics of neighboring provinces could have an influence on the COVID-19 cases of each province in the sample. In this way the spatial Durbin model allows for neighboring COVID-19 cases to determine the COVID-19",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "cases of a province, in addition to the structural characteristics of neighboring provinces.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "This model could be developed from the spatial error model (Anselin, 2006) or from a spatial lag model (Bivand, 1984) . This is done by additional constraints on the parameters.",
+            "cite_spans": [
+                {
+                    "start": 59,
+                    "end": 74,
+                    "text": "(Anselin, 2006)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 103,
+                    "end": 117,
+                    "text": "(Bivand, 1984)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "Finally, the standard OLS model corresponds to a general nesting spatial model where the three parameters (\u03c1, \u03b8, \u03bb) equal to zero.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "The choice of the spatial model that best describes the data is not trivial. For model selection and management of spatial options, we follow Elhorst (2014) and diagnostic results of the classic Lagrange multiplier (LM) tests proposed by Anselin (1988) and the robust LM tests proposed by Anselin et al. (1996) . We also rely on the selection diagnostic criteria provided by Stata; in particular, we refer to the log likelihood function (LLF), the Akaike information criterion (AIC), and the Schwarz criterion (SC).",
+            "cite_spans": [
+                {
+                    "start": 142,
+                    "end": 156,
+                    "text": "Elhorst (2014)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 238,
+                    "end": 252,
+                    "text": "Anselin (1988)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 289,
+                    "end": 310,
+                    "text": "Anselin et al. (1996)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "In the absence of proper routines in Stata (the software used in this study) for spatial models based on count data, maximum likelihood estimation (MLE) models are used; the dependent variable, y p , i, t, is the inverse hyperbolic sine transformation of the number of COVID-19 cases in the province p defined as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "The same methodology has been already applied in previous studies based on count data (e.g., Bonaccorsi et al., 2013; Ciffolilli et al., 2019) .",
+            "cite_spans": [
+                {
+                    "start": 93,
+                    "end": 117,
+                    "text": "Bonaccorsi et al., 2013;",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 118,
+                    "end": 142,
+                    "text": "Ciffolilli et al., 2019)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "We identified a set of relevant explanatory variables, drawing upon the existing literature surveyed in Section 2 and on the basis of the statistics available on a provincial scale. Table 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 182,
+                    "end": 189,
+                    "text": "Table 2",
+                    "ref_id": null
+                }
+            ],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "These variables have been selected to capture various aspects supposed to have a potential impact on the spread of the epidemic, according to the early studies surveyed in Section 2. Rationale for their inclusion in the analysis is summarized as follows.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "vector of unknown parameters"
+        },
+        {
+            "text": "Essential demographic and environmental characteristics should be considered among local factors that can have facilitated the contiguous spread of the virus. Moreover, factors relating to the mobility habits of a population are supposed to play a role since the epidemic spreads through human contact.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Basic predictors"
+        },
+        {
+            "text": "\u2022 Population over 65 years old (percent share in total population): According to early epidemiological studies, older people has been more severely affected by the virus. Therefore, we include an indicator of the incidence of older population in the overall demographic structure. The higher the percentage of population aged 65 years in a province, the faster the diffusion of the virus is expected to be.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Basic predictors"
+        },
+        {
+            "text": "\u2022 Airline networks: The epidemic spread rapidly along international airline networks. Hence, we include a specific indicator constructed as the number of air passengers per 100,000 inhabitants in 2019. We expect higher contagion in provinces with one or more airports, because of the higher amount of passenger traffic.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Basic predictors"
+        },
+        {
+            "text": "\u2022 Metropolitan area: Migration and mobility are among the major factors in the spread of epidemics at a global scale.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Basic predictors"
+        },
+        {
+            "text": "Moreover, the largest outbreaks are usually observed in more densely populated areas where personal contacts are facilitated. We include a dummy variable that assumes the value 1 in the presence of a metropolitan region within the province, as defined by the Joint Research Center (Seville) and the European Commission. We adopted this indicator over the more traditional population density because the latter can weaken the effect of urban agglomerations and it is not able to distinguish different urban structures within the province, as noticed by Musolino and Rizzi (2020) . Greater Milan metropolis, Italy. They attempt to trace geoclimatic similarities, as well as those concerning human activities. In particular, they suggest that both areas correspond to Cfa subclassin K\u00f6ppen climate classification system (Skarbit et al., 2018 )as 'humid subtropical', typical of temperate continental areas. Both are located in an alluvial plain, that is, Yangtze River (Wuhan urban agglomeration) and Po River (Greater Milan metropolis). In this vein, in the absence of more detailed information, we consider the latitude of the centroid of the province as a proxy of arid/dry climate conditions (Incerti et al., 2007; Salvati et al., 2008; Scarascia et al., 2006) , assuming a north-south gradient of rainfalls in Italy (from temperate-continental-alpine regimes in northern Italy to semi-arid, Mediterranean regimes in Southern Italy; Bajocco et al., 2012; Recanatesi et al., 2016; Salvati et al., 2017) .",
+            "cite_spans": [
+                {
+                    "start": 552,
+                    "end": 577,
+                    "text": "Musolino and Rizzi (2020)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 817,
+                    "end": 838,
+                    "text": "(Skarbit et al., 2018",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 1193,
+                    "end": 1215,
+                    "text": "(Incerti et al., 2007;",
+                    "ref_id": null
+                },
+                {
+                    "start": 1216,
+                    "end": 1237,
+                    "text": "Salvati et al., 2008;",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1238,
+                    "end": 1261,
+                    "text": "Scarascia et al., 2006)",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1434,
+                    "end": 1455,
+                    "text": "Bajocco et al., 2012;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1456,
+                    "end": 1480,
+                    "text": "Recanatesi et al., 2016;",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1481,
+                    "end": 1502,
+                    "text": "Salvati et al., 2017)",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Basic predictors"
+        },
+        {
+            "text": "More broadly, we interpretate this variable as a north-south gradient that gives an indication of the traditional economic distinction in Italy between affluent/climatically temperate regions (north + center) and disadvantaged/ climatically dry regions (south).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Basic predictors"
+        },
+        {
+            "text": "Most epidemiological studies suggest that transmission is gradual, although a number of studies have recognized that the pre-existing spatial organization of the economy matters (Ascani et al., 2020; Becchetti et al., 2020; Bourdin et al., 2020; Musolino & Rizzi, 2020) . To evaluate the role of different profiles of the local economic structure, we include variables capturing firms' size, local productive systems/clustering, and relative specialization at the provincial level, as follows.",
+            "cite_spans": [
+                {
+                    "start": 178,
+                    "end": 199,
+                    "text": "(Ascani et al., 2020;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 200,
+                    "end": 223,
+                    "text": "Becchetti et al., 2020;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 224,
+                    "end": 245,
+                    "text": "Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 246,
+                    "end": 269,
+                    "text": "Musolino & Rizzi, 2020)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Explanatory variables related to the economic structure of the local economy"
+        },
+        {
+            "text": "\u2022 Industrial districts: Istat (2015) provides an updated list of local labor market areas (LLMAs) with the typical characteristics of a cluster or a variant of the archetypal Marshallian industrial district. In any case, this variable is a proxy for a local economy characterized by agglomeration of a large number of small and medium-sized firms that tend to specialize in different stages of the production process and cluster to benefit from close contacts, knowledge spillovers, and specialized suppliers.",
+            "cite_spans": [
+                {
+                    "start": 24,
+                    "end": 36,
+                    "text": "Istat (2015)",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Explanatory variables related to the economic structure of the local economy"
+        },
+        {
+            "text": "\u2022 Location quotient (LQ), industry: Share of industrial value added as percentage of total value added, in the province p, compared with the national average, is used to capture the degree of relative specialization of the province in the industrial sector. We believe it is important to include this control variable in order to understand whether a partial lockdown may have facilitated contagion, especially in those provinces where industrial activities are overrepresented compared with the national average, since industry is one of the sectors that, at least partially, has continued to work (Table 1) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 599,
+                    "end": 608,
+                    "text": "(Table 1)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Explanatory variables related to the economic structure of the local economy"
+        },
+        {
+            "text": "\u2022 Large firms: A further indicator chosen to measure the production agglomeration is the percent share of employees in establishments with more than 250 employees in total employees. We believe that the inclusion of this variable may help understanding whether and to what extent contagion has occurred due to personal contacts within large firms. Table 3 presents the basic descriptive statistics for the dependent variable at different points in time and each explanatory variable included in the model.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 348,
+                    "end": 355,
+                    "text": "Table 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Explanatory variables related to the economic structure of the local economy"
+        },
+        {
+            "text": "Data on these variables were collected for 107-110 Italian provinces, depending on data availability. The dependent variables are characterized by a considerable variance. As an example, the total number of COVID-19 cases at the provincial level as of March 31 was 957, on average; it ranged between a minimum of 9 in Isernia (Molise) and a maximum of 8,911 in Milan (Lombardy).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Explanatory variables related to the economic structure of the local economy"
+        },
+        {
+            "text": "Bilateral correlations among explanatory variables are provided in Table A1 . Most of the variables are able to capture different factors of the local economic environment and have their own impact on the spreading of the virus. Nevertheless, in an attempt to properly evaluate the role of each of the economic factors, we estimate different models to mitigate multicollinearity concerns. We thus consider, in the negative binomial regression models, the relevant variables capturing local economic structure as alternative controls in separate regressions (see Section 4.1).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 67,
+                    "end": 75,
+                    "text": "Table A1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Explanatory variables related to the economic structure of the local economy"
+        },
+        {
+            "text": "This section reports the results of the negative binomial regressions of Equation 1. The estimates in all columns in Table 4 use the same basic set of control variables, namely POP-65, airline networks, metropolitan area, and latitude.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 117,
+                    "end": 124,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "Each column from 1 to 3 considers alternative explanatory variables related to the economic structure, namely industrial districts, industrial specialization, and large firms. Columns from 4 to 6 add different combinations of the structural economic variables to the basic set of explanatory variables. Column 7 is the extended model with all the selected regressors, basic and economic ones. Each panel of Table 4 presents the results of the estimates repli- As for the basic control variables, some results are in line with the existing literature whereas others are not. We find positive and statistically significant effects for most of the demographic and territorial variables selected, namely POP-65, metropolitan area, and latitude.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 407,
+                    "end": 414,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "The positive and significant coefficients associated with POP-65 are in line with earlier evidence of a more intense spread of the epidemic in areas where the incidence of older population was higher (Bourdin et al., 2020; Musolino & Rizzi, 2020) . Table 4 shows that the significance level and the size of the associated regression coefficient increase over time.",
+            "cite_spans": [
+                {
+                    "start": 200,
+                    "end": 222,
+                    "text": "(Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 223,
+                    "end": 246,
+                    "text": "Musolino & Rizzi, 2020)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 249,
+                    "end": 256,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "Hence, the present study confirms previous findings and contributes additional evidence that suggests that a higher incidence of older population facilitates COVID-19 contagion, from the end of March onward. Standard errors in parentheses.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "***p < 0.01 **p < 0.05 *p < 0.1",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "As for the long-distance channel of contagion, our results indicate that the higher the number of visitors at an airport in a province, the higher the number of cases detected. Nevertheless, the coefficient associated with airport passengers is generally insignificant and decreases after the lockdown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "Our results show that there is a positive relation between metropolitan areas and the strength of COVID-19",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "infection. The coefficient associated with this variable is statistically significant but only until the end of March.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "Latitude also plays a role in explaining virus diffusion, likely reflecting the intrinsic differences in climate regimes between affluent northern and disadvantaged southern Italy (subhumid versus semiarid regimes).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "As explained above, the correlation between the virus propagation and local economic conditions is intentionally explored through the inclusion of specific variables, such as industrial districts, LQ industry, and large firms. In this respect, caution must be applied to interpretate the results of Table 4 . The findings clearly indicate that the spatial clustering of manufacturing firms (IDs) is positively associated with the spread of COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 299,
+                    "end": 306,
+                    "text": "Table 4",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "The associated coefficient is positive and highly significant throughout the entire period of our analysis. Instead, with regard to the control variables capturing firm size and industrial specialization, our findings based on the negative binomial regressions cast some doubts on the linkage between the local economic structure and the spreading of the virus. In fact, comparing the estimates before the lockdown (Table 4a ) and those related to the lockdown (Table 4b ,c), the coefficients associated with LQ industry and large firms are unstable over time, they turn from negative before the lockdown to positive during the lockdown, and they are usually not significant.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 415,
+                    "end": 424,
+                    "text": "(Table 4a",
+                    "ref_id": null
+                },
+                {
+                    "start": 461,
+                    "end": 470,
+                    "text": "(Table 4b",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "Overall, although negative binomial regression models do not allow conclusive results as to the role of industrial specialization and firm size, they have successfully demonstrated that COVID-19 diffusion is associated with the presence of clustering of manufacturing establishments.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "It goes without saying that a major limitation of the 'classical' multivariate regression analysis provided so far is that it neglects possible spatial spillover effects. As noticed, the geographical distribution of COVID-19 across Italian provinces is highly uneven, and therefore it is deemed to be subject to spatial correlation (e.g., Bourdin et al., 2020; Ghosh & Cartone, 2020) . Spatial aspects in model specifications can be classified into two main categories, namely spatial dependence and spatial heterogeneity. First, any econometric analysis for the issue at hand must verify and eventually handle the presence of spatial dependence, the fact that the value assumed by a certain dependent variable (e.g., cases) and/or independent variables depends on the value that the same variable assumes in the neighboring regions. Second, spatial heterogeneity should be accounted for since it is particularly relevant for the case of Italy (among others, Benedetti et al., 2020; Panzera & Postiglione, 2014) . To control for this second concern, we assume discrete heterogeneity (Anselin, 2010) and we explicitly consider two different exogenous regimes (Le Gallo & Dall'erba, 2003 , 2006 by dividing Italy into north and south provinces and estimating separate spatial models, allowing model coefficients and other parameters to vary between the two groups.",
+            "cite_spans": [
+                {
+                    "start": 339,
+                    "end": 360,
+                    "text": "Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 361,
+                    "end": 383,
+                    "text": "Ghosh & Cartone, 2020)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 959,
+                    "end": 982,
+                    "text": "Benedetti et al., 2020;",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 983,
+                    "end": 1011,
+                    "text": "Panzera & Postiglione, 2014)",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 1162,
+                    "end": 1185,
+                    "text": "Gallo & Dall'erba, 2003",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1186,
+                    "end": 1192,
+                    "text": ", 2006",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "We address these issues in the following section.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Results based on the negative binomial regressions"
+        },
+        {
+            "text": "As already noticed, two geographical scales are involved in epidemic diffusion (a local one and a global/reticular one).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Moreover, we included in our model a specific explanatory variable to capture airline networks that clearly represent a situation that may involve global spillovers. As a matter of fact, results of the diagnostic test to detect spatial dependence (Table A2) suggest that, from March 31 onward, local spillovers and endogenous interaction lead to a scenario where changes in one province set in motion a sequence of adjustments in (potentially) all provinces in the sample. Hence, we cannot narrow down the relationship being investigated as reflecting only a local spillover situation and restrict our analysis, accordingly, to the spatial Durbin model, as suggested for practitioners in such cases (LeSage, 2014) .",
+            "cite_spans": [
+                {
+                    "start": 699,
+                    "end": 713,
+                    "text": "(LeSage, 2014)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 247,
+                    "end": 257,
+                    "text": "(Table A2)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Therefore, we referred to the family of models -SAR, SEM, SDM, and SACpopularized by Anselin (1988) , for more robustness. Results of the estimates through OLS and linear spatial dependent models on COVID-19 cases, in different points in time, are reported in Table 5 . Column 1 corresponds to a standard OLS model with all parameters of the general nesting spatial model equal to zero. Columns 2 and 3 allow for spatial correlation in the dependent variable (\u03c1 \u2260 0), and in the errors (\u03bb \u2260 0), respectively. Column (4) represents a spatial Durbin model (with \u03c1 \u2260 0 and \u03b8 \u2260 0), while column 5 represents the spatial lag/error model -SAC (with \u03c1 \u2260 0 and \u03bb \u2260 0).",
+            "cite_spans": [
+                {
+                    "start": 85,
+                    "end": 99,
+                    "text": "Anselin (1988)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 260,
+                    "end": 267,
+                    "text": "Table 5",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "We follow the directions provided by Elhorst (2014) as explained in Section 2 as a compass for model selection and the basic principles devised by LeSage (2014) for the management of spatial options. The full diagnostic results are presented in Table A2 . Following the rules of thumbs suggested by the author, 3 we suggest that the SEM are appropriate for the first two regressions at the beginning of the lockdown ( We estimated the impactsdirect and indirect effectsfor the spatial linear regressions, except for the spatial error model (among others, LeSage, 2014). We provide the results in the Appendix for the SAR, the SDM, and the SAC models in different points in time (Table A3) . We present elasticity-based impact measures, where we found that the direct effects are usually higher than indirect effects, as expected.",
+            "cite_spans": [
+                {
+                    "start": 37,
+                    "end": 51,
+                    "text": "Elhorst (2014)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 245,
+                    "end": 253,
+                    "text": "Table A2",
+                    "ref_id": null
+                },
+                {
+                    "start": 678,
+                    "end": 688,
+                    "text": "(Table A3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "The results, which generally show the expected signs for the control variables considered, confirm that metropolitan area, latitude, and industrial districts facilitate the COVID-19 diffusion in the early wave of the pandemic in Italy, that is, as of March 9, 2020.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Since spatial heterogeneity may be an issue in our data, Table 6 presents the results for linear spatial models, as of March 9, 2020, for north provinces and south provinces, separately. Splitting the sample into north and south provinces unravels two different scenarios and allows a better understanding of the role of the local economic structures, at the beginning of the observation period.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 57,
+                    "end": 64,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "With separate regression, we further confirm the different role of the economic base in the early spreading of the virus in Italy (Ascani et al., 2020) . As shown in Table 6 , in the north the pre-existent economic structures, captured by the presence of IDs and large firms, have played a significant role in favoring the spreading of the virus.",
+            "cite_spans": [
+                {
+                    "start": 130,
+                    "end": 151,
+                    "text": "(Ascani et al., 2020)",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 166,
+                    "end": 173,
+                    "text": "Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "By contrast, in the south of the country, the specialization in industrial activities (LQ industry) has a moderating effect and the virus has spread mostly in more densely populated areas, and in areas where the incidence of older population was higher. In this respect, it is useful to visualize three main predictors of COVID-19 cases, namely IDs, metropolitan areas and LQ industry, for their different roles played in the spreading of the virus in the two macroregions (north and south of the country) ( Figure A1 , Appendix).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 508,
+                    "end": 517,
+                    "text": "Figure A1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "While the airline networks continue to be insignificant, the role of the variable 'latitude' is still an equally important and significant predictor in the two macroareas, pointing to a possible role for economic and social conditions shaping the north-south gradient beyond those being explicitly included in our analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "We have also estimated the elasticity-based impact measures to assess direct and indirect effects, conveniently distinguishing the two macroregions, north Italy and south Italy. They are reported in the Appendix for different spatial models: SAR, SDM, and SAC (Table A4) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 260,
+                    "end": 270,
+                    "text": "(Table A4)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "To further check the stability of our results after the lockdown, we rerun the same spatial models at different time points (Table 5b-d) . Spatial models explain a high percentage of the variation in the dependent variable, approximately 75-90% during the full nationwide quarantine.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 124,
+                    "end": 136,
+                    "text": "(Table 5b-d)",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Looking at the coefficients, these results are generally in line with our previous estimates, suggesting the statistical robustness of our findings. In all estimates during and after the lockdown (Table 5b -d), we observe, as expected, that the higher the incidence of old population, the higher the number of COVID-19 cases, and the associated coefficient is also highly significant (99%) and stable over time. Moreover, we show that latitude has positive coefficients, being significant for all models starting from the beginning of our observation period onwards (Table 5a-d) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 196,
+                    "end": 205,
+                    "text": "(Table 5b",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 566,
+                    "end": 578,
+                    "text": "(Table 5a-d)",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Similarly, a positive correlation emerges between metropolitan areas and COVID-19 contagion, and the coefficient associated with this variable is stable over time, even if it is not always statistically significant throughout the period analyzed.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Airline networks maintain the expected positive signs. Not surprisingly, when comparing the results on airline networks over time, we observe that, after the lockdown, the estimated coefficient is half the coefficient estimated with data on March 9. Nevertheless, it remains statistical insignificant throughout the period of our analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "With regard to the local economic structure, spatial models confirm the results provided with the negative binomial regressions, in that industrial districts continue to show a positive and statistically significant coefficient, suggesting that provinces hosting manufacturing clusters have higher COVID-19 cases than provinces that do not.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Moreover, COVID-19 contagion is higher when the share of employees in large firms in the composition of the local economy is higher, all else being equal.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Instead, like the results based on the binomial regressions, the evidence based on the linear spatial models is unclear with respect to the role of industrial specialization. The impact of LQ industry in explaining COVID-19 contagion is much more limited than IDs and large firms, and the associated coefficient is very low and insignificant. Moreover, the coefficient has a negative sign in some specifications with the whole set of Italian provinces (Table 5a ,c), and it turns significantly negative when the sample is restricted to south Italy (Table 6b) . Note: Linear spatial dependent models on COVID-19 confirmed cases. The parameter estimates are obtained by applying maximum likelihood (ML). The dependent variable y p ,t is the inverse hyperbolic sine transformation of the number of COVID-19 confirmed cases in province p at time t, defined as y p ,t \u00bc ln\u00f0COVID 19 _p,t \u00fe \u00f0COVID19 _p,t 2 \u00fe1\u00de 1 2 \u00de. Standard errors are in brackets. *, **, and *** indicate significance at the 10%, 5%, and 1% level, respectively.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 452,
+                    "end": 461,
+                    "text": "(Table 5a",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 548,
+                    "end": 558,
+                    "text": "(Table 6b)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "T A B L E 6 Robustness checks: Spatial heterogeneity, spatial models for north and south provinces, March 9, 2020 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| Tackling spatial dependence and spatial heterogeneity"
+        },
+        {
+            "text": "Although a strict comparison of the results shown in Sections 4.1 and 4.2 is subject to certain limitations, we provide a summary and a general discussion of the evidence provided by our study in what follows.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "Taken together, the two kinds of models adopted in this article suggest that, in the Italian case, more economically dynamic areas and more densely populated cities have experienced the highest numbers of COVID-19 cases, differently from the spatial pattern of the outbreak in Germany where the areas most affected by the contagion have been smaller cities in a rural environment where a 'superspreading' event occurred (Kuebart & Stabler, 2020) .",
+            "cite_spans": [
+                {
+                    "start": 420,
+                    "end": 445,
+                    "text": "(Kuebart & Stabler, 2020)",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "As for the role of the demographic structure, the present study confirms previous findings on the positive association at the local level between a higher incidence of older population and COVID-19 contagion. In our regressions, the significance level and the size of the coefficient associated with population over 65 years old increase over time.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "It should be emphasized that a potential source of bias for the present research is that data on confirmed cases that is our dependent variable are based on the tests performed for the detection of COVID-19, and in the early phase of Note: Linear spatial dependent models on COVID-19 confirmed cases. The parameter estimates are obtained by applying maximum likelihood (ML). The dependent variable y p ,t is the inverse hyperbolic sine transformation of the number of COVID-19 confirmed cases in province p at time t, defined as y p ,t \u00bc ln\u00f0COVID 19 _p,t \u00fe \u00f0COVID19 _p,t 2 \u00fe1\u00de 1 2 \u00de. Standard errors are in brackets. *, **, and *** indicate significance at the 10%, 5%, and 1% level, respectively. the epidemic, the screening in Italy was limited to persons with higher degrees of illness, which were mostly old people. Therefore, it is possible that this correlation would have been lower had the screening and tracking been massive and systematic in that period.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "As for the role of mobility via air transportation, this study confirms the findings of Bourdin et al. (2020) , who found that the number of airport passengers is positive but not particularly significant.",
+            "cite_spans": [
+                {
+                    "start": 88,
+                    "end": 109,
+                    "text": "Bourdin et al. (2020)",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "With regard to the economic structure, while our results based on the spatial models are still unclear on the role of industrial specialization, they did substantiate the role of large firms and spatial clustering of establishments specialized in manufacturing industries. In this respect, our analysis confirms previous findings (Ascani et al., 2020; Antonietti et al., 2020; Becchetti et al., 2020; Bourdin et al., 2020; Musolino & Rizzi, 2020) and contributes additional evidence on the importance of factors shaping the spatial organization of economic activities. It is worth noting that clustering of manufacturing firms traditionally finds advantages in the possibility of recurrent face-to face relationships. Besides, many 'leader' firms operating in Italian industrial districts have long been inserted in global value chains.",
+            "cite_spans": [
+                {
+                    "start": 330,
+                    "end": 351,
+                    "text": "(Ascani et al., 2020;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 352,
+                    "end": 376,
+                    "text": "Antonietti et al., 2020;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 377,
+                    "end": 400,
+                    "text": "Becchetti et al., 2020;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 401,
+                    "end": 422,
+                    "text": "Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 423,
+                    "end": 446,
+                    "text": "Musolino & Rizzi, 2020)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "The regressor capturing environmental and climate conditions has a positive impact, suggesting that the epidemic spreads more easily in specific conditions, likely associated with colder and wet climates, such as in northern",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "Italy and some districts of central Italy. The associated coefficients are significant at 1% significant level even after the lockdown (Tables 4 and 5) , and when the sample is divided into two macroregions (Table 6 ). We also interpretate our finding on the correlation between latitude (or north-south gradient) and COVID-19 propagation as evidence on the impact of economic dynamisms in all the perspective of social life and productions (e.g., traveling, competitive networking, less secularized social life), going beyond the specific economic predictors used in this paper.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 135,
+                    "end": 151,
+                    "text": "(Tables 4 and 5)",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 207,
+                    "end": 215,
+                    "text": "(Table 6",
+                    "ref_id": null
+                }
+            ],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "In summary, the results of the estimations based on multivariate cross-section models at the beginning, during, and after the lockdown provide preliminary evidence that a number of socioeconomic variables are positively and significantly correlated with the COVID-19 outbreak in Italy. In particular, we confirm that virus spread correlates with POP-65, metropolitan area, latitude, and industrial districts. These effects are statistically more robust in the linear spatial specifications than in the aspatial negative binomial ones. Moreover, spatial models provide clear-cut evidence on the positive correlation between COVID-19 diffusion and the incidence of large firms in the local economy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "One of the more significant findings to emerge from this study is the correlation between a north-south gradient and the strength of COVID-19 infection. This evidence is further confirmed by the robustness analysis specifically performed to handle spatial heterogeneity. The findings of this study have several important policy implications.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "In particular, the results suggest the need for designing different containment policies in advanced regions and policy-subsidized, disadvantaged contexts of southern Italy, as suggested in the concluding section.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| A discussion of the main results"
+        },
+        {
+            "text": "The COVID-19 pandemic, which began in December 2019 in the city of Wuhan in China, soon spread around the world with devastating consequences on public health and with highly uneven economic impacts among countries and regions. The pandemic has highlighted the lack of preparedness and resilience of increasingly interconnected economic systems.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "It was soon evident that ending the global SARS-CoV-2 pandemic would have required implementation of multiple population-wide strategies, including social distancing, testing, and contact tracing. Hence, many national governments in Europe and the rest of the world have imposed restrictive measures on mobility to slow the spread of the virus, with varying degrees of intensity (Hale et al., 2020) . Following the Asian example, Italy was one of the first countries in Europe to impose a complete lockdown, on March 11, 2020, as the World Health Organization (WHO) declared COVID-19 a pandemic. By the end of February, Italy was already the epicenter of the diffusion in Europe.",
+            "cite_spans": [
+                {
+                    "start": 379,
+                    "end": 398,
+                    "text": "(Hale et al., 2020)",
+                    "ref_id": "BIBREF30"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "What are the conditions that made Italy more vulnerable to such disease?",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "This study set out to provide empirical evidence on the local determinants of contagion in Italy by means of spatial analysis. To this aim, we consider the 110 Italian provinces (NUTS-3 level) and information on COVID-19 diffusion at different times from March to June 2020, coupled with environmental and socioeconomic variables.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "Early studies have highlighted that the pre-existing spatial organization of the economy matters in COVID-19 transmission (e.g., Ascani et al., 2020; Becchetti et al., 2020; Bourdin et al., 2020; Musolino & Rizzi, 2020) . Hence, any analysis on this issue should take into consideration various economic profiles as possible determinants of the spread of the virus. Following the same perspective, we focus on the role of economic structure, but we also consider demographic and environmental characteristics as contextual factors facilitating the proximate spread of the virus. Moreover, a control variable relating to a population's mobility behavior is included in the estimation models.",
+            "cite_spans": [
+                {
+                    "start": 129,
+                    "end": 149,
+                    "text": "Ascani et al., 2020;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 150,
+                    "end": 173,
+                    "text": "Becchetti et al., 2020;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 174,
+                    "end": 195,
+                    "text": "Bourdin et al., 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 196,
+                    "end": 219,
+                    "text": "Musolino & Rizzi, 2020)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "Our analysis confirms the high variation of the coronavirus infection across Italian provinces. This high heterogeneity is associated with several factors such as population aging, latitude, urban-rural divide, industrial clusters, and firm size. Our findings are in line with broader results on the role of economic structure (e.g., Antonietti et al., 2020; Ascani et al., 2020; Becchetti et al., 2020) . In particular, the prominent role played by industrial districts in our analysis is in line with the evidence provided by Ascani et al. (2020) in that they show that COVID-19 infection is mostly associated with a local specialization in geographically concentrated manufacturing activities.",
+            "cite_spans": [
+                {
+                    "start": 334,
+                    "end": 358,
+                    "text": "Antonietti et al., 2020;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 359,
+                    "end": 379,
+                    "text": "Ascani et al., 2020;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 380,
+                    "end": 403,
+                    "text": "Becchetti et al., 2020)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 528,
+                    "end": 548,
+                    "text": "Ascani et al. (2020)",
+                    "ref_id": "BIBREF7"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "To face the unexpected spread of similar epidemics in the future, we are convinced that the first-best policy responsein the absence of a specific vaccineis massive and systematic screening and tracking + culture (use of a mask, all) + quarantine and collaboration of the adequately informed and educated population. This is the prevention system adopted by Taiwan and South Korea, which has proved extremely effective with negligible economic damage. Although, when the first-best policy response is not feasible, as it was the case in Italy in early 2020, containment measures are the necessary and second-best policy response to consider.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "Hence, the results provided by this study can contribute to the current debate on how to define mitigating measures and how to design their implementation. First, the positive relation between the north-south gradient and the strength of COVID-19 infection points to the relevance of a well-known dichotomy in the Italian economic and social conditions. This study could therefore be useful also for the design of containment policies addressing EU targets, such as Objective 1 regions of the Lisbon strategy, as southern Italy completely corresponded with Objective 1 regions. At the same time, our results indicate the need for locally differentiated containment policies based on a comprehensive understanding of spatial conditions as far as the spreading of contagion is concerned. A system differentiating administrative regions (NUTS-2 level) with a vast series of restrictions based on a set of multiple indicators has been adopted in Italy since fall 2020. This system seems to be better adapted to recognize priorities in containment actions based on the local diffusion of COVID-19, although criticism exists on the fact that administrative regions, especially the largest in size (e.g., Lombardy) and those most differentiated in socioeconomic conditions (e.g., Campania), are too heterogeneous as far as the spreading of virus is concerned. In this way, many provinces and municipalities in affected regions where heavy restrictions were undertaken, can have zero or few contagions, free hospitals, and no deaths from COVID-19. A refined spatial modulation of containment measures is thus necessary, and this study suggests that provinces are sufficiently homogeneous contexts as far as territorial and socioeconomic variability is concerned.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "Finally, although some limitations in the available information on contagion still exist in Italy (probably dealing with a basic underestimation of the real incidence of COVID-19), 4 we are convinced that the use of a diachronic analysis of (aggregated) contagion statistics at consecutive time points will provide an indirect contribution to more reliable (and statistically robust) estimation of the evolution of COVID-19 pandemics in representative countries such as Italy.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "The epidemiological emergency phase have called into question the traditional spatial hierarchies. The territories widely equipped with infrastructures and services and integrated on a global scale, which in ordinary conditions are attractive for economic and residential activities, have emerged as particularly at risk because they are more exposed to the spread of the contagion. On the other hand, in the context of social distancing, the peripheral areas that tend to be considered vulnerable have revealed the advantages of greater availability of space and more rarefied interpersonal contacts. Nonetheless, the pandemic has also made more evident than before how infrastructuredigital and physicalis in short supply in more remote areas and should be a policy priority to foster economic development. In fact, first evidence with Irish data suggests that more affluent, dense and highly populated, better educated, and better broadband-provisioned towns have greater potential for social distancing and remote working (Crowley & Doran, 2020) . In the 'new normal', it is likely that housing choices will change in light of new spatial organization of workplaces (teleworking), and new housing and leisure preferences. Accordingly, it will be interesting to understand, in retrospect, whether and to what extent the emerging behaviors during the emergency period have translated into permanent changes in territorial structures and whether these changes have had positive effects on the well-being of local communities. More importantly, policymakers and practitioners should consider whether and how to adapt regional policies and urban planning to these possible modifications in individual preferences.",
+            "cite_spans": [
+                {
+                    "start": 1026,
+                    "end": 1049,
+                    "text": "(Crowley & Doran, 2020)",
+                    "ref_id": "BIBREF26"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| CONCLUDING REMARKS, POLICY IMPLICATIONS, AND FURTHER DEVELOPMENTS"
+        },
+        {
+            "text": "We are grateful to participants at the AISRE web 2020 conference where an early version of this paper was presented.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENTS"
+        },
+        {
+            "text": "https://orcid.org/0000-0001-7007-6076",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Eleonora Cutrini"
+        },
+        {
+            "text": "ENDNOTES 1 For the case of V\u00f2 Euganeo and the high frequency of asymptomatic SARS-CoV-2 infection, see Lavezzo et al., 2020. 2 As a starting point, we have preliminarily estimated a Poisson model. The variance of the dependent variable for the whole sample is nearly 2,500 times larger than the mean. After the regression, we tested the Poisson goodness of fit (gof) of the model (with the Stata poisgof command). Results are: LR \u03c7 2 (7) = 104,379.55; Prob > \u03c7 2 = 0.0000; Pearson goodness of fit = 55,236.38; Prob > \u03c7 2 (94) = 0.0000. The large value for \u03c7 2 in the gof is another indicator that the Poisson distribution is not a good choice. A highly significant (p < 0.05) test statistic from the gof indicates that the Poisson model is inappropriate.",
+            "cite_spans": [
+                {
+                    "start": 103,
+                    "end": 124,
+                    "text": "Lavezzo et al., 2020.",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Eleonora Cutrini"
+        },
+        {
+            "text": "3 As for the classic LM tests proposed by Anselin (1988) , the critical value to reject the null hypothesis of no spatially lagged dependent variable, at 5% significance, amounts to 9.36, while the critical value to reject the null hypothesis of no spatially autocorrelated error term amounts to 5.72. When using the robust LM tests proposed by Anselin et al. (1996) , the hypothesis of no spatially lagged dependent variable must still be rejected, though only at 10% significance, whereas the hypothesis of no spatially autocorrelated error term can no longer be rejected; the robust LM test for the spatial lag amounts to 3.72 and for the spatial error to 0.08. If both the conditions hold true, it indicates that the spatial lag model (SAR) is more appropriate (Elhorst, 2014) . Both tests are based on the residuals of the OLS model and are asymptotically distributed as a \u03c7 2 distribution with one degree of freedom. The important difference is that the robust LM-error test corrects for the presence of local spatial lag dependence. Similarly, the robust LM-lag statistic tests the null hypothesis of no spatial correlation in the dependent variable, correcting for presence of local spatial error dependence. Nevertheless, Elhorst (2014) also suggested that the initial approach of spatial econometrics with a central focus on the spatial lag model (SAR) and the spatial error model (SEM), with one type of interaction effect, is too limited and that the focus should shift to other models such as the spatial Durbin model (SDM). Unfortunately, in this case, the interaction effects among the dependent variable on the one hand and interaction effects among the error terms on the other hand are only weakly identified.",
+            "cite_spans": [
+                {
+                    "start": 42,
+                    "end": 56,
+                    "text": "Anselin (1988)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 345,
+                    "end": 366,
+                    "text": "Anselin et al. (1996)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 765,
+                    "end": 780,
+                    "text": "(Elhorst, 2014)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1231,
+                    "end": 1245,
+                    "text": "Elhorst (2014)",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Eleonora Cutrini"
+        },
+        {
+            "text": "How to cite this article: Cutrini, E., & Salvati, L. (2021) . Unraveling spatial patterns of COVID-19 in Italy:",
+            "cite_spans": [
+                {
+                    "start": 39,
+                    "end": 59,
+                    "text": "& Salvati, L. (2021)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Eleonora Cutrini"
+        },
+        {
+            "text": "Global forces and local economic drivers. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Eleonora Cutrini"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The efficacy of lockdown against COVID-19: A cross-country panel analysis. Applied Health Economics and Health PolicyJune 2020",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Alfano",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ercolano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "18",
+            "issn": "",
+            "pages": "509--517",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s40258-020-00596-3"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Spatial econometrics: Methods and models",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Anselin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/978-94-015-7799-1"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Spatial econometrics",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Anselin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Palgrave handbook of econometrics",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Thirty years of spatial econometrics",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Anselin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Papers in Regional Science",
+            "volume": "89",
+            "issn": "1",
+            "pages": "3--25",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1435-5957.2010.00279.x"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Simple diagnostic tests for spatial dependence",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Anselin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Bera",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Florax",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yoon",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Regional Science and Urban Economics",
+            "volume": "26",
+            "issn": "1",
+            "pages": "77--104",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The relationship between air quality, wealth, and COVID-19 diffusion and mortality across countries",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Antonietti",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Falbo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Fontini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "SEEDS WP. N",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Spread of SARS-CoV-2 coronavirus likely to be constrained by climate",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Araujo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Naimi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "MedRxiv",
+            "volume": "2020",
+            "issn": "12",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.03.12.20034728"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The geography of COVID-19 and the structure of local economies: The case of Italy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ascani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Faggian",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Montresor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Regional Science",
+            "volume": "61",
+            "issn": "2",
+            "pages": "1--35",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Regions in a time of pandemic",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bailey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Clark",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Colombelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Corradini",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "De Propris",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Derudder",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Fratesi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fritsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Harrison",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hatfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kemeny",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Kogler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lagendijk",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Lawton",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ortega-Argil\u00e9s",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Otero",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Usai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Regional Studies",
+            "volume": "54",
+            "issn": "9",
+            "pages": "1163--1174",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/00343404.2020.1798611"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "A satellite-based green index as a proxy for vegetation cover quality in a Mediterranean region",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bajocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "De Angelis",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Salvati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Ecological Indicators",
+            "volume": "23",
+            "issn": "",
+            "pages": "578--587",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ecolind.2012.05.013"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Multiscale mobility networks and the spatial spreading of infectious diseases",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Balcan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Colizza",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gon\u00e7alves",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ramasco",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vespignani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "volume": "106",
+            "issn": "",
+            "pages": "21484--21489",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.0906910106pmid:20018697"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Modeling the spatial spread of infectious diseases: The GLobal epidemic and mobility computational model",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Balcan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gon\u00e7alves",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ramasco",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Colizza",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vespignani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of Computer Science",
+            "volume": "1",
+            "issn": "",
+            "pages": "132--145",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Observed and estimated prevalence of COVID-19 in Italy: How to estimate the total cases from medical swabs data",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Bassi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Arbia",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Falorsi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Environment",
+            "volume": "764",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.scitotenv.2020.142799"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Air quality and COVID-19 adverse outcomes: Divergent views and experimental findings",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Becchetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Beccari",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Conzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Conzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "De Santis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Salustri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Environmental Research",
+            "volume": "193",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.envres.2020.110556"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Understanding the heterogeneity of adverse COVID-19 outcomes: The role of poor quality of air and lockdown decisions",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Becchetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Conzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Conzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Salustri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Identification of spatially constrained homogeneous clusters of COVID-19 transmission in Italy",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Benedetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Piersimoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Pignataro",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Vidoli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Regional Science Policy and Practice",
+            "volume": "12",
+            "issn": "6",
+            "pages": "1169--1187",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The geography of COVID-19 spread in Italy and implications for the relaxation of confinement measures",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Bertuzzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Mari",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pasetto",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Miccoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Casagrandi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Gatto",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rinaldo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature Communications",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41467-020-18050-2"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Regression modelling with spatial dependence: An application of some class selection and estimation methods",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bivand",
+                    "suffix": ""
+                }
+            ],
+            "year": 1984,
+            "venue": "Geographical Analysis",
+            "volume": "16",
+            "issn": "",
+            "pages": "25--37",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "University specialization and new firm creation across industries",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bonaccorsi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Colombo",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Guerini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rossi-Lamastra",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Small Business Economics",
+            "volume": "41",
+            "issn": "",
+            "pages": "837--863",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s11187-013-9509-5"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Does lockdown work? A spatial analysis of the spread and concentration of COVID-19 in Italy",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bourdin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ludovic",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Nadou",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Noiret",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Airline networks and the international diffusion of severe acute respiratory syndrome (SARS)",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Bowen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Laroe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Geographical Journal",
+            "volume": "172",
+            "issn": "2",
+            "pages": "130--144",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1475-4959.2006.00196.x"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: A descriptive study",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Dong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chinese Journal of Epidemiology",
+            "volume": "395",
+            "issn": "10223",
+            "pages": "507--513",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "The effect of travel restrictions on the spread of the 2019 novel coronavirus (COVID-19) outbreak",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Chinazzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Davis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ajelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gioannini",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Litvinova",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Merler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Pastore Y Piontti",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rossi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Viboud",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Halloran",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Longini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vespignani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "395--400",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.aba9757"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Do European funds support the formation of firms? New evidence from Italy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ciffolilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Cutrini",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pompili",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Regional Science Policy and Practice",
+            "volume": "11",
+            "issn": "",
+            "pages": "549--569",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Coronav\u00edrus e clima",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Confalonieri",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Rangel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "De Oliveira",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Menezes",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Santos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Can atmospheric pollution be considered a cofactor in extremely high level of SARS-CoV-2 lethality in northern Italy? Environmental Pollution",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Conticini",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Frediani",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Caro",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "261",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.envpol.2020.114465"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "COVID-19, occupational social distancing and remote working potential: An occupation, sector and regional perspective",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Crowley",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Doran",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Regional Science Policy and Practice",
+            "volume": "12",
+            "issn": "6",
+            "pages": "1211--1234",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/rsp3.12347"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Linear spatial dependent models for cross-section data, spatial econometrics",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Elhorst",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "A Spatio-temporal analysis of COVID-19 outbreak in Italy",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Cartone",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Regional Science Policy and Practice",
+            "volume": "12",
+            "issn": "6",
+            "pages": "1047--1062",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/rsp3.12376"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "A fraction of European regions account for a majority of COVID-19 deaths. EDJNet -The European Data Journalism Network",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Guibourg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Analysis of bioclimatic time series and their neural network-based classification to characterise drought risk patterns in South Italy",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hale",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Petherick",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Phillips",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "; G"
+                    ],
+                    "last": "Webster",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Feoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Salvati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Brunetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Giovacchini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "International Journal of Biometeorology",
+            "volume": "51",
+            "issn": "4",
+            "pages": "253--263",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00484-006-0071-6"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "I distretti industriali 2011. Roma: Istituto nazionale di statistica",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Istat",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The underlying factors of the COVID-19 spatially uneven spread. Initial evidence from regions in nine EU countries",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kapitsinis",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Regional Science Policy and Practice",
+            "volume": "12",
+            "issn": "",
+            "pages": "1027--1045",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Infectious diseases as socio-spatial processes: The COVID-19 outbreak in Germany",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kuebart",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Stabler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Tijdschrift voor Economische en Sociale Geografie",
+            "volume": "111",
+            "issn": "",
+            "pages": "482--496",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/tesg.12429"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Suppression of a SARS-CoV-2 outbreak in the Italian municipality of Vo'",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Lavezzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Franchin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ciavarella",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cuomo-Dannenburg",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Barzon",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Del Vecchio",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rossi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Manganelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Loregian",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Navarin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Abate",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sciro",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Merigliano",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Canale",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Vanuzzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Besutti",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Saluzzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Onelia",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Pacenti",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "584",
+            "issn": "",
+            "pages": "425--429",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2488-1"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Spatial econometric analysis of the evolution of the European regional convergence process",
+            "authors": [
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Gallo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Erba",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 1980,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Evaluating the temporal and spatial heterogeneity of the European convergence process, 1980-1999",
+            "authors": [
+                {
+                    "first": "Le",
+                    "middle": [],
+                    "last": "Gallo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Erba",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Journal of Regional Science",
+            "volume": "46",
+            "issn": "2",
+            "pages": "269--288",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.0022-4146.2006.00441.x"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "What regional scientists need to know about spatial econometrics. The Review of Regional Studies",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lesage",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "44",
+            "issn": "",
+            "pages": "13--32",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (COVID-19)",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pei",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shaman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "489--493",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.abb3221"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Why Italy first? Health, geographical and planning aspects of the COVID-19 outbreak",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Murgante",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Borruso",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Balletto",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Castiglia",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Dettori",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Sustainability",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/su12125064"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "COVID-19 e territorio: un'analisi a scala provinciale, EyesReg",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Musolino",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rizzi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Assessing nitrogen dioxide (NO 2 ) levels as a contributing factor to coronavirus (COVID-19) fatality",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ogen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science of the Total Environment",
+            "volume": "726",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.scitotenv.2020.138605"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Does weather influence COVID-19 transmission?",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Palialol",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pereda",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Azzoni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Regional Science Policy and Practice",
+            "volume": "12",
+            "issn": "",
+            "pages": "981--1004",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/rsp3.12367"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Economic growth in Italian NUTS 3 provinces. The Annals of Regional Science",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Panzera",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Postiglione",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "",
+            "volume": "53",
+            "issn": "",
+            "pages": "273--293",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00168-014-0628-y"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "A fifty-year sustainability assessment of Italian agro-forest districts",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Recanatesi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Clemente",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Grigoriadis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ranalli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zitti",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Salvati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Sustainability",
+            "volume": "8",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Transmission of 2019-nCoV infection from an asymptomatic contact in Germany",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rothe",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schunk",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sothmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Bretzel",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Froeschl",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wallrauch",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zimmer",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Thiel",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Janke",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guggemos",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Seilmaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Drosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Vollmar",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Zwirglmaier",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zange",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "W\u00f6lfel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoelscher",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "New England Journal of Medicine",
+            "volume": "382",
+            "issn": "",
+            "pages": "970--971",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMc2001468"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "An empirical assessment of human development through remote sensing: Evidences from Italy",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Salvati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Guandalini",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Carlucci",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Ecological Indicators",
+            "volume": "78",
+            "issn": "",
+            "pages": "167--172",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ecolind.2017.03.014"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Italy's renewable water resources as estimated on the basis of the monthly water balance. Irrigation and Drainage: The Journal of the International Commission on Irrigation and Drainage",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Salvati",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Petitta",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Ceccarelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Perini",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Di Battista",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "E V"
+                    ],
+                    "last": "Scarascia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "",
+            "volume": "57",
+            "issn": "",
+            "pages": "507--515",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ird.380"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Irrigation and Drainage: The Journal of the International Commission on Irrigation and Drainage",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Scarascia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Battista",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Salvati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "",
+            "volume": "55",
+            "issn": "",
+            "pages": "115--127",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ird.222"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "SARS-Cov-2RNA found on particulate matter of Bergamo in northern Italy: First evidence",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Setti",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Passarini",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "De Gennaro",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Barbieri",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Piscitelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Miani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Environmental Research",
+            "volume": "188",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.envres.2020.109754"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "The climate of the European region during the 20th and 21st centuries according to Feddema",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Skarbit",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Acs",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Breuer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "International Journal of Climatology",
+            "volume": "38",
+            "issn": "",
+            "pages": "2435--2448",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/joc.5346"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "L'impatto economico e sociale del COVID-19: Mezzogiorno e Centro-Nord",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Svimez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "High temperature and high humidity reduce the transmission of COVID-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ArXiv Populations and Evolution",
+            "volume": "11",
+            "issn": "2",
+            "pages": "1--19",
+            "other_ids": {
+                "DOI": [
+                    "10.2139/ssrn.3551767"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Exposure to air pollution and COVID-19 mortality in the United States: A nationwide cross-sectional study",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Nethery",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Sabath",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Braun",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Dominici",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1101/2020.04.05.20054502"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Clinical findings in a group of patients infected with the 2019 novel coronavirus (SARS-Cov-2) outside of Wuhan, China: Retrospective case series",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Ying",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S.-B",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-N",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-F",
+                    "middle": [],
+                    "last": "Sheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-L",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-Q",
+                    "middle": [],
+                    "last": "Qiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L.-J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMJ",
+            "volume": "368",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m792"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "\u03b8WX: exogenous interaction effect (R is the number of observations: 101 provinces; k is the number of explanatory variables: 7) Different spatial dependence models for cross-section data can be derived from the general nested model defined in Equation 2.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "X p,t in Equation 1 is a vector of control variables. For each of them, the average value of a preceding period is considered. Several data sources are used in the analysis, collected from the Italian Ministry of Health, the Italian National Institute of Statistics (ISTAT), and Eurostat. A detailed description of the variables and sources of data is provided in",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "cated in different points in time: (a) March 9, 2020; (b) March 31, 2020; (c) April 30, 2020; (d) June 15, 2020.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "T A B L E 1 Percent share of local units affected by the containment measures of COVID-19 in Italy, by broad economic sector",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "affected areas during the early wave of the pandemic, Wuhan area in Hubei Province, China, and Po Valley,",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "T A B L E 4 Negative binomial estimates of the determinants of COVID-19 cases in Italian provinces, at different points in time",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Overall, our results may indicate that the industrial specialization of the local economic structure (LQ industry), does not significantly contribute to the COVID-19 diffusion in Italy, once controlled for other variables capturing local economic interactions (IDs) and the internal scale of the firm (large firms). This result may suggest that this variable is too coarse to capture the real determinants of virus transmission. Moreover, the negative coefficients after the lockdown may indicate that, even if industrial activities may have not completely closed, particularly those associated with production plants because of their low teleworkability, they did not significantly contribute to the spreading of the virus.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "Regional Science Policy & Practice, 13(S1), 73-108. https://doi.org/ 10.1111/rsp3.12465 APPENDIX A T A B L E A 1 Correlation matrix among regressors T A B L E A 3 Elasticity: Total, direct, and indirectT A B L E A 4 Elasticity: Total, direct, and indirect effects -Different spatial models for north and south Italy, March 9, 2020",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

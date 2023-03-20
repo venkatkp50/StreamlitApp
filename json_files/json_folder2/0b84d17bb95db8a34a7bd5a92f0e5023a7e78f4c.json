@@ -1,0 +1,4002 @@
+{
+    "paper_id": "0b84d17bb95db8a34a7bd5a92f0e5023a7e78f4c",
+    "metadata": {
+        "title": "In silico investigation of spice molecules as potent inhibitor of SARS-CoV-2",
+        "authors": [
+            {
+                "first": "Janmejaya",
+                "middle": [],
+                "last": "Rout",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Indian Institute of Technology (Indian School of Mines)",
+                    "location": {
+                        "postCode": "826004",
+                        "settlement": "Dhanbad, Dhanbad",
+                        "region": "Jharkhand, Jharkhand",
+                        "country": "India, India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Chandra",
+                "middle": [],
+                "last": "Swain",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Indian Institute of Technology (Indian School of Mines)",
+                    "location": {
+                        "postCode": "826004",
+                        "settlement": "Dhanbad, Dhanbad",
+                        "region": "Jharkhand, Jharkhand",
+                        "country": "India, India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Umakanta",
+                "middle": [],
+                "last": "Tripathy",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Indian Institute of Technology (Indian School of Mines)",
+                    "location": {
+                        "postCode": "826004",
+                        "settlement": "Dhanbad, Dhanbad",
+                        "region": "Jharkhand, Jharkhand",
+                        "country": "India, India"
+                    }
+                },
+                "email": "utripathy@iitism.ac.in"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is a novel infectious disease that is in rapid growth. Several trials are going on worldwide to find a solution for this pandemic. The viral replication can be blocked by inhibiting the receptor-binding domain (RBD) of SARS-CoV-2 spike protein (SARS-CoV-2 RBD Spro) and the SARS-CoV-2 main protease (SARS-CoV-2 Mpro). The binding of potential small molecules to these proteins can inhibit the replication and transcription of the virus. The spice molecules that are used in our food have antiviral, antifungal and antimicrobial properties. As spice molecules are consumed in the diet, hence its antiviral properties against SARS-CoV-2 will benefit in a significant manner. Therefore, in this work, the molecular docking of 30 selected spice molecules (screened through ADME property) was performed to identify the potential inhibitors for the RBD Spro and Mpro of SARS-CoV-2. We have found that though all the molecules bind actively with the SARS-CoV-2 RBD Spro and Mpro, but Piperine has the highest binding affinity among the 30 screened molecules. Besides, the comparative study between Piperine and currently used drugs show that Piperine is more effective. The interaction of Piperine with RBD Spro and Mpro is further validated by the molecular dynamics (MD) simulation studies. The free energy landscape and binding free energy results also, support for the stable complex formation of Piperine with RBD Spro and Mpro. We anticipate immediate wet-lab experiments and clinical trials in support of this computational study that might help to inhibit the SARS-CoV-2 virus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The novel coronavirus disease 2019 (COVID-19) has become a major threat worldwide due to its fast-spreading nature. This disease is caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The entry of this coronavirus to the host cell is mediated through the transmembrane spike glycoproteins (Hasan et al., 2020) . This glycoprotein consists of two subunits and is reported to have a similar affinity to the human angiotensin-converting enzyme 2 (ACE2) as that of the severe acute respiratory syndrome coronavirus (SARS-CoV), which in turn results in efficient spreading of SARS-CoV-2 in humans (Walls et al., 2020) . The spike glycol protein binds to its receptor human ACE2 by its receptor-binding domain (RBD) and is activated proteolytically by human protease (Shang et al., 2020) . The interaction of the RBD of the spike glycoprotein to ACE2 is carried out by ARG403, TYR453, SER494, TYR495, PHE497, GLN498, THR500, ASN501, TYR505 residues of spike glycoprotein (Lan et al., 2020) . The interaction of RBD Spro to ACE2 can be inhibited by the small molecules that interact with the above residues of RBD spike protein (Spro). On the other hand, the SARS-CoV-2 main protease (Mpro), also known as chymotrypsin-like protease, or 3-C-like protease (3CL pro ), plays a vital role in processing the polyproteins through the translation of viral RNA. This protease is reported to have a minimum of 11 cleavage sites resulting in viral replication and toxicity . The inhibition of these two viral targets can actively block the fusion and replication of SARS-CoV-2.",
+            "cite_spans": [
+                {
+                    "start": 309,
+                    "end": 329,
+                    "text": "(Hasan et al., 2020)",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 612,
+                    "end": 632,
+                    "text": "(Walls et al., 2020)",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 781,
+                    "end": 801,
+                    "text": "(Shang et al., 2020)",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 985,
+                    "end": 1003,
+                    "text": "(Lan et al., 2020)",
+                    "ref_id": "BIBREF34"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Currently, researchers are working globally for finding treatment for this disease in identifying a specific drug or vaccine that can inhibit viral replication at the earliest possible. The devastation of this disease is vividly seen from the data on the WHO website, which shows the infected patient number more than 245 lakhs and casualties more than 8 lakhs, worldwide from 216 countries, and still, it is continuing (https://www.who. int/emergencies/diseases/novel-coronavirus-2019, 29 August 2020). Currently, there are no approved drugs and vaccines for the treatment of COVID-19, but a few drugs such as remdesivir, hydroxychloroquine, etc. are under restricted use in case of emergency (Magagnoli et al., 2020) . Meanwhile, the computational tools, molecular docking and molecular dynamics (MD) have gained attention as essential tools to investigate potential inhibitor molecules (Anurag et al., 2020; Gupta et al., 2020; Sourav et al., 2020) . Choy et al. reported in-vitro studies showing remdesivir, lopinavir, emetine and homoharringtonine inhibits SARS-CoV-2 replication (Choy et al., 2020) . Similarly, Wang et al. reported the inhibition property of remdesivir and chloroquine against novel coronavirus . In addition to different drug compounds, researchers also searched for natural molecules having antiviral activity. Natural constituents from foods, spices, herbs are also being found to have anti-infective properties. In this context, small active molecules present in natural products and their derivatives have gained tremendous attention as a source of therapeutic agents due to structural diversity for many years.",
+            "cite_spans": [
+                {
+                    "start": 694,
+                    "end": 718,
+                    "text": "(Magagnoli et al., 2020)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 889,
+                    "end": 910,
+                    "text": "(Anurag et al., 2020;",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 911,
+                    "end": 930,
+                    "text": "Gupta et al., 2020;",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 931,
+                    "end": 951,
+                    "text": "Sourav et al., 2020)",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 954,
+                    "end": 974,
+                    "text": "Choy et al. reported",
+                    "ref_id": null
+                },
+                {
+                    "start": 1085,
+                    "end": 1104,
+                    "text": "(Choy et al., 2020)",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1118,
+                    "end": 1129,
+                    "text": "Wang et al.",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "From 1940 to 2014, the US Food and Drug Administration (FDA) has approved about 49% of all small molecules that are natural products or derivates linked directly to those molecules (Newman & Cragg, 2016) . The compound of essential garlic oil, a spice used in food, is reported as an inhibitor using the molecular docking method (Thuy et al., 2020) . There are several recent studies on the inhibition of SARS-CoV-2 using many different natural and antiviral molecules (Al-Khafaji et al., 2020; Joshi et al., 2020; D. Kumar, Kumari, et al., 2020; Muralidharan et al., 2020) . Recently, Das et al., using blind molecular docking, investigated for the potential inhibitors of SARS-CoV-2 Mpro (Sourav et al., 2020) . Molecules studied by Das et al. are drug molecules, antivirals, antifungals, anti-nematodals and anti-protozoals in addition to natural compounds. Besides, natural molecules such as alkaloids and terpenoids from African medicinal plants were studied by Gyebi et al. for the inhibition property against SARS-CoV-2 Mpro (Gyebi et al., 2020) . Recently, Umesh et al. screened compounds from Indian spices as potent inhibitors of SARS-CoV-2 Mpro (Umesh et al., 2020) . Every spice has a particular aroma, colour and flavour due to the presence of specific molecules in them, and also, have antiviral properties (Aboubakr et al., 2016; Astani et al., 2010; Brochot et al., 2017; Chang et al., 2013; Choi, 2016; Mair et al., 2016; Zhang et al., 2014) . These properties of the spice molecules compel us to conduct the present study, where we investigated the inhibition property of molecules present in various spices against the SARS-CoV-2 RBD Spro and SARS-Cov-2 Mpro using molecular docking and MD simulation studies. The compounds tested and their source of origin with PubChem ID are listed in Supplementary  Table S1 .",
+            "cite_spans": [
+                {
+                    "start": 181,
+                    "end": 203,
+                    "text": "(Newman & Cragg, 2016)",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 329,
+                    "end": 348,
+                    "text": "(Thuy et al., 2020)",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 469,
+                    "end": 494,
+                    "text": "(Al-Khafaji et al., 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 495,
+                    "end": 514,
+                    "text": "Joshi et al., 2020;",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 515,
+                    "end": 546,
+                    "text": "D. Kumar, Kumari, et al., 2020;",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 547,
+                    "end": 573,
+                    "text": "Muralidharan et al., 2020)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 690,
+                    "end": 711,
+                    "text": "(Sourav et al., 2020)",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 967,
+                    "end": 979,
+                    "text": "Gyebi et al.",
+                    "ref_id": null
+                },
+                {
+                    "start": 1032,
+                    "end": 1052,
+                    "text": "(Gyebi et al., 2020)",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1156,
+                    "end": 1176,
+                    "text": "(Umesh et al., 2020)",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 1321,
+                    "end": 1344,
+                    "text": "(Aboubakr et al., 2016;",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1345,
+                    "end": 1365,
+                    "text": "Astani et al., 2010;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1366,
+                    "end": 1387,
+                    "text": "Brochot et al., 2017;",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1388,
+                    "end": 1407,
+                    "text": "Chang et al., 2013;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1408,
+                    "end": 1419,
+                    "text": "Choi, 2016;",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1420,
+                    "end": 1438,
+                    "text": "Mair et al., 2016;",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1439,
+                    "end": 1458,
+                    "text": "Zhang et al., 2014)",
+                    "ref_id": "BIBREF60"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1807,
+                    "end": 1830,
+                    "text": "Supplementary  Table S1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "In general, molecular modelling is implemented as an essential tool for the prediction of drug-macromolecule interaction. This technique helps to enhance the success rate of an experiment and cuts down the experimental cost. Hence, the molecular docking study can help to analyse the possible binding pose of a small molecule on the active site of a macromolecule. Here we used molecular docking to screen some biologically active spice molecules with the SARS-CoV-2 RBD Spro and SARS-Cov-2 Mpro. The molecule with the highest binding affinity to RBD Spro and Mpro was subjected to MD simulation for further validation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Materials and methods"
+        },
+        {
+            "text": "The property of the small molecules for drug-likeness was estimated using the Lipinski's rule (Lipinski et al., 2001) . This rule works on five parameters viz. no more than five hydrogen bond donors, no more than 10 hydrogen bond acceptors, molecular mass <500 Da, and the octanol-water partition coefficient, i.e. log P should not exceed 5. The Lipinski's parameters were obtained by using the SwissADME server (www.swissadme.ch/index.php) (Daina et al., 2017) .",
+            "cite_spans": [
+                {
+                    "start": 94,
+                    "end": 117,
+                    "text": "(Lipinski et al., 2001)",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 441,
+                    "end": 461,
+                    "text": "(Daina et al., 2017)",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Drug-likeness properties of the small molecules"
+        },
+        {
+            "text": "The crystal structures of the SARS-CoV-2 Spro (PDB ID: 6M0J) and SARS-CoV-2 Mpro (PDB ID: 6Y84) were obtained from the RCSB protein data bank. All the non-standard residues, including water, were removed from the PDB file using Chimera (Pettersen et al., 2004) . The RBD domain was obtained from the PDB file of SARS-Cov-2 Spro. The RBD Spro residue sequence number before and after removing ACE2 is presented in Supplementary Figure S1 . The 3D conformers of the ligands were obtained from the PubChem and optimized using the steepest descent and conjugate gradient steps with General Amber Force Field (GAFF) (Wang et al., 2004) in Chimera (Pettersen et al., 2004 ).",
+            "cite_spans": [
+                {
+                    "start": 236,
+                    "end": 260,
+                    "text": "(Pettersen et al., 2004)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 611,
+                    "end": 630,
+                    "text": "(Wang et al., 2004)",
+                    "ref_id": "BIBREF56"
+                },
+                {
+                    "start": 642,
+                    "end": 665,
+                    "text": "(Pettersen et al., 2004",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 427,
+                    "end": 436,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Structure preparation of the proteins and ligands"
+        },
+        {
+            "text": "The prepared structures of the protein and ligand were subjected to molecular docking analysis using AutoDock Vina (Trott & Olson, 2010) . AutoDock Vina is the newest member of the AutoDock family that has improved speed and accuracy. It uses a hybrid scoring function and a quasi-Newtonian optimization algorithm to find the lowest energy confirmations within the search space. A grid box of 40 \u00c5 \u00c2 65 \u00c5 \u00c2 70 \u00c5 was built with the centre of the box at (11.98, 0.60, 4.79) for the SARS-CoV-2 Mpro. A grid box of size 30 \u00c5 \u00c2 45 \u00c5 \u00c2 30 \u00c5 with centre at (\u00c036.51, 30.69, 5.48) was prepared for the SARS-CoV-2 RBD Spro. The exhaustiveness of search was set at 20 and 8 for the SARS-CoV-2 Mpro and the SARS-CoV-2 RBD Spro, respectively, to compensate for the larger box volume and reliable results. The docked poses were ranked as per their binding affinities at the end of the docking run. The ligand interactions of the bestdocked poses at the active sites of the macromolecule were extracted using PyMol (Schr\u20ac odinger LLC, 2017). The ligand interactions were analysed using the 2D interaction plot in the Discovery Studio Visualizer (2005) . The Coulombic electrostatic potential surface was determined with the help of the APBS plugin available in PyMol (Schr\u20ac odinger LLC, 2017).",
+            "cite_spans": [
+                {
+                    "start": 115,
+                    "end": 136,
+                    "text": "(Trott & Olson, 2010)",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 1130,
+                    "end": 1136,
+                    "text": "(2005)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Molecular docking study"
+        },
+        {
+            "text": "To verify the stability of the complex and interaction dynamics of SARS-CoV-2 RBD Spro and SARS-CoV-2 Mpro, we performed the MD simulation study of the two complexes with the highest docking score (Spro-Piperine and Mpro-Piperine), using GROMACS-5.1.5 (Abraham et al., 2015) . The CHARMM36 forcefield (Huang & MacKerell, 2013) was used for the simulation of the systems. The topology parameters for the ligand molecule were obtained from CGenFF (Vanommeslaeghe & MacKerell, 2012) . A dodecahedron simulation box filled with TIP3P water model (Price & Brooks, 2004) was prepared. Counter ions were added to maintain the electrical neutrality of the system. The systems were kept at a buffer concentration of 0.15 M. Then, the build systems were energy minimized with 50,000 steps using the steepest descent algorithm. Then the systems were equilibrated under NVT and NPT ensembles for 100 ps at 300 K temperature and 1 atm pressure before the production run. After the equilibration, a production run of 100 ns was incorporated under the NPT ensemble. For long-range electrostatic interaction, particle mesh Ewald (PME) (Darden et al., 1993) and for van der Waals interactions, the force-switching scheme was used. Besides, for temperature and pressure coupling, the Berendsen thermostat (Berendsen et al., 1984) with velocity rescaling and Parrinello-Rahman barostat (Parrinello & Rahman, 1981) with isotropic rescaling were used, respectively. The simulation time step was set to 2 fs, and the trajectories were recorded at every 10 ps. The simulation data were analysed by analysing the root mean square deviation (RMSD), root mean square fluctuation (RMSF), number of hydrogen bonds and radius of gyration (Rg) using Gromacs analysis tools. The principal component analysis (PCA) was performed using the g_covar, g_anaeig and g_sham tools of Gromacs. The data were exported to origin 9.0 and plotted for further analysis purposes.",
+            "cite_spans": [
+                {
+                    "start": 252,
+                    "end": 274,
+                    "text": "(Abraham et al., 2015)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 301,
+                    "end": 326,
+                    "text": "(Huang & MacKerell, 2013)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 445,
+                    "end": 479,
+                    "text": "(Vanommeslaeghe & MacKerell, 2012)",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 542,
+                    "end": 564,
+                    "text": "(Price & Brooks, 2004)",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1119,
+                    "end": 1140,
+                    "text": "(Darden et al., 1993)",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1287,
+                    "end": 1311,
+                    "text": "(Berendsen et al., 1984)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1367,
+                    "end": 1394,
+                    "text": "(Parrinello & Rahman, 1981)",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Molecular dynamics (MD) simulation study"
+        },
+        {
+            "text": "The method of calculation of binding free energy from MD trajectory snapshots using the molecular mechanics Poisson-Boltzmann surface area method is widely used. The binding free energy of the systems was estimated by extracting the snaps from the last 20 ns of the MD simulation using g_mmpbsa tool of Gromacs (Baker et al., 2001; Kumari et al., 2014) . The binding free energy takes the contribution from vacuum potential energy, polar solvation energy and non-polar solvation energy. The binding free energy can be represented as",
+            "cite_spans": [
+                {
+                    "start": 311,
+                    "end": 331,
+                    "text": "(Baker et al., 2001;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 332,
+                    "end": 352,
+                    "text": "Kumari et al., 2014)",
+                    "ref_id": "BIBREF33"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Mm/PBSA binding free energy calculation"
+        },
+        {
+            "text": "where G complex , G protein and G ligand are the total free energies of the complex, isolated protein and isolated ligand, respectively. The free energy of the individual terms was estimated by",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mm/PBSA binding free energy calculation"
+        },
+        {
+            "text": "where x is the complex, protein or ligand, and TS represents the entropic contribution to free energy in a vacuum with T and S as temperature and entropy. The average molecular mechanics potential and solvation free energies were calculated by using Equations (3) and (4)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mm/PBSA binding free energy calculation"
+        },
+        {
+            "text": "where E bonded takes the contribution from a bond, angle and dihedral terms and E nonbonded consists of electrostatic and van der Waals energy contributions. The solvation energy includes the polar and non-polar solvation energies from the Poisson-Boltzmann equation and solvent accessible surface area (SASA), respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Mm/PBSA binding free energy calculation"
+        },
+        {
+            "text": "The electrostatic potential is an essential property for the review and prediction of the reactive behaviour of a molecule. The study of the MEP surface can provide information about the active site of the macromolecule with the indication of relative ligand orientation and nature of the active site at which an approaching electrophile is attracted (Politzer et al., 1985) . In a biological macromolecule, the electrostatic potential surface is plotted by analysing the electron-rich and deficient regions of the molecule. The detailed insight at the molecular label helps to predict the potentiality of the ligands to take part in chemical reactions and their mechanism of interaction. The MEP surface representation of SARS-CoV-2 RBD Spro and Mpro ligand-binding sites with the simultaneous presence of all docked molecules are provided in Supplementary Figure S2 . The electronically poor regions (blue) are referred to as positive potential, whereas the dense electron regions (red) are at a negative potential, and the white zones are considered as neutral. From the figure, it is observed that most of the selected molecules actively bound at the red regions that are referred to as highly negative electrostatic potential regions. This implies that the molecules are polar and can actively take part in the binding process with stable interactions, which in turn could help to block the viral replication.",
+            "cite_spans": [
+                {
+                    "start": 351,
+                    "end": 374,
+                    "text": "(Politzer et al., 1985)",
+                    "ref_id": "BIBREF45"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 858,
+                    "end": 867,
+                    "text": "Figure S2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Molecular electrostatic potential (MEP) surface analysis"
+        },
+        {
+            "text": "Lipophilicity or fat friendliness of a molecule defines the dissolving capability in fat, oil or any non-polar solvent (Lindsley, 2010) . The water n-octanol partition coefficient (log Po/w) is used as the measure of lipophilicity (Constantinescu et al., 2019) . Various computational methods are developed for the estimation of log Po/w for diverse performance upon different chemical sets. The SwissADME provides five different predictive models such as XLOGP3 (Cheng et al., 2007) , WLOGP (Wildman & Crippen, 1999) , MLOGP (Moriguchi et al., 1992) , SILICOS-IT (http://silicos-it.be.s3-website-eu-west-1. amazonaws.com/software/filter-it/1.0.2/filter-it.html, 2016) and iLOGP (Daina et al., 2014) for better prediction accuracy.",
+            "cite_spans": [
+                {
+                    "start": 119,
+                    "end": 135,
+                    "text": "(Lindsley, 2010)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 231,
+                    "end": 260,
+                    "text": "(Constantinescu et al., 2019)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 463,
+                    "end": 483,
+                    "text": "(Cheng et al., 2007)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 492,
+                    "end": 517,
+                    "text": "(Wildman & Crippen, 1999)",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 526,
+                    "end": 550,
+                    "text": "(Moriguchi et al., 1992)",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 679,
+                    "end": 699,
+                    "text": "(Daina et al., 2014)",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Lipophilicity"
+        },
+        {
+            "text": "Predicted lipophilicity (Log P) values of the spice molecules obtained from different calculation models are shown in Figure 1 . All the molecules subjected to lipophilicity test lie in the range of \u00fe1.2 to \u00fe4.19 of consensus value that obeys the Lipinski's limit of log p < 5, which suggests they can be used for further clinical trials (Arnott & Planey, 2012) . The lowest lipophilicity is observed for Vanillin and the highest for Nerolidol, among the screened molecules. From Figure 1 , it is found that all the ligand molecules have positive lipophilicity value. Hence, these molecules satisfy the essential criteria to be drug molecules.",
+            "cite_spans": [
+                {
+                    "start": 338,
+                    "end": 361,
+                    "text": "(Arnott & Planey, 2012)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 118,
+                    "end": 126,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 480,
+                    "end": 488,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Lipophilicity"
+        },
+        {
+            "text": "Solubility (Log S) is the measure of homogeneity of the system from the mixture of solute and solvent. It is considered as one of the vital parameters in drug concentration determination for a desired pharmacological response (Savjani et al., 2012) . Poor solubility of drugs is a major issue in drug discovery and development. Solubility acts as a driving force to attain high drug concentration in blood for therapeutic effectiveness (Bergstr\u20ac om & Larsson, 2018).",
+            "cite_spans": [
+                {
+                    "start": 226,
+                    "end": 248,
+                    "text": "(Savjani et al., 2012)",
+                    "ref_id": "BIBREF47"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Water solubility"
+        },
+        {
+            "text": "The drug solubility property of the proposed small molecules was obtained from the SwissADME. The server used three solubility models, such as Ali (Ali et al., 2012) , ESOL (Delaney, 2004) and Silicos-IT (http://silicos-it.be.s3-websiteeu-west-1.amazonaws.com/software/filter-it/1.0.2/filter-it.html, 2016) that is comprised of different topological methods to check the water solubility of these small molecules. The plot for solubility of the proposed small molecules based on these three different models is shown in Figure 2 . The Log S values obtained for the ligand molecules based on these three models are in the range of \u00c01.8 to \u00c03.94 for ESOL method, \u00c01.68 to \u00c04.99 for Ali method and \u00c01.48 to \u00c05.52 for Silicos-IT method. The values from different models suggest to the moderately soluble to very soluble nature of the molecules. The reference values of Log S for moderately soluble and highly soluble molecules range from \u00c04 to \u00c06 and \u00c02 to \u00c04, respectively. The solubility values suggest for the oral administration of these molecules.",
+            "cite_spans": [
+                {
+                    "start": 147,
+                    "end": 165,
+                    "text": "(Ali et al., 2012)",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 173,
+                    "end": 188,
+                    "text": "(Delaney, 2004)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 520,
+                    "end": 528,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Water solubility"
+        },
+        {
+            "text": "The pharmacokinetic property is the prime factor for the selection of a drug candidate that describes the drug disposition in the body. The significant parameters that quantify the pharmacokinetics of a drug are its ADME (absorption, distribution, metabolism, excretion) properties (Jang et al., 2001) . All the molecules subjected to ADME tests are qualified for drug approval with their high value of gastrointestinal (GI) absorption (Daina & Zoete, 2016) , which in turn implies for their use as an oral drug. Table 1 represents the pharmacokinetic properties of the proposed drug candidates. The passive GI absorption and blood-brain barrier (BBB) permeation is a fundamental criterion for the distribution of the drug molecules. From Table 1 , it is observed that all the ligand molecules are BBB permeant that implies their underlying distribution index. The high negative skin permeable coefficient (Kp) values indicate a less skin permeability that is useful for their transdermal delivery. The interaction of the drug molecules with cytochromes P450 (CYP) is an essential property as they play a crucial role in drug elimination through biotransformation metabolism. The noninhibition of CYP isoforms such as CYP1A2, CYP2C19, CYP2C9, CYP2D6 and CYP3A4 disclose that these molecules are not the substrate for these enzymes that resembles for the lower degradation rate of these molecules, which will make it effectively available for blocking the SARS-CoV-2 RBD Spro and SARS-CoV-2 Mpro. The synthetic accessibility values suggest the facile synthesis of these molecules. All these parameters infer these close to drug-like molecules, which may be used as successful drug candidates.",
+            "cite_spans": [
+                {
+                    "start": 282,
+                    "end": 301,
+                    "text": "(Jang et al., 2001)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 436,
+                    "end": 457,
+                    "text": "(Daina & Zoete, 2016)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 513,
+                    "end": 520,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 739,
+                    "end": 746,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Pharmacokinetic properties"
+        },
+        {
+            "text": "3.5.1. Docking study of SARS-CoV-2 receptor-binding domain spike protein",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Molecular docking study"
+        },
+        {
+            "text": "In addition to the above investigations, a molecular docking study was performed to estimate the binding affinity and their binding pose of the ligand molecules at the binding site of the SARS-CoV-2 RBD Spro. From the study, it is observed that Piperine has the highest interaction affinity among the screened compounds. The docked poses of the four ligand molecules (Piperine, Capsaicin, Gingerol and Terpinen-4-ol) along with their 2D interaction diagram having the highest binding affinity, among the selected molecules, are presented in descending order in Figure 3 . From Table 1 , it is observed that these four molecules follow the trend for their binding affinity with Piperine (\u00c06.4 kcal/ mol) at the highest, then Capsaicin, Ginerol and Terpinen-4ol (all having \u00c05.5 kcal/mol) among all the selected molecules. From Figure 3 (a), it is observed that Piperine is associated with hydrogen bond interaction with GLY164 and GLY170. TYR173 (TYR505) and SER162 (SER494) are involved with pi-pi T-shaped and carbon-hydrogen bond interactions, respectively. The binding process is also governed by van der Waals interactions with the residues ARG71, TYR121 (TYR453), TYR163 (TYR495) and ASN169 (ASN501) of SARS-CoV-2 RBD Spro. Hence, the interaction of Piperine with SARS-CoV-2 RBD Spro is stabilized by covalent hydrogen bonding, pi-pi T-shaped and van der Waals interactions with a good affinity score. Capsaicin interacts with the residues GLY164 and TYR173 (TYR505) through pi-Donor hydrogen bond and pi-pi T-shaped interactions with the benzene ring, respectively (Figure 3(b) ). The residues ARG71 (ARG403), ASP73, GLU74, GLN77, LYS85, TYR121 (TYR453), SER162 (SER494), TYR163 (TYR495) and ASN169 (ASN501) are involved with van der Waals interaction with Capsaicin. On the other hand, Gingerol is stabilized by various kinds of interactions with the SARS-CoV-2 RBD Spro (Figure 3(c) ). The residues GLY164, ASN169 (ASN501) and GLY170 are associated with hydrogen bond interaction with Gingerol.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 561,
+                    "end": 569,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 577,
+                    "end": 584,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 826,
+                    "end": 834,
+                    "text": "Figure 3",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1571,
+                    "end": 1583,
+                    "text": "(Figure 3(b)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1878,
+                    "end": 1890,
+                    "text": "(Figure 3(c)",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Molecular docking study"
+        },
+        {
+            "text": "Other than the hydrogen bond interaction TYR173 (TYR505) is having a pi-pi T-shaped interaction with the benzene ring of Gingerol while ARG71 (ARG403), TYR121 (TYR453), TYR163 (TYR495), PHE165 (PHE497) and GLN166 (GLN498) residues are involved in van der Waals interactions. The Terpinen-4-ol is stabilized by hydrophobic interaction with the residues ARG125, LYS126, TYR141 and PRO159 while the residues ARG122, PHE124, ASP135, SER137, GLU139 and ILE140 are involved in van der Waals interactions with Terpinen-4-ol (Figure 3(d) ). The lowest energy poses of the rest 26 molecules along with their 2D interaction diagrams are provided in Supplementary Figure S3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 517,
+                    "end": 529,
+                    "text": "(Figure 3(d)",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 639,
+                    "end": 662,
+                    "text": "Supplementary Figure S3",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Molecular docking study"
+        },
+        {
+            "text": "The above-selected molecules were also docked with the SARS-CoV-2 Mpro to observe the inhibitory effect of these molecules. The docking study reveals that all the molecules are interacting with the SARS-CoV-2 Mpro with certain binding affinity. The docking data are also presented in Table 1 . From Table 1 , it is seen that Piperine has the highest affinity at the binding site of SARS-CoV-2 Mpro among all the selected molecules, which is similar to the case of SARS-CoV-2 RBD Spro. The DG value, known as binding free energy, for the four molecules having the highest affinity among all the selected molecules, along with their 2D interaction diagram, is given in Figure 4 . The four molecules have followed the binding affinity trend as Piperine (\u00c07.3 kcal/mol) > Capsaicin (\u00c06.4 kcal/mol) > Carvone (\u00c06.2 kcal/mol) > Gingerol (\u00c06.1 kcal/mol). From Figure 4(a) , it is observed that the interaction of Piperine at the binding site of the SARS-CoV-2 Mpro is stabilized by hydrogen bonding, electrostatics and van der Waals interactions. The residues GLN299 and VAL303 are associated with hydrogen bonding interaction; ASP295 and ARG298 with charged interactions while MET6 and PRO9 are associated with hydrophobic interactions with Piperine. The molecule is also stabilized through van der Waals interactions with residues PHE8, GLY127, ILE152, PHE291 and THR304 at the binding site of the SARS-CoV-2 Mpro. The molecule Capsaicin is stabilized in the binding pocket through van der Waals and hydrophobic interactions ( Figure  4(b) ). The residues MET6, PHE8, PRO9 and ILE152 are interacting through hydrophobic interactions such as alkyl and pi-alkyl with the Capsaicin. Capsaicin is interacting with residues ALA7, GLY11, LYS12, GLN127, TYR154, PHE291, ASP295, ARG298, GLN299, VAL303 and THR304 through van der Waals interaction. The interaction of Carvone with the SARS-CoV-2 Mpro is stabilized through hydrophobic and van der Walls interactions (Figure 4(c) ). Carvone interacts with the residues MET6, PHE8 and ARG298 of SARS-CoV-2 Mpro through hydrophobic contacts. The residues ALA7, PRO9, GLN127, ASP295, GLN299, GLY302 and VAL303 are in van der Waals interactions with Carvone. Gingerol is stabilized by hydrogen bond, hydrophobic and van der Waals interactions in the binding pocket of the SARS-Cov-2 Mpro (Figure 4(d) ). VAL303 is interacting through hydrogen bond interaction with Gingerol. The residues LYS12 and THR304 are involved in carbon-hydrogen bond interactions while MET6, ALA7, PHE8, GLN127, TYR154, ASP295 and ARG298 are associated with van der Waals interactions with Gingerol. The ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 284,
+                    "end": 291,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 299,
+                    "end": 306,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 667,
+                    "end": 675,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 853,
+                    "end": 864,
+                    "text": "Figure 4(a)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1522,
+                    "end": 1534,
+                    "text": "Figure  4(b)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 1952,
+                    "end": 1964,
+                    "text": "(Figure 4(c)",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 2319,
+                    "end": 2331,
+                    "text": "(Figure 4(d)",
+                    "ref_id": "FIGREF4"
+                }
+            ],
+            "section": "Docking study of SARS-CoV-2 main protease"
+        },
+        {
+            "text": "The MD simulation is one of the proven in-silico methods for the determination of protein-ligand dynamics concerning a high temporal resolution of nanosecond or picosecond order.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Molecular dynamics (MD) simulation study"
+        },
+        {
+            "text": "Here the docked poses of RBD Spro and Mpro with Piperine were used for a 100 ns MD simulation to analyse the stability of these docked compounds.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Molecular dynamics (MD) simulation study"
+        },
+        {
+            "text": "The RMSD values from MD simulation provide information about structural and conformational stability. Figure 5 represents the backbone RMSD data of viral proteins and their complex with Piperine. From the plot, it is observed that both the simulations have less fluctuation throughout the simulation time. The average RMSD values of RBD Spro, RBD Spro-Piperine, Mpro and Mpro-Piperine are calculated as 0.143 \u00b1 0.025 nm, 0.130 \u00b1 0.018 nm, 0.212 \u00b1 0.041 nm and 0.203 \u00b1 0.028 nm, respectively. The average RMSD values of the Piperine bound proteins as compared to only proteins are found to be less representing to their conformational stability. Both the simulations are attained equilibrium within 0.3 nm, which is also a measure of the systems' stability ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 102,
+                    "end": 110,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Root mean square deviation (RMSD)"
+        },
+        {
+            "text": "The conformational fluctuations of the proteins RBD Spro and Mpro were analysed by observing the residual changes that resulted due to the interaction of Piperine with the proteins. The RMSF plots of the Ca atoms of the viral proteins and their complex with Piperine are shown in Figure 6 . From the analysis, it is found that RBD Spro, RBD Spro-Piperine, Mpro and Mpro-Piperine have the average RMSF values 0.099 \u00b1 0.060 nm, 0.097 \u00b1 0.051 nm, 0.119 \u00b1 0.077 nm and 0.120 \u00b1 0.077 nm, respectively. It is observed that RBD Spro-Piperine (Figure 6(a) ) and Mpro-Piperine (Figure 6(b) ) show similar fluctuations as compared to only RBD Spro and Mpro, which implies to the stability of these compounds. In addition to that, a majority of the protein residues are found to be stabilized within RMSF 0.3 nm. The decrease in fluctuations of Piperine bound to RBD Spro also suggests for the active binding of Piperine (A. Kumar, Choudhir, et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 914,
+                    "end": 944,
+                    "text": "Kumar, Choudhir, et al., 2020)",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 280,
+                    "end": 288,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 535,
+                    "end": 547,
+                    "text": "(Figure 6(a)",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 568,
+                    "end": 580,
+                    "text": "(Figure 6(b)",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "Root mean square fluctuation (RMSF)"
+        },
+        {
+            "text": "The root mean square distance between an object and the centre of gravity is defined as the radius of gyration (Rg). The radius of gyration is a measure of the compactness of the protein structure, where higher Rg value is referred to as a less compact structure, and low Rg value is inferred as high compactness that implies more stability. The measured average Rg values of RBD Spro, RBD Spro-Piperine, Mpro and Mpro-Piperine are 1.829 \u00b1 0.008 nm, 1.833 \u00b1 0.010 nm, 2.233 \u00b1 0.012 nm and 2.238 \u00b1 0.013 nm, respectively. From Figure 7(a,b) , it is observed that there is a little enhancement in the Rg values of RBD Spro-Piperin, and Mpro-Piperine as compared to RBD Spro and Mpro, which implies to the gain in compactness of the protein structures upon binding to Piperine.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 526,
+                    "end": 539,
+                    "text": "Figure 7(a,b)",
+                    "ref_id": "FIGREF8"
+                }
+            ],
+            "section": "Radius of gyration (Rg)"
+        },
+        {
+            "text": "The number of hydrogen bonds formed between the protein-ligand complex is the measure of the binding strength of the ligand to the protein. The RBD Spro (red) and Mpro (blue) bound to Piperine have a constant number of 1-2 hydrogen bonds throughout the simulation time ( Figure  7(c) ). There is a maximum number of 3 and 4 hydrogen bonds observed in the case of RBD Spro-Piperine and Mpro-Piperine, respectively. The number of hydrogen bonds fluctuates throughout the simulation time for both RBD Spro-Piperine and Mpro-Piperine, which suggests for conformational changes in the binding site of the ligand during the simulation. The observation from hydrogen bond analysis indicates that the complexes are stable for the performed simulation time.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 271,
+                    "end": 283,
+                    "text": "Figure  7(c)",
+                    "ref_id": "FIGREF8"
+                }
+            ],
+            "section": "Number of hydrogen bonds"
+        },
+        {
+            "text": "The interaction energy is the measure of the interaction strength of the protein-ligand complex. In order to validate the results of molecular docking studies, the analysis of the interaction free energies from MD simulation was performed. The average interaction energy takes the contribution from the average short-range Lennard-Jones and van der Waals energy. The average interaction energies of RBD Spro-Piperine and Mpro-Piperine are found to be \u00c0 41.401 \u00b1 17.843 kJ/mol and \u00c0143.162 \u00b1 23.043 kJ/mol, respectively. These interaction energy values suggest that Piperine binds to the RBD Spro and Mpro with good affinity and hence supports the docking results, which in turn helps for the favourable use of Piperine as a drug candidate for SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interaction energy"
+        },
+        {
+            "text": "3.6.6. Solvent accessible surface area (SASA)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Interaction energy"
+        },
+        {
+            "text": "SASA is a measure of the receptor exposure to the solvent environment during the simulation. The hydrophobic residues that got exposed to the solvent environment upon binding with the ligand molecules contribute to the SASA values. The plot of the SASA for the proteins and their ligand-bound form is presented in Figure 8 . The analysed average SASA values for the RBD Spro, RBD Spro-Piperine, Mpro and Mpro-Piperine are 106.976 \u00b1 1.602 nm 2 , 107.235 \u00b1 1.667 nm 2 , 150.698 \u00b1 2.565 nm 2 and 151.022 \u00b1 2.207 nm 2 , respectively. There is no significant change observed for the averaged SASA values of the complex as compared to only protein suggesting their stability after binding to the drug molecule.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 314,
+                    "end": 322,
+                    "text": "Figure 8",
+                    "ref_id": "FIGREF9"
+                }
+            ],
+            "section": "Interaction energy"
+        },
+        {
+            "text": "3.6.7. MMPBSA binding free energy analysis MD simulation can also be used to calculate the binding free energy of the protein-ligand complex. The binding free energy is the measure of the stability of the system in turns of consistency of nonbonded interactions throughout the simulation. The binding free energy was calculated by using MMPBSA method by taking 2000 snapshots from the trajectory. The computed value of binding free energy for RBD Spro-Piperine is found to be \u00c05.533 \u00b1 0.839 kJ/mol, and for Mpro-Piperine is \u00c037.971 \u00b1 0.271 kJ/mol. It is observed that for both RBD Spro and Mpro, van der Waals energy plays a crucial role in the interaction process. The van der Waals energy, electrostatic energy and non-polar energy are contributed actively to the total interaction energy. In contrast, polar energy has a positive contribution to the whole interaction process. The observed data indicate that the van der Waals, electrostatic and non-polar interactions combinedly contribute to the stability of both the compounds. The contribution from different interactions to the binding free energy for RBD Spro-Piperine and Mpro-Piperine is provided in Supplementary Table S2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1161,
+                    "end": 1183,
+                    "text": "Supplementary Table S2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Interaction energy"
+        },
+        {
+            "text": "The PCA is an essential technique to monitor the conformational dynamics of biomolecules. It is useful in determining the concerted motion of protein as well as protein-ligand complex from the MD trajectories. The diagonalization of the covariance matrix of backbone atoms of the proteins and ligand-bound form were considered for the principal components PC1 and PC2 (Figure 9 ). From Figure 9(a,b) , it is observed that both the Spro-Piperine and Mpro-Piperine are less flexible as compared to unbound proteins since they covered less conformational space. It concludes that the ligand-bound forms are more stable as compared to the unbound proteins. The principal components obtained were used as the reaction coordinates to find the Gibbs free energy landscape (Figure 9 ) to visualize the energy minima of the unbound protein as well as the protein-ligand complex. From Figure  9 (c-f), it is observed that both the ligand-bound proteins have less Gibbs-free energy values than the unbound proteins indicating their stability and energetically favourable conformational transitions. The shape and size of the minimum energy area (blue colour) in case of RBD Spro-Piperine and Mpro-Piperine are more as compared to the unbound proteins RBD Spro and Mpro, which suggests the ligandbound forms are thermodynamically more favourable.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 368,
+                    "end": 377,
+                    "text": "(Figure 9",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 386,
+                    "end": 399,
+                    "text": "Figure 9(a,b)",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 765,
+                    "end": 774,
+                    "text": "(Figure 9",
+                    "ref_id": "FIGREF10"
+                },
+                {
+                    "start": 875,
+                    "end": 884,
+                    "text": "Figure  9",
+                    "ref_id": "FIGREF10"
+                }
+            ],
+            "section": "Principal component analysis (PCA)"
+        },
+        {
+            "text": "The comprehensive study reveals that Piperine forms a stable complex with RBD Spro and Mpro and can be considered as an active inhibitor against SARS-CoV-2. From the docking results, it is observed that the Piperine molecule is the best candidate for the inhibition of the RBD Spro and the Mpro of SARS-CoV-2 among the selected 30 molecules. To observe the effectiveness of Piperine over currently used drugs, we carried out the docking study of a few drug molecules such as chloroquine, favipiravir, hydroxychloroquine, oseltamivir, remdesivir and ribavirin using the same docking protocol as followed for the 30 spice molecules. From the docking score, it is found that Piperine performed better as compared to the currently used drugs stated above. The lowest energy pose of a few presently used drugs with their 2D interaction diagram is provided in Supplementary Figures S5  and S6 corresponding to SARS-CoV-2 Mpro and RBD Spro, respectively. A comparison of the lowest energy dock scores of these drug molecules along with Piperine is also provided in Table 2 . The MD simulation results reveal that Piperine actively inhibits both the RBD Spro and Mpro by binding to their active sites. Piperine binds on the active site of the RBD Spro with those residues by which it interacts with ACE2. So, the binding of Piperine on that site may potentially cease the interaction tendency of RBD Spro with ACE2. Similarly, the interaction of Piperine on the active site of the Mpro may inhibit its viral replication. From the docking and MD results, we conclude that Piperine forms a very stable complex with RBD Spro and Mpro and shows better affinity as compared to the currently used drugs that are mentioned above against SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 854,
+                    "end": 886,
+                    "text": "Supplementary Figures S5  and S6",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 1058,
+                    "end": 1065,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Principal component analysis (PCA)"
+        },
+        {
+            "text": "This study used molecular docking and MD simulation as potential tools to monitor the inhibitory efficiency of natural spice molecules against SARS-CoV-2, which emerged as a global threat to millions of people across the globe. It is observed that all the proposed spice molecules qualified the ADME test with their suitable pharmacokinetic properties to be useful as a drug candidate. The docking study is revealed that all the molecules actively take part in binding to the SARS-CoV-2 RBD Spro and Mpro with their low or high value of binding affinity. This binding of these molecules will help to inhibit the replication of the viral proteins with specific hindrances upon their mutarotation. For both the viral targets, Piperine performed well with its highest binding affinity of \u00c06.4 and \u00c07.3 kcal/mol for SARS-CoV-2 RBD Spro and Mpro, respectively. Besides, Piperine is also found more effective as compared to a few of the currently used drugs. The MD simulation study is supported for the stable interaction of Piperine with SARS-Cov-2 RBD Spro and Mpro. The PCA and binding free energy results also suggest for the active participation of Piperine in stable complex formation with RBD Spro and MPro. Hence, the study proposes Piperine as an active molecule for the inhibition of SARS-CoV-2. Since this study is performed computationally, it requires wet-lab experiments in-vitroas well as in-vivofor further validation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "In vitro antiviral activity of clove and ginger aqueous extracts against feline calicivirus, a surrogate for human norovirus",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Aboubakr",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nauertz",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Luong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Agrawal",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A A"
+                    ],
+                    "last": "El-Sohaimy",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Youssef",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Goyal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Journal of Food Protection",
+            "volume": "79",
+            "issn": "6",
+            "pages": "1001--1012",
+            "other_ids": {
+                "DOI": [
+                    "10.4315/0362-028X.JFP-15-593"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Abraham",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Murtola",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schulz",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hess",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lindahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Using integrated computational approaches to identify safe and rapid treatment for SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Al-Khafaji",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Al-Duhaidahawil",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "&amp; Taskin Tok",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1764392"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Molecular insight into binding behavior of polyphenol (rutin) with beta lactoglobulin: Spectroscopic, molecular docking and MD simulation studies",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Al-Shabib",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Malik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Alsenaidy",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Rehman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Alajmi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Alsenaidy",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Husain",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Molecular Liquids",
+            "volume": "269",
+            "issn": "",
+            "pages": "511--520",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.molliq.2018.07.122"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Molecular interaction of tea catechin with bovine b-lactoglobulin: A spectroscopic and in silico studies",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Al-Shabib",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Malik",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tabish Rehman",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Alajmi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Husain",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hisamuddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Altwaijry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Saudi Pharmaceutical Journal",
+            "volume": "28",
+            "issn": "3",
+            "pages": "238--245",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jsps.2020.01.002"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Revisiting the general solubility equation: In silico prediction of aqueous solubility incorporating the effect of topographical polar surface area",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ali",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Camilleri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hutt",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Kirton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of Chemical Information and Modeling",
+            "volume": "52",
+            "issn": "2",
+            "pages": "420--428",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci200387c"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Molecular docking study to identify potential inhibitor of covid-19 main protease enzyme: An in-silico approach",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Anurag",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Nem Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Neeraj",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Giriraj",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.26434/chemrxiv.12170904.v1"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "The influence of lipophilicity in drug discovery and design",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Arnott",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Planey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Expert Opinion on Drug Discovery",
+            "volume": "7",
+            "issn": "10",
+            "pages": "863--875",
+            "other_ids": {
+                "DOI": [
+                    "10.1517/17460441.2012.714363"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Comparative study on the antiviral activity of selected monoterpenes derived from essential oils",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Astani",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Reichling",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Schnitzler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Phytotherapy Research",
+            "volume": "24",
+            "issn": "5",
+            "pages": "673--679",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ptr.2955"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Electrostatics of nanosystems: Application to microtubules and the ribosome",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Baker",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sept",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Joseph",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Holst",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mccammon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "volume": "98",
+            "issn": "",
+            "pages": "10037--10041",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.181342398"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Molecular dynamics with coupling to an external bath",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Berendsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Postma",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Van Gunsteren",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dinola",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Haak",
+                    "suffix": ""
+                }
+            ],
+            "year": 1984,
+            "venue": "The Journal of Chemical Physics",
+            "volume": "81",
+            "issn": "8",
+            "pages": "3684--3690",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/1.448118"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Computational prediction of drug solubility in water-based systems: Qualitative and quantitative approaches used in the current drug discovery and development setting",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bergstr\u20ac Om",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Larsson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "International Journal of Pharmaceutics",
+            "volume": "540",
+            "issn": "1-2",
+            "pages": "185--193",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijpharm.2018.01.044"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Antibacterial, antifungal, and antiviral effects of three essential oil blends",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Brochot",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Guilbot",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Haddioui",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Roques",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Microbiology Open",
+            "volume": "6",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/mbo3.459"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Fresh ginger (Zingiber officinale) has anti-viral activity against human respiratory syncytial virus in human respiratory tract cell lines",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Yeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Shieh",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of Ethnopharmacology",
+            "volume": "145",
+            "issn": "1",
+            "pages": "146--151",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jep.2012.10.043"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Computation of octanol-water partition coefficients by guiding an additive model with knowledge",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Lai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Journal of Chemical Information and Modeling",
+            "volume": "47",
+            "issn": "6",
+            "pages": "2140--2148",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci700257y"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Evaluation of antiviral activity of zanthoxylum species against picornaviruses",
+            "authors": [
+                {
+                    "first": "H.-J",
+                    "middle": [],
+                    "last": "Choi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Osong Public Health and Research Perspectives",
+            "volume": "7",
+            "issn": "6",
+            "pages": "400--403",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.phrp.2016.11.003"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Remdesivir, lopinavir, emetine, and homoharringtonine inhibit SARS-CoV-2 replication in vitro",
+            "authors": [
+                {
+                    "first": "K.-T",
+                    "middle": [],
+                    "last": "Choy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": ".-L",
+                    "middle": [],
+                    "last": "Kaewpreedee",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sia",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P Y"
+                    ],
+                    "last": "Chu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K W"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "C W"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": ".-H",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Peiris",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H.-L",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Antiviral Research",
+            "volume": "178",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.antiviral.2020.104786"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Lipophilicity as a central component of drug-like properties of chalcones and flavonoid derivatives",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Constantinescu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Lungu",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Lung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Molecules",
+            "volume": "24",
+            "issn": "8",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/molecules24081505"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "iLOGP: A simple, robust, and efficient description of n-octanol/water partition coefficient for drug design using the GB/SA approach",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Daina",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Michielin",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zoete",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Chemical Information and Modeling",
+            "volume": "54",
+            "issn": "12",
+            "pages": "3284--3301",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci500467k"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "SwissADME: A free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Daina",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Michielin",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zoete",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Scientific Reports",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/srep42717"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A BOILED-Egg to predict gastrointestinal absorption and brain penetration of small molecules",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Daina",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zoete",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "ChemMedChem",
+            "volume": "11",
+            "issn": "11",
+            "pages": "1117--1121",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/cmdc.201600182"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Particle mesh Ewald: An N\u00c1log (N) method for Ewald sums in large systems",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Darden",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "York",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Pedersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "The Journal of Chemical Physics",
+            "volume": "98",
+            "issn": "12",
+            "pages": "10089--10092",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/1.464397"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "ESOL: Estimating aqueous solubility directly from molecular structure",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Delaney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of Chemical Information and Computer Sciences",
+            "volume": "44",
+            "issn": "3",
+            "pages": "1000--1005",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci034243x"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Accelrys Software Inc., Discovery Studio Visualizer",
+            "authors": [],
+            "year": 2005,
+            "venue": "",
+            "volume": "2",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "In-silico approaches to detect inhibitors of the human severe acute respiratory syndrome coronavirus envelope protein ion channel",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vemula",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Donde",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gouda",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Behera",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Vadde",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1751300"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Potential inhibitors of coronavirus 3-chymotrypsin-like protease (3CL pro ): An in silico screening of alkaloids and terpenoids from African medicinal plants",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Gyebi",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Ogunro",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Adegunloye",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Ogunyemi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Afolabi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--19",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1764868"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "A review on the cleavage priming of the spike protein on coronavirus by angiotensin-converting enzyme-2 and furin",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hasan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Paray",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hussain",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Qadir",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Attar",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Aziz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharifi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Derakhshankhah",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rasti",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mehrabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shahpasand",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Saboury",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Falahati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1754293"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "CHARMM36 all-atom additive protein force field: Validation based on comparison to NMR data",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mackerell",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Jr",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Journal of Computational Chemistry",
+            "volume": "34",
+            "issn": "25",
+            "pages": "2135--2145",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcc.23354"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Pharmacokinetics and its role in small molecule drug discovery research",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Jang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Harris",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Lau",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Medicinal Research Reviews",
+            "volume": "21",
+            "issn": "5",
+            "pages": "382--396",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/med.1015"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Discovery of potential multi-target-directed ligands by targeting host-specific SARS-CoV-2 structurally conserved main protease",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Joshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jagdale",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bansode",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Shankar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Tellis",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Pandya",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Chugh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Giri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kulkarni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--16",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1760137"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Identification of phytochemical inhibitors against main protease of COVID-19 using molecular modeling approaches",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Choudhir",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Shukla",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Tyagi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bhushan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rathore",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--21",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1772112"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Understanding the binding affinity of noscapines with protease of SARS-CoV-2 for COVID-19 using MD simulations at different temperatures",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kumari",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jayaraj",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Dass",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Chandra",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--14",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1752310"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "g_mmpbsa -A GROMACS tool for high-throughput MM-PBSA calculations",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kumari",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lynn",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Chemical Information and Modeling",
+            "volume": "54",
+            "issn": "7",
+            "pages": "1951--1962",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci500020m"
+                ]
+            }
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Structure of the SARS-CoV-2 spike receptor-binding domain bound to the ACE2 receptor",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ge",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "581",
+            "issn": "7807",
+            "pages": "215--220",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2180-5"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Lipophilicity",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lindsley",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Encyclopedia of psychopharmacology",
+            "volume": "",
+            "issn": "",
+            "pages": "1--6",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Experimental and computational approaches to estimate solubility and permeability in drug discovery and development settings",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lipinski",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lombardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Dominy",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Feeney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Advanced Drug Delivery Reviews",
+            "volume": "46",
+            "issn": "1-3",
+            "pages": "423--424",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0169-409X(96)00423-1"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Outcomes of hydroxychloroquine usage in United States veterans hospitalized with Covid-19",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Magagnoli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Narendran",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Pereira",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Cummings",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Hardin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Sutton",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ambati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Med",
+            "volume": "1",
+            "issn": "",
+            "pages": "1--14",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.medj.2020.06.001"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Antiviral and anti-proliferative in vitro activities of piperamides from black pepper",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Mair",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Atanasov",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Schmidtke",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Dirsch",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Rollinger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Planta Medica",
+            "volume": "81",
+            "issn": "S01",
+            "pages": "1--381",
+            "other_ids": {
+                "DOI": [
+                    "10.1055/s-0036-1596830"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Exploring the effect of 5-fluorouracil on conformation, stability and activity of lysozyme by combined approach of spectroscopic and theoretical studies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Millan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Satish",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bera",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Konar",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Sahoo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Photochemistry and Photobiology B: Biology",
+            "volume": "179",
+            "issn": "",
+            "pages": "23--31",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jphotobiol.2017.12.019"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Simple method of calculating octanol/water partition coefficient",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Moriguchi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hirono",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Nakagome",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Matsushita",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "Chemical & Pharmaceutical Bulletin",
+            "volume": "40",
+            "issn": "1",
+            "pages": "127--130",
+            "other_ids": {
+                "DOI": [
+                    "10.1248/cpb.40.127"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Computational studies of drug repurposing and synergism of lopinavir, oseltamivir and ritonavir binding with SARS-CoV-2 Protease against COVID-19",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Muralidharan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Sakthivel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Velmurugan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gromiha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--6",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1752802"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Natural products as sources of new drugs from 1981 to",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Newman",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Cragg",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of Natural Products",
+            "volume": "79",
+            "issn": "3",
+            "pages": "629--661",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acs.jnatprod.5b01055"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Polymorphic transitions in single crystals: A new molecular dynamics method",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Parrinello",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rahman",
+                    "suffix": ""
+                }
+            ],
+            "year": 1981,
+            "venue": "Journal of Applied Physics",
+            "volume": "52",
+            "issn": "12",
+            "pages": "7182--7190",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/1.328693"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "UCSF Chimera -A visualization system for exploratory research and analysis",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Pettersen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Goddard",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Couch",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Greenblatt",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Ferrin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of Computational Chemistry",
+            "volume": "25",
+            "issn": "13",
+            "pages": "1605--1612",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcc.20084"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Molecular electrostatic potentials: An effective tool for the elucidation of biochemical phenomena",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Politzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Laurence",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Jayasuriya",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "",
+            "volume": "61",
+            "issn": "",
+            "pages": "191--202",
+            "other_ids": {
+                "DOI": [
+                    "10.1289/ehp.8561191"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "A modified TIP3P water potential for simulation with Ewald summation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Price",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Brooks",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Iii",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "The Journal of Chemical Physics",
+            "volume": "121",
+            "issn": "20",
+            "pages": "10096--10103",
+            "other_ids": {
+                "DOI": [
+                    "10.1063/1.1808117"
+                ]
+            }
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Drug solubility: Importance and enhancement techniques",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Savjani",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Gajjar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Savjani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "ISRN Pharmaceutics",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.5402/2012/195727"
+                ]
+            }
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "The PyMOL Molecular Graphics System, Version 2.0. Schr\u20ac odinger LLC",
+            "authors": [
+                {
+                    "first": "Llc",
+                    "middle": [],
+                    "last": "Schr\u20ac Odinger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Cell entry mechanisms of SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Geng",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Auerbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "volume": "117",
+            "issn": "",
+            "pages": "11727--11734",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2003138117"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "An investigation into the identification of potential inhibitors of SARS-CoV-2 main protease using molecular docking study",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sourav",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sharat",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sona",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Atanu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--11",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1763201"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Investigation into SARS-CoV-2 resistance of compounds in garlic essential oil",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "T P"
+                    ],
+                    "last": "Thuy",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T A"
+                    ],
+                    "last": "My",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "T T"
+                    ],
+                    "last": "Hai",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hieu",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Hoa",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Thi Phuong Loan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Triet",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T V"
+                    ],
+                    "last": "Anh",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Quy",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Tat",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Hue",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Quang",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Trung",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Tung",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Huynh",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "T A"
+                    ],
+                    "last": "Nhung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ACS Omega",
+            "volume": "5",
+            "issn": "14",
+            "pages": "8312--8320",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/acsomega.0c00772"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Trott",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Olson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of Computational Chemistry",
+            "volume": "31",
+            "issn": "2",
+            "pages": "455--461",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcc.21334"
+                ]
+            }
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Identification of new anti-nCoV drug chemical compounds from Indian spices exploiting SARS-CoV-2 main protease as target",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Umesh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Kundu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Selvaraj",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Dubey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1763202"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Automation of the CHARMM General Force Field (CGenFF) I: Bond perception and atom typing",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Vanommeslaeghe",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mackerell",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Jr",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Journal of Chemical Information and Modeling",
+            "volume": "52",
+            "issn": "12",
+            "pages": "3144--3154",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci300363c"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Structure, function, and antigenicity of the SARS-CoV-2 spike glycoprotein",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Walls",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-J",
+                    "middle": [],
+                    "last": "Park",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tortorici",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wall",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mcguire",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Veesler",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "181",
+            "issn": "2",
+            "pages": "281--292",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.02.058"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Development and testing of a general Amber force field",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wolf",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Caldwell",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kollman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Case",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Journal of Computational Chemistry",
+            "volume": "25",
+            "issn": "9",
+            "pages": "1157--1174",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcc.20035"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Remdesivir and chloroquine effectively inhibit the recently emerged novel coronavirus (2019-nCoV) in vitro",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Research",
+            "volume": "30",
+            "issn": "3",
+            "pages": "269--271",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41422-020-0282-0"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Prediction of physicochemical parameters by atomic contributions",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Wildman",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Crippen",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Journal of Chemical Information and Computer Sciences",
+            "volume": "39",
+            "issn": "5",
+            "pages": "868--873",
+            "other_ids": {
+                "DOI": [
+                    "10.1021/ci990307l"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Crystal structure of SARS-CoV-2 main protease provides a basis for design of improved a-ketoamide inhibitors",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Curth",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Drosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Sauerhering",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Becker",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Rox",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Hilgenfeld",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "6489",
+            "pages": "409--412",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Phenolic compounds from Origanum vulgare and their antioxidant and antiviral activities",
+            "authors": [
+                {
+                    "first": "X.-L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-S",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C.-H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G.-Q",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "W.-C",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G.-C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Food Chemistry",
+            "volume": "152",
+            "issn": "",
+            "pages": "300--306",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.foodchem.2013.11.153"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Predicted lipophilicity (Log P) values of the spice molecules obtained from different calculation models.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Predicted solubility (Log S) values of the spice molecules obtained from different calculation models.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Lowest energy docked pose of (a) Piperine, (b) Capsaicin, (c) Gingerol and (d) Terpinen-4-ol with SARS-Cov-2 RBD Spro and their 2D interaction diagram. The colour codes represent the nature of interactions.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "(Continued)   interaction of Gingerol with the residues PRO9 and ILE152 is stabilized through pi-alkyl interactions. The lowest energy binding poses of the rest 26 molecules along with the ligand interaction diagram at the binding sites of the SARS-CoV-2 Mpro are provided in SupplementaryFigure S4.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Lowest energy docked pose of (a) Piperine, (b) Capsaicin, (c) Carvone and (d) Gingerol with SARS-CoV-2 Mpro and their 2D interaction diagram. The colour codes represent the nature of interactions.during the simulation(Al-Shabib et al., 2018Millan et al., 2018).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "(Continued)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Root mean square deviation plots of (a) RBD Spro (black) and RBD Spro-Piperine (red); (b) Mpro (black) and Mpro-Piperine (blue).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Root mean square fluctuation plots of Ca-atoms of (a) RBD Spro (black) and RBD Spro-Piperine (red); (b) Mpro (black) and Mpro-Piperine (blue).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Radius of gyration plots of (a) RBD Spro (black) and RBD Spro-Piperine (red); (b) Mpro (black) and Mpro-Piperine (blue); (c) Intermolecular hydrogen bonds formed between RBD Spro-Piperine and Mpro-Piperine during 100 ns MD simulation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Solvent accessible surface area (SASA) plots of (a) RBD Spro (black) and RBD Spro-Piperine (red); (b) Mpro (black) and Mpro-Piperine (blue).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF10": {
+            "text": "Principal component analysis of (a) RBD Spro (black), RBD Spro-Piperine (red) and (b) Mpro (black) and Mpro-Piperine (blue). Free energy landscape plot of (c) RBD Spro, (d) RBD Spro-Piperine and (e) Mpro and (f) Mpro-Piperine.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF11": {
+            "text": "(Continued)",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Predicted data of docking score, solubility, pharmacokinetics, drug-likeness and medicinal chemistry of the screened spice molecules.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Lowest energy binding affinity of Piperine and few of the currently used drugs for SARS-CoV-2 as obtained from molecular docking study.Binding affinity (kcal/mol)",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors are thankful to the Ministry of Human Resource Development (MHRD), New Delhi, for financial assistance (MHRD/(FDC)/ 2015-2016/438/INST) to establish the computational facility. We are also extremely grateful to Dr. Anand Kant Das, New York University, Abu Dhabi, for a fruitful scientific discussion.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Disclosure statement"
+        }
+    ]
+}

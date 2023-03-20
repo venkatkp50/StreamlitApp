@@ -1,0 +1,2162 @@
+{
+    "paper_id": "0b0096c83d11ac2275dcc55db23313fc53a7aea6",
+    "metadata": {
+        "title": "Identification of natural inhibitors against Mpro of SARS-CoV-2 by molecular docking, molecular dynamics simulation, and MM/PBSA methods",
+        "authors": [
+            {
+                "first": "Priyanka",
+                "middle": [],
+                "last": "Sharma",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University",
+                    "location": {
+                        "settlement": "Nainital",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Tushar",
+                "middle": [],
+                "last": "Joshi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University Uttarakhand",
+                    "location": {
+                        "settlement": "Bhimtal",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Shalini",
+                "middle": [],
+                "last": "Mathpal",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University Uttarakhand",
+                    "location": {
+                        "settlement": "Bhimtal",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Tanuja",
+                "middle": [],
+                "last": "Joshi",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University, S.S.J Campus",
+                    "location": {
+                        "settlement": "Almora",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Hemlata",
+                "middle": [],
+                "last": "Pundir",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University Uttarakhand",
+                    "location": {
+                        "settlement": "Bhimtal",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Subhash",
+                "middle": [],
+                "last": "Chandra",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University, S.S.J Campus",
+                    "location": {
+                        "settlement": "Almora",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sushma",
+                "middle": [],
+                "last": "Tamta",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Kumaun University",
+                    "location": {
+                        "settlement": "Nainital",
+                        "region": "Uttarakhand",
+                        "country": "India"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The recent outbreak of SARS-CoV-2 disease, also known as COVID-19, has emerged as a pandemic. The unavailability of specific therapeutic drugs and vaccines urgently demands sincere efforts for drug discovery against COVID-19. The main protease (Mpro) of SARS-CoV-2 is a critical drug target as it plays an essential role in virus replication. Therefore for the identification of potential inhibitors of SARS-CoV-2 Mpro, we applied a structure-based virtual screening approach followed by molecular dynamics (MD) study. A library of 686 phytochemicals was subjected to virtual screening which resulted in 28 phytochemicals based on binding energy. These phytochemicals were further subjected to drug-likeness and toxicity analysis, which resulted in seven drug-like hits. Out of seven, five phytochemicals viz., Mpro-Dehydrtectol (-10.3 kcal/mol), Epsilon-viniferin (-8.6 kcal/mol), Peimisine (-8.6 kcal/ mol), Gmelanone (-8.4 kcal/mol), and Isocolumbin (-8.4 kcal/mol) were non-toxic. Consequently, these phytochemicals are subjected to MD, post MD analysis, and MM/PBSA calculations. The results of 100 ns MD simulation, RMSF, SASA, Rg, and MM/PBSA show that Epsilon-viniferin (-29.240 kJ/mol), Mpro-Peimisine (-43.031 kJ/mol) and Gmelanone (-13.093 kJ/mol) form a stable complex with Mpro and could be used as potential inhibitors of SARS-CoV-2 Mpro. However, further investigation of these inhibitors against Mpro receptor of COVID-19 is needed to validate their candidacy for clinical trials.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "SARS-CoV-2 (severe acute respiratory syndrome coronavirus-2), which is known as Corona Virus Disease 2019 , was first identified in Wuhan, China, in December 2019 (Hui et al., 2020; Wang et al., 2020) . The coronavirus spreads very rapidly from human-to-human by saliva droplets or nose discharge through coughs or sneezes of an infected person. It has globally infected over 11,113,345 individuals, with 526,764 deaths, dated July 3, 2020, as reported by WHO (World Health Organization, 2020) . SARS-CoV-2 has been declared an international public health emergency and advocated rapid research efforts (Benvenuto et al., 2020; Ceraolo & Giorgi, 2020; Ren et al., 2020) . There is no specific vaccine or effective drug or treatment for SARS-CoV-2 infection yet. The present condition puts the whole world under high pressure to produce a new vaccine or therapy against it (Huang et al., 2020) .",
+            "cite_spans": [
+                {
+                    "start": 163,
+                    "end": 181,
+                    "text": "(Hui et al., 2020;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 182,
+                    "end": 200,
+                    "text": "Wang et al., 2020)",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 456,
+                    "end": 493,
+                    "text": "WHO (World Health Organization, 2020)",
+                    "ref_id": null
+                },
+                {
+                    "start": 603,
+                    "end": 627,
+                    "text": "(Benvenuto et al., 2020;",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 628,
+                    "end": 651,
+                    "text": "Ceraolo & Giorgi, 2020;",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 652,
+                    "end": 669,
+                    "text": "Ren et al., 2020)",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 872,
+                    "end": 892,
+                    "text": "(Huang et al., 2020)",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "For the control of viral infection, the inhibition of replication of viral genomic material is a well-known strategy (De Clercq, 2002) . The reproduction of this virus in the host cell can be stopped by inhibiting the cleavage process. The viral genome codes for several non-structural proteins (NSP) including 3-chymotrypsin-like protease (3CLpro), RNAdependent RNA polymerase (RdRp), and its helicase, papainlike protease (papLpro), the structural glycoprotein, and accessory proteins (Boopathi et al., 2020) . Main protease (Mpro) has been reported as a potential drug target for SARS CoV-2 because it cuts the two replicate polyproteins required to mediate viral replication and transcription. Hence, Mpro can be used as a target for drug discovery to identify novel inhibitors of SARS-CoV-2. To discover a drug, the use of the computational technique for screening natural inhibitor is gaining attention among the researchers (Aanouz et al., 2020) . Some natural compounds such as Baicalein, Luteolin, Quercetin, and Kaempferol are potential antiviral agents against many vital viruses, including Dengue, HIV, H5N1 influenza A virus, Coxsackie virus, CHIKV, and Japanese encephalitis virus (Habbu et al., 2009) . So screening the natural compounds from medicinal plants is an excellent approach to find potential inhibitors against Mpro of SARS-CoV-2. Therefore, we selected the medicinal plants used in Chyawanprash for screening inhibitors of Mpro.",
+            "cite_spans": [
+                {
+                    "start": 117,
+                    "end": 134,
+                    "text": "(De Clercq, 2002)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 487,
+                    "end": 510,
+                    "text": "(Boopathi et al., 2020)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 931,
+                    "end": 952,
+                    "text": "(Aanouz et al., 2020)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1195,
+                    "end": 1215,
+                    "text": "(Habbu et al., 2009)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the Ayurvedic system of India, many herbal formulations (i.e. Chyawanprash) are used for boosting the immune system. Similarly, many other plants are known to increase immunity, and their compounds can be used against the coronavirus. Chyawanprash is one of the most appreciated herbal preparations for boosting the immune system for all age groups (Parle & Bansal, 2006) . It is formulated by processing around 40 such medicinal herbs and possesses multiple health benefits. Chyawanprash has been widely used since ancient times as a health supplement that acts as a medicine for enhancing immunity and longevity. Ministry of AYUSH reported Chyawanprash as an immunity enhancer and suggested 10 gm (1tsf) Chyawanprash every day in the morning to prevent the coronavirus infection. (https://www. mohfw.gov.in/pdf/ImmunityBoostingAYUSHAdvisory.pdf).",
+            "cite_spans": [
+                {
+                    "start": 352,
+                    "end": 374,
+                    "text": "(Parle & Bansal, 2006)",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Thus, to find novel SARS-CoV-2 Mpro inhibitors, this study was focused on virtual screening of phytochemicals from medicinal plants used in the preparation of Chyawanprash, which have been reported for their antifungal, antibacterial, and antiviral activities. In light of these kinds of literature, we examined the potential natural compounds against SARS-CoV-2 by using bioinformatics tools. Therefore we used Main Protease (306 amino acids), essential for the functional polypeptide generation and virus survival in host cells, as a target in this Figure 1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The library of phytochemicals of medicinal plants used in Chyawanprash was constructed by text mining analysis using DLAD4U (Disease List Automatically Derived For you), PubTator, and Carrot2 servers. Text mining results showed that these medicinal plants have anti-inflammatory, anti-diabetic, anti-cancer, antimicrobial, antifungal, and potential antiviral activity. Hence, to screen out antiviral compounds against coronavirus, a library of 686 phytochemicals from 40 medicinal plants which are used in Chyawanprash was constructed by searching the scientific literature and by using the PubChem database (Supplementary Table 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 608,
+                    "end": 630,
+                    "text": "(Supplementary Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Construction of phytochemical library"
+        },
+        {
+            "text": "The three-dimensional crystal structure of the Mpro (PDB ID 6W63) receptor was retrieved from the Protein Data Bank (https://www.rcsb.org). For the screening, the protein structure was prepared by using the software MGL Tools and PyMOL. The protein preparation involved in two steps. Firstly, protein was prepared by removing all water molecules using PyMOL software. Further hydrogen atoms were added into the receptor by using MGL Tools (Trott & Olson, 2010) . The structure of the protein was saved in pdbqt format for further analysis. The 3 D structure of each phytochemical and reference molecule X77 was downloaded from PubChem [https://pubchem.ncbi.nlm.nih.gov] in SDF format and then converted into PDB format using Open Babel GUI (O'Boyle et al., 2011).",
+            "cite_spans": [
+                {
+                    "start": 439,
+                    "end": 460,
+                    "text": "(Trott & Olson, 2010)",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Protein and ligand preparation"
+        },
+        {
+            "text": "Before the docking, the center of mass of co-crystallized ligand with receptor was calculated by using the \"centerofmass\" command in PyMOL software to retrieve x y and z coordinates of the reference compound. The coordinates of the centerofmass of X77 were X\u00bc \u00c023.315, Y \u00bc 13.893, and Z\u00bc \u00c029.698, which was used for docking with grid box size 30 \u00c2 30 \u00c2 30 \u00c5. The same grid configuration was used for virtual screening of all phytochemicals using Mpro protein using PyRx open software with AutoDockVina keeping ligand molecules flexible throughout the process. After docking, the 2 D interactions of the protein-ligand complexes, including hydrogen bonds and the bond lengths, were analyzed and depicted by using Ligplot \u00fe v.1.4.5 software.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Molecular docking and visualization"
+        },
+        {
+            "text": "Drug-likeness and toxicity prediction of the screened compounds were predicted by DruLiTo and OSIRIS software (Mabkhot et al., 2016) . DruLiTo indicates various properties such as drug-likeness, water solubility (LogS) etc. of a compound. OSIRIS open-source software was used to predict drug toxicity and risk properties like mutagenicity, tumorigenicity, irritation, reproductive development and drug score. All screened ligands were evaluated for their drug-like nature under Lipinski's rules of five; 'RO5 (Lipinski, 2000) .",
+            "cite_spans": [
+                {
+                    "start": 110,
+                    "end": 132,
+                    "text": "(Mabkhot et al., 2016)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 509,
+                    "end": 525,
+                    "text": "(Lipinski, 2000)",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Drug likeness and toxicity prediction"
+        },
+        {
+            "text": "The obtained docked complexes were subjected to MD simulation using GROMACS 5.0.7 to examine the insight behavior of the protein-ligand complexes (Pronk et al., 2013) . The CHARMM 36 force field was applied to build the topology of ligand and protein (Vanommeslaeghe et al., 2009) . The dynamic behavior of all protein-ligand complexes was observed in the presence of explicit water molecules after solvation with the TIP3P water model in an orthorhombic periodic boundary box. To prevent interaction of the proteinligand complexes with the distance between the complex and the box wall was kept 10 \u00c5 and then add ions for neutralized the system. The energy of the prepared systems was minimized for 40,000 steps. The equilibrated system was then subjected to 10 ps simulation in NPT ensemble with 300 K temperature, constant pressure of 1 atm, and a time step of 2fs. Further, MD simulation was performed at a constant temperature of 300 K and a constant of 1 atm pressure using two fs for a 100 ns time scale. After successful completion of 100 ns MD simulation, the Root mean square deviation (RMSD), Root mean square fluctuation (RMSF), Radius of Gyration (Rg), SASA, and H-bond were calculated. This was done to quantify the strength of the interaction between protein-ligand complexes. We also computed the nonbonded interaction energy between protein and ligands with the same parameter as MD simulation.",
+            "cite_spans": [
+                {
+                    "start": 146,
+                    "end": 166,
+                    "text": "(Pronk et al., 2013)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 251,
+                    "end": 280,
+                    "text": "(Vanommeslaeghe et al., 2009)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Molecular dynamics (MD) simulation"
+        },
+        {
+            "text": "The binding free energy of the complexes was determined by the molecular mechanics' method to analyze complex stability. Therefore, the molecular mechanics Poisson-Boltzmann surface area (MM-PBSA) (Shukla & Singh, 2019) was used for calculating the binding free energy of protein-ligand complexes. The whole process was as summarized in the below equation:",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 219,
+                    "text": "(Shukla & Singh, 2019)",
+                    "ref_id": "BIBREF20"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Binding free energies"
+        },
+        {
+            "text": "Finally, the MM-G/PBSA value of the protein-ligand complex was calculated by summing the gas-phase electrostatic energy (Eele), van der Waals (EvdW), polar (Gpolar), and nonpolar (Gnonpolar) components.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Binding free energies"
+        },
+        {
+            "text": "Before the virtual screening, docking of reference compound X77, the co-crystallized ligand of Mpro (Figure 2A ), was validated by the docking protocol. The result revealed that the docked reference X77 (Green) was completely superimposed with a co-crystallized X77 (Purple) ( Figure 2B ) and the RMSD of the superimposed structure is 0.62 \u00c5. The 2 D interaction of active site residue of experimental reference (X77) viz., Ser46, Met49, Pro52, Tyr54, Phe140, Leu141, Asn142, Gly143, Ser144, Cys145, His163,Thr25, Thr26, Leu27, His41, Cys44, Thr45, His164, Met165, Glu166, Leu167, Pro168, His172, Asp187, Arg188, and Gln189 similar to docked reference (X77) of Mpro ( Figure 2C and D).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 100,
+                    "end": 110,
+                    "text": "(Figure 2A",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 277,
+                    "end": 286,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 668,
+                    "end": 677,
+                    "text": "Figure 2C",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Virtual screening"
+        },
+        {
+            "text": "After validation of the docking protocol, all 686 phytochemicals were docked on the active site of Mpro by using the default parameter of the active site. Docking results reveal that 28 phytochemicals out of 686 phytochemicals have binding energy from \u00c015.9 kcal/mol to \u00c08.4 Kcal/mol, which is lower or equivalent to binding energy the reference (X77) (-8.4 kcal/ mol) (Table 1) . Therefore, 28 phytochemicals were screened as potential inhibitors. These phytochemicals belong to following plants; Phyllanthus emblica, Vitis vinifera, Terminalia chebula, Mesua ferrea, Phyllanthus amarus, Stereospermum suaveolens, Tinospora cordifolia, Solanum indicum, Tribulus terrestris, Lilium polyphyllum, Leptadenia reticulate, Gmelina arborea, and Martynia annua. Screened phytochemicals of medicinal plants, their compound identification number, and binding energy are given in Table 1 . These 28-screened phytochemicals were used for further analysis to find the potential inhibitors against the Mpro enzyme.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 369,
+                    "end": 378,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 870,
+                    "end": 877,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Virtual screening"
+        },
+        {
+            "text": "After the screening of docking, all twenty-eight phytochemicals were applied for drug-likeness prediction, in which only seven phytochemicals viz. peimisine, apigenin, dehydrotectol, tinosporin, isocolumbin, epsilon-viniferin, and gmelanone showed better pharmacokinetics. As per RO5, all seven phytochemicals showed Log p 5, molecular weight 400, number of (HBA) hydrogen bond acceptors 10, and the number of (HBD) hydrogen bond donors five and Lipinski rule of violation were 0 as compared to the reference, and they successfully passed in RO5 evaluation. The compounds, which showed better pharmacokinetics and satisfied the fundamental RO5 accepted as drug-like molecules. As per RO5, the drug-likeness result of screened phytochemicals has been given in Table 2 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 759,
+                    "end": 766,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Drug Likeness analysis"
+        },
+        {
+            "text": "Since the toxic potential can significantly impact the discovery and development of drugs, the toxicological properties were analyzed by the OSIRIS server. The various toxicity properties, such as mutagenicity, carcinogenicity, and irritation, showed mostly acceptable parameters (Table 3) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 280,
+                    "end": 289,
+                    "text": "(Table 3)",
+                    "ref_id": "TABREF2"
+                }
+            ],
+            "section": "Toxicological properties analysis"
+        },
+        {
+            "text": "The drug score was between the ranges of 0 to 1. All screened phytochemicals drug scores were less than 1; they indicate the excellent possibility of being drug candidates. The toxicity test showed that the reference molecule, X77, and five phytochemicals, Peimisine, Isocolumbin, Epsilon-viniferin, Dehydrotectol, and Gmelanone, had no risk of toxicity, and the remaining two compounds were toxic. Apigenin showed medium risk with mutagenic, while tinosporin showed high risk with tumorigenic and irritation. Log S refers to the water solubility of the phytochemicals that ideally ranges between \u00c06.5 and 0.5. Apigenin showed a higher LogS value (-2.40), but it showed medium risk mutagenicity and irritation. Dehydrotectol showed a minimum LogS value (-5.49 ) as compared to other complexes. All the phytochemicals were acceptable range. Finally, five phytochemicals, Peimisine, Isocolumbin, Epsilon-viniferin, Dehydrotectol, and Gmelanone show no risk with mutagenicity, carcinogenicity, irritation, and the value of LogS and drug scores are in the acceptable range.",
+            "cite_spans": [
+                {
+                    "start": 753,
+                    "end": 759,
+                    "text": "(-5.49",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Toxicological properties analysis"
+        },
+        {
+            "text": "From the molecular docking, drug-likeness, and toxicity prediction, Peimisine, Gmelanone, and Isocolumbin were found as potential inhibitors of SARS-CoV-2 Mpro. The 2 D interactions of the reference molecule and all screened phytochemicals were analyzed by using LigPlot \u00fe v.1.4.5 software and are shown in Figure 3 . The reference molecule X77 showed interaction with several residues. X77 forms three hydrogen bonds with Gly143, His163, and Glu166 of 3.24 \u00c5, 3.09 \u00c5, and 2.75 \u00c5 respectively, and twelve hydrophobic bonds with His164, Met165, Asp187, Arg188, Gln189 Thr25, His41, Phe140, Leu141, Asn142, Ser144, Cys145, and yields the binding energy \u00c08.4 kcal/mol by docking (Figure 3 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 307,
+                    "end": 315,
+                    "text": "Figure 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 676,
+                    "end": 685,
+                    "text": "(Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "2 D Visualization of the docked complex"
+        },
+        {
+            "text": "Mpro-Dehydrtectol shows the highest binding affinity (-10.3 kcal/mol) compared to other ligands against Mpro. The Dehydrtectol showed interaction with several residues and formed one hydrogen bond with residue Gln189 of 3.18 \u00c5 and also exhibits hydrophobic interaction with Cys145, Glu166, Met165, Thr190, Pro168, Asn142, His164, Arg188, His41.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "2 D Visualization of the docked complex"
+        },
+        {
+            "text": "Mpro-Epsilon-vinifein shows the binding affinity (-8.6 kcal/ mol) as compared to other ligands against Mpro. The Epsilon-vinifein formed five hydrogen bonds with residue Phe140, Glu166, Asp187, and Tyr45 of 2.87 \u00c5, 2.71 \u00c5, 2.77 \u00c5, 2.94 \u00c5, and 3.25 \u00c5 and exhibited thirteen hydrophobic interactions with Cys145, Gly143, Asn142, Ser144, Leu141, His163, Arg188, Met149, Thr25, Cys44, His172, His41, and Met165.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "2 D Visualization of the docked complex"
+        },
+        {
+            "text": "Mpro-Peimisine shows the highest binding affinity (-8.6 kcal/mol) as compared to other ligands against Mpro. The Peimisine showed interaction with several residues and formed two hydrogen bonds with residue Gly143 and Leu141 of 3.13 \u00c5 and 2.76 \u00c5 and also exhibits hydrophobic interaction with Cys145, Glu166, Met165, Thr190, Pro168, and Gln189. Mpro-Gmelanone showed a binding affinity of \u00c08.4 Kcal/mol with the Mpro complex. It formed two hydrogen bonds with Gly143, Gln192 with length 3.00 \u00c5, 3.14 \u00c5, and yielded 12 hydrophobic interactions with His 41, Thr26, Thr25, Asn142, Glu166, Met49, Cys145, Met165, Pro168, Asp187, and Arg188, of Mpro receptor. While, binding affinity of Mpro-Isocolumbin was showed \u00c08.4 Kcal/mol from AutoDockVina, which is similar to the reference molecule. It formed one hydrogen bond with Glu166 of 3.01 \u00c5 and formed nine hydrophobic interactions with His41, His164, Thr25, Asn142, Met49, Cys145, Met165, Asp187, and Arg188, of Mpro receptor. From the findings, we observed that most of the screened phytochemicals show common interaction and were involved in H-bond interaction and hydrophobic interaction with the same residue, as shown in Figure 3 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1173,
+                    "end": 1181,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "2 D Visualization of the docked complex"
+        },
+        {
+            "text": "All biological systems can be represented as dynamic networks of molecular interactions, while molecular docking represents only a single glimpse of protein-ligand interaction. Therefore, to sample the various conformations that these complexes might acquire in the solvated state, we simulated the dynamics behavior of all the five complexes (Mpro-Dehydrtectol, Mpro-Epsilon-vinifein, Mpro-Peimisine, Mpro-Gmelanone, and Mpro-Isocolumbin) and reference (Mpro-X77) using TIP3P water models for 100 ns each. We restricted our simulation runs to 100 ns because all the systems included in this study, Mpro protein, native reference (Mpro-X77), and docked complexes viz Mpro-Epsilon-vinifein, Mpro-Peimisine, and Mpro-Gmelanone achieved stabilization within 5-10 ns of the production runs except Mpro-Dehydrtectol and Mpro-Isocolumbin. Mpro-Dehydrtectol and Mpro-Isocolumbin were unstable after 25 ns. The dynamic behaviour of three-screened protein-ligand complexes were analyzed by RMSD, RG, RMSF, SASA, H-bond, and interaction energy are given in Table 4 . Figure 3 . 2 D interaction of reference compounds (X77) and screened phytochemicals. In all phytochemicals, dotted green line indicates the hydrogen bond, red sparked arc represents hydrophobic interaction, and red circle and red ellipses represent common protein residue with reference.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 1047,
+                    "end": 1054,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1057,
+                    "end": 1065,
+                    "text": "Figure 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Molecular dynamic simulation"
+        },
+        {
+            "text": "All protein-ligand complexes' configuration changes were studied in terms of Root mean square deviation (RMSD) during the 100 ns MD simulation. We calculated coordinates of the protein backbone and ligand from the coordinates in the initial docked pose by analyzing RMSD. Figure 4 shows the RMSD plot for native protein and all protein-ligand complexes. The RMSD trajectory of protein and all the complexes attained the equilibration in initial $5-10 ns of simulation and produced stable trajectories. The native protein showed stability in 100 ns simulation with an average RMSD 0.18 nm (Black). In the case of the bound system, all complexes are stable in the 100 ns simulation trajectory period. The average value of RMSD has calculated 0.17 nm for Mpro-Epsilon-vinifein (cyan), 0.20 nm for Mpro-Peimisine complex (magenta), and 0.22 nm for Mpro-Gmelanone (green), respectively as compared to the reference (X77), 0.17 nm (red) Table 4 . The reference complex, Mpro-X77 and Mpro-Epsilon-vinifein complex, showed the same RMSD value, which confirmed the stability of the complexes. In conclusion, the RMSD fluctuation analysis suggests that the MD trajectories were overall stable and in are acceptable range during the simulation period for the entire studied complex.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 272,
+                    "end": 280,
+                    "text": "Figure 4",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 931,
+                    "end": 938,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Root mean square deviation (RMSD)"
+        },
+        {
+            "text": "RMSF was used to calculate the average fluctuation of each amino acid of the protein. RMSF plot ( Figure 5 ) shows that the secondary conformations of Mpro remain stable during the simulation of 100 ns. The average RMSF value for Mpro protein 0.09 \u00b1 0.02 nm, Mpro-X77complex 0.13 \u00b1 0.04 nm, Mpro-Epsilon-vinifein 0.10 \u00b1 0.03 nm, Mpro-Peimisine complex 0.10 \u00b1 0.03 nm, and Mpro-Gmelanone complex 0.13 \u00b1 0.04 nm respectively (Table 4 ). The fluctuation during all protein-ligand interaction was below 0.2 nm, which is perfectly acceptable. In conclusion, it indicates that RMSF of all complexes is significantly similar as compared to reference resulted in less fluctuation indicating good stability.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 98,
+                    "end": 106,
+                    "text": "Figure 5",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 423,
+                    "end": 431,
+                    "text": "(Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Root mean square fluctuation (RMSF)"
+        },
+        {
+            "text": "Rg is used to determine whether the complexes are stably folded or unfolded during the MD simulation. The folding and unfolding of protein structure upon binding of the ligands can be measured by the Radius of gyration (Rg).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The radius of gyration (Rg)"
+        },
+        {
+            "text": "In conclusion, higher Rg shows less compactness (more unfolded) of the protein-ligand complex. The average Rg value of native protein Mpro was found to be around 1.88 \u00b1 0.05 (Black). Furthermore, the average Rg values of Mpro-Epsilon-vinifein, Mpro-Peimisine, Mpro-Gmelanone, complexes were 1.89 \u00b1 0.05 nm, 1.89 \u00b1 0.07 nm, and 1.90 \u00b1 0.06 nm respectively, which was significantly similar as compared to reference1.88 \u00b1 0.08 nm molecules ( Figure 6 ). As stated earlier, if protein will likely maintain a relatively steady value of Rg throughout the MD simulation, it can be regarded as stably folded. If the value of Rg changes over time, it would be considered unfolded. As a result, each complex exhibited relatively similar behavior of compactness and consistent amounts of Rg as compared to the native protein and reference (Table 4 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 439,
+                    "end": 447,
+                    "text": "Figure 6",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 828,
+                    "end": 836,
+                    "text": "(Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "The radius of gyration (Rg)"
+        },
+        {
+            "text": "Hydrogen bonds are very specific interactions between receptor and ligand, which play a crucial role in the stabilization of the protein-ligand complex. It is also responsible for drug specificity, metabolization, and adsorption in drug design. The hydrogen bonds between each ligand-protein complex were also examined. Figure 7 depicts the total number of hydrogen bonds present in the complexes, which were calculated after the 100 ns simulation period. Analyzing the reference complex, around five hydrogen bonds (red) were observed in the complex. In comparison, Mpro-Epsilonvinifein was found to establish six (cyan) hydrogen bonds; three hydrogen bonds were observed in the Mpro-Peimisine (Magenta) and Mpro-Gmelanone complex (blue), respectively. Through the above detail H-bond analysis, we can conclude that both the compounds were bound to the Mpro as effectively and tightly as reference X77.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 320,
+                    "end": 328,
+                    "text": "Figure 7",
+                    "ref_id": "FIGREF5"
+                }
+            ],
+            "section": "Hydrogen bonds"
+        },
+        {
+            "text": "The calculation of SASA of the protein-ligand complex helps to predict the extent of the conformational changes, which can be accessible by the water solvent. Hence, SASA was carried out to analyze interactions between complex and solvent during the 100 ns MD simulation. The figure shows the plot of SASA value vs. time for all the protein-ligand complexes (Figure 8 ). The average SASA values for Mpro-Epsilon-vinifein, Mpro-Peimisine, Mpro-Gmelanone were 151.88 \u00b1 2.17 nm2, 149.93 \u00b1 2.01 nm2, and 156.07 \u00b1 2.01 nm2, respectively. The average value was significantly better than the reference (Red), i.e. 149.29 \u00b1 2.17 nm2. The average value of SASA is shown in Table 4 . These calculations show that all the complexes have a significantly similar value of SASA as the reference complex.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 358,
+                    "end": 367,
+                    "text": "(Figure 8",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 664,
+                    "end": 671,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Solvent accessible surface area (SASA)"
+        },
+        {
+            "text": "The interaction energy reflects the strength of the receptorligand complex. To validate the binding energy of molecular docking studies, a detailed analysis was performed regarding the calculation of the free interaction energies associated with the binding of hit compounds with the structure of Mpro using the Parrinello-Rahman parameter implemented in GROMACS. Figure 9 displays the average short-range Lennard-Jones energy plot of protein-ligand complexes Mpro-X77(Red), Mpro-Epsilon-vinifein, Mpro-Peimisine, Mpro-Gmelanone for 100 ns of MD Simulation. The average interaction energy of all complexes was observed in the acceptable range of \u00c0100 kJ/mol to \u00c0200 kJ/mol during the 100 ns simulation period (Table 4) . The reference complex, Mpro-X77, shows that the average interaction energy calculated was \u00c0186.73 kJ mol-1, hit phytochemicals, i.e. Epsilon-vinifein, Peimisine, and Gmelanone showed similar and comparable interaction energy as the reference compound. Among the complexes, the Mpro-Epsilon-vinifein showed the best average interaction energy, i.e. \u00c0106.30 kJ/mol, Mpro-Peimisine had the interaction energy of \u00c092.94 kJ/mol. In comparison, Mpro-Gmelanone had interaction energy of \u00c099.98 kJ/mol. These interaction energy calculations validated the molecular docking results and indicated stable complex formation with Mpro and potential drug candidates against COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 364,
+                    "end": 372,
+                    "text": "Figure 9",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 709,
+                    "end": 718,
+                    "text": "(Table 4)",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Interaction energy"
+        },
+        {
+            "text": "PCA was carried out to investigate the significant motions during ligand binding. In this study, the matrix diagonalization was used to calculate the eigenvectors and eigenvalues. For this study, the first 40 eigenvectors were selected to calculate concerted motions. Figure 10A represents the eigenvalues that were obtained from the diagonalization of the covariance matrix of atomic fluctuations in decreasing order versus the corresponding eigenvector for Mpro-X77, Mpro-Epsilon-vinifein (Cyan), Mpro-Peimisine (Magenta), and Mpro-Gmelanone (Green).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 268,
+                    "end": 278,
+                    "text": "Figure 10A",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Principal component analysis (PCA)"
+        },
+        {
+            "text": "It was observed that out of the 40 eigenvectors, the first ten eigenvectors accounted for 84.79% for Mpro-X77(Red), 86.13% for Mpro-Epsilon-vinifein (Cyan), 88.73% of total motions for Mpro-Peimisine (Magenta), and 86.95% for Mpro-Gmelanone (Green) (Figure 10a ). All the studied complexes showed very fewer motions as compared with the reference compound. Therefore, we concluded that all complexes had very fewer motions from the PCA analysis and formed a stable complex with Mpro. The 2 D projection plot generation in PCA is another way to achieve the dynamics of complexes. Figure 10b shows the 2 D projection of the trajectories in the phase space for the first two principal components, PC1 and PC2 for Mpro-X77, Mpro-Epsilon-vinifein, Mpro-Peimisine, and Mpro-Gmelanone complexes, respectively. The complex, which occupied less phase space, showed a stable cluster while the complex that occupied more space showed a lessstable cluster. From the figure, the Mpro-Peimisine(Magenta) and Mpro-Gmelanone (green) were highly stable as they occupied less space in the phase space, and the cluster was well defined as compared to Mpro-X77 (Red), and Mpro-Gmelanone, (green) complexes.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 249,
+                    "end": 260,
+                    "text": "(Figure 10a",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 579,
+                    "end": 589,
+                    "text": "Figure 10b",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Principal component analysis (PCA)"
+        },
+        {
+            "text": "The Gibb's free energy plot for PC1 and PC2 was also calculated and is shown in Figure 11 . The plot shows Gibbs free energy value ranging from 0 to 12.5 for Mpro-X77, for Mpro-Epsilon-vinifein Gibbs energy is 0 to 12.6 kJ/mol, Mpro-Peimisine Gibbs energy is 0 to 12.8 kJ/mol, and for Mpro-Gmelanone Gibbs energy is 0 to 12.3 kJ/mol, respectively. Thus screened compounds shows lower energy as compared to the reference with Mpro, which indicates that these complexes follow more favorable transitions energetically from one conformation to another as compared to the reference.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 80,
+                    "end": 89,
+                    "text": "Figure 11",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Principal component analysis (PCA)"
+        },
+        {
+            "text": "The simulated complex's binding free energy was calculated to revalidate the inhibitor affinity of the Mpro-ligand complexes predicted by the docking simulation studies. The calculations of binding free energies were performed using the last 20 ns of MD trajectories. The summation of the nonpolar energies, polar, and non-bonded interaction energies (electrostatic interaction and Vander Waals), was calculated for all the complexes using the MM-PBSA methods and are shown in Table 5 . Table 5 shows the binding energy of Mpro reference (-29.240 kJ/mol), Mpro-Peimisine (-43.031 kJ/mol), Mpro-Epsilon-vinifein (-29.009 kJ/mol), and Mpro Gmelanone (-13.093 kJ/mol), respectively. The van der Waal energy of phytochemicals, when compared with the reference, the Mpro-Epsilon-vinifein (-29.131), had less binding affinity while ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 477,
+                    "end": 484,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 487,
+                    "end": 494,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                }
+            ],
+            "section": "Protein-ligand binding by MM/PBSA methods"
+        },
+        {
+            "text": "The outbreak of COVID-19 opens up new horizons for the exploration of synthetic and natural small compounds to identify potential leads that could be used to design plausible antiviral drugs. The recently documented crystallographic structure of Mpro of SARS-CoV-2 could be a promising target for structural based drug discovery . Nevertheless, identifying and creating new effective medicines is a time consuming and expensive operation (Van Norman, 2016) . Hence, the use of computational techniques has accelerated the efforts of drug discovery (Hirono, 2002) . Plant-derived natural products play a significant role in discovering and producing drug candidates by being the lead molecule (Joseph et al., 2017) . Ancient Indian scriptures, including Rig-Veda, Atherveda, and Charka Sanhita, demonstrated great benefits of plants for treating various human ailments . Plants are an excellent natural source of high-value alkaloids, flavonoids, lignans, polyketides, alkanes, alkenes, alkynes, aromatics, peptides, terpenoid, phenols, coumarins, and steroids. In the current time of drug discovery, plants' enormous medicinal properties allow the researchers to exclusively use them for the discovery of drug-like natural molecules (Jee et al., 2018; Kumar et al., 2018; Panchangam et al., 2016) .",
+            "cite_spans": [
+                {
+                    "start": 438,
+                    "end": 456,
+                    "text": "(Van Norman, 2016)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 548,
+                    "end": 562,
+                    "text": "(Hirono, 2002)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 692,
+                    "end": 713,
+                    "text": "(Joseph et al., 2017)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1233,
+                    "end": 1251,
+                    "text": "(Jee et al., 2018;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1252,
+                    "end": 1271,
+                    "text": "Kumar et al., 2018;",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1272,
+                    "end": 1296,
+                    "text": "Panchangam et al., 2016)",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In this study, we selected medicinal plants used in the preparation of Chyawanprash and constructed a phytochemical library of 686 phytochemicals. After that, we conducted virtual screening targeting the Mpro against SARS-CoV-2. The binding energy of screened 28 phytochemicals out of 686 is within the range of \u00c015.8 Kcal/mol to \u00c08.4Kcal/mol. To analyze physicochemical properties and the drug-like nature of compounds, we analyzed Drug-likeness parameters. According to the rule that most \"drug-like\" molecules have Log p 5, molecular weight 400, number of hydrogen bond acceptors 10, and number of hydrogen bond donors' 5. The seven-screened phytochemicals were accepted as a drug by the FAF Drug 3 server, and our study shows screened phytochemicals fulfill all the enlisted criteria of the drug-likeness rule. To determine biological activity and toxicity of screened phytochemicals, we analyzed the OSIRIS prediction of the screened phytochemicals under different criteria; mutagenicity, carcinogenicity, irritation, among others, through correlation rules established by the software in which five phytochemicals were screened against SARS-CoV-2. The comparison of 2 D interaction of all hit phytochemicals revealed stable interaction with one or both the catalytic dyad (His-41 and Cys-145) in Mpro of SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The Mpro-Peimisine did not retain the interaction with His-41 but its interaction with substrate binding site amino acid residue . The residue Glu-166 in Mpro is considered to be involved in the development of its functional dimeric form. The potential of Epsilon-vinifein to bind to a catalytic group along with a substrate-binding region containing Glu-166 residues inhibits the dimerization of Mpro as Glu-166 residues of one monomer/promoter cannot interfere with N-finger residues of other monomers.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "After that, to obtain a more in-depth insight into the structural changes of protein-ligand complexes, we conducted MD simulations. All complexes, including reference, showed relatively similar and consistent stability throughout 100 ns. The results of MMPBSA indicate that Mpro-Peimisine complex (-43.031 kJ/mol), Mpro-Epsilon-vinifein complex (-29.009 kJ/ mol), and Mpro-Gmelanone complex (-13.093 kJ/mol) bind to the Mpro receptor of SARS-CoV-2 efficiently. In our study, we found Peimisine (Lilium polyphyllum), Epsilon-vinifein (Vitis vinifera) Gmelanone (Gmelina arborea) have better stability to Mpro receptor of SARS-CoV-2. In recent study, Peimisine was reported as potential active substances in Mongolian medicine Agsirga that can block the binding of ACE2 receptor with spike protein of SARS-CoV-2 . From the various study Tinospora cordifolia, reported as used for fever and to boost the immune system managing diabetes and makes our respiratory system stronger (Singh et al., 2003) . Vitis vinifera and Gmelina arborea has anti-inflammatory and antiviral properties. It means that these three phytochemicals could be potent inhibitors against Mpro of SARS-CoV-2. The results suggest that all these compounds could be potential drug candidates against SARS-CoV-2. The study may pave the way to develop effective medications and preventive measures against SARS-CoV-2 in the future.",
+            "cite_spans": [
+                {
+                    "start": 975,
+                    "end": 995,
+                    "text": "(Singh et al., 2003)",
+                    "ref_id": "BIBREF21"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This study aimed to identify novel inhibitors against the main protease of SARS-CoV-2. Herein, molecular docking and MD simulation were successfully performed to discover novel inhibitors of Mpro based on the natural compounds. A set of 686 phytochemicals from 40 medicinal plants were screened by the Molecular docking method. Finally, the relative stability of three-hit phytochemicals was validated by MD simulation and MMPBSA calculation. All complexes displayed structural stability during the 100 ns MD simulation period. From this study, three screened phytochemicals Peimisine, Gmelanone, and Epsilon-vinifein, were obtained, which showed promising high affinities against SARS-CoV-2. Thus, this study's outcome shows that the screened phytochemicals may be potential drug candidates against Mpro for SARS-CoV-2 and can be exploited to develop better antiviral candidates against COVID-19. this work. The Authors also acknowledge Rashtriya Uchchattar Shiksha Abhiyan (RUSA), Ministry of Human Resource Development, Government of India, to provide Computational infrastructure to establish the Bioinformatics Centre in Kumaun University, S. S. J Campus, Almora.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusion"
+        },
+        {
+            "text": "The authors declare that there is no competing interest in this work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Disclosure statement"
+        },
+        {
+            "text": "Priyanka Sharma, Sushma Tamta, and Subhash Chandra designed the protocol, conducted experiments, collected data, and prepared the manuscript. Priyanka Sharma and Tushar Joshi help to analyze MD and post-MD simulation. Shalini Mathpal contributed to the construction and analysis of Ligplots. Hemlata Pundir and Tanuja Joshi collaborated in data collection for pharmacokinetic evaluation in the present study. Dr. Subhash Chandra guided in conducting the experiment and reviewing of the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Author contributions"
+        },
+        {
+            "text": "http://orcid.org/0000-0002-8978-5427",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Subhash Chandra"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Moroccan Medicinal plants as inhibitors against SARS-CoV-2 main protease: Computational investigations",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Aanouz",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Belhassan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "El-Khatabi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lakhlifi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "El-Ldrissi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bouachrine",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The 2019-new coronavirus epidemic: Evidence for virus evolution",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Benvenuto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Giovanetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ciccozzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Spoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Angeletti",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ciccozzi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Medical Virology",
+            "volume": "92",
+            "issn": "4",
+            "pages": "455--459",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25688"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Novel 2019 coronavirus structure, mechanism of action, antiviral drug promises and rule out against its treatment",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Boopathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Poma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Kolandaivel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "",
+            "issn": "",
+            "pages": "1--10",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Genomic variance of the 2019-nCoV coronavirus",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ceraolo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Giorgi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Journal of Medical Virology",
+            "volume": "92",
+            "issn": "5",
+            "pages": "522--528",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.25700"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Exploring the Active Compounds of Traditional Mongolian Medicine Agsirga in Intervention of Novel Coronavirus (2019-nCoV) Based on HPLC-Q-Exactive-MS/MS and Molecular Docking Method",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bao",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Strategies in the design of antiviral drugs",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "De Clercq",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Nature Reviews. Drug Discovery",
+            "volume": "1",
+            "issn": "1",
+            "pages": "13--25",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nrd703"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Antimicrobial activity of flavanoid sulphates and other fractions of Argyreia speciosa",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Habbu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mahadevan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Shastry",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Manjunatha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Burm.f) Boj. Indian Journal of Experimental Biology",
+            "volume": "47",
+            "issn": "2",
+            "pages": "121--128",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "An introduction to the computer-aided structure-based drug design-applications of bioinformatics to drug discovery, Rinsho byori",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hirono",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "The Japanese Journal of Clinical Pathology",
+            "volume": "50",
+            "issn": "1",
+            "pages": "45--51",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The continuing 2019-nCoV epidemic threat of novel coronaviruses to global health -The latest 2019 novel coronavirus outbreak in Wuhan",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Azhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Madani",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ntoumi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kock",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Dar",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ippolito",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mchugh",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Memish",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Drosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zumla",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Petersen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "IJID: Official Publication of the International Society for Infectious Diseases",
+            "volume": "91",
+            "issn": "",
+            "pages": "264--266",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijid.2020.01.009"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Ursolic acid and carvacrol may be potential inhibitors of dormancy protein small heat shock protein16.3 of Mycobacterium tuberculosis",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Jee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Yadav",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Biomolecular Structure & Dynamics",
+            "volume": "36",
+            "issn": "13",
+            "pages": "3434--3443",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2017.1389305"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Molecular Docking of Phytoligands to the viral protein receptor P. monodon Rab7",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Joseph",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bhaskaran",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kaliraj",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Muthuswamy",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Suresh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Bioinformation",
+            "volume": "13",
+            "issn": "4",
+            "pages": "116--121",
+            "other_ids": {
+                "DOI": [
+                    "10.6026/97320630013116"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Uttarakhand medicinal plants database (UMPDB): A platform for exploring genomic. chemical, and traditional knowledge",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "N P"
+                    ],
+                    "last": "Gajula",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Data",
+            "volume": "3",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Drug-like properties and the causes of poor solubility and poor permeability",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lipinski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Journal of Pharmacological and Toxicological Methods",
+            "volume": "44",
+            "issn": "1",
+            "pages": "235--249",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Antimicrobial Activity of Some Novel Armed Thiophene Derivatives and Petra/ Osiris/Molinspiration (POM) Analyses",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Mabkhot",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Alatibi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "El-Sayed",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Al-Showiman",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kheder",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wadood",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rauf",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bawazeer",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hadda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Molecules",
+            "volume": "21",
+            "issn": "2",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Open Babel: An open chemical toolbox",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "O&apos;boyle",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Banck",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "James",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Morley",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Vandermeersch",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Hutchison",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Cheminform",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Saffron'omics': The challenges of integrating omic technologies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Panchangam",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vahedi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Megha",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Raithatha",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Suravajhala",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Reddy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Avicenna Journal of Phytomedicine",
+            "volume": "6",
+            "issn": "6",
+            "pages": "604--620",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Traditional medicinal formulation, Chyawanprash-A review",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Parle",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bansal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Indian Journal Traditional Knowledge",
+            "volume": "5",
+            "issn": "",
+            "pages": "484--488",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "GROMACS 4.5: A high-throughput and highly parallel open source molecular simulation toolkit",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pronk",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schulz",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Larsson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bjelkmar",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Apostolov",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Shirts",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Smith",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kasson",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Van Der Spoel",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Hess",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Lindahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Bioinformatics",
+            "volume": "",
+            "issn": "7",
+            "pages": "845--854",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/bioinformatics/btt055"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Identification of a novel coronavirus causing severe pneumonia in human: A descriptive study",
+            "authors": [
+                {
+                    "first": "L.-L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z.-Q",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z.-C",
+                    "middle": [],
+                    "last": "Xiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-Z",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y.-J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G.-H",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-Y",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X.-M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J.-W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Chinese Medical Journal",
+            "volume": "133",
+            "issn": "9",
+            "pages": "1015--1024",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/CM9.0000000000000722"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Virtual Screening, Pharmacokinetics, Molecular dynamics and binding free energy analysis for small natural molecules against Cyclin-dependent kinase 5 for Alzheimer's disease",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Shukla",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of Biomolecular Structure and Dynamics",
+            "volume": "1",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Traditional uses of Tinospora cordifolia (Guduchi)",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sinha",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Mishra",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Khanuja",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Journal of Medicinal Aromatic Plant Science",
+            "volume": "25",
+            "issn": "",
+            "pages": "748--751",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Trott",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Olson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Journal of Computational Chemistry",
+            "volume": "31",
+            "issn": "2",
+            "pages": "455--461",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcc.21334"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Drugs, Devices, and the FDA: Part 1: An Overview of Approval Processes for Drugs",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Van Norman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "JACC. Basic to Translational Science",
+            "volume": "1",
+            "issn": "3",
+            "pages": "170--179",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jacbts.2016.03.002"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "CHARMM general force field: A force field for druglike molecules compatible with the CHARMM all-atom additive biological force fields",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Vanommeslaeghe",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hatcher",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Acharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kundu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Journal of Computational Chemistry",
+            "volume": "31",
+            "issn": "4",
+            "pages": "671--690",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Detection of SARS-CoV-2 in Different Types of Clinical Specimens",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Jama",
+            "volume": "323",
+            "issn": "",
+            "pages": "1843--1844",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Coronavirus disease (COVID-19) pandemic 2020. World Health Organization",
+            "authors": [],
+            "year": 2020,
+            "venue": "World Health Organization",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Summary of work used in the present study to identify the phytochemical based inhibitors of SARS-CoV-2 Mpro.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "(A.) 3 D structure of Mpro (6W63) with the co-crystalized ligand. (B.) Superimposition of docked (X77) (Green color) and Experimental reference (X77), (Purple color) by 3 D structure. (C.)Docked reference (X77) of Mpro. (D.) Experimental reference (X77) of Mpro.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "RMSD plot of Mpro protein and screened protein-ligand complexes for 100 ns MD Simulation of protein (Black) protein-reference (X77) (Red)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "The RMSF values of the Mpro protein and screened protein-ligand complexes for 100 ns MD Simulation of protein (Black) protein-reference(X77) (Red), Mpro-Epsilon-vinifein (Cyan), Mpro-Peimisine (Magenta), and Mpro-Gmelanone (Green).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Radius of Gyration plot depicting the changes observed in the conformational behavior of the Mpro protein and all protein-ligand complexes; 100 ns MD Simulation of protein (Black) protein-reference(X77) (Red)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "A plot showing hydrogen bonds. The color code for all panels is as follows protein-reference(X77) (Red), Mpro-Epsilon-vinifein (Cyan), Mpro-Peimisine (Magenta), and Mpro-Gmelanone (Green).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Solvent accessible surface area (SASA). The color code for all panels is as follows protein-reference(X77) (Red), Mpro-Epsilon-vinifein (Cyan), Mpro-Peimisine (Magenta), and Mpro-Gmelanone (Green).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Interaction energy. The color code for all panels is as follows proteinreference(X77) (Red), Mpro-Epsilon-vinifein (Cyan), Mpro-Peimisine (Magenta), and Mpro-Gmelanone (Green).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF8": {
+            "text": "Principal component analysis (A.) Plots of eigenvalues vs. first 40 eigenvectors. (B) First two eigenvector describing the protein motion in phase space for all the complexes. The color code for all panels is as follows protein-reference(X77) (Red), Mpro-Epsilon-vinifein (Cyan), Mpro-Peimisine (Magenta), and Mpro-Gmelanone (Green).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF9": {
+            "text": "Gibbs free energy plots (A.) protein-reference(X77), (B.) Mpro-Epsilon-vinifein (C.)Mpro-Peimisine (D) Mpro-Gmelanone.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Binding Energy and compound identification number of screened phytochemicals.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "The physicochemical properties of screened phytochemicals by DruLiTo.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Toxicity prediction of the screened phytochemicals of Chyawanprash by OSIRIS.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "The",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Free binding energy calculations of each Mpro and ligand complexes. The binding energy showed complexes' stability and it suggests two complexes (Peimisine and Epsilon-vinifein) could be used as potential inhibitors against Mpro of SARS-CoV-2.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors are thankful to the Head Department of Botany, Kumaun University, Nainital, for providing the facility, space, and resources for",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        }
+    ]
+}

@@ -1,0 +1,5724 @@
+{
+    "paper_id": "0b070f6117c2baf78c87b27c14588d0981f62766",
+    "metadata": {
+        "title": "miR-98 Regulates TMPRSS2 Expression in Human Endothelial Cells: Key Implications for COVID-19",
+        "authors": [
+            {
+                "first": "Alessandro",
+                "middle": [],
+                "last": "Matarese",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Einstein-Institute for Aging Research",
+                    "location": {
+                        "postCode": "10461",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": "alessandromatarese@yahoo.ita.m."
+            },
+            {
+                "first": "Jessica",
+                "middle": [],
+                "last": "Gambardella",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Einstein-Institute for Aging Research",
+                    "location": {
+                        "postCode": "10461",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": "jessica.gambardella@einsteinmed.orgj.g."
+            },
+            {
+                "first": "Celestino",
+                "middle": [],
+                "last": "Sardu",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Campania \"Luigi Vanvitelli\"",
+                    "location": {
+                        "postCode": "80138",
+                        "settlement": "Naples",
+                        "country": "Italy"
+                    }
+                },
+                "email": "celestino.sardu@unicampania.it"
+            },
+            {
+                "first": "Gaetano",
+                "middle": [],
+                "last": "Santulli",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Einstein-Institute for Aging Research",
+                    "location": {
+                        "postCode": "10461",
+                        "settlement": "New York",
+                        "region": "NY",
+                        "country": "USA"
+                    }
+                },
+                "email": "gsantulli001@gmail.com"
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The two main co-factors needed by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) to enter human cells are angiotensin-converting enzyme 2 (ACE2) and transmembrane protease serine 2 (TMPRSS2). Here, we focused on the study of microRNAs that specifically target TMPRSS2. Through a bioinformatic approach, we identified miR-98-5p as a suitable candidate. Since we and others have shown that endothelial cells play a pivotal role in the pathogenesis of the coronavirus disease 2019 (COVID-19), we mechanistically validated miR-98-5p as a regulator of TMPRSS2 transcription in two different human endothelial cell types, derived from the lung and from the umbilical vein. Taken together, our findings indicate that TMPRSS2 represents a valid target in COVID-19 treatment, which may be achieved by specific non-coding-RNA approaches.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), coronavirus disease 2019 (COVID-19) represents a dramatic public health crisis of global proportions, with more than 30 million documented infections and 1 million deaths worldwide [1] [2] [3] [4] [5] . One of the main co-factors needed by SARS-CoV-2 to access human host cells is represented by the cellular surface protein known as angiotensin-converting enzyme 2 (ACE2) [6] [7] [8] . However, the internalization of the coronavirus requires not only binding to ACE2 but also priming of the viral spike protein by the transmembrane protease serine 2 (TMPRSS2) [9, 10] . Such a cleavage step is necessary for the actual virus-host cell membrane fusion and the subsequent cell entry [11, 12] .",
+            "cite_spans": [
+                {
+                    "start": 257,
+                    "end": 260,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 261,
+                    "end": 264,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 265,
+                    "end": 268,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 269,
+                    "end": 272,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 273,
+                    "end": 276,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 449,
+                    "end": 452,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 453,
+                    "end": 456,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 457,
+                    "end": 460,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 638,
+                    "end": 641,
+                    "text": "[9,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 642,
+                    "end": 645,
+                    "text": "10]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 759,
+                    "end": 763,
+                    "text": "[11,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 764,
+                    "end": 767,
+                    "text": "12]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Emerging evidence has shown that SARS-CoV-2 can directly target endothelial cells [13] [14] [15] [16] , an aspect initially suggested by the systemic manifestations observed in COVID-19 patients,",
+            "cite_spans": [
+                {
+                    "start": 82,
+                    "end": 86,
+                    "text": "[13]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 87,
+                    "end": 91,
+                    "text": "[14]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 92,
+                    "end": 96,
+                    "text": "[15]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 97,
+                    "end": 101,
+                    "text": "[16]",
+                    "ref_id": "BIBREF16"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Adult human lung microvascular endothelial cells (HMVEC-L, Lonza, Basel, Switzerland; Catalog number: CC-2527) and human umbilical vein endothelial cells (HUVEC, ThermoFisher Scientific, Waltham, MA: Catalog number: #C0035C) were cultured in a 5% CO 2 humidified atmosphere (37 \u2022 C). All reagents were from Millipore-Sigma (Burlington, MA, USA), unless otherwise stated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Cell Culture and Reagents"
+        },
+        {
+            "text": "To identify miRNAs targeting the 3 -UTR of TMPRSS2, we used online target prediction tools, including Targetscan version 7.2 and miRWalk-3, as we previously described [44, [47] [48] [49] . These programs predict biological targets of miRNAs by searching for conserved sites that match the seed region of miRNAs.",
+            "cite_spans": [
+                {
+                    "start": 167,
+                    "end": 171,
+                    "text": "[44,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 172,
+                    "end": 176,
+                    "text": "[47]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 177,
+                    "end": 181,
+                    "text": "[48]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 182,
+                    "end": 186,
+                    "text": "[49]",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Identification of miR-98-5p as a Regulator of TMPRSS2"
+        },
+        {
+            "text": "To assess the actual effects of miR-98-5p on TMPRSS2 gene transcription, we used a luciferase reporter containing the 3 -UTR of the predicted miRNA interaction sites, both wild-type and mutated, in HMVEC-L cells.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Biological Validation of miR-98-5p as a Regulator of TMPRSS2"
+        },
+        {
+            "text": "The mutant construct of TMPRSS2 3 -UTR, carrying a substitution of two nucleotides within the predicted miR-98-5p binding sites of TMPRSS2 3 -UTR ( Figure 1 ) was obtained using a site-directed mutagenesis kit (New England Biolabs, Ipswich, MA, USA), as described [47] . Using Lipofectamine RNAiMAX (ThermoFisher Scientific, Waltham MA, USA), cells were transfected with the 3 -UTR reporter plasmid (0.05 \u00b5g) and miR-98-5p mirVana TM (50 nM) mimics or inhibitors (ThermoFisher Scientific) as well as a non-targeting negative control (scramble), according to the manufacturer's instructions [47] . Forty-eight hours after transfection, Firefly and Renilla luciferase activities were assessed using a commercially available Luciferase Reporter Assay System (Promega, Madison, WI, USA). Firefly luciferase was normalized to Renilla luciferase activity. Levels of miR-98 were measured using TaqMan miRNA assay, according to the manufacturer's instructions, normalizing the miR expression to the level of U6; standard TaqMan gene expression assays from Applied Biosystem were used, as we described [44, [47] [48] [49] . Cellular mRNA expression of TMPRSS2 was determined by RT-qPCR, as we previously described [44, [47] [48] [49] , normalizing to endogenous glyceraldehyde 3-phosphate dehydrogenase (GAPDH).",
+            "cite_spans": [
+                {
+                    "start": 264,
+                    "end": 268,
+                    "text": "[47]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 590,
+                    "end": 594,
+                    "text": "[47]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1093,
+                    "end": 1097,
+                    "text": "[44,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1098,
+                    "end": 1102,
+                    "text": "[47]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1103,
+                    "end": 1107,
+                    "text": "[48]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1108,
+                    "end": 1112,
+                    "text": "[49]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 1205,
+                    "end": 1209,
+                    "text": "[44,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1210,
+                    "end": 1214,
+                    "text": "[47]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1215,
+                    "end": 1219,
+                    "text": "[48]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1220,
+                    "end": 1224,
+                    "text": "[49]",
+                    "ref_id": "BIBREF50"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 148,
+                    "end": 156,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Biological Validation of miR-98-5p as a Regulator of TMPRSS2"
+        },
+        {
+            "text": "Sequences of oligonucleotide primers (Merck KGaA, Darmstadt, Germany) are presented in Supplementary Table S1.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Biological Validation of miR-98-5p as a Regulator of TMPRSS2"
+        },
+        {
+            "text": "Immunoblotting assays were performed as previously described by our group [44, 47, [49] [50] [51] and developed with the Odyssey system (LI-COR Biosciences, Lincoln, NE, USA). The intensity of the bands was quantified using the FIJI (\"Fiji Is Just ImageJ\") software.",
+            "cite_spans": [
+                {
+                    "start": 74,
+                    "end": 78,
+                    "text": "[44,",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 79,
+                    "end": 82,
+                    "text": "47,",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 83,
+                    "end": 87,
+                    "text": "[49]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 88,
+                    "end": 92,
+                    "text": "[50]",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 93,
+                    "end": 97,
+                    "text": "[51]",
+                    "ref_id": "BIBREF53"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Immunoblotting"
+        },
+        {
+            "text": "The antibody for TMPRSS2 was purchased from ThermoFisher Scientific (catalog number: #MA5-35756); the antibody for \u03b2 Actin was purchased from abcam (Cambridge, MA, catalog number: #ab8229).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Immunoblotting"
+        },
+        {
+            "text": "Data are expressed as means \u00b1 standard error of means (SEM). Statistical analyses were performed in Prism (GraphPad Software, Version 8.0; Prism, San Diego, CA, USA).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Statistical significance was tested using the nonparametric Mann-Whitney U test or two-way ANOVA followed by Tukey-Kramer multiple comparison test, as appropriate. Significant differences were established at p < 0.05.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical Analysis"
+        },
+        {
+            "text": "Through bioinformatic analyses, we identified miR-98-5p as a potential regulator of TMPRSS2. The other top-ranked miRNAs identified by bioinformatic analysis were miR-4500 and miR-4458. However, we did not find any literature on the role of miR-4500 and miR-4458 in endothelial dysfunction, whereas recent reports [52] [53] [54] have suggested a role for miR-98-5p in endothelial cells. Moreover, the complementary nucleotides between the target region of TMPRSS2 3 untranslated region (3 -UTR) and miR-98-5p are evolutionarily highly conserved across different species, including humans, non-human primates, and rodents ( Figure 1 ).",
+            "cite_spans": [
+                {
+                    "start": 314,
+                    "end": 318,
+                    "text": "[52]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 319,
+                    "end": 323,
+                    "text": "[53]",
+                    "ref_id": "BIBREF55"
+                },
+                {
+                    "start": 324,
+                    "end": 328,
+                    "text": "[54]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 623,
+                    "end": 631,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of miR-98-5p as a Specific Modulator of TMPRSS2"
+        },
+        {
+            "text": "Previous reports have demonstrated that human endothelial cells express miR-98-5p in basal conditions, and such expression has been shown to be modulated by different stimuli, including hypoxia [52] and oxidized low-density lipoprotein (LDL) [54] .",
+            "cite_spans": [
+                {
+                    "start": 194,
+                    "end": 198,
+                    "text": "[52]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 242,
+                    "end": 246,
+                    "text": "[54]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "TMPRSS2 Is a Molecular Target of miR-98-5p"
+        },
+        {
+            "text": "The proposed relationship was substantiated by an actual validation of seed complementarity, confirming the interaction between miR-98-5p and TMPRSS2 3 -UTR both in HMVEC-L ( Figure 2A ) and HUVEC ( Figure 2B ) through a luciferase assay.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 175,
+                    "end": 184,
+                    "text": "Figure 2A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 199,
+                    "end": 208,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "TMPRSS2 Is a Molecular Target of miR-98-5p"
+        },
+        {
+            "text": "Biomedicines. 2020, x 4 of 10",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "TMPRSS2 Is a Molecular Target of miR-98-5p"
+        },
+        {
+            "text": "Previous reports have demonstrated that human endothelial cells express miR-98-5p in basal conditions, and such expression has been shown to be modulated by different stimuli, including hypoxia [52] and oxidized low-density lipoprotein (LDL) [54] .",
+            "cite_spans": [
+                {
+                    "start": 194,
+                    "end": 198,
+                    "text": "[52]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 242,
+                    "end": 246,
+                    "text": "[54]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "TMPRSS2 Is a Molecular Target of miR-98-5p"
+        },
+        {
+            "text": "The proposed relationship was substantiated by an actual validation of seed complementarity, confirming the interaction between miR-98-5p and TMPRSS2 3\u2032-UTR both in HMVEC-L ( Figure 2A ) and HUVEC ( Figure 2B ) through a luciferase assay. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 175,
+                    "end": 184,
+                    "text": "Figure 2A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 199,
+                    "end": 208,
+                    "text": "Figure 2B",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "TMPRSS2 Is a Molecular Target of miR-98-5p"
+        },
+        {
+            "text": "After having validated that miR-98-5p targets TMPRSS2 3\u2032UTR, we verified the effects of miR-98-5p mimic and miR-98-5p inhibitor on the transcription levels of TMPRSS2 both in HMVEC-L ( Figure 3A ) and HUVEC ( Figure 3B ). These findings were also confirmed in terms of protein levels (Supplementary Figure S1) . ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 185,
+                    "end": 194,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 209,
+                    "end": 218,
+                    "text": "Figure 3B",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 299,
+                    "end": 309,
+                    "text": "Figure S1)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "miR-98-5p Regulates TMPRSS2 Transcription Levels in Human Endothelial Cells"
+        },
+        {
+            "text": "After having validated that miR-98-5p targets TMPRSS2 3 UTR, we verified the effects of miR-98-5p mimic and miR-98-5p inhibitor on the transcription levels of TMPRSS2 both in HMVEC-L ( Figure 3A ) and HUVEC ( Figure 3B ). These findings were also confirmed in terms of protein levels (Supplementary Figure S1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 185,
+                    "end": 194,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 209,
+                    "end": 218,
+                    "text": "Figure 3B",
+                    "ref_id": "FIGREF4"
+                },
+                {
+                    "start": 299,
+                    "end": 308,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "miR-98-5p Regulates TMPRSS2 Transcription Levels in Human Endothelial Cells"
+        },
+        {
+            "text": "Biomedicines. 2020, x 5 of 10 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "miR-98-5p Regulates TMPRSS2 Transcription Levels in Human Endothelial Cells"
+        },
+        {
+            "text": "In the present study, we demonstrate for the first time that miR-98-5p directly targets the 3\u2032UTR of TMPRSS2. To our knowledge, we also provide the first evidence of the actual expression of TMPRSS2 in human endothelial cells, confirmed in endothelial cell lines obtained from different tissues such as the lung and the umbilical vein.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our results are consistent with the evidence of a key role for miR-98 in the regulation of endothelial function. Indeed, miR-98 has been recently shown to reduce endothelial dysfunction by protecting the blood-brain barrier and improving neurological outcomes in ischemia/reperfusion [55] . Equally important, previous in vitro observations in HUVEC had linked miR-98 to an inhibition of the apoptotic effects of hypoxia/re-oxygenation [52] and of oxidized LDL [54] .",
+            "cite_spans": [
+                {
+                    "start": 284,
+                    "end": 288,
+                    "text": "[55]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 436,
+                    "end": 440,
+                    "text": "[52]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[54]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our data are significant in the clinical scenario; indeed, since TMPRSS2 is known to play a crucial role in the pathophysiology of COVID-19, our results could open the field to new research in order to verify the role of miR-98-5p in other tissues and cell types. It is important to note that several potential therapeutic strategies targeting ACE2 have been already proposed to tackle COVID-19; however, mainly owing to the critical metabolic and hemodynamic roles of ACE2, including the regulation of glucose homeostasis [56] [57] [58] [59] as well as the cleavage of Angiotensin I and Angiotensin II [60, 61] , these approaches could lead to major issues in the clinical scenario [57, 62, 63] . Therefore, TMPRSS2 could represent a valid alternative target in COVID-19 [64] [65] [66] .",
+            "cite_spans": [
+                {
+                    "start": 523,
+                    "end": 527,
+                    "text": "[56]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 528,
+                    "end": 532,
+                    "text": "[57]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 533,
+                    "end": 537,
+                    "text": "[58]",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 538,
+                    "end": 542,
+                    "text": "[59]",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 603,
+                    "end": 607,
+                    "text": "[60,",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 608,
+                    "end": 611,
+                    "text": "61]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 683,
+                    "end": 687,
+                    "text": "[57,",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 688,
+                    "end": 691,
+                    "text": "62,",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 692,
+                    "end": 695,
+                    "text": "63]",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 772,
+                    "end": 776,
+                    "text": "[64]",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 777,
+                    "end": 781,
+                    "text": "[65]",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 782,
+                    "end": 786,
+                    "text": "[66]",
+                    "ref_id": "BIBREF68"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Matsuyama and collaborators have shown that TMPRSS2 is expressed in lung tissues and is a fundamental determinant of viral tropism and pathogenicity at the initial site of SARS-CoV infection [67] . Additionally, TMPRSS2 might promote viral spread through a reduced viral recognition by neutralizing antibodies [68, 69] .",
+            "cite_spans": [
+                {
+                    "start": 191,
+                    "end": 195,
+                    "text": "[67]",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 310,
+                    "end": 314,
+                    "text": "[68,",
+                    "ref_id": "BIBREF70"
+                },
+                {
+                    "start": 315,
+                    "end": 318,
+                    "text": "69]",
+                    "ref_id": "BIBREF71"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The lung airway expression of both TMPRSS2 and ACE2 was found to be significantly upregulated in smokers compared with non-smokers, and in patients with chronic obstructive pulmonary disease compared with healthy subjects [70] ; instead, children were found to have significantly lower expression of COVID-19 receptors in the upper and lower airways (nasal and bronchial) [70] . A recent report analyzing via single-cell sequencing samples obtained from 16 human donors has demonstrated that TMPRSS2 is expressed both in lung tissue and in cells derived from subsegmental bronchial branches, whereas ACE2 is predominantly expressed in a transient secretory cell type [71] .",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 226,
+                    "text": "[70]",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 372,
+                    "end": 376,
+                    "text": "[70]",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 667,
+                    "end": 671,
+                    "text": "[71]",
+                    "ref_id": "BIBREF73"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The key role of TMPRSS2 in COVID-19 is corroborated by the observation of an increased TMPRSS2 expression in the bronchial epithelial cells of male patients compared with female patients ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In the present study, we demonstrate for the first time that miR-98-5p directly targets the 3 UTR of TMPRSS2. To our knowledge, we also provide the first evidence of the actual expression of TMPRSS2 in human endothelial cells, confirmed in endothelial cell lines obtained from different tissues such as the lung and the umbilical vein.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our results are consistent with the evidence of a key role for miR-98 in the regulation of endothelial function. Indeed, miR-98 has been recently shown to reduce endothelial dysfunction by protecting the blood-brain barrier and improving neurological outcomes in ischemia/reperfusion [55] . Equally important, previous in vitro observations in HUVEC had linked miR-98 to an inhibition of the apoptotic effects of hypoxia/re-oxygenation [52] and of oxidized LDL [54] .",
+            "cite_spans": [
+                {
+                    "start": 284,
+                    "end": 288,
+                    "text": "[55]",
+                    "ref_id": "BIBREF57"
+                },
+                {
+                    "start": 436,
+                    "end": 440,
+                    "text": "[52]",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 461,
+                    "end": 465,
+                    "text": "[54]",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our data are significant in the clinical scenario; indeed, since TMPRSS2 is known to play a crucial role in the pathophysiology of COVID-19, our results could open the field to new research in order to verify the role of miR-98-5p in other tissues and cell types. It is important to note that several potential therapeutic strategies targeting ACE2 have been already proposed to tackle COVID-19; however, mainly owing to the critical metabolic and hemodynamic roles of ACE2, including the regulation of glucose homeostasis [56] [57] [58] [59] as well as the cleavage of Angiotensin I and Angiotensin II [60, 61] , these approaches could lead to major issues in the clinical scenario [57, 62, 63] . Therefore, TMPRSS2 could represent a valid alternative target in COVID-19 [64] [65] [66] .",
+            "cite_spans": [
+                {
+                    "start": 523,
+                    "end": 527,
+                    "text": "[56]",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 528,
+                    "end": 532,
+                    "text": "[57]",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 533,
+                    "end": 537,
+                    "text": "[58]",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 538,
+                    "end": 542,
+                    "text": "[59]",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 603,
+                    "end": 607,
+                    "text": "[60,",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 608,
+                    "end": 611,
+                    "text": "61]",
+                    "ref_id": "BIBREF63"
+                },
+                {
+                    "start": 683,
+                    "end": 687,
+                    "text": "[57,",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 688,
+                    "end": 691,
+                    "text": "62,",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 692,
+                    "end": 695,
+                    "text": "63]",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 772,
+                    "end": 776,
+                    "text": "[64]",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 777,
+                    "end": 781,
+                    "text": "[65]",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 782,
+                    "end": 786,
+                    "text": "[66]",
+                    "ref_id": "BIBREF68"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Matsuyama and collaborators have shown that TMPRSS2 is expressed in lung tissues and is a fundamental determinant of viral tropism and pathogenicity at the initial site of SARS-CoV infection [67] . Additionally, TMPRSS2 might promote viral spread through a reduced viral recognition by neutralizing antibodies [68, 69] .",
+            "cite_spans": [
+                {
+                    "start": 191,
+                    "end": 195,
+                    "text": "[67]",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 310,
+                    "end": 314,
+                    "text": "[68,",
+                    "ref_id": "BIBREF70"
+                },
+                {
+                    "start": 315,
+                    "end": 318,
+                    "text": "69]",
+                    "ref_id": "BIBREF71"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The lung airway expression of both TMPRSS2 and ACE2 was found to be significantly upregulated in smokers compared with non-smokers, and in patients with chronic obstructive pulmonary disease compared with healthy subjects [70] ; instead, children were found to have significantly lower expression of COVID-19 receptors in the upper and lower airways (nasal and bronchial) [70] . A recent report analyzing via single-cell sequencing samples obtained from 16 human donors has demonstrated that TMPRSS2 is expressed both in lung tissue and in cells derived from subsegmental bronchial branches, whereas ACE2 is predominantly expressed in a transient secretory cell type [71] .",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 226,
+                    "text": "[70]",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 372,
+                    "end": 376,
+                    "text": "[70]",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 667,
+                    "end": 671,
+                    "text": "[71]",
+                    "ref_id": "BIBREF73"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The key role of TMPRSS2 in COVID-19 is corroborated by the observation of an increased TMPRSS2 expression in the bronchial epithelial cells of male patients compared with female patients [72] , which could provide an underlying explanation for the previously reported finding of an independent association of male sex with severe COVID-19 [73] [74] [75] .",
+            "cite_spans": [
+                {
+                    "start": 187,
+                    "end": 191,
+                    "text": "[72]",
+                    "ref_id": "BIBREF74"
+                },
+                {
+                    "start": 339,
+                    "end": 343,
+                    "text": "[73]",
+                    "ref_id": "BIBREF75"
+                },
+                {
+                    "start": 344,
+                    "end": 348,
+                    "text": "[74]",
+                    "ref_id": "BIBREF76"
+                },
+                {
+                    "start": 349,
+                    "end": 353,
+                    "text": "[75]",
+                    "ref_id": "BIBREF77"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Of note, TMPRSS2 is a host factor that is also essential for pneumotropism and pathogenicity of the influenza virus [76] , thereby suggesting major implications for its direct molecular targeting.",
+            "cite_spans": [
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "[76]",
+                    "ref_id": "BIBREF78"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "TMPRSS2 is a highly polymorphic gene and some genetic variants of TMPRSS2 have been identified (e.g., rs12329760 and rs75603675), showing that their frequencies vary by geography and ancestry [72, [77] [78] [79] [80] . Further studies are needed to determine the effects of miR-98-5p on these variants.",
+            "cite_spans": [
+                {
+                    "start": 192,
+                    "end": 196,
+                    "text": "[72,",
+                    "ref_id": "BIBREF74"
+                },
+                {
+                    "start": 197,
+                    "end": 201,
+                    "text": "[77]",
+                    "ref_id": "BIBREF79"
+                },
+                {
+                    "start": 202,
+                    "end": 206,
+                    "text": "[78]",
+                    "ref_id": "BIBREF80"
+                },
+                {
+                    "start": 207,
+                    "end": 211,
+                    "text": "[79]",
+                    "ref_id": "BIBREF81"
+                },
+                {
+                    "start": 212,
+                    "end": 216,
+                    "text": "[80]",
+                    "ref_id": "BIBREF82"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Our study does have some limitations. First, we only conducted in vitro experiments testing the link between miR-98-5p and TMPRSS2 mRNA, without verifying the effects of miR-98-5p on SARS-CoV-2 infection. Second, we focused on TMPRSS2, and we did not investigate the potential contribution of other co-factors needed for the entry of SARS-CoV-2 in the host cells. Since most of the results shown are with exogenously expressed targets or miRNAs, further studies are necessary to appraise the actual translational potential of our findings. The study also has some strengths, including the fact that the 3 -UTR of TMPRSS2 targeted by miR-98-5p is highly conserved among species, from humans to bats ( Figure 1 ). Moreover, we mechanistically validated the effects of miR-98-5p in two different types of human endothelial cells, namely HMVEC-L and HUVEC, obtaining similar results.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 700,
+                    "end": 708,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Supplementary Materials: The following are available online at http://www.mdpi.com/2227-9059/8/11/462/s1, Table S1 , title: Sequences of oligonucleotide primers and product sizes; Figure S1 , title: TMPRSS2 expression is significantly reduced by miR-98.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 106,
+                    "end": 114,
+                    "text": "Table S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 180,
+                    "end": 189,
+                    "text": "Figure S1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "Author Contributions: G.S. designed the study and wrote the manuscript; A.M., J.G., and C.S. carried out and analyzed experiments. All authors have read and agreed to the published version of the manuscript.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Funding: This study was supported in part by the NIH (R01-DK123259, R00-DK107895, R01-HL146691, R01-DK033823 to G.S.) and by Institutional Funds to study COVID-19.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The authors declare no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflicts of Interest:"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "COVID-19-Navigating the Uncharted",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fauci",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lane",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Redfield",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "N. Engl. J. Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1268--1269",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMe2002387"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Research in the Context of a Pandemic",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lane",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fauci",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMe2024638"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Emerging Pandemic Diseases: How We Got to COVID-19",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Morens",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fauci",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Cell",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1077--1092",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.08.021"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Coronavirus Infections-More Than Just the Common Cold",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Paules",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Marston",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fauci",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "707--708",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.0757"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The COVID-19 Pandemic in the US: A Clinical Update",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Omer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Malani",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Del Rio",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1767--1768",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.5788"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Si",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "579",
+            "issn": "",
+            "pages": "270--273",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2012-7"
+                ]
+            }
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "SARS-CoV-2 Receptor ACE2 Is an Interferon-Stimulated Gene in Human Airway Epithelial Cells and Is Detected in Specific Cell Subsets across Tissues",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "G K"
+                    ],
+                    "last": "Ziegler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Allon",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Nyquist",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mbano",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Miao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Tzouanas",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Yousif",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bals",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hauser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "181",
+            "issn": "",
+            "pages": "1016--1035",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.04.035"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Angiotensin-converting enzyme 2 (ACE2) as a SARS-CoV-2 receptor: Molecular mechanisms and potential therapeutic target",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Penninger",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Slutsky",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intensive Care Med",
+            "volume": "46",
+            "issn": "",
+            "pages": "586--590",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00134-020-05985-9"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Enhanced isolation of SARS-CoV-2 by TMPRSS2-expressing cells",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matsuyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nao",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shirato",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kawase",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Saito",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Takayama",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nagata",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sekizuka",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Katoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Kato",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "2020",
+            "issn": "",
+            "pages": "7001--7003",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.2002589117"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Biomedicines 2020",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Gene of the month: TMPRSS2 (transmembrane serine protease 2)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Thunders",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Delahunt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Clin. Pathol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/jclinpath-2020-206987"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Chloroquine does not inhibit infection of human lung cells with SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoffmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mosbauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hofmann-Winkler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kaul",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kleine-Weber",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kruger",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Gassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Muller",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Drosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pohlmann",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "585",
+            "issn": "",
+            "pages": "588--590",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41586-020-2575-3"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "SARS-CoV-2 Cell Entry Depends on ACE2 and TMPRSS2 and Is Blocked by a Clinically Proven Protease Inhibitor",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hoffmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kleine-Weber",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Schroeder",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kruger",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Herrler",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Erichsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Schiergens",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Herrler",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Nitsche",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell",
+            "volume": "181",
+            "issn": "",
+            "pages": "271--280",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2020.02.052"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Hypertension, Thrombosis, Kidney Failure, and Diabetes: Is COVID-19 an Endothelial Disease? A Comprehensive Evaluation of Clinical and Basic Evidence",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sardu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gambardella",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Morelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Marfella",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Clin. Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/jcm9051417"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "COVID-19 is, in the end, an endothelial disease",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Libby",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Luscher",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Eur. Heart, J",
+            "volume": "2020",
+            "issn": "",
+            "pages": "3038--3044",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/eurheartj/ehaa623"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Endothelial dysfunction in COVID-19: A position paper of the ESC Working Group for Atherosclerosis and Vascular Biology, and the ESC Council of Basic Cardiovascular Science",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Evans",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Ed Rainger",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mason",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guzik",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Osto",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Stamataki",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Neil",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hoefer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Fragiadaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Waltenberger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cardiovasc. Res",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cvr/cvaa230"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Vascular endothelial injury exacerbates coronavirus disease 2019: The role of endothelial glycocalyx protection",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Okada",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yoshida",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hara",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ogura",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Tomita",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/micc.12654"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Endothelial cell infection and endotheliitis in COVID-19",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Varga",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Flammer",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Steiger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Haberecker",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Andermatt",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zinkernagel",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Mehra",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Schuepbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ruschitzka",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Moch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "1417--1418",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/S0140-6736(20)30937-5"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Pulmonary Vascular Endothelialitis, Thrombosis, and Angiogenesis in Covid-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ackermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Verleden",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kuehnel",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Haverich",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Welte",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Laenger",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vanstapel",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Werlein",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Stark",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tzankov",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "N. Engl. J. Med",
+            "volume": "383",
+            "issn": "",
+            "pages": "120--128",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMoa2015432"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The evolution of pulmonary pathology in fatal COVID-19 disease: An autopsy study with clinical correlation",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bosmuller",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Traxler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bitzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Haberle",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Raiser",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Nann",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Frauenfeld",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vogelsberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Klingel",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Fend",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Virchows Arch",
+            "volume": "477",
+            "issn": "",
+            "pages": "349--357",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00428-020-02881-x"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Direct evidence of SARS-CoV-2 in gut endothelium",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Stahl",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Brasen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hoeper",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "David",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intensive Care Med",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00134-020-06237-6"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Unexpected Features of Cardiac Pathology in COVID-19 Infection",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Akmatbekov",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Harbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lameira",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Brown",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Vander Heide",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Circulation",
+            "volume": "142",
+            "issn": "",
+            "pages": "1123--1125",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/CIRCULATIONAHA.120.049465"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "SARS-CoV-2 Entry Receptor ACE2 Is Expressed on Very Small CD45(-) Precursors of Hematopoietic and Endothelial Cells and in Response to Virus Spike Protein Activates the Nlrp3 Inflammasome",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Ratajczak",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Bujko",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ciechanowicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sielatycka",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cymer",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Marlicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kucia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Stem Cell Rev. Rep",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12015-020-10010-z"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "A Human Long Non-Coding RNA ALT1 Controls the Cell Cycle of Vascular Endothelial Cells Via ACE2 and Cyclin D1 Pathway",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cui",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Cell. Physiol. Biochem",
+            "volume": "43",
+            "issn": "",
+            "pages": "1152--1167",
+            "other_ids": {
+                "DOI": [
+                    "10.1159/000481756"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Role of the ACE2Ang(17)Mas axis in blood pressure regulation and its potential as an antihypertensive in functional foods (Review)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Mol. Med. Rep",
+            "volume": "16",
+            "issn": "",
+            "pages": "4403--4412",
+            "other_ids": {
+                "DOI": [
+                    "10.3892/mmr.2017.7168"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "ACE2-EPC-EXs protect ageing ECs against hypoxia/reoxygenation-induced injury through the miR-18a/Nox2/ROS pathway",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bihl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J. Cell. Mol. Med",
+            "volume": "22",
+            "issn": "",
+            "pages": "1873--1882",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/jcmm.13471"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Exosome-Mediated Transfer of ACE2 (Angiotensin-Converting Enzyme 2) from Endothelial Progenitor Cells Promotes Survival and Function of Endothelial Cell",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bihl",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Oxid. Med. Cell. Longev",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2020/4213541"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Angiotensin-converting enzyme 2 protects from lethal avian influenza A H5N1 infections",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zou",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ju",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Nat. Commun",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/ncomms4594"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Angiotensin converting enzyme-2 confers endothelial protection and attenuates atherosclerosis",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Lovren",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Pan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Quan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Teoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Shukla",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Levitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Oudit",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Al-Omran",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Stewart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Am. J. Physiol. Heart Circ. Physiol",
+            "volume": "295",
+            "issn": "",
+            "pages": "1377--1384",
+            "other_ids": {
+                "DOI": [
+                    "10.1152/ajpheart.00331.2008"
+                ]
+            }
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Biomedicines 2020",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Angiotensin-converting enzyme 2 (ACE2) expression and activity in human carotid atherosclerotic lesions",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Sluimer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gasc",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hamming",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Van Goor",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Michaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Van Den Akker",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Jutten",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cleutjens",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Bijnens",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Corvol",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J. Pathol",
+            "volume": "215",
+            "issn": "",
+            "pages": "273--279",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/path.2357"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Clinical and Proteomic Correlates of Plasma ACE2 (Angiotensin-Converting Enzyme 2) in Human Heart Failure",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Chirinos",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Cohen",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hanff",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sweitzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Corrales-Medina",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Anmar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Morley",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Zamani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "76",
+            "issn": "",
+            "pages": "1526--1536",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/HYPERTENSIONAHA.120.15829"
+                ]
+            }
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "MicroRNAs in stress signaling and human disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Mendell",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Olson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Cell",
+            "volume": "148",
+            "issn": "",
+            "pages": "1172--1187",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.cell.2012.02.005"
+                ]
+            }
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "microRNAs Distinctively Regulate Vascular Smooth Muscle and Endothelial Cells: Functional Implications in Angiogenesis, Atherosclerosis, and In-Stent Restenosis",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Adv. Exp. Med. Biol",
+            "volume": "887",
+            "issn": "",
+            "pages": "53--77",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "337-3p Promotes Adipocyte Browning by Inhibiting TWIST1. Cells 2020",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "G C"
+                    ],
+                    "last": "Vonhogen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "El Azzouzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Olieslagers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Vasilevich",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "De Boer",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tinahones",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Da Costa Martins",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "De Windt",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Murri",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mir",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/cells9041056"
+                ]
+            }
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Exosomal microRNA: The revolutionary endogenous Innerspace nanotechnology",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Sci. Transl. Med",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/scitranslmed.aav9141"
+                ]
+            }
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "The functions of animal microRNAs",
+            "authors": [
+                {
+                    "first": "Ambros",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Nature",
+            "volume": "431",
+            "issn": "",
+            "pages": "350--355",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/nature02871"
+                ]
+            }
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Circulating microRNAs: Novel biomarkers and extracellular communicators in cardiovascular disease?",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Creemers",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Tijsen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Pinto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Circ. Res",
+            "volume": "110",
+            "issn": "",
+            "pages": "483--495",
+            "other_ids": {
+                "DOI": [
+                    "10.1161/CIRCRESAHA.111.247452"
+                ]
+            }
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Non-coding RNAs: Update on mechanisms and therapeutic targets from the ESC Working Groups of Myocardial Function and Cellular Biology of the Heart",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bar",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chatterjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Falcao Pires",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Rodrigues",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P G"
+                    ],
+                    "last": "Sluijter",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Boon",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Nevado",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Andres",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sansonetti",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "De Windt",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cardiovasc. Res",
+            "volume": "116",
+            "issn": "",
+            "pages": "1805--1819",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cvr/cvaa195"
+                ]
+            }
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Application of microRNAs in diagnosis and treatment of cardiovascular disease",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wronska",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kurkowska-Jastrzebska",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Acta Physiol",
+            "volume": "213",
+            "issn": "",
+            "pages": "60--83",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/apha.12416"
+                ]
+            }
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "MicroRNA-15b Targets VEGF and Inhibits Angiogenesis in Proliferative Diabetic Retinopathy",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Xiong",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Tao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Yla-Herttuala",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Clin. Endocrinol. Metab",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1210/clinem/dgaa538"
+                ]
+            }
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Exosome-Mediated miR-155 Transfer from Smooth Muscle Cells to Endothelial Cells Induces Endothelial Injury and Promotes Atherosclerosis",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Suzuki",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Mol. Ther",
+            "volume": "25",
+            "issn": "",
+            "pages": "1279--1294",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ymthe.2017.03.031"
+                ]
+            }
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "The endothelial-specific microRNA miR-126 governs vascular integrity and angiogenesis",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Aurora",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Johnson",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Qi",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mcanally",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hill",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Richardson",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bassel-Duby",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Olson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Dev. Cell",
+            "volume": "15",
+            "issn": "",
+            "pages": "261--271",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.devcel.2008.07.002"
+                ]
+            }
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "miR-29 contributes to normal endothelial function and can restore it in cardiometabolic disorders",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Widlansky",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jensen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Geurts",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Kriegel",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ying",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Casati",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "EMBO Mol. Med",
+            "volume": "10",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.15252/emmm.201708046"
+                ]
+            }
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "MicroRNAs and Endothelial (Dys) Function",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J. Cell. Physiol",
+            "volume": "231",
+            "issn": "",
+            "pages": "1638--1644",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jcp.25276"
+                ]
+            }
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Functional role of Calstabin2 in age-related cardiac alterations",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Xin",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/srep07425"
+                ]
+            }
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "MicroRNA: From Molecular Biology to Clinical Practice",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "MicroRNA therapeutics: Discovering novel targets and developing specific therapy",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Christopher",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bansal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Perspect. Clin. Res",
+            "volume": "7",
+            "issn": "",
+            "pages": "68--74",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "miR-7 Regulates GLP-1-Mediated Insulin Release by Targeting beta-Arrestin 1",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Matarese",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gambardella",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lombardi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Cells",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/cells9071621"
+                ]
+            }
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Cardiosomal microRNAs Are Essential in Post-Infarction Myofibroblast Phenoconversion",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Morelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Shu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sardu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Matarese",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Int. J. Mol. Sci",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/ijms21010201"
+                ]
+            }
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Cardiomyocyte-derived exosomal microRNA-92a mediates post-ischemic myofibroblast activation both in vitro and ex vivo",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Morelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Matarese",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sardu",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "ESC Heart Fail",
+            "volume": "7",
+            "issn": "",
+            "pages": "284--288",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/ehf2.12584"
+                ]
+            }
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Mitochondrial oxidative stress promotes atrial fibrillation",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Reiken",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Osborne",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Marks",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Sci. Rep",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/srep11427"
+                ]
+            }
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "Biomedicines 2020",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "8",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Mitochondrial calcium overload is a key determinant in heart failure",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Santulli",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Reiken",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Marks",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proc. Natl. Acad. Sci",
+            "volume": "112",
+            "issn": "",
+            "pages": "11389--11394",
+            "other_ids": {
+                "DOI": [
+                    "10.1073/pnas.1513047112"
+                ]
+            }
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "miR-98 protects endothelial cells against hypoxia/reoxygenation induced-apoptosis by targeting caspase-3",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Meng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Yi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Bian",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Biochem. Biophys. Res. Commun",
+            "volume": "467",
+            "issn": "",
+            "pages": "595--601",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.bbrc.2015.09.058"
+                ]
+            }
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "A Pilot Study on MicroRNA Profile in Tear Fluid to Predict Response to Anti-VEGF Treatments for Diabetic Macular Edema",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Blakeley",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Seah",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "S W"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bhargava",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chai",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Clin. Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/jcm9092920"
+                ]
+            }
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "MicroRNA-98 rescues proliferation and alleviates ox-LDL-induced apoptosis in HUVECs by targeting LOX-1. Exp. Ther",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Chang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "13",
+            "issn": "",
+            "pages": "1702--1710",
+            "other_ids": {
+                "DOI": [
+                    "10.3892/etm.2017.4171"
+                ]
+            }
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "miR-98 reduces endothelial dysfunction by protecting blood-brain barrier (BBB) and improves neurological outcomes in mouse ischemia/reperfusion stroke model",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Bernstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Zuluaga-Ramirez",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Gajghate",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Reichenbach",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Polyak",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Persidsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rom",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Cereb. Blood Flow Metab",
+            "volume": "40",
+            "issn": "",
+            "pages": "1953--1965",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0271678X19882264"
+                ]
+            }
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Endocrine aspects of ACE2 regulation: RAAS, steroid hormones and SARS-CoV-2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Clyne",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Chapman",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Endocrinol",
+            "volume": "2020",
+            "issn": "",
+            "pages": "45--62",
+            "other_ids": {
+                "DOI": [
+                    "10.1530/JOE-20-0260"
+                ]
+            }
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Obesity and diabetes as comorbidities for COVID-19: Underlying mechanisms and the role of viral-bacterial interactions",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Kruglikov",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shah",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Scherer",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.7554/eLife.61330"
+                ]
+            }
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "ACE2 modulates glucose homeostasis through GABA signaling during metabolic stress",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Endocrinol",
+            "volume": "2020",
+            "issn": "",
+            "pages": "223--236",
+            "other_ids": {
+                "DOI": [
+                    "10.1530/JOE-19-0471"
+                ]
+            }
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "The ACE2/Ang-(1-7)/Mas axis can inhibit hepatic insulin resistance",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Mol. Cell. Endocrinol",
+            "volume": "393",
+            "issn": "",
+            "pages": "30--38",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.mce.2014.05.024"
+                ]
+            }
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "COVID-19 and the cardiovascular system: Implications for risk assessment, diagnosis, and treatment options",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Guzik",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mohiddin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dimarco",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Savvatis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Marelli-Berg",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Madhur",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tomaszewski",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Maffia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "D&apos;acquisto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cardiovasc. Res",
+            "volume": "116",
+            "issn": "",
+            "pages": "1666--1687",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/cvr/cvaa106"
+                ]
+            }
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "ACE2 as a Therapeutic Target for COVID-19; its Role in Infectious Processes and Regulation by Modulators of the RAAS System",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Michaud",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Deodhar",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Arwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Al Rihani",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Dow",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Turgeon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2096,
+            "venue": "J. Clin. Med",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3390/jcm9072096"
+                ]
+            }
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Current approaches for target-specific drug discovery using natural compounds against SARS-CoV-2 infection",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Khare",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Sahu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Pandey",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Samant",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Virus Res",
+            "volume": "290",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.virusres.2020.198169"
+                ]
+            }
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Should ACE2 be given a chance in COVID-19 therapeutics: A semi-systematic review of strategies enhancing ACE2",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Kaur",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Acharya",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mondal",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Saso",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakrabarti",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chakrabarti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur. J. Pharmacol",
+            "volume": "887",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejphar.2020.173545"
+                ]
+            }
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "Race to find COVID-19 treatments accelerates",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kupferschmidt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cohen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "367",
+            "issn": "",
+            "pages": "1412--1413",
+            "other_ids": {
+                "DOI": [
+                    "10.1126/science.367.6485.1412"
+                ]
+            }
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Angiotensin-converting enzyme 2: A double-edged sword in COVID-19 patients with an increased risk of heart failure",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Razeghian-Jahromi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zibaeenezhad",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Zahra",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mahboobeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Lionetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Heart Fail. Rev",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10741-020-10016-2"
+                ]
+            }
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Pharmacotherapy in COVID-19 patients: A review of ACE2-raising drugs and their clinical safety",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Akhtar",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Benter",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Danjuma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A R"
+                    ],
+                    "last": "Doi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hasan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Habib",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Drug Target",
+            "volume": "28",
+            "issn": "",
+            "pages": "683--699",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/1061186X.2020.1797754"
+                ]
+            }
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Efficient activation of the severe acute respiratory syndrome coronavirus spike protein by the transmembrane protease TMPRSS2",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matsuyama",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nagata",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shirato",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kawase",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Takeda",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Taguchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J. Virol",
+            "volume": "84",
+            "issn": "",
+            "pages": "12658--12664",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.01542-10"
+                ]
+            }
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Evidence that TMPRSS2 activates the severe acute respiratory syndrome coronavirus spike protein for membrane fusion and reduces viral control by the humoral immune response",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Glowacka",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bertram",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Muller",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Allen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Soilleux",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Pfefferle",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Steffen",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Tsegaye",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gnirss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J. Virol",
+            "volume": "85",
+            "issn": "",
+            "pages": "4122--4134",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.02232-10"
+                ]
+            }
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "TMPRSS2 Contributes to Virus Spread and Immunopathology in the Airways of Murine Models after Coronavirus Infection",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Iwata-Yoshikawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Okamura",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shimizu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Hasegawa",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Takeda",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nagata",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J. Virol",
+            "volume": "93",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.01815-18"
+                ]
+            }
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Airways Expression of SARS-CoV-2 Receptor, ACE2, and TMPRSS2 Is Lower in Children Than Adults and Increases with Smoking and COPD",
+            "authors": [
+                {
+                    "first": "Saheb",
+                    "middle": [],
+                    "last": "Sharif-Askari",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Saheb Sharif-Askari",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Alabed",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Temsah",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Heialy",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hamid",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Halwani",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Mol. Ther. Methods Clin. Dev",
+            "volume": "18",
+            "issn": "",
+            "pages": "1--6",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.omtm.2020.05.013"
+                ]
+            }
+        },
+        "BIBREF73": {
+            "ref_id": "b73",
+            "title": "SARS-CoV-2 receptor ACE2 and TMPRSS2 are primarily expressed in bronchial transient secretory cells",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lukassen",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Chua",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Trefzer",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kahn",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Schneider",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Muley",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Winter",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Meister",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Veith",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Boots",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "EMBO J",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.15252/embj.2020105114"
+                ]
+            }
+        },
+        "BIBREF74": {
+            "ref_id": "b74",
+            "title": "ACE2 and TMPRSS2 variants and expression as candidates to sex and country differences in COVID-19 severity in Italy",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Asselta",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Paraboschi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mantovani",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Duga",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Aging",
+            "volume": "12",
+            "issn": "",
+            "pages": "10087--10098",
+            "other_ids": {
+                "DOI": [
+                    "10.18632/aging.103415"
+                ]
+            }
+        },
+        "BIBREF75": {
+            "ref_id": "b75",
+            "title": "Host susceptibility to severe COVID-19 and establishment of a host risk score: Findings of 487 cases outside Wuhan",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Crit. Care",
+            "volume": "24",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13054-020-2833-7"
+                ]
+            }
+        },
+        "BIBREF76": {
+            "ref_id": "b76",
+            "title": "Factors associated with hospital admission and critical illness among 5279 people with coronavirus disease",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Petrilli",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Rajagopalan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "O&apos;donnell",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chernyak",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Tobin",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cerfolio",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Francois",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Horwitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bmj.m1966"
+                ]
+            }
+        },
+        "BIBREF77": {
+            "ref_id": "b77",
+            "title": "Insight on Sex-Based Immunity Differences, with COVID-19 Implications",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Hampton",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "JAMA",
+            "volume": "2020",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jama.2020.17378"
+                ]
+            }
+        },
+        "BIBREF78": {
+            "ref_id": "b78",
+            "title": "The host protease TMPRSS2 plays a major role in in vivo replication of emerging H7N9 and seasonal influenza viruses",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Sakai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ami",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tahara",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kubota",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Anraku",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Abe",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Nakajima",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sekizuka",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shirato",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Suzaki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J. Virol",
+            "volume": "88",
+            "issn": "",
+            "pages": "5608--5616",
+            "other_ids": {
+                "DOI": [
+                    "10.1128/JVI.03677-13"
+                ]
+            }
+        },
+        "BIBREF79": {
+            "ref_id": "b79",
+            "title": "Assessment of risk conferred by coding and regulatory variations of TMPRSS2 and CD26 in susceptibility to SARS-CoV-2 infection in human",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Senapati",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kumar",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Banerjee",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Bhagavatula",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Genet",
+            "volume": "99",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s12041-020-01217-7"
+                ]
+            }
+        },
+        "BIBREF80": {
+            "ref_id": "b80",
+            "title": "First comprehensive computational analysis of functional consequences of TMPRSS2 SNPs in susceptibility to SARS-CoV-2 among different populations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Paniri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hosseini",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Akhavan-Niaki",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "J. Biomol. Struct. Dyn",
+            "volume": "2020",
+            "issn": "",
+            "pages": "1--18",
+            "other_ids": {
+                "DOI": [
+                    "10.1080/07391102.2020.1767690"
+                ]
+            }
+        },
+        "BIBREF81": {
+            "ref_id": "b81",
+            "title": "New insights into genetic susceptibility of COVID-19: An ACE2 and TMPRSS2 polymorphism analysis",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Kallianpur",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chung",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Jehi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Sharifi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Erzurum",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Eng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "BMC Med",
+            "volume": "18",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s12916-020-01673-z"
+                ]
+            }
+        },
+        "BIBREF82": {
+            "ref_id": "b82",
+            "title": "ACE2, TMPRSS2, and Furin variants and SARS-CoV-2 infection in Madrid, Spain",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Torre-Fuentes",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Matias-Guiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Hernandez-Lorenzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Montero-Escribano",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Pytel",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Porta-Etessam",
+                    "suffix": ""
+                },
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Gomez-Pinedo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Matias-Guiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "J. Med. Virol",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/jmv.26319"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Identification of miR-98-5p as modulator of transmembrane protease serine 2 (TMPRSS2). Complementary nucleotides between the target region of TMPRSS2 3\u2032-UTR (in light blue) and hsa-miR-98-5p are highly conserved across different species.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Identification of miR-98-5p as modulator of transmembrane protease serine 2 (TMPRSS2). Complementary nucleotides between the target region of TMPRSS2 3 -UTR (in light blue) and hsa-miR-98-5p are highly conserved across different species.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Validation of TMPRSS2 targeting by miR-98-5p. Luciferase activity was measured in adult human lung microvascular endothelial cells (HMVEC-L) (A) and human umbilical vein endothelial cells (HUVEC) (B) 48 h after transfection, using the vector without TMPRSS2 3\u2032-UTR (empty vector), the vector containing the wild-type TMPRSS2 3\u2032-UTR, and the vector containing a mutated TMPRSS2 3\u2032-UTR (TMPRSS2 MUT); a non-targeting miRNA (miR scramble) has been employed as further control. Means \u00b1 S.E.M. are shown alongside actual values; * p < 0.05.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Validation of TMPRSS2 targeting by miR-98-5p. Luciferase activity was measured in adult human lung microvascular endothelial cells (HMVEC-L) (A) and human umbilical vein endothelial cells (HUVEC) (B) 48 h after transfection, using the vector without TMPRSS2 3 -UTR (empty vector), the vector containing the wild-type TMPRSS2 3 -UTR, and the vector containing a mutated TMPRSS2 3 -UTR (TMPRSS2 MUT); a non-targeting miRNA (miR scramble) has been employed as further control. Means \u00b1 S.E.M. are shown alongside actual values; * p < 0.05.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "TMPRSS2 expression in human endothelial cells is reduced by miR-98-5p. TMPRSS2 mRNA levels were measured in HMVEC-L (A) as well as in HUVEC (B) transfected with miR-98-5p mimic, inhibitor, or scramble (negative control) for 48 h. Means \u00b1 S.E.M. are shown alongside actual values; * p <0.05 vs. miR scramble.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "TMPRSS2 expression in human endothelial cells is reduced by miR-98-5p. TMPRSS2 mRNA levels were measured in HMVEC-L (A) as well as in HUVEC (B) transfected with miR-98-5p mimic, inhibitor, or scramble (negative control) for 48 h. Means \u00b1 S.E.M. are shown alongside actual values; * p < 0.05 vs. miR scramble.",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": []
+}
