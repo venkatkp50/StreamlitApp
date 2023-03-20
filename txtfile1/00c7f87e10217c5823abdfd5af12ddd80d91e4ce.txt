@@ -1,4 +1,0 @@
-
-
-(a) Detailed architecture of DeepPhospho. For fragment ion intensity and iRT prediction, the embedded features first pass through two stacked bi-directional LSTMs, each of which is followed by a LeakyReLU-Dropout-Linear Layer. After the position encoding is added, the output of biLSTM module is fed into the Transformer module. The first part of each Transformer module is a layer-normalization layer, which is followed by the Multi-Head attention to capture global patterns and a dropout layer to prevent the overfitting. The Transformer module also adopts two skip connections to allow effective model training. 
-
