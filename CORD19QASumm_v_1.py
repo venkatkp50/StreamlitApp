@@ -307,8 +307,8 @@ if user_message != '':
                 
                 berttext = bert_model(body=parabody,max_length=500)
                 bert_summary = ''.join( lines for lines in berttext) 
-                with open(bert_file_summary_path+'/'+id[filecount], 'w') as createFile:
-                    createFile.write(bert_summary)               
+                #with open(bert_file_summary_path+'/'+id[filecount], 'w') as createFile:
+                #    createFile.write(bert_summary)               
             return bert_summary
         
         if summarizationFor == 'GPT2':
@@ -334,8 +334,8 @@ if user_message != '':
                 
                 gpt2text_full = ''.join(text for text in gpt2text)
                 gpt2text_full = GPT2_model(body=gpt2text_full, max_length=500)
-                with open(gpt_file_summary_path+'/'+id[filecount], 'w') as createFile:
-                    createFile.write(gpt2text_full)               
+                #with open(gpt_file_summary_path+'/'+id[filecount], 'w') as createFile:
+                #    createFile.write(gpt2text_full)               
             return gpt2text_full
 
 
