@@ -35,7 +35,7 @@ from haystack.document_stores import ElasticsearchDocumentStore
 from haystack.pipelines.standard_pipelines import TextIndexingPipeline
 from haystack.nodes import BM25Retriever
 from haystack.nodes import FARMReader
-from annotated_text import annotated_text
+#from annotated_text import annotated_text
 from haystack.pipelines import ExtractiveQAPipeline
 from summarizer import Summarizer,TransformerSummarizer
 from bert_score import score
