@@ -1,0 +1,212 @@
+6
+
+The distance between any pair of images is an inverse measure of performance in the task, as 129 greater distance corresponds to a poorer match between target and response expressions. Thus, 130 we reasoned that participants with precise metacognitive access to their facial expressions would 131 have a sharp relationship between the distance between two images and the confidence ratings.
+
+132
+
+The estimated regression coefficients from a multilevel model of these data should be negative 
+
+149
+
+Together, these results point to no evidence for a relationship between confidence and distance. 0.14, -0.09], BF10 = 8.01x10 8 , R 2 = 0.26). This shows that the distance we measured carried 171 information relevant for similarity ratings and thus the null effect above cannot be simply due to a 172 poor measure of distance. Additionally, because the same participants rated both confidence and 173 similarity, the differences between the two ratings cannot be attributed to trivial effects such as a 174 poor understanding of the confidence scale or task instructions, or simple lack of motivation.
+
+8
+
+We emphasize that an advantage of similarity as compared to confidence ratings is almost trivial, 176 as participants could see the picture pairs side-by-side to rate similarity, but not confidence.
+
+177
+
+Hence, we simply take this result as a positive control to ensure that the landmark distances were 178 at all related to similarity, but make no formal comparisons between the two kinds of ratings. 
+
+192
+
+Finally, following our pre-registered plan, we explored relationships between the participant-wise 193 random slopes with Mratio, a measure of visual metacognitive efficiency 30 in a visual task. We 194 found that visual Mratio was consistently above the chance level of 0 (M= 0.75, SD = 0.57, t(38) 195 = 8.15, p < 0.001, BF10 = 1.54x10 7 , estimated with a default Cauchy prior) but that it did not 
+
+202
+
+Using Pearson correlations, we also measured potential associations between the inter-individual 
+
+214
+
+Alexithymia score (TAS). We found no evidence for a correlation between metacognitive estimates and 215 these measures of insight.
+
+217
+
+Exploratory Analyses
+
+218
+
+For completeness, we studied the relationship between similarity and confidence ratings. We built 219 a Bayesian linear regression model of participants' confidence ratings, this time including the 10 similarity ratings as a fixed effect and random intercepts for participant and facial expression. We 221 found a clear positive relationship between the two ratings (M = 0.10 ± 0.01, CI = [0.09, 0.12], 222 BF10 = 6.36 x 10 31 , R 2 = 0.21, Figure 5 and Appendix 1- Figure 6 ). This suggests that participants' 223 confidence ratings were not random or noisy but rather that they simply did not reflect the low- Our results so far suggest that participants' confidence ratings did not reflect performance, 237 calculated as the Euclidean distance over all landmarks. In a final set of exploratory analyses, we 238 11 therefore aimed at identifying which pieces of information participants may have taken into 239 account when rating confidence.
+
+240
+
+The Euclidean distance between image pairs assigns equal weights to the distances of all facial 241 landmarks and is therefore a relatively naive measure of the difference between expressions, in 242 that it does not allow for potential differences between landmarks in their contribution to different 243 individuals' confidence. However, it is in principle possible that participants attended to different 244 parts of their faces to different degrees and, further, that this differential attention was not participant-wise models provided the maximum flexibility in feature weight assignment and was 254 therefore the harshest test to the conclusion that metacognitive access to facial expressions is 255 poor. We found that these models could in fact predict confidence ratings (median r = 0.26 ± 256 0.15), suggesting that participants did indeed base their confidence ratings on (specific subsets 257 of) landmark distances. Further, because confidence is known to correlate negatively with 258 response times 32,33 , we also asked whether RTs could have served as a proxy for distance. We 259 found that the landmark distances could be used to build ML models that predicted confidence 260 ratings above and beyond RT information alone, confirming that participants did use some of the 261 landmark distance information to rate confidence (see Appendix 1- Figure 4 ).
+
+262
+
+To better understand which information participants used to rate their own performance, we 
+
+294
+
+We asked how much we know about how our faces look when we make expressions. We 295 quantified young, healthy adults' metacognitive access to the low-level details of their own facial 296 expressions. We emphasized to participants that we were focused on the specific shape of the 297 face and activation of the muscles, not on the emotion that the expression conveyed. Surprisingly,
+
+298
+
+our results suggest that participants were only very poorly able to consistently base their 299 confidence ratings on the complete set of facial features. A priori, this can be interpreted in two 300 (non-exclusive) ways: Participants' confidence ratings may not have strongly relied on the 301 distance between a pair of images because they truly had little or no metacognitive access to their 302 own facial expressions. Alternatively, our measured distance based on the whole set of landmarks 303 may have been a very noisy or even invalid measure of performance. In turn, this alternative 304 explanation would mean that it would be invalid to quantify metacognitive access as we did. To 305 ensure that the second alternative could not fully explain our results, we quantified the relationship 306 between ratings of similarity (provided by the participants themselves while viewing image pairs 307 side-by-side) and distance (based on the whole set of landmarks, combined with equal weights).
+
+308
+
+Here, we did find a clear relationship between the two, suggesting that the distance between 309 image pairs does carry information that is -to some extent -relevant for similarity. This result 310 also shows that a poor relationship between confidence and distance cannot be attributed simply between similarity and distance suggests that we measured performance adequately.
+
+322
+
+Beyond the group-level effects, we found variation between individuals. We aimed at explaining 
+
+327
+
+Further, in another exploratory analysis, we considered that the summary distance measure could 328 not discriminate between landmarks that heavily informed participants' confidence ratings and 329 those that were ignored. In other words, confidence ratings may have depended on performance 
+
+345
+
+(idiosyncratically) to higher confidence ratings, these ratings were not indicative of performance.
+
+346
+
+If it is indeed the case that young, healthy volunteers have only partial access to their own facial 347 expressions, the obvious question arises: How do we communicate effectively in society?
+
+348
+
+Drawing from previous literature, we assume that each facial expression carries both low-level 349 information (the specific degree of contraction of each muscle and consequent location of the 350 landmarks) and high-level information (the emotion conveyed) and that these two bits of 351 information are not necessarily correlated. We note that the effects we observed here are valid 352 for the low-level features which we asked participants to concentrate on, but they may not 353 extrapolate to the high-level features of facial expressions.
+
+354
+
+In fact, we suggest a simple model ( Figure 7 ) consistent with our results where these two aspects 355 are dissociated. We obtained the distance using an algorithm that, we assume, has no access to 15 high-level information. Similarity ratings, on the other hand, were made by human observers (the 357 study participants) and therefore were based on both the low-level features (by design, in line with 358 our instructions) and high-level emotional information that is automatically processed 34 , as we 359 discussed above. On the basis of our results, we contend that confidence ratings may be based 360 chiefly on high-level information, as they can only poorly incorporate low-level information. Then, 361 the shared (high-level) information between similarity and confidence ratings explains why they 362 correlate and the dissociation between low-and high-level information, together with their unequal 363 contribution to different ratings, explains why confidence and distance are in turn dissociated. Confidence are depicted as squares). We also consider that the distance we measured is solely based on 369 low-level information that the algorithm has access to. Thus, this simple suggested model (where 370 confidence has accurate access to high-level but poor or partial access to low-level information, and where 371 similarity ratings by human judges are informed by both low-and high-level aspects of each image) is 372 sufficient to explain both, on the one hand, the relationships that we observed between distance and 373 similarity and between similarity and confidence, and on the other hand, the dissociations we found between 374 confidence and distance.
+
+376
+
+The distinction between metacognitive access to high-and low-level features of facial expressions 
+
+392
+
+(discriminating between the orientation of two faces) but not one that relied on high-level aspects
+
+393
+
+(discriminating the expression they communicated). Together, these results support a distinction 394 between metacognitive access to high-and low-level features of seen faces (i.e., others' faces).
+
+395
+
+We extend these results and suggest that this distinction may also apply to the case of one's own 396 face, even when not seen.
+
+397
+
+Facial muscles appear to lack muscle spindles 35 the 'true' measure of performance. We argue that this assumption is valid for two main reasons.
+
+474
+
+First, we specifically instructed participants to focus on these low-level aspects. Second, we found 
+
+500
+
+It could be argued that the use of non-canonical expressions limits the ecological validity of our 501 paradigm. However, we note that in this study we were interested in studying a potential 502 disconnect between (zero-order) motor control and (second-order) metacognitive access to it.
+
+503
+
+Canonical expressions, where a highly trained and stereotypical set of movements correspond, 20 one-to-one, to a specific expression, confound motor control with emotional content and would 505 not have allowed us to make any inferences about which kind of information participants were 506 accessing to make their judgments. For instance, had we asked participants to make a 507 stereotypical "happy" expression and then rated confidence, we would not have been able to 508 determine whether their confidence judgments were well calibrated with the emotional state they 509 recreated, the highly-trained motor program, or the end state of the target expression. In short, 
+
+516
+
+but also suggest that we cannot access them, even when explicitly asked to do so under 517 experimental conditions. This is surprising, we argue, because it sets facial movements apart 518 from other body movements (namely those of arms and fingers), for which, as previous studies 519 have shown, we do have precise metacognitive access to lower-level motor information, even 520 when this information is decoupled from the motor goal. We speculate that this distinction might 521 be related to the lack of concurrent visual information during social interactions, but our 522 speculation will need to be examined in future studies. 
+
+582
+
+The 32 pictures of participants generated in this way served as target images for the second part 583 of the paradigm. Here, participants saw the target images and tried to reproduce their own 584 expressions. Once again, we emphasized that the goal was to match the low-level physical 585 features of the face rather than the emotion conveyed. After each trial, participants used a mouse 586 to rate their confidence (on a visual analog scale) regarding how well they thought that they had the two images. We refer to this measure simply as the distance between two images. We then 678 log-transformed the obtained distances to ensure that the data were normally distributed before 679 fitting the Bayesian mixed models.
+
+680
+
+Bayesian mixed models
+
+681
+
+In our central analysis we computed metacognitive access to facial expressions as the 682 relationship between confidence ratings and performance. We take the distance as an inverse 683 measure of performance: if a response image closely matches the target image, the distance 684 between them will be small. Furthermore, a strong negative relationship between confidence 685 27 ratings and distance will indicate that participants had metacognitive access to their own facial 686 expressions, as they (correctly) provided low ratings in trials where the two images differed the 687 most. Conversely, no relationship between confidence and distance would indicate that 688 participants had no metacognitive access to their own expressions.
+
+689
+
+Because finding no relationships between variables was a plausible outcome from our analyses,
+
+690
+
+we used Bayesian statistics that, unlike frequentist statistics, provide evidence for the null 691 hypotheses. We analyzed the data using Bayesian mixed models created in Stan (http://mc- Table 1 ). We extracted the participant-wise random slopes using the mixedup package 701 (https://m-clark.github.io/mixedup/).
+
+702
+
+Because, to the best of our knowledge, there was no existing data to inform our priors, we followed 703 recommendations 68 to use heuristics to define prior distributions. We built the prior for the slope 704 between ratings and distance based on the ratio-of-scales heuristic: we found that the range of 705 (log-transformed) distances was approximately 3 a.u. (arbitrary units), whereas the range of 706 confidence ratings is 1 point (minimum: 0). Therefore we used a normal prior centered on 0 with 707 an SD = ⅓ (which corresponds to the ratio between confidence range and distance range) for the 708 slope parameter. To find a prior for the model intercept we followed the logic behind the room-to-709 move heuristic. Note that raw distances ranged between [131.36 -2493.78] a.u., hence the 710 expected rating at 0 distance (i.e., perfect performance) can be well approximated by the 711 expected rating at distance = 1, which corresponds to the intercept in a linear model with log-712 transformed distances. We reasoned that a participant with maximum metacognitive performance 713 would consistently rate their confidence as 1, when the distance between the two images was 0.
+
+714
+
+Because we realistically expect participants to have (at most) less than perfect metacognitive 715 access to their own expressions, we centered the prior at 0.8 with an SD = 0.5. Following a similar 716 logic, we set the prior slope between the two ratings to be centered at 0 with SD = 1, and an 28 intercept of 0 with an SD = ½. For all models, we report the estimate, its associated error mean, 718 the 95% credibility interval (CI), and the BF10, estimated using the bayestestR package 69 , to 719 compare each model against its null counterpart, containing the same random effects structure 720 but not the fixed effect of interest. We also include the posterior draws for each participant in The (mean) similarity ratings are inversely related to the distance between two images meanSimilarity ~ logDistance + (1+ logDistance | participantID) + (1 | expressionID) We computed metacognitive access to faces using only linear regression and estimated the 729 correlation with visual Mratios, deviating from the pre-registered plan. We initially planned to also 730 calculate the area under a type-2 ROC curve (AUROC2) by arbitrarily assuming that first-order 29 performance on the Faces task was at 70% accuracy and by classifying trials with distances 732 above the corresponding threshold as "incorrect". This analysis had the advantage that it would 733 have allowed us to correlate metacognitive performance measured on the same scale for both 734 tasks (Faces and Visual), but we later reasoned that it would make the results less easily 735 interpretable while not adding explanatory power and therefore decided to omit it.
+
+736
+
+Machine learning models 737 Using Python v3, and scikit-learn, we created a separate model for each subject wherein, first, 738 each landmark distance was determined by (x,y) coordinate differences between the two images.
+
+739
+
+We further decomposed the differences into four zero-or positive features (one for each cardinal 740 direction). This allowed different directions of movement to be weighted differently by the model.
+
+741
+
+We normalized each feature by dividing it by its median. Then, we applied dimensionality (2)
+
+754
+
+Where wf denotes the weights for each feature f, which is in turn the difference between response 
+
+815
+
+To evaluate whether the landmarks informed confidence ratings above and beyond RT, we report the methods and results as supporting information, that serve as a conceptual replication.
+
+844
+
+The methods for the pilot experiment were largely similar to those of the main experiment. We 845 only describe here the differences between the two.
+
+846
+
+Participants 847Thirteen healthy participants took part in the experiment after giving informed consent (seven 848 female, mean ± SD: 24 ± 3 years). One participant was excluded from the analysis because four 
+
+866
+
+After each trial, participants rated their confidence (on a scale from 1 to 6) regarding how well 867 they thought that they had imitated their own previous expression. To make the task intuitive, we 868 kept the mapping of the scale consistent with the German education system, where the best grade 869 is a 1.0. We then reversed the ratings for further analyses, so that a rating of 6 corresponds to 870 the highest confidence. In all cases, we recorded each picture taken, the response time (RT, 871 measured as the time between image onset and key press) and participants' confidence ratings.
+
+872
+
+Participants saw each of their 30 target expressions repeated 8 times in random order, for a total 873 of 240 trials. We only revealed that they would have to reproduce their own expressions after the target images for each of the participants to 99 pairs of (x,y) coordinates. We then did the same
+
+38
+
+Procrustes rigid-alignment as described in the main text, with 5 reference points instead of 3 (the 884 inner and outer corners of each eye and a point just below the nose). We did not use a mean 885 reference face, but instead minimized the distance of each response picture to its corresponding 886 target picture.
+
+887
+
+Similarity ratings by external judges
+
+888
+
+Unlike what was the case in the main experiment, here four independent judges (student research 889 assistants) rated the image pairs for similarity on a scale from 1 to 6, exactly like the one the 890 participants had used.
+
+891
+
+Data processing and analysis
+
+892
+
+Here as well we followed recommendations 68 to use heuristics to define prior distributions. We 893 built the prior for the slope based on the ratio-of-scales heuristic: we found that the range of (log- 
+
+897
+
+To find a prior for the model intercept (the expected rating at 0 distance, i.e., perfect performance),
+
+898
+
+we followed the logic behind the room-to-move heuristic. We reasoned that a participant with 899 maximum metacognitive performance would consistently rate their confidence as 6, when the 900 distance between the two images was 0. Because we realistically expect participants to have (at 901 most) less than perfect metacognitive access to their own expressions, we centered the prior at 
+
