@@ -125,6 +125,60 @@ pipe = ExtractiveQAPipeline(reader, retriever)
 
 print('.....9')
 
+def getTextSummarization(filecount,summarizationFor,std_text,tot_words_ref):
+    if summarizationFor == 'std':
+        return data[data['paper_id'] == id[filecount].replace('.txt','')]['abstract'].values[0]
+    if summarizationFor == 'BERT':
+        header =[]
+        berttext = []
+        para = []
+        bert_model = Summarizer() 
+        if tot_words_ref > BERT_MAX_TOKEN:
+            for line in std_text:
+                if len(line) > 1:
+                    if len(line) < 100:
+                        header.append(line)
+                    else:
+                        para.append(line)                  
+                
+            for parabody in para:
+                berttext.append(bert_model(body=parabody,max_length=100))
+                berttext = bert_model(body=parabody,max_length=math.ceil(tot_words_ref / 100) * 100)
+                bert_summary = ''.join( lines for lines in berttext) 
+        else:
+            for line in std_text:
+                para.append(line) 
+            
+            berttext = ''.join( lines for lines in para) 
+            berttext = bert_model(body=berttext,max_length=math.ceil(tot_words_ref / 100) * 100)
+            bert_summary = ''.join( lines for lines in berttext) 
+              
+    return bert_summary
+
+    if summarizationFor == 'GPT2':
+        header =[]
+        para = []
+        gpt2text = []
+        GPT2_model = TransformerSummarizer(transformer_type="GPT2",transformer_model_key="gpt2-medium")
+        if tot_words_ref > GPT2_MAX_TOKEN:
+            for line in std_text:
+                if len(line) > 1:
+                    if len(line) < 100:
+                        header.append(line)
+                    else:
+                        para.append(line)                  
+                for parabody in para:
+                    gpt2text.append(GPT2_model(body=parabody, max_length=100))
+                gpt2text_full = ''.join(text for text in gpt2text)
+                gpt2text_full = GPT2_model(body=gpt2text_full, max_length=math.ceil(tot_words_ref / 100) * 100)
+        else:
+            for line in std_text:
+                para.append(line)
+        gpt2text = ''.join( lines for lines in para) 
+        gpt2text = GPT2_model(body=gpt2text,max_length=math.ceil(tot_words_ref / 100) * 100)
+        gpt2text_full = ''.join( lines for lines in gpt2text)
+    return gpt2text_full
+
 if user_message != '':
     print('inside user_meassage block')
     results = pipe.run(query=user_message,params={"Retriever": {"top_k": 10},"Reader": {"top_k": 5}})
@@ -208,63 +262,7 @@ if user_message != '':
 #         filecount = 4
     
     
-    def getTextSummarization(filecount,summarizationFor,std_text,tot_words_ref):
-        if summarizationFor == 'std':
-            return data[data['paper_id'] == id[filecount].replace('.txt','')]['abstract'].values[0]
-        if summarizationFor == 'BERT':
-            header =[]
-            berttext = []
-            para = []
-            bert_model = Summarizer() 
-
-            if tot_words_ref > BERT_MAX_TOKEN:
-                for line in std_text:
-                    if len(line) > 1:
-                        if len(line) < 100:
-                            header.append(line)
-                        else:
-                            para.append(line)                  
-                
-                for parabody in para:
-                    berttext.append(bert_model(body=parabody,max_length=100))
-                    berttext = bert_model(body=parabody,max_length=math.ceil(tot_words_ref / 100) * 100)
-                    bert_summary = ''.join( lines for lines in berttext) 
-            else:
-                for line in std_text:
-                    para.append(line) 
-                berttext = ''.join( lines for lines in para) 
-                berttext = bert_model(body=berttext,max_length=math.ceil(tot_words_ref / 100) * 100)
-                bert_summary = ''.join( lines for lines in berttext) 
-              
-            return bert_summary
-        
-        if summarizationFor == 'GPT2':            
-
-            header =[]
-            para = []
-            gpt2text = []
-            GPT2_model = TransformerSummarizer(transformer_type="GPT2",transformer_model_key="gpt2-medium")
-            if tot_words_ref > GPT2_MAX_TOKEN:
-                for line in std_text:
-                    if len(line) > 1:
-                        if len(line) < 100:
-                            header.append(line)
-                        else:
-                            para.append(line)                  
-                for parabody in para:
-                    gpt2text.append(GPT2_model(body=parabody, max_length=100))
-                
-                gpt2text_full = ''.join(text for text in gpt2text)
-                gpt2text_full = GPT2_model(body=gpt2text_full, max_length=math.ceil(tot_words_ref / 100) * 100)
-            else:
-                for line in std_text:
-                    para.append(line) 
-
-                gpt2text = ''.join( lines for lines in para) 
-                gpt2text = GPT2_model(body=gpt2text,max_length=math.ceil(tot_words_ref / 100) * 100)
-                gpt2text_full = ''.join( lines for lines in gpt2text) 
-             
-            return gpt2text_full
+    
 
 
     tab1, tab2 = st.tabs(["Single Document Summarization", "Multi Document Summarization"])
