@@ -229,8 +229,11 @@ if user_message != '':
         context.append(result.context)
         id.append(result.meta['name'])
  
+    print('.....10')
     responsedf = pd.DataFrame({'Probable Anwsers':ans,'Score':score,'Context':context,'Source File Name':id})
     # st.write(responsedf)
+
+    print('.....11 responsedf ')
 
     ans = responsedf['Probable Anwsers'].values.tolist()
     ids = responsedf['Source File Name'].values.tolist()
