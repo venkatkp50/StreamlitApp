@@ -189,22 +189,23 @@ if user_message != '':
     st.markdown('---')
     st.subheader('Score %')
     st.plotly_chart(fig, theme="streamlit", use_container_width=True,)
-    
-    selected_radio = st.radio('Choose File for Summarization',options=(ans[0],ans[1],ans[2],ans[3],ans[4]))
-
-    file4Summ = ''
     filecount = 0
-    #file4Summ = id[0]
-    if selected_radio == ans[0]:
-        filecount = 0
-    elif selected_radio == ans[1]:
-        filecount = 1
-    elif selected_radio == ans[2]:
-        filecount = 2
-    elif selected_radio == ans[3]:
-        filecount = 3
-    else:
-        filecount = 4
+    
+#     selected_radio = st.radio('Choose File for Summarization',options=(ans[0],ans[1],ans[2],ans[3],ans[4]))
+      
+#     file4Summ = ''
+#     filecount = 0
+#     #file4Summ = id[0]
+#     if selected_radio == ans[0]:
+#         filecount = 0
+#     elif selected_radio == ans[1]:
+#         filecount = 1
+#     elif selected_radio == ans[2]:
+#         filecount = 2
+#     elif selected_radio == ans[3]:
+#         filecount = 3
+#     else:
+#         filecount = 4
     
     
     def getTextSummarization(filecount,summarizationFor,std_text,tot_words_ref):
