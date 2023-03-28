@@ -281,12 +281,12 @@ if user_message != '':
         tot_words_ref = len(word_tokenize(gold_text))
         col1.write(gold_text)  
 
-        
+        print('start BERT')
         full_text = data[data['paper_id'] == id[filecount].replace('.txt','')]['text'].values[0]
         bert_summary = getTextSummarization(filecount,'BERT',full_text,tot_words_ref)  
         print('BERT :',len(bert_summary))      
         col2.write('Abstract : This article describes,' + bert_summary)  
-
+        print('End BERT')
         
         print('GPT filecount=',filecount)
         gpt2text_summary = getTextSummarization(filecount,'GPT2',full_text,tot_words_ref)
