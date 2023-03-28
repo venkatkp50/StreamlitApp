@@ -284,8 +284,10 @@ if user_message != '':
 
         print('start BERT')
         full_text = data[data['paper_id'] == id[filecount].replace('.txt','')]['text'].values[0]
+        print('BERT 1')
         bert_summary = getTextSummarization(filecount,'BERT',full_text,tot_words_ref)  
         print('BERT :',len(bert_summary))      
+        
         col2.write('Abstract : This article describes,' + bert_summary)  
         print('End BERT')
         
